@@ -1,0 +1,19 @@
+corpus,family,added_vs_user,yes,no,unclear,note
+investigator_development,survey_design,0,0,0,0,Families overlap; not additive; no corpus precision estimate
+investigator_development,vignette_design,0,0,0,0,Families overlap; not additive; no corpus precision estimate
+investigator_development,contextual_design,0,0,0,0,Families overlap; not additive; no corpus precision estimate
+investigator_development,vignette_survey,0,0,0,0,Families overlap; not additive; no corpus precision estimate
+investigator_development,embedded_design,0,0,0,0,Families overlap; not additive; no corpus precision estimate
+investigator_development,factorial_randomized_vignette,0,0,0,0,Families overlap; not additive; no corpus precision estimate
+investigator_development,text_assignment,0,0,0,0,Families overlap; not additive; no corpus precision estimate
+investigator_development,survey_information,0,0,0,0,Families overlap; not additive; no corpus precision estimate
+investigator_development,survey_wording,0,0,0,0,Families overlap; not additive; no corpus precision estimate
+term_stratified_development,survey_design,0,0,0,0,Families overlap; not additive; no corpus precision estimate
+term_stratified_development,vignette_design,0,0,0,0,Families overlap; not additive; no corpus precision estimate
+term_stratified_development,contextual_design,0,0,0,0,Families overlap; not additive; no corpus precision estimate
+term_stratified_development,vignette_survey,0,0,0,0,Families overlap; not additive; no corpus precision estimate
+term_stratified_development,embedded_design,0,0,0,0,Families overlap; not additive; no corpus precision estimate
+term_stratified_development,factorial_randomized_vignette,11,8,3,0,Families overlap; not additive; no corpus precision estimate
+term_stratified_development,text_assignment,7,6,1,0,Families overlap; not additive; no corpus precision estimate
+term_stratified_development,survey_information,4,4,0,0,Families overlap; not additive; no corpus precision estimate
+term_stratified_development,survey_wording,0,0,0,0,Families overlap; not additive; no corpus precision estimate

@@ -1,0 +1,27 @@
+{
+  "browser": "Google Chrome via local CDP",
+  "html_sha256": "d4b3cec307ab04731a64ba0e86ef1ded98aad9da9c3ec15d60b7b91c634168a5",
+  "researcher_rows": 100,
+  "columns_checked_both_directions": 12,
+  "checks": [
+    "Ranking label",
+    "coauthor summary tab",
+    "four selection steps",
+    "literal query fidelity",
+    "copy query",
+    "three-tab keyboard navigation",
+    "downloaded PDFs omitted from manual queue",
+    "all column sorts",
+    "US maximum first",
+    "author evidence drilldown",
+    "US-only article filter",
+    "country search",
+    "empty search",
+    "ten-paper batches",
+    "last batch",
+    "download checkbox storage",
+    "CSV batch contents",
+    "mobile overflow"
+  ],
+  "uncaught_exceptions": 0
+}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Survey-experiment researchers · 100-person review pool</title>
+<style>/* INLINE_CSS */</style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div><p class="eyebrow">SOCIALTUNE · RESEARCHER SELECTION</p>
+      <h1>Survey-experiment researchers</h1>
+      <p class="lede" id="publication-window">Explore 100 researchers by first/last-author article volume and evidence of US samples.</p>
+    </div>
+  </header>
+  <div id="stats" class="stats" aria-label="Review totals"></div>
+  <p class="scope" id="scope"></p>
+  <div class="tabs" role="tablist" aria-label="Review views">
+    <button role="tab" id="people-tab" aria-controls="people-view" aria-selected="true" tabindex="0">Ranking</button>
+    <button role="tab" id="summary-tab" aria-controls="summary-view" aria-selected="false" tabindex="-1">Coauthor summary</button>
+    <button role="tab" id="queue-tab" aria-controls="queue-view" aria-selected="false" tabindex="-1">Full-text downloads</button>
+  </div>
+  <section id="people-view" role="tabpanel" aria-labelledby="people-tab">
+    <div class="toolbar">
+      <label class="search">Search researchers, institutions or countries<input type="search" id="search" placeholder="Name, department, country…"></label>
+      <div class="sort-presets"><span>Rank by</span><button id="sort-total" aria-pressed="true">Survey-experiment articles ↓</button><button id="sort-us" aria-pressed="false">US-sample articles ↓</button></div>
+      <button class="secondary" id="export-people">Export visible CSV</button>
+    </div>
+    <p class="hint">Click any column heading to sort; click again to reverse. Click a researcher to inspect their articles and evidence.</p>
+    <p id="table-status" class="status" aria-live="polite"></p>
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Sortable researcher table; scroll horizontally for all columns">
+      <table id="researchers"><caption class="sr-only">First/last-author survey-experiment candidates and sample-geography evidence</caption><thead><tr id="headers"></tr></thead><tbody id="people-rows"></tbody></table>
+    </div>
+    <p class="footnote">First and last both include sole-authored articles. The highlighted primary count is <strong>first + last − sole</strong>. US counts combine explicit and inferred evidence. Zero means no US sample identified in the reviewed evidence.</p>
+  </section>
+  <section id="summary-view" role="tabpanel" aria-labelledby="summary-tab" hidden>
+    <div class="coauthor-summary"><h2>Coauthor summary</h2><div class="summary-actions"><button id="copy-query">Copy Scopus query</button> <a href="queries/recommended.txt" download>Download query</a> · <a href="EXECUTIVE_SUMMARY.html">Open summary separately ↗</a></div><p id="query-copy-status" class="status" aria-live="polite"></p>SUMMARY_CONTENT</div>
+  </section>
+  <section id="queue-view" role="tabpanel" aria-labelledby="queue-tab" hidden>
+    <div class="queue-intro"><h2>Download each paper once</h2><p id="availability-status"></p><p>Use the open-copy or publisher links below. Save PDFs in <code>SurveyExperimentRecruitment/private/fulltext/inbox/</code> using the suggested filename. A paper shared by several researchers updates all their counts after review.</p><p>Start with batch 1. Priority favors papers that could distinguish tied researchers in the top 50 of either ranking, spreading each ten-paper batch across different ties. A US finding can change US counts; total article counts remain unchanged.</p><details><summary>Already downloaded; awaiting geography review</summary><div id="available-papers"></div></details></div>
+    <div class="toolbar">
+      <label>Batch<select id="batch"></select></label>
+      <button id="copy-links">Copy this batch’s links</button>
+      <button id="export-batch" class="secondary">Export batch checklist</button>
+      <a class="button secondary" href="results/manual_download_queue.csv" download>Manual-download CSV ↓</a>
+      <a href="PRIORITY_DOWNLOADS.html">Why these papers come first ↗</a>
+      <a href="MANUAL_DOWNLOADS.html">All manual download links ↗</a>
+      <a href="FULLTEXT_REVIEW.html">Review instructions ↗</a>
+    </div>
+    <p id="queue-status" class="status" aria-live="polite"></p>
+    <label id="copy-fallback-wrap" hidden>Copy these links<textarea id="copy-fallback" readonly rows="8"></textarea></label>
+    <div id="queue-cards"></div>
+    <p class="footnote">Download checkboxes are saved in this browser where supported. They track your progress; they do not verify files or change sample annotations. Save a batch and tell your collaborator it is ready for review.</p>
+  </section>
+  <details class="methods"><summary>How to interpret the counts and the pool</summary><div id="methods-text"></div>
+    <p><a href="SUPPORTING_INFORMATION.html">Full selection method and Scopus query ↗</a> · <a href="YEAR_WINDOW_COMPARISON.html">Effect of extending to 2010 ↗</a> · <a href="GEOGRAPHY_REPORT.html">Geography coding method ↗</a> · <a href="results/top100_cutoff_ties.csv">All researchers tied at the cutoff ↓</a> · <a href="results/top100_article_annotations.csv">Article evidence CSV ↓</a></p>
+  </details>
+  <footer id="review-dates">Self-contained review dashboard · AI-assisted geography review; independent validation pending.</footer>
+  <noscript><p>This interactive table requires JavaScript. Download the <a href="results/top100_enriched.csv">100-researcher CSV</a> or open the <a href="FULLTEXT_REVIEW.html">full-text download list</a>.</p></noscript>
+</main>
+<dialog id="author-dialog" aria-labelledby="author-name">
+  <div class="dialog-header"><h2 id="author-name"></h2><button id="close-dialog" aria-label="Close researcher details">Close ×</button></div>
+  <div id="author-profile"></div>
+  <label>Show articles<select id="article-filter"><option value="all">All credited articles</option><option value="us">US sample: explicit + inferred</option><option value="unclear">Unclear sample geography</option><option value="non_us">Non-US evidence</option><option value="not_applicable">No applicable sample identified</option></select></label>
+  <p id="article-status" class="status"></p><div id="author-articles"></div>
+</dialog>
+<script type="application/json" id="dashboard-data">JSON_PAYLOAD</script>
+<script>/* INLINE_JS */</script>
+</body>
+</html>

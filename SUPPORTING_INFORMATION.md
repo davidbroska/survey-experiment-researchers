@@ -1,0 +1,113 @@
+**Selection of researchers for data-donation invitations.** We target researchers who have fielded survey experiments and can supply respondent-level data, treatment materials, and the corresponding survey instrument. Eligible studies manipulate material within a survey and measure respondents' judgments, beliefs, intentions, or choices. The treatment and response structure must be supported by the project's parser. Recruitment through Bovitz, Prolific, or another online panel is relevant evidence about how a study was fielded; the provider alone does not establish the authors' access to data. Text treatment and data access are coded separately. No country, sample-representativeness, or panel-provider restriction is imposed in the database query.
+
+The journal frame is derived from the project's frozen roster of 589 TESS investigator records, containing 581 resolved Scopus author IDs. TESS provides a multidisciplinary survey-experiment platform. [TESS programme description](https://www.tessexperiments.org/info/introduction). We retrieve all journal articles by the resolved investigators through 2026, without a lower publication-year bound or article-count cap, and retain every identifiable journal used by at least one investigator. This produces 3,401 journals. Eight investigator records remain unresolved; four resolved profiles return no qualifying publications and one publication lacks an identifiable journal. Invitation candidates may be any researcher publishing eligible work in this journal frame.
+
+We search Scopus titles, abstracts, and keywords for journal articles published in 2010–2026, using the following query. Exact phrases enumerate singular, plural, and relevant hyphenated forms; broader experimental language requires survey context. The search contains positive retrieval terms and publication filters. Design compatibility is assessed during article and instrument screening.
+
+```text
+(
+  (TITLE-ABS-KEY({survey experiment}
+      OR {survey experiments}
+      OR {survey-based experiment}
+      OR {survey-based experiments}
+      OR {survey based experiment}
+      OR {survey based experiments}
+      OR {survey-embedded experiment}
+      OR {survey-embedded experiments}
+      OR {survey embedded experiment}
+      OR {survey embedded experiments}
+      OR {survey-experimental}
+      OR {survey experimental}))
+  OR (TITLE-ABS-KEY({vignette experiment}
+      OR {vignette experiments}
+      OR {experimental vignette}
+      OR {experimental vignettes}
+      OR {vignette-based experiment}
+      OR {vignette-based experiments}
+      OR {vignette based experiment}
+      OR {vignette based experiments}))
+  OR (TITLE-ABS-KEY({framing experiment}
+      OR {framing experiments}
+      OR {information provision experiment}
+      OR {information provision experiments}
+      OR {information-provision experiment}
+      OR {information-provision experiments}
+      OR {scenario-based experiment}
+      OR {scenario-based experiments}
+      OR {scenario based experiment}
+      OR {scenario based experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))
+  OR (TITLE-ABS-KEY({vignette-based survey}
+      OR {vignette-based surveys}
+      OR {vignette based survey}
+      OR {vignette based surveys}) AND TITLE-ABS-KEY(random* OR experiment*))
+  OR (TITLE-ABS-KEY({experiment embedded in a survey}
+      OR {experiments embedded in a survey}
+      OR {experiment embedded in an online survey}
+      OR {experiments embedded in an online survey}
+      OR {experiment embedded in a national survey}
+      OR {experiments embedded in national surveys}
+      OR {experiment embedded in a nationally representative survey}
+      OR {experiments embedded in nationally representative surveys}
+      OR {embedded survey experiment}
+      OR {embedded survey experiments}
+      OR {survey with an embedded experiment}
+      OR {survey with embedded experiments}
+      OR {surveys with embedded experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))
+  OR (TITLE-ABS-KEY({factorial survey}
+      OR {factorial surveys}
+      OR {factorial vignette experiment}
+      OR {factorial vignette experiments}
+      OR {randomized vignette experiment}
+      OR {randomized vignette experiments}
+      OR {randomised vignette experiment}
+      OR {randomised vignette experiments}
+      OR {randomized vignette}
+      OR {randomized vignettes}
+      OR {randomised vignette}
+      OR {randomised vignettes}))
+  OR (TITLE-ABS-KEY({randomly assigned to read}
+      OR {randomly allocated to read}
+      OR {randomly selected to read}
+      OR {randomized to read}
+      OR {randomised to read}
+      OR {randomly assigned to a vignette}
+      OR {randomly assigned a vignette}
+      OR {randomly assigned to one of two vignettes}
+      OR {randomly assigned to one of three vignettes}
+      OR {randomly assigned to receive information}
+      OR {randomly provided with information}
+      OR {randomly presented with a vignette}
+      OR {randomly presented with vignettes}
+      OR {randomly presented with a scenario}
+      OR {randomly shown a vignette}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))
+  OR (TITLE-ABS-KEY({information treatment}
+      OR {information treatments}
+      OR {informational treatment}
+      OR {informational treatments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*) AND TITLE-ABS-KEY(random* OR experiment*))
+  OR (TITLE-ABS-KEY({question wording experiment}
+      OR {question wording experiments}
+      OR {question-wording experiment}
+      OR {question-wording experiments}
+      OR {wording experiment}
+      OR {wording experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))
+)
+AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027
+```
+
+Retrieval dates are 2026-09-08 to 2026-09-09. For the API, the query is executed as the union of 3 shorter parts, each partitioned by publication year. Expected and retrieved counts are checked, records are deduplicated by Scopus ID, and the union is intersected with the journal frame using Source IDs. A DOI check removes duplicate article records. This yields 9,111 records globally, 7,305 in the frame, and 7,302 unique in-frame articles.
+
+A local text check preserves punctuation, separates fields and keyword entries, and requires the contextual terms within the same sentence or keyword entry. It identifies 7,035 candidates; 267 other records remain in a review queue. Scopus indexed keywords are not fully returned by the Search COMPLETE response, so a missing local match is not an exclusion. Review establishes experimental eligibility, parser compatibility, original data fielding, and access to the response data and survey materials. Article abstracts and vendor mentions alone cannot establish all these requirements.
+
+Researchers receive one credit per eligible article on which they appear first or last. Sole authors receive one credit, and articles with multiple experiments also receive one credit. Scopus sequence numbers determine byline positions; 4 candidate records have unresolved bylines. The provisional 100-researcher review pool has a cutoff of 6 articles, shared by 70 researchers. Numeric author ID orders ties reproducibly and determines which tied authors enter the fixed-size pool. This display order does not establish substantive differences among tied candidates. The eventual invitation list remains subject to review. Alternative journal thresholds and all-author counting are supplied as sensitivity analyses.
+
+The current shortlist ranks query candidates. Final invitations depend on eligibility and identity checks. The journal frame, database coverage, publication frequency, and disciplinary authorship conventions can affect selection; no claim of representative disciplinary coverage, population-level precision, or recall is made.
+
+We selected 100 researchers by their number of distinct first/last-author survey-experiment candidate articles, then reviewed the union of their 870 articles using titles, abstracts, and available keywords. The US-sample count combines 248 articles with explicit evidence and 145 with contextual inference (393 articles). 65 articles have subsequent reviewed full-text evidence; where supplied, full-text labels supersede metadata labels and retain file hashes and page citations. Another 337 have non-US study evidence, 127 have unclear geography, and 13 identify no applicable original experimental sample. A US political topic supports contextual inference only when the study plausibly samples that public; US policy evaluated by explicitly foreign respondents does not qualify. Generic topics, panel vendors, author affiliations, and an unspecified national or international sample do not locate participants. Non-US means no US experimental sample was identified in the metadata; it does not rule out a US sample elsewhere in the full text. Indexed keywords were unavailable in the retrieved Search COMPLETE records; author keywords were reviewed where supplied. Each label retains its evidence field, verbatim span, rationale, reviewer, date, and metadata hash. These are AI-assisted annotations awaiting independent human validation.
+
+Counts represent articles with evidence of at least one US experimental sample, not the number of experiments, independent samples, or datasets. Mixed-country articles count once as US-associated. Shared articles count once per credited researcher but once in article-level totals. The primary count is first + last − sole-authored articles; both first and last include sole authors. Geographic review does not change the frozen candidate count. Articles without original experimental samples remain visible in that provisional count and require eligibility screening. Author position is a proxy for PI involvement, weakened by alphabetical bylines and disciplinary conventions. Roles are provided separately.
+
+The 6-article cutoff is shared by 70 researchers, of whom 65 fall outside the displayed pool. Numeric Scopus author ID determines pool membership within this tie, as in the frozen ranking. US-count sorting is therefore conditional on this pool; it is not a global ranking of all researchers by US samples. Identical counts share competition ranks. Secondary sorting stabilizes display and does not break substantive ties. The 'US if all unclear resolve US' field is a sensitivity scenario, not a confidence bound: existing inferred and non-US labels can also change after review.
+
+Institution, department or unit, country, and role were checked against primary institutional or researcher-maintained sources between 2026-09-08 and 2026-09-09. Country denotes the work institution or campus, not nationality or sample location. Dated sources and role disagreements are flagged in the profile notes. Study-level screening must still establish original fielding, parser compatibility, and access to response data and treatment materials.
+
+[Sortable dashboard](TOP100.html) · [Researcher data](results/top100_enriched.csv) · [Article annotations](results/top100_article_annotations.csv) · [Download queue](FULLTEXT_REVIEW.md)

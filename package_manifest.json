@@ -1,0 +1,734 @@
+{
+  "snapshot_date": "2026-09-09",
+  "python_verified": "3.13.9",
+  "tests_passed": 47,
+  "retrieval_status": "complete for the archived positive-term query and frozen roster",
+  "eligibility_status": "provisional; requires experimental eligibility, parser compatibility, data access and identity review",
+  "private_data": "Scopus cache, abstracts, evidence and prior run snapshots retained under private/",
+  "files": [
+    {
+      "path": ".github/workflows/pages.yml",
+      "sha256": "23ef3d8e9d06121f74ed58b2856c650fdabe1f0e04a823fd4e2d0bfadf257737"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "9ed4b07cd25a23873be5dbf6a0e4d82b433bd4eed4e7688b591a4cde2823dd26"
+    },
+    {
+      "path": "CODEBOOK.md",
+      "sha256": "d5890bf0d289f500e6042fb842801c7d5e0016185deb70a9d36bdcbc56b48163"
+    },
+    {
+      "path": "EXECUTIVE_SUMMARY.html",
+      "sha256": "2cf2b58b133a97c0a5fef3fe9a994eeed571bc827de51d80ab79a156b5154fc9"
+    },
+    {
+      "path": "EXECUTIVE_SUMMARY.md",
+      "sha256": "2dc02a841e7a8d8d1b18ca03fc5d1123642f8ce529643e8ead01a438054535fa"
+    },
+    {
+      "path": "FULLTEXT_REVIEW.html",
+      "sha256": "95addfb4be21285e3927866fbb445a2ef2cbc31668e0122f76a9a8e8d90fa253"
+    },
+    {
+      "path": "FULLTEXT_REVIEW.md",
+      "sha256": "e2abc3b669b5062b6a2107ad58189ad177e521fdd1161bc142333fc455c82881"
+    },
+    {
+      "path": "GEOGRAPHY_REPORT.html",
+      "sha256": "20352b2af76783fd3361801f8b54ea433a667c085998d74f8bad9f15abd50f2a"
+    },
+    {
+      "path": "GEOGRAPHY_REPORT.md",
+      "sha256": "de310733d2f298b6d3d680d0002cea4d1f9d29828c346a8f83ca631fcadbcd40"
+    },
+    {
+      "path": "GITHUB_HOSTING.md",
+      "sha256": "f5d9020d23f91bd774cb07eb0c27c50fd2e627730088692577b1cc9af5e7e94f"
+    },
+    {
+      "path": "MANUAL_DOWNLOADS.html",
+      "sha256": "6bbb6551293040350fe513a80cd28bc9541f33b8bea369f2c7c09419ef4250aa"
+    },
+    {
+      "path": "MANUAL_DOWNLOADS.md",
+      "sha256": "1aec76e4088db37134dbdecffd90578625c43d3564edaa5a20991db2c5c6c25b"
+    },
+    {
+      "path": "PRIORITY_DOWNLOADS.html",
+      "sha256": "e544068bacef303b15ce37821b42da0d03bc5cdb28ee3edf7866a8c8d1deceb2"
+    },
+    {
+      "path": "PRIORITY_DOWNLOADS.md",
+      "sha256": "25542549ce18224b3dbc30df2af8515e1a6da79fcd02e44a129ee8f3814ba289"
+    },
+    {
+      "path": "QUERY_REPORT.html",
+      "sha256": "ff70d2820b47048a7b0632aef79162fb70663664af812cd7c07caf5b24aa5abd"
+    },
+    {
+      "path": "QUERY_REPORT.md",
+      "sha256": "c581dcc41ef6899c334f71030893fbc290024cd16e8b21dc3c316ad510a6ebbf"
+    },
+    {
+      "path": "README.md",
+      "sha256": "11c68986b865043251ca643c667c2671025e2616ebd6a3c3a50f83238e7c15b3"
+    },
+    {
+      "path": "SUPPORTING_INFORMATION.html",
+      "sha256": "e901dd12317a39dceb74b9c862c74148246f1857a2f28d6b4d86cbd7f1a93607"
+    },
+    {
+      "path": "SUPPORTING_INFORMATION.md",
+      "sha256": "cf9521d64618f8e8e15f6c7c4c901aecce883f6f4ffe16f9d91bdd22bceb86da"
+    },
+    {
+      "path": "TOP100.html",
+      "sha256": "d4b3cec307ab04731a64ba0e86ef1ded98aad9da9c3ec15d60b7b91c634168a5"
+    },
+    {
+      "path": "TOP40.html",
+      "sha256": "d4b3cec307ab04731a64ba0e86ef1ded98aad9da9c3ec15d60b7b91c634168a5"
+    },
+    {
+      "path": "YEAR_WINDOW_COMPARISON.html",
+      "sha256": "e8fd0d83c360daf0331866326c0a87e5d8b0ebe8365bd838b05b03c635789eb7"
+    },
+    {
+      "path": "YEAR_WINDOW_COMPARISON.md",
+      "sha256": "9f6e20110d82030cc05d2b8d032ad3c829530dbf15218e5eda8cf60215213b68"
+    },
+    {
+      "path": "github-pages-site.zip",
+      "sha256": "e866d3f975b6dd5312ae5a56a36b129369fb5d3e794f3684bec55c21f5c4fb00"
+    },
+    {
+      "path": "inputs/article_decisions.csv",
+      "sha256": "1a1250211979a14f48147288b3c15e3319dce168b5c241bcefb25931451c2420"
+    },
+    {
+      "path": "inputs/article_geography.csv",
+      "sha256": "596a1bad300ff330458927f53de5e1490c3d1364fb957d214d279c95260717a5"
+    },
+    {
+      "path": "inputs/author_names.csv",
+      "sha256": "f3b35edd09d98f452bce7910cd4e3481134c61f824e45e40e2bdf686037ec191"
+    },
+    {
+      "path": "inputs/dashboard_config.json",
+      "sha256": "1013bda8a69e5fbc4af47a9e471b5713814f89cfd11136890a7563315d490be2"
+    },
+    {
+      "path": "inputs/fulltext_followups.csv",
+      "sha256": "bdce1c428718ce3d72ba345b80a347972eadb5f93dd15bce9cb5ef3c70fab286"
+    },
+    {
+      "path": "inputs/fulltext_reviews.csv",
+      "sha256": "7c4d0f1067911f7d3a8abcb650ef172323dc8b26c71b4bef4bddc56b2467e6d5"
+    },
+    {
+      "path": "inputs/investigator_journals.csv",
+      "sha256": "6e2c76e9500ace52a798be5a10ff4f24e65a69fcf42ef75743406422d0b1a1d3"
+    },
+    {
+      "path": "inputs/legacy_investigator_journals.csv",
+      "sha256": "1d471ad7b2aaa7dfe3e390960b6f32fff8f8a40a6f20b326b0f85f2e4165b028"
+    },
+    {
+      "path": "inputs/manual_download_status.csv",
+      "sha256": "c28e67232db67f72d20fb0e33674b676360f938c61eb1acb4a5a12dd41520a73"
+    },
+    {
+      "path": "inputs/open_access_sources.csv",
+      "sha256": "47839e1c9ceac314dfbb17f0b22b68a12a94fe20e4f00595b1bbfea0a1003087"
+    },
+    {
+      "path": "inputs/provenance.json",
+      "sha256": "a2196104cd49a0743e9a9e5c7194817b8d20b017d979227ee7500e07ebffaa6e"
+    },
+    {
+      "path": "inputs/researcher_affiliations.csv",
+      "sha256": "07b19109d9f014f94615a406b8b409662afab9da175247f2bf7c3579bfb3744f"
+    },
+    {
+      "path": "inputs/tess_investigators.csv",
+      "sha256": "dc81afdacdb77026a046e5c2751be4e0b945372598610a15f1d85c6e7bbddc12"
+    },
+    {
+      "path": "inputs/top40_affiliations.csv",
+      "sha256": "237e2b521e5e8afd1cb0be517e11cdc781781290d0c012ca774a4b165898c082"
+    },
+    {
+      "path": "inputs/top40_us_annotations.csv",
+      "sha256": "b4d327523d7c742958140dacbcb628ab180a401120018e99ca1b891cd13b4050"
+    },
+    {
+      "path": "inputs/validation_labels.csv",
+      "sha256": "5d7168cd0e32b908078dae3bdf5532e3f67ad62170f96880474a14cd6f3ec277"
+    },
+    {
+      "path": "pipeline/acquisition_report.py",
+      "sha256": "2c4beb2c48de2718f13f71fa0b53ecdfc606b2a5fedb113340cccb78399c88d4"
+    },
+    {
+      "path": "pipeline/analyse.py",
+      "sha256": "e4e5b7f08bfd75371b3a2fc4320d8fb4c6249d0880c9147a67d64938495f224a"
+    },
+    {
+      "path": "pipeline/benchmark.py",
+      "sha256": "674c32b84160f418457409d84514eefee5e0d8d0f78cc545459838e3ee4b1ab8"
+    },
+    {
+      "path": "pipeline/build_site.py",
+      "sha256": "e5afc3957cb92c79d75cecd2c9cb4626e954518d99e71fd39a1b4552d5c1aae4"
+    },
+    {
+      "path": "pipeline/coauthor_summary.py",
+      "sha256": "415d54acae7ee09f11609ea5db5bf2ac7faa909aac8c35b3efdeac5c60781f11"
+    },
+    {
+      "path": "pipeline/common.py",
+      "sha256": "db548e4831d548f6ae5241c70ace1249a54b0a2172fad59db40d96d108d544a3"
+    },
+    {
+      "path": "pipeline/compare_live.py",
+      "sha256": "8706322a5c793f281f5e70f7c6dad8dd0a31f7001af7e3a9ffdbf308885507ec"
+    },
+    {
+      "path": "pipeline/compare_years.py",
+      "sha256": "e80e8021cc6fcfa30dab3d12ded2023894c5a6fef9f9e392092871a4179a57d1"
+    },
+    {
+      "path": "pipeline/dashboard.css",
+      "sha256": "0f6131481f4705521947189a3a3d3dec3c20c77726014279e060678c422b43db"
+    },
+    {
+      "path": "pipeline/dashboard.js",
+      "sha256": "620e5af7a0e4a213cb49fa2e784f99351e3de16d740cb9807a155bdf04d5d0f1"
+    },
+    {
+      "path": "pipeline/dashboard.py",
+      "sha256": "af6e11ad0555467e73eabba9deed50bfb66a8ef9b653c10c2ac9db61988edc2f"
+    },
+    {
+      "path": "pipeline/dashboard_template.html",
+      "sha256": "ffc3d0b4fe260d3da200e15498b89f2c0664f73d8f85ecb5fbf1fffe2a1ded85"
+    },
+    {
+      "path": "pipeline/enrich.py",
+      "sha256": "1e449f78f335048f1ff87f6642162728b31df4e7e0614cc65e002d1187e48ab6"
+    },
+    {
+      "path": "pipeline/extend_years.py",
+      "sha256": "abe12120d78e1cb70a72f9c0e06c0c8e1c1a514b225e9284db62ca5d7c0fbe5d"
+    },
+    {
+      "path": "pipeline/fulltext.py",
+      "sha256": "fa90574365044f50bec63c581184bad0105fe1cad87a5661ca26ba2ce69c2b85"
+    },
+    {
+      "path": "pipeline/open_access.py",
+      "sha256": "32b8bc364e16413b2d4b01ee81a8b83599ec6ce2320f6ffd2404af5b045a1c93"
+    },
+    {
+      "path": "pipeline/pilot.py",
+      "sha256": "143dfd74e8685925348f869a15279f89d8a25a59c94a1abc3940bebc6f6bcf94"
+    },
+    {
+      "path": "pipeline/query.py",
+      "sha256": "2ad5ec6315ddadeb0921f1ac8afbd5c6a1aed505a2b094872b5f009700192587"
+    },
+    {
+      "path": "pipeline/render.py",
+      "sha256": "e6d0c7010166801d2ed7e193fcb7ce40ab3b2fa246c3b257035be8d50eef3dd1"
+    },
+    {
+      "path": "pipeline/reports.py",
+      "sha256": "9de6fba46bd91a3eac1d915998e2aa27e3101a8305cfbf871cd36baeaf6bf1f5"
+    },
+    {
+      "path": "pipeline/review_priority.py",
+      "sha256": "575697f1670ad4844d8643465b809bd77541c56e0c865280c7920578275c5db3"
+    },
+    {
+      "path": "pipeline/run.py",
+      "sha256": "a896a25595240c6fee264c91d30c1df9e578ad424d294c4916db4cdb8c527dc1"
+    },
+    {
+      "path": "pipeline/scopus.py",
+      "sha256": "e8b0e5521b394a6217abc2df1fd6dbf28e1001a7700a32796a355871b702513a"
+    },
+    {
+      "path": "pipeline/validate.py",
+      "sha256": "bfd1db62ba9db7d1648ab2d8ac275adab42f28c1731c86a1190df48efc6443e1"
+    },
+    {
+      "path": "queries/api_part_01.txt",
+      "sha256": "5d20444c62269c5010db5781434d29c9728d14ce150800db392d9d84acf075af"
+    },
+    {
+      "path": "queries/api_part_02.txt",
+      "sha256": "eff9f8795fae41e305062475170ca2fd19272610f55f110f925203ec32feb59a"
+    },
+    {
+      "path": "queries/api_part_03.txt",
+      "sha256": "40df482fdf47c7657241d8ee4d3559234da5a5c51ab407764c71909f972878f2"
+    },
+    {
+      "path": "queries/baseline_user.txt",
+      "sha256": "bd4bbb39eca4d30f68a20a287706615b7843804938cf1436777b1c6b6c570a9a"
+    },
+    {
+      "path": "queries/clause_register.csv",
+      "sha256": "dd0338a59beeebe9c65b8a8880c48a3de6297aee04561897011404cc90ee3e8a"
+    },
+    {
+      "path": "queries/core.txt",
+      "sha256": "5d20444c62269c5010db5781434d29c9728d14ce150800db392d9d84acf075af"
+    },
+    {
+      "path": "queries/families.json",
+      "sha256": "e731cb94f998c5180fc629ef41b05c5bc3459126bf5eaa288ac6f4263eae7aa0"
+    },
+    {
+      "path": "queries/recommended.txt",
+      "sha256": "d1b093aa5218404faefd906b710ccad5b6d2bb18637bfa88a87e0ca196da1145"
+    },
+    {
+      "path": "requirements-pdf.txt",
+      "sha256": "08ef6a9425d1f4d71b9af38b935534b63701cdd449a87acffcc1281608929239"
+    },
+    {
+      "path": "results/article_metadata.csv",
+      "sha256": "90a699a76f524e08b47467ee9b2afa9f24d0a5ffc7fa08ba5e62b5020cf484a2"
+    },
+    {
+      "path": "results/benchmark_provenance.json",
+      "sha256": "65dd72fb5c1982039fe33bd89e152f44ca14cc96638af42ff6edd5f035daeede"
+    },
+    {
+      "path": "results/cutoff_ties.csv",
+      "sha256": "9651cb2dfca0faf68cda041f103f273db1d58523ad88eb988b74d1b76ef3059c"
+    },
+    {
+      "path": "results/dashboard_browser_check.json",
+      "sha256": "3ac7becc0d7650996ca3788513a3b307dc7051b65ee069172c28f8a9d1f696fa"
+    },
+    {
+      "path": "results/dashboard_reproducibility_check.json",
+      "sha256": "d9262d68d785c6890c4404ba41076997ac59b18ea34a8c26f56639f38cc912a2"
+    },
+    {
+      "path": "results/decision_errors.csv",
+      "sha256": "745ac8a5ebcd527615fecf31f8908b016647881dafad34bf4678473d04bc7205"
+    },
+    {
+      "path": "results/downloaded_awaiting_review.csv",
+      "sha256": "03667b2c9466fd68c979a6ec9b36caadd56e11bcc9525e51c0b42724f2c28d88"
+    },
+    {
+      "path": "results/duplicate_log.csv",
+      "sha256": "2df71290510a7bc5f861bc9ffd00515f5a9cc115956009e20294ff8c0e5deaa5"
+    },
+    {
+      "path": "results/exploratory_comparison.csv",
+      "sha256": "e8e913635e201709332f6ffdf8cd65b186b765e519292f2ec5c9d152c9071c72"
+    },
+    {
+      "path": "results/exploratory_expansion_yield.csv",
+      "sha256": "735f4362680ff5b1963d90dd54890ad4f1a5087d1dd357222f6e7c36af4d0a28"
+    },
+    {
+      "path": "results/flow_counts.json",
+      "sha256": "5068708f1fc7329039661378ef5a9dc090c4eaf785383899eaad05e296c3e33c"
+    },
+    {
+      "path": "results/frame_manifest.json",
+      "sha256": "e5fee886279dedf2f275fbcb6c82e94f8728809fac9e775b563fa44f513fa08b"
+    },
+    {
+      "path": "results/frame_retrieval_manifest.json",
+      "sha256": "92ebd8692bcb20d8bc522facabd653c02eb1bc8fc8aa04fe26570d3abb318d4f"
+    },
+    {
+      "path": "results/fulltext_availability_summary.json",
+      "sha256": "a907758c6dd6170540bcf321f7f94d35b62dc402d7da40dc3aeb08c292a519b8"
+    },
+    {
+      "path": "results/fulltext_download_queue.csv",
+      "sha256": "0ac83ef36c33a11f5de0f3ba07ed965e7ad6e295125b9f3b0a3f9a91abefa308"
+    },
+    {
+      "path": "results/fulltext_review_round_author_changes.csv",
+      "sha256": "0147efbd0bf9854573e837007dcdb1f4a2b7574b2c5057a57338a691f20ffcb9"
+    },
+    {
+      "path": "results/fulltext_review_round_comparison.json",
+      "sha256": "cdf9313eaab1a5844393932ae2bcfbb047e63ec718a1477968511c950668de82"
+    },
+    {
+      "path": "results/geography_methods_paragraph.txt",
+      "sha256": "e04d0eef5050861847d7bc9afc8de50c343722e9eba50ad1dc7b6e401dc865ed"
+    },
+    {
+      "path": "results/historical_2016_2026/README.md",
+      "sha256": "68c6a1848cdb3aba16e4b9d31deea2e35b253e9b00e5c83c1590ce6596ddc43d"
+    },
+    {
+      "path": "results/historical_2016_2026/added_article_metadata.csv",
+      "sha256": "4411232627821fbf800d14f3e3868047b72b3256c6b15bcf772f385ddb93f223"
+    },
+    {
+      "path": "results/historical_2016_2026/baseline_retrieval_manifest.json",
+      "sha256": "5e4bec8a5a633e4416163916ac791a1bee5f57b7d9a05acd245c293ae9c084eb"
+    },
+    {
+      "path": "results/historical_2016_2026/enrichment_reproducibility_check.json",
+      "sha256": "34828c8e65e9e88ccfcbd1d2bf527f68d1332f855e2e43f11637f2e6d427738e"
+    },
+    {
+      "path": "results/historical_2016_2026/live_set_comparison.csv",
+      "sha256": "1070524d6179187bb514f13dd618f24a569710e38cbe406ba280104637178ef4"
+    },
+    {
+      "path": "results/historical_2016_2026/reproducibility_check.json",
+      "sha256": "76a6808d94b9a8223bf24611a4f7b271701fbe5b194d95cef5a8dc8dcaa3f0ad"
+    },
+    {
+      "path": "results/live_query_counts.csv",
+      "sha256": "63d86b5218d61023f4eddacdffca2974d803b84df6f0ba85ed519e68747a641c"
+    },
+    {
+      "path": "results/manual_download_queue.csv",
+      "sha256": "dd1854196578f12de01c91a84e03c088c32a53729cfdcbf653abe9f4d041afb8"
+    },
+    {
+      "path": "results/missing_source_ids.csv",
+      "sha256": "a8d8f7c960f2379ac342664e01837cf508615ebc3fe1076d56635d907012c5f8"
+    },
+    {
+      "path": "results/open_access_acquisition.csv",
+      "sha256": "6437c96aedda41f88bd2609259eca649c4dcadaf4fd93922e57686cf0cac2e5f"
+    },
+    {
+      "path": "results/open_access_summary.json",
+      "sha256": "f9161ad5c49e0831988ef67af70e4c76c0cf899a773524faa5c8345a41019faf"
+    },
+    {
+      "path": "results/punctuation_audit.csv",
+      "sha256": "250a8cc413a00fd8be1806c5e895c3e8df5f28e9d983cf33432d668da8e4d95f"
+    },
+    {
+      "path": "results/ranking_provisional.csv",
+      "sha256": "d16d090db1c1f42b6b7b4aa6a7717d04804421cd18590860fa33dde43d390c78"
+    },
+    {
+      "path": "results/ranking_reviewed_subset.csv",
+      "sha256": "a0076bc5c350a9cb53996b7aec05036aa692de71aa30c103cd23182074228fbd"
+    },
+    {
+      "path": "results/retrieval_manifest.json",
+      "sha256": "be3372971d72ffbe21d6e37d8b3bee3f646e55bb7063053dcab8685d77a18440"
+    },
+    {
+      "path": "results/seed_identity_review.csv",
+      "sha256": "ad905cfea34e018fd26ab3aa63d7dbe521136cf899e46add7f63fe9bac922dd3"
+    },
+    {
+      "path": "results/sensitivity/all_authors_top40.csv",
+      "sha256": "d86598857689c0a0d7b9b1c6c398b6d9bdb3d3d988fa01366fe28551d19cbd7a"
+    },
+    {
+      "path": "results/sensitivity/core_only_top40.csv",
+      "sha256": "ec1639540d5e2e0b9a469addf719c559ca1a25e5142bf6216758f27fcca1637b"
+    },
+    {
+      "path": "results/sensitivity/tess_only_top40.csv",
+      "sha256": "6b702217ab0483a208597874b3c249055b2380e5fe99231a3a5e9ed63b524f1b"
+    },
+    {
+      "path": "results/sensitivity/text_cue_only_top40.csv",
+      "sha256": "ecce10ad325663ba30cf8ee7a2cbe920e4d7758b835c82baa160c9009aeb2a5f"
+    },
+    {
+      "path": "results/sensitivity/venue_threshold_1_top40.csv",
+      "sha256": "f97f0e45f78a644efc3591c03910287035f73cbfa20d085ff963e92ac1abf5e0"
+    },
+    {
+      "path": "results/sensitivity/venue_threshold_3_top40.csv",
+      "sha256": "aeed893763aa7187038e3bcc1fff3062fa1d05df766eee2b185d666d6ece9595"
+    },
+    {
+      "path": "results/sensitivity/venue_threshold_5_top40.csv",
+      "sha256": "065e7fcdc134bdc728e2b99a7577e8728a6e09c68dcf4d2f2c06abb87170b63f"
+    },
+    {
+      "path": "results/sensitivity_summary.csv",
+      "sha256": "be21213fcc05cfd67aec4d7628c1c573ce756bd5c9f775e31d7070a738aab6b8"
+    },
+    {
+      "path": "results/site_manifest.json",
+      "sha256": "65503613499238707970845ab8f9df1f3c2cab09ed0728f08b193b17594e11a4"
+    },
+    {
+      "path": "results/top100_article_annotations.csv",
+      "sha256": "0f13bebbee244a56257bb50c98fc8b06558d4ed039145256759d4a6d1b0bcafb"
+    },
+    {
+      "path": "results/top100_author_article_links.csv",
+      "sha256": "7b09eb79040d990181a46e99a44ad692e21310af3478a4559a82094fd36d989e"
+    },
+    {
+      "path": "results/top100_cutoff_ties.csv",
+      "sha256": "e0fa80108495c21340c70582212ed1972a9ec743797fb5d159e063b1ee911b8e"
+    },
+    {
+      "path": "results/top100_enriched.csv",
+      "sha256": "f726d4de22dd0d06f204967986d2633a820e40da5287a814587605e809ea53fe"
+    },
+    {
+      "path": "results/top100_enrichment_summary.json",
+      "sha256": "17a187beea160036043409632cb816d1396d0e5998e0bb63de287da3762e2dae"
+    },
+    {
+      "path": "results/top100_provisional.csv",
+      "sha256": "bda7bb3a3fd80998b8609e835d13c55b7abd243ec07b584decad6735e3d4d046"
+    },
+    {
+      "path": "results/top40_article_annotations.csv",
+      "sha256": "510e38a41688766f21b48243e5d545e85b819db93ef7d7e7244259b703205d01"
+    },
+    {
+      "path": "results/top40_author_article_links.csv",
+      "sha256": "c7962fadca9683ffd81b6625472f8e3fcdb140b1f9e0175dcb92d90f28cd0a04"
+    },
+    {
+      "path": "results/top40_enriched.csv",
+      "sha256": "ff57c80ad3608585d076dde65364c81bf4ec0c5c89040790fc0760d078634577"
+    },
+    {
+      "path": "results/top40_enrichment_summary.json",
+      "sha256": "ffa85616d60416cfe30850d1c7a323fe48199ffc5a0a425604b8df15c5d83cda"
+    },
+    {
+      "path": "results/top40_provisional.csv",
+      "sha256": "f97f0e45f78a644efc3591c03910287035f73cbfa20d085ff963e92ac1abf5e0"
+    },
+    {
+      "path": "results/top50_priority_downloads.csv",
+      "sha256": "09f79df34558b596e4fdc820a5cd65508fafd292947c25bae0a4a2cec70e9a33"
+    },
+    {
+      "path": "results/top50_review_priority_summary.json",
+      "sha256": "b8178a6f336a27c0d2466d071467ffefe6adeecbc85639c2bc8602ed2c7bd817"
+    },
+    {
+      "path": "results/validation_sample_ids.csv",
+      "sha256": "8e41cfef22be34d5550c175beceddad27137d5e0e8fbe442f28707b8c82d57f4"
+    },
+    {
+      "path": "results/venue_frame.csv",
+      "sha256": "ad56e395484102a4b2da1189e75de9bdab77c5c750ab83e6e2bef06d02078074"
+    },
+    {
+      "path": "results/year_window_author_comparison.csv",
+      "sha256": "af622c0135198683648538b619a426fb73688e9a5cfc2e121f3b10fb9b895959"
+    },
+    {
+      "path": "results/year_window_comparison.json",
+      "sha256": "82742b4965da28ab30f4600fecfd4b0cc5c78b00946fa61b448b85ee8c15c6d7"
+    },
+    {
+      "path": "results/year_window_tie_comparison.csv",
+      "sha256": "b21a3c643a5607532d1803235e4669405b8be8d7677fc383a09f90295db36d9c"
+    },
+    {
+      "path": "site/.nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "site/EXECUTIVE_SUMMARY.html",
+      "sha256": "2cf2b58b133a97c0a5fef3fe9a994eeed571bc827de51d80ab79a156b5154fc9"
+    },
+    {
+      "path": "site/EXECUTIVE_SUMMARY.md",
+      "sha256": "2dc02a841e7a8d8d1b18ca03fc5d1123642f8ce529643e8ead01a438054535fa"
+    },
+    {
+      "path": "site/FULLTEXT_REVIEW.html",
+      "sha256": "95addfb4be21285e3927866fbb445a2ef2cbc31668e0122f76a9a8e8d90fa253"
+    },
+    {
+      "path": "site/FULLTEXT_REVIEW.md",
+      "sha256": "e2abc3b669b5062b6a2107ad58189ad177e521fdd1161bc142333fc455c82881"
+    },
+    {
+      "path": "site/GEOGRAPHY_REPORT.html",
+      "sha256": "20352b2af76783fd3361801f8b54ea433a667c085998d74f8bad9f15abd50f2a"
+    },
+    {
+      "path": "site/GEOGRAPHY_REPORT.md",
+      "sha256": "de310733d2f298b6d3d680d0002cea4d1f9d29828c346a8f83ca631fcadbcd40"
+    },
+    {
+      "path": "site/MANUAL_DOWNLOADS.html",
+      "sha256": "6bbb6551293040350fe513a80cd28bc9541f33b8bea369f2c7c09419ef4250aa"
+    },
+    {
+      "path": "site/MANUAL_DOWNLOADS.md",
+      "sha256": "1aec76e4088db37134dbdecffd90578625c43d3564edaa5a20991db2c5c6c25b"
+    },
+    {
+      "path": "site/PRIORITY_DOWNLOADS.html",
+      "sha256": "e544068bacef303b15ce37821b42da0d03bc5cdb28ee3edf7866a8c8d1deceb2"
+    },
+    {
+      "path": "site/PRIORITY_DOWNLOADS.md",
+      "sha256": "25542549ce18224b3dbc30df2af8515e1a6da79fcd02e44a129ee8f3814ba289"
+    },
+    {
+      "path": "site/QUERY_REPORT.html",
+      "sha256": "ff70d2820b47048a7b0632aef79162fb70663664af812cd7c07caf5b24aa5abd"
+    },
+    {
+      "path": "site/QUERY_REPORT.md",
+      "sha256": "c581dcc41ef6899c334f71030893fbc290024cd16e8b21dc3c316ad510a6ebbf"
+    },
+    {
+      "path": "site/README.md",
+      "sha256": "02285d1457abdb81b1f7be55c52682982383f0ad6e8467ffdd8c29bb510d86e0"
+    },
+    {
+      "path": "site/SUPPORTING_INFORMATION.html",
+      "sha256": "e901dd12317a39dceb74b9c862c74148246f1857a2f28d6b4d86cbd7f1a93607"
+    },
+    {
+      "path": "site/SUPPORTING_INFORMATION.md",
+      "sha256": "cf9521d64618f8e8e15f6c7c4c901aecce883f6f4ffe16f9d91bdd22bceb86da"
+    },
+    {
+      "path": "site/TOP100.html",
+      "sha256": "d4b3cec307ab04731a64ba0e86ef1ded98aad9da9c3ec15d60b7b91c634168a5"
+    },
+    {
+      "path": "site/TOP40.html",
+      "sha256": "d4b3cec307ab04731a64ba0e86ef1ded98aad9da9c3ec15d60b7b91c634168a5"
+    },
+    {
+      "path": "site/YEAR_WINDOW_COMPARISON.html",
+      "sha256": "e8fd0d83c360daf0331866326c0a87e5d8b0ebe8365bd838b05b03c635789eb7"
+    },
+    {
+      "path": "site/YEAR_WINDOW_COMPARISON.md",
+      "sha256": "9f6e20110d82030cc05d2b8d032ad3c829530dbf15218e5eda8cf60215213b68"
+    },
+    {
+      "path": "site/index.html",
+      "sha256": "d4b3cec307ab04731a64ba0e86ef1ded98aad9da9c3ec15d60b7b91c634168a5"
+    },
+    {
+      "path": "site/queries/recommended.txt",
+      "sha256": "d1b093aa5218404faefd906b710ccad5b6d2bb18637bfa88a87e0ca196da1145"
+    },
+    {
+      "path": "site/results/downloaded_awaiting_review.csv",
+      "sha256": "03667b2c9466fd68c979a6ec9b36caadd56e11bcc9525e51c0b42724f2c28d88"
+    },
+    {
+      "path": "site/results/fulltext_download_queue.csv",
+      "sha256": "0ac83ef36c33a11f5de0f3ba07ed965e7ad6e295125b9f3b0a3f9a91abefa308"
+    },
+    {
+      "path": "site/results/manual_download_queue.csv",
+      "sha256": "dd1854196578f12de01c91a84e03c088c32a53729cfdcbf653abe9f4d041afb8"
+    },
+    {
+      "path": "site/results/top100_article_annotations.csv",
+      "sha256": "0f13bebbee244a56257bb50c98fc8b06558d4ed039145256759d4a6d1b0bcafb"
+    },
+    {
+      "path": "site/results/top100_author_article_links.csv",
+      "sha256": "7b09eb79040d990181a46e99a44ad692e21310af3478a4559a82094fd36d989e"
+    },
+    {
+      "path": "site/results/top100_cutoff_ties.csv",
+      "sha256": "e0fa80108495c21340c70582212ed1972a9ec743797fb5d159e063b1ee911b8e"
+    },
+    {
+      "path": "site/results/top100_enriched.csv",
+      "sha256": "f726d4de22dd0d06f204967986d2633a820e40da5287a814587605e809ea53fe"
+    },
+    {
+      "path": "site/results/top100_provisional.csv",
+      "sha256": "bda7bb3a3fd80998b8609e835d13c55b7abd243ec07b584decad6735e3d4d046"
+    },
+    {
+      "path": "site/results/top50_priority_downloads.csv",
+      "sha256": "09f79df34558b596e4fdc820a5cd65508fafd292947c25bae0a4a2cec70e9a33"
+    },
+    {
+      "path": "site/results/year_window_author_comparison.csv",
+      "sha256": "af622c0135198683648538b619a426fb73688e9a5cfc2e121f3b10fb9b895959"
+    },
+    {
+      "path": "site/results/year_window_tie_comparison.csv",
+      "sha256": "b21a3c643a5607532d1803235e4669405b8be8d7677fc383a09f90295db36d9c"
+    },
+    {
+      "path": "tests/browser_check.mjs",
+      "sha256": "a3c99ed011d9d1ca8d91b520f94c7130239f894648595e1efce79779ef41675a"
+    },
+    {
+      "path": "tests/test_acquisition.py",
+      "sha256": "9a88a3f7dcee9a89de4eb75a9d1c9a9352d73fad967f85f6fae0ba64935aa5b8"
+    },
+    {
+      "path": "tests/test_dashboard.py",
+      "sha256": "9fa03e0b22c7c5d27ef31cba8a4c85be467a07eed01a4c36f0b834063803b7d1"
+    },
+    {
+      "path": "tests/test_enrich.py",
+      "sha256": "0074422b786445171e998cbcd2ad521958b6aaa40c9b4c0980ce67604cc5f9fb"
+    },
+    {
+      "path": "tests/test_pipeline.py",
+      "sha256": "7a2f1006256796f3df7a81907bf3fc5ef0c4adce0449217f419cc65cf34f96a0"
+    },
+    {
+      "path": "tests/test_priority.py",
+      "sha256": "8f911cce286f36163a32427a69d7f5ff5137ab8db0c11f1f0f99a1dfd205f9f7"
+    },
+    {
+      "path": "tests/test_render.py",
+      "sha256": "9d8d4c711f4a2bbfdf3b47c483dd5d3db23c533073ed1ec5a7837b7bc3873d26"
+    },
+    {
+      "path": "tests/test_years_site.py",
+      "sha256": "dadb437a9e3332badd6b32d293867114ac509855e52e9f829c5a442b8052818e"
+    }
+  ],
+  "enrichment_status": "100 sourced affiliation profiles joined to 870 distinct annotated articles; AI-assisted geography awaiting independent validation",
+  "last_updated": "2026-09-09",
+  "dashboard": "TOP100.html",
+  "dashboard_legacy_entrypoint": "TOP40.html",
+  "geography_status": "870 articles annotated; 393 US-associated; 127 unclear; 65 page-cited full-text decisions; AI-assisted and awaiting independent validation",
+  "geography_scope": "100-person pool selected by distinct first/last-author candidate count; 65 additional cutoff-tied authors outside pool",
+  "affiliation_status": "100 profiles with sources; dated and conflicting-role entries flagged",
+  "browser_validation": "Ranking and Coauthor summary tabs, literal query and copy control, keyboard navigation, all 12 columns in both directions, article filters, manual-only download queue, checklist storage, CSV and mobile layouts",
+  "reproducibility": "36 outputs reproduced byte-for-byte; initial geography metadata and earlier full-text decisions preserved",
+  "retrieval_dates": [
+    "2026-09-08",
+    "2026-09-09"
+  ],
+  "publication_years": [
+    2010,
+    2026
+  ],
+  "updated_at": "2026-09-09",
+  "baseline_snapshot": "private/snapshots/2016_2026_before_extension",
+  "website_staged": true,
+  "open_access_acquisition": "182 initial records checked; 48 public article PDFs acquired plus two supplements; one abstract-only file flagged; nine new user-supplied PDFs organized; 125 articles still lack usable full text",
+  "website_publication_status": "Prepared for initial GitHub Actions deployment",
+  "repository": "https://github.com/davidbroska/survey-experiment-researchers",
+  "dashboard_url": "https://davidbroska.github.io/survey-experiment-researchers/"
+}

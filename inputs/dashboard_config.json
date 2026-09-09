@@ -1,0 +1,7 @@
+{
+  "pool_size": 100,
+  "include_cutoff_ties": false,
+  "download_batch_size": 10,
+  "geography_unit": "articles with evidence of at least one US experimental sample",
+  "default_sort": "n_articles"
+}

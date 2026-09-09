@@ -1,0 +1,1 @@
+Historical audits for the 2016–2026 snapshot. These do not describe the current 2010–2026 retrieval. The current year-window comparison is in ../year_window_tie_comparison.csv. The live comparator can be regenerated for the current window with pipeline/compare_live.py.

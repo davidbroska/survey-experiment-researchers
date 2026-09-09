@@ -1,0 +1,890 @@
+{
+  "query_sha256": "923d3eeecd4b576223b4706bed3505b4b27a6b6d8d6cb09fe624dcc9f199028d",
+  "frame_sha256": "ad56e395484102a4b2da1189e75de9bdab77c5c750ab83e6e2bef06d02078074",
+  "n_articles": 9111,
+  "n_in_frame": 7305,
+  "complete": true,
+  "parts": [
+    {
+      "query": "(\n  (TITLE-ABS-KEY({survey experiment} OR {survey experiments} OR {survey-based experiment} OR {survey-based experiments} OR {survey based experiment} OR {survey based experiments} OR {survey-embedded experiment} OR {survey-embedded experiments} OR {survey embedded experiment} OR {survey embedded experiments} OR {survey-experimental} OR {survey experimental}))\n  OR (TITLE-ABS-KEY({vignette experiment} OR {vignette experiments} OR {experimental vignette} OR {experimental vignettes} OR {vignette-based experiment} OR {vignette-based experiments} OR {vignette based experiment} OR {vignette based experiments}))\n  OR (TITLE-ABS-KEY({framing experiment} OR {framing experiments} OR {information provision experiment} OR {information provision experiments} OR {information-provision experiment} OR {information-provision experiments} OR {scenario-based experiment} OR {scenario-based experiments} OR {scenario based experiment} OR {scenario based experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({vignette-based survey} OR {vignette-based surveys} OR {vignette based survey} OR {vignette based surveys}) AND TITLE-ABS-KEY(random* OR experiment*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2016",
+      "expected": 208,
+      "retrieved": 208,
+      "complete": true,
+      "dates": [
+        "2026-09-08T09:39:31.017835+00:00",
+        "2026-09-08T09:39:32.836479+00:00",
+        "2026-09-08T09:39:34.398361+00:00",
+        "2026-09-08T09:39:36.184183+00:00",
+        "2026-09-08T09:39:37.834301+00:00",
+        "2026-09-08T09:39:39.516822+00:00",
+        "2026-09-08T09:39:42.819135+00:00",
+        "2026-09-08T09:39:44.652207+00:00",
+        "2026-09-08T09:39:45.922838+00:00"
+      ],
+      "part": 0
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({survey experiment} OR {survey experiments} OR {survey-based experiment} OR {survey-based experiments} OR {survey based experiment} OR {survey based experiments} OR {survey-embedded experiment} OR {survey-embedded experiments} OR {survey embedded experiment} OR {survey embedded experiments} OR {survey-experimental} OR {survey experimental}))\n  OR (TITLE-ABS-KEY({vignette experiment} OR {vignette experiments} OR {experimental vignette} OR {experimental vignettes} OR {vignette-based experiment} OR {vignette-based experiments} OR {vignette based experiment} OR {vignette based experiments}))\n  OR (TITLE-ABS-KEY({framing experiment} OR {framing experiments} OR {information provision experiment} OR {information provision experiments} OR {information-provision experiment} OR {information-provision experiments} OR {scenario-based experiment} OR {scenario-based experiments} OR {scenario based experiment} OR {scenario based experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({vignette-based survey} OR {vignette-based surveys} OR {vignette based survey} OR {vignette based surveys}) AND TITLE-ABS-KEY(random* OR experiment*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2017",
+      "expected": 225,
+      "retrieved": 225,
+      "complete": true,
+      "dates": [
+        "2026-09-08T09:39:30.991408+00:00",
+        "2026-09-08T09:39:32.834578+00:00",
+        "2026-09-08T09:39:34.582463+00:00",
+        "2026-09-08T09:39:36.272803+00:00",
+        "2026-09-08T09:39:38.337073+00:00",
+        "2026-09-08T09:39:40.212094+00:00",
+        "2026-09-08T09:39:41.996449+00:00",
+        "2026-09-08T09:39:43.735512+00:00",
+        "2026-09-08T09:39:45.568928+00:00"
+      ],
+      "part": 1
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({survey experiment} OR {survey experiments} OR {survey-based experiment} OR {survey-based experiments} OR {survey based experiment} OR {survey based experiments} OR {survey-embedded experiment} OR {survey-embedded experiments} OR {survey embedded experiment} OR {survey embedded experiments} OR {survey-experimental} OR {survey experimental}))\n  OR (TITLE-ABS-KEY({vignette experiment} OR {vignette experiments} OR {experimental vignette} OR {experimental vignettes} OR {vignette-based experiment} OR {vignette-based experiments} OR {vignette based experiment} OR {vignette based experiments}))\n  OR (TITLE-ABS-KEY({framing experiment} OR {framing experiments} OR {information provision experiment} OR {information provision experiments} OR {information-provision experiment} OR {information-provision experiments} OR {scenario-based experiment} OR {scenario-based experiments} OR {scenario based experiment} OR {scenario based experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({vignette-based survey} OR {vignette-based surveys} OR {vignette based survey} OR {vignette based surveys}) AND TITLE-ABS-KEY(random* OR experiment*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2018",
+      "expected": 298,
+      "retrieved": 298,
+      "complete": true,
+      "dates": [
+        "2026-09-08T09:39:31.055731+00:00",
+        "2026-09-08T09:39:32.690500+00:00",
+        "2026-09-08T09:39:34.587983+00:00",
+        "2026-09-08T09:39:36.308091+00:00",
+        "2026-09-08T09:39:37.881140+00:00",
+        "2026-09-08T09:39:39.637921+00:00",
+        "2026-09-08T09:39:41.513081+00:00",
+        "2026-09-08T09:39:43.314541+00:00",
+        "2026-09-08T09:39:44.948501+00:00",
+        "2026-09-08T09:39:46.717379+00:00",
+        "2026-09-08T09:39:48.718409+00:00",
+        "2026-09-08T09:39:50.327751+00:00"
+      ],
+      "part": 2
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({survey experiment} OR {survey experiments} OR {survey-based experiment} OR {survey-based experiments} OR {survey based experiment} OR {survey based experiments} OR {survey-embedded experiment} OR {survey-embedded experiments} OR {survey embedded experiment} OR {survey embedded experiments} OR {survey-experimental} OR {survey experimental}))\n  OR (TITLE-ABS-KEY({vignette experiment} OR {vignette experiments} OR {experimental vignette} OR {experimental vignettes} OR {vignette-based experiment} OR {vignette-based experiments} OR {vignette based experiment} OR {vignette based experiments}))\n  OR (TITLE-ABS-KEY({framing experiment} OR {framing experiments} OR {information provision experiment} OR {information provision experiments} OR {information-provision experiment} OR {information-provision experiments} OR {scenario-based experiment} OR {scenario-based experiments} OR {scenario based experiment} OR {scenario based experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({vignette-based survey} OR {vignette-based surveys} OR {vignette based survey} OR {vignette based surveys}) AND TITLE-ABS-KEY(random* OR experiment*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2019",
+      "expected": 383,
+      "retrieved": 383,
+      "complete": true,
+      "dates": [
+        "2026-09-08T09:39:30.995592+00:00",
+        "2026-09-08T09:39:32.822140+00:00",
+        "2026-09-08T09:39:34.483453+00:00",
+        "2026-09-08T09:39:36.185355+00:00",
+        "2026-09-08T09:39:37.776235+00:00",
+        "2026-09-08T09:39:39.498460+00:00",
+        "2026-09-08T09:39:41.490580+00:00",
+        "2026-09-08T09:39:43.187871+00:00",
+        "2026-09-08T09:39:44.928762+00:00",
+        "2026-09-08T09:39:46.783250+00:00",
+        "2026-09-08T09:39:48.555884+00:00",
+        "2026-09-08T09:39:50.196510+00:00",
+        "2026-09-08T09:39:51.883559+00:00",
+        "2026-09-08T09:39:53.509933+00:00",
+        "2026-09-08T09:39:55.194046+00:00",
+        "2026-09-08T09:39:56.503490+00:00"
+      ],
+      "part": 3
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({survey experiment} OR {survey experiments} OR {survey-based experiment} OR {survey-based experiments} OR {survey based experiment} OR {survey based experiments} OR {survey-embedded experiment} OR {survey-embedded experiments} OR {survey embedded experiment} OR {survey embedded experiments} OR {survey-experimental} OR {survey experimental}))\n  OR (TITLE-ABS-KEY({vignette experiment} OR {vignette experiments} OR {experimental vignette} OR {experimental vignettes} OR {vignette-based experiment} OR {vignette-based experiments} OR {vignette based experiment} OR {vignette based experiments}))\n  OR (TITLE-ABS-KEY({framing experiment} OR {framing experiments} OR {information provision experiment} OR {information provision experiments} OR {information-provision experiment} OR {information-provision experiments} OR {scenario-based experiment} OR {scenario-based experiments} OR {scenario based experiment} OR {scenario based experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({vignette-based survey} OR {vignette-based surveys} OR {vignette based survey} OR {vignette based surveys}) AND TITLE-ABS-KEY(random* OR experiment*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2020",
+      "expected": 498,
+      "retrieved": 498,
+      "complete": true,
+      "dates": [
+        "2026-09-08T09:39:47.311974+00:00",
+        "2026-09-08T09:39:49.288945+00:00",
+        "2026-09-08T09:39:50.974399+00:00",
+        "2026-09-08T09:39:52.738464+00:00",
+        "2026-09-08T09:39:54.308786+00:00",
+        "2026-09-08T09:39:56.180546+00:00",
+        "2026-09-08T09:39:57.984734+00:00",
+        "2026-09-08T09:39:59.807202+00:00",
+        "2026-09-08T09:40:01.689223+00:00",
+        "2026-09-08T09:40:03.479500+00:00",
+        "2026-09-08T09:40:05.206915+00:00",
+        "2026-09-08T09:40:06.988561+00:00",
+        "2026-09-08T09:40:08.877054+00:00",
+        "2026-09-08T09:40:10.592794+00:00",
+        "2026-09-08T09:40:12.488752+00:00",
+        "2026-09-08T09:40:14.259512+00:00",
+        "2026-09-08T09:40:15.901516+00:00",
+        "2026-09-08T09:40:17.582540+00:00",
+        "2026-09-08T09:40:19.300999+00:00",
+        "2026-09-08T09:40:21.049262+00:00"
+      ],
+      "part": 4
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({survey experiment} OR {survey experiments} OR {survey-based experiment} OR {survey-based experiments} OR {survey based experiment} OR {survey based experiments} OR {survey-embedded experiment} OR {survey-embedded experiments} OR {survey embedded experiment} OR {survey embedded experiments} OR {survey-experimental} OR {survey experimental}))\n  OR (TITLE-ABS-KEY({vignette experiment} OR {vignette experiments} OR {experimental vignette} OR {experimental vignettes} OR {vignette-based experiment} OR {vignette-based experiments} OR {vignette based experiment} OR {vignette based experiments}))\n  OR (TITLE-ABS-KEY({framing experiment} OR {framing experiments} OR {information provision experiment} OR {information provision experiments} OR {information-provision experiment} OR {information-provision experiments} OR {scenario-based experiment} OR {scenario-based experiments} OR {scenario based experiment} OR {scenario based experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({vignette-based survey} OR {vignette-based surveys} OR {vignette based survey} OR {vignette based surveys}) AND TITLE-ABS-KEY(random* OR experiment*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2021",
+      "expected": 671,
+      "retrieved": 671,
+      "complete": true,
+      "dates": [
+        "2026-09-08T09:39:48.027409+00:00",
+        "2026-09-08T09:39:49.803890+00:00",
+        "2026-09-08T09:39:51.473054+00:00",
+        "2026-09-08T09:39:53.283210+00:00",
+        "2026-09-08T09:39:55.034673+00:00",
+        "2026-09-08T09:39:56.936785+00:00",
+        "2026-09-08T09:39:58.731325+00:00",
+        "2026-09-08T09:40:00.974340+00:00",
+        "2026-09-08T09:40:02.872002+00:00",
+        "2026-09-08T09:40:04.804821+00:00",
+        "2026-09-08T09:40:06.900882+00:00",
+        "2026-09-08T09:40:08.779797+00:00",
+        "2026-09-08T09:40:10.585526+00:00",
+        "2026-09-08T09:40:12.333064+00:00",
+        "2026-09-08T09:40:13.916186+00:00",
+        "2026-09-08T09:40:15.625618+00:00",
+        "2026-09-08T09:40:17.591219+00:00",
+        "2026-09-08T09:40:19.247577+00:00",
+        "2026-09-08T09:40:21.056635+00:00",
+        "2026-09-08T09:40:22.825230+00:00",
+        "2026-09-08T09:40:24.716795+00:00",
+        "2026-09-08T09:40:26.517324+00:00",
+        "2026-09-08T09:40:28.423845+00:00",
+        "2026-09-08T09:40:29.991074+00:00",
+        "2026-09-08T09:40:31.871142+00:00",
+        "2026-09-08T09:40:33.673165+00:00",
+        "2026-09-08T09:40:35.200171+00:00"
+      ],
+      "part": 5
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({survey experiment} OR {survey experiments} OR {survey-based experiment} OR {survey-based experiments} OR {survey based experiment} OR {survey based experiments} OR {survey-embedded experiment} OR {survey-embedded experiments} OR {survey embedded experiment} OR {survey embedded experiments} OR {survey-experimental} OR {survey experimental}))\n  OR (TITLE-ABS-KEY({vignette experiment} OR {vignette experiments} OR {experimental vignette} OR {experimental vignettes} OR {vignette-based experiment} OR {vignette-based experiments} OR {vignette based experiment} OR {vignette based experiments}))\n  OR (TITLE-ABS-KEY({framing experiment} OR {framing experiments} OR {information provision experiment} OR {information provision experiments} OR {information-provision experiment} OR {information-provision experiments} OR {scenario-based experiment} OR {scenario-based experiments} OR {scenario based experiment} OR {scenario based experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({vignette-based survey} OR {vignette-based surveys} OR {vignette based survey} OR {vignette based surveys}) AND TITLE-ABS-KEY(random* OR experiment*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2022",
+      "expected": 804,
+      "retrieved": 804,
+      "complete": true,
+      "dates": [
+        "2026-09-08T09:39:51.938685+00:00",
+        "2026-09-08T09:39:53.789122+00:00",
+        "2026-09-08T09:39:55.608526+00:00",
+        "2026-09-08T09:39:57.279520+00:00",
+        "2026-09-08T09:39:59.045402+00:00",
+        "2026-09-08T09:40:00.976568+00:00",
+        "2026-09-08T09:40:02.706881+00:00",
+        "2026-09-08T09:40:04.484540+00:00",
+        "2026-09-08T09:40:06.586404+00:00",
+        "2026-09-08T09:40:08.302256+00:00",
+        "2026-09-08T09:40:10.072767+00:00",
+        "2026-09-08T09:40:11.778840+00:00",
+        "2026-09-08T09:40:13.382082+00:00",
+        "2026-09-08T09:40:14.987080+00:00",
+        "2026-09-08T09:40:16.886840+00:00",
+        "2026-09-08T09:40:18.703484+00:00",
+        "2026-09-08T09:40:20.680498+00:00",
+        "2026-09-08T09:40:22.676793+00:00",
+        "2026-09-08T09:40:24.436577+00:00",
+        "2026-09-08T09:40:26.309184+00:00",
+        "2026-09-08T09:40:28.212047+00:00",
+        "2026-09-08T09:40:29.981755+00:00",
+        "2026-09-08T09:40:31.779147+00:00",
+        "2026-09-08T09:40:33.479390+00:00",
+        "2026-09-08T09:40:35.198280+00:00",
+        "2026-09-08T09:40:36.885238+00:00",
+        "2026-09-08T09:40:38.891793+00:00",
+        "2026-09-08T09:40:40.631316+00:00",
+        "2026-09-08T09:40:42.280342+00:00",
+        "2026-09-08T09:40:44.119159+00:00",
+        "2026-09-08T09:40:45.890549+00:00",
+        "2026-09-08T09:40:47.471806+00:00",
+        "2026-09-08T09:40:48.634514+00:00"
+      ],
+      "part": 6
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({survey experiment} OR {survey experiments} OR {survey-based experiment} OR {survey-based experiments} OR {survey based experiment} OR {survey based experiments} OR {survey-embedded experiment} OR {survey-embedded experiments} OR {survey embedded experiment} OR {survey embedded experiments} OR {survey-experimental} OR {survey experimental}))\n  OR (TITLE-ABS-KEY({vignette experiment} OR {vignette experiments} OR {experimental vignette} OR {experimental vignettes} OR {vignette-based experiment} OR {vignette-based experiments} OR {vignette based experiment} OR {vignette based experiments}))\n  OR (TITLE-ABS-KEY({framing experiment} OR {framing experiments} OR {information provision experiment} OR {information provision experiments} OR {information-provision experiment} OR {information-provision experiments} OR {scenario-based experiment} OR {scenario-based experiments} OR {scenario based experiment} OR {scenario based experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({vignette-based survey} OR {vignette-based surveys} OR {vignette based survey} OR {vignette based surveys}) AND TITLE-ABS-KEY(random* OR experiment*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2023",
+      "expected": 900,
+      "retrieved": 900,
+      "complete": true,
+      "dates": [
+        "2026-09-08T09:39:58.217558+00:00",
+        "2026-09-08T09:40:00.918933+00:00",
+        "2026-09-08T09:40:02.709084+00:00",
+        "2026-09-08T09:40:04.487293+00:00",
+        "2026-09-08T09:40:06.195964+00:00",
+        "2026-09-08T09:40:07.975732+00:00",
+        "2026-09-08T09:40:09.783339+00:00",
+        "2026-09-08T09:40:11.763162+00:00",
+        "2026-09-08T09:40:13.383081+00:00",
+        "2026-09-08T09:40:14.985160+00:00",
+        "2026-09-08T09:40:16.857539+00:00",
+        "2026-09-08T09:40:18.701806+00:00",
+        "2026-09-08T09:40:20.525009+00:00",
+        "2026-09-08T09:40:22.515600+00:00",
+        "2026-09-08T09:40:24.196586+00:00",
+        "2026-09-08T09:40:26.581181+00:00",
+        "2026-09-08T09:40:28.403899+00:00",
+        "2026-09-08T09:40:30.209139+00:00",
+        "2026-09-08T09:40:32.183698+00:00",
+        "2026-09-08T09:40:34.036230+00:00",
+        "2026-09-08T09:40:35.759952+00:00",
+        "2026-09-08T09:40:37.491970+00:00",
+        "2026-09-08T09:40:39.115582+00:00",
+        "2026-09-08T09:40:40.676127+00:00",
+        "2026-09-08T09:40:42.282395+00:00",
+        "2026-09-08T09:40:44.117393+00:00",
+        "2026-09-08T09:40:45.870978+00:00",
+        "2026-09-08T09:40:47.476671+00:00",
+        "2026-09-08T09:40:49.102731+00:00",
+        "2026-09-08T09:40:50.802264+00:00",
+        "2026-09-08T09:40:52.454116+00:00",
+        "2026-09-08T09:40:54.261604+00:00",
+        "2026-09-08T09:40:55.907747+00:00",
+        "2026-09-08T09:40:57.580940+00:00",
+        "2026-09-08T09:40:59.513600+00:00",
+        "2026-09-08T09:41:01.184945+00:00"
+      ],
+      "part": 7
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({survey experiment} OR {survey experiments} OR {survey-based experiment} OR {survey-based experiments} OR {survey based experiment} OR {survey based experiments} OR {survey-embedded experiment} OR {survey-embedded experiments} OR {survey embedded experiment} OR {survey embedded experiments} OR {survey-experimental} OR {survey experimental}))\n  OR (TITLE-ABS-KEY({vignette experiment} OR {vignette experiments} OR {experimental vignette} OR {experimental vignettes} OR {vignette-based experiment} OR {vignette-based experiments} OR {vignette based experiment} OR {vignette based experiments}))\n  OR (TITLE-ABS-KEY({framing experiment} OR {framing experiments} OR {information provision experiment} OR {information provision experiments} OR {information-provision experiment} OR {information-provision experiments} OR {scenario-based experiment} OR {scenario-based experiments} OR {scenario based experiment} OR {scenario based experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({vignette-based survey} OR {vignette-based surveys} OR {vignette based survey} OR {vignette based surveys}) AND TITLE-ABS-KEY(random* OR experiment*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2024",
+      "expected": 1074,
+      "retrieved": 1074,
+      "complete": true,
+      "dates": [
+        "2026-09-08T09:40:22.845340+00:00",
+        "2026-09-08T09:40:24.718967+00:00",
+        "2026-09-08T09:40:26.531301+00:00",
+        "2026-09-08T09:40:28.387627+00:00",
+        "2026-09-08T09:40:30.204656+00:00",
+        "2026-09-08T09:40:32.093478+00:00",
+        "2026-09-08T09:40:33.893459+00:00",
+        "2026-09-08T09:40:35.809503+00:00",
+        "2026-09-08T09:40:37.820010+00:00",
+        "2026-09-08T09:40:39.483836+00:00",
+        "2026-09-08T09:40:41.161912+00:00",
+        "2026-09-08T09:40:42.801729+00:00",
+        "2026-09-08T09:40:44.694862+00:00",
+        "2026-09-08T09:40:46.419282+00:00",
+        "2026-09-08T09:40:48.102084+00:00",
+        "2026-09-08T09:40:49.880441+00:00",
+        "2026-09-08T09:40:51.702724+00:00",
+        "2026-09-08T09:40:53.548456+00:00",
+        "2026-09-08T09:40:55.186379+00:00",
+        "2026-09-08T09:40:56.748319+00:00",
+        "2026-09-08T09:40:58.351746+00:00",
+        "2026-09-08T09:41:00.039585+00:00",
+        "2026-09-08T09:41:01.808954+00:00",
+        "2026-09-08T09:41:03.791952+00:00",
+        "2026-09-08T09:41:05.661618+00:00",
+        "2026-09-08T09:41:07.512966+00:00",
+        "2026-09-08T09:41:09.315576+00:00",
+        "2026-09-08T09:41:11.220748+00:00",
+        "2026-09-08T09:41:13.084632+00:00",
+        "2026-09-08T09:41:14.837172+00:00",
+        "2026-09-08T09:41:16.494210+00:00",
+        "2026-09-08T09:41:18.190114+00:00",
+        "2026-09-08T09:41:19.991171+00:00",
+        "2026-09-08T09:41:21.901636+00:00",
+        "2026-09-08T09:41:23.860318+00:00",
+        "2026-09-08T09:41:25.875431+00:00",
+        "2026-09-08T09:41:27.794145+00:00",
+        "2026-09-08T09:41:29.600106+00:00",
+        "2026-09-08T09:41:31.550777+00:00",
+        "2026-09-08T09:41:33.390372+00:00",
+        "2026-09-08T09:41:36.386743+00:00",
+        "2026-09-08T09:41:38.114153+00:00",
+        "2026-09-08T09:41:39.773252+00:00"
+      ],
+      "part": 8
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({survey experiment} OR {survey experiments} OR {survey-based experiment} OR {survey-based experiments} OR {survey based experiment} OR {survey based experiments} OR {survey-embedded experiment} OR {survey-embedded experiments} OR {survey embedded experiment} OR {survey embedded experiments} OR {survey-experimental} OR {survey experimental}))\n  OR (TITLE-ABS-KEY({vignette experiment} OR {vignette experiments} OR {experimental vignette} OR {experimental vignettes} OR {vignette-based experiment} OR {vignette-based experiments} OR {vignette based experiment} OR {vignette based experiments}))\n  OR (TITLE-ABS-KEY({framing experiment} OR {framing experiments} OR {information provision experiment} OR {information provision experiments} OR {information-provision experiment} OR {information-provision experiments} OR {scenario-based experiment} OR {scenario-based experiments} OR {scenario based experiment} OR {scenario based experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({vignette-based survey} OR {vignette-based surveys} OR {vignette based survey} OR {vignette based surveys}) AND TITLE-ABS-KEY(random* OR experiment*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2025",
+      "expected": 1439,
+      "retrieved": 1439,
+      "complete": true,
+      "dates": [
+        "2026-09-08T09:40:36.978677+00:00",
+        "2026-09-08T09:40:38.895964+00:00",
+        "2026-09-08T09:40:40.647964+00:00",
+        "2026-09-08T09:40:42.416955+00:00",
+        "2026-09-08T09:40:44.152006+00:00",
+        "2026-09-08T09:40:45.892171+00:00",
+        "2026-09-08T09:40:47.588566+00:00",
+        "2026-09-08T09:40:49.361906+00:00",
+        "2026-09-08T09:40:50.936251+00:00",
+        "2026-09-08T09:40:52.716322+00:00",
+        "2026-09-08T09:40:54.315451+00:00",
+        "2026-09-08T09:40:56.171753+00:00",
+        "2026-09-08T09:40:57.785647+00:00",
+        "2026-09-08T09:40:59.593034+00:00",
+        "2026-09-08T09:41:01.493597+00:00",
+        "2026-09-08T09:41:03.531440+00:00",
+        "2026-09-08T09:41:05.629818+00:00",
+        "2026-09-08T09:41:07.489214+00:00",
+        "2026-09-08T09:41:09.311773+00:00",
+        "2026-09-08T09:41:11.077715+00:00",
+        "2026-09-08T09:41:12.801021+00:00",
+        "2026-09-08T09:41:14.523653+00:00",
+        "2026-09-08T09:41:16.308045+00:00",
+        "2026-09-08T09:41:18.017767+00:00",
+        "2026-09-08T09:41:19.834374+00:00",
+        "2026-09-08T09:41:21.724116+00:00",
+        "2026-09-08T09:41:23.652319+00:00",
+        "2026-09-08T09:41:25.551976+00:00",
+        "2026-09-08T09:41:27.389582+00:00",
+        "2026-09-08T09:41:29.198225+00:00",
+        "2026-09-08T09:41:30.792402+00:00",
+        "2026-09-08T09:41:32.574873+00:00",
+        "2026-09-08T09:41:34.210052+00:00",
+        "2026-09-08T09:41:36.234926+00:00",
+        "2026-09-08T09:41:38.177243+00:00",
+        "2026-09-08T09:41:39.957343+00:00",
+        "2026-09-08T09:41:41.780376+00:00",
+        "2026-09-08T09:41:43.579608+00:00",
+        "2026-09-08T09:41:45.284198+00:00",
+        "2026-09-08T09:41:47.220911+00:00",
+        "2026-09-08T09:41:48.890114+00:00",
+        "2026-09-08T09:41:50.781981+00:00",
+        "2026-09-08T09:41:52.486190+00:00",
+        "2026-09-08T09:41:54.384242+00:00",
+        "2026-09-08T09:41:56.133274+00:00",
+        "2026-09-08T09:41:57.869477+00:00",
+        "2026-09-08T09:41:59.485869+00:00",
+        "2026-09-08T09:42:01.480908+00:00",
+        "2026-09-08T09:42:03.162679+00:00",
+        "2026-09-08T09:42:04.886923+00:00",
+        "2026-09-08T09:42:06.620072+00:00",
+        "2026-09-08T09:42:08.225150+00:00",
+        "2026-09-08T09:42:10.092580+00:00",
+        "2026-09-08T09:42:12.089611+00:00",
+        "2026-09-08T09:42:13.995088+00:00",
+        "2026-09-08T09:42:15.684872+00:00",
+        "2026-09-08T09:42:17.730797+00:00",
+        "2026-09-08T09:42:19.137129+00:00"
+      ],
+      "part": 9
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({survey experiment} OR {survey experiments} OR {survey-based experiment} OR {survey-based experiments} OR {survey based experiment} OR {survey based experiments} OR {survey-embedded experiment} OR {survey-embedded experiments} OR {survey embedded experiment} OR {survey embedded experiments} OR {survey-experimental} OR {survey experimental}))\n  OR (TITLE-ABS-KEY({vignette experiment} OR {vignette experiments} OR {experimental vignette} OR {experimental vignettes} OR {vignette-based experiment} OR {vignette-based experiments} OR {vignette based experiment} OR {vignette based experiments}))\n  OR (TITLE-ABS-KEY({framing experiment} OR {framing experiments} OR {information provision experiment} OR {information provision experiments} OR {information-provision experiment} OR {information-provision experiments} OR {scenario-based experiment} OR {scenario-based experiments} OR {scenario based experiment} OR {scenario based experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({vignette-based survey} OR {vignette-based surveys} OR {vignette based survey} OR {vignette based surveys}) AND TITLE-ABS-KEY(random* OR experiment*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2026",
+      "expected": 1416,
+      "retrieved": 1416,
+      "complete": true,
+      "dates": [
+        "2026-09-08T09:40:50.404714+00:00",
+        "2026-09-08T09:40:52.185855+00:00",
+        "2026-09-08T09:40:53.889301+00:00",
+        "2026-09-08T09:40:55.529257+00:00",
+        "2026-09-08T09:40:57.231906+00:00",
+        "2026-09-08T09:40:58.980473+00:00",
+        "2026-09-08T09:41:00.739608+00:00",
+        "2026-09-08T09:41:02.555102+00:00",
+        "2026-09-08T09:41:05.623356+00:00",
+        "2026-09-08T09:41:07.488239+00:00",
+        "2026-09-08T09:41:09.502188+00:00",
+        "2026-09-08T09:41:11.158266+00:00",
+        "2026-09-08T09:41:13.184170+00:00",
+        "2026-09-08T09:41:15.043485+00:00",
+        "2026-09-08T09:41:16.827227+00:00",
+        "2026-09-08T09:41:18.488179+00:00",
+        "2026-09-08T09:41:20.287377+00:00",
+        "2026-09-08T09:41:23.440106+00:00",
+        "2026-09-08T09:41:26.126322+00:00",
+        "2026-09-08T09:41:27.997998+00:00",
+        "2026-09-08T09:41:29.725857+00:00",
+        "2026-09-08T09:41:31.510739+00:00",
+        "2026-09-08T09:41:33.290309+00:00",
+        "2026-09-08T09:41:34.982648+00:00",
+        "2026-09-08T09:41:36.783429+00:00",
+        "2026-09-08T09:41:38.504777+00:00",
+        "2026-09-08T09:41:40.274241+00:00",
+        "2026-09-08T09:41:42.028636+00:00",
+        "2026-09-08T09:41:43.709430+00:00",
+        "2026-09-08T09:41:45.450538+00:00",
+        "2026-09-08T09:41:47.060256+00:00",
+        "2026-09-08T09:41:48.668548+00:00",
+        "2026-09-08T09:41:50.401510+00:00",
+        "2026-09-08T09:41:52.059079+00:00",
+        "2026-09-08T09:41:53.892045+00:00",
+        "2026-09-08T09:41:55.691998+00:00",
+        "2026-09-08T09:41:57.382166+00:00",
+        "2026-09-08T09:41:59.182893+00:00",
+        "2026-09-08T09:42:01.181140+00:00",
+        "2026-09-08T09:42:03.087791+00:00",
+        "2026-09-08T09:42:04.890122+00:00",
+        "2026-09-08T09:42:06.590485+00:00",
+        "2026-09-08T09:42:08.295935+00:00",
+        "2026-09-08T09:42:10.089329+00:00",
+        "2026-09-08T09:42:12.185185+00:00",
+        "2026-09-08T09:42:13.787054+00:00",
+        "2026-09-08T09:42:15.356680+00:00",
+        "2026-09-08T09:42:17.113595+00:00",
+        "2026-09-08T09:42:19.094610+00:00",
+        "2026-09-08T09:42:20.792140+00:00",
+        "2026-09-08T09:42:22.696177+00:00",
+        "2026-09-08T09:42:24.281555+00:00",
+        "2026-09-08T09:42:26.022952+00:00",
+        "2026-09-08T09:42:28.235417+00:00",
+        "2026-09-08T09:42:30.013573+00:00",
+        "2026-09-08T09:42:31.671225+00:00",
+        "2026-09-08T09:42:33.162102+00:00"
+      ],
+      "part": 10
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({experiment embedded in a survey} OR {experiments embedded in a survey} OR {experiment embedded in an online survey} OR {experiments embedded in an online survey} OR {experiment embedded in a national survey} OR {experiments embedded in national surveys} OR {experiment embedded in a nationally representative survey} OR {experiments embedded in nationally representative surveys} OR {embedded survey experiment} OR {embedded survey experiments} OR {survey with an embedded experiment} OR {survey with embedded experiments} OR {surveys with embedded experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({factorial survey} OR {factorial surveys} OR {factorial vignette experiment} OR {factorial vignette experiments} OR {randomized vignette experiment} OR {randomized vignette experiments} OR {randomised vignette experiment} OR {randomised vignette experiments} OR {randomized vignette} OR {randomized vignettes} OR {randomised vignette} OR {randomised vignettes}))\n  OR (TITLE-ABS-KEY({randomly assigned to read} OR {randomly allocated to read} OR {randomly selected to read} OR {randomized to read} OR {randomised to read} OR {randomly assigned to a vignette} OR {randomly assigned a vignette} OR {randomly assigned to one of two vignettes} OR {randomly assigned to one of three vignettes} OR {randomly assigned to receive information} OR {randomly provided with information} OR {randomly presented with a vignette} OR {randomly presented with vignettes} OR {randomly presented with a scenario} OR {randomly shown a vignette}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2016",
+      "expected": 49,
+      "retrieved": 49,
+      "complete": true,
+      "dates": [
+        "2026-09-08T09:56:27.552870+00:00",
+        "2026-09-08T09:56:29.358865+00:00"
+      ],
+      "part": 11
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({experiment embedded in a survey} OR {experiments embedded in a survey} OR {experiment embedded in an online survey} OR {experiments embedded in an online survey} OR {experiment embedded in a national survey} OR {experiments embedded in national surveys} OR {experiment embedded in a nationally representative survey} OR {experiments embedded in nationally representative surveys} OR {embedded survey experiment} OR {embedded survey experiments} OR {survey with an embedded experiment} OR {survey with embedded experiments} OR {surveys with embedded experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({factorial survey} OR {factorial surveys} OR {factorial vignette experiment} OR {factorial vignette experiments} OR {randomized vignette experiment} OR {randomized vignette experiments} OR {randomised vignette experiment} OR {randomised vignette experiments} OR {randomized vignette} OR {randomized vignettes} OR {randomised vignette} OR {randomised vignettes}))\n  OR (TITLE-ABS-KEY({randomly assigned to read} OR {randomly allocated to read} OR {randomly selected to read} OR {randomized to read} OR {randomised to read} OR {randomly assigned to a vignette} OR {randomly assigned a vignette} OR {randomly assigned to one of two vignettes} OR {randomly assigned to one of three vignettes} OR {randomly assigned to receive information} OR {randomly provided with information} OR {randomly presented with a vignette} OR {randomly presented with vignettes} OR {randomly presented with a scenario} OR {randomly shown a vignette}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2017",
+      "expected": 44,
+      "retrieved": 44,
+      "complete": true,
+      "dates": [
+        "2026-09-08T09:56:27.280746+00:00",
+        "2026-09-08T09:56:28.993558+00:00"
+      ],
+      "part": 12
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({experiment embedded in a survey} OR {experiments embedded in a survey} OR {experiment embedded in an online survey} OR {experiments embedded in an online survey} OR {experiment embedded in a national survey} OR {experiments embedded in national surveys} OR {experiment embedded in a nationally representative survey} OR {experiments embedded in nationally representative surveys} OR {embedded survey experiment} OR {embedded survey experiments} OR {survey with an embedded experiment} OR {survey with embedded experiments} OR {surveys with embedded experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({factorial survey} OR {factorial surveys} OR {factorial vignette experiment} OR {factorial vignette experiments} OR {randomized vignette experiment} OR {randomized vignette experiments} OR {randomised vignette experiment} OR {randomised vignette experiments} OR {randomized vignette} OR {randomized vignettes} OR {randomised vignette} OR {randomised vignettes}))\n  OR (TITLE-ABS-KEY({randomly assigned to read} OR {randomly allocated to read} OR {randomly selected to read} OR {randomized to read} OR {randomised to read} OR {randomly assigned to a vignette} OR {randomly assigned a vignette} OR {randomly assigned to one of two vignettes} OR {randomly assigned to one of three vignettes} OR {randomly assigned to receive information} OR {randomly provided with information} OR {randomly presented with a vignette} OR {randomly presented with vignettes} OR {randomly presented with a scenario} OR {randomly shown a vignette}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2018",
+      "expected": 49,
+      "retrieved": 49,
+      "complete": true,
+      "dates": [
+        "2026-09-08T09:56:27.550454+00:00",
+        "2026-09-08T09:56:29.421832+00:00"
+      ],
+      "part": 13
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({experiment embedded in a survey} OR {experiments embedded in a survey} OR {experiment embedded in an online survey} OR {experiments embedded in an online survey} OR {experiment embedded in a national survey} OR {experiments embedded in national surveys} OR {experiment embedded in a nationally representative survey} OR {experiments embedded in nationally representative surveys} OR {embedded survey experiment} OR {embedded survey experiments} OR {survey with an embedded experiment} OR {survey with embedded experiments} OR {surveys with embedded experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({factorial survey} OR {factorial surveys} OR {factorial vignette experiment} OR {factorial vignette experiments} OR {randomized vignette experiment} OR {randomized vignette experiments} OR {randomised vignette experiment} OR {randomised vignette experiments} OR {randomized vignette} OR {randomized vignettes} OR {randomised vignette} OR {randomised vignettes}))\n  OR (TITLE-ABS-KEY({randomly assigned to read} OR {randomly allocated to read} OR {randomly selected to read} OR {randomized to read} OR {randomised to read} OR {randomly assigned to a vignette} OR {randomly assigned a vignette} OR {randomly assigned to one of two vignettes} OR {randomly assigned to one of three vignettes} OR {randomly assigned to receive information} OR {randomly provided with information} OR {randomly presented with a vignette} OR {randomly presented with vignettes} OR {randomly presented with a scenario} OR {randomly shown a vignette}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2019",
+      "expected": 64,
+      "retrieved": 64,
+      "complete": true,
+      "dates": [
+        "2026-09-08T09:56:27.524998+00:00",
+        "2026-09-08T09:56:29.355110+00:00",
+        "2026-09-08T09:56:30.906227+00:00"
+      ],
+      "part": 14
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({experiment embedded in a survey} OR {experiments embedded in a survey} OR {experiment embedded in an online survey} OR {experiments embedded in an online survey} OR {experiment embedded in a national survey} OR {experiments embedded in national surveys} OR {experiment embedded in a nationally representative survey} OR {experiments embedded in nationally representative surveys} OR {embedded survey experiment} OR {embedded survey experiments} OR {survey with an embedded experiment} OR {survey with embedded experiments} OR {surveys with embedded experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({factorial survey} OR {factorial surveys} OR {factorial vignette experiment} OR {factorial vignette experiments} OR {randomized vignette experiment} OR {randomized vignette experiments} OR {randomised vignette experiment} OR {randomised vignette experiments} OR {randomized vignette} OR {randomized vignettes} OR {randomised vignette} OR {randomised vignettes}))\n  OR (TITLE-ABS-KEY({randomly assigned to read} OR {randomly allocated to read} OR {randomly selected to read} OR {randomized to read} OR {randomised to read} OR {randomly assigned to a vignette} OR {randomly assigned a vignette} OR {randomly assigned to one of two vignettes} OR {randomly assigned to one of three vignettes} OR {randomly assigned to receive information} OR {randomly provided with information} OR {randomly presented with a vignette} OR {randomly presented with vignettes} OR {randomly presented with a scenario} OR {randomly shown a vignette}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2020",
+      "expected": 71,
+      "retrieved": 71,
+      "complete": true,
+      "dates": [
+        "2026-09-08T09:56:30.714822+00:00",
+        "2026-09-08T09:56:32.534603+00:00",
+        "2026-09-08T09:56:35.106735+00:00"
+      ],
+      "part": 15
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({experiment embedded in a survey} OR {experiments embedded in a survey} OR {experiment embedded in an online survey} OR {experiments embedded in an online survey} OR {experiment embedded in a national survey} OR {experiments embedded in national surveys} OR {experiment embedded in a nationally representative survey} OR {experiments embedded in nationally representative surveys} OR {embedded survey experiment} OR {embedded survey experiments} OR {survey with an embedded experiment} OR {survey with embedded experiments} OR {surveys with embedded experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({factorial survey} OR {factorial surveys} OR {factorial vignette experiment} OR {factorial vignette experiments} OR {randomized vignette experiment} OR {randomized vignette experiments} OR {randomised vignette experiment} OR {randomised vignette experiments} OR {randomized vignette} OR {randomized vignettes} OR {randomised vignette} OR {randomised vignettes}))\n  OR (TITLE-ABS-KEY({randomly assigned to read} OR {randomly allocated to read} OR {randomly selected to read} OR {randomized to read} OR {randomised to read} OR {randomly assigned to a vignette} OR {randomly assigned a vignette} OR {randomly assigned to one of two vignettes} OR {randomly assigned to one of three vignettes} OR {randomly assigned to receive information} OR {randomly provided with information} OR {randomly presented with a vignette} OR {randomly presented with vignettes} OR {randomly presented with a scenario} OR {randomly shown a vignette}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2021",
+      "expected": 61,
+      "retrieved": 61,
+      "complete": true,
+      "dates": [
+        "2026-09-08T09:56:31.120750+00:00",
+        "2026-09-08T09:56:32.771770+00:00",
+        "2026-09-08T09:56:34.204350+00:00"
+      ],
+      "part": 16
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({experiment embedded in a survey} OR {experiments embedded in a survey} OR {experiment embedded in an online survey} OR {experiments embedded in an online survey} OR {experiment embedded in a national survey} OR {experiments embedded in national surveys} OR {experiment embedded in a nationally representative survey} OR {experiments embedded in nationally representative surveys} OR {embedded survey experiment} OR {embedded survey experiments} OR {survey with an embedded experiment} OR {survey with embedded experiments} OR {surveys with embedded experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({factorial survey} OR {factorial surveys} OR {factorial vignette experiment} OR {factorial vignette experiments} OR {randomized vignette experiment} OR {randomized vignette experiments} OR {randomised vignette experiment} OR {randomised vignette experiments} OR {randomized vignette} OR {randomized vignettes} OR {randomised vignette} OR {randomised vignettes}))\n  OR (TITLE-ABS-KEY({randomly assigned to read} OR {randomly allocated to read} OR {randomly selected to read} OR {randomized to read} OR {randomised to read} OR {randomly assigned to a vignette} OR {randomly assigned a vignette} OR {randomly assigned to one of two vignettes} OR {randomly assigned to one of three vignettes} OR {randomly assigned to receive information} OR {randomly provided with information} OR {randomly presented with a vignette} OR {randomly presented with vignettes} OR {randomly presented with a scenario} OR {randomly shown a vignette}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2022",
+      "expected": 95,
+      "retrieved": 95,
+      "complete": true,
+      "dates": [
+        "2026-09-08T09:56:31.117437+00:00",
+        "2026-09-08T09:56:32.841192+00:00",
+        "2026-09-08T09:56:34.574086+00:00",
+        "2026-09-08T09:56:36.144674+00:00"
+      ],
+      "part": 17
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({experiment embedded in a survey} OR {experiments embedded in a survey} OR {experiment embedded in an online survey} OR {experiments embedded in an online survey} OR {experiment embedded in a national survey} OR {experiments embedded in national surveys} OR {experiment embedded in a nationally representative survey} OR {experiments embedded in nationally representative surveys} OR {embedded survey experiment} OR {embedded survey experiments} OR {survey with an embedded experiment} OR {survey with embedded experiments} OR {surveys with embedded experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({factorial survey} OR {factorial surveys} OR {factorial vignette experiment} OR {factorial vignette experiments} OR {randomized vignette experiment} OR {randomized vignette experiments} OR {randomised vignette experiment} OR {randomised vignette experiments} OR {randomized vignette} OR {randomized vignettes} OR {randomised vignette} OR {randomised vignettes}))\n  OR (TITLE-ABS-KEY({randomly assigned to read} OR {randomly allocated to read} OR {randomly selected to read} OR {randomized to read} OR {randomised to read} OR {randomly assigned to a vignette} OR {randomly assigned a vignette} OR {randomly assigned to one of two vignettes} OR {randomly assigned to one of three vignettes} OR {randomly assigned to receive information} OR {randomly provided with information} OR {randomly presented with a vignette} OR {randomly presented with vignettes} OR {randomly presented with a scenario} OR {randomly shown a vignette}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2023",
+      "expected": 78,
+      "retrieved": 78,
+      "complete": true,
+      "dates": [
+        "2026-09-08T09:56:32.862661+00:00",
+        "2026-09-08T09:56:34.915329+00:00",
+        "2026-09-08T09:56:36.669593+00:00",
+        "2026-09-08T09:56:37.898523+00:00"
+      ],
+      "part": 18
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({experiment embedded in a survey} OR {experiments embedded in a survey} OR {experiment embedded in an online survey} OR {experiments embedded in an online survey} OR {experiment embedded in a national survey} OR {experiments embedded in national surveys} OR {experiment embedded in a nationally representative survey} OR {experiments embedded in nationally representative surveys} OR {embedded survey experiment} OR {embedded survey experiments} OR {survey with an embedded experiment} OR {survey with embedded experiments} OR {surveys with embedded experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({factorial survey} OR {factorial surveys} OR {factorial vignette experiment} OR {factorial vignette experiments} OR {randomized vignette experiment} OR {randomized vignette experiments} OR {randomised vignette experiment} OR {randomised vignette experiments} OR {randomized vignette} OR {randomized vignettes} OR {randomised vignette} OR {randomised vignettes}))\n  OR (TITLE-ABS-KEY({randomly assigned to read} OR {randomly allocated to read} OR {randomly selected to read} OR {randomized to read} OR {randomised to read} OR {randomly assigned to a vignette} OR {randomly assigned a vignette} OR {randomly assigned to one of two vignettes} OR {randomly assigned to one of three vignettes} OR {randomly assigned to receive information} OR {randomly provided with information} OR {randomly presented with a vignette} OR {randomly presented with vignettes} OR {randomly presented with a scenario} OR {randomly shown a vignette}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2024",
+      "expected": 106,
+      "retrieved": 106,
+      "complete": true,
+      "dates": [
+        "2026-09-08T09:56:35.856954+00:00",
+        "2026-09-08T09:56:37.508778+00:00",
+        "2026-09-08T09:56:39.307345+00:00",
+        "2026-09-08T09:56:40.943838+00:00",
+        "2026-09-08T09:56:42.203011+00:00"
+      ],
+      "part": 19
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({experiment embedded in a survey} OR {experiments embedded in a survey} OR {experiment embedded in an online survey} OR {experiments embedded in an online survey} OR {experiment embedded in a national survey} OR {experiments embedded in national surveys} OR {experiment embedded in a nationally representative survey} OR {experiments embedded in nationally representative surveys} OR {embedded survey experiment} OR {embedded survey experiments} OR {survey with an embedded experiment} OR {survey with embedded experiments} OR {surveys with embedded experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({factorial survey} OR {factorial surveys} OR {factorial vignette experiment} OR {factorial vignette experiments} OR {randomized vignette experiment} OR {randomized vignette experiments} OR {randomised vignette experiment} OR {randomised vignette experiments} OR {randomized vignette} OR {randomized vignettes} OR {randomised vignette} OR {randomised vignettes}))\n  OR (TITLE-ABS-KEY({randomly assigned to read} OR {randomly allocated to read} OR {randomly selected to read} OR {randomized to read} OR {randomised to read} OR {randomly assigned to a vignette} OR {randomly assigned a vignette} OR {randomly assigned to one of two vignettes} OR {randomly assigned to one of three vignettes} OR {randomly assigned to receive information} OR {randomly provided with information} OR {randomly presented with a vignette} OR {randomly presented with vignettes} OR {randomly presented with a scenario} OR {randomly shown a vignette}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2025",
+      "expected": 143,
+      "retrieved": 143,
+      "complete": true,
+      "dates": [
+        "2026-09-08T09:56:36.900975+00:00",
+        "2026-09-08T09:56:38.595660+00:00",
+        "2026-09-08T09:56:40.337505+00:00",
+        "2026-09-08T09:56:41.953887+00:00",
+        "2026-09-08T09:56:43.716308+00:00",
+        "2026-09-08T09:56:45.308552+00:00"
+      ],
+      "part": 20
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({experiment embedded in a survey} OR {experiments embedded in a survey} OR {experiment embedded in an online survey} OR {experiments embedded in an online survey} OR {experiment embedded in a national survey} OR {experiments embedded in national surveys} OR {experiment embedded in a nationally representative survey} OR {experiments embedded in nationally representative surveys} OR {embedded survey experiment} OR {embedded survey experiments} OR {survey with an embedded experiment} OR {survey with embedded experiments} OR {surveys with embedded experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({factorial survey} OR {factorial surveys} OR {factorial vignette experiment} OR {factorial vignette experiments} OR {randomized vignette experiment} OR {randomized vignette experiments} OR {randomised vignette experiment} OR {randomised vignette experiments} OR {randomized vignette} OR {randomized vignettes} OR {randomised vignette} OR {randomised vignettes}))\n  OR (TITLE-ABS-KEY({randomly assigned to read} OR {randomly allocated to read} OR {randomly selected to read} OR {randomized to read} OR {randomised to read} OR {randomly assigned to a vignette} OR {randomly assigned a vignette} OR {randomly assigned to one of two vignettes} OR {randomly assigned to one of three vignettes} OR {randomly assigned to receive information} OR {randomly provided with information} OR {randomly presented with a vignette} OR {randomly presented with vignettes} OR {randomly presented with a scenario} OR {randomly shown a vignette}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2026",
+      "expected": 139,
+      "retrieved": 139,
+      "complete": true,
+      "dates": [
+        "2026-09-08T09:56:37.934997+00:00",
+        "2026-09-08T09:56:39.644429+00:00",
+        "2026-09-08T09:56:41.284655+00:00",
+        "2026-09-08T09:56:42.973217+00:00",
+        "2026-09-08T09:56:44.756593+00:00",
+        "2026-09-08T09:56:46.115685+00:00"
+      ],
+      "part": 21
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({information treatment} OR {information treatments} OR {informational treatment} OR {informational treatments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*) AND TITLE-ABS-KEY(random* OR experiment*))\n  OR (TITLE-ABS-KEY({question wording experiment} OR {question wording experiments} OR {question-wording experiment} OR {question-wording experiments} OR {wording experiment} OR {wording experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2016",
+      "expected": 10,
+      "retrieved": 10,
+      "complete": true,
+      "dates": [
+        "2026-09-08T10:52:11.410269+00:00"
+      ],
+      "part": 22
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({information treatment} OR {information treatments} OR {informational treatment} OR {informational treatments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*) AND TITLE-ABS-KEY(random* OR experiment*))\n  OR (TITLE-ABS-KEY({question wording experiment} OR {question wording experiments} OR {question-wording experiment} OR {question-wording experiments} OR {wording experiment} OR {wording experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2017",
+      "expected": 5,
+      "retrieved": 5,
+      "complete": true,
+      "dates": [
+        "2026-09-08T10:52:12.209052+00:00"
+      ],
+      "part": 23
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({information treatment} OR {information treatments} OR {informational treatment} OR {informational treatments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*) AND TITLE-ABS-KEY(random* OR experiment*))\n  OR (TITLE-ABS-KEY({question wording experiment} OR {question wording experiments} OR {question-wording experiment} OR {question-wording experiments} OR {wording experiment} OR {wording experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2018",
+      "expected": 10,
+      "retrieved": 10,
+      "complete": true,
+      "dates": [
+        "2026-09-08T10:52:12.843868+00:00"
+      ],
+      "part": 24
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({information treatment} OR {information treatments} OR {informational treatment} OR {informational treatments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*) AND TITLE-ABS-KEY(random* OR experiment*))\n  OR (TITLE-ABS-KEY({question wording experiment} OR {question wording experiments} OR {question-wording experiment} OR {question-wording experiments} OR {wording experiment} OR {wording experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2019",
+      "expected": 6,
+      "retrieved": 6,
+      "complete": true,
+      "dates": [
+        "2026-09-08T10:52:13.542329+00:00"
+      ],
+      "part": 25
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({information treatment} OR {information treatments} OR {informational treatment} OR {informational treatments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*) AND TITLE-ABS-KEY(random* OR experiment*))\n  OR (TITLE-ABS-KEY({question wording experiment} OR {question wording experiments} OR {question-wording experiment} OR {question-wording experiments} OR {wording experiment} OR {wording experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2020",
+      "expected": 11,
+      "retrieved": 11,
+      "complete": true,
+      "dates": [
+        "2026-09-08T10:52:13.887138+00:00"
+      ],
+      "part": 26
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({information treatment} OR {information treatments} OR {informational treatment} OR {informational treatments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*) AND TITLE-ABS-KEY(random* OR experiment*))\n  OR (TITLE-ABS-KEY({question wording experiment} OR {question wording experiments} OR {question-wording experiment} OR {question-wording experiments} OR {wording experiment} OR {wording experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2021",
+      "expected": 19,
+      "retrieved": 19,
+      "complete": true,
+      "dates": [
+        "2026-09-08T10:52:14.501394+00:00"
+      ],
+      "part": 27
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({information treatment} OR {information treatments} OR {informational treatment} OR {informational treatments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*) AND TITLE-ABS-KEY(random* OR experiment*))\n  OR (TITLE-ABS-KEY({question wording experiment} OR {question wording experiments} OR {question-wording experiment} OR {question-wording experiments} OR {wording experiment} OR {wording experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2022",
+      "expected": 24,
+      "retrieved": 24,
+      "complete": true,
+      "dates": [
+        "2026-09-08T10:52:15.378799+00:00"
+      ],
+      "part": 28
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({information treatment} OR {information treatments} OR {informational treatment} OR {informational treatments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*) AND TITLE-ABS-KEY(random* OR experiment*))\n  OR (TITLE-ABS-KEY({question wording experiment} OR {question wording experiments} OR {question-wording experiment} OR {question-wording experiments} OR {wording experiment} OR {wording experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2023",
+      "expected": 29,
+      "retrieved": 29,
+      "complete": true,
+      "dates": [
+        "2026-09-08T10:52:15.374352+00:00",
+        "2026-09-08T10:52:16.640625+00:00"
+      ],
+      "part": 29
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({information treatment} OR {information treatments} OR {informational treatment} OR {informational treatments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*) AND TITLE-ABS-KEY(random* OR experiment*))\n  OR (TITLE-ABS-KEY({question wording experiment} OR {question wording experiments} OR {question-wording experiment} OR {question-wording experiments} OR {wording experiment} OR {wording experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2024",
+      "expected": 21,
+      "retrieved": 21,
+      "complete": true,
+      "dates": [
+        "2026-09-08T10:52:15.704702+00:00"
+      ],
+      "part": 30
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({information treatment} OR {information treatments} OR {informational treatment} OR {informational treatments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*) AND TITLE-ABS-KEY(random* OR experiment*))\n  OR (TITLE-ABS-KEY({question wording experiment} OR {question wording experiments} OR {question-wording experiment} OR {question-wording experiments} OR {wording experiment} OR {wording experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2025",
+      "expected": 30,
+      "retrieved": 30,
+      "complete": true,
+      "dates": [
+        "2026-09-08T10:52:16.243742+00:00",
+        "2026-09-08T10:52:17.597864+00:00"
+      ],
+      "part": 31
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({information treatment} OR {information treatments} OR {informational treatment} OR {informational treatments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*) AND TITLE-ABS-KEY(random* OR experiment*))\n  OR (TITLE-ABS-KEY({question wording experiment} OR {question wording experiments} OR {question-wording experiment} OR {question-wording experiments} OR {wording experiment} OR {wording experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2026",
+      "expected": 30,
+      "retrieved": 30,
+      "complete": true,
+      "dates": [
+        "2026-09-08T10:52:17.149526+00:00",
+        "2026-09-08T10:52:18.508877+00:00"
+      ],
+      "part": 32
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({survey experiment} OR {survey experiments} OR {survey-based experiment} OR {survey-based experiments} OR {survey based experiment} OR {survey based experiments} OR {survey-embedded experiment} OR {survey-embedded experiments} OR {survey embedded experiment} OR {survey embedded experiments} OR {survey-experimental} OR {survey experimental}))\n  OR (TITLE-ABS-KEY({vignette experiment} OR {vignette experiments} OR {experimental vignette} OR {experimental vignettes} OR {vignette-based experiment} OR {vignette-based experiments} OR {vignette based experiment} OR {vignette based experiments}))\n  OR (TITLE-ABS-KEY({framing experiment} OR {framing experiments} OR {information provision experiment} OR {information provision experiments} OR {information-provision experiment} OR {information-provision experiments} OR {scenario-based experiment} OR {scenario-based experiments} OR {scenario based experiment} OR {scenario based experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({vignette-based survey} OR {vignette-based surveys} OR {vignette based survey} OR {vignette based surveys}) AND TITLE-ABS-KEY(random* OR experiment*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027 AND PUBYEAR = 2010",
+      "expected": 29,
+      "retrieved": 29,
+      "complete": true,
+      "dates": [
+        "2026-09-09T07:53:00.059424+00:00",
+        "2026-09-09T07:53:01.508105+00:00"
+      ],
+      "part": 33
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({survey experiment} OR {survey experiments} OR {survey-based experiment} OR {survey-based experiments} OR {survey based experiment} OR {survey based experiments} OR {survey-embedded experiment} OR {survey-embedded experiments} OR {survey embedded experiment} OR {survey embedded experiments} OR {survey-experimental} OR {survey experimental}))\n  OR (TITLE-ABS-KEY({vignette experiment} OR {vignette experiments} OR {experimental vignette} OR {experimental vignettes} OR {vignette-based experiment} OR {vignette-based experiments} OR {vignette based experiment} OR {vignette based experiments}))\n  OR (TITLE-ABS-KEY({framing experiment} OR {framing experiments} OR {information provision experiment} OR {information provision experiments} OR {information-provision experiment} OR {information-provision experiments} OR {scenario-based experiment} OR {scenario-based experiments} OR {scenario based experiment} OR {scenario based experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({vignette-based survey} OR {vignette-based surveys} OR {vignette based survey} OR {vignette based surveys}) AND TITLE-ABS-KEY(random* OR experiment*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027 AND PUBYEAR = 2011",
+      "expected": 33,
+      "retrieved": 33,
+      "complete": true,
+      "dates": [
+        "2026-09-09T07:53:00.213252+00:00",
+        "2026-09-09T07:53:01.634343+00:00"
+      ],
+      "part": 34
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({survey experiment} OR {survey experiments} OR {survey-based experiment} OR {survey-based experiments} OR {survey based experiment} OR {survey based experiments} OR {survey-embedded experiment} OR {survey-embedded experiments} OR {survey embedded experiment} OR {survey embedded experiments} OR {survey-experimental} OR {survey experimental}))\n  OR (TITLE-ABS-KEY({vignette experiment} OR {vignette experiments} OR {experimental vignette} OR {experimental vignettes} OR {vignette-based experiment} OR {vignette-based experiments} OR {vignette based experiment} OR {vignette based experiments}))\n  OR (TITLE-ABS-KEY({framing experiment} OR {framing experiments} OR {information provision experiment} OR {information provision experiments} OR {information-provision experiment} OR {information-provision experiments} OR {scenario-based experiment} OR {scenario-based experiments} OR {scenario based experiment} OR {scenario based experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({vignette-based survey} OR {vignette-based surveys} OR {vignette based survey} OR {vignette based surveys}) AND TITLE-ABS-KEY(random* OR experiment*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027 AND PUBYEAR = 2012",
+      "expected": 52,
+      "retrieved": 52,
+      "complete": true,
+      "dates": [
+        "2026-09-09T07:53:00.119971+00:00",
+        "2026-09-09T07:53:01.913568+00:00",
+        "2026-09-09T07:53:03.118742+00:00"
+      ],
+      "part": 35
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({survey experiment} OR {survey experiments} OR {survey-based experiment} OR {survey-based experiments} OR {survey based experiment} OR {survey based experiments} OR {survey-embedded experiment} OR {survey-embedded experiments} OR {survey embedded experiment} OR {survey embedded experiments} OR {survey-experimental} OR {survey experimental}))\n  OR (TITLE-ABS-KEY({vignette experiment} OR {vignette experiments} OR {experimental vignette} OR {experimental vignettes} OR {vignette-based experiment} OR {vignette-based experiments} OR {vignette based experiment} OR {vignette based experiments}))\n  OR (TITLE-ABS-KEY({framing experiment} OR {framing experiments} OR {information provision experiment} OR {information provision experiments} OR {information-provision experiment} OR {information-provision experiments} OR {scenario-based experiment} OR {scenario-based experiments} OR {scenario based experiment} OR {scenario based experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({vignette-based survey} OR {vignette-based surveys} OR {vignette based survey} OR {vignette based surveys}) AND TITLE-ABS-KEY(random* OR experiment*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027 AND PUBYEAR = 2013",
+      "expected": 82,
+      "retrieved": 82,
+      "complete": true,
+      "dates": [
+        "2026-09-09T07:53:00.072178+00:00",
+        "2026-09-09T07:53:01.922479+00:00",
+        "2026-09-09T07:53:03.729738+00:00",
+        "2026-09-09T07:53:05.030264+00:00"
+      ],
+      "part": 36
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({survey experiment} OR {survey experiments} OR {survey-based experiment} OR {survey-based experiments} OR {survey based experiment} OR {survey based experiments} OR {survey-embedded experiment} OR {survey-embedded experiments} OR {survey embedded experiment} OR {survey embedded experiments} OR {survey-experimental} OR {survey experimental}))\n  OR (TITLE-ABS-KEY({vignette experiment} OR {vignette experiments} OR {experimental vignette} OR {experimental vignettes} OR {vignette-based experiment} OR {vignette-based experiments} OR {vignette based experiment} OR {vignette based experiments}))\n  OR (TITLE-ABS-KEY({framing experiment} OR {framing experiments} OR {information provision experiment} OR {information provision experiments} OR {information-provision experiment} OR {information-provision experiments} OR {scenario-based experiment} OR {scenario-based experiments} OR {scenario based experiment} OR {scenario based experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({vignette-based survey} OR {vignette-based surveys} OR {vignette based survey} OR {vignette based surveys}) AND TITLE-ABS-KEY(random* OR experiment*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027 AND PUBYEAR = 2014",
+      "expected": 121,
+      "retrieved": 121,
+      "complete": true,
+      "dates": [
+        "2026-09-09T07:53:03.315601+00:00",
+        "2026-09-09T07:53:05.032997+00:00",
+        "2026-09-09T07:53:06.820302+00:00",
+        "2026-09-09T07:53:08.713251+00:00",
+        "2026-09-09T07:53:10.281389+00:00"
+      ],
+      "part": 37
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({survey experiment} OR {survey experiments} OR {survey-based experiment} OR {survey-based experiments} OR {survey based experiment} OR {survey based experiments} OR {survey-embedded experiment} OR {survey-embedded experiments} OR {survey embedded experiment} OR {survey embedded experiments} OR {survey-experimental} OR {survey experimental}))\n  OR (TITLE-ABS-KEY({vignette experiment} OR {vignette experiments} OR {experimental vignette} OR {experimental vignettes} OR {vignette-based experiment} OR {vignette-based experiments} OR {vignette based experiment} OR {vignette based experiments}))\n  OR (TITLE-ABS-KEY({framing experiment} OR {framing experiments} OR {information provision experiment} OR {information provision experiments} OR {information-provision experiment} OR {information-provision experiments} OR {scenario-based experiment} OR {scenario-based experiments} OR {scenario based experiment} OR {scenario based experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({vignette-based survey} OR {vignette-based surveys} OR {vignette based survey} OR {vignette based surveys}) AND TITLE-ABS-KEY(random* OR experiment*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027 AND PUBYEAR = 2015",
+      "expected": 146,
+      "retrieved": 146,
+      "complete": true,
+      "dates": [
+        "2026-09-09T07:53:03.747313+00:00",
+        "2026-09-09T07:53:05.620618+00:00",
+        "2026-09-09T07:53:07.321540+00:00",
+        "2026-09-09T07:53:08.899263+00:00",
+        "2026-09-09T07:53:10.474108+00:00",
+        "2026-09-09T07:53:12.085614+00:00"
+      ],
+      "part": 38
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({experiment embedded in a survey} OR {experiments embedded in a survey} OR {experiment embedded in an online survey} OR {experiments embedded in an online survey} OR {experiment embedded in a national survey} OR {experiments embedded in national surveys} OR {experiment embedded in a nationally representative survey} OR {experiments embedded in nationally representative surveys} OR {embedded survey experiment} OR {embedded survey experiments} OR {survey with an embedded experiment} OR {survey with embedded experiments} OR {surveys with embedded experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({factorial survey} OR {factorial surveys} OR {factorial vignette experiment} OR {factorial vignette experiments} OR {randomized vignette experiment} OR {randomized vignette experiments} OR {randomised vignette experiment} OR {randomised vignette experiments} OR {randomized vignette} OR {randomized vignettes} OR {randomised vignette} OR {randomised vignettes}))\n  OR (TITLE-ABS-KEY({randomly assigned to read} OR {randomly allocated to read} OR {randomly selected to read} OR {randomized to read} OR {randomised to read} OR {randomly assigned to a vignette} OR {randomly assigned a vignette} OR {randomly assigned to one of two vignettes} OR {randomly assigned to one of three vignettes} OR {randomly assigned to receive information} OR {randomly provided with information} OR {randomly presented with a vignette} OR {randomly presented with vignettes} OR {randomly presented with a scenario} OR {randomly shown a vignette}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027 AND PUBYEAR = 2010",
+      "expected": 19,
+      "retrieved": 19,
+      "complete": true,
+      "dates": [
+        "2026-09-09T07:53:05.032397+00:00"
+      ],
+      "part": 39
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({experiment embedded in a survey} OR {experiments embedded in a survey} OR {experiment embedded in an online survey} OR {experiments embedded in an online survey} OR {experiment embedded in a national survey} OR {experiments embedded in national surveys} OR {experiment embedded in a nationally representative survey} OR {experiments embedded in nationally representative surveys} OR {embedded survey experiment} OR {embedded survey experiments} OR {survey with an embedded experiment} OR {survey with embedded experiments} OR {surveys with embedded experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({factorial survey} OR {factorial surveys} OR {factorial vignette experiment} OR {factorial vignette experiments} OR {randomized vignette experiment} OR {randomized vignette experiments} OR {randomised vignette experiment} OR {randomised vignette experiments} OR {randomized vignette} OR {randomized vignettes} OR {randomised vignette} OR {randomised vignettes}))\n  OR (TITLE-ABS-KEY({randomly assigned to read} OR {randomly allocated to read} OR {randomly selected to read} OR {randomized to read} OR {randomised to read} OR {randomly assigned to a vignette} OR {randomly assigned a vignette} OR {randomly assigned to one of two vignettes} OR {randomly assigned to one of three vignettes} OR {randomly assigned to receive information} OR {randomly provided with information} OR {randomly presented with a vignette} OR {randomly presented with vignettes} OR {randomly presented with a scenario} OR {randomly shown a vignette}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027 AND PUBYEAR = 2011",
+      "expected": 17,
+      "retrieved": 17,
+      "complete": true,
+      "dates": [
+        "2026-09-09T07:53:06.648588+00:00"
+      ],
+      "part": 40
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({experiment embedded in a survey} OR {experiments embedded in a survey} OR {experiment embedded in an online survey} OR {experiments embedded in an online survey} OR {experiment embedded in a national survey} OR {experiments embedded in national surveys} OR {experiment embedded in a nationally representative survey} OR {experiments embedded in nationally representative surveys} OR {embedded survey experiment} OR {embedded survey experiments} OR {survey with an embedded experiment} OR {survey with embedded experiments} OR {surveys with embedded experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({factorial survey} OR {factorial surveys} OR {factorial vignette experiment} OR {factorial vignette experiments} OR {randomized vignette experiment} OR {randomized vignette experiments} OR {randomised vignette experiment} OR {randomised vignette experiments} OR {randomized vignette} OR {randomized vignettes} OR {randomised vignette} OR {randomised vignettes}))\n  OR (TITLE-ABS-KEY({randomly assigned to read} OR {randomly allocated to read} OR {randomly selected to read} OR {randomized to read} OR {randomised to read} OR {randomly assigned to a vignette} OR {randomly assigned a vignette} OR {randomly assigned to one of two vignettes} OR {randomly assigned to one of three vignettes} OR {randomly assigned to receive information} OR {randomly provided with information} OR {randomly presented with a vignette} OR {randomly presented with vignettes} OR {randomly presented with a scenario} OR {randomly shown a vignette}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027 AND PUBYEAR = 2012",
+      "expected": 19,
+      "retrieved": 19,
+      "complete": true,
+      "dates": [
+        "2026-09-09T07:53:06.622415+00:00"
+      ],
+      "part": 41
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({experiment embedded in a survey} OR {experiments embedded in a survey} OR {experiment embedded in an online survey} OR {experiments embedded in an online survey} OR {experiment embedded in a national survey} OR {experiments embedded in national surveys} OR {experiment embedded in a nationally representative survey} OR {experiments embedded in nationally representative surveys} OR {embedded survey experiment} OR {embedded survey experiments} OR {survey with an embedded experiment} OR {survey with embedded experiments} OR {surveys with embedded experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({factorial survey} OR {factorial surveys} OR {factorial vignette experiment} OR {factorial vignette experiments} OR {randomized vignette experiment} OR {randomized vignette experiments} OR {randomised vignette experiment} OR {randomised vignette experiments} OR {randomized vignette} OR {randomized vignettes} OR {randomised vignette} OR {randomised vignettes}))\n  OR (TITLE-ABS-KEY({randomly assigned to read} OR {randomly allocated to read} OR {randomly selected to read} OR {randomized to read} OR {randomised to read} OR {randomly assigned to a vignette} OR {randomly assigned a vignette} OR {randomly assigned to one of two vignettes} OR {randomly assigned to one of three vignettes} OR {randomly assigned to receive information} OR {randomly provided with information} OR {randomly presented with a vignette} OR {randomly presented with vignettes} OR {randomly presented with a scenario} OR {randomly shown a vignette}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027 AND PUBYEAR = 2013",
+      "expected": 33,
+      "retrieved": 33,
+      "complete": true,
+      "dates": [
+        "2026-09-09T07:53:08.711453+00:00",
+        "2026-09-09T07:53:10.111631+00:00"
+      ],
+      "part": 42
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({experiment embedded in a survey} OR {experiments embedded in a survey} OR {experiment embedded in an online survey} OR {experiments embedded in an online survey} OR {experiment embedded in a national survey} OR {experiments embedded in national surveys} OR {experiment embedded in a nationally representative survey} OR {experiments embedded in nationally representative surveys} OR {embedded survey experiment} OR {embedded survey experiments} OR {survey with an embedded experiment} OR {survey with embedded experiments} OR {surveys with embedded experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({factorial survey} OR {factorial surveys} OR {factorial vignette experiment} OR {factorial vignette experiments} OR {randomized vignette experiment} OR {randomized vignette experiments} OR {randomised vignette experiment} OR {randomised vignette experiments} OR {randomized vignette} OR {randomized vignettes} OR {randomised vignette} OR {randomised vignettes}))\n  OR (TITLE-ABS-KEY({randomly assigned to read} OR {randomly allocated to read} OR {randomly selected to read} OR {randomized to read} OR {randomised to read} OR {randomly assigned to a vignette} OR {randomly assigned a vignette} OR {randomly assigned to one of two vignettes} OR {randomly assigned to one of three vignettes} OR {randomly assigned to receive information} OR {randomly provided with information} OR {randomly presented with a vignette} OR {randomly presented with vignettes} OR {randomly presented with a scenario} OR {randomly shown a vignette}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027 AND PUBYEAR = 2014",
+      "expected": 27,
+      "retrieved": 27,
+      "complete": true,
+      "dates": [
+        "2026-09-09T07:53:08.474697+00:00",
+        "2026-09-09T07:53:09.770463+00:00"
+      ],
+      "part": 43
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({experiment embedded in a survey} OR {experiments embedded in a survey} OR {experiment embedded in an online survey} OR {experiments embedded in an online survey} OR {experiment embedded in a national survey} OR {experiments embedded in national surveys} OR {experiment embedded in a nationally representative survey} OR {experiments embedded in nationally representative surveys} OR {embedded survey experiment} OR {embedded survey experiments} OR {survey with an embedded experiment} OR {survey with embedded experiments} OR {surveys with embedded experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n  OR (TITLE-ABS-KEY({factorial survey} OR {factorial surveys} OR {factorial vignette experiment} OR {factorial vignette experiments} OR {randomized vignette experiment} OR {randomized vignette experiments} OR {randomised vignette experiment} OR {randomised vignette experiments} OR {randomized vignette} OR {randomized vignettes} OR {randomised vignette} OR {randomised vignettes}))\n  OR (TITLE-ABS-KEY({randomly assigned to read} OR {randomly allocated to read} OR {randomly selected to read} OR {randomized to read} OR {randomised to read} OR {randomly assigned to a vignette} OR {randomly assigned a vignette} OR {randomly assigned to one of two vignettes} OR {randomly assigned to one of three vignettes} OR {randomly assigned to receive information} OR {randomly provided with information} OR {randomly presented with a vignette} OR {randomly presented with vignettes} OR {randomly presented with a scenario} OR {randomly shown a vignette}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027 AND PUBYEAR = 2015",
+      "expected": 33,
+      "retrieved": 33,
+      "complete": true,
+      "dates": [
+        "2026-09-09T07:53:11.752092+00:00",
+        "2026-09-09T07:53:13.177608+00:00"
+      ],
+      "part": 44
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({information treatment} OR {information treatments} OR {informational treatment} OR {informational treatments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*) AND TITLE-ABS-KEY(random* OR experiment*))\n  OR (TITLE-ABS-KEY({question wording experiment} OR {question wording experiments} OR {question-wording experiment} OR {question-wording experiments} OR {wording experiment} OR {wording experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027 AND PUBYEAR = 2010",
+      "expected": 0,
+      "retrieved": 0,
+      "complete": true,
+      "dates": [
+        "2026-09-09T07:53:11.146925+00:00"
+      ],
+      "part": 45
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({information treatment} OR {information treatments} OR {informational treatment} OR {informational treatments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*) AND TITLE-ABS-KEY(random* OR experiment*))\n  OR (TITLE-ABS-KEY({question wording experiment} OR {question wording experiments} OR {question-wording experiment} OR {question-wording experiments} OR {wording experiment} OR {wording experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027 AND PUBYEAR = 2011",
+      "expected": 2,
+      "retrieved": 2,
+      "complete": true,
+      "dates": [
+        "2026-09-09T07:53:11.452486+00:00"
+      ],
+      "part": 46
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({information treatment} OR {information treatments} OR {informational treatment} OR {informational treatments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*) AND TITLE-ABS-KEY(random* OR experiment*))\n  OR (TITLE-ABS-KEY({question wording experiment} OR {question wording experiments} OR {question-wording experiment} OR {question-wording experiments} OR {wording experiment} OR {wording experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027 AND PUBYEAR = 2012",
+      "expected": 1,
+      "retrieved": 1,
+      "complete": true,
+      "dates": [
+        "2026-09-09T07:53:12.368137+00:00"
+      ],
+      "part": 47
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({information treatment} OR {information treatments} OR {informational treatment} OR {informational treatments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*) AND TITLE-ABS-KEY(random* OR experiment*))\n  OR (TITLE-ABS-KEY({question wording experiment} OR {question wording experiments} OR {question-wording experiment} OR {question-wording experiments} OR {wording experiment} OR {wording experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027 AND PUBYEAR = 2013",
+      "expected": 0,
+      "retrieved": 0,
+      "complete": true,
+      "dates": [
+        "2026-09-09T07:53:12.447109+00:00"
+      ],
+      "part": 48
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({information treatment} OR {information treatments} OR {informational treatment} OR {informational treatments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*) AND TITLE-ABS-KEY(random* OR experiment*))\n  OR (TITLE-ABS-KEY({question wording experiment} OR {question wording experiments} OR {question-wording experiment} OR {question-wording experiments} OR {wording experiment} OR {wording experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027 AND PUBYEAR = 2014",
+      "expected": 3,
+      "retrieved": 3,
+      "complete": true,
+      "dates": [
+        "2026-09-09T07:53:13.172161+00:00"
+      ],
+      "part": 49
+    },
+    {
+      "query": "(\n  (TITLE-ABS-KEY({information treatment} OR {information treatments} OR {informational treatment} OR {informational treatments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*) AND TITLE-ABS-KEY(random* OR experiment*))\n  OR (TITLE-ABS-KEY({question wording experiment} OR {question wording experiments} OR {question-wording experiment} OR {question-wording experiments} OR {wording experiment} OR {wording experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027 AND PUBYEAR = 2015",
+      "expected": 3,
+      "retrieved": 3,
+      "complete": true,
+      "dates": [
+        "2026-09-09T07:53:13.596841+00:00"
+      ],
+      "part": 50
+    }
+  ],
+  "missing_abstracts": 13,
+  "incomplete_bylines": 4,
+  "indexed_keywords": "Not returned by Search COMPLETE; unmatched records require review",
+  "extension": {
+    "baseline_start": 2016,
+    "added_start": 2010,
+    "added_end": 2015,
+    "baseline_articles_sha256": "9437027b963517e6e54979effced7c3db9f8f7163ecba4241c02091b20d4b9f4",
+    "baseline_records_unchanged": true,
+    "note": "Baseline year partitions retain their equivalent original lower bound."
+  }
+}

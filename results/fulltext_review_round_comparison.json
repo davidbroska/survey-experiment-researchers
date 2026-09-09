@@ -1,0 +1,54 @@
+{
+  "before": {
+    "n_articles": {
+      "n_researchers": 100,
+      "distinct_counts": 12,
+      "tied_researchers": 97,
+      "tied_pairs": 773,
+      "all_pairs": 4950,
+      "tied_pair_percent": 15.616,
+      "largest_tie_group": 29,
+      "minimum": 6,
+      "maximum": 33,
+      "mean": 9.3
+    },
+    "n_us_articles": {
+      "n_researchers": 100,
+      "distinct_counts": 13,
+      "tied_researchers": 98,
+      "tied_pairs": 499,
+      "all_pairs": 4950,
+      "tied_pair_percent": 10.081,
+      "largest_tie_group": 17,
+      "minimum": 0,
+      "maximum": 19,
+      "mean": 3.9
+    }
+  },
+  "after": {
+    "n_articles": {
+      "n_researchers": 100,
+      "distinct_counts": 12,
+      "tied_researchers": 97,
+      "tied_pairs": 773,
+      "all_pairs": 4950,
+      "tied_pair_percent": 15.616,
+      "largest_tie_group": 29,
+      "minimum": 6,
+      "maximum": 33,
+      "mean": 9.3
+    },
+    "n_us_articles": {
+      "n_researchers": 100,
+      "distinct_counts": 14,
+      "tied_researchers": 96,
+      "tied_pairs": 459,
+      "all_pairs": 4950,
+      "tied_pair_percent": 9.273,
+      "largest_tie_group": 17,
+      "minimum": 0,
+      "maximum": 19,
+      "mean": 4.28
+    }
+  }
+}

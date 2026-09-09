@@ -1,0 +1,2 @@
+# Optional, local PDF extraction only. The core pipeline uses the standard library.
+pypdf==6.18.0

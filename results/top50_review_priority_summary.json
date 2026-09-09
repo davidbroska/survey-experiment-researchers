@@ -1,0 +1,11 @@
+{
+  "limit": 50,
+  "total_focus_authors_including_boundary_ties": 66,
+  "us_focus_authors_including_boundary_ties": 52,
+  "top50_us_tied_pairs": 177,
+  "top50_total_tied_pairs_with_equal_us_counts": 41,
+  "n_priority_downloads": 93,
+  "n_user_unavailable": 1,
+  "total_article_counts_change": false,
+  "interpretation": "Potential distinction if this article has US participants; no probability or guaranteed net reduction in ties."
+}

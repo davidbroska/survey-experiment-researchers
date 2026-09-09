@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-09-09T07:53:41.267882+00:00",
+  "global_retrieved": 9111,
+  "in_frame": 7305,
+  "unique_articles": 7302,
+  "doi_duplicates_removed": 3,
+  "locally_verified_candidates": 7035,
+  "unverified_match_needs_review": 267,
+  "incomplete_bylines_in_candidates": 4,
+  "ranked_authors": 8312,
+  "reviewed_articles": 0,
+  "confirmed_new_survey_experiments": 0,
+  "top40_cutoff_article_count": 9,
+  "authors_tied_at_cutoff": 13,
+  "strata": {
+    "core": 6674,
+    "embedded_design": 64,
+    "factorial_randomized_vignette": 236,
+    "survey_information": 18,
+    "survey_wording": 10,
+    "text_assignment": 33,
+    "unverified_match": 267
+  },
+  "publication_status": "provisional: identity, experimental eligibility, parser compatibility and data access pending",
+  "query_sha256": "923d3eeecd4b576223b4706bed3505b4b27a6b6d8d6cb09fe624dcc9f199028d",
+  "article_sha256": "c0b0a80c1bb00513e8d2209559fc7cdd7b331c50d7ba01363b82a944355af700",
+  "frame_sha256": "ad56e395484102a4b2da1189e75de9bdab77c5c750ab83e6e2bef06d02078074"
+}

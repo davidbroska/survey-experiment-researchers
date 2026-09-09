@@ -1,0 +1,16 @@
+[
+  {
+    "input": "inputs/tess_investigators.csv",
+    "source": "Opencall/TessVenues/tess_authors_resolved.csv",
+    "sha256": "dc81afdacdb77026a046e5c2751be4e0b945372598610a15f1d85c6e7bbddc12",
+    "imported_at": "2026-09-08T09:36:54.994834+00:00",
+    "note": "Legacy frozen roster; profile assignments are inherited, not revalidated."
+  },
+  {
+    "input": "inputs/legacy_investigator_journals.csv",
+    "source": "Opencall/TessVenues/tess_author_journals.csv",
+    "sha256": "1d471ad7b2aaa7dfe3e390960b6f32fff8f8a40a6f20b326b0f85f2e4165b028",
+    "imported_at": "2026-09-08T09:36:54.997055+00:00",
+    "note": "Legacy frozen roster; profile assignments are inherited, not revalidated."
+  }
+]

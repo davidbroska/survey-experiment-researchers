@@ -1,0 +1,398 @@
+[
+  {
+    "source": "Opencall/QueryV2/positives/mining_input.csv",
+    "sha256": "9c61eadce036579490bc2e0575f7d504338f5d1589135a8a60eda38bbbcd0dab"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_000.json",
+    "sha256": "ba9c80596bc66924acb99a0d1f8199f0796dfbc3194a58d2e7a9515673a93042"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_001.json",
+    "sha256": "6d27ee1723c309d04b73d24b0e6d1f18d18abe1348974e271c7c43c81bc8066a"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_002.json",
+    "sha256": "e5c622b65a3a83f083792dac52e8cee6f43ae7d8c50a46c7ff46cc1a3f0caed2"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_003.json",
+    "sha256": "011fe43a1511a168898ae4f960be08b6380588528f1eeb60106edff79fdf8d6a"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_004.json",
+    "sha256": "72201fd06c204db74b84cd84e44ab4e7a98a24054b415bf59f5990300526bae1"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_005.json",
+    "sha256": "6e8151ec6e283075942d8ba3107535902075f27c6eccbe603cf59c4017cc5888"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_006.json",
+    "sha256": "31ae79e3edb234ba3528c14399072699f2bca7c620097549ef1d96e0a34d09b4"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_007.json",
+    "sha256": "9a2e699e25c52c499af174ded101f972e21cb1a137ccf8288615e0df7bdc2d8c"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_008.json",
+    "sha256": "611898ca413bb044e049bf78aaaf8fda9998c7319765db8477f2beea3b0cdb6d"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_009.json",
+    "sha256": "f258a36af3815653449f651ffd67d7a53bcb1f384aa666d58acca6f8e664848e"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_010.json",
+    "sha256": "d2f569d590682c8ece397bd86b6aa1005f3048833f3c12fc05abb53d59fab3f2"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_011.json",
+    "sha256": "210a26d4b6cf1fe871b2b46ac19369524b8d8cd8364aadbc8a22f754e4c2501f"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_012.json",
+    "sha256": "0a18521ab28500ed2251c24f35e17d8428a6f5827d6aaf436a34cfeb6bf1fe4d"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_013.json",
+    "sha256": "4512820ed7f7caaecdfd019b2471df08981998f34616b828f8e3e2f5988eeb23"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_014.json",
+    "sha256": "248170f76b2449394c8e1ab66ad7b6706115bb6af2efd72605782aa20c643173"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_015.json",
+    "sha256": "2237f26349c38deff7956f2e7000c4fd01b3a8e23b0eacfff994842e2cbf12d0"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_016.json",
+    "sha256": "d224562f4d2fda039f63ca8290f50c040549fb45c6992e7f5768370dbf5e7e39"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_017.json",
+    "sha256": "533239dba7c6895d0a0d6ed330dfbe5b146b9ca734b93fbc2a7b6e2f193b945b"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_018.json",
+    "sha256": "3db0d25d0a25bc1d7807ed9f79ce67b800d7fe487a0ce9006823ebd447b2e8df"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_019.json",
+    "sha256": "bd3faa6a2437338f1b3b4169883e18e3ac02637e9a4fb57a39717d441d03dd47"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_020.json",
+    "sha256": "772f27c054146cb3e40963e5472b38e76942a502a31bf9e4ebde98726bd4eb03"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_021.json",
+    "sha256": "c613962e603ed4f80802541fc53c21669a0a020efb16edb0637ed7430e6ed964"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_022.json",
+    "sha256": "ac007848ccf24ee142aab9dfe6af98a5656b6d09e2bb056b9c82971cf28dd915"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_023.json",
+    "sha256": "a44590900a95e00808228b28fb991f389a1cca0a8d356cb9377f8fb4f612633c"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_024.json",
+    "sha256": "c5da7b78a410a514913972d2f5f7e48e78692c5a7f3a525a427b26c6eceb2fcb"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_025.json",
+    "sha256": "46d800cd97556cf7b694fafbab4ddec430e4caba2c2eb2bfcbc6b197453ec7f8"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_026.json",
+    "sha256": "a0ea2d2034b1f3326e3120d4fec66d33dcfbe5b200eacade1c00f5f2767ed30f"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_027.json",
+    "sha256": "19e833d7578635813d210c6f2622992f16e27e114155117b69dcd270f8d0bd49"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_028.json",
+    "sha256": "0838010fe3ad913e7a09e98c70b28fb0b829685f05a15ac2471defa4f313a7a4"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_029.json",
+    "sha256": "19c7ca0ba93e53aa19bcae3ef9c1d5b81f5fec17353720dcc9c9fb94e30cdda2"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_030.json",
+    "sha256": "d652b7847e452d7b106c4c0170a84edd7c4a3d298b26083301c31ff733a78869"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_031.json",
+    "sha256": "869744d09741ace4d416e6dddc5a45a7363c16fa89629b2236952d99b7297ebe"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_032.json",
+    "sha256": "dc32de3655fff17996cff0132bd6ef204ff6b4b880c08c96041e46f3e302cb9d"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_033.json",
+    "sha256": "8c6a3c51a114cde1af358e53b7a9a24970dcc39940566d4b891848c08ffdaeea"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_034.json",
+    "sha256": "618ff79b3ee499f619e652bcc527d2ccc3200e2e0d64e705d749d0ee22ca2add"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_035.json",
+    "sha256": "2c59d443c7989c6015a4ece97b0ae1547db4e1a4e8f8d420c90e2be01f3a94a4"
+  },
+  {
+    "source": "Opencall/QueryV2/positives/results/batch_036.json",
+    "sha256": "ed3b8e83c755fe6315932daa2eb491ccc95d09fdedf32a627949f646e38e271d"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/term_samples.csv",
+    "sha256": "450ec00377fdbfb55d7718302d131a62eaaecb1ab0a23b522b1e2ee25d4510fb"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_000.json",
+    "sha256": "8294f75d1cb30139aea2ad0ffe38653160d1e652b9cfb6d88b67e1bad9fd85b3"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_001.json",
+    "sha256": "be45d5e3c570d671677725a092c64b409c46887b0b6c474771d31f579bc61918"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_002.json",
+    "sha256": "5b1c58ccf4a9ae2c2c78a5c5d14426ea846cab513915024bbaa66a54d4de4437"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_003.json",
+    "sha256": "c3762bf175d4528cec7e14d7c1b0c010167b11ac0cfb3be456e6c906a200a42d"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_004.json",
+    "sha256": "15c1f142e543a6e0ffcd039d863a164a4ca307f5bd17766669bf392fbb35b0c9"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_005.json",
+    "sha256": "5df61778d5716bbcad04e9d9e114a78f1708d35c3b66e48f108c67c13398255d"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_006.json",
+    "sha256": "f8ec6a0ccc60dd26e5b0ddf351ccd033b954806e5c01f4e356c897066ec4df4d"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_007.json",
+    "sha256": "3cdad2d9013cacec386f9fcc39050060a866a4d5f40c52af5a9e220677d716be"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_008.json",
+    "sha256": "44f740488ba2bcb81579c83006cf387bed039d5ae198fd757a787c2fa13ea710"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_009.json",
+    "sha256": "b3cfb9b443c230ef3baba6b7567a0b168d9346420635df02703d8543010baf19"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_010.json",
+    "sha256": "853031c27e155ae88b3507e172a6e0e4f42f19bc52ca1a0455fb4740f25e0d5d"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_011.json",
+    "sha256": "b088ab10022df49521ab1015f0b17770d82053ddd2319c85566fd7c35ebbe091"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_012.json",
+    "sha256": "9eeddf8bb024d4ac4e9dc4afcd6b1e8c3828ae729702ccdbfb0c768989ea1a07"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_013.json",
+    "sha256": "896fb554b5bb4368da4d96e286c76b08c49f11fc0755dd0bd7f8e9a5a4a3abee"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_014.json",
+    "sha256": "07200b2793ebf58d925fba5f9ecfcc8959c7b8ca4d95f9a19190e51571338e02"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_015.json",
+    "sha256": "043494839fe75a48e62cf8db20fe49a41170b669d5bff7b413c138fa69bffdf5"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_016.json",
+    "sha256": "d3b791d685103a3a75d6a67973f28a8a2bf115b8730dec3e03331ba1dd4265cd"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_017.json",
+    "sha256": "3fbb56eb209d67a76f46edfbc5d0b7d8b13b2654c76e86125a2b9fd669f87dbc"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_018.json",
+    "sha256": "6d3bc987fa768dc8e849844de3ecb2e2f09932dc25d856aa9e0d5991453455d5"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_019.json",
+    "sha256": "0d5bc8f591622735d3c0abdbcb7d35a5c654e7ba3b750e677cd17313b1d12b0f"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_020.json",
+    "sha256": "a698a6ef912174947643e4f7c614eb3ebeaeedaaab65b99306883ed636f4d17c"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_021.json",
+    "sha256": "99b1b3b7f7f40a6a2ef2fd1c909d954e26abfd82f1fea5ccc2ff209a796e0032"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_022.json",
+    "sha256": "0e6f6a54b51fd6ff1c4436cde8ba98fd441c5f0828339a909675870e18ea355c"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_023.json",
+    "sha256": "4f1cb83cc65de012b293be5b6b6f0d1a86102d432526f2c6d39463f6da7c45e6"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_024.json",
+    "sha256": "5b072ba1b64978de17fc22a0ce4e64f5d9ed42bbaa7d2ba72db1d5bf4f20c3fc"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_025.json",
+    "sha256": "dc6d7be6ea3024d02a8042f8203488bc42b1a9107352b605e6e91130229e17d3"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_026.json",
+    "sha256": "65ea67b2df01ef21595632ae7da81e2ee3650cd0b29c3ef4bb14174735e0cf8c"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_027.json",
+    "sha256": "f7d81fd4a287f039168dd69a0d182066159de43c28907d0b6b235030bad083b0"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_028.json",
+    "sha256": "bdd23f30e441a36ba7c4c5db781fbe62dd65cdf7d38b757095283d02acaedbec"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_029.json",
+    "sha256": "e36a76ba33902139a09bc86bae55e9c893b3b6e3206697059c4b7dac0a05884e"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_030.json",
+    "sha256": "2829821460d1357257913318755d498ef586e89686cd0202b4ea1f0cfca33f13"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_031.json",
+    "sha256": "654a57b750f9575b17605281ae38f56aacc65a6452607348b47ee47255bd6f2f"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_032.json",
+    "sha256": "96a542fec8199960c3a8a064d4afc7cc3b6fbb52d370cf656f7751983a11a058"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_033.json",
+    "sha256": "eff4feacd0de13e9f84f8c968af3ec634806745197443d7afdaccb64c23271ce"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_034.json",
+    "sha256": "b4ef55bb82566d98ee26b606fca95a0295fe50c06cb83ea957abcc9d6ec8c0b2"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_035.json",
+    "sha256": "118ccc2143ea89e84b72be6190e6fefcc8e23e2cc0f835c9b40300f8a74d8c02"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_036.json",
+    "sha256": "f9b8a0048e21d7cd81894385f56ad67b711c93c5e8c7a539836ab5f42b120217"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_037.json",
+    "sha256": "cc27f4760e7f89a7d46f4b0277f3e807cf2043c806052fc31a0ced4ac7092dec"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_038.json",
+    "sha256": "592008c25d61b81f16b173818fb90a4fb2b44f3c2202ebd071b653425527020e"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_039.json",
+    "sha256": "a0448c5c8277fbdfcf9875425f7bd04e2b7d362b227de6556878aa0ea2493557"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_040.json",
+    "sha256": "da350dd47eed9f5ed84041efb99d4b1300a812e15c126c1c7eeec1ca3cfcb359"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_041.json",
+    "sha256": "7ec17aacbe826f35c2277b36ff61cff2cca1398e12355241492b011b165e03c5"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_042.json",
+    "sha256": "b7bfabd37838bef57e6f39415aef4b8a85df886c79481399200e43e85dcb73e4"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_043.json",
+    "sha256": "2a0c7c8a6f0e741ebef953d2ccaf2fbb72677f83d4e689ceee1b338d6bbac1a9"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_044.json",
+    "sha256": "326fafe1e504a4e2bb740aa252321fbcaa9a3fc620f85fb0602e04b8fb18da9a"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_045.json",
+    "sha256": "44b2ae6bd91e30631e9459bf8555455409cc9e9ef7a9e2eab48b1bd860b02995"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_046.json",
+    "sha256": "d426ee84141ec853a1028c4d08d882bf932d8cca3e07ef215e72c4dfc40810bf"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_047.json",
+    "sha256": "097d8b27ab7d9f2bdfad13a072410a24d0d859ec84912ec6f85ba58a281bd4a2"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_048.json",
+    "sha256": "8f78e0ddb224b59aafd3353b9de9803416ec4ac33f61e90f5ab1ab5b8b86b5f6"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_049.json",
+    "sha256": "45ac619e4cd75018fba8b8d9401acbc826cb86d4a6e5abbef0f1f41d50375125"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_050.json",
+    "sha256": "a423a8dda29e914fb387130afdef5d040dadfac9f26d2cd061b748cb588086d0"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_051.json",
+    "sha256": "f7bf810dc27d5870addc87f6daceadcdf1e50deaa3161d148c12ede6c08d1ea2"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_052.json",
+    "sha256": "72fc330aac7461e38a522bc7d4aa11876e316fadbb4e11fcdd06ce8ba3b63fd8"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_053.json",
+    "sha256": "156ad95ec0c7f5ee28faab5f93463fe43bb6d0841483e7cb5482ae088f5fbce9"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_054.json",
+    "sha256": "021a64bdd230b8ff655d5e689847916a36b766510ab1e9f7e81ba19bf2aa48a1"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_055.json",
+    "sha256": "c70cdd2c9b1e05e94663c78c40a1bf3b62cb05125124aff90037027c997f7eab"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_056.json",
+    "sha256": "d6e17d8928fc977af873c3d5a33bca72586e0342843e3c4b674fe7a8857a667f"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_057.json",
+    "sha256": "a13ce3aabffdce83703d7428a64510c6fa735c870d656ad1b74aa246622c04c4"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_058.json",
+    "sha256": "ae2eb6531058d806421cbb52b1d0433697877b72333b2ae06c20d2e6766f4e9a"
+  },
+  {
+    "source": "Opencall/QueryV2/termeval/results/batch_059.json",
+    "sha256": "a7165aa35048be755af73f6face4c6c7de365827daf0094511c9ad4503ca42cf"
+  }
+]

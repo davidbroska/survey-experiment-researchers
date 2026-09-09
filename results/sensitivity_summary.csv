@@ -1,0 +1,7 @@
+variant,n_articles,n_authors,overlap_with_primary_top40
+venue_threshold_1,7035,8312,40
+venue_threshold_3,5496,6500,33
+venue_threshold_5,4733,5616,32
+all_authors,7035,12944,32
+text_cue_only,2294,3531,9
+core_only,6674,7887,38

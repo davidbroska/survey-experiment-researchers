@@ -1,0 +1,9 @@
+{
+  "origin": "all_publication_years_through_2026",
+  "threshold": 1,
+  "n_journals": 3401,
+  "n_investigators_with_journals": 577,
+  "input_sha256": "6e2c76e9500ace52a798be5a10ff4f24e65a69fcf42ef75743406422d0b1a1d3",
+  "missing_source_rows": 1,
+  "built_at": "2026-09-08T09:41:42.172085+00:00"
+}

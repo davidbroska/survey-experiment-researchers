@@ -1,0 +1,143 @@
+[
+  {
+    "query": "TITLE-ABS-KEY(\"survey experiment*\" OR \"survey-based experiment*\" OR \"survey-embedded experiment*\" OR \"vignette experiment*\" OR \"experimental vignette*\" OR \"vignette-based experiment*\" OR \"framing experiment*\" OR \"information provision experiment*\" OR \"survey-experimental\" OR \"vignette-based survey*\" OR \"scenario-based experiment*\") AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2016",
+    "expected": 251,
+    "retrieved": 251,
+    "complete": true,
+    "dates": [
+      "2026-09-08T10:00:25.774890+00:00",
+      "2026-09-08T10:00:27.873625+00:00"
+    ]
+  },
+  {
+    "query": "TITLE-ABS-KEY(\"survey experiment*\" OR \"survey-based experiment*\" OR \"survey-embedded experiment*\" OR \"vignette experiment*\" OR \"experimental vignette*\" OR \"vignette-based experiment*\" OR \"framing experiment*\" OR \"information provision experiment*\" OR \"survey-experimental\" OR \"vignette-based survey*\" OR \"scenario-based experiment*\") AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2017",
+    "expected": 265,
+    "retrieved": 265,
+    "complete": true,
+    "dates": [
+      "2026-09-08T10:00:25.932668+00:00",
+      "2026-09-08T10:00:28.411147+00:00"
+    ]
+  },
+  {
+    "query": "TITLE-ABS-KEY(\"survey experiment*\" OR \"survey-based experiment*\" OR \"survey-embedded experiment*\" OR \"vignette experiment*\" OR \"experimental vignette*\" OR \"vignette-based experiment*\" OR \"framing experiment*\" OR \"information provision experiment*\" OR \"survey-experimental\" OR \"vignette-based survey*\" OR \"scenario-based experiment*\") AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2018",
+    "expected": 356,
+    "retrieved": 356,
+    "complete": true,
+    "dates": [
+      "2026-09-08T10:00:27.757452+00:00",
+      "2026-09-08T10:00:31.811486+00:00"
+    ]
+  },
+  {
+    "query": "TITLE-ABS-KEY(\"survey experiment*\" OR \"survey-based experiment*\" OR \"survey-embedded experiment*\" OR \"vignette experiment*\" OR \"experimental vignette*\" OR \"vignette-based experiment*\" OR \"framing experiment*\" OR \"information provision experiment*\" OR \"survey-experimental\" OR \"vignette-based survey*\" OR \"scenario-based experiment*\") AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2019",
+    "expected": 448,
+    "retrieved": 448,
+    "complete": true,
+    "dates": [
+      "2026-09-08T10:00:28.189211+00:00",
+      "2026-09-08T10:00:32.637224+00:00",
+      "2026-09-08T10:00:34.742285+00:00"
+    ]
+  },
+  {
+    "query": "TITLE-ABS-KEY(\"survey experiment*\" OR \"survey-based experiment*\" OR \"survey-embedded experiment*\" OR \"vignette experiment*\" OR \"experimental vignette*\" OR \"vignette-based experiment*\" OR \"framing experiment*\" OR \"information provision experiment*\" OR \"survey-experimental\" OR \"vignette-based survey*\" OR \"scenario-based experiment*\") AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2020",
+    "expected": 594,
+    "retrieved": 594,
+    "complete": true,
+    "dates": [
+      "2026-09-08T10:00:32.596342+00:00",
+      "2026-09-08T10:00:37.337482+00:00",
+      "2026-09-08T10:00:41.746611+00:00"
+    ]
+  },
+  {
+    "query": "TITLE-ABS-KEY(\"survey experiment*\" OR \"survey-based experiment*\" OR \"survey-embedded experiment*\" OR \"vignette experiment*\" OR \"experimental vignette*\" OR \"vignette-based experiment*\" OR \"framing experiment*\" OR \"information provision experiment*\" OR \"survey-experimental\" OR \"vignette-based survey*\" OR \"scenario-based experiment*\") AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2021",
+    "expected": 779,
+    "retrieved": 779,
+    "complete": true,
+    "dates": [
+      "2026-09-08T10:00:33.114779+00:00",
+      "2026-09-08T10:00:37.832053+00:00",
+      "2026-09-08T10:00:42.581561+00:00",
+      "2026-09-08T10:00:46.547962+00:00"
+    ]
+  },
+  {
+    "query": "TITLE-ABS-KEY(\"survey experiment*\" OR \"survey-based experiment*\" OR \"survey-embedded experiment*\" OR \"vignette experiment*\" OR \"experimental vignette*\" OR \"vignette-based experiment*\" OR \"framing experiment*\" OR \"information provision experiment*\" OR \"survey-experimental\" OR \"vignette-based survey*\" OR \"scenario-based experiment*\") AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2022",
+    "expected": 933,
+    "retrieved": 933,
+    "complete": true,
+    "dates": [
+      "2026-09-08T10:00:36.340635+00:00",
+      "2026-09-08T10:00:41.253774+00:00",
+      "2026-09-08T10:00:46.033057+00:00",
+      "2026-09-08T10:00:50.475999+00:00",
+      "2026-09-08T10:00:54.076887+00:00"
+    ]
+  },
+  {
+    "query": "TITLE-ABS-KEY(\"survey experiment*\" OR \"survey-based experiment*\" OR \"survey-embedded experiment*\" OR \"vignette experiment*\" OR \"experimental vignette*\" OR \"vignette-based experiment*\" OR \"framing experiment*\" OR \"information provision experiment*\" OR \"survey-experimental\" OR \"vignette-based survey*\" OR \"scenario-based experiment*\") AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2023",
+    "expected": 1040,
+    "retrieved": 1040,
+    "complete": true,
+    "dates": [
+      "2026-09-08T10:00:39.418463+00:00",
+      "2026-09-08T10:00:44.143004+00:00",
+      "2026-09-08T10:00:48.896044+00:00",
+      "2026-09-08T10:00:53.550133+00:00",
+      "2026-09-08T10:00:57.938200+00:00",
+      "2026-09-08T10:00:59.837404+00:00"
+    ]
+  },
+  {
+    "query": "TITLE-ABS-KEY(\"survey experiment*\" OR \"survey-based experiment*\" OR \"survey-embedded experiment*\" OR \"vignette experiment*\" OR \"experimental vignette*\" OR \"vignette-based experiment*\" OR \"framing experiment*\" OR \"information provision experiment*\" OR \"survey-experimental\" OR \"vignette-based survey*\" OR \"scenario-based experiment*\") AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2024",
+    "expected": 1252,
+    "retrieved": 1252,
+    "complete": true,
+    "dates": [
+      "2026-09-08T10:00:46.822137+00:00",
+      "2026-09-08T10:00:51.808645+00:00",
+      "2026-09-08T10:00:56.370621+00:00",
+      "2026-09-08T10:01:01.416868+00:00",
+      "2026-09-08T10:01:06.292814+00:00",
+      "2026-09-08T10:01:10.924425+00:00",
+      "2026-09-08T10:01:13.012994+00:00"
+    ]
+  },
+  {
+    "query": "TITLE-ABS-KEY(\"survey experiment*\" OR \"survey-based experiment*\" OR \"survey-embedded experiment*\" OR \"vignette experiment*\" OR \"experimental vignette*\" OR \"vignette-based experiment*\" OR \"framing experiment*\" OR \"information provision experiment*\" OR \"survey-experimental\" OR \"vignette-based survey*\" OR \"scenario-based experiment*\") AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2025",
+    "expected": 1746,
+    "retrieved": 1746,
+    "complete": true,
+    "dates": [
+      "2026-09-08T10:00:51.257631+00:00",
+      "2026-09-08T10:00:56.719606+00:00",
+      "2026-09-08T10:01:01.629795+00:00",
+      "2026-09-08T10:01:06.688616+00:00",
+      "2026-09-08T10:01:11.611168+00:00",
+      "2026-09-08T10:01:16.836729+00:00",
+      "2026-09-08T10:01:21.870448+00:00",
+      "2026-09-08T10:01:26.586136+00:00",
+      "2026-09-08T10:01:30.573947+00:00"
+    ]
+  },
+  {
+    "query": "TITLE-ABS-KEY(\"survey experiment*\" OR \"survey-based experiment*\" OR \"survey-embedded experiment*\" OR \"vignette experiment*\" OR \"experimental vignette*\" OR \"vignette-based experiment*\" OR \"framing experiment*\" OR \"information provision experiment*\" OR \"survey-experimental\" OR \"vignette-based survey*\" OR \"scenario-based experiment*\") AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2015 AND PUBYEAR < 2027 AND PUBYEAR = 2026",
+    "expected": 1813,
+    "retrieved": 1813,
+    "complete": true,
+    "dates": [
+      "2026-09-08T10:00:58.912810+00:00",
+      "2026-09-08T10:01:04.230106+00:00",
+      "2026-09-08T10:01:09.016431+00:00",
+      "2026-09-08T10:01:14.356329+00:00",
+      "2026-09-08T10:01:19.241332+00:00",
+      "2026-09-08T10:01:24.015582+00:00",
+      "2026-09-08T10:01:28.469453+00:00",
+      "2026-09-08T10:01:33.114410+00:00",
+      "2026-09-08T10:01:37.807729+00:00",
+      "2026-09-08T10:01:39.292149+00:00"
+    ]
+  }
+]

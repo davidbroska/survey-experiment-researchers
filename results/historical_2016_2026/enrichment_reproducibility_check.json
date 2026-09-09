@@ -1,0 +1,23 @@
+{
+  "checked_on": "2026-09-08",
+  "byte_identical_on_repeat": true,
+  "output_sha256": {
+    "results/top40_enriched.csv": "ff57c80ad3608585d076dde65364c81bf4ec0c5c89040790fc0760d078634577",
+    "results/top40_article_annotations.csv": "510e38a41688766f21b48243e5d545e85b819db93ef7d7e7244259b703205d01",
+    "results/top40_author_article_links.csv": "c7962fadca9683ffd81b6625472f8e3fcdb140b1f9e0175dcb92d90f28cd0a04",
+    "results/top40_enrichment_summary.json": "ffa85616d60416cfe30850d1c7a323fe48199ffc5a0a425604b8df15c5d83cda",
+    "GEOGRAPHY_REPORT.md": "ab64fec71adeacff52151a434d6d247900d5c082683c0ec1c98800d193b4e1ac",
+    "TOP40.html": "59abfd04486a639796d355bb4f1de9d339c8be57790bb9bbfbfb5dd173029961",
+    "EXECUTIVE_SUMMARY.md": "211815c8fe034c937aafb61d4d52a08c8c11db1c2af7cb04cf8be23939640bcb",
+    "EXECUTIVE_SUMMARY.html": "c1e4bed8d4bfd735d779545cffa084ab21740e8c18ed0eb67dfeb920b5cc9908",
+    "SUPPORTING_INFORMATION.md": "cb12df82ba741c22e1e1e967feae7cfaf1132f9fd2e3aaf13a252d19f7ee8f15",
+    "SUPPORTING_INFORMATION.html": "6bc07f8b73f1139fbc83d5a6939e72d4f1973c6313c0775b976c6a55ce4ffa96",
+    "QUERY_REPORT.md": "48e275eef033487177eb3d9d1cf57b77d9f9cdc61ea65ea2680ae88ce815967d",
+    "QUERY_REPORT.html": "702b847ae838dc785359c0e5c18afb5f3d7665ba8003b536be6fb5bcc4775b1d"
+  },
+  "original_ranking_unchanged": true,
+  "raw_articles_unchanged": true,
+  "tests_passed": 29,
+  "query_has_no_design_keyword_exclusions": true,
+  "html_script_syntax": "node --check passed; browser visual inspection not performed"
+}

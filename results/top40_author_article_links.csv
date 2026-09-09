@@ -1,0 +1,444 @@
+authid,full_name,scopus_id,authorship_position,sample_us_label
+6602110388,Thomas Bernauer,84975459634,first,non_us
+6602110388,Thomas Bernauer,84975789795,first,unclear
+6602110388,Thomas Bernauer,84992341283,last,unclear
+6602110388,Thomas Bernauer,85003864913,last,non_us
+6602110388,Thomas Bernauer,85016025310,first,non_us
+6602110388,Thomas Bernauer,85062085474,last,us_explicit
+6602110388,Thomas Bernauer,85064636420,first,non_us
+6602110388,Thomas Bernauer,85067680513,last,non_us
+6602110388,Thomas Bernauer,85082430134,last,us_explicit
+6602110388,Thomas Bernauer,85083863861,last,non_us
+6602110388,Thomas Bernauer,85103645348,last,us_explicit
+6602110388,Thomas Bernauer,85104056574,last,non_us
+6602110388,Thomas Bernauer,85104712462,last,us_explicit
+6602110388,Thomas Bernauer,85112464435,last,unclear
+6602110388,Thomas Bernauer,85120781136,last,non_us
+6602110388,Thomas Bernauer,85124196620,last,us_explicit
+6602110388,Thomas Bernauer,85124455446,last,non_us
+6602110388,Thomas Bernauer,85141374427,last,us_inferred
+6602110388,Thomas Bernauer,85159235309,last,non_us
+6602110388,Thomas Bernauer,85159334579,last,non_us
+6602110388,Thomas Bernauer,85159582567,last,non_us
+6602110388,Thomas Bernauer,85179742651,last,us_explicit
+6602110388,Thomas Bernauer,85182577401,last,non_us
+6602110388,Thomas Bernauer,85187132462,last,non_us
+6602110388,Thomas Bernauer,85202949339,last,us_explicit
+6602110388,Thomas Bernauer,85203879255,last,non_us
+6602110388,Thomas Bernauer,85206976729,last,non_us
+6602110388,Thomas Bernauer,105006801172,last,non_us
+6602110388,Thomas Bernauer,105034645576,first,non_us
+6602110388,Thomas Bernauer,105037769935,last,non_us
+6602110388,Thomas Bernauer,105043534448,last,us_explicit
+12767146800,Douglas L. Kriner,84978906427,first,non_us
+12767146800,Douglas L. Kriner,84995578409,last,us_explicit
+12767146800,Douglas L. Kriner,85014593137,last,us_explicit
+12767146800,Douglas L. Kriner,85014649599,last,us_inferred
+12767146800,Douglas L. Kriner,85014922403,last,us_inferred
+12767146800,Douglas L. Kriner,85040085886,first,us_explicit
+12767146800,Douglas L. Kriner,85041625323,sole,us_inferred
+12767146800,Douglas L. Kriner,85073310147,last,unclear
+12767146800,Douglas L. Kriner,85094221120,last,us_explicit
+12767146800,Douglas L. Kriner,85096943476,last,us_inferred
+12767146800,Douglas L. Kriner,85099406266,last,us_explicit
+12767146800,Douglas L. Kriner,85125698803,last,us_explicit
+12767146800,Douglas L. Kriner,85127254828,last,us_explicit
+12767146800,Douglas L. Kriner,85127581823,last,us_inferred
+12767146800,Douglas L. Kriner,85136722514,last,us_inferred
+12767146800,Douglas L. Kriner,85179678265,last,non_us
+12767146800,Douglas L. Kriner,105042603565,last,us_inferred
+57203170141,Niels Bjørn Grund Petersen,85062262291,first,unclear
+57203170141,Niels Bjørn Grund Petersen,85067407501,last,non_us
+57203170141,Niels Bjørn Grund Petersen,85074029219,sole,non_us
+57203170141,Niels Bjørn Grund Petersen,85076524004,sole,non_us
+57203170141,Niels Bjørn Grund Petersen,85087880256,sole,non_us
+57203170141,Niels Bjørn Grund Petersen,85091181242,sole,non_us
+57203170141,Niels Bjørn Grund Petersen,85092586367,last,non_us
+57203170141,Niels Bjørn Grund Petersen,85110788543,last,unclear
+57203170141,Niels Bjørn Grund Petersen,85174613687,last,non_us
+57203170141,Niels Bjørn Grund Petersen,85186919352,last,non_us
+57203170141,Niels Bjørn Grund Petersen,85214572618,last,non_us
+57203170141,Niels Bjørn Grund Petersen,86000435450,last,unclear
+57203170141,Niels Bjørn Grund Petersen,105002152711,first,non_us
+57203170141,Niels Bjørn Grund Petersen,105024555682,first,non_us
+57203170141,Niels Bjørn Grund Petersen,105040241040,last,unclear
+25224644900,Rasmus Tue Pedersen,85034662474,sole,unclear
+25224644900,Rasmus Tue Pedersen,85046645518,sole,unclear
+25224644900,Rasmus Tue Pedersen,85061936887,sole,non_us
+25224644900,Rasmus Tue Pedersen,85068002083,last,unclear
+25224644900,Rasmus Tue Pedersen,85070986430,first,unclear
+25224644900,Rasmus Tue Pedersen,85071235282,first,us_explicit
+25224644900,Rasmus Tue Pedersen,85083358513,first,unclear
+25224644900,Rasmus Tue Pedersen,85083672997,first,unclear
+25224644900,Rasmus Tue Pedersen,85110876599,first,non_us
+25224644900,Rasmus Tue Pedersen,85125441524,first,unclear
+25224644900,Rasmus Tue Pedersen,85196067903,first,unclear
+25224644900,Rasmus Tue Pedersen,85214572618,first,non_us
+25224644900,Rasmus Tue Pedersen,105019779764,first,unclear
+25224644900,Rasmus Tue Pedersen,105040241040,first,unclear
+23095594600,David G. Rand,85101069099,last,unclear
+23095594600,David G. Rand,85103049149,last,unclear
+23095594600,David G. Rand,85117921915,last,unclear
+23095594600,David G. Rand,85120323140,last,us_explicit
+23095594600,David G. Rand,85120491400,last,not_applicable
+23095594600,David G. Rand,85127735283,last,us_explicit
+23095594600,David G. Rand,85130585909,last,unclear
+23095594600,David G. Rand,85149118557,last,us_explicit
+23095594600,David G. Rand,85163212575,last,us_inferred
+23095594600,David G. Rand,85193970570,last,us_inferred
+23095594600,David G. Rand,85205594046,last,unclear
+23095594600,David G. Rand,85206618776,last,unclear
+23095594600,David G. Rand,105008878283,last,us_explicit
+24168107200,Yusaku Horiuchi,85039933179,last,us_explicit
+24168107200,Yusaku Horiuchi,85052643404,first,non_us
+24168107200,Yusaku Horiuchi,85055870318,last,non_us
+24168107200,Yusaku Horiuchi,85062479527,last,us_explicit
+24168107200,Yusaku Horiuchi,85067962902,last,us_inferred
+24168107200,Yusaku Horiuchi,85115188399,first,us_inferred
+24168107200,Yusaku Horiuchi,85123926675,last,us_inferred
+24168107200,Yusaku Horiuchi,85125415127,first,non_us
+24168107200,Yusaku Horiuchi,85136473193,first,non_us
+24168107200,Yusaku Horiuchi,85145327725,last,us_explicit
+24168107200,Yusaku Horiuchi,85145409036,last,non_us
+24168107200,Yusaku Horiuchi,105030588739,last,us_explicit
+24168107200,Yusaku Horiuchi,105042398599,first,non_us
+36775562800,Blaine G. Robbins,84944232504,sole,unclear
+36775562800,Blaine G. Robbins,84983314158,sole,unclear
+36775562800,Blaine G. Robbins,85033780100,sole,unclear
+36775562800,Blaine G. Robbins,85033788510,sole,unclear
+36775562800,Blaine G. Robbins,85044032298,first,unclear
+36775562800,Blaine G. Robbins,85066959974,sole,unclear
+36775562800,Blaine G. Robbins,85089290541,first,us_explicit
+36775562800,Blaine G. Robbins,85097264174,first,unclear
+36775562800,Blaine G. Robbins,85126184203,first,us_explicit
+36775562800,Blaine G. Robbins,85136531185,last,us_explicit
+36775562800,Blaine G. Robbins,85197852159,sole,us_explicit
+36775562800,Blaine G. Robbins,85200831312,first,us_explicit
+36775562800,Blaine G. Robbins,105008067194,first,unclear
+7102611306,Christine Horne,85053509639,first,us_explicit
+7102611306,Christine Horne,85058618008,first,non_us
+7102611306,Christine Horne,85058698012,last,us_inferred
+7102611306,Christine Horne,85074603977,first,unclear
+7102611306,Christine Horne,85085764776,last,us_explicit
+7102611306,Christine Horne,85103905289,first,unclear
+7102611306,Christine Horne,85111820523,last,us_inferred
+7102611306,Christine Horne,85111834004,first,us_explicit
+7102611306,Christine Horne,85133863087,first,us_inferred
+7102611306,Christine Horne,85207005517,last,us_explicit
+7102611306,Christine Horne,86000296951,last,us_explicit
+7102611306,Christine Horne,105042428497,first,unclear
+23010864600,Samuel Whitt,85071419972,last,non_us
+23010864600,Samuel Whitt,85099962519,last,non_us
+23010864600,Samuel Whitt,85108557459,last,non_us
+23010864600,Samuel Whitt,85132755374,last,non_us
+23010864600,Samuel Whitt,85216104420,first,non_us
+23010864600,Samuel Whitt,85216486046,last,non_us
+23010864600,Samuel Whitt,85216620221,first,us_explicit
+23010864600,Samuel Whitt,105000519465,last,non_us
+23010864600,Samuel Whitt,105002134171,last,non_us
+23010864600,Samuel Whitt,105003442248,first,us_explicit
+23010864600,Samuel Whitt,105024217606,first,non_us
+23010864600,Samuel Whitt,105041965396,last,non_us
+35309171200,Martin Bækgaard,84931077293,first,unclear
+35309171200,Martin Bækgaard,84977676153,first,unclear
+35309171200,Martin Bækgaard,84980034387,last,non_us
+35309171200,Martin Bækgaard,85019021043,sole,us_explicit
+35309171200,Martin Bækgaard,85059905845,first,unclear
+35309171200,Martin Bækgaard,85063679523,first,non_us
+35309171200,Martin Bækgaard,85067407501,first,non_us
+35309171200,Martin Bækgaard,85073946170,last,non_us
+35309171200,Martin Bækgaard,85103173621,first,non_us
+35309171200,Martin Bækgaard,85118144335,first,non_us
+35309171200,Martin Bækgaard,85175738454,first,unclear
+35309171200,Martin Bækgaard,105010591172,last,non_us
+37065230200,Markus Wagner,85041617753,last,non_us
+37065230200,Markus Wagner,85065801512,last,non_us
+37065230200,Markus Wagner,85092367680,last,non_us
+37065230200,Markus Wagner,85102185208,last,unclear
+37065230200,Markus Wagner,85170705867,first,non_us
+37065230200,Markus Wagner,85174062271,last,non_us
+37065230200,Markus Wagner,85175473443,first,unclear
+37065230200,Markus Wagner,85175495163,last,non_us
+37065230200,Markus Wagner,85193819898,last,unclear
+37065230200,Markus Wagner,105014927185,last,non_us
+37065230200,Markus Wagner,105018032059,last,non_us
+37065230200,Markus Wagner,105048098704,last,non_us
+55091186500,Yoshikuni Ono,85054952173,first,non_us
+55091186500,Yoshikuni Ono,85113817293,last,unclear
+55091186500,Yoshikuni Ono,85129159055,last,unclear
+55091186500,Yoshikuni Ono,85135896371,last,non_us
+55091186500,Yoshikuni Ono,85136473193,last,non_us
+55091186500,Yoshikuni Ono,85186447775,last,non_us
+55091186500,Yoshikuni Ono,85219095528,last,non_us
+55091186500,Yoshikuni Ono,105000131600,first,non_us
+55091186500,Yoshikuni Ono,105009206681,last,non_us
+55091186500,Yoshikuni Ono,105009501936,last,non_us
+55091186500,Yoshikuni Ono,105021366057,last,non_us
+55091186500,Yoshikuni Ono,105040509962,first,unclear
+57217457882,Gregory A. Huber,85060580173,last,unclear
+57217457882,Gregory A. Huber,85062681263,last,us_inferred
+57217457882,Gregory A. Huber,85064539825,last,unclear
+57217457882,Gregory A. Huber,85097381620,last,unclear
+57217457882,Gregory A. Huber,85119018835,last,us_explicit
+57217457882,Gregory A. Huber,85120875984,last,us_inferred
+57217457882,Gregory A. Huber,85132896321,last,us_inferred
+57217457882,Gregory A. Huber,85183492832,last,us_inferred
+57217457882,Gregory A. Huber,85208657819,last,unclear
+57217457882,Gregory A. Huber,105007228428,last,unclear
+57217457882,Gregory A. Huber,105012258249,first,us_inferred
+57217457882,Gregory A. Huber,105013200123,first,us_inferred
+7202316609,Aseem Prakash,85053490407,last,us_explicit
+7202316609,Aseem Prakash,85059252534,last,us_explicit
+7202316609,Aseem Prakash,85087378517,last,us_explicit
+7202316609,Aseem Prakash,85104593177,last,non_us
+7202316609,Aseem Prakash,85122571011,last,non_us
+7202316609,Aseem Prakash,85185836671,last,us_explicit
+7202316609,Aseem Prakash,85193987772,last,us_explicit
+7202316609,Aseem Prakash,85214296759,last,us_explicit
+7202316609,Aseem Prakash,105010226878,last,non_us
+7202316609,Aseem Prakash,105033260134,last,us_explicit
+7202316609,Aseem Prakash,105039827469,last,us_explicit
+16305967100,Robb Willer,85052331497,last,us_inferred
+16305967100,Robb Willer,85084324260,last,unclear
+16305967100,Robb Willer,85091718485,last,us_explicit
+16305967100,Robb Willer,85111979067,last,us_inferred
+16305967100,Robb Willer,85120885789,last,us_explicit
+16305967100,Robb Willer,85160596820,last,us_inferred
+16305967100,Robb Willer,85176547661,last,us_inferred
+16305967100,Robb Willer,85191915888,last,us_explicit
+16305967100,Robb Willer,105005029873,last,us_inferred
+16305967100,Robb Willer,105029946035,last,us_explicit
+16305967100,Robb Willer,105044369270,last,us_explicit
+54881904100,Nichole M. Bauer,85014540568,sole,us_inferred
+54881904100,Nichole M. Bauer,85043332442,first,unclear
+54881904100,Nichole M. Bauer,85048742659,sole,us_inferred
+54881904100,Nichole M. Bauer,85067352245,sole,us_inferred
+54881904100,Nichole M. Bauer,85076027417,sole,unclear
+54881904100,Nichole M. Bauer,85076167276,sole,us_inferred
+54881904100,Nichole M. Bauer,85095117105,first,us_explicit
+54881904100,Nichole M. Bauer,85101803291,first,unclear
+54881904100,Nichole M. Bauer,85122780387,last,us_inferred
+54881904100,Nichole M. Bauer,105005597308,last,us_inferred
+54881904100,Nichole M. Bauer,105005626231,first,unclear
+56734108300,Mogens Jin Pedersen,84975770291,first,unclear
+56734108300,Mogens Jin Pedersen,85037044153,first,us_explicit
+56734108300,Mogens Jin Pedersen,85038356713,first,us_explicit
+56734108300,Mogens Jin Pedersen,85040459526,sole,unclear
+56734108300,Mogens Jin Pedersen,85054474475,first,non_us
+56734108300,Mogens Jin Pedersen,85074017190,first,non_us
+56734108300,Mogens Jin Pedersen,85167655087,first,us_explicit
+56734108300,Mogens Jin Pedersen,85183015664,first,non_us
+56734108300,Mogens Jin Pedersen,85183977264,last,non_us
+56734108300,Mogens Jin Pedersen,85212439594,last,non_us
+56734108300,Mogens Jin Pedersen,105005574189,first,non_us
+57190806413,Lukas Rudolph,85119401868,last,non_us
+57190806413,Lukas Rudolph,85119426755,last,non_us
+57190806413,Lukas Rudolph,85159334579,first,non_us
+57190806413,Lukas Rudolph,85159582567,first,non_us
+57190806413,Lukas Rudolph,85166589138,first,non_us
+57190806413,Lukas Rudolph,85188604798,first,non_us
+57190806413,Lukas Rudolph,85207749628,first,non_us
+57190806413,Lukas Rudolph,105006801172,first,non_us
+57190806413,Lukas Rudolph,105027329225,first,us_explicit
+57190806413,Lukas Rudolph,105039204587,sole,non_us
+57190806413,Lukas Rudolph,105043412577,sole,non_us
+57203528227,Jonathan A. Chu,85052060424,sole,us_explicit
+57203528227,Jonathan A. Chu,85103382393,first,us_explicit
+57203528227,Jonathan A. Chu,85107869445,last,us_explicit
+57203528227,Jonathan A. Chu,85122139505,first,unclear
+57203528227,Jonathan A. Chu,85124121558,last,unclear
+57203528227,Jonathan A. Chu,85124170048,sole,unclear
+57203528227,Jonathan A. Chu,85127696366,first,non_us
+57203528227,Jonathan A. Chu,85170289998,last,unclear
+57203528227,Jonathan A. Chu,85176924618,first,us_explicit
+57203528227,Jonathan A. Chu,85206830858,first,us_explicit
+57203528227,Jonathan A. Chu,105012359420,first,us_explicit
+35725744600,Sarah E. Kreps,84995444937,first,us_explicit
+35725744600,Sarah E. Kreps,85042090180,first,us_inferred
+35725744600,Sarah E. Kreps,85094221120,first,us_explicit
+35725744600,Sarah E. Kreps,85125698803,first,us_explicit
+35725744600,Sarah E. Kreps,85127254828,first,us_explicit
+35725744600,Sarah E. Kreps,85127581823,first,us_inferred
+35725744600,Sarah E. Kreps,85128583393,last,us_explicit
+35725744600,Sarah E. Kreps,85165518545,first,unclear
+35725744600,Sarah E. Kreps,85179678265,first,non_us
+35725744600,Sarah E. Kreps,105029190749,last,us_inferred
+38061940400,Justin T. Pickett,85017479115,first,us_explicit
+38061940400,Justin T. Pickett,85030544249,first,unclear
+38061940400,Justin T. Pickett,85060884767,first,unclear
+38061940400,Justin T. Pickett,85091202562,last,unclear
+38061940400,Justin T. Pickett,85092499524,first,us_inferred
+38061940400,Justin T. Pickett,85099391391,last,us_explicit
+38061940400,Justin T. Pickett,85190319537,last,us_inferred
+38061940400,Justin T. Pickett,85217932803,sole,not_applicable
+38061940400,Justin T. Pickett,105001077495,last,us_explicit
+38061940400,Justin T. Pickett,105005805574,last,us_inferred
+57205672554,Seiki Tanaka,84978085703,first,non_us
+57205672554,Seiki Tanaka,84992655159,sole,non_us
+57205672554,Seiki Tanaka,85061035641,last,non_us
+57205672554,Seiki Tanaka,85069886131,last,us_explicit
+57205672554,Seiki Tanaka,85101215653,last,non_us
+57205672554,Seiki Tanaka,85118477821,last,non_us
+57205672554,Seiki Tanaka,85126806972,last,us_explicit
+57205672554,Seiki Tanaka,85138248657,last,non_us
+57205672554,Seiki Tanaka,85158112186,last,non_us
+57205672554,Seiki Tanaka,85206340986,last,non_us
+6603696960,James N. Druckman,84945162574,first,us_explicit
+6603696960,James N. Druckman,85012118612,first,unclear
+6603696960,James N. Druckman,85037698515,first,us_inferred
+6603696960,James N. Druckman,85044370343,last,us_inferred
+6603696960,James N. Druckman,85058068103,first,us_inferred
+6603696960,James N. Druckman,85059946018,first,us_inferred
+6603696960,James N. Druckman,85116875533,first,us_explicit
+6603696960,James N. Druckman,85160596820,first,us_inferred
+6603696960,James N. Druckman,85204418104,last,us_inferred
+7003787305,Gregg G. Van Ryzin,84963994831,last,unclear
+7003787305,Gregg G. Van Ryzin,85014596724,last,us_explicit
+7003787305,Gregg G. Van Ryzin,85038355714,last,not_applicable
+7003787305,Gregg G. Van Ryzin,85067581830,last,unclear
+7003787305,Gregg G. Van Ryzin,85087950052,last,us_explicit
+7003787305,Gregg G. Van Ryzin,85089815116,last,us_explicit
+7003787305,Gregg G. Van Ryzin,85096111198,first,unclear
+7003787305,Gregg G. Van Ryzin,85104756695,last,non_us
+7003787305,Gregg G. Van Ryzin,85112316568,sole,us_explicit
+12794521600,Toby Bolsen,85044370343,first,us_inferred
+12794521600,Toby Bolsen,85057148304,last,non_us
+12794521600,Toby Bolsen,85062719018,first,unclear
+12794521600,Toby Bolsen,85070298879,first,us_inferred
+12794521600,Toby Bolsen,85130733510,first,unclear
+12794521600,Toby Bolsen,85167408025,first,us_explicit
+12794521600,Toby Bolsen,85209378959,first,us_explicit
+12794521600,Toby Bolsen,85216215252,first,us_inferred
+12794521600,Toby Bolsen,85217158927,last,us_inferred
+14034772300,Jason Reifler,85106697357,last,us_inferred
+14034772300,Jason Reifler,85124140550,last,us_explicit
+14034772300,Jason Reifler,85147720720,last,us_explicit
+14034772300,Jason Reifler,85162185399,last,us_inferred
+14034772300,Jason Reifler,85170631568,last,us_explicit
+14034772300,Jason Reifler,85174056404,last,us_inferred
+14034772300,Jason Reifler,85213442851,last,not_applicable
+14034772300,Jason Reifler,105008461820,last,unclear
+14034772300,Jason Reifler,105027197362,last,non_us
+14832646600,Robin E. Gearing,85100598411,first,non_us
+14832646600,Robin E. Gearing,85134747070,first,unclear
+14832646600,Robin E. Gearing,85145825392,first,unclear
+14832646600,Robin E. Gearing,85147143671,first,us_explicit
+14832646600,Robin E. Gearing,85174071113,last,us_explicit
+14832646600,Robin E. Gearing,85205574905,last,us_explicit
+14832646600,Robin E. Gearing,105010461822,first,non_us
+14832646600,Robin E. Gearing,105011988550,last,non_us
+14832646600,Robin E. Gearing,105019345621,last,non_us
+35492113000,Thomas Zeitzoff,85020188394,last,unclear
+35492113000,Thomas Zeitzoff,85042184003,last,non_us
+35492113000,Thomas Zeitzoff,85047903545,last,non_us
+35492113000,Thomas Zeitzoff,85049075124,last,non_us
+35492113000,Thomas Zeitzoff,85068387044,last,non_us
+35492113000,Thomas Zeitzoff,85069682610,last,non_us
+35492113000,Thomas Zeitzoff,85078960506,last,non_us
+35492113000,Thomas Zeitzoff,85183616534,first,us_explicit
+35492113000,Thomas Zeitzoff,105026243740,last,non_us
+35861891200,Matthew S. Winters,84967215008,first,non_us
+35861891200,Matthew S. Winters,85012297251,last,non_us
+35861891200,Matthew S. Winters,85035364736,last,non_us
+35861891200,Matthew S. Winters,85073767137,last,non_us
+35861891200,Matthew S. Winters,85102071850,first,non_us
+35861891200,Matthew S. Winters,85152296772,last,non_us
+35861891200,Matthew S. Winters,85160547976,last,non_us
+35861891200,Matthew S. Winters,105001850441,last,non_us
+35861891200,Matthew S. Winters,105012597345,first,us_explicit
+37063497400,Kevin J. Mullinix,84941353207,last,us_inferred
+37063497400,Kevin J. Mullinix,85041603336,sole,unclear
+37063497400,Kevin J. Mullinix,85053299605,first,us_inferred
+37063497400,Kevin J. Mullinix,85057578602,last,unclear
+37063497400,Kevin J. Mullinix,85059103503,last,unclear
+37063497400,Kevin J. Mullinix,85067057847,last,us_inferred
+37063497400,Kevin J. Mullinix,85123476525,last,us_explicit
+37063497400,Kevin J. Mullinix,85127190236,first,us_explicit
+37063497400,Kevin J. Mullinix,105038900974,first,us_explicit
+55603014300,Tobias Heinrich,85029279527,first,unclear
+55603014300,Tobias Heinrich,85042721612,first,unclear
+55603014300,Tobias Heinrich,85078201451,first,us_explicit
+55603014300,Tobias Heinrich,85109308295,first,us_inferred
+55603014300,Tobias Heinrich,85109571277,last,us_explicit
+55603014300,Tobias Heinrich,85133919585,last,us_explicit
+55603014300,Tobias Heinrich,85188096695,first,us_explicit
+55603014300,Tobias Heinrich,85193946140,last,us_explicit
+55603014300,Tobias Heinrich,85200455835,first,unclear
+55612017400,Erik Peterson,85053665784,sole,unclear
+55612017400,Erik Peterson,85064805724,last,unclear
+55612017400,Erik Peterson,85099984460,first,unclear
+55612017400,Erik Peterson,85118939204,first,unclear
+55612017400,Erik Peterson,85125920680,first,us_inferred
+55612017400,Erik Peterson,85205529418,first,us_inferred
+55612017400,Erik Peterson,85216671878,first,us_inferred
+55612017400,Erik Peterson,105001820017,first,unclear
+55612017400,Erik Peterson,105003759877,last,us_inferred
+56448439600,Selim Erdem Aytaç,85019041831,first,non_us
+56448439600,Selim Erdem Aytaç,85053017516,first,us_explicit
+56448439600,Selim Erdem Aytaç,85057946678,first,non_us
+56448439600,Selim Erdem Aytaç,85101463174,sole,non_us
+56448439600,Selim Erdem Aytaç,85109276344,sole,non_us
+56448439600,Selim Erdem Aytaç,85115941650,sole,non_us
+56448439600,Selim Erdem Aytaç,85168483699,first,non_us
+56448439600,Selim Erdem Aytaç,105002982634,first,non_us
+56448439600,Selim Erdem Aytaç,105018624506,first,us_explicit
+56556884300,Ryan Brutger,85046533072,first,unclear
+56556884300,Ryan Brutger,85096694153,sole,us_inferred
+56556884300,Ryan Brutger,85129014294,first,us_explicit
+56556884300,Ryan Brutger,85129300276,first,us_explicit
+56556884300,Ryan Brutger,85130898035,first,unclear
+56556884300,Ryan Brutger,85131738044,first,us_explicit
+56556884300,Ryan Brutger,85198952844,first,us_explicit
+56556884300,Ryan Brutger,85216353783,first,us_explicit
+56556884300,Ryan Brutger,85218245112,last,us_inferred
+56611317200,John V. Kane,85033714347,last,unclear
+56611317200,John V. Kane,85051013258,sole,unclear
+56611317200,John V. Kane,85061188236,sole,us_inferred
+56611317200,John V. Kane,85067402720,first,unclear
+56611317200,John V. Kane,85076495848,sole,us_inferred
+56611317200,John V. Kane,85159594856,last,us_explicit
+56611317200,John V. Kane,85180219290,first,unclear
+56611317200,John V. Kane,85185575879,sole,not_applicable
+56611317200,John V. Kane,85205118689,sole,us_inferred
+57189074265,Honorata Mazepus,85070813530,first,non_us
+57189074265,Honorata Mazepus,85121452284,first,non_us
+57189074265,Honorata Mazepus,85147434032,last,non_us
+57189074265,Honorata Mazepus,85150819039,first,non_us
+57189074265,Honorata Mazepus,85214354427,last,non_us
+57189074265,Honorata Mazepus,105025108627,first,non_us
+57189074265,Honorata Mazepus,105025248279,sole,non_us
+57189074265,Honorata Mazepus,105027159077,last,us_explicit
+57189074265,Honorata Mazepus,105029985491,last,non_us
+57191360465,Jinfeng Zhang,85129226690,last,non_us
+57191360465,Jinfeng Zhang,85158001358,last,unclear
+57191360465,Jinfeng Zhang,85160835182,last,non_us
+57191360465,Jinfeng Zhang,85161446266,last,non_us
+57191360465,Jinfeng Zhang,85176725704,first,non_us
+57191360465,Jinfeng Zhang,85205257452,first,non_us
+57191360465,Jinfeng Zhang,85215379642,last,unclear
+57191360465,Jinfeng Zhang,105001127398,last,non_us
+57191360465,Jinfeng Zhang,105046162689,first,non_us
+7006059165,Maykel Verkuyten,84989282236,first,non_us
+7006059165,Maykel Verkuyten,85041371053,sole,non_us
+7006059165,Maykel Verkuyten,85073950357,last,non_us
+7006059165,Maykel Verkuyten,85075548198,first,non_us
+7006059165,Maykel Verkuyten,85131358788,first,non_us
+7006059165,Maykel Verkuyten,85133968124,first,non_us
+7006059165,Maykel Verkuyten,85140277195,first,non_us
+7006059165,Maykel Verkuyten,85140278720,first,non_us
+24339564700,David A. Steinberg,85082410038,last,non_us
+24339564700,David A. Steinberg,85131571257,first,non_us
+24339564700,David A. Steinberg,85168483699,last,non_us
+24339564700,David A. Steinberg,85198928846,first,us_explicit
+24339564700,David A. Steinberg,85198999643,last,us_explicit
+24339564700,David A. Steinberg,105014746447,last,us_explicit
+24339564700,David A. Steinberg,105018624506,last,us_explicit
+24339564700,David A. Steinberg,105035324372,first,non_us
+24474160700,Brian R. Calfano,84959343624,first,us_explicit
+24474160700,Brian R. Calfano,84959905263,first,us_inferred
+24474160700,Brian R. Calfano,85037647979,last,us_inferred
+24474160700,Brian R. Calfano,85053221139,first,us_explicit
+24474160700,Brian R. Calfano,85100970268,first,us_inferred
+24474160700,Brian R. Calfano,85122529325,first,us_inferred
+24474160700,Brian R. Calfano,85124994501,first,us_explicit
+24474160700,Brian R. Calfano,85146866960,last,us_explicit

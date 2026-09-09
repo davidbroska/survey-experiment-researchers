@@ -1,0 +1,109 @@
+The search identifies survey-experiment articles that can be screened for parser compatibility and data-donation potential. The full query below searches titles, abstracts, and keywords, with journal-article and 2010–2026 publication filters. [Download the same query](queries/recommended.txt).
+
+```text
+(
+  (TITLE-ABS-KEY({survey experiment}
+      OR {survey experiments}
+      OR {survey-based experiment}
+      OR {survey-based experiments}
+      OR {survey based experiment}
+      OR {survey based experiments}
+      OR {survey-embedded experiment}
+      OR {survey-embedded experiments}
+      OR {survey embedded experiment}
+      OR {survey embedded experiments}
+      OR {survey-experimental}
+      OR {survey experimental}))
+  OR (TITLE-ABS-KEY({vignette experiment}
+      OR {vignette experiments}
+      OR {experimental vignette}
+      OR {experimental vignettes}
+      OR {vignette-based experiment}
+      OR {vignette-based experiments}
+      OR {vignette based experiment}
+      OR {vignette based experiments}))
+  OR (TITLE-ABS-KEY({framing experiment}
+      OR {framing experiments}
+      OR {information provision experiment}
+      OR {information provision experiments}
+      OR {information-provision experiment}
+      OR {information-provision experiments}
+      OR {scenario-based experiment}
+      OR {scenario-based experiments}
+      OR {scenario based experiment}
+      OR {scenario based experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))
+  OR (TITLE-ABS-KEY({vignette-based survey}
+      OR {vignette-based surveys}
+      OR {vignette based survey}
+      OR {vignette based surveys}) AND TITLE-ABS-KEY(random* OR experiment*))
+  OR (TITLE-ABS-KEY({experiment embedded in a survey}
+      OR {experiments embedded in a survey}
+      OR {experiment embedded in an online survey}
+      OR {experiments embedded in an online survey}
+      OR {experiment embedded in a national survey}
+      OR {experiments embedded in national surveys}
+      OR {experiment embedded in a nationally representative survey}
+      OR {experiments embedded in nationally representative surveys}
+      OR {embedded survey experiment}
+      OR {embedded survey experiments}
+      OR {survey with an embedded experiment}
+      OR {survey with embedded experiments}
+      OR {surveys with embedded experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))
+  OR (TITLE-ABS-KEY({factorial survey}
+      OR {factorial surveys}
+      OR {factorial vignette experiment}
+      OR {factorial vignette experiments}
+      OR {randomized vignette experiment}
+      OR {randomized vignette experiments}
+      OR {randomised vignette experiment}
+      OR {randomised vignette experiments}
+      OR {randomized vignette}
+      OR {randomized vignettes}
+      OR {randomised vignette}
+      OR {randomised vignettes}))
+  OR (TITLE-ABS-KEY({randomly assigned to read}
+      OR {randomly allocated to read}
+      OR {randomly selected to read}
+      OR {randomized to read}
+      OR {randomised to read}
+      OR {randomly assigned to a vignette}
+      OR {randomly assigned a vignette}
+      OR {randomly assigned to one of two vignettes}
+      OR {randomly assigned to one of three vignettes}
+      OR {randomly assigned to receive information}
+      OR {randomly provided with information}
+      OR {randomly presented with a vignette}
+      OR {randomly presented with vignettes}
+      OR {randomly presented with a scenario}
+      OR {randomly shown a vignette}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))
+  OR (TITLE-ABS-KEY({information treatment}
+      OR {information treatments}
+      OR {informational treatment}
+      OR {informational treatments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*) AND TITLE-ABS-KEY(random* OR experiment*))
+  OR (TITLE-ABS-KEY({question wording experiment}
+      OR {question wording experiments}
+      OR {question-wording experiment}
+      OR {question-wording experiments}
+      OR {wording experiment}
+      OR {wording experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))
+)
+AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027
+```
+
+Exact phrases such as `{survey experiment} OR {survey experiments}` preserve punctuation. Double quotes implement loose phrase matching, and wildcards inside braces are literal; singular and plural forms are therefore listed explicitly. [Elsevier search syntax](https://dev.elsevier.com/sc_search_tips.html). The local matcher also prevents phrases from crossing title/abstract or keyword-entry boundaries. These checks address lexical matching; they do not establish study eligibility.
+
+The following narrowly specified phrases supplement the exact design names. Their worldwide yields beyond the exact core are measured using the same publication window. Counts overlap and must not be added together.
+
+| Term family | Example | Records beyond exact core |
+|---|---|---:|
+| Embedded experiments | `{experiment embedded in a survey}` | 81 |
+| Factorial surveys and randomized vignettes | `{factorial survey}`, `{randomised vignette}` | 357 |
+| Reading and information assignment | `{randomly assigned to read}` | 161 |
+| Information treatments | `{information treatment}` | 116 |
+| Question wording | `{question-wording experiment}` | 18 |
+
+Survey context is `survey* OR questionnaire* OR respondent*`. The information-treatment branch additionally requires `random* OR experiment*`. Framing, scenario, and information-provision design labels require survey context, and vignette-based survey labels require experimental context. General phrases such as “randomly assigned” or “participants read” do not independently qualify an article. Information-provision experiments vary information available to respondents, but their administration and treatment modality still require inspection. [Haaland, Roth & Wohlfart, 2023](https://www.aeaweb.org/articles?id=10.1257/jel.20211658).
+
+The query uses positive terms and publication filters; it does not exclude records by design keywords or recruitment provider. It can therefore retrieve an article whose design ultimately proves unsuitable for the parser. Suitability is established from the methods and, where needed, the survey instrument. A panel-provider mention does not establish that authors possess shareable response data. Similarly, “assigned to read” can describe a leaflet whose illustrations, rather than wording, are manipulated. Provider and text cues guide review and are not substitutes for eligibility decisions.
+
+The archived search retrieves 9,111 records globally and 7,305 within 3,401 journals. After DOI deduplication, 7,302 articles remain; 7,035 have a locally verified term match and 267 need additional inspection. An article may match indexed keywords unavailable in the downloaded metadata. Complete pagination manifests, clause counts, article evidence, and a stratified validation queue are provided. Precision and recall for parser-compatible donor studies have not yet been established.

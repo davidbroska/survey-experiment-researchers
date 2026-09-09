@@ -1,0 +1,44 @@
+{
+  "annotation_date": "2026-09-08",
+  "n_authors": 40,
+  "n_unique_articles": 427,
+  "n_author_article_credits": 443,
+  "article_counts": {
+    "us_explicit": 109,
+    "us_inferred": 66,
+    "non_us": 154,
+    "unclear": 93,
+    "not_applicable": 5
+  },
+  "n_us_abstract_articles": 175,
+  "n_mixed_country_us_articles": 27,
+  "n_title_only_us_articles": 6,
+  "institution_country_counts": {
+    "Austria": 1,
+    "China": 1,
+    "Denmark": 4,
+    "Germany": 1,
+    "Japan": 1,
+    "Netherlands": 3,
+    "Singapore": 1,
+    "Switzerland": 1,
+    "Türkiye": 1,
+    "United Arab Emirates": 1,
+    "United Kingdom": 1,
+    "United States": 24
+  },
+  "affiliation_verification_counts": {
+    "institutional_profile": 38,
+    "self_report_corroborated_by_institutional_cv": 1,
+    "dated_employer_reference": 1
+  },
+  "human_validated_articles": 0,
+  "unit": "Articles with evidence of at least one US experimental sample; not independent samples or datasets",
+  "first_last_credit_verified": true,
+  "input_sha256": {
+    "ranking": "40b8ff1338fc41a0fe8aa09c8fcc86b55204e134c28692d0c24b4c7529e63543",
+    "affiliations": "237e2b521e5e8afd1cb0be517e11cdc781781290d0c012ca774a4b165898c082",
+    "annotations": "b4d327523d7c742958140dacbcb628ab180a401120018e99ca1b891cd13b4050",
+    "articles": "9437027b963517e6e54979effced7c3db9f8f7163ecba4241c02091b20d4b9f4"
+  }
+}

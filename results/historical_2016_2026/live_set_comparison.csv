@@ -1,0 +1,3 @@
+scope,baseline,recommended,shared,added_by_recommended,baseline_only,note
+global,9477,8512,7923,589,1554,"Retrieval overlap, not recall or precision; the population of all relevant articles is unknown."
+tess_journals,7024,6810,6404,406,620,"Retrieval overlap, not recall or precision; the population of all relevant articles is unknown."

@@ -1,0 +1,140 @@
+{
+  "entry": "index.html",
+  "files": [
+    {
+      "path": ".nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "EXECUTIVE_SUMMARY.html",
+      "sha256": "2cf2b58b133a97c0a5fef3fe9a994eeed571bc827de51d80ab79a156b5154fc9"
+    },
+    {
+      "path": "EXECUTIVE_SUMMARY.md",
+      "sha256": "2dc02a841e7a8d8d1b18ca03fc5d1123642f8ce529643e8ead01a438054535fa"
+    },
+    {
+      "path": "FULLTEXT_REVIEW.html",
+      "sha256": "95addfb4be21285e3927866fbb445a2ef2cbc31668e0122f76a9a8e8d90fa253"
+    },
+    {
+      "path": "FULLTEXT_REVIEW.md",
+      "sha256": "e2abc3b669b5062b6a2107ad58189ad177e521fdd1161bc142333fc455c82881"
+    },
+    {
+      "path": "GEOGRAPHY_REPORT.html",
+      "sha256": "20352b2af76783fd3361801f8b54ea433a667c085998d74f8bad9f15abd50f2a"
+    },
+    {
+      "path": "GEOGRAPHY_REPORT.md",
+      "sha256": "de310733d2f298b6d3d680d0002cea4d1f9d29828c346a8f83ca631fcadbcd40"
+    },
+    {
+      "path": "MANUAL_DOWNLOADS.html",
+      "sha256": "6bbb6551293040350fe513a80cd28bc9541f33b8bea369f2c7c09419ef4250aa"
+    },
+    {
+      "path": "MANUAL_DOWNLOADS.md",
+      "sha256": "1aec76e4088db37134dbdecffd90578625c43d3564edaa5a20991db2c5c6c25b"
+    },
+    {
+      "path": "PRIORITY_DOWNLOADS.html",
+      "sha256": "e544068bacef303b15ce37821b42da0d03bc5cdb28ee3edf7866a8c8d1deceb2"
+    },
+    {
+      "path": "PRIORITY_DOWNLOADS.md",
+      "sha256": "25542549ce18224b3dbc30df2af8515e1a6da79fcd02e44a129ee8f3814ba289"
+    },
+    {
+      "path": "QUERY_REPORT.html",
+      "sha256": "ff70d2820b47048a7b0632aef79162fb70663664af812cd7c07caf5b24aa5abd"
+    },
+    {
+      "path": "QUERY_REPORT.md",
+      "sha256": "c581dcc41ef6899c334f71030893fbc290024cd16e8b21dc3c316ad510a6ebbf"
+    },
+    {
+      "path": "README.md",
+      "sha256": "02285d1457abdb81b1f7be55c52682982383f0ad6e8467ffdd8c29bb510d86e0"
+    },
+    {
+      "path": "SUPPORTING_INFORMATION.html",
+      "sha256": "e901dd12317a39dceb74b9c862c74148246f1857a2f28d6b4d86cbd7f1a93607"
+    },
+    {
+      "path": "SUPPORTING_INFORMATION.md",
+      "sha256": "cf9521d64618f8e8e15f6c7c4c901aecce883f6f4ffe16f9d91bdd22bceb86da"
+    },
+    {
+      "path": "TOP100.html",
+      "sha256": "d4b3cec307ab04731a64ba0e86ef1ded98aad9da9c3ec15d60b7b91c634168a5"
+    },
+    {
+      "path": "TOP40.html",
+      "sha256": "d4b3cec307ab04731a64ba0e86ef1ded98aad9da9c3ec15d60b7b91c634168a5"
+    },
+    {
+      "path": "YEAR_WINDOW_COMPARISON.html",
+      "sha256": "e8fd0d83c360daf0331866326c0a87e5d8b0ebe8365bd838b05b03c635789eb7"
+    },
+    {
+      "path": "YEAR_WINDOW_COMPARISON.md",
+      "sha256": "9f6e20110d82030cc05d2b8d032ad3c829530dbf15218e5eda8cf60215213b68"
+    },
+    {
+      "path": "index.html",
+      "sha256": "d4b3cec307ab04731a64ba0e86ef1ded98aad9da9c3ec15d60b7b91c634168a5"
+    },
+    {
+      "path": "queries/recommended.txt",
+      "sha256": "d1b093aa5218404faefd906b710ccad5b6d2bb18637bfa88a87e0ca196da1145"
+    },
+    {
+      "path": "results/downloaded_awaiting_review.csv",
+      "sha256": "03667b2c9466fd68c979a6ec9b36caadd56e11bcc9525e51c0b42724f2c28d88"
+    },
+    {
+      "path": "results/fulltext_download_queue.csv",
+      "sha256": "0ac83ef36c33a11f5de0f3ba07ed965e7ad6e295125b9f3b0a3f9a91abefa308"
+    },
+    {
+      "path": "results/manual_download_queue.csv",
+      "sha256": "dd1854196578f12de01c91a84e03c088c32a53729cfdcbf653abe9f4d041afb8"
+    },
+    {
+      "path": "results/top100_article_annotations.csv",
+      "sha256": "0f13bebbee244a56257bb50c98fc8b06558d4ed039145256759d4a6d1b0bcafb"
+    },
+    {
+      "path": "results/top100_author_article_links.csv",
+      "sha256": "7b09eb79040d990181a46e99a44ad692e21310af3478a4559a82094fd36d989e"
+    },
+    {
+      "path": "results/top100_cutoff_ties.csv",
+      "sha256": "e0fa80108495c21340c70582212ed1972a9ec743797fb5d159e063b1ee911b8e"
+    },
+    {
+      "path": "results/top100_enriched.csv",
+      "sha256": "f726d4de22dd0d06f204967986d2633a820e40da5287a814587605e809ea53fe"
+    },
+    {
+      "path": "results/top100_provisional.csv",
+      "sha256": "bda7bb3a3fd80998b8609e835d13c55b7abd243ec07b584decad6735e3d4d046"
+    },
+    {
+      "path": "results/top50_priority_downloads.csv",
+      "sha256": "09f79df34558b596e4fdc820a5cd65508fafd292947c25bae0a4a2cec70e9a33"
+    },
+    {
+      "path": "results/year_window_author_comparison.csv",
+      "sha256": "af622c0135198683648538b619a426fb73688e9a5cfc2e121f3b10fb9b895959"
+    },
+    {
+      "path": "results/year_window_tie_comparison.csv",
+      "sha256": "b21a3c643a5607532d1803235e4669405b8be8d7677fc383a09f90295db36d9c"
+    }
+  ],
+  "local_links_checked": 61,
+  "private_files_included": false,
+  "published": false
+}

@@ -1,0 +1,11 @@
+{
+  "cached_rerun_byte_identical": {
+    "results/top40_provisional.csv": true,
+    "results/ranking_provisional.csv": true,
+    "results/article_metadata.csv": true,
+    "results/validation_sample_ids.csv": true,
+    "inputs/author_names.csv": true,
+    "private/articles.csv": true
+  },
+  "notes": "Timestamps in JSON manifests intentionally change."
+}

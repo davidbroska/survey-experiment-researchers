@@ -1,0 +1,5243 @@
+[
+  {
+    "query": "AU-ID(10042164300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 84,
+    "retrieved": 84,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:20.507199+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(10043611700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 8,
+    "retrieved": 8,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:49.873968+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(10045944900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 4,
+    "retrieved": 4,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:38.707249+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(10242491700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 41,
+    "retrieved": 41,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:01.080537+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(10340526300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 64,
+    "retrieved": 64,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:46.069074+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(10641000300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 35,
+    "retrieved": 35,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:11.197071+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(12244707000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 51,
+    "retrieved": 51,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:43.301497+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(12761286600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 26,
+    "retrieved": 26,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:26.899250+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(12767146800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 49,
+    "retrieved": 49,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:23.300149+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(12779778800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 54,
+    "retrieved": 54,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:02.812585+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(12794521600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 39,
+    "retrieved": 39,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:31.327665+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(12795811900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 98,
+    "retrieved": 98,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:44.336109+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(12798516700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 11,
+    "retrieved": 11,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:53.860963+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(13105580800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 22,
+    "retrieved": 22,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:29.240127+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(13309460300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 89,
+    "retrieved": 89,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:32.363360+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(13403379200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 18,
+    "retrieved": 18,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:59.692030+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(13404086400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 8,
+    "retrieved": 8,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:28.335014+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(13404545600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 45,
+    "retrieved": 45,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:31.962818+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(13406042600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 12,
+    "retrieved": 12,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:48.626592+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(13606654500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 21,
+    "retrieved": 21,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:09.289585+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(13608346200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 27,
+    "retrieved": 27,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:53.505135+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(13908379700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 14,
+    "retrieved": 14,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:37.639750+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(14021429900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 26,
+    "retrieved": 26,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:40.972659+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(14029519500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 36,
+    "retrieved": 36,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:12.250785+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(14031144000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 12,
+    "retrieved": 12,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:14.703574+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(14039207900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 10,
+    "retrieved": 10,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:57.580255+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(14051534300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 28,
+    "retrieved": 28,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:09.934944+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(14057462800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 57,
+    "retrieved": 57,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:40.393947+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(14527556700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 6,
+    "retrieved": 6,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:09.606038+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(14822575600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 42,
+    "retrieved": 42,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:19.991622+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(15019208600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 5,
+    "retrieved": 5,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:21.081466+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(15019600500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 13,
+    "retrieved": 13,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:48.500013+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(15033111000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 1,
+    "retrieved": 1,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:15.942310+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(15049433200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 33,
+    "retrieved": 33,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:27.779817+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(15059715200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 27,
+    "retrieved": 27,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:04.095398+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(15065767900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 42,
+    "retrieved": 42,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:40.483521+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(15769409900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 26,
+    "retrieved": 26,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:48.837612+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(15831965800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 45,
+    "retrieved": 45,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:35.794044+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(15832026500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 133,
+    "retrieved": 133,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:48.431407+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(15848618200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 23,
+    "retrieved": 23,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:49.066455+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(15851581700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 42,
+    "retrieved": 42,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:35.375386+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(16064384100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 15,
+    "retrieved": 15,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:28.236402+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(16064842900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 34,
+    "retrieved": 34,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:24.029696+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(16068965800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 8,
+    "retrieved": 8,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:17.897748+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(16239402000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 39,
+    "retrieved": 39,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:35.386064+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(16239468700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 50,
+    "retrieved": 50,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:17.377589+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(16244109700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 17,
+    "retrieved": 17,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:01.725296+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(16305967100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 90,
+    "retrieved": 90,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:53.252156+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(16318711600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 14,
+    "retrieved": 14,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:42.806736+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(16443861900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 15,
+    "retrieved": 15,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:23.434227+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(16445339500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 21,
+    "retrieved": 21,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:06.702874+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(16744169900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 38,
+    "retrieved": 38,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:54.599838+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(17433648600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 33,
+    "retrieved": 33,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:02.652430+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(18036722400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 13,
+    "retrieved": 13,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:57.924502+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(20436302900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 21,
+    "retrieved": 21,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:00.734374+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(20636168200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 133,
+    "retrieved": 133,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:19.725510+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(20735280100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 5,
+    "retrieved": 5,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:33.407352+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(21035926600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 32,
+    "retrieved": 32,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:53.739421+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(21737241400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 174,
+    "retrieved": 174,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:47.469528+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(22938320500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 13,
+    "retrieved": 13,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:54.977680+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(22965575500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 12,
+    "retrieved": 12,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:47.442025+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(22981571500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 8,
+    "retrieved": 8,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:36.883543+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(23006054100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 94,
+    "retrieved": 94,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:27.638672+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(23059913900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 132,
+    "retrieved": 132,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:49.412897+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(23396720900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 24,
+    "retrieved": 24,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:13.888795+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(23485677100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 28,
+    "retrieved": 28,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:33.223074+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(23967956500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 14,
+    "retrieved": 14,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:27.906289+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(24069339300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 60,
+    "retrieved": 60,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:35.678849+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(24168517000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 67,
+    "retrieved": 67,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:24.088801+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(24173705700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 25,
+    "retrieved": 25,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:34.783005+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(24463521000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 36,
+    "retrieved": 36,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:11.441806+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(24464890800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 32,
+    "retrieved": 32,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:08.173626+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(24472408500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 23,
+    "retrieved": 23,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:37.633261+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(24492154100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 152,
+    "retrieved": 152,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:28.481545+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(24538151600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 23,
+    "retrieved": 23,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:21.573402+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(24824711800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 11,
+    "retrieved": 11,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:18.771472+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(25226021600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 57,
+    "retrieved": 57,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:30.566841+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(25226290400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 18,
+    "retrieved": 18,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:21.082739+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(25422678500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 12,
+    "retrieved": 12,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:23.324578+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(25623088800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 33,
+    "retrieved": 33,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:22.373059+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(25625306300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 18,
+    "retrieved": 18,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:34.286036+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(25822103900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 19,
+    "retrieved": 19,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:34.572781+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(25923521800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 1,
+    "retrieved": 1,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:14.102502+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(25955434200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 78,
+    "retrieved": 78,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:56.893683+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(25959092400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 20,
+    "retrieved": 20,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:51.188819+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(26032421200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 43,
+    "retrieved": 43,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:59.368803+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(26032596200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 12,
+    "retrieved": 12,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:21.227073+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(26038994100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 91,
+    "retrieved": 91,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:27.035797+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(26221571600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 6,
+    "retrieved": 6,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:59.122123+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(26424282100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 18,
+    "retrieved": 18,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:38.883473+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(26424744500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 13,
+    "retrieved": 13,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:10.537911+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(26532782600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 31,
+    "retrieved": 31,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:36.083207+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(26533810000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 108,
+    "retrieved": 108,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:06.782129+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(26642961000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 754,
+    "retrieved": 754,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:14.184673+00:00",
+      "2026-09-08T09:38:18.964077+00:00",
+      "2026-09-08T09:38:23.311468+00:00",
+      "2026-09-08T09:38:26.435946+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(26657081500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 42,
+    "retrieved": 42,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:35.981910+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(26663822500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 18,
+    "retrieved": 18,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:13.830085+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(27468015800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 73,
+    "retrieved": 73,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:12.607267+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(28767906600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 28,
+    "retrieved": 28,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:52.275678+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(29067761300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 1,
+    "retrieved": 1,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:43.834872+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(29067957800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 19,
+    "retrieved": 19,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:40.102920+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(31067533600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 19,
+    "retrieved": 19,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:30.229979+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(31967965800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 10,
+    "retrieved": 10,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:09.494387+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(33267933200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 112,
+    "retrieved": 112,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:51.419040+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(33367892500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 15,
+    "retrieved": 15,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:31.874590+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(34877720900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 28,
+    "retrieved": 28,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:06.842924+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(34880205600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 28,
+    "retrieved": 28,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:35.879862+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35179145000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 15,
+    "retrieved": 15,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:50.940508+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35183713000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 45,
+    "retrieved": 45,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:28.334631+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35190798800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 15,
+    "retrieved": 15,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:30.486299+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35191112900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 10,
+    "retrieved": 10,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:51.551979+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35195479200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 27,
+    "retrieved": 27,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:08.492751+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35226971400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 274,
+    "retrieved": 274,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:20.881202+00:00",
+      "2026-09-08T09:38:25.406802+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35262248500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 43,
+    "retrieved": 43,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:19.821365+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35269412700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 38,
+    "retrieved": 38,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:22.445616+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35279563000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 6,
+    "retrieved": 6,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:17.195352+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35311785900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 5,
+    "retrieved": 5,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:32.518853+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35354727500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 781,
+    "retrieved": 781,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:37.301613+00:00",
+      "2026-09-08T09:40:47.896425+00:00",
+      "2026-09-08T09:40:58.508650+00:00",
+      "2026-09-08T09:41:18.312396+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35366361100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 33,
+    "retrieved": 33,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:00.384889+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35368470600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 8,
+    "retrieved": 8,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:08.494511+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35368545600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 4,
+    "retrieved": 4,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:32.887738+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35369308400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 94,
+    "retrieved": 94,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:39.213059+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35515028500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 121,
+    "retrieved": 121,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:51.675475+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35559650200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 55,
+    "retrieved": 55,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:06.249001+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35604457000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 24,
+    "retrieved": 24,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:18.018790+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35605425800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 175,
+    "retrieved": 175,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:30.019082+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35606385600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 73,
+    "retrieved": 73,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:24.061792+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35725744600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 48,
+    "retrieved": 48,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:06.364660+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35745930100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 47,
+    "retrieved": 47,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:08.174139+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35759060800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 89,
+    "retrieved": 89,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:39.887706+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35786862900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 109,
+    "retrieved": 109,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:56.540718+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35810646800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 205,
+    "retrieved": 205,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:42.760877+00:00",
+      "2026-09-08T09:38:44.076980+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35848730100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 27,
+    "retrieved": 27,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:12.440280+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35849422800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 26,
+    "retrieved": 26,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:33.250719+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35894398600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 51,
+    "retrieved": 51,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:50.049896+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35917888400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 72,
+    "retrieved": 72,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:30.278108+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35973462400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 15,
+    "retrieved": 15,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:34.818798+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35975857200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 20,
+    "retrieved": 20,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:00.700644+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(35976307100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 38,
+    "retrieved": 38,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:11.534790+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(36018867400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 10,
+    "retrieved": 10,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:56.399092+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(36019824600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 16,
+    "retrieved": 16,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:52.319932+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(36091233000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 23,
+    "retrieved": 23,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:52.197819+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(36097540600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 10,
+    "retrieved": 10,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:15.123087+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(36098660800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 19,
+    "retrieved": 19,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:06.701341+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(36182144200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 36,
+    "retrieved": 36,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:25.143133+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(36182856700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 23,
+    "retrieved": 23,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:39.074924+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(36342940900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 14,
+    "retrieved": 14,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:36.786450+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(36489724400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 11,
+    "retrieved": 11,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:41.778496+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(36514321500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 7,
+    "retrieved": 7,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:41.015502+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(36519360000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 35,
+    "retrieved": 35,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:42.060571+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(36598128600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 19,
+    "retrieved": 19,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:38.676509+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(36618122200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 33,
+    "retrieved": 33,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:12.843913+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(36630155500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 6,
+    "retrieved": 6,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:29.928566+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(36707086900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 13,
+    "retrieved": 13,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:35.581872+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(36710399500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 11,
+    "retrieved": 11,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:45.627262+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(36713552500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 14,
+    "retrieved": 14,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:14.064827+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(36766861800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 2,
+    "retrieved": 2,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:54.580992+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(36802811600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 2,
+    "retrieved": 2,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:31.516045+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(36931126000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 17,
+    "retrieved": 17,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:55.828888+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(36951310100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 15,
+    "retrieved": 15,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:11.904955+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(36951343500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 19,
+    "retrieved": 19,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:42.325320+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(36960029800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 2,
+    "retrieved": 2,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:34.082054+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(36998347400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 58,
+    "retrieved": 58,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:33.180695+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(37037666000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 10,
+    "retrieved": 10,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:14.236633+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(37039829000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 24,
+    "retrieved": 24,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:22.120116+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(37063497400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 20,
+    "retrieved": 20,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:43.881590+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(37107583800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 30,
+    "retrieved": 30,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:11.801641+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(39962148200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 3,
+    "retrieved": 3,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:47.312049+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(40661245400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 52,
+    "retrieved": 52,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:57.713728+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(41461060900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 31,
+    "retrieved": 31,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:26.662309+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(43061682700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 4,
+    "retrieved": 4,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:34.437930+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(47361532000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 29,
+    "retrieved": 29,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:34.687186+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(49861890200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 9,
+    "retrieved": 9,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:42.909568+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(51565431700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 2,
+    "retrieved": 2,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:14.942099+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(51964515100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 12,
+    "retrieved": 12,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:43.550180+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(52364621600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 7,
+    "retrieved": 7,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:24.494903+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(53867729700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 42,
+    "retrieved": 42,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:20.828894+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(53877524700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 57,
+    "retrieved": 57,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:56.958282+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(54411275200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 33,
+    "retrieved": 33,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:18.986032+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(54411975800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 11,
+    "retrieved": 11,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:19.707759+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(54411993800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 23,
+    "retrieved": 23,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:44.253510+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(54419921900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 13,
+    "retrieved": 13,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:44.125157+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(54785521400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 27,
+    "retrieved": 27,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:24.181026+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(54881904100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 41,
+    "retrieved": 41,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:32.263835+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(54890056000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 11,
+    "retrieved": 11,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:34.267962+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(54891708000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 16,
+    "retrieved": 16,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:20.352062+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(54998513300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 23,
+    "retrieved": 23,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:29.721876+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55000850800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 17,
+    "retrieved": 17,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:49.706764+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55014524900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 22,
+    "retrieved": 22,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:29.489717+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55133387300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 77,
+    "retrieved": 77,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:20.188752+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55135830500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 31,
+    "retrieved": 31,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:48.787731+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55136094800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 16,
+    "retrieved": 16,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:42.280113+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55173715700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 31,
+    "retrieved": 31,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:47.030151+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55218386400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 1,
+    "retrieved": 1,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:11.203046+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55222268200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 42,
+    "retrieved": 42,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:18.627528+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55258542600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 19,
+    "retrieved": 19,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:40.193579+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55273639800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 23,
+    "retrieved": 23,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:12.620889+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55293255100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 53,
+    "retrieved": 53,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:47.277081+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55326498000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 44,
+    "retrieved": 44,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:28.782275+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55344310600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 24,
+    "retrieved": 24,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:28.187573+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55364149100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 49,
+    "retrieved": 49,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:36.429731+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55388382000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 18,
+    "retrieved": 18,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:51.508933+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55418856700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 32,
+    "retrieved": 32,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:02.308560+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55434430300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 11,
+    "retrieved": 11,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:20.826678+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55461249300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 25,
+    "retrieved": 25,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:58.351180+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55477037600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 33,
+    "retrieved": 33,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:27.082010+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55478833800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 319,
+    "retrieved": 319,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:33.102284+00:00",
+      "2026-09-08T09:39:36.019591+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55503231400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 1,
+    "retrieved": 1,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:46.517018+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55569631400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 20,
+    "retrieved": 20,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:41.955222+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55572348500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 48,
+    "retrieved": 48,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:31.879583+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55577072200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 11,
+    "retrieved": 11,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:52.736701+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55586516300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 40,
+    "retrieved": 40,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:08.014436+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55601702200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 62,
+    "retrieved": 62,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:33.178835+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55629491700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 27,
+    "retrieved": 27,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:23.070589+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55636964600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 29,
+    "retrieved": 29,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:59.080427+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55659164700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 16,
+    "retrieved": 16,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:09.831264+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55681642200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 2,
+    "retrieved": 2,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:59.328931+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55684486100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 14,
+    "retrieved": 14,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:22.538896+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55723899900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 30,
+    "retrieved": 30,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:06.969902+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55734630400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 3,
+    "retrieved": 3,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:46.880451+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55734753300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 30,
+    "retrieved": 30,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:02.007287+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55752852700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 20,
+    "retrieved": 20,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:16.515118+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55754821200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 30,
+    "retrieved": 30,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:02.338933+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55818100400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 25,
+    "retrieved": 25,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:59.498002+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55821050500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 11,
+    "retrieved": 11,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:37.280310+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55855694100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 20,
+    "retrieved": 20,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:34.180608+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55857867000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 24,
+    "retrieved": 24,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:41.488379+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55881210800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 0,
+    "retrieved": 0,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:32.882491+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55902275000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 38,
+    "retrieved": 38,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:52.756630+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55939572800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 21,
+    "retrieved": 21,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:09.526866+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(55963399400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 11,
+    "retrieved": 11,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:43.879433+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56002020400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 45,
+    "retrieved": 45,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:04.273773+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56003449500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 20,
+    "retrieved": 20,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:34.389858+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56022585300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 9,
+    "retrieved": 9,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:00.331520+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56027234600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 5,
+    "retrieved": 5,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:47.133026+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56071751000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 50,
+    "retrieved": 50,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:49.295719+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56102501200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 47,
+    "retrieved": 47,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:59.701631+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56115054500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 10,
+    "retrieved": 10,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:45.577075+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56182309400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 7,
+    "retrieved": 7,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:24.533726+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56211230100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 14,
+    "retrieved": 14,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:06.576651+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56224960100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 11,
+    "retrieved": 11,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:13.442231+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56227045100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 28,
+    "retrieved": 28,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:37.298993+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56239499600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 75,
+    "retrieved": 75,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:19.464656+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56296869000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 12,
+    "retrieved": 12,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:15.984694+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56329786700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 28,
+    "retrieved": 28,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:33.338336+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56371168200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 97,
+    "retrieved": 97,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:42.887803+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56378689300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 9,
+    "retrieved": 9,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:40.417680+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56428054900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 176,
+    "retrieved": 176,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:57.783764+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56453385500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 26,
+    "retrieved": 26,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:03.094957+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56465449000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 32,
+    "retrieved": 32,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:13.003173+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56482652000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 10,
+    "retrieved": 10,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:11.256682+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56487218300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 41,
+    "retrieved": 41,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:08.338345+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56489591900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 101,
+    "retrieved": 101,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:16.075076+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56495038200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 3,
+    "retrieved": 3,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:44.032560+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56513594200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 72,
+    "retrieved": 72,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:02.144301+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56519267500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 6,
+    "retrieved": 6,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:33.259438+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56523595800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 21,
+    "retrieved": 21,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:22.092203+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56534131300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 26,
+    "retrieved": 26,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:28.911285+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56566089400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 5,
+    "retrieved": 5,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:12.473374+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56566709800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 7,
+    "retrieved": 7,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:18.320505+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56581841800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 25,
+    "retrieved": 25,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:32.983608+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56589876800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 37,
+    "retrieved": 37,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:23.673702+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56590030100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 34,
+    "retrieved": 34,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:16.516908+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56608726200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 11,
+    "retrieved": 11,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:38.485233+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56612026700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 9,
+    "retrieved": 9,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:15.853721+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56623671500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 21,
+    "retrieved": 21,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:16.139956+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56624531700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 10,
+    "retrieved": 10,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:56.715675+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56646126000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 10,
+    "retrieved": 10,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:44.419140+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56692768700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 23,
+    "retrieved": 23,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:19.003634+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56702908800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 0,
+    "retrieved": 0,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:45.158829+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56749101200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 5,
+    "retrieved": 5,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:35.991429+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56767511600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 20,
+    "retrieved": 20,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:10.125238+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56788845300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 372,
+    "retrieved": 372,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:38.356739+00:00",
+      "2026-09-08T09:40:41.499876+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56811422600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 7,
+    "retrieved": 7,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:29.280216+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56894573800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 1,
+    "retrieved": 1,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:11.195267+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56899254500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 5,
+    "retrieved": 5,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:56.931174+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56919435100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 8,
+    "retrieved": 8,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:13.929794+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56958020400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 15,
+    "retrieved": 15,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:19.328408+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56964283000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 17,
+    "retrieved": 17,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:02.619399+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(56992481600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 22,
+    "retrieved": 22,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:21.282463+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57026349600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 59,
+    "retrieved": 59,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:40.106454+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57055910700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 22,
+    "retrieved": 22,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:41.767998+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57060408100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 4,
+    "retrieved": 4,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:38.917874+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57063543300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 9,
+    "retrieved": 9,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:37.150855+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57103068500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 32,
+    "retrieved": 32,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:34.023577+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57111829300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 9,
+    "retrieved": 9,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:46.297301+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57155411600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 19,
+    "retrieved": 19,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:42.891744+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57188576914) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 25,
+    "retrieved": 25,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:33.919202+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57188593768) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 11,
+    "retrieved": 11,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:20.877034+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57189630346) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 10,
+    "retrieved": 10,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:46.446441+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57190658247) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 20,
+    "retrieved": 20,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:09.783775+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57190807580) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 4,
+    "retrieved": 4,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:48.179845+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57192168805) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 10,
+    "retrieved": 10,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:12.958240+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57192207991) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 2,
+    "retrieved": 2,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:19.674138+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57193264144) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 6,
+    "retrieved": 6,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:50.598762+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57193276705) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 17,
+    "retrieved": 17,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:45.380841+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57193385216) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 42,
+    "retrieved": 42,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:40.248021+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57193801279) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 1,
+    "retrieved": 1,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:28.913093+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57194125131) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 2,
+    "retrieved": 2,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:20.938819+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57194246305) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 6,
+    "retrieved": 6,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:32.982027+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57195522139) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 31,
+    "retrieved": 31,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:48.213172+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57195528045) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 15,
+    "retrieved": 15,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:35.101627+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57195914977) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 11,
+    "retrieved": 11,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:15.608067+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57195982699) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 6,
+    "retrieved": 6,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:05.073928+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57195987797) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 22,
+    "retrieved": 22,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:59.395543+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57196082854) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 26,
+    "retrieved": 26,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:43.508807+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57197060985) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 5,
+    "retrieved": 5,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:25.397867+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57197785531) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 5,
+    "retrieved": 5,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:57.871357+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57199389433) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 31,
+    "retrieved": 31,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:13.316992+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57200138702) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 9,
+    "retrieved": 9,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:31.273125+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57201644039) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 21,
+    "retrieved": 21,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:17.788411+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57201692045) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 6,
+    "retrieved": 6,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:45.635517+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57201738169) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 9,
+    "retrieved": 9,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:27.477078+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57201978329) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 3,
+    "retrieved": 3,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:35.965670+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57202576828) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 9,
+    "retrieved": 9,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:14.718929+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57202780050) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 9,
+    "retrieved": 9,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:38.035702+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57202896584) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 145,
+    "retrieved": 145,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:39.632094+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57203297446) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 124,
+    "retrieved": 124,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:10.276538+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57203308004) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 2,
+    "retrieved": 2,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:35.877447+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57203526149) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 5,
+    "retrieved": 5,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:59.784104+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57203528227) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 14,
+    "retrieved": 14,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:28.478670+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57203743434) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 5,
+    "retrieved": 5,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:07.841471+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57203811358) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 7,
+    "retrieved": 7,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:34.632979+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57203866699) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 4,
+    "retrieved": 4,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:51.662463+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57204262962) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 63,
+    "retrieved": 63,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:43.735787+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57204339223) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 66,
+    "retrieved": 66,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:55.083371+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57205184782) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 13,
+    "retrieved": 13,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:53.486554+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57205462057) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 185,
+    "retrieved": 185,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:41.520473+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57205551741) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 6,
+    "retrieved": 6,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:38.760043+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57205938098) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 83,
+    "retrieved": 83,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:22.108832+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57207509081) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 37,
+    "retrieved": 37,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:19.396605+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57207532342) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 26,
+    "retrieved": 26,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:09.060539+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57209028574) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 66,
+    "retrieved": 66,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:36.077555+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57209264814) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 138,
+    "retrieved": 138,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:02.511469+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57209307611) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 4,
+    "retrieved": 4,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:50.482734+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57209737792) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 10,
+    "retrieved": 10,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:45.636062+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57209869036) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 74,
+    "retrieved": 74,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:49.164428+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57210223786) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 71,
+    "retrieved": 71,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:18.376690+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57210726256) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 17,
+    "retrieved": 17,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:16.615666+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57210835212) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 10,
+    "retrieved": 10,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:05.401622+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57210903733) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 9,
+    "retrieved": 9,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:02.760491+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57210925214) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 7,
+    "retrieved": 7,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:47.016242+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57211273125) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 4,
+    "retrieved": 4,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:51.552222+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57211582039) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 20,
+    "retrieved": 20,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:19.662200+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57211585764) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 10,
+    "retrieved": 10,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:17.292082+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57211681600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 8,
+    "retrieved": 8,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:06.380815+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57211785696) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 15,
+    "retrieved": 15,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:01.386208+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57212340615) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 8,
+    "retrieved": 8,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:05.552136+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57212471490) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 5,
+    "retrieved": 5,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:15.276582+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57212757431) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 7,
+    "retrieved": 7,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:28.820817+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57213579538) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 90,
+    "retrieved": 90,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:31.236618+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57214853900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 10,
+    "retrieved": 10,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:33.452422+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57215850147) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 5,
+    "retrieved": 5,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:15.585074+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57215880589) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 15,
+    "retrieved": 15,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:17.382100+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57216835629) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 3,
+    "retrieved": 3,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:28.279297+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57217529720) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 17,
+    "retrieved": 17,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:54.575535+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57217532548) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 12,
+    "retrieved": 12,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:31.776401+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57218377215) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 4,
+    "retrieved": 4,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:16.715370+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57219091574) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 4,
+    "retrieved": 4,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:12.510623+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57219294082) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 3,
+    "retrieved": 3,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:04.327150+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57219315106) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 7,
+    "retrieved": 7,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:18.231054+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57220591509) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 4,
+    "retrieved": 4,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:02.657328+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57220851693) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 93,
+    "retrieved": 93,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:31.742000+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57221304853) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 2,
+    "retrieved": 2,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:14.894771+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57222144830) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 2,
+    "retrieved": 2,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:55.777004+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57222400594) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 5,
+    "retrieved": 5,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:07.533910+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57224369230) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 4,
+    "retrieved": 4,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:59.353394+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57224636213) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 2,
+    "retrieved": 2,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:16.174729+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57224686102) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 0,
+    "retrieved": 0,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:41.680771+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57226192408) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 2,
+    "retrieved": 2,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:55.676394+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57226244144) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 13,
+    "retrieved": 13,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:26.116277+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57226320861) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 3,
+    "retrieved": 3,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:03.581718+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57273413000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 6,
+    "retrieved": 6,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:52.493864+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57688625700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 14,
+    "retrieved": 14,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:04.873684+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57715870100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 1,
+    "retrieved": 1,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:56.722550+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57759581400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 0,
+    "retrieved": 0,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:47.623250+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(57891913400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 8,
+    "retrieved": 8,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:17.087471+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(58221721000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 8,
+    "retrieved": 8,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:03.975435+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(58243225600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 2,
+    "retrieved": 2,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:07.299152+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(58460608800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 10,
+    "retrieved": 10,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:31.776785+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(58615016600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 17,
+    "retrieved": 17,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:45.069555+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(58644510300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 3,
+    "retrieved": 3,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:03.637437+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(59023065400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 1,
+    "retrieved": 1,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:00.975425+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(59058031600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 10,
+    "retrieved": 10,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:50.016679+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(59379630300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 1,
+    "retrieved": 1,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:58.123016+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(59702089200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 5,
+    "retrieved": 5,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:32.582341+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(60724676900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 1,
+    "retrieved": 1,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:10.853365+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6505792950) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 15,
+    "retrieved": 15,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:29.391883+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6505910383) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 23,
+    "retrieved": 23,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:19.322203+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6506145630) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 15,
+    "retrieved": 15,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:50.583997+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6506194765) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 47,
+    "retrieved": 47,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:16.617432+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6506256326) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 52,
+    "retrieved": 52,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:49.298239+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6506537141) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 13,
+    "retrieved": 13,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:40.432813+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6506688421) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 18,
+    "retrieved": 18,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:17.033723+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6506789846) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 78,
+    "retrieved": 78,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:38.051295+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6506843239) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 29,
+    "retrieved": 29,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:44.982028+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6507043128) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 69,
+    "retrieved": 69,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:13.374312+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6507071600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 19,
+    "retrieved": 19,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:53.512202+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6507081724) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 26,
+    "retrieved": 26,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:17.090339+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6507245660) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 33,
+    "retrieved": 33,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:37.533024+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6507662526) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 22,
+    "retrieved": 22,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:53.089698+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6507668104) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 18,
+    "retrieved": 18,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:21.543079+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6507782955) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 3,
+    "retrieved": 3,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:12.488439+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6508062517) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 34,
+    "retrieved": 34,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:14.038652+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6508063441) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 16,
+    "retrieved": 16,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:42.725485+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6508146659) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 146,
+    "retrieved": 146,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:40.680483+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6508189028) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 19,
+    "retrieved": 19,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:26.076161+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6508208024) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 31,
+    "retrieved": 31,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:28.369373+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6508329465) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 3,
+    "retrieved": 3,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:54.583965+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6601924137) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 31,
+    "retrieved": 31,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:40.966928+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6602076925) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 72,
+    "retrieved": 72,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:54.847632+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6602118520) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 11,
+    "retrieved": 11,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:50.290632+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6602146413) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 37,
+    "retrieved": 37,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:15.710044+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6602222901) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 10,
+    "retrieved": 10,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:52.770740+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6602343552) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 34,
+    "retrieved": 34,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:18.211131+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6602416233) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 24,
+    "retrieved": 24,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:54.705210+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6602481647) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 27,
+    "retrieved": 27,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:46.867835+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6602581741) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 76,
+    "retrieved": 76,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:24.814373+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6602709557) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 13,
+    "retrieved": 13,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:36.104834+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6602733788) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 24,
+    "retrieved": 24,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:17.246269+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6602790730) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 18,
+    "retrieved": 18,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:05.932667+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6602810672) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 59,
+    "retrieved": 59,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:13.397518+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6602838403) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 58,
+    "retrieved": 58,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:55.126434+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6602840468) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 160,
+    "retrieved": 160,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:20.604640+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6602898703) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 41,
+    "retrieved": 41,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:29.877665+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6603062565) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 12,
+    "retrieved": 12,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:45.517099+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6603159410) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 19,
+    "retrieved": 19,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:13.809755+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6603228850) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 20,
+    "retrieved": 20,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:15.111949+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6603349293) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 42,
+    "retrieved": 42,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:30.485112+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6603443503) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 63,
+    "retrieved": 63,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:58.270553+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6603477930) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 59,
+    "retrieved": 59,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:31.584059+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6603482973) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 10,
+    "retrieved": 10,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:42.733102+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6603485631) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 113,
+    "retrieved": 113,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:30.577608+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6603492807) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 18,
+    "retrieved": 18,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:35.797632+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6603506027) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 31,
+    "retrieved": 31,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:10.891980+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6603538891) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 9,
+    "retrieved": 9,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:41.725502+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6603559510) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 39,
+    "retrieved": 39,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:08.779660+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6603569600) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 22,
+    "retrieved": 22,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:37.280791+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6603616786) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 23,
+    "retrieved": 23,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:39.487945+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6603633320) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 26,
+    "retrieved": 26,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:03.293918+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6603639242) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 47,
+    "retrieved": 47,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:00.892547+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6603744325) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 43,
+    "retrieved": 43,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:26.005080+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6603845858) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 84,
+    "retrieved": 84,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:31.736615+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6603869154) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 24,
+    "retrieved": 24,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:04.012565+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6603917440) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 31,
+    "retrieved": 31,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:25.658883+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6604066482) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 24,
+    "retrieved": 24,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:51.730306+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6604085679) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 24,
+    "retrieved": 24,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:14.753480+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6701315673) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 59,
+    "retrieved": 59,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:18.377038+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6701425592) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 68,
+    "retrieved": 68,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:45.880932+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6701452189) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 80,
+    "retrieved": 80,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:07.102717+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6701488409) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 68,
+    "retrieved": 68,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:40.173998+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6701497991) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 24,
+    "retrieved": 24,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:00.872952+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6701542136) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 49,
+    "retrieved": 49,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:50.581250+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6701663494) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 101,
+    "retrieved": 101,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:12.896197+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6701714866) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 30,
+    "retrieved": 30,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:58.983705+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6701806872) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 78,
+    "retrieved": 78,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:58.789908+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6701818355) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 96,
+    "retrieved": 96,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:59.318923+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(6701875939) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 44,
+    "retrieved": 44,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:04.606469+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7003273819) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 61,
+    "retrieved": 61,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:03.024776+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7003284799) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 101,
+    "retrieved": 101,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:28.881473+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7003336223) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 173,
+    "retrieved": 173,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:44.377007+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7003451142) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 97,
+    "retrieved": 97,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:38.062960+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7003588697) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 146,
+    "retrieved": 146,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:07.777254+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7003603575) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 19,
+    "retrieved": 19,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:56.410674+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7003671164) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 20,
+    "retrieved": 20,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:12.584799+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7003676310) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 96,
+    "retrieved": 96,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:51.343315+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7003721539) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 17,
+    "retrieved": 17,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:46.275206+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7003745807) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 123,
+    "retrieved": 123,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:21.615732+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7003808684) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 44,
+    "retrieved": 44,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:48.778301+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7003862879) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 34,
+    "retrieved": 34,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:07.846996+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7003917566) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 100,
+    "retrieved": 100,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:15.745137+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7003945061) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 25,
+    "retrieved": 25,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:53.209517+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7003966474) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 55,
+    "retrieved": 55,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:01.376016+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7003972408) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 20,
+    "retrieved": 20,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:23.414952+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7004084150) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 52,
+    "retrieved": 52,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:33.810313+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7004119524) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 75,
+    "retrieved": 75,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:34.883972+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7004150267) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 84,
+    "retrieved": 84,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:57.925837+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7004330544) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 43,
+    "retrieved": 43,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:15.877173+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7004355543) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 164,
+    "retrieved": 164,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:53.076434+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7004417196) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 14,
+    "retrieved": 14,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:37.258183+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7004606890) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 45,
+    "retrieved": 45,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:54.851663+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7004613973) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 150,
+    "retrieved": 150,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:46.239199+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7005004940) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 160,
+    "retrieved": 160,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:01.201233+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7005131557) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 158,
+    "retrieved": 158,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:22.689425+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7005246359) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 119,
+    "retrieved": 119,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:31.489646+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7005399282) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 68,
+    "retrieved": 68,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:08.579381+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7005755956) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 58,
+    "retrieved": 58,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:10.273026+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7005895513) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 82,
+    "retrieved": 82,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:47.788390+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7005925692) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 40,
+    "retrieved": 40,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:49.675825+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7006014752) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 79,
+    "retrieved": 79,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:23.989933+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7006113711) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 154,
+    "retrieved": 154,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:55.763630+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7006183542) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 30,
+    "retrieved": 30,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:37.681812+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7006284890) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 160,
+    "retrieved": 160,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:05.294939+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7006346448) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 102,
+    "retrieved": 102,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:26.496445+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7006351054) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 109,
+    "retrieved": 109,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:14.859266+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7006462351) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 95,
+    "retrieved": 95,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:01.596170+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7006618461) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 94,
+    "retrieved": 94,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:50.381965+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7006638289) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 66,
+    "retrieved": 66,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:19.921835+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7006663246) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 20,
+    "retrieved": 20,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:24.299408+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7006796248) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 23,
+    "retrieved": 23,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:20.184239+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7006946392) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 42,
+    "retrieved": 42,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:52.030985+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7006948637) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 72,
+    "retrieved": 72,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:43.079018+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7006968287) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 10,
+    "retrieved": 10,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:56.408881+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7006971308) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 4,
+    "retrieved": 4,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:22.113486+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7007130840) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 108,
+    "retrieved": 108,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:03.733821+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7101639679) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 49,
+    "retrieved": 49,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:55.095593+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7101761139) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 24,
+    "retrieved": 24,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:41.497288+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7101899052) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 38,
+    "retrieved": 38,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:00.910913+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7102161607) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 30,
+    "retrieved": 30,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:38.320859+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7102183312) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 36,
+    "retrieved": 36,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:37.479122+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7102228823) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 50,
+    "retrieved": 50,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:37.735572+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7102429358) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 75,
+    "retrieved": 75,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:32.077350+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7102611306) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 39,
+    "retrieved": 39,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:51.185371+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7102655752) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 58,
+    "retrieved": 58,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:05.081499+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7102714637) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 59,
+    "retrieved": 59,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:23.082209+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7102800985) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 81,
+    "retrieved": 81,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:58.473127+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7102854543) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 12,
+    "retrieved": 12,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:57.541531+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7102867222) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 53,
+    "retrieved": 53,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:16.475158+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7102956820) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 260,
+    "retrieved": 260,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:29.992810+00:00",
+      "2026-09-08T09:38:32.189379+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7102957738) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 150,
+    "retrieved": 150,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:22.386356+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7103059598) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 16,
+    "retrieved": 16,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:04.805352+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7103332207) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 15,
+    "retrieved": 15,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:41.209116+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7201602574) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 19,
+    "retrieved": 19,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:44.513593+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7201951159) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 9,
+    "retrieved": 9,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:20.635108+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7202058619) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 19,
+    "retrieved": 19,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:25.116911+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7202158185) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 74,
+    "retrieved": 74,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:14.267380+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7202173513) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 41,
+    "retrieved": 41,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:41.478758+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7202299028) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 26,
+    "retrieved": 26,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:26.146555+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7202412782) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 6,
+    "retrieved": 6,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:57.603848+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7202464294) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 21,
+    "retrieved": 21,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:06.978265+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7202483022) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 18,
+    "retrieved": 18,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:53.273253+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7202651377) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 77,
+    "retrieved": 77,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:24.203173+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7202694496) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 143,
+    "retrieved": 143,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:13.257209+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7202759935) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 22,
+    "retrieved": 22,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:52.836746+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7202764313) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 10,
+    "retrieved": 10,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:21.804387+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7202841160) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 53,
+    "retrieved": 53,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:36.954388+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7401628492) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 9,
+    "retrieved": 9,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:40.433554+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7401703449) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 109,
+    "retrieved": 109,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:35.911458+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7402212167) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 83,
+    "retrieved": 83,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:26.330208+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7402220991) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 66,
+    "retrieved": 66,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:10.079720+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7402550950) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 18,
+    "retrieved": 18,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:45.414239+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7402622474) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 57,
+    "retrieved": 57,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:05.498859+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7402834878) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 64,
+    "retrieved": 64,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:37.372534+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7402981381) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 42,
+    "retrieved": 42,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:14.250938+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7403215280) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 82,
+    "retrieved": 82,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:26.891269+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7403232868) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 45,
+    "retrieved": 45,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:26.872151+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7403383173) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 84,
+    "retrieved": 84,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:23.536260+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7403519922) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 250,
+    "retrieved": 250,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:29.114548+00:00",
+      "2026-09-08T09:37:30.985630+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7403529387) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 24,
+    "retrieved": 24,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:25.378119+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7404064441) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 23,
+    "retrieved": 23,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:24.195216+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7404142839) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 122,
+    "retrieved": 122,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:46.877388+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7404385954) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 118,
+    "retrieved": 118,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:23.984558+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7404496375) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 33,
+    "retrieved": 33,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:06.382718+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7404529174) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 78,
+    "retrieved": 78,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:03.229961+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7404748011) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 96,
+    "retrieved": 96,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:39.575201+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7406809632) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 21,
+    "retrieved": 21,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:08.281822+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7501438338) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 20,
+    "retrieved": 20,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:26.999554+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7801522604) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 13,
+    "retrieved": 13,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:58.128951+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(7801540911) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 25,
+    "retrieved": 25,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:17.277436+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(8062327100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 42,
+    "retrieved": 42,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:24.724333+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(8116010300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 2,
+    "retrieved": 2,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:27.083397+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(8218844000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 65,
+    "retrieved": 65,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:10.045545+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(8223892400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 39,
+    "retrieved": 39,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:57.006030+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(8285172100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 46,
+    "retrieved": 46,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:53.236089+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(8326742300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 40,
+    "retrieved": 40,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:32.954340+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(8423865900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 13,
+    "retrieved": 13,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:56.310956+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(8523543800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 3,
+    "retrieved": 3,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:48.190205+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(8575254300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 146,
+    "retrieved": 146,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:27.887308+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(8593014400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 4,
+    "retrieved": 4,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:37:24.904780+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(8651460300) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 24,
+    "retrieved": 24,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:15.595147+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(8673285100) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 26,
+    "retrieved": 26,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:04.406346+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(8689375500) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 32,
+    "retrieved": 32,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:49.684416+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(8721230900) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 38,
+    "retrieved": 38,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:39:55.460495+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(8738943200) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 61,
+    "retrieved": 61,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:04.561011+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(8768847400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 72,
+    "retrieved": 72,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:14.544778+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(8771456800) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 42,
+    "retrieved": 42,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:33.109387+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(8858508000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 1,
+    "retrieved": 1,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:41.483976+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(8897996400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 21,
+    "retrieved": 21,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:38:17.632662+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(8982523700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 9,
+    "retrieved": 9,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:55.902019+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(9278611000) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 20,
+    "retrieved": 20,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:25.186208+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(9336727400) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 14,
+    "retrieved": 14,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:41:05.084461+00:00"
+    ]
+  },
+  {
+    "query": "AU-ID(9736959700) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR < 2027",
+    "expected": 19,
+    "retrieved": 19,
+    "complete": true,
+    "dates": [
+      "2026-09-08T09:40:23.823112+00:00"
+    ]
+  }
+]
