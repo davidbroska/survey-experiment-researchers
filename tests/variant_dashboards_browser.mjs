@@ -20,8 +20,15 @@ for(const key of ['original','complete','narrower']) {
   await call('Page.navigate',{url:pathToFileURL(path.join(root,file)).href});
   for(let i=0;i<100;i++){if(await evaluate(`typeof DATA!=='undefined'&&DATA.key==='${key}'&&document.querySelectorAll('#people-rows tr').length===100`))break;await new Promise(r=>setTimeout(r,100));}
   assert.equal(await evaluate('displayed.length'),100);
-  assert.equal(await evaluate('displayed[0].name'),'Thomas Bernauer');
-  assert.equal(await evaluate('displayed[0].n_articles'),key==='original'?33:35);
+  assert.equal(await evaluate('displayed[0].name'),'Douglas L. Kriner');
+  assert.equal(await evaluate('rankingMode'), 'us');
+  assert.equal(await evaluate('displayed.every(a=>a.in_pool&&a.unreviewed===0)'),true);
+  assert.deepEqual(await evaluate('columns().slice(2,4).map(c=>c[0])'),['us_count','n_articles']);
+  assert.ok(await evaluate(`document.querySelector('[data-sort="us_count"]').closest('th').classList.contains('primary')`));
+  assert.deepEqual(await evaluate(`Array.from(document.querySelectorAll('[role="tab"]')).map(n=>n.textContent)`),['Ranking','Methodology']);
+  assert.equal(await evaluate(`$('review-tools').open`),false);
+  assert.equal(await evaluate(`$('ranking-scope')`),null);
+  assert.equal(await evaluate(`Array.from(document.querySelectorAll('a[href]')).some(a=>/DASHBOARD_|TOP100|COMPARISON|BENCHMARK/.test(a.getAttribute('href')))`),false);
   for(const [column] of await evaluate('columns()')) {
     for(let j=0;j<2;j++) {
       await evaluate(`document.querySelector('[data-sort="${column}"]').click()`);
@@ -36,14 +43,26 @@ for(const key of ['original','complete','narrower']) {
       }
     }
   }
-  await evaluate(`$('sort-total').click();$('ranking-limit').value='ties';$('ranking-limit').dispatchEvent(new Event('change'))`);
-  assert.equal(await evaluate('displayed.length'),key==='original'?165:114);
-  await evaluate(`$('search').value='Richeson';$('search').dispatchEvent(new Event('input'))`);
+  await evaluate(`$('sort-total').click()`);
+  const totalView=await evaluate('displayed.map(a=>[a.authid,a.view_rank])');
+  await evaluate(`$('sort-us').click()`);
+  const usView=await evaluate('displayed.map(a=>[a.authid,a.view_rank])');
+  await evaluate(`document.querySelector('[data-sort="n_articles"]').click()`);
+  assert.deepEqual(await evaluate('displayed.map(a=>[a.authid,a.view_rank])'),totalView);
+  await evaluate(`document.querySelector('[data-sort="us_count"]').click()`);
+  assert.deepEqual(await evaluate('displayed.map(a=>[a.authid,a.view_rank])'),usView);
+  await evaluate(`$('sort-total').click()`);
+  assert.equal(await evaluate('displayed[0].name'),'Thomas Bernauer');
+  assert.equal(await evaluate('displayed[0].n_articles'),key==='original'?33:35);
+  assert.equal(await evaluate('displayed.every(a=>a.in_pool)'),true);
+  await evaluate(`$('ranking-limit').value='ties';$('ranking-limit').dispatchEvent(new Event('change'))`);
+  assert.equal(await evaluate('displayed.length'),key==='original'?110:114);
+  await evaluate(`$('search').value='Willer';$('search').dispatchEvent(new Event('input'))`);
   assert.equal(await evaluate('displayed.length'),1);
-  assert.equal(await evaluate('displayed[0].n_articles'),0);
+  assert.equal(await evaluate('displayed[0].name'),'Robb Willer');
   await evaluate(`document.querySelector('[data-author]').click()`);
   assert.equal(await evaluate(`$('author-dialog').open`),true);
-  assert.ok(await evaluate(`$('author-articles').textContent.includes('No candidate articles')`));
+  assert.ok(await evaluate(`document.querySelectorAll('#author-articles .article-card').length===displayed[0].n_articles`));
   await evaluate(`$('close-author').click();$('search').value='';$('ranking-limit').value='100';$('sort-us').click()`);
   assert.equal(await evaluate('displayed.length'),100);
   assert.equal(await evaluate('displayed[0].name'),'Douglas L. Kriner');
@@ -53,12 +72,14 @@ for(const key of ['original','complete','narrower']) {
   assert.equal(await evaluate(`csv(displayed,['authid','name','n_articles','us_count']).split('\\r\\n').length`),121);
   await evaluate(`$('methodology-tab').click()`);
   assert.equal(await evaluate(`$('methodology-view').hidden`),false);
+  assert.equal(await evaluate(`$('query-details').open`),false);
+  await evaluate(`$('query-details').open=true`);
   assert.equal(await evaluate(String.raw`JSON.stringify($('literal-query').textContent.match(/"[^"\\]*(?:\\.[^"\\]*)*"|\{[^}]*\}|[()]|[^\s(){}"]+/g))===JSON.stringify(DATA.query.match(/"[^"\\]*(?:\\.[^"\\]*)*"|\{[^}]*\}|[()]|[^\s(){}"]+/g))`),true);
   assert.ok(await evaluate(`$('literal-query').textContent.includes('PUBYEAR > 2009')`));
   await evaluate(`Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async()=>{throw new Error('Clipboard unavailable in test')}}});$('copy-query').click()`);
   await new Promise(r=>setTimeout(r,30));
   assert.equal(await evaluate(`!$('query-copy-fallback').hidden&&$('query-copy-fallback').value===DATA.query`),true);
-  await evaluate(`$('downloads-tab').click()`);
+  await evaluate(`$('ranking-tab').click();$('review-tools').open=true;$('downloads-tab').click()`);
   assert.equal(await evaluate('batch.every(a=>a.geography==="unclear"&&a.in_pool)'),true);
   assert.equal(await evaluate('queue.every(a=>!a.pdf_available&&!a.alternative_copy_pending&&!saved(a.sid))'),true);
   assert.ok(await evaluate('new Set(queue.map(a=>a.sid)).size===queue.length'));
@@ -72,7 +93,7 @@ for(const key of ['original','complete','narrower']) {
   await evaluate(`$('queue-availability').value='needed';$('queue-availability').dispatchEvent(new Event('change'))`);
   await evaluate(`$('review-tab').click();$('review-label').value='unclear';$('review-label').dispatchEvent(new Event('change'))`);
   assert.equal(await evaluate(`document.querySelectorAll('#article-cards .badge.unclear').length`),50);
-  await evaluate(`$('ranking-tab').click();$('sort-total').click();$('ranking-limit').value='100';$('ranking-limit').dispatchEvent(new Event('change'))`);
+  await evaluate(`$('ranking-tab').click();$('review-tools').open=false;$('sort-us').click();$('ranking-limit').value='100';$('ranking-limit').dispatchEvent(new Event('change'));window.scrollTo(0,0)`);
   const out=path.join(root,'private/variant_dashboard_browser');await fs.mkdir(out,{recursive:true});
   await fs.writeFile(path.join(out,key+'-desktop.png'),Buffer.from((await call('Page.captureScreenshot',{format:'png'})).data,'base64'));
   await call('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});
@@ -81,6 +102,6 @@ for(const key of ['original','complete','narrower']) {
   hashes[file]=createHash('sha256').update(await fs.readFile(path.join(root,file))).digest('hex');
 }
 assert.deepEqual(errors,[]);
-const result={passed:true,output_sha256:hashes,checks:['three distinct immutable query pages','every ranking column in both directions','165/114/114 cutoff-inclusive total leaders','searchable zero-credit diagnostic case','researcher detail dialog','same120 with no unreviewed articles','literal methodology query','deduplicated unresolved download queue','saved and unavailable articles omitted from routine batches','alternative-copy filter with reference links','batch copy and CSV contents','article evidence filter','desktop and mobile layouts','no uncaught exceptions']};
+const result={passed:true,output_sha256:hashes,checks:['three standalone query presentations with no comparison links','US default within120 and primary US column before total','both ranking modes within same120','every ranking column in both directions','110/114/114 cutoff-inclusive total leaders within120','Robb Willer detail dialog','same120 with no unreviewed articles','readable methodology and exact query copying','collapsed secondary review tools','deduplicated unresolved download queue','saved and unavailable articles omitted from routine batches','alternative-copy filter with reference links','batch copy and CSV contents','article evidence filter','desktop and mobile layouts','no uncaught exceptions']};
 await fs.writeFile(path.join(root,'results/variant_dashboards_2026_09_10/browser_check.json'),JSON.stringify(result,null,2)+'\n');
 console.log(JSON.stringify(result,null,2));ws.close();

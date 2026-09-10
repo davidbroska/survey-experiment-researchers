@@ -1,21 +1,30 @@
 {
   "entry": "index.html",
+  "main_dashboard": "DASHBOARD_NARROWER.html",
   "files": [
     {
       "path": ".nojekyll",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
+      "path": "COAUTHOR_SUMMARY.html",
+      "sha256": "2cf8a1117d8d9376e22da1da7550e2dc85269cd9b5b7f603196df9884d2ab483"
+    },
+    {
+      "path": "COAUTHOR_SUMMARY.md",
+      "sha256": "541510e30b144df243d1b474bb823cc8ad2a9edba18f16a50d9ef803c9940c88"
+    },
+    {
       "path": "DASHBOARD_COMPLETE.html",
-      "sha256": "cafb105418dba30aab6ca2ff22247cce791da01e242873cc75446241c779538a"
+      "sha256": "d996ab232aec2af8fd064da84c3a02181f68d09ec8bea0f8bcc174e3923f4bc3"
     },
     {
       "path": "DASHBOARD_NARROWER.html",
-      "sha256": "d58225ee7eda53dd5ab035483726228840b6cbb29ceaf940095ea65d5edc7ad4"
+      "sha256": "e57264d67e55f822392471c0dbb633a6a6668ab1cfeb9299f541176c3e00fc7c"
     },
     {
       "path": "DASHBOARD_ORIGINAL.html",
-      "sha256": "1990ac6d44892d92e0b6400ec8676dcf189d1c386a89e38335c97a6d1a2118c5"
+      "sha256": "618c1c8f31d2b5bbddf516964b44d88a18b27210f4f8ce1ed32931285f77d60f"
     },
     {
       "path": "EXECUTIVE_SUMMARY.html",
@@ -56,6 +65,14 @@
     {
       "path": "MANUAL_DOWNLOADS.md",
       "sha256": "b0bcad07bbf33ad5b2791f5f6321c7c09a9e75cebd8bd01abcabb946c82f0e37"
+    },
+    {
+      "path": "METHODOLOGY.html",
+      "sha256": "78652ac29cc59fe05b672f1225669696494a073aadc0a442940b6cc5fddc5947"
+    },
+    {
+      "path": "METHODOLOGY.md",
+      "sha256": "711e748b4009f2b339088cce5cec3bdd5d2e8e859a9c2f4e6b8ade962826d820"
     },
     {
       "path": "PRIORITY_DOWNLOADS.html",
@@ -119,7 +136,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "02285d1457abdb81b1f7be55c52682982383f0ad6e8467ffdd8c29bb510d86e0"
+      "sha256": "6fd1be085f8e656ed26c827a7547e3de3e2aeb2194e4368ef58f7d110ba69152"
     },
     {
       "path": "SEARCH_METHODS.html",
@@ -171,7 +188,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "8bd6c3a4a91ea5ff29b1c4ae45cc2f56f4e803b1a37a3c69690ee759f5cee0a6"
+      "sha256": "e57264d67e55f822392471c0dbb633a6a6668ab1cfeb9299f541176c3e00fc7c"
     },
     {
       "path": "inputs/query_dashboard_affiliations.csv",
@@ -360,6 +377,30 @@
     {
       "path": "results/benchmark_review_wave3_2026_09_10/summary.json",
       "sha256": "1c93aeeb950cf11b0eccffc5f04db34ac99013b1cdea86a0387187319fdbf320"
+    },
+    {
+      "path": "results/coauthor_update_2026_09_10/availability_manifest.csv",
+      "sha256": "421d420c43ed24ac24aacc1f784f84495a7288d1126c2bf4624077304ccae38d"
+    },
+    {
+      "path": "results/coauthor_update_2026_09_10/design_parser_flags.csv",
+      "sha256": "10fb168a0ee3aab4b279f1bb2c32c60097960b01021ba04dfd6956e8a29b0893"
+    },
+    {
+      "path": "results/coauthor_update_2026_09_10/geography_reviews.csv",
+      "sha256": "14208f3e97356441dfda9b2d1ab1bbca93cf2b0c44e5ea2c0bfa6e8026d32a88"
+    },
+    {
+      "path": "results/coauthor_update_2026_09_10/inventory_summary.json",
+      "sha256": "b55204f025e55f0590a5521f22351cf6040945a0c76e39d44801303870f410ca"
+    },
+    {
+      "path": "results/coauthor_update_2026_09_10/methodology_provenance.json",
+      "sha256": "add574031ee244c14593ea81ec47e532780725631d55d20809169cd4a2394473"
+    },
+    {
+      "path": "results/coauthor_update_2026_09_10/review_validation.json",
+      "sha256": "38e5a2609806e37394f17385e80f66a91dbe64396948002953fc1f97750e570c"
     },
     {
       "path": "results/design_audit_2026_09_10/annotation_codebook.md",
@@ -567,7 +608,7 @@
     },
     {
       "path": "results/query_rankings_2026_09_10/article_geography.csv",
-      "sha256": "2438140f258f034c4d31c0a80d836f0d125da93d69849d89aee6a826306b4cc8"
+      "sha256": "7cb53c1284ba76758a9935cd33749e487f891ff93af086ef3398b7ba985a4f59"
     },
     {
       "path": "results/query_rankings_2026_09_10/author_rank_comparison.csv",
@@ -615,7 +656,7 @@
     },
     {
       "path": "results/query_rankings_2026_09_10/current_published_us_ranking.csv",
-      "sha256": "52d117ac1ba51e3ef09625f64224e88e5662d329964d3796cbafaca9159ca640"
+      "sha256": "e5bcfff90f431f9122fcc02e1f0504b675468d9bbe6ec03a076c74e64a66ea40"
     },
     {
       "path": "results/query_rankings_2026_09_10/current_raw_cutoff_ties.csv",
@@ -635,7 +676,7 @@
     },
     {
       "path": "results/query_rankings_2026_09_10/current_raw_us_ranking.csv",
-      "sha256": "c6a71ab23bb34ee4ce665f84c648d3574596cc82a3c108e6adc53fd65faca6bd"
+      "sha256": "2f371b1ca4efd13650747094d0c062b7270f4ec165a373c24059d78f69b6fd7c"
     },
     {
       "path": "results/query_rankings_2026_09_10/display_membership_changes.csv",
@@ -655,11 +696,11 @@
     },
     {
       "path": "results/query_rankings_2026_09_10/geography_review_queue.csv",
-      "sha256": "4e80ed0dd845a2ba17b68223d41ff1cfd45cf5c1d4e5967e9e06204bed3adbf3"
+      "sha256": "f1a3398b69bb1e931e4f48c2e648b07999405fca0ceb951527b7ea45b2a33a6f"
     },
     {
       "path": "results/query_rankings_2026_09_10/geography_summary.json",
-      "sha256": "95fcb3bee9a3dcf4e474dca0acbd242c5c71594893ab2e13768f1f7319b8ce90"
+      "sha256": "1c8e72b6fbd9f386fe7c68a71a0b3c63d0b63849b91ef46cb2b6fc30f5ba06c2"
     },
     {
       "path": "results/query_rankings_2026_09_10/methodological_assessment.md",
@@ -683,7 +724,7 @@
     },
     {
       "path": "results/query_rankings_2026_09_10/narrower_query_us_ranking.csv",
-      "sha256": "964c73bf83ef832359d082e2b11c8589607e6d8b76eba3dc4e9c00f7c820a547"
+      "sha256": "7bd0f6469f890d6f003f06155958b331ac166b862aac39ebaf2a13541eb53206"
     },
     {
       "path": "results/query_rankings_2026_09_10/original_query_cutoff_ties.csv",
@@ -703,7 +744,7 @@
     },
     {
       "path": "results/query_rankings_2026_09_10/original_query_us_ranking.csv",
-      "sha256": "1dfee534e1c363abc944c04c61a7181cdb31becaf463a56ef3670728fcc39b99"
+      "sha256": "15fb55f690359d18078f1fee46b5aec7914d18d8fa7366da79ce491089b77285"
     },
     {
       "path": "results/query_rankings_2026_09_10/tie_metrics.csv",
@@ -719,19 +760,19 @@
     },
     {
       "path": "results/query_rankings_2026_09_10/uniform_pool_current_published_us_ranking.csv",
-      "sha256": "e239c99d8998773da972c641e93406cd19f00ea1eccd163cc7d785381357fbf0"
+      "sha256": "31a365231431402857323264538e31a7e7c10843bc68b4e0f2a7eedfdd1f1a2b"
     },
     {
       "path": "results/query_rankings_2026_09_10/uniform_pool_current_raw_us_ranking.csv",
-      "sha256": "c7d0c41ece71fa47f3b80f6deaed5a479f44158f1c2c5fa3c52de32f3cf9a2ee"
+      "sha256": "8b457dad128e7227d624a6aab91a6cfe8807a153f1e6481f10b42794ab52cc3f"
     },
     {
       "path": "results/query_rankings_2026_09_10/uniform_pool_narrower_query_us_ranking.csv",
-      "sha256": "1a35dae6d36206bc97c9a15782ec464587e00f0d0d2edca0515df4087659e8fd"
+      "sha256": "f86b550d3e96b8ac390ca47fe7d0b59ebef907e73f198be6d2199ac03057f644"
     },
     {
       "path": "results/query_rankings_2026_09_10/uniform_pool_original_query_us_ranking.csv",
-      "sha256": "2dc6c710d9e5eeefbb40e6399467b6413b670933aeaec8b2e7e51efed1250df7"
+      "sha256": "e7ef2571559f1f3caf3d236f766242f9aea66793440b299ad1aef0c50b26d578"
     },
     {
       "path": "results/query_rankings_2026_09_10/verification.json",
@@ -919,19 +960,19 @@
     },
     {
       "path": "results/variant_dashboards_2026_09_10/browser_check.json",
-      "sha256": "2311930a06226e5241533b28368bfb325056e5a27fbb79fecc6db2f10df48c53"
+      "sha256": "ef839b0c3cbe290343346470f2ff95f5f7ca8db0c1fc00a6282569805f8d88a8"
     },
     {
       "path": "results/variant_dashboards_2026_09_10/complete_provenance.json",
-      "sha256": "2dc831f9f3d20f4becd52aa52f26df5b35500ff70f1ef24879aa843aa542285f"
+      "sha256": "1ca108c385250f50ed2d62c86de4569567152ddd8bef3983816d600b55bc264a"
     },
     {
       "path": "results/variant_dashboards_2026_09_10/narrower_provenance.json",
-      "sha256": "47f93d4ef2eae12031152f50e3ec60285583cb637a1f23825f6010b532649c0a"
+      "sha256": "cd149ea50ee8ce58c8370b69fd7418ae47a8c2265f0833d31e1999c4da7e633c"
     },
     {
       "path": "results/variant_dashboards_2026_09_10/original_provenance.json",
-      "sha256": "fb0bb12f5e44200521f2f96b7c63c1025b05dfa01d1d8d507a3c23c735eea374"
+      "sha256": "800e12a0dc284664cb5fa82dd9e91ce09765fcfa0df924b01a8af871ad86fbb7"
     },
     {
       "path": "results/venue_frame.csv",
@@ -946,7 +987,7 @@
       "sha256": "aa44f2bce243664dfd80aa9f55eeefeaf93cc9c65642b74627fd06b186474ae5"
     }
   ],
-  "local_links_checked": 223,
+  "local_links_checked": 178,
   "private_files_included": false,
   "published": false
 }

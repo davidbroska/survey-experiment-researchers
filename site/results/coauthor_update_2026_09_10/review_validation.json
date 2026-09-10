@@ -1,0 +1,16 @@
+{
+  "reviewed_articles": 7,
+  "labels": {
+    "us_explicit": 2,
+    "us_inferred": 3,
+    "non_us": 2,
+    "unclear": 0,
+    "not_applicable": 0
+  },
+  "source_pdf_cache_and_exact_page_spans_validated": true,
+  "reviews_sha256": "65bece93716c6ec689551feca2937ed423f20e2e27f07eb33e2610f7c2a0e887",
+  "packet_sha256": "c704b49a63642caefb9e46904af77270eeeabdf098e1b110972c9300add832e6",
+  "human_validated": false,
+  "no_source_text_or_quotes_published": true,
+  "article_counts_modified_by_design_parser_notes": false
+}

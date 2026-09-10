@@ -10,7 +10,8 @@ from common import ROOT, digest, write_json
 REPORTS = ('EXECUTIVE_SUMMARY', 'SUPPORTING_INFORMATION', 'QUERY_REPORT',
            'GEOGRAPHY_REPORT', 'FULLTEXT_REVIEW', 'YEAR_WINDOW_COMPARISON', 'MANUAL_DOWNLOADS', 'PRIORITY_DOWNLOADS',
            'QUERY_REVISION', 'SEARCH_STRATEGY', 'SEARCH_SUMMARY', 'SEARCH_METHODS',
-           'PROXIMITY_AUDIT', 'PROXIMITY_METHODS', 'PROXIMITY_SUMMARY', 'FULLTEXT_BENCHMARK', 'RANKING_COMPARISON_REPORT')
+           'PROXIMITY_AUDIT', 'PROXIMITY_METHODS', 'PROXIMITY_SUMMARY', 'FULLTEXT_BENCHMARK', 'RANKING_COMPARISON_REPORT',
+           'METHODOLOGY', 'COAUTHOR_SUMMARY')
 CSV_FILES = ('top100_enriched', 'top100_provisional', 'top100_article_annotations',
              'top100_author_article_links', 'top100_cutoff_ties', 'fulltext_download_queue',
              'year_window_author_comparison', 'year_window_tie_comparison',
@@ -138,14 +139,18 @@ def build():
               ('priority_manifest', 'round10_manifest', 'fulltext_review_validation', 'metadata_review_validation',
                'queue_validation')]
     files += [f'results/us_geography_priority_2026_09_10/assessment.{ext}' for ext in ('md', 'html')]
+    files += [f'results/coauthor_update_2026_09_10/{name}.csv' for name in
+              ('availability_manifest', 'geography_reviews', 'design_parser_flags')]
+    files += [f'results/coauthor_update_2026_09_10/{name}.json' for name in
+              ('inventory_summary', 'review_validation', 'methodology_provenance')]
     for name in files:
         dest = site / name
         dest.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(ROOT / name, dest)
-    shutil.copy2(ROOT / 'TOP100.html', site / 'index.html')
+    shutil.copy2(ROOT / 'DASHBOARD_NARROWER.html', site / 'index.html')
     (site / '.nojekyll').write_text('')
     (site / 'README.md').write_text('Survey-experiment researcher dashboard, publications 2010–2026.\n\n'
-                                  'Open [the dashboard](index.html) or [the selection method and query](SUPPORTING_INFORMATION.html). '
+                                  'Open [the researcher ranking](index.html) or [the selection method and query](METHODOLOGY.html). '
                                   'Counts represent first/last-author candidate articles. US labels combine explicit and inferred '
                                   'evidence and await independent validation. Source PDFs, full abstracts, API credentials, and '
                                   'Scopus caches are not included.\n')
@@ -156,7 +161,7 @@ def build():
         raise ValueError(f'Unexpected site contents: {sorted(actual ^ expected)}')
     checked = check_links(site)
     manifest = [{'path': name, 'sha256': digest((site / name).read_bytes())} for name in sorted(expected)]
-    write_json(ROOT / 'results/site_manifest.json', {'entry': 'index.html', 'files': manifest,
+    write_json(ROOT / 'results/site_manifest.json', {'entry': 'index.html', 'main_dashboard': 'DASHBOARD_NARROWER.html', 'files': manifest,
                'local_links_checked': checked, 'private_files_included': False, 'published': False})
     with zipfile.ZipFile(ROOT / 'github-pages-site.zip', 'w', zipfile.ZIP_DEFLATED) as archive:
         for name in sorted(expected):

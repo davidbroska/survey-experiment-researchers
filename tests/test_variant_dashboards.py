@@ -3,6 +3,7 @@ from collections import Counter
 from html.parser import HTMLParser
 import json
 from pathlib import Path
+import re
 import sys
 import unittest
 from unittest.mock import patch
@@ -58,13 +59,13 @@ class VariantDashboardTests(unittest.TestCase):
                 self.assertLessEqual(query_tokens(line).count('OR'), 1)
         self.assertEqual(len(hashes), 3)
 
-    def test_legacy_counts_are_frozen_and_zero_is_explicit(self):
+    def test_legacy_cohort_counts_are_frozen_without_diagnostic_people(self):
         authors = {a["authid"]: a for a in self.payloads["original"]["authors"]}
         old = read_csv(ROOT / "results/query_rankings_2026_09_10/current_published_ranking.csv")
         for r in old:
-            self.assertEqual(authors[r["authid"]]["n_articles"], int(r["n_articles"]))
-        self.assertEqual(authors["7003917566"]["n_articles"], 0)
-        self.assertIsNone(authors["7003917566"]["rank"])
+            if r['authid'] in authors:
+                self.assertEqual(authors[r["authid"]]["n_articles"], int(r["n_articles"]))
+        self.assertNotIn('7003917566', authors)
 
     def test_same_pool_and_updated_article_evidence(self):
         sets = []
@@ -72,6 +73,8 @@ class VariantDashboardTests(unittest.TestCase):
             pool = {a["authid"] for a in d["authors"] if a["in_pool"]}
             sets.append(pool)
             self.assertEqual(len(pool), 120)
+            self.assertEqual(len(d['authors']), 120)
+            self.assertTrue(all(a['in_pool'] for a in d['articles']))
             by_author = {}
             for a in d["articles"]:
                 for aid in a["authors"]:
@@ -82,6 +85,8 @@ class VariantDashboardTests(unittest.TestCase):
                 self.assertEqual(a["n_articles"], sum(c.values()))
                 if a["in_pool"]:
                     self.assertEqual(a["unreviewed"], 0)
+                    self.assertEqual(a['pool_total_rank'], 1 + sum(
+                        other['in_pool'] and other['n_articles'] > a['n_articles'] for other in d['authors']))
         self.assertEqual(sets[0], sets[1])
         self.assertEqual(sets[1], sets[2])
 
@@ -89,7 +94,12 @@ class VariantDashboardTests(unittest.TestCase):
         full = {a["sid"] for a in self.payloads["complete"]["articles"]}
         narrow = {a["sid"] for a in self.payloads["narrower"]["articles"]}
         self.assertTrue(narrow < full)
-        self.assertEqual(len(full - narrow), 310)
+        self.assertEqual(len(full - narrow), 1)
+        self.assertEqual(self.payloads['complete']['retrieved'] - self.payloads['narrower']['retrieved'], 310)
+        sources = read_csv(ROOT / 'results/query_rankings_2026_09_10/articles.csv')
+        all_full = {a['scopus_id'] for a in sources if a['original_query'].lower() == 'true'}
+        all_narrow = {a['scopus_id'] for a in sources if a['narrower_query'].lower() == 'true'}
+        self.assertEqual(len(all_full - all_narrow), 310)
         for d in self.payloads.values():
             for a in d["authors"]:
                 if a["institution"] or a["department"] or a["country"]:
@@ -115,6 +125,7 @@ class VariantDashboardTests(unittest.TestCase):
         pending = {r['scopus_id'] for r in latest if r['publisher_access_issue']}
         priority = ROOT / 'results/us_geography_priority_2026_09_10/fulltext_geography_reviews.csv'
         ready.update(r['scopus_id'] for r in read_csv(priority))
+        ready.update(r['scopus_id'] for r in read_csv(ROOT / 'results/coauthor_update_2026_09_10/geography_reviews.csv'))
         for data in self.payloads.values():
             articles = {a['sid']: a for a in data['articles']}
             for sid in ready & articles.keys():
@@ -129,19 +140,35 @@ class VariantDashboardTests(unittest.TestCase):
                 self.assertIn('User could not download', a['access_note'])
 
     def test_public_only_availability_and_provenance_match_private_verified_build(self):
-        private = ROOT / 'private/us_geography_priority_2026_09_10/fulltext_reviews.csv'
-        private_present = private.exists()
+        private = [ROOT / 'private' / folder / 'fulltext_reviews.csv' for folder in
+                   ('us_geography_priority_2026_09_10', 'coauthor_update_2026_09_10')]
+        private_count = sum(len(read_csv(p)) for p in private if p.exists())
         with patch('variant_dashboards.verified_priority_pdf', wraps=verified_priority_pdf) as verify:
             baseline = load_inputs()
-            self.assertEqual(verify.call_count, 7 if private_present else 0)
+            self.assertEqual(verify.call_count, private_count)
         exists = Path.exists
-        with patch.object(Path, 'exists', lambda p: False if p == private else exists(p)):
+        with patch.object(Path, 'exists', lambda p: False if p in private else exists(p)):
             with patch('variant_dashboards.verified_priority_pdf', side_effect=AssertionError('Public-only build must not claim source revalidation')):
                 public_only = load_inputs()
         self.assertEqual(baseline, public_only)
         self.assertTrue(all(not p.is_relative_to(ROOT / 'private') for p in public_only['paths']))
         for key in VARIANTS:
             self.assertEqual(make_payload(key, baseline), make_payload(key, public_only))
+
+    def test_standalone_presentations_have_no_comparison_navigation(self):
+        for key, doc in self.documents.items():
+            source = (ROOT / VARIANTS[key]['file']).read_text()
+            presentation = re.sub(r'<(script|style)\b[^>]*>[\s\S]*?</\1>', '', source)
+            self.assertIn('<title>Survey-experiment researchers</title>', presentation)
+            self.assertEqual(presentation.count('role="tab"'), 2)
+            self.assertIn('id="review-tools"', presentation)
+            self.assertNotIn('id="ranking-scope"', presentation)
+            for forbidden in ('DASHBOARD_', 'TOP100.html', 'RANKING_COMPARISON', 'FULLTEXT_BENCHMARK',
+                              'all three dashboards', 'Original query', 'Complete proximity query',
+                              'Narrower proximity query', 'legacy-only'):
+                self.assertNotIn(forbidden, presentation, (key, forbidden))
+            for link in doc.links:
+                self.assertFalse(any(x in link for x in ('DASHBOARD_', 'TOP100.html', 'BENCHMARK', 'COMPARISON')))
 
 
 if __name__ == "__main__":

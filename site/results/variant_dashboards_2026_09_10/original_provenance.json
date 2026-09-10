@@ -3,21 +3,25 @@
   "query_sha256": "923d3eeecd4b576223b4706bed3505b4b27a6b6d8d6cb09fe624dcc9f199028d",
   "researchers": 8315,
   "articles": 7035,
+  "rendered_researchers": 120,
+  "rendered_articles": 961,
+  "rendered_scope": "reviewed_cohort",
+  "retrieved_articles": 7302,
   "pool_size": 120,
   "pool_articles": 961,
   "pool_geography": {
     "not_applicable": 13,
-    "us_explicit": 285,
-    "us_inferred": 160,
-    "non_us": 364,
-    "unclear": 139
+    "us_explicit": 286,
+    "us_inferred": 162,
+    "non_us": 365,
+    "unclear": 135
   },
   "human_validated": false,
   "frozen_dashboard_modified": false,
-  "priority_availability_basis": "Published source-validated snapshot; private PDF bytes additionally checked when the private register is present.",
+  "priority_availability_basis": "Published source-validated snapshots; private PDF bytes additionally checked when their private review registers are present.",
   "input_sha256": {
     "results/query_rankings_2026_09_10/articles.csv": "ed555b31fae29b5ffe86f4a83f6b20e0243c7e1836b659a7d82f803186c1da38",
-    "results/query_rankings_2026_09_10/article_geography.csv": "2438140f258f034c4d31c0a80d836f0d125da93d69849d89aee6a826306b4cc8",
+    "results/query_rankings_2026_09_10/article_geography.csv": "7cb53c1284ba76758a9935cd33749e487f891ff93af086ef3398b7ba985a4f59",
     "results/query_rankings_2026_09_10/author_article_links.csv": "e27e03ba4683051f22c678f85e779d9f8367c8dc93302ef4c090cbc2ef1f5795",
     "inputs/researcher_affiliations.csv": "07b19109d9f014f94615a406b8b409662afab9da175247f2bf7c3579bfb3744f",
     "inputs/query_dashboard_affiliations.csv": "460f06eb8d4dba6d8dea0d637af211f5e2af7b3f8c34234163d224d7a05827ce",
@@ -28,14 +32,18 @@
     "inputs/manual_download_status.csv": "c28e67232db67f72d20fb0e33674b676360f938c61eb1acb4a5a12dd41520a73",
     "results/us_geography_priority_2026_09_10/fulltext_geography_reviews.csv": "876d84afb1060a88085987a13564feed3b38b8fc44dc248021a3f5ca17a75edb",
     "results/us_geography_priority_2026_09_10/fulltext_review_validation.json": "c26d098ef561c0e7ec9aa8b2965e724a00ad037eaff1021e93c1953f0b2b6a76",
+    "results/coauthor_update_2026_09_10/geography_reviews.csv": "14208f3e97356441dfda9b2d1ab1bbca93cf2b0c44e5ea2c0bfa6e8026d32a88",
+    "results/coauthor_update_2026_09_10/review_validation.json": "38e5a2609806e37394f17385e80f66a91dbe64396948002953fc1f97750e570c",
+    "results/coauthor_update_2026_09_10/design_parser_flags.csv": "10fb168a0ee3aab4b279f1bb2c32c60097960b01021ba04dfd6956e8a29b0893",
     "results/query_rankings_2026_09_10/current_published_ranking.csv": "689118b4b7d85d47ad1ed4715b5452abaf0dac7b3073cf76bc0b468c10d9e0c8",
-    "results/query_rankings_2026_09_10/current_published_us_ranking.csv": "52d117ac1ba51e3ef09625f64224e88e5662d329964d3796cbafaca9159ca640",
-    "results/query_rankings_2026_09_10/uniform_pool_current_published_us_ranking.csv": "e239c99d8998773da972c641e93406cd19f00ea1eccd163cc7d785381357fbf0",
+    "results/query_rankings_2026_09_10/current_published_us_ranking.csv": "e5bcfff90f431f9122fcc02e1f0504b675468d9bbe6ec03a076c74e64a66ea40",
+    "results/query_rankings_2026_09_10/uniform_pool_current_published_us_ranking.csv": "31a365231431402857323264538e31a7e7c10843bc68b4e0f2a7eedfdd1f1a2b",
     "queries/recommended.txt": "d1b093aa5218404faefd906b710ccad5b6d2bb18637bfa88a87e0ca196da1145",
-    "pipeline/variant_dashboards.py": "b0c619d6074317788519570927514ff0b384f30b3f6d09398eff8ba21749b3fa",
-    "pipeline/variant_dashboard_template.html": "9118aeb4e16841619063cab58aa7f0e213b6ca7017344f623ae9825edc1112d7",
-    "pipeline/variant_dashboard.js": "bccc348a223a729ce1b2e928b51e945e2f9810e990f12482c611ba49e295f267",
-    "pipeline/dashboard.css": "0f6131481f4705521947189a3a3d3dec3c20c77726014279e060678c422b43db"
+    "pipeline/variant_dashboards.py": "dce294c0a3c40b46aab6f4db030e52e393cb7449cada3fe5d9823b5a77bf4e93",
+    "pipeline/variant_dashboard_template.html": "ceb8e73292fb3f1fa69f833f0741ac8f78f216bc5a99ca047073cf568d060478",
+    "pipeline/variant_dashboard.js": "3e658698a6a4a43faff2291c46c913c6321fbcb49835a7a798dc995a255b6320",
+    "pipeline/dashboard.css": "0f6131481f4705521947189a3a3d3dec3c20c77726014279e060678c422b43db",
+    "pipeline/recruitment_methods.py": "25e90c0d5a3538cf1b25ccdd4291efb652826d1b507bc94b1000e1e2411562e7"
   },
-  "output_sha256": "1990ac6d44892d92e0b6400ec8676dcf189d1c386a89e38335c97a6d1a2118c5"
+  "output_sha256": "618c1c8f31d2b5bbddf516964b44d88a18b27210f4f8ce1ed32931285f77d60f"
 }

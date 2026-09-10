@@ -20,6 +20,11 @@
     "validated_reviews": 1
   },
   {
+    "source_file": "private/coauthor_update_2026_09_10/fulltext_reviews.csv",
+    "sha256": "65bece93716c6ec689551feca2937ed423f20e2e27f07eb33e2610f7c2a0e887",
+    "validated_reviews": 7
+  },
+  {
     "source_file": "private/design_audit_2026_09_10/development_coder_0.csv",
     "sha256": "8b882b0eb7b49d87f329600c9001507f53299299ceae9df6028f0e70c5d2e6c7",
     "validated_reviews": 54

@@ -3,12 +3,11 @@
 This module writes only DASHBOARD_{ORIGINAL,COMPLETE,NARROWER}.html and its
 own provenance directory. The historical TOP100 dashboard is never rebuilt.
 Public-only builds reproduce recorded PDF availability from validated public
-snapshots; they do not revalidate private source files. When the private priority
-register is present, its PDF identities and hashes must match that snapshot.
+snapshots; they do not revalidate private source files. When private review
+registers are present, their PDF identities and hashes must match those snapshots.
 """
 from collections import Counter, defaultdict
 import hashlib
-import html
 import json
 import re
 
@@ -109,6 +108,36 @@ def article_access(aliases, doi, source):
                 access_note=reason if not available else "")
 
 
+def load_validated_pdf_register(directory, public_name, validation_name, private_directory, paths, availability):
+    public_path = ROOT / "results" / directory / public_name
+    validation_path = ROOT / "results" / directory / validation_name
+    private_path = ROOT / "private" / private_directory / "fulltext_reviews.csv"
+    if not public_path.exists():
+        assert not private_path.exists(), "Publish the validated availability snapshot before rendering."
+        return
+    paths.extend((public_path, validation_path))
+    rows = read_csv(public_path)
+    validation = json.loads(validation_path.read_text())
+    public_rows = {r["scopus_id"]: r for r in rows}
+    assert len(public_rows) == len(rows), "A PDF snapshot must contain unique article IDs."
+    assert validation["reviewed_articles"] == len(rows)
+    if directory == "coauthor_update_2026_09_10":
+        assert validation["source_pdf_cache_and_exact_page_spans_validated"] is True
+        assert all(r["fulltext_readiness"] == "ready_for_fulltext_review" and
+                   r["identity_status"] in ("verified_doi_and_title_in_opening_pages", "verified_title_in_opening_pages") for r in rows)
+    else:
+        assert all(validation[k] == len(rows) for k in ("pdf_hashes_verified", "article_identity_verified"))
+    for row in rows:
+        assert re.fullmatch(r"[0-9a-f]{64}", row["source_sha256"]) and row["source_kind"], "PDF source provenance is incomplete."
+        availability[row["scopus_id"]] = True
+    if private_path.exists():
+        private_rows = {r["scopus_id"]: r for r in read_csv(private_path)}
+        assert private_rows.keys() == public_rows.keys(), "Private and public article IDs must agree."
+        for sid, row in private_rows.items():
+            assert all(row[k] == public_rows[sid][k] for k in ("source_sha256", "source_kind")), "Private and public PDF provenance must agree."
+            assert verified_priority_pdf(row), "A full-text review must cite an existing PDF with the recorded hash."
+
+
 def load_inputs():
     paths = [RANKINGS / name for name in
              ("articles.csv", "article_geography.csv", "author_article_links.csv")]
@@ -147,33 +176,20 @@ def load_inputs():
     if path.exists():
         paths.append(path)
         access_issues.update({r["scopus_id"]: "user_unavailable" for r in read_csv(path) if r["status"] == "user_unavailable"})
-    public_priority = ROOT / "results/us_geography_priority_2026_09_10/fulltext_geography_reviews.csv"
-    validation_path = ROOT / "results/us_geography_priority_2026_09_10/fulltext_review_validation.json"
-    private_priority = ROOT / "private/us_geography_priority_2026_09_10/fulltext_reviews.csv"
-    if public_priority.exists():
-        paths.extend((public_priority, validation_path))
-        rows = read_csv(public_priority)
-        validation = json.loads(validation_path.read_text())
-        public_rows = {r["scopus_id"]: r for r in rows}
-        assert len(public_rows) == len(rows), "Priority PDF snapshot must contain unique article IDs."
-        for key in ("reviewed_articles", "pdf_hashes_verified", "article_identity_verified"):
-            assert validation[key] == len(rows), "The published priority snapshot is not fully source-validated."
-        for row in rows:
-            assert re.fullmatch(r"[0-9a-f]{64}", row["source_sha256"]) and row["source_kind"], "Priority PDF source provenance is incomplete."
-            availability[row["scopus_id"]] = True
-        if private_priority.exists():
-            private_rows = {r["scopus_id"]: r for r in read_csv(private_priority)}
-            assert private_rows.keys() == public_rows.keys(), "Private and public priority article IDs must agree."
-            for sid, row in private_rows.items():
-                assert all(row[k] == public_rows[sid][k] for k in ("source_sha256", "source_kind")), "Private and public priority source provenance must agree."
-                assert verified_priority_pdf(row), "A priority review must cite an existing PDF with the recorded hash."
-    else:
-        assert not private_priority.exists(), "Publish the validated priority availability snapshot before rendering."
+    load_validated_pdf_register("us_geography_priority_2026_09_10", "fulltext_geography_reviews.csv",
+                                "fulltext_review_validation.json", "us_geography_priority_2026_09_10", paths, availability)
+    load_validated_pdf_register("coauthor_update_2026_09_10", "geography_reviews.csv",
+                                "review_validation.json", "coauthor_update_2026_09_10", paths, availability)
+    design_notes = {}
+    path = ROOT / "results/coauthor_update_2026_09_10/design_parser_flags.csv"
+    if path.exists():
+        paths.append(path)
+        design_notes = {r["scopus_id"]: r["rationale"] for r in read_csv(path)}
     credits = defaultdict(lambda: defaultdict(set))
     for r in read_csv(RANKINGS / "author_article_links.csv"):
         credits[r["variant"]][r["identity"]].add(r["authid"])
     return dict(paths=paths, profiles=profiles, names=names, availability=availability,
-                access_issues=access_issues, tf_access_unavailable=tf_access_unavailable,
+                access_issues=access_issues, tf_access_unavailable=tf_access_unavailable, design_notes=design_notes,
                 articles=read_csv(RANKINGS / "articles.csv"),
                 geography={r["identity"]: r for r in read_csv(RANKINGS / "article_geography.csv")},
                 credits=credits)
@@ -207,12 +223,20 @@ def make_payload(key, source):
             us_position=int(g["us_display_position"]) if g else None,
             pool_rank=int(pool[aid]["us_competition_rank"]) if aid in pool else None,
             pool_position=int(pool[aid]["us_display_position"]) if aid in pool else None,
+            pool_total_rank=None, pool_total_position=None,
             in_pool=aid in pool,
             institution=p.get("institution", ""), department=p.get("department", ""),
             country=p.get("country", ""), role=p.get("role", ""),
             profile_url=safe_url(p.get("source_url", "")), profile_date=p.get("verified_on", ""),
             profile_notes=p.get("notes", ""),
         ))
+    previous_count, cohort_rank = None, None
+    for position, author in enumerate(sorted((a for a in authors if a["in_pool"]),
+                                             key=lambda a: (-a["n_articles"], int(a["authid"]))), 1):
+        if author["n_articles"] != previous_count:
+            cohort_rank = position
+            previous_count = author["n_articles"]
+        author.update(pool_total_rank=cohort_rank, pool_total_position=position)
     aid_map = {r["authid"]: r for r in authors}
     article_rows = []
     credits = source["credits"][variant]
@@ -231,6 +255,7 @@ def make_payload(key, source):
             doi=a["doi"], url=url, authors=aids, in_pool=bool(in_pool),
             geography=g["sample_us_label"], rationale=g["rationale"],
             evidence=g["source_review"], mixed=truth(g["mixed"]),
+            design_review=next((source["design_notes"][sid] for sid in aliases if sid in source["design_notes"]), ""),
             **access, filename=a["scopus_id"] + ".pdf",
             priority=sum(aid_map[aid]["pool_rank"] <= 50 or
                          (aid_map[aid]["rank"] or 10**9) <= 50 for aid in in_pool),
@@ -265,33 +290,18 @@ def make_payload(key, source):
 
 
 def methodology(key, data):
-    if key == "original":
-        retrieval = ("The original query retrieved 7,302 distinct articles. Its historical local phrase check retained "
-                     "7,035 candidates; four had unresolved bylines, leaving 7,031 articles with author credits. "
-                     "This page preserves the published author–article credits and counts. Sample-geography evidence "
-                     "is updated from the shared review register, so US counts may differ from the frozen historical dashboard.")
-    else:
-        retrieval = (f"This query retrieves {data['retrieved']:,} distinct candidate articles. Six have unresolved "
-                     "bylines and receive no author credits. These are retrieval-only candidate counts: the older local "
-                     "phrase filter is not applied to the new searches. Two bylines capped at 100 authors were repaired "
-                     "using complete ordered author lists.")
-    description = ("The complete query adds a guarded abstract clause describing reading or information manipulation to "
-                   "the named-design and procedure core." if key == "complete" else
-                   "The narrower query removes only the reading–passage and manipulation–information proximity pairs "
-                   "from the complete clause. It retains 9,365 of the complete query’s 9,675 candidates. This is a "
-                   "sensitivity and screening-priority view, not an independently validated precision improvement." if key == "narrower" else
-                   "The original query combines exact survey/vignette phrases with guarded embedded-experiment, "
-                   "text-assignment, information-treatment and question-wording descriptions. The local text check "
-                   "preserves punctuation to reduce accidental phrase matches.")
-    return f"""<h2>Methodology · {html.escape(data['name'])}</h2>
-<ol class="selection-steps"><li>Define the journal frame using the 3,401 journals in the frozen TESS-investigator publication list. Candidate donors need not have participated in TESS. Search journal articles published in 2010–2026. The literal query below is applied to Scopus; retrieved records are then restricted to the frozen <a href="results/venue_frame.csv">journal frame</a>.</li>
-<li>{description} This page always uses this query; the other query versions have their own URLs.</li>
-<li>{retrieval} Count each distinct canonical article once for each distinct first or last author, and count a sole author once. Equal scores share competition ranks; a fixed numeric author-ID order determines the first 100 displayed researchers. First/last authorship is a proxy for possible PI involvement, not verified seniority.</li>
-<li>Join current institutions, departments, countries and roles only from sourced profiles. Missing fields are shown as unknown. Sample geography concerns participants and is coded separately: explicit US evidence and justified contextual inference are combined; unclear or unreviewed cases do not count as non-US.</li>
-<li>For the main US comparison, use the same 120 researchers: the historical 100 plus all new total-count leaders including cutoff ties. In this query, their {data['pool_articles']:,} distinct credited articles all have a geography judgment, of which {data['pool_labels'].get('unclear', 0):,} remain unclear. US sorting within this pool is conditional, not a global US top 100. The separate all-author US view is partially reviewed and can favor better-reviewed authors.</li>
-<li>Screen article design, parser compatibility and access to respondent-level data before invitations. Counts describe publications, not independent datasets. Geography and design judgments remain AI-assisted and await human validation. The 28 legacy-only candidates absent from both new queries remain archived for screening.</li></ol>
-<div class="summary-actions"><button id="copy-query">Copy Scopus query</button><a href="{html.escape(data['query_path'])}" download>Download literal query</a><a href="RANKING_COMPARISON_REPORT.html">Comparison and recommendation ↗</a></div>
-<p id="query-copy-status" class="status" aria-live="polite"></p><textarea id="query-copy-fallback" readonly rows="8" hidden aria-label="Literal query to copy"></textarea><p class="compact-note">The display adds line breaks and indentation only. Copy and download use the literal executed query.</p><pre class="scopus-query"><code id="literal-query">{html.escape(readable_query(data['query']))}</code></pre>"""
+    from recruitment_methods import methodology_html
+    return methodology_html(key, data)
+
+
+def presentation_payload(data):
+    """Validate the whole retrieval internally; render only the reviewed cohort."""
+    result = {**data, "authors": [a for a in data["authors"] if a["in_pool"]],
+              "articles": [a for a in data["articles"] if a["in_pool"]]}
+    endpoint_ids = {aid for a in result["articles"] for aid in a["authors"]}
+    result["article_author_names"] = {a["authid"]: a["name"] for a in data["authors"] if a["authid"] in endpoint_ids}
+    result["rendered_scope"] = "reviewed_cohort"
+    return result
 
 
 def build():
@@ -302,27 +312,28 @@ def build():
     artifacts = {}
     for key, config in VARIANTS.items():
         data, paths = make_payload(key, source)
-        navigation = " · ".join(
-            ("<strong aria-current=\"page\">" + html.escape(v["name"]) + "</strong>") if k == key else
-            f'<a href="{v["file"]}">{html.escape(v["name"])}</a>' for k, v in VARIANTS.items())
-        serialized = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c").replace("&", "\\u0026")
-        out = template.replace("__CSS__", css).replace("__NAME__", html.escape(config["name"]))
-        out = out.replace("__NAVIGATION__", navigation).replace("__METHODS__", methodology(key, data))
+        presentation = presentation_payload(data)
+        serialized = json.dumps(presentation, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c").replace("&", "\\u0026")
+        out = template.replace("__CSS__", css).replace("__METHODS__", methodology(key, data))
         out = out.replace("__SCRIPT__", script).replace("__DATA__", serialized)
         output = ROOT / config["file"]
         output.write_text(out)
         inputs = paths + [ROOT / "pipeline/variant_dashboards.py", ROOT / "pipeline/variant_dashboard_template.html",
-                          ROOT / "pipeline/variant_dashboard.js", ROOT / "pipeline/dashboard.css"]
+                          ROOT / "pipeline/variant_dashboard.js", ROOT / "pipeline/dashboard.css",
+                          ROOT / "pipeline/recruitment_methods.py"]
         provenance = dict(query_variant=key, query_sha256=hashlib.sha256(data["query"].encode()).hexdigest(),
                           researchers=len(data["authors"]), articles=len(data["articles"]),
+                          rendered_researchers=len(presentation["authors"]), rendered_articles=len(presentation["articles"]),
+                          rendered_scope="reviewed_cohort", retrieved_articles=data["retrieved"],
                           pool_size=data["pool_size"], pool_articles=data["pool_articles"],
                           pool_geography=data["pool_labels"], human_validated=False,
                           frozen_dashboard_modified=False,
-                          priority_availability_basis="Published source-validated snapshot; private PDF bytes additionally checked when the private register is present.",
+                          priority_availability_basis="Published source-validated snapshots; private PDF bytes additionally checked when their private review registers are present.",
                           input_sha256={str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in inputs},
                           output_sha256=hashlib.sha256(out.encode()).hexdigest())
         write_json(OUTPUT / (key + "_provenance.json"), provenance)
-        artifacts[key] = {"path": config["file"], "bytes": len(out.encode()), "authors": len(data["authors"])}
+        artifacts[key] = {"path": config["file"], "bytes": len(out.encode()), "rendered_authors": len(presentation["authors"]),
+                          "rendered_articles": len(presentation["articles"])}
     print(json.dumps(artifacts, indent=2))
 
 

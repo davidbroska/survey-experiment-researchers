@@ -275,16 +275,18 @@ def load_prior(root=ROOT):
                     raise ValueError("Mixed US/non-US flag requires a US label: " + sid)
                 emit({**row, "doi": article.get("doi", "")}, str(path.relative_to(root)), 1,
                      "new_packet_metadata_hash_and_exact_geography_span_validated")
-    source = root / "private/us_geography_priority_2026_09_10/fulltext_reviews.csv"
-    if source.exists():
-        seen = set()
-        for row in read_csv(source):
-            if row["scopus_id"] in seen:
-                raise ValueError("Duplicate priority full-text geography review")
-            seen.add(row["scopus_id"])
-            validate_priority_fulltext(row, root)
-            emit(row, str(source.relative_to(root)), 2,
-                 "priority_fulltext_pdf_cache_hashes_and_exact_sampling_page_span_validated")
+    for relative in ("private/us_geography_priority_2026_09_10/fulltext_reviews.csv",
+                     "private/coauthor_update_2026_09_10/fulltext_reviews.csv"):
+        source = root / relative
+        if source.exists():
+            seen = set()
+            for row in read_csv(source):
+                if row["scopus_id"] in seen:
+                    raise ValueError("Duplicate source-level full-text geography review")
+                seen.add(row["scopus_id"])
+                validate_priority_fulltext(row, root)
+                emit(row, str(source.relative_to(root)), 2,
+                     "fulltext_pdf_cache_hashes_and_exact_sampling_page_span_validated")
     counts = Counter(e["source_file"] for e in evidence)
     for source, count in sorted(counts.items()):
         provenance.append({"source_file": source, "sha256": digest((root / source).read_bytes()), "validated_reviews": count})

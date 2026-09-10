@@ -1,18 +1,20 @@
 {
   "passed": true,
   "output_sha256": {
-    "DASHBOARD_ORIGINAL.html": "1990ac6d44892d92e0b6400ec8676dcf189d1c386a89e38335c97a6d1a2118c5",
-    "DASHBOARD_COMPLETE.html": "cafb105418dba30aab6ca2ff22247cce791da01e242873cc75446241c779538a",
-    "DASHBOARD_NARROWER.html": "d58225ee7eda53dd5ab035483726228840b6cbb29ceaf940095ea65d5edc7ad4"
+    "DASHBOARD_ORIGINAL.html": "618c1c8f31d2b5bbddf516964b44d88a18b27210f4f8ce1ed32931285f77d60f",
+    "DASHBOARD_COMPLETE.html": "d996ab232aec2af8fd064da84c3a02181f68d09ec8bea0f8bcc174e3923f4bc3",
+    "DASHBOARD_NARROWER.html": "e57264d67e55f822392471c0dbb633a6a6668ab1cfeb9299f541176c3e00fc7c"
   },
   "checks": [
-    "three distinct immutable query pages",
+    "three standalone query presentations with no comparison links",
+    "US default within120 and primary US column before total",
+    "both ranking modes within same120",
     "every ranking column in both directions",
-    "165/114/114 cutoff-inclusive total leaders",
-    "searchable zero-credit diagnostic case",
-    "researcher detail dialog",
+    "110/114/114 cutoff-inclusive total leaders within120",
+    "Robb Willer detail dialog",
     "same120 with no unreviewed articles",
-    "literal methodology query",
+    "readable methodology and exact query copying",
+    "collapsed secondary review tools",
     "deduplicated unresolved download queue",
     "saved and unavailable articles omitted from routine batches",
     "alternative-copy filter with reference links",
