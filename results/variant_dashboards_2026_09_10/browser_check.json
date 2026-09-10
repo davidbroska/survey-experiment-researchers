@@ -1,9 +1,9 @@
 {
   "passed": true,
   "output_sha256": {
-    "DASHBOARD_ORIGINAL.html": "a08e9baf42bf4a37b7d51baf9a38035a654f1c4809656a955981435636419fb3",
-    "DASHBOARD_COMPLETE.html": "5bc8ef3581e05efef88dd06e9b7ea2b94442a7bf6cdea3fc404f9abffc8008f8",
-    "DASHBOARD_NARROWER.html": "83dfeb993efad087bc954061343392efbc05a1de4e1013f34b1d416eecbe650b"
+    "DASHBOARD_ORIGINAL.html": "32168054169e65bccf5d428c49b033c606de9e7b9553c07c72fadddff26496b1",
+    "DASHBOARD_COMPLETE.html": "300e33b7ada80822fd2452cbd170c6d33dfffcbf0854b50ec2dae336b0ad27ee",
+    "DASHBOARD_NARROWER.html": "5fec9cbee8052fed0853cfb4d7c0ac9e8b00032f933cce2f3c67f20a9427eda4"
   },
   "checks": [
     "three standalone query presentations with no comparison links",
@@ -22,32 +22,51 @@
     "article evidence filter",
     "desktop and mobile layouts",
     "no uncaught exceptions",
-    "wave2 totals and saved-but-unclear85068603406 omitted from routine downloads"
+    "wave3 six-PDF availability and updated article totals",
+    "summary boxes below ranking table",
+    "Methodology query visible without expansion",
+    "Counting and affiliation details removed",
+    "plain researcher wording without cohort"
   ],
-  "wave2_data_check": {
+  "wave3_data_check": {
     "original": {
-      "us_articles": 457,
-      "unclear_articles": 122,
+      "us_articles": 462,
+      "unclear_articles": 117,
       "default_sort": "US",
-      "cohort_size": 120,
-      "saved_unclear_article_present": false,
-      "saved_unclear_article_omitted_from_routine_queue": true
+      "reviewed_researchers": 120,
+      "new_pdfs_present": 5,
+      "new_pdfs_saved": 5,
+      "new_pdfs_in_routine_queue": 0,
+      "stats_below_table": true,
+      "query_visible_without_expansion": true,
+      "counting_affiliation_details_absent": true,
+      "reader_facing_cohort_word_absent": true
     },
     "complete": {
-      "us_articles": 483,
-      "unclear_articles": 154,
+      "us_articles": 489,
+      "unclear_articles": 148,
       "default_sort": "US",
-      "cohort_size": 120,
-      "saved_unclear_article_present": true,
-      "saved_unclear_article_omitted_from_routine_queue": true
+      "reviewed_researchers": 120,
+      "new_pdfs_present": 6,
+      "new_pdfs_saved": 6,
+      "new_pdfs_in_routine_queue": 0,
+      "stats_below_table": true,
+      "query_visible_without_expansion": true,
+      "counting_affiliation_details_absent": true,
+      "reader_facing_cohort_word_absent": true
     },
     "narrower": {
-      "us_articles": 483,
-      "unclear_articles": 153,
+      "us_articles": 489,
+      "unclear_articles": 147,
       "default_sort": "US",
-      "cohort_size": 120,
-      "saved_unclear_article_present": true,
-      "saved_unclear_article_omitted_from_routine_queue": true
+      "reviewed_researchers": 120,
+      "new_pdfs_present": 6,
+      "new_pdfs_saved": 6,
+      "new_pdfs_in_routine_queue": 0,
+      "stats_below_table": true,
+      "query_visible_without_expansion": true,
+      "counting_affiliation_details_absent": true,
+      "reader_facing_cohort_word_absent": true
     }
   }
 }

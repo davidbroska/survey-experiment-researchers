@@ -30,6 +30,11 @@
     "validated_reviews": 17
   },
   {
+    "source_file": "private/coauthor_update_wave3_2026_09_10/fulltext_reviews.csv",
+    "sha256": "bf652951764cec2b29a108cc455ac7c304685e54a2e7187918e5db5bed27781d",
+    "validated_reviews": 6
+  },
+  {
     "source_file": "private/design_audit_2026_09_10/development_coder_0.csv",
     "sha256": "8b882b0eb7b49d87f329600c9001507f53299299ceae9df6028f0e70c5d2e6c7",
     "validated_reviews": 54

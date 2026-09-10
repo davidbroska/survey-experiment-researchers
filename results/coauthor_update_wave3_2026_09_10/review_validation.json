@@ -1,0 +1,30 @@
+{
+  "reviewed_articles": 6,
+  "labels": {
+    "us_explicit": 5,
+    "us_inferred": 1,
+    "non_us": 0,
+    "unclear": 0,
+    "not_applicable": 0
+  },
+  "source_pdf_cache_and_exact_page_spans_validated": true,
+  "reviews_sha256": "bf652951764cec2b29a108cc455ac7c304685e54a2e7187918e5db5bed27781d",
+  "packet_sha256": "3085fd2c7683933b6fb4b7629001a9d61ee7e8920f8c254bff7b90da7fdb8e64",
+  "human_validated": false,
+  "no_source_text_or_quotes_published": true,
+  "article_counts_modified_by_design_parser_notes": false,
+  "reviewer_shards": [
+    {
+      "reviewer_shard": "root",
+      "validated_articles": 3,
+      "source_hashes_and_exact_page_spans_validated": true
+    },
+    {
+      "reviewer_shard": "participant",
+      "validated_articles": 3,
+      "source_hashes_and_exact_page_spans_validated": true
+    }
+  ],
+  "previous_coauthor_wave_unchanged": true,
+  "unresolved_geographies_with_pdf_already_supplied": 0
+}

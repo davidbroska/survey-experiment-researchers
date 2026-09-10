@@ -71,7 +71,7 @@ function renderRanking() {
     else if(['institution','department','country','role'].includes(key)) content=esc(a[key]||'Unknown');
     return `<td class="${cls}">${content}</td>`;
   }).join('')+'</tr>').join('')||'<tr><td colspan="9">No researchers match this selection.</td></tr>';
-  $('ranking-explanation').textContent=`Both rankings compare the same 120 reviewed researchers. US ranks describe this selected cohort. Include cutoff ties to show everyone tied with the 100th researcher.`;
+  $('ranking-explanation').textContent=`US ranks compare these 120 reviewed researchers; the total-count view uses the same list. Include cutoff ties to show everyone tied with the 100th researcher.`;
   $('table-status').textContent=`${fmt(rows.length)} researchers shown${search?' · Search covers all 120':''}`;
   $('sort-total').setAttribute('aria-pressed',String(rankingMode==='total'));
   $('sort-us').setAttribute('aria-pressed',String(rankingMode==='us'));
@@ -147,7 +147,7 @@ function showAuthor(aid) {
 
 function initialize() {
   const poolUS=(DATA.pool_labels.us_explicit||0)+(DATA.pool_labels.us_inferred||0);
-  $('stats').innerHTML=`<div class="stat us"><strong>${fmt(poolUS)}</strong><span>Distinct articles with US-sample evidence</span></div><div class="stat"><strong>${fmt(DATA.pool_size)}</strong><span>Researchers in the reviewed cohort</span></div><div class="stat pending"><strong>${fmt(DATA.pool_labels.unclear||0)}</strong><span>Articles with unclear sample geography</span></div>`;
+  $('stats').innerHTML=`<div class="stat us"><strong>${fmt(poolUS)}</strong><span>Distinct articles with US-sample evidence</span></div><div class="stat"><strong>${fmt(DATA.pool_size)}</strong><span>Reviewed researchers</span></div><div class="stat pending"><strong>${fmt(DATA.pool_labels.unclear||0)}</strong><span>Articles with unclear sample geography</span></div>`;
   $('build-date').textContent=`Evidence snapshot: ${DATA.snapshot_date}. AI-assisted annotations await human validation.`;
   for(const tab of TABS)$(tab+'-tab').addEventListener('click',()=>switchTab(tab));
   document.querySelector('.tabs').addEventListener('keydown',e=>{if(!['ArrowRight','ArrowLeft','Home','End'].includes(e.key))return;e.preventDefault();const i=TABS.findIndex(t=>$(t+'-tab').getAttribute('aria-selected')==='true');const n=e.key==='Home'?0:e.key==='End'?TABS.length-1:(i+(e.key==='ArrowRight'?1:-1)+TABS.length)%TABS.length;switchTab(TABS[n]);$(TABS[n]+'-tab').focus();});

@@ -147,6 +147,10 @@ def build():
               ('availability_manifest', 'review_assignment', 'geography_reviews', 'design_parser_flags')]
     files += [f'results/coauthor_update_wave2_2026_09_10/{name}.json' for name in
               ('inventory_summary', 'review_validation')]
+    files += [f'results/coauthor_update_wave3_2026_09_10/{name}.csv' for name in
+              ('availability_manifest', 'review_assignment', 'geography_reviews', 'design_parser_flags')]
+    files += [f'results/coauthor_update_wave3_2026_09_10/{name}.json' for name in
+              ('inventory_summary', 'review_validation')]
     for name in files:
         dest = site / name
         dest.parent.mkdir(parents=True, exist_ok=True)

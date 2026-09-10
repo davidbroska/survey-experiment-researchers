@@ -1,0 +1,47 @@
+{
+  "offline_inventory_and_review_export_byte_identical": true,
+  "public_output_sha256": {
+    "results/coauthor_update_wave3_2026_09_10/availability_manifest.csv": "b955644129f0e57336ba411af85fd9aea7a34d317f6f52f00dbf309aa5f375dd",
+    "results/coauthor_update_wave3_2026_09_10/design_parser_flags.csv": "b1baac5cd7633cb3a0fcd684acdd10c787e1f39fd9140dbd840bd05a0709e86d",
+    "results/coauthor_update_wave3_2026_09_10/geography_reviews.csv": "d900b01cde3aeca676bd2fb47c3358884ef9d18f800298f2411f99339c5193db",
+    "results/coauthor_update_wave3_2026_09_10/inventory_summary.json": "cf197d40578908961a27ab7106fe94179c64febcea6c4d6a486178dea8126c30",
+    "results/coauthor_update_wave3_2026_09_10/review_assignment.csv": "571221510a5419a4d966ee7c78b7459c88b3e7615b2a2c18dcb89b92774b4b58",
+    "results/coauthor_update_wave3_2026_09_10/review_validation.json": "216f2e777b3a08c71944a27b1d7edcc8dbfcf804bf108cccfd2e049173058f9e"
+  },
+  "prior_artifact_sha256": {
+    "results/coauthor_update_wave2_2026_09_10/availability_manifest.csv": "4a23184af5810841c7fc098878e3e09e93deaef0c1f448c100ead9357d3b3a12",
+    "results/coauthor_update_wave2_2026_09_10/design_parser_flags.csv": "54ab4b505634e2f163bb0d8feac9ee242a280acbda9be4684afef3370cc71611",
+    "results/coauthor_update_wave2_2026_09_10/geography_reviews.csv": "145fe843d4b607edf7e937cd528ab1af190ce934c4d95fbe793f4748378fcb24",
+    "results/coauthor_update_wave2_2026_09_10/inventory_summary.json": "f9dc99e5e38d54b215b41ebd63901853758409c23bb753c61be9b32ac453a989",
+    "results/coauthor_update_wave2_2026_09_10/review_assignment.csv": "e1326ee8f4b0c66362cd87fdf7d20f5c99d0dfb91274743928511ea2dcfed8a4",
+    "results/coauthor_update_wave2_2026_09_10/review_validation.json": "acdbe3cbfd5e909434fb79a63ae9c437265f52f90dec98108161e2d6bc2079fd",
+    "results/coauthor_update_2026_09_10/availability_manifest.csv": "421d420c43ed24ac24aacc1f784f84495a7288d1126c2bf4624077304ccae38d",
+    "results/coauthor_update_2026_09_10/design_parser_flags.csv": "10fb168a0ee3aab4b279f1bb2c32c60097960b01021ba04dfd6956e8a29b0893",
+    "results/coauthor_update_2026_09_10/geography_reviews.csv": "14208f3e97356441dfda9b2d1ab1bbca93cf2b0c44e5ea2c0bfa6e8026d32a88",
+    "results/coauthor_update_2026_09_10/inventory_summary.json": "b55204f025e55f0590a5521f22351cf6040945a0c76e39d44801303870f410ca",
+    "results/coauthor_update_2026_09_10/review_validation.json": "38e5a2609806e37394f17385e80f66a91dbe64396948002953fc1f97750e570c",
+    "results/precision_benchmark_2026_09_10/article_consensus.csv": "869a63d2606c62f1f6b99e4c436bac2bcb6c349f4d1fd27bfc5535015914b278",
+    "results/benchmark_review_wave2_2026_09_10/article_consensus.csv": "39b015f812f2158b0e23d2d1d269bed6687eee0440db341962b499bf32e86a09",
+    "results/benchmark_review_wave3_2026_09_10/article_consensus.csv": "1d002e7f077745c17d3524f57c6b978c7ef6c741921b7b62b9a753433ab8095a",
+    "private/coauthor_update_2026_09_10/fulltext_review_packet.json": "c704b49a63642caefb9e46904af77270eeeabdf098e1b110972c9300add832e6",
+    "private/coauthor_update_2026_09_10/fulltext_reviews.csv": "65bece93716c6ec689551feca2937ed423f20e2e27f07eb33e2610f7c2a0e887",
+    "private/coauthor_update_wave2_2026_09_10/fulltext_review_packet.json": "13eb908fbe38c6244c0e32d7f7c1cfba14cdcecc874815f856a767e1872df9b6",
+    "private/coauthor_update_wave2_2026_09_10/fulltext_reviews.csv": "c0561ee3e8390a9784a6b834c7b568c42c73b675ddd2411e916bd846d505349c"
+  },
+  "previous_review_stages_unchanged": true,
+  "root_pdf_files_remaining": 0,
+  "no_network_used": true,
+  "tests_passed": 6,
+  "no_fulltext_or_quotes_in_public_CSVs": true,
+  "review_flag_counts": {
+    "survey_experiment_design": {
+      "yes": 5,
+      "no": 1
+    },
+    "parser_compatibility": {
+      "unclear": 3,
+      "no": 2,
+      "yes": 1
+    }
+  }
+}

@@ -11,17 +11,17 @@
   "pool_articles": 961,
   "pool_geography": {
     "not_applicable": 13,
-    "us_explicit": 290,
-    "us_inferred": 167,
+    "us_explicit": 294,
+    "us_inferred": 168,
     "non_us": 369,
-    "unclear": 122
+    "unclear": 117
   },
   "human_validated": false,
   "frozen_dashboard_modified": false,
   "priority_availability_basis": "Published source-validated snapshots; private PDF bytes additionally checked when their private review registers are present.",
   "input_sha256": {
     "results/query_rankings_2026_09_10/articles.csv": "ed555b31fae29b5ffe86f4a83f6b20e0243c7e1836b659a7d82f803186c1da38",
-    "results/query_rankings_2026_09_10/article_geography.csv": "ca1cb4d884dee83256c01ef17dbfbde0ef9fe041f60bf754bafbe9fda97daede",
+    "results/query_rankings_2026_09_10/article_geography.csv": "08d89797ce1636f1d2227869586268aa1f98b682e926dce0bb1fc67885f11fef",
     "results/query_rankings_2026_09_10/author_article_links.csv": "e27e03ba4683051f22c678f85e779d9f8367c8dc93302ef4c090cbc2ef1f5795",
     "inputs/researcher_affiliations.csv": "07b19109d9f014f94615a406b8b409662afab9da175247f2bf7c3579bfb3744f",
     "inputs/query_dashboard_affiliations.csv": "460f06eb8d4dba6d8dea0d637af211f5e2af7b3f8c34234163d224d7a05827ce",
@@ -38,15 +38,18 @@
     "results/coauthor_update_wave2_2026_09_10/geography_reviews.csv": "145fe843d4b607edf7e937cd528ab1af190ce934c4d95fbe793f4748378fcb24",
     "results/coauthor_update_wave2_2026_09_10/review_validation.json": "acdbe3cbfd5e909434fb79a63ae9c437265f52f90dec98108161e2d6bc2079fd",
     "results/coauthor_update_wave2_2026_09_10/design_parser_flags.csv": "54ab4b505634e2f163bb0d8feac9ee242a280acbda9be4684afef3370cc71611",
+    "results/coauthor_update_wave3_2026_09_10/geography_reviews.csv": "d900b01cde3aeca676bd2fb47c3358884ef9d18f800298f2411f99339c5193db",
+    "results/coauthor_update_wave3_2026_09_10/review_validation.json": "216f2e777b3a08c71944a27b1d7edcc8dbfcf804bf108cccfd2e049173058f9e",
+    "results/coauthor_update_wave3_2026_09_10/design_parser_flags.csv": "b1baac5cd7633cb3a0fcd684acdd10c787e1f39fd9140dbd840bd05a0709e86d",
     "results/query_rankings_2026_09_10/current_published_ranking.csv": "689118b4b7d85d47ad1ed4715b5452abaf0dac7b3073cf76bc0b468c10d9e0c8",
-    "results/query_rankings_2026_09_10/current_published_us_ranking.csv": "97d8787d0631e2fc93b765e1615cfe23d46c726177e8127c4027d0133a099cdf",
-    "results/query_rankings_2026_09_10/uniform_pool_current_published_us_ranking.csv": "3569c9d4689feea14bdddb836bdf5f281dcd2a4e7804c4f6d6ce52b6b462c596",
+    "results/query_rankings_2026_09_10/current_published_us_ranking.csv": "79e82b5cac3ef96432d4641d78e9342a999daf28ab54db219af20c139b07fb95",
+    "results/query_rankings_2026_09_10/uniform_pool_current_published_us_ranking.csv": "7311b98faee2c0323cc02b88b6349b60e3059e0be77842cc898ad29dc998db35",
     "queries/recommended.txt": "d1b093aa5218404faefd906b710ccad5b6d2bb18637bfa88a87e0ca196da1145",
-    "pipeline/variant_dashboards.py": "1732251c71a2af3b657c384c2e10ae54f327f7c24fd390e59b368eff9e56f987",
-    "pipeline/variant_dashboard_template.html": "ceb8e73292fb3f1fa69f833f0741ac8f78f216bc5a99ca047073cf568d060478",
-    "pipeline/variant_dashboard.js": "3e658698a6a4a43faff2291c46c913c6321fbcb49835a7a798dc995a255b6320",
+    "pipeline/variant_dashboards.py": "0d4b053ae29c003a441d4f9d9aa6ff1693161cea6bdc749b5aa5b2979ec023c0",
+    "pipeline/variant_dashboard_template.html": "11e22be5929b9d81e0c36946d73e697b2d88272337be6e51b374e58da8b992f4",
+    "pipeline/variant_dashboard.js": "7013e4a13430c1b7532c102f2fb350e9b93c326d9dd8ad40a2ad1ee9fd92381f",
     "pipeline/dashboard.css": "0f6131481f4705521947189a3a3d3dec3c20c77726014279e060678c422b43db",
-    "pipeline/recruitment_methods.py": "25e90c0d5a3538cf1b25ccdd4291efb652826d1b507bc94b1000e1e2411562e7"
+    "pipeline/recruitment_methods.py": "c95eb89e95fe3c49d56178a513639919b96ebfa4656f857f279079761b4e25c8"
   },
-  "output_sha256": "a08e9baf42bf4a37b7d51baf9a38035a654f1c4809656a955981435636419fb3"
+  "output_sha256": "32168054169e65bccf5d428c49b033c606de9e7b9553c07c72fadddff26496b1"
 }

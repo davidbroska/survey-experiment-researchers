@@ -23,6 +23,8 @@ PDF_REGISTERS = (
          validation_name="review_validation.json", validation_kind="source_files"),
     dict(directory="coauthor_update_wave2_2026_09_10", public_name="geography_reviews.csv",
          validation_name="review_validation.json", validation_kind="source_files"),
+    dict(directory="coauthor_update_wave3_2026_09_10", public_name="geography_reviews.csv",
+         validation_name="review_validation.json", validation_kind="source_files"),
 )
 VARIANTS = {
     "original": dict(name="Original query", ranking="current_published",

@@ -28,6 +28,9 @@ for(const key of ['original','complete','narrower']) {
   assert.deepEqual(await evaluate(`Array.from(document.querySelectorAll('[role="tab"]')).map(n=>n.textContent)`),['Ranking','Methodology']);
   assert.equal(await evaluate(`$('review-tools').open`),false);
   assert.equal(await evaluate(`$('ranking-scope')`),null);
+  assert.equal(await evaluate(`$('stats').closest('#ranking-view')!==null`),true);
+  assert.equal(await evaluate(`!!(document.querySelector('.table-wrap').compareDocumentPosition($('stats'))&Node.DOCUMENT_POSITION_FOLLOWING)`),true);
+  assert.equal(await evaluate(`document.body.innerText.toLowerCase().includes('cohort')`),false);
   assert.equal(await evaluate(`Array.from(document.querySelectorAll('a[href]')).some(a=>/DASHBOARD_|TOP100|COMPARISON|BENCHMARK/.test(a.getAttribute('href')))`),false);
   for(const [column] of await evaluate('columns()')) {
     for(let j=0;j<2;j++) {
@@ -72,8 +75,9 @@ for(const key of ['original','complete','narrower']) {
   assert.equal(await evaluate(`csv(displayed,['authid','name','n_articles','us_count']).split('\\r\\n').length`),121);
   await evaluate(`$('methodology-tab').click()`);
   assert.equal(await evaluate(`$('methodology-view').hidden`),false);
-  assert.equal(await evaluate(`$('query-details').open`),false);
-  await evaluate(`$('query-details').open=true`);
+  assert.equal(await evaluate(`$('literal-query').checkVisibility()`),true);
+  assert.equal(await evaluate(`document.querySelector('.methods-details')`),null);
+  assert.equal(await evaluate(`$('methodology-view').textContent.includes('Counting and affiliation details')`),false);
   assert.equal(await evaluate(String.raw`JSON.stringify($('literal-query').textContent.match(/"[^"\\]*(?:\\.[^"\\]*)*"|\{[^}]*\}|[()]|[^\s(){}"]+/g))===JSON.stringify(DATA.query.match(/"[^"\\]*(?:\\.[^"\\]*)*"|\{[^}]*\}|[()]|[^\s(){}"]+/g))`),true);
   assert.ok(await evaluate(`$('literal-query').textContent.includes('PUBYEAR > 2009')`));
   await evaluate(`Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async()=>{throw new Error('Clipboard unavailable in test')}}});$('copy-query').click()`);

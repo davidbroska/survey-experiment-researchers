@@ -277,7 +277,8 @@ def load_prior(root=ROOT):
                      "new_packet_metadata_hash_and_exact_geography_span_validated")
     for relative in ("private/us_geography_priority_2026_09_10/fulltext_reviews.csv",
                      "private/coauthor_update_2026_09_10/fulltext_reviews.csv",
-                     "private/coauthor_update_wave2_2026_09_10/fulltext_reviews.csv"):
+                     "private/coauthor_update_wave2_2026_09_10/fulltext_reviews.csv",
+                     "private/coauthor_update_wave3_2026_09_10/fulltext_reviews.csv"):
         source = root / relative
         if source.exists():
             seen = set()

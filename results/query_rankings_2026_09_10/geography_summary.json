@@ -1,15 +1,15 @@
 {
   "canonical_articles": 9703,
-  "valid_source_reviews": 2045,
+  "valid_source_reviews": 2051,
   "distinct_previously_reviewed_scopus_ids": 1377,
   "invalid_source_reviews": 0,
   "unmatched_prior_reviews": 194,
   "article_labels": {
     "unreviewed": 8465,
-    "unclear": 221,
+    "unclear": 215,
     "non_us": 453,
-    "us_inferred": 194,
-    "us_explicit": 356,
+    "us_inferred": 195,
+    "us_explicit": 361,
     "not_applicable": 14
   },
   "articles_with_conflicting_evidence": 1,
@@ -38,10 +38,10 @@
   "union_leader_pool_articles": 1042,
   "union_leader_pool_articles_unreviewed": 0,
   "union_leader_pool_article_labels": {
-    "unclear": 154,
+    "unclear": 148,
     "non_us": 388,
-    "us_explicit": 308,
-    "us_inferred": 179,
+    "us_explicit": 313,
+    "us_inferred": 180,
     "not_applicable": 13
   },
   "wave1_fixed_packet_articles": 160,
@@ -50,10 +50,10 @@
       "articles": 9675,
       "labels": {
         "unreviewed": 8444,
-        "unclear": 221,
+        "unclear": 215,
         "non_us": 450,
-        "us_inferred": 192,
-        "us_explicit": 354,
+        "us_inferred": 193,
+        "us_explicit": 359,
         "not_applicable": 14
       },
       "reviewed": 1231
@@ -62,10 +62,10 @@
       "articles": 9365,
       "labels": {
         "unreviewed": 8143,
-        "unclear": 217,
+        "unclear": 211,
         "non_us": 448,
-        "us_inferred": 192,
-        "us_explicit": 351,
+        "us_inferred": 193,
+        "us_explicit": 356,
         "not_applicable": 14
       },
       "reviewed": 1222
@@ -74,10 +74,10 @@
       "articles": 7302,
       "labels": {
         "unreviewed": 6198,
-        "unclear": 165,
+        "unclear": 160,
         "non_us": 424,
-        "us_inferred": 181,
-        "us_explicit": 320,
+        "us_inferred": 182,
+        "us_explicit": 324,
         "not_applicable": 14
       },
       "reviewed": 1104
@@ -86,10 +86,10 @@
       "articles": 7031,
       "labels": {
         "unreviewed": 5952,
-        "unclear": 152,
+        "unclear": 147,
         "non_us": 417,
-        "us_inferred": 179,
-        "us_explicit": 317,
+        "us_inferred": 180,
+        "us_explicit": 321,
         "not_applicable": 14
       },
       "reviewed": 1079
