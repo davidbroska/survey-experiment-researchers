@@ -1,0 +1,27 @@
+{
+  "article_queue_unique": 177,
+  "author_pool_unique": 120,
+  "cross_variant_article_denominator": 1042,
+  "reference_query_article_denominator": 1036,
+  "current_cross_variant_geography": {
+    "us_explicit": 301,
+    "us_inferred": 171,
+    "unclear": 177,
+    "unreviewed": 0
+  },
+  "reference_query_us_articles": 468,
+  "queue_partitions_disjoint_complete": true,
+  "manual_access_followups": 107,
+  "automatic_unchecked": 67,
+  "existing_text_followups": 2,
+  "user_unavailable": 1,
+  "author_uncertainty_recount_passed": 120,
+  "public_csv_privacy_check": "No abstract or evidence-quote fields",
+  "local_report_links_exist": true,
+  "frozen_ten_selection_hash_verified": true,
+  "initial_186_queue_archive_unchanged": true,
+  "rebuild_byte_identical": true,
+  "current_input_and_output_hashes_verified": true,
+  "report_sha256": "41145450761afe4cdc9ce4f1b27f667adeec8fac20716247250c3e578f039616",
+  "html_sha256": "0404b255df85f5149d3c0986ed42abc384c75a04e0662b6ced847df29021d380"
+}

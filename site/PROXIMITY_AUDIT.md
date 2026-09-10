@@ -1,4 +1,4 @@
-**Archived query-development stage (18 full-text reviews).** See the [latest ranking comparison, discovery query and recommendation](RANKING_COMPARISON_REPORT.html) and [updated 45-article full-text inventory](FULLTEXT_BENCHMARK.html) for the subsequent evidence.
+**Archived query-development stage (18 full-text reviews).** See the [latest ranking comparison, discovery query and recommendation](RANKING_COMPARISON_REPORT.html) and [updated full-text inventory](FULLTEXT_BENCHMARK.html) for the subsequent evidence.
 
 **The proposed clause recovers relevant social-psychology experiments, but it does not resolve all missing work.** Scopus returns 1,791 journal articles globally and 1,297 within the existing 3,401-journal frame for 2010–2026. Adding it to the 8,142-article expanded search yields 9,208 distinct articles (+1,066, no losses); adding it to the broader 18,054-article candidate search yields 18,834 (+780, no losses). These are retrieval gains, not measured recall.
 

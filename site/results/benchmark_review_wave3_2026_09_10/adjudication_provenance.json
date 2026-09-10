@@ -1,0 +1,10 @@
+{
+  "adjudications": 1,
+  "source_file": "private/benchmark_review_wave3_2026_09_10/prior_stage_45_39b015f812f2158b/private/benchmark_review_wave2_2026_09_10/adjudications.json",
+  "source_sha256": "3bc74192f45e8184ddf2d60db082b1f46650791bcaabdb57c5bff2163d82ac40",
+  "packet_sha256": "532132a4933197ee8d9d9ef8e4b6f0452697858897060e90d6a3b16d2149af61",
+  "pdf_cache_packet_and_exact_page_spans_validated": true,
+  "original_coder_files_unchanged": true,
+  "other_axes_unchanged": true,
+  "human_validated": false
+}

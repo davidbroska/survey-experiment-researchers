@@ -46,6 +46,32 @@ def category(value):
     return "us" if value.startswith("us_") else value
 
 
+def validate_priority_fulltext(row, root=ROOT):
+    """Validate a separately acquired sampling review without copying source text."""
+    value, _ = label(row["sample_us_label"])
+    pdf, cache_path = (root / row[k] for k in ("pdf_path", "text_cache_path"))
+    if not all(p.resolve().is_relative_to((root / "private").resolve()) for p in (pdf, cache_path)):
+        raise ValueError("Full-text evidence must stay within the private archive")
+    cache = json.loads(cache_path.read_text())
+    if (digest(pdf.read_bytes()) != row["source_sha256"]
+        or cache["source_sha256"] != row["source_sha256"]
+        or digest(cache_path.read_bytes()) != row["text_cache_sha256"]):
+        raise ValueError("Full-text source/cache hash mismatch")
+    page = int(row["page"])
+    quote = normalize(row["evidence_quote"])
+    if (page < 1 or page > len(cache["pages"]) or not quote
+        or quote not in normalize(cache["pages"][page - 1])):
+        raise ValueError("Full-text sampling page/span mismatch")
+    if (not row.get("rationale") or not row.get("reviewer")
+        or row.get("reviewer_type") != "AI_assisted"
+        or row.get("human_validated") not in (False, "false")):
+        raise ValueError("Missing full-text review provenance")
+    date.fromisoformat(row["review_date"])
+    if true(row.get("us_and_non_us_samples_reported", False)) and not value.startswith("us_"):
+        raise ValueError("Mixed samples require US evidence")
+    return row
+
+
 def resolve(evidence):
     """Full-text reviews outrank metadata; substantive conflicts remain visible.
 
@@ -185,40 +211,44 @@ def load_prior(root=ROOT):
 
     # Additional fixed-sample full texts enter geography only after both complete
     # independent passes. Original query-development labels remain untouched.
-    wave_folder = root / "private/benchmark_review_wave2_2026_09_10"
-    wave_summary = root / "results/benchmark_review_wave2_2026_09_10/review_summary.json"
-    wave_packet = wave_folder / "reviewer_packet.json"
-    if wave_summary.exists() and wave_packet.exists():
-        status = json.loads(wave_summary.read_text())
-        extra_ids = {r["benchmark_id"] for r in json.loads(wave_packet.read_text())}
-        if status["double_pass"] == 18 + len(extra_ids):
-            import benchmark_review_wave2 as wave
-            reviews = {}
-            for coder in ("A", "B"):
-                source = wave_folder / ("reviews_coder_" + coder + ".json")
-                wave.validate_reviews(source)
-                reviews[coder] = {r["benchmark_id"]: r for r in json.loads(source.read_text()) if r.get("evaluation_status") == "completed"}
-            source = root / "results/benchmark_review_wave2_2026_09_10/article_consensus.csv"
-            adjudications = {r["benchmark_id"]: r for r in wave.validate_adjudications()}
-            for row in read_csv(source):
-                bid = row["benchmark_id"]
-                if bid not in extra_ids:
-                    continue
-                a, b = reviews["A"][bid], reviews["B"][bid]
-                expected = a["geography"]["decision"] if a["geography"]["decision"] == b["geography"]["decision"] else "unclear"
-                adjudication = adjudications.get(bid)
-                final_expected = adjudication["decision"] if adjudication else expected
-                if row.get("raw_consensus_geography", row["geography"]) != expected or row["geography"] != final_expected:
-                    raise ValueError("Stale additional full-text geography consensus: " + bid)
-                emit({**row, "geography": expected, "rationale": " | ".join(dict.fromkeys(r["geography"]["rationale"] for r in (a, b))),
-                      "reviewer": a["reviewer"] + " + " + b["reviewer"], "reviewer_type": "AI_assisted", "human_validated": False},
-                     str(source.relative_to(root)), 2, "two_additional_fulltext_reviews_validated_and_consensus_checked",
-                     source_record={"benchmark_id": bid, "coder_A_geography": a["geography"], "coder_B_geography": b["geography"]},
-                     extra={"review_conflict": a["geography"]["decision"] != b["geography"]["decision"]})
-                if adjudication:
-                    emit({**adjudication, "doi": row["doi"], "geography": adjudication["decision"]},
-                         str((wave_folder / "adjudications.json").relative_to(root)), 3,
-                         "separate_geography_adjudication_pdf_cache_packet_and_exact_page_span_validated")
+    for wave_version, module_name, base_count in (
+        ("benchmark_review_wave2_2026_09_10", "benchmark_review_wave2", 18),
+        ("benchmark_review_wave3_2026_09_10", "benchmark_review_wave3", 45)):
+        wave_folder = root / "private" / wave_version
+        wave_summary = root / "results" / wave_version / "review_summary.json"
+        wave_packet = wave_folder / "reviewer_packet.json"
+        if wave_summary.exists() and wave_packet.exists():
+            status = json.loads(wave_summary.read_text())
+            extra_ids = {r["benchmark_id"] for r in json.loads(wave_packet.read_text())}
+            if status["double_pass"] == base_count + len(extra_ids):
+                from importlib import import_module
+                wave = import_module(module_name)
+                reviews = {}
+                for coder in ("A", "B"):
+                    source = wave_folder / ("reviews_coder_" + coder + ".json")
+                    wave.validate_reviews(source)
+                    reviews[coder] = {r["benchmark_id"]: r for r in json.loads(source.read_text()) if r.get("evaluation_status") == "completed"}
+                source = root / "results" / wave_version / "article_consensus.csv"
+                adjudications = {r["benchmark_id"]: r for r in (wave.validate_adjudications() if hasattr(wave, "validate_adjudications") else [])}
+                for row in read_csv(source):
+                    bid = row["benchmark_id"]
+                    if bid not in extra_ids:
+                        continue
+                    a, b = reviews["A"][bid], reviews["B"][bid]
+                    expected = a["geography"]["decision"] if a["geography"]["decision"] == b["geography"]["decision"] else "unclear"
+                    adjudication = adjudications.get(bid)
+                    final_expected = adjudication["decision"] if adjudication else expected
+                    if row.get("raw_consensus_geography", row["geography"]) != expected or row["geography"] != final_expected:
+                        raise ValueError("Stale additional full-text geography consensus: " + bid)
+                    emit({**row, "geography": expected, "rationale": " | ".join(dict.fromkeys(r["geography"]["rationale"] for r in (a, b))),
+                          "reviewer": a["reviewer"] + " + " + b["reviewer"], "reviewer_type": "AI_assisted", "human_validated": False},
+                         str(source.relative_to(root)), 2, "two_additional_fulltext_reviews_validated_and_consensus_checked",
+                         source_record={"benchmark_id": bid, "coder_A_geography": a["geography"], "coder_B_geography": b["geography"]},
+                         extra={"review_conflict": a["geography"]["decision"] != b["geography"]["decision"]})
+                    if adjudication:
+                        emit({**adjudication, "doi": row["doi"], "geography": adjudication["decision"]},
+                             str((wave_folder / "adjudications.json").relative_to(root)), 3,
+                             "separate_geography_adjudication_pdf_cache_packet_and_exact_page_span_validated")
 
     packet_path = root / "private" / VERSION / "geography_review_packet.json"
     if packet_path.exists():
@@ -245,6 +275,16 @@ def load_prior(root=ROOT):
                     raise ValueError("Mixed US/non-US flag requires a US label: " + sid)
                 emit({**row, "doi": article.get("doi", "")}, str(path.relative_to(root)), 1,
                      "new_packet_metadata_hash_and_exact_geography_span_validated")
+    source = root / "private/us_geography_priority_2026_09_10/fulltext_reviews.csv"
+    if source.exists():
+        seen = set()
+        for row in read_csv(source):
+            if row["scopus_id"] in seen:
+                raise ValueError("Duplicate priority full-text geography review")
+            seen.add(row["scopus_id"])
+            validate_priority_fulltext(row, root)
+            emit(row, str(source.relative_to(root)), 2,
+                 "priority_fulltext_pdf_cache_hashes_and_exact_sampling_page_span_validated")
     counts = Counter(e["source_file"] for e in evidence)
     for source, count in sorted(counts.items()):
         provenance.append({"source_file": source, "sha256": digest((root / source).read_bytes()), "validated_reviews": count})

@@ -45,7 +45,11 @@ def check_links(site):
 def build():
     site = ROOT / 'site'
     site.mkdir(exist_ok=True)
-    files = ['TOP100.html', 'TOP40.html', 'RANKING_COMPARISON.html', 'queries/recommended.txt']
+    files = ['TOP100.html', 'TOP40.html', 'RANKING_COMPARISON.html', 'queries/recommended.txt',
+             'DASHBOARD_ORIGINAL.html', 'DASHBOARD_COMPLETE.html', 'DASHBOARD_NARROWER.html',
+             'inputs/query_dashboard_affiliations.csv']
+    files += [f'results/variant_dashboards_2026_09_10/{name}.json' for name in
+              ('original_provenance', 'complete_provenance', 'narrower_provenance', 'browser_check')]
     files += [f'{r}.{ext}' for r in REPORTS for ext in ('md', 'html')]
     files += [f'results/{r}.csv' for r in CSV_FILES]
     files += [f'queries/revision_2026_09_10/{name}.txt' for name in ('previous', 'revised', 'additional_embedded_variants')]
@@ -120,6 +124,20 @@ def build():
                'axis_annotations', 'stratum_summary', 'missing_label_bounds', 'review_disagreements', 'geography_adjudications')]
     files += [f'results/benchmark_review_wave2_2026_09_10/{name}.json' for name in
               ('summary', 'review_summary', 'review_provenance', 'adjudication_provenance')]
+    files += [f'results/benchmark_review_wave3_2026_09_10/{name}.csv' for name in
+              ('availability_manifest', 'manual_download_queue', 'article_consensus', 'axis_annotations',
+               'stratum_summary', 'missing_label_bounds', 'review_disagreements', 'geography_adjudications',
+               'public_alternative_lookup', 'publisher_access_issues')]
+    files += [f'results/benchmark_review_wave3_2026_09_10/{name}.json' for name in
+              ('summary', 'review_summary', 'review_provenance', 'adjudication_provenance')]
+    files += [f'results/us_geography_priority_2026_09_10/{name}.csv' for name in
+              ('article_priority_queue', 'author_uncertainty', 'manual_download_queue', 'automatic_acquisition_queue',
+               'fulltext_geography_reviews', 'metadata_review_proposals', 'round10_status', 'remaining_round10_downloads',
+               'author_changes')]
+    files += [f'results/us_geography_priority_2026_09_10/{name}.json' for name in
+              ('priority_manifest', 'round10_manifest', 'fulltext_review_validation', 'metadata_review_validation',
+               'queue_validation')]
+    files += [f'results/us_geography_priority_2026_09_10/assessment.{ext}' for ext in ('md', 'html')]
     for name in files:
         dest = site / name
         dest.parent.mkdir(parents=True, exist_ok=True)

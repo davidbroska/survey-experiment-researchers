@@ -1,0 +1,4 @@
+stratum,population_N,sample_n,ready_for_fulltext_review,not_reviewed,single_pass,double_pass,double_coded_yes,double_coded_no,double_coded_unclear_or_disputed,pending_second_or_both_reviews,unknown_for_bounds,inclusion_probability
+primary_only,6792,20,18,2,0,18,16,1,1,2,3,0.002944640753828033
+proximity_only,882,20,19,1,0,19,12,7,0,1,1,0.022675736961451247
+overlap,134,20,16,4,0,16,15,1,0,4,4,0.14925373134328357

@@ -1,0 +1,11 @@
+{
+  "rows": 2,
+  "unique_scopus_ids": 2,
+  "exact_spans_validated": 2,
+  "metadata_hashes_validated": 2,
+  "reviews_sha256": "bb7f4e495158a81d2d305af35f95dc8aab2071f74242bcc0e02c146df7f6962a",
+  "packet_sha256": "80a2643e45ba5f54b3ddb3f169548e5ca01b004b53e5883f749c55b3adb80342",
+  "source": "private/query_rankings_2026_09_10/articles.csv",
+  "source_sha256": "706bdc83bda55c2813a7cae41f6b14569f9c1c6477061db64400864c82c48d94",
+  "status": "Separate AI-assisted contextual inferences; old reviews untouched; queue and scenario counts precede these proposed updates."
+}

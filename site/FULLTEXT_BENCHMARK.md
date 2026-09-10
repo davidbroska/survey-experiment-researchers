@@ -1,10 +1,10 @@
-The fixed sample contains 60 retrieved articles, selected before full-text lookup. 45 have readable identity-verified main texts or author manuscripts; 15 need a usable copy. No inaccessible paper is replaced with a more convenient article. AI-assisted annotations require human validation.
+The fixed sample contains 60 retrieved articles, selected before full-text lookup. 53 have readable identity-verified main texts or author manuscripts; 7 need a usable copy. No inaccessible paper is replaced with a more convenient article. AI-assisted annotations require human validation. The user reports no Taylor & Francis access; those papers remain pending an accessible manuscript rather than a repeat publisher download request.
 
-45 articles have two reviews: 35 agreed eligible survey-experiment designs, 9 agreed negatives, and 1 unresolved or disputed designs. Parser compatibility and sample geography are recorded separately.
+53 articles have two reviews: 43 agreed eligible survey-experiment designs, 9 agreed negatives, and 1 unresolved or disputed designs. Parser compatibility and sample geography are recorded separately.
 
 Save requested PDFs as the listed Scopus ID plus .pdf in SurveyExperimentRecruitment/ Select Needs a copy to see the remaining download queue. Each article has a publisher link and a filename to copy.
 
-[Current ranking comparison](RANKING_COMPARISON_REPORT.html) · [Original sampling method](PROXIMITY_AUDIT.html) · [Inventory CSV](results/benchmark_review_wave2_2026_09_10/availability_manifest.csv) · [Manual download CSV](results/benchmark_review_wave2_2026_09_10/manual_download_queue.csv) · [Working labels](results/benchmark_review_wave2_2026_09_10/article_consensus.csv).
+[Current ranking comparison](RANKING_COMPARISON_REPORT.html) · [Original sampling method](PROXIMITY_AUDIT.html) · [Inventory CSV](results/benchmark_review_wave3_2026_09_10/availability_manifest.csv) · [Manual download CSV](results/benchmark_review_wave3_2026_09_10/manual_download_queue.csv) · [Working labels](results/benchmark_review_wave3_2026_09_10/article_consensus.csv).
 
 | ID | Article | Availability | Review status | Filename |
 | --- | --- | --- | --- | --- |
@@ -23,21 +23,21 @@ Save requested PDFs as the listed Scopus ID plus .pdf in SurveyExperimentRecruit
 | PB-3591e0ebc0 | Too Harsh for Me but Not for Thee? Threat Control, Personal Freedom, and Perception of Pandemic Policy | ready_for_fulltext_review | double_pass | 85138407074.pdf |
 | PB-36a5e88420 | Priming COVID-19 salience increases prejudice and discriminatory intent against Asians and Hispanics | ready_for_fulltext_review | double_pass | 85114140783.pdf |
 | PB-396787a099 | Directionality of information flow and echoes without chambers | ready_for_fulltext_review | double_pass | 85065913702.pdf |
-| PB-3c61d11440 | The efficacy of health warnings and package branding on perceptions of cannabis products among youth and young adults | needs_main_article | not_reviewed | 85100348819.pdf |
+| PB-3c61d11440 | The efficacy of health warnings and package branding on perceptions of cannabis products among youth and young adults | ready_for_fulltext_review | double_pass | 85100348819.pdf |
 | PB-3df5c4118b | Reframing aging: Effect of a short-term framing intervention on implicit measures of age bias | ready_for_fulltext_review | double_pass | 85064817802.pdf |
 | PB-43bac74aa3 | How language shapes anti-fat bias: comparing the effects of disease and fat-rights framing | ready_for_fulltext_review | double_pass | 85181220759.pdf |
 | PB-4610dc5b9e | Supreme Court Legitimacy in a New Media Era: Judicial Legitimacy, Polarization, and the Changing Media Landscape | ready_for_fulltext_review | double_pass | 105016166477.pdf |
 | PB-4940625713 | Ideological Social Identity: Psychological Attachment to Ideological In-Groups as a Political Phenomenon and a Behavioral Influence | ready_for_fulltext_review | double_pass | 84940438463.pdf |
 | PB-51569be7f7 | Fighting Back: Inner-City Community Responses to Food Insecurity | ready_for_fulltext_review | double_pass | 84983651709.pdf |
 | PB-5369497b50 | What’s in a name? An experimental test of marital name change on perceptions of female political candidates | ready_for_fulltext_review | double_pass | 85088293543.pdf |
-| PB-5f36247ddd | Food addiction as a causal model of obesity. Effects on stigma, blame, and perceived psychopathology | needs_main_article | not_reviewed | 84896908943.pdf |
+| PB-5f36247ddd | Food addiction as a causal model of obesity. Effects on stigma, blame, and perceived psychopathology | ready_for_fulltext_review | double_pass | 84896908943.pdf |
 | PB-5fbd9bef09 | Does disclosure about the common factors affect laypersons' opinions about how cognitive behavioral psychotherapy works? | ready_for_fulltext_review | double_pass | 85059039235.pdf |
-| PB-606a51e4be | A narrative solution: The relationship between solutions journalism, narrative transportation, and news trust | needs_main_article | not_reviewed | 85073996474.pdf |
+| PB-606a51e4be | A narrative solution: The relationship between solutions journalism, narrative transportation, and news trust | ready_for_fulltext_review | double_pass | 85073996474.pdf |
 | PB-743729223f | The jingle fallacy in comprehension tests for reading | ready_for_fulltext_review | double_pass | 85197800364.pdf |
-| PB-821c784efd | Putting the social back in legal socialization: Procedural justice, legitimacy, and cynicism in legal and nonlegal authorities | needs_main_article | not_reviewed | 84925657573.pdf |
+| PB-821c784efd | Putting the social back in legal socialization: Procedural justice, legitimacy, and cynicism in legal and nonlegal authorities | ready_for_fulltext_review | double_pass | 84925657573.pdf |
 | PB-8300fc0a59 | Family Matters: How Immigrant Histories Can Promote Inclusion | ready_for_fulltext_review | double_pass | 85098180961.pdf |
-| PB-831eb33b79 | The allure of distant war drums: Refugees, geography, and foreign policy preferences in Turkey | needs_main_article | not_reviewed | 85069682610.pdf |
-| PB-8b3ec9205b | The effect of cognitive load and patient race on physicians' decisions to prescribe opioids for chronic low back pain: A randomized trial | needs_main_article | not_reviewed | 84903310507.pdf |
+| PB-831eb33b79 | The allure of distant war drums: Refugees, geography, and foreign policy preferences in Turkey | ready_for_fulltext_review | double_pass | 85069682610.pdf |
+| PB-8b3ec9205b | The effect of cognitive load and patient race on physicians' decisions to prescribe opioids for chronic low back pain: A randomized trial | ready_for_fulltext_review | double_pass | 84903310507.pdf |
 | PB-8b611a1b32 | Paths to positivity: the relationship of age differences in appraisals of control to emotional experience | ready_for_fulltext_review | double_pass | 85076420910.pdf |
 | PB-8d28263584 | Using survey experiment pretesting to support future pandemic response | ready_for_fulltext_review | double_pass | 85212150786.pdf |
 | PB-8f958f6206 | “Deservingness” and Public Support for Universal Public Goods: A Survey Experiment | ready_for_fulltext_review | double_pass | 85181820584.pdf |
@@ -58,11 +58,11 @@ Save requested PDFs as the listed Scopus ID plus .pdf in SurveyExperimentRecruit
 | PB-cb33883b88 | Carbon or cash: Evaluating the effectiveness of environmental and economic messages on attitudes about wind energy in the United States | ready_for_fulltext_review | double_pass | 85060078429.pdf |
 | PB-d316230c47 | Thinking Fast and Furious: Emotional Intensity and Opinion Polarization in Online Media | ready_for_fulltext_review | double_pass | 85076492172.pdf |
 | PB-d4073b0677 | Cognitive bias in citizens’ perceptions of government performance in response to COVID-19: Evidence from a large-scale survey experiment in China | needs_main_article | not_reviewed | 85129226690.pdf |
-| PB-d89a357f9e | The Impact of Communicating Uncertainty on Public Responses to Precision Medicine Research | needs_main_article | not_reviewed | 85112764069.pdf |
+| PB-d89a357f9e | The Impact of Communicating Uncertainty on Public Responses to Precision Medicine Research | ready_for_fulltext_review | double_pass | 85112764069.pdf |
 | PB-de11ef3311 | Cheating Behaviors among Undergraduate College Students: Results from a Factorial Survey | needs_main_article | not_reviewed | 84978962251.pdf |
 | PB-e2ad836397 | Employers’ recruitment contexts and hiring preferences in the German youth labor market | ready_for_fulltext_review | double_pass | 85104428601.pdf |
 | PB-e2bb80618c | Exposure to Extremely Partisan News from the Other Political Side Shows Scarce Boomerang Effects | ready_for_fulltext_review | double_pass | 85124205644.pdf |
-| PB-e8b21f0642 | Refugees, xenophobia, and domestic conflict: Evidence from a survey experiment in Turkey | needs_main_article | not_reviewed | 85042184003.pdf |
+| PB-e8b21f0642 | Refugees, xenophobia, and domestic conflict: Evidence from a survey experiment in Turkey | ready_for_fulltext_review | double_pass | 85042184003.pdf |
 | PB-ea209fb1fe | Culture as a catalyst for regenerative co-creation: the role of yuanfen in driving customer voice through social bonds in P2P accommodation | ready_for_fulltext_review | double_pass | 105033607878.pdf |
 | PB-f1e39c8d0d | Self-efficacy, sympathy, and attributions: Understanding helping intentions towards disclosers of mental health concerns on social media | ready_for_fulltext_review | double_pass | 85141446198.pdf |
 | PB-f57f4f483c | The causes and consequences of public misperceptions about the origins of the Russo-Ukrainian war | ready_for_fulltext_review | double_pass | 105028246602.pdf |

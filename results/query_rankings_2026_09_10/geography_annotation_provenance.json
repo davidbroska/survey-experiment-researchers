@@ -65,6 +65,11 @@
     "validated_reviews": 53
   },
   {
+    "source_file": "private/query_rankings_2026_09_10/new_geography_reviews_priority_2026_09_10.json",
+    "sha256": "2f5b575826791f8dc40b7cdf02c59f860de120d089671ef868f90f5b62e90c99",
+    "validated_reviews": 2
+  },
+  {
     "source_file": "private/search_strategy_2026_09_10/validation_coder_A.csv",
     "sha256": "75e8db91b39c39bdeca5e02ffa3ede6904a9be02df2deafbcf7a030195008eb2",
     "validated_reviews": 100
@@ -75,8 +80,18 @@
     "validated_reviews": 100
   },
   {
+    "source_file": "private/us_geography_priority_2026_09_10/fulltext_reviews.csv",
+    "sha256": "7f54cffbfb27cc0e4a71b33cc6b08ad860b4df48a1edc26ad6fc94ab437e6b46",
+    "validated_reviews": 7
+  },
+  {
     "source_file": "results/benchmark_review_wave2_2026_09_10/article_consensus.csv",
     "sha256": "39b015f812f2158b0e23d2d1d269bed6687eee0440db341962b499bf32e86a09",
     "validated_reviews": 27
+  },
+  {
+    "source_file": "results/benchmark_review_wave3_2026_09_10/article_consensus.csv",
+    "sha256": "1d002e7f077745c17d3524f57c6b978c7ef6c741921b7b62b9a753433ab8095a",
+    "validated_reviews": 8
   }
 ]

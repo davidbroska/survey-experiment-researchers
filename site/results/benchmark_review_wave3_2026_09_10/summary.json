@@ -1,0 +1,18 @@
+{
+  "fixed_sample_n": 60,
+  "download_files": 8,
+  "unique_download_hashes": 8,
+  "unique_verified_download_articles": 8,
+  "new_benchmark_articles_ready": 8,
+  "matched_geography_articles_outside_benchmark": 0,
+  "unmatched_downloads": 0,
+  "previously_ready_articles": 45,
+  "articles_available_after_wave3": 53,
+  "articles_still_missing": 7,
+  "missing_articles_with_user_reported_TF_access_issue": 6,
+  "prior_stage_archive": "private/benchmark_review_wave3_2026_09_10/prior_stage_45_39b015f812f2158b",
+  "prior_consensus_sha256": "39b015f812f2158b0e23d2d1d269bed6687eee0440db341962b499bf32e86a09",
+  "packet_sha256": "72a923b2efc6ffa57679ef7d9ea0da9489ef30d91e25a437fbecd6e9e1439082",
+  "previous_packets_and_reviews_modified": false,
+  "inaccessible_records_replaced": false
+}

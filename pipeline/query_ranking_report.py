@@ -40,6 +40,8 @@ def collect():
                [('full', 'original_query'), ('narrow', 'narrower_query')]}
     us_rows['current'] = list(ranked(read_csv(ROOT / 'results/top100_enriched.csv'), 'n_us_articles'))
     affiliations = {r['authid']: r for r in read_csv(ROOT / 'inputs/researcher_affiliations.csv')}
+    for r in read_csv(ROOT / 'inputs/query_dashboard_affiliations.csv'):
+        affiliations.setdefault(r['authid'], {}).update(r)
     for r in read_csv(ROOT / 'inputs/query_ranking_name_reviews.csv'):
         affiliations.setdefault(r['authid'], {}).update(full_name=r['full_name'])
     authors = {}
@@ -135,7 +137,7 @@ def build():
     (ROOT / 'RANKING_COMPARISON.html').write_text(template.replace('__DATA__', serialized))
     report(rows, details, counts, geo)
     from proximity_report import benchmark_page
-    wave = ROOT / 'results/benchmark_review_wave2_2026_09_10'
+    wave = ROOT / 'results/benchmark_review_wave3_2026_09_10'
     benchmark_page(read_csv(wave / 'availability_manifest.csv'),
                    read_csv(wave / 'article_consensus.csv'), str(wave.relative_to(ROOT)))
     write_json(RESULTS / 'comparison_report_provenance.json', {
@@ -162,7 +164,7 @@ def report(rows, details, counts, geo):
                          'comparator': variant_labels[r['comparator']]} for r in counts]
     text = ('**Retain the complete-clause search for discovery and use the narrower query as a review-priority and sensitivity view.** '
             'The broader search preserves 310 additional articles, some of which are plausible survey experiments. The narrower query has not demonstrated higher precision in an independent sample. Study-level eligibility review provides a more defensible basis for donor recruitment than dropping ambiguous procedural language at retrieval.\n\n'
-            '[Interactive ranking comparison](RANKING_COMPARISON.html) · [Full comparison CSV](results/query_rankings_2026_09_10/comparison_authors.csv) · [Queries and validation history](PROXIMITY_AUDIT.html).\n\n'
+            '[Original dashboard](DASHBOARD_ORIGINAL.html) · [Complete-clause dashboard](DASHBOARD_COMPLETE.html) · [Narrower-clause dashboard](DASHBOARD_NARROWER.html) · [Interactive ranking comparison](RANKING_COMPARISON.html) · [Full comparison CSV](results/query_rankings_2026_09_10/comparison_authors.csv) · [Queries and validation history](PROXIMITY_AUDIT.html).\n\n'
             'Both searches use the same 3,401-journal frame and 2010–2026 window. Every distinct article contributes once to each distinct first or last author; sole authors receive one credit. Six candidates in each new query remain uncredited because their bylines are unresolved. Two author lists capped at 100 were repaired using full ordered bylines. Equal counts share competition ranks; numeric author IDs determine the displayed order within ties. Names, topics, panel vendors and sample geography do not determine entry to the retrieval pool.\n\n'
             '**Top-100 membership changes.** The following table concerns the first 100 displayed researchers. Changes at a tied cutoff are not evidence of different productivity. Historical US membership means the old 100-person pool, which was selected by total article count. New US membership is based on the available US evidence across the wider author universe.\n\n'
             + markdown_table(membership_table, [('metric', 'Count'), ('candidate', 'Candidate'), ('comparator', 'Compared with'), ('shared', 'Retained'), ('enter', 'Enter'), ('leave', 'Leave')]) + '\n')
@@ -177,7 +179,7 @@ def report(rows, details, counts, geo):
     text += (f"For a fair main comparison we reviewed the same {geo['union_current_and_new_total_leaders_authors']}-person pool: the historical 100 plus the new leaders including every cutoff tie. "
              f"All {geo['union_leader_pool_articles']:,} distinct articles across those versions have a geography judgment, including 160 newly reviewed metadata records; "
              f"{geo['union_leader_pool_articles_unreviewed']} remain unreviewed, while {geo['union_leader_pool_article_labels']['unclear']} still have unclear geography. "
-             "The two new queries yield identical US-evidence counts for every researcher in this pool. The all-author US view remains partially annotated and must not be presented as a completed global top 100.\n\n")
+             f"This update resolves nine previously unclear articles through seven public full texts and two contextual metadata reviews, bringing US evidence to 472 articles ({geo['union_leader_pool_article_labels']['us_explicit']} explicit; {geo['union_leader_pool_article_labels']['us_inferred']} inferred). The two new queries yield identical US-evidence counts for every researcher in this pool. The all-author US view remains partially annotated and must not be presented as a completed global top 100. [Further review priorities](results/us_geography_priority_2026_09_10/article_priority_queue.csv).\n\n")
     text += ('**US-evidence leaders within the same 120-person pool.** Both new queries give the ranks and counts below.\n\n' + markdown_table(leaders('full', 'pool'),
               [('name', 'Researcher'), ('current_pool_rank', 'Historical-credit rank, same pool'), ('current_pool_count', 'Historical-credit US count'),
                ('full_pool_rank', 'New within-pool rank'), ('full_pool_count', 'US evidence count'),
@@ -188,16 +190,16 @@ def report(rows, details, counts, geo):
                  [('name', 'Researcher'), ('current_all_count', 'Published candidate count'),
                   ('full_all_count', 'Complete-clause count'), ('full_all_rank', 'Complete-clause rank'),
                   ('narrow_all_count', 'Narrower count'), ('narrow_all_rank', 'Narrower rank')]) + '\n')
-    wave = ROOT / 'results/benchmark_review_wave2_2026_09_10'
+    wave = ROOT / 'results/benchmark_review_wave3_2026_09_10'
     if (wave / 'review_summary.json').exists():
         acquisition = json.loads((wave / 'summary.json').read_text())
         reviews = json.loads((wave / 'review_summary.json').read_text())
         text += (f"**Additional full texts.** The user supplied {acquisition['download_files']} files matching {acquisition['unique_verified_download_articles']} additional fixed-sample articles. "
-                 f"All originals and alternate copies are preserved privately. The benchmark now has {acquisition['articles_available_after_wave2']}/60 usable full texts, with {acquisition['articles_still_missing']} still missing. "
+                 f"All originals and alternate copies are preserved privately. The benchmark now has {acquisition['articles_available_after_wave3']}/60 usable full texts, with {acquisition['articles_still_missing']} still missing. "
                  f"At this update, {reviews['double_pass']} articles have two AI-assisted reviews: {reviews['double_coded_yes']} agreed survey-experiment designs, {reviews['double_coded_no']} agreed negatives and {reviews['double_coded_unclear_or_disputed']} unresolved or disputed designs. "
                  "The original 18-review development stage remains immutable; later reviews are added in a separate stage. Neither availability nor AI agreement establishes human-validated precision. "
                  "One sample-geography disagreement was resolved by a separate page-cited adjudication; original coder judgments remain available. "
-                 "[Updated inventory and download queue](FULLTEXT_BENCHMARK.html) · [Combined article judgments](results/benchmark_review_wave2_2026_09_10/article_consensus.csv) · [Adjudication](results/benchmark_review_wave2_2026_09_10/geography_adjudications.csv).\n\n")
+                 "[Updated inventory and download queue](FULLTEXT_BENCHMARK.html) · [Combined article judgments](results/benchmark_review_wave3_2026_09_10/article_consensus.csv) · [Adjudication](results/benchmark_review_wave2_2026_09_10/geography_adjudications.csv).\n\n")
         membership = {r['scopus_id']: r for r in read_csv(ROOT / 'results/proximity_specific_2026_09_10/membership.csv')}
         review_rows = read_csv(wave / 'article_consensus.csv')
         comparison = []
@@ -213,7 +215,7 @@ def report(rows, details, counts, geo):
                                'design_yes_parser_yes': sum(r['design'] == 'yes' and r['parser_compatible'] == 'yes' for r in reviewed),
                                'parser_no': sum(r['parser_compatible'] == 'no' for r in reviewed)})
         write_csv(RESULTS / 'benchmark_retention_after_downloads.csv', comparison)
-        text += ('The completed reviews strengthen the case for **reviewing the narrower set first**. All eight sampled removals are now available: six are design negatives and two are broad design positives; all eight were judged incompatible with the parser. All 27 design-positive, parser-compatible articles are retained. '\
+        text += ('The completed reviews strengthen the case for **reviewing the narrower set first**. All eight sampled removals are now available: six are design negatives and two are broad design positives; all eight were judged incompatible with the parser. All design-positive, parser-compatible articles in the reviewed sample are retained. '\
                  'These are observed sample results; unequal sampling, incomplete access, AI annotation and post-hoc query development prevent interpreting the raw fractions as population precision.\n\n'
                  + markdown_table(comparison, [('group', 'Benchmark group'), ('sampled', 'Sampled'), ('double_reviewed', 'Reviewed'),
                                                ('design_yes', 'Design yes'), ('design_no', 'Design no'), ('design_unresolved', 'Unresolved'),

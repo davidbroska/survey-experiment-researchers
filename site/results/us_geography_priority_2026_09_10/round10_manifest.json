@@ -1,0 +1,16 @@
+{
+  "selected": 10,
+  "selection": "First ten pre-review queue records with at least one credited author at US competition rank <=50 in the same 120-person pool; existing local followups, user-unavailable article and two separately resolved metadata cases excluded. Selection frozen before source searches; unsuccessful papers not replaced.",
+  "selection_sha256": "72e525aba46c70ceec717b5f70f91df49f6437755a391982e245acaec0809379",
+  "public_pdf_obtained_and_reviewed": 7,
+  "us_explicit": 3,
+  "us_inferred": 4,
+  "unresolved_no_usable_public_text": 3,
+  "review_scope": "Geography only, prioritization sample; not a precision-validation sample or new design/parser approval.",
+  "public_status_sha256": "0511f5b481ece192e35c454c962b256b37f3bc894e9a6023db3b9cfacb635eb9",
+  "classification_harmonization": "85125280963 is US_inferred from the US institutional recruitment context; combined US count is unchanged.",
+  "unresolved_acquisition_status": {
+    "needs_manual_download": 2,
+    "awaiting_alternative_copy": 1
+  }
+}

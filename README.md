@@ -1,8 +1,14 @@
-Start with the [current ranking comparison](RANKING_COMPARISON.html) and [comparison report](RANKING_COMPARISON_REPORT.html). The recommendation is to retain **9,675 candidate articles for discovery**, using the **9,365-article narrower query as a sensitivity comparison and screening priority**. Both queries produce the same displayed top 100 and the same 114 researchers when all cutoff ties are included. Counts credit each canonical article once to each first or last author, including sole authors only once. Query matches do not establish eligible survey experiments, parser compatibility, PI status or data ownership. [Methodological assessment](results/query_rankings_2026_09_10/methodological_assessment.md) · [Complete discovery query](queries/proximity_audit_2026_09_10/targeted.txt) · [Narrower query](queries/proximity_specific_2026_09_10/primary_plus_specific.txt).
+Compare the three sortable dashboards, each with its own **Ranking**, **Methodology** and download tabs:
 
-The comparable US-sample view covers the same **120 researchers and 1,042 articles**, combining the historical 100 with the new total-count leaders, including cutoff ties. All 1,042 have geography reviews after 160 new metadata annotations; some remain geographically unclear. US evidence combines explicit and contextual inference, with full-text evidence taking precedence. Geography coverage across the wider author universe remains incomplete, so this is a conditional pool comparison, not a global US top 100. All annotations remain AI-assisted and await human validation. [Coverage and provenance](results/query_rankings_2026_09_10/geography_summary.json).
+- [Original query](DASHBOARD_ORIGINAL.html): 7,302 retrieved articles; the historical local phrase check retains 7,035 candidates, of which 7,031 have author credits.
+- [Core + complete clause](DASHBOARD_COMPLETE.html): 9,675 retrieved candidates, adding guarded reading and manipulation language in abstracts.
+- [Core + narrower clause](DASHBOARD_NARROWER.html): 9,365 candidates; removes only `read W/3 passage*` and `manipulat* W/3 information` from the complete clause.
 
-The fixed 60-article full-text benchmark now has **45 available articles reviewed in two independent AI coding passes**: 35 affirmative designs, nine negative and one unresolved design disagreement; 15 papers remain unavailable. The latest 32 PDF downloads supplied 27 newly available articles. The original 18-review stage remains frozen because it informed query development; the additional reviews extend the same fixed sample rather than constituting a newly drawn validation sample. Availability and AI agreement alone do not establish query precision. [Benchmark inventory](FULLTEXT_BENCHMARK.html) · [Latest decisions](results/benchmark_review_wave2_2026_09_10/article_consensus.csv) · [Remaining downloads](results/benchmark_review_wave2_2026_09_10/manual_download_queue.csv).
+The expanded queries identify the same displayed top 100 and the same 114 researchers including cutoff ties. Both introduce 16 displayed researchers relative to the historical top 100; ten of the 16 displayed departures still qualify when all cutoff ties are included. Among the 114 leaders, only Janet Z. Yang’s total count differs between the expanded queries (14 complete; 13 narrower). Each canonical article credits each distinct first or last author once; sole authors receive one credit. The recommendation remains to retain the complete query for discovery and use the narrower query to prioritize screening. [Comparison report](RANKING_COMPARISON_REPORT.html) · [Side-by-side comparison](RANKING_COMPARISON.html).
+
+The comparable US view covers the same **120 researchers and 1,042 distinct articles** across versions. All have geography judgments: **472 have US evidence (301 explicit; 171 inferred), 380 are non-US, 177 remain unclear and 13 are not applicable**. This update resolves nine previously unclear articles using seven public full texts and two metadata reviews. The expanded queries give identical US counts throughout this pool. These are conditional ranks, not a completed global US top 100. Geography combines explicit recruitment statements with justified inference from study context; affiliations and generic vendor names do not establish participant country. All annotations remain AI-assisted and await human validation. [Coverage](results/query_rankings_2026_09_10/geography_summary.json) · [Remaining article priorities](results/us_geography_priority_2026_09_10/article_priority_queue.csv) · [Author uncertainty](results/us_geography_priority_2026_09_10/author_uncertainty.csv).
+
+The fixed 60-article benchmark now has **53 articles independently reviewed twice**: 43 agreed survey-experiment designs, nine negatives and one unresolved design disagreement. The latest eight supplied PDFs are preserved privately. Seven papers remain unavailable, including six Taylor & Francis papers affected by the user’s reported publisher-access limitation; a bounded public-copy lookup found no alternatives. Earlier 18- and 45-review stages remain frozen. Accessible-paper agreement does not establish population precision. [Benchmark inventory](FULLTEXT_BENCHMARK.html) · [Current decisions](results/benchmark_review_wave3_2026_09_10/article_consensus.csv) · [Access status](results/benchmark_review_wave3_2026_09_10/publisher_access_issues.csv).
 
 The [historical 100-researcher dashboard](TOP100.html), its [Methodology tab](TOP100.html#summary), [summary](EXECUTIVE_SUMMARY.html) and [SI methods](SUPPORTING_INFORMATION.html) preserve the earlier cohort and query. That dashboard reviews 870 articles, with 402 US-associated and 117 geographically unclear; its counts and download priorities are historical comparators, not the expanded recommendation above. `TOP40.html` opens this historical dashboard. Its separate geography-review workflow uses `private/fulltext/inbox/` and [these instructions](FULLTEXT_REVIEW.html).
 
@@ -12,6 +18,7 @@ Run commands from this folder. Public comparison artifacts can be rendered witho
 
 ```bash
 python3 pipeline/query_ranking_report.py
+python3 pipeline/variant_dashboards.py
 python3 pipeline/build_site.py
 ```
 
@@ -22,26 +29,24 @@ python3 pipeline/query_rankings.py rank
 python3 pipeline/query_rankings.py verify
 python3 pipeline/query_ranking_geography.py
 python3 pipeline/query_ranking_report.py
+python3 pipeline/variant_dashboards.py
 ```
 
 Full Scopus reproduction and evidence-span validation require the private licensed inputs; the public repository supplies queries, manifests, memberships, annotations and rendered results. `python3 pipeline/query_rankings.py enrich --allow-network --workers 4` obtains missing complete bylines with an entitled Scopus connection. Cached enrichment works without `--allow-network`.
 
-For further **benchmark PDFs**, place downloads directly in the `SurveyExperimentRecruitment/` root and import them:
+To reproduce the latest eight-paper benchmark extension with its private evidence present:
 
 ```bash
-python3 pipeline/benchmark_review_wave2.py
-```
-
-This moves originals into the private wave-2 archive, checks article identity, and extracts a review packet while preserving the original 18-review stage. Importing does not annotate a paper. After completing both page-cited review files for the new packet, validate and aggregate them, then update the comparison:
-
-```bash
-python3 pipeline/benchmark_review_wave2.py --validate private/benchmark_review_wave2_2026_09_10/reviews_coder_A.json
-python3 pipeline/benchmark_review_wave2.py --validate private/benchmark_review_wave2_2026_09_10/reviews_coder_B.json
-python3 pipeline/benchmark_review_wave2.py --aggregate
+python3 pipeline/benchmark_review_wave3.py --validate private/benchmark_review_wave3_2026_09_10/reviews_coder_A.json
+python3 pipeline/benchmark_review_wave3.py --validate private/benchmark_review_wave3_2026_09_10/reviews_coder_B.json
+python3 pipeline/benchmark_review_wave3.py --aggregate
 python3 pipeline/query_ranking_geography.py
 python3 pipeline/query_ranking_report.py
+python3 pipeline/variant_dashboards.py
 python3 pipeline/build_site.py
 ```
+
+New downloads may be placed in `SurveyExperimentRecruitment/` using the dashboard’s Scopus-ID filenames. Import subsequent benchmark PDFs into a new dated review wave: issued packets and prior coding must not be overwritten. Geography review is separate from benchmark design coding. Downloaded PDFs and verbatim sampling evidence stay under `private/`; only article metadata, labels, original rationales and source links are published. Acquisition itself assigns no study labels.
 
 The [evidence-based search audit](SEARCH_STRATEGY.html), [short coauthor note](SEARCH_SUMMARY.html), and [new SI methods draft](SEARCH_METHODS.html) investigate the Pennycook and Richeson counterexamples. The audit covers their complete Scopus article bibliographies, 20 nominated papers, 160 fresh development articles and 100 held-out articles independently coded twice. Adding `participant*` to the remaining population gates increases the expanded search from 8,074 to 8,142 distinct in-frame articles. A shorter candidate query retrieves 18,054, but remains too noisy and incomplete for automatic ranking: both AI reviewers find affirmative design evidence in 36/41 named-design or reading candidates versus 29/59 procedure-only candidates. All annotations await human validation. The proposed workflow preserves earlier candidates, screens every route, and completes candidate bibliographies before selecting the top 100. The existing dashboard retains its earlier provisional cohort.
 
@@ -128,7 +133,7 @@ python3 pipeline/search_strategy_review.py
 python3 pipeline/search_strategy_report.py
 ```
 
-The reading/manipulation revision and original 18-review evaluation stage use separate `proximity_audit_2026_09_10` and `precision_benchmark_2026_09_10` snapshots. The commands below reproduce that historical stage; use the wave-2 commands above for the latest 45-review extension:
+The reading/manipulation revision and original 18-review evaluation stage use separate `proximity_audit_2026_09_10` and `precision_benchmark_2026_09_10` snapshots. The commands below reproduce that historical stage; use the wave-3 commands above for the latest 53-review extension:
 
 ```bash
 python3 pipeline/proximity_audit.py summarize

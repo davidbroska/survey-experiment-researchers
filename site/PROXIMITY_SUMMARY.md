@@ -1,4 +1,4 @@
-**Archived query-development stage (18 full-text reviews).** See the [latest ranking comparison, discovery query and recommendation](RANKING_COMPARISON_REPORT.html) and [updated 45-article full-text inventory](FULLTEXT_BENCHMARK.html) for the subsequent evidence.
+**Archived query-development stage (18 full-text reviews).** See the [latest ranking comparison, discovery query and recommendation](RANKING_COMPARISON_REPORT.html) and [updated full-text inventory](FULLTEXT_BENCHMARK.html) for the subsequent evidence.
 
 We seek researchers who have repeatedly collected survey-experiment data. The search uses four recognizable signals: named survey/vignette designs; related experimental designs with survey-participant language; randomized reading assignments; and specific reading or manipulation procedures described in abstracts. Researcher names and substantive topics are not search criteria.
 

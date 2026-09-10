@@ -1,0 +1,41 @@
+{
+  "query_variant": "complete",
+  "query_sha256": "0deb5548ccf2aaa6ba6bacd6b003c4f7aa45716036bbb6f18d05f6a658c97ecd",
+  "researchers": 12482,
+  "articles": 9675,
+  "pool_size": 120,
+  "pool_articles": 1036,
+  "pool_geography": {
+    "us_explicit": 299,
+    "us_inferred": 169,
+    "non_us": 378,
+    "not_applicable": 13,
+    "unclear": 177
+  },
+  "human_validated": false,
+  "frozen_dashboard_modified": false,
+  "priority_availability_basis": "Published source-validated snapshot; private PDF bytes additionally checked when the private register is present.",
+  "input_sha256": {
+    "results/query_rankings_2026_09_10/articles.csv": "ed555b31fae29b5ffe86f4a83f6b20e0243c7e1836b659a7d82f803186c1da38",
+    "results/query_rankings_2026_09_10/article_geography.csv": "2438140f258f034c4d31c0a80d836f0d125da93d69849d89aee6a826306b4cc8",
+    "results/query_rankings_2026_09_10/author_article_links.csv": "e27e03ba4683051f22c678f85e779d9f8367c8dc93302ef4c090cbc2ef1f5795",
+    "inputs/researcher_affiliations.csv": "07b19109d9f014f94615a406b8b409662afab9da175247f2bf7c3579bfb3744f",
+    "inputs/query_dashboard_affiliations.csv": "460f06eb8d4dba6d8dea0d637af211f5e2af7b3f8c34234163d224d7a05827ce",
+    "inputs/query_ranking_name_reviews.csv": "7f92fc5440e9276e44110b0cb4505cc4f0a25a213274feb8e510266e43de45be",
+    "results/fulltext_download_queue.csv": "1ef984e79419f36300d750ffa6e6977cae7b5bb7c6e208aeb84e6923b9a8a5b8",
+    "results/benchmark_review_wave2_2026_09_10/availability_manifest.csv": "cff17de233f682b8537cf35ae2fd8e39a2064cc4391b43f602fd183862073952",
+    "results/benchmark_review_wave3_2026_09_10/availability_manifest.csv": "71d8c63f0055bb1ebfa3e13cf9a487accc95134627f0c34bf86e4c62ea69e1f4",
+    "inputs/manual_download_status.csv": "c28e67232db67f72d20fb0e33674b676360f938c61eb1acb4a5a12dd41520a73",
+    "results/us_geography_priority_2026_09_10/fulltext_geography_reviews.csv": "876d84afb1060a88085987a13564feed3b38b8fc44dc248021a3f5ca17a75edb",
+    "results/us_geography_priority_2026_09_10/fulltext_review_validation.json": "c26d098ef561c0e7ec9aa8b2965e724a00ad037eaff1021e93c1953f0b2b6a76",
+    "results/query_rankings_2026_09_10/original_query_ranking.csv": "b8647d4cafc1cac46571891b3affec32bf432e5527d7d69fc35c9201eafab284",
+    "results/query_rankings_2026_09_10/original_query_us_ranking.csv": "1dfee534e1c363abc944c04c61a7181cdb31becaf463a56ef3670728fcc39b99",
+    "results/query_rankings_2026_09_10/uniform_pool_original_query_us_ranking.csv": "2dc6c710d9e5eeefbb40e6399467b6413b670933aeaec8b2e7e51efed1250df7",
+    "queries/proximity_audit_2026_09_10/targeted.txt": "49d3106bdcdc612f7db95d6d146c6a71d5fc9105130de087cd6036025061a8fe",
+    "pipeline/variant_dashboards.py": "b0c619d6074317788519570927514ff0b384f30b3f6d09398eff8ba21749b3fa",
+    "pipeline/variant_dashboard_template.html": "9118aeb4e16841619063cab58aa7f0e213b6ca7017344f623ae9825edc1112d7",
+    "pipeline/variant_dashboard.js": "bccc348a223a729ce1b2e928b51e945e2f9810e990f12482c611ba49e295f267",
+    "pipeline/dashboard.css": "0f6131481f4705521947189a3a3d3dec3c20c77726014279e060678c422b43db"
+  },
+  "output_sha256": "cafb105418dba30aab6ca2ff22247cce791da01e242873cc75446241c779538a"
+}

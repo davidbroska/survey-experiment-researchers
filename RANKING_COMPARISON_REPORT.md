@@ -1,6 +1,6 @@
 **Retain the complete-clause search for discovery and use the narrower query as a review-priority and sensitivity view.** The broader search preserves 310 additional articles, some of which are plausible survey experiments. The narrower query has not demonstrated higher precision in an independent sample. Study-level eligibility review provides a more defensible basis for donor recruitment than dropping ambiguous procedural language at retrieval.
 
-[Interactive ranking comparison](RANKING_COMPARISON.html) · [Full comparison CSV](results/query_rankings_2026_09_10/comparison_authors.csv) · [Queries and validation history](PROXIMITY_AUDIT.html).
+[Original dashboard](DASHBOARD_ORIGINAL.html) · [Complete-clause dashboard](DASHBOARD_COMPLETE.html) · [Narrower-clause dashboard](DASHBOARD_NARROWER.html) · [Interactive ranking comparison](RANKING_COMPARISON.html) · [Full comparison CSV](results/query_rankings_2026_09_10/comparison_authors.csv) · [Queries and validation history](PROXIMITY_AUDIT.html).
 
 Both searches use the same 3,401-journal frame and 2010–2026 window. Every distinct article contributes once to each distinct first or last author; sole authors receive one credit. Six candidates in each new query remain uncredited because their bylines are unresolved. Two author lists capped at 100 were repaired using full ordered bylines. Equal counts share competition ranks; numeric author IDs determine the displayed order within ties. Names, topics, panel vendors and sample geography do not determine entry to the retrieval pool.
 
@@ -11,11 +11,11 @@ Both searches use the same 3,401-journal frame and 2010–2026 window. Every dis
 | All candidate articles | Complete clause | Historical baseline | 84 | 16 | 16 |
 | All candidate articles | Narrower clause | Historical baseline | 84 | 16 | 16 |
 | All candidate articles | Narrower clause | Complete clause | 100 | 0 | 0 |
-| US evidence, same 120 people | Complete clause | Historical baseline | 98 | 2 | 2 |
-| US evidence, same 120 people | Narrower clause | Historical baseline | 98 | 2 | 2 |
+| US evidence, same 120 people | Complete clause | Historical baseline | 99 | 1 | 1 |
+| US evidence, same 120 people | Narrower clause | Historical baseline | 99 | 1 | 1 |
 | US evidence, same 120 people | Narrower clause | Complete clause | 100 | 0 | 0 |
-| US evidence, partial global review | Complete clause | Historical baseline | 72 | 28 | 28 |
-| US evidence, partial global review | Narrower clause | Historical baseline | 72 | 28 | 28 |
+| US evidence, partial global review | Complete clause | Historical baseline | 73 | 27 | 27 |
+| US evidence, partial global review | Narrower clause | Historical baseline | 73 | 27 | 27 |
 | US evidence, partial global review | Narrower clause | Complete clause | 100 | 0 | 0 |
 
 **All-article leaders under both queries.**
@@ -38,13 +38,13 @@ Both searches use the same 3,401-journal frame and 2010–2026 window. Every dis
 | Yusaku Horiuchi | 7 | 13 | 10 | 13 | 9 | 13 |
 | Blaine G. Robbins | 7 | 13 | 10 | 13 | 9 | 13 |
 
-Enter the displayed top 100 under either query: de Vreese C.; Turgeon M.; Gollust S.E.; Barry C.L.; Wojcieszak M.; Niederdeppe J.; Eyal Aharoni; Caillier J.G.; Pagliaro S.; Lecheler S.; Nagler R.H.; Balcells L.; Cabrera L.Y.; Banda K.K.; Janet Z. Yang; Merkley E.
+Enter the displayed top 100 under either query: Claes H. de Vreese; Mathieu Turgeon; Sarah E. Gollust; Colleen L. Barry; Magdalena Wojcieszak; Jeff Niederdeppe; Eyal Aharoni; James Gerard Caillier; Stefano Pagliaro; Sophie Lecheler; Rebekah H. Nagler; Laia Balcells; Laura Y. Cabrera; Kevin K. Banda; Janet Z. Yang; Eric Merkley
 
 Leave the displayed top 100 under either query: John Gastil; Jonas Tallberg; Giuliano Bonoli; André Blais; Oliver James; Geoffrey P. R. Wallace; Tatishe M. Nteta; Craig M. Burnett; Long Doan; Joshua Robison; Kai Quek; Xiaojun Li; Lauren Sukin; Azusa Uji; Kaylyn Jackson Schiff; Senhu Wang
 
 **US-sample evidence.** Geography combines explicit US sample statements and justified contextual inference; author affiliations and generic panel names do not establish a US sample. Missing annotations are not coded non-US. The historical US list was restricted to the 100-person total-count pool. Its ranks therefore cannot be interpreted as ranks among all retrieved researchers. The new tables expose annotation coverage and unresolved-count scenarios.
 
-For a fair main comparison we reviewed the same 120-person pool: the historical 100 plus the new leaders including every cutoff tie. All 1,042 distinct articles across those versions have a geography judgment, including 160 newly reviewed metadata records; 0 remain unreviewed, while 186 still have unclear geography. The two new queries yield identical US-evidence counts for every researcher in this pool. The all-author US view remains partially annotated and must not be presented as a completed global top 100.
+For a fair main comparison we reviewed the same 120-person pool: the historical 100 plus the new leaders including every cutoff tie. All 1,042 distinct articles across those versions have a geography judgment, including 160 newly reviewed metadata records; 0 remain unreviewed, while 177 still have unclear geography. This update resolves nine previously unclear articles through seven public full texts and two contextual metadata reviews, bringing US evidence to 472 articles (301 explicit; 171 inferred). The two new queries yield identical US-evidence counts for every researcher in this pool. The all-author US view remains partially annotated and must not be presented as a completed global top 100. [Further review priorities](results/us_geography_priority_2026_09_10/article_priority_queue.csv).
 
 **US-evidence leaders within the same 120-person pool.** Both new queries give the ranks and counts below.
 
@@ -53,18 +53,18 @@ For a fair main comparison we reviewed the same 120-person pool: the historical 
 | Douglas L. Kriner | 1 | 19 | 1 | 18 | 0 | 0 |
 | Thomas Bernauer | 2 | 14 | 2 | 15 | 1 | 0 |
 | Christine Horne | 3 | 12 | 3 | 12 | 0 | 0 |
-| Toby Bolsen | 4 | 10 | 4 | 11 | 2 | 0 |
-| Robb Willer | 4 | 10 | 4 | 11 | 2 | 0 |
-| David G. Rand | 4 | 10 | 6 | 10 | 2 | 0 |
-| James N. Druckman | 4 | 10 | 6 | 10 | 1 | 0 |
-| Sarah E. Kreps | 4 | 10 | 6 | 10 | 0 | 0 |
+| Toby Bolsen | 4 | 11 | 3 | 12 | 1 | 0 |
+| Robb Willer | 5 | 10 | 5 | 11 | 2 | 0 |
+| David G. Rand | 5 | 10 | 6 | 10 | 2 | 0 |
+| James N. Druckman | 5 | 10 | 6 | 10 | 1 | 0 |
+| Sarah E. Kreps | 5 | 10 | 6 | 10 | 0 | 0 |
 | Nichole M. Bauer | 9 | 9 | 9 | 9 | 3 | 0 |
 | Gregory A. Huber | 9 | 9 | 9 | 9 | 3 | 0 |
-| Brendan Nyhan | 12 | 8 | 9 | 9 | 0 | 0 |
+| Brendan Nyhan | 13 | 8 | 9 | 9 | 0 | 0 |
+| Kevin J. Mullinix | 9 | 9 | 9 | 9 | 2 | 0 |
 | Brian R. Calfano | 9 | 9 | 9 | 9 | 0 | 0 |
-| Aseem Prakash | 12 | 8 | 13 | 8 | 0 | 0 |
-| Kevin J. Mullinix | 12 | 8 | 13 | 8 | 3 | 0 |
-| Justin T. Pickett | 19 | 7 | 13 | 8 | 2 | 0 |
+| Aseem Prakash | 13 | 8 | 14 | 8 | 0 | 0 |
+| Justin T. Pickett | 21 | 7 | 14 | 8 | 2 | 0 |
 
 **Diagnostic researchers.** These cases were used to test coverage, not as selection criteria. Neither new query puts them in the top 100; zero means no credited candidate, not no relevant research.
 
@@ -75,14 +75,14 @@ For a fair main comparison we reviewed the same 120-person pool: the historical 
 | Jay J. Van Bavel | 0 | 1 | 2703 | 1 | 2652 |
 | Gordon Pennycook | 2 | 2 | 1170 | 2 | 1164 |
 
-**Additional full texts.** The user supplied 32 files matching 27 additional fixed-sample articles. All originals and alternate copies are preserved privately. The benchmark now has 45/60 usable full texts, with 15 still missing. At this update, 45 articles have two AI-assisted reviews: 35 agreed survey-experiment designs, 9 agreed negatives and 1 unresolved or disputed designs. The original 18-review development stage remains immutable; later reviews are added in a separate stage. Neither availability nor AI agreement establishes human-validated precision. One sample-geography disagreement was resolved by a separate page-cited adjudication; original coder judgments remain available. [Updated inventory and download queue](FULLTEXT_BENCHMARK.html) · [Combined article judgments](results/benchmark_review_wave2_2026_09_10/article_consensus.csv) · [Adjudication](results/benchmark_review_wave2_2026_09_10/geography_adjudications.csv).
+**Additional full texts.** The user supplied 8 files matching 8 additional fixed-sample articles. All originals and alternate copies are preserved privately. The benchmark now has 53/60 usable full texts, with 7 still missing. At this update, 53 articles have two AI-assisted reviews: 43 agreed survey-experiment designs, 9 agreed negatives and 1 unresolved or disputed designs. The original 18-review development stage remains immutable; later reviews are added in a separate stage. Neither availability nor AI agreement establishes human-validated precision. One sample-geography disagreement was resolved by a separate page-cited adjudication; original coder judgments remain available. [Updated inventory and download queue](FULLTEXT_BENCHMARK.html) · [Combined article judgments](results/benchmark_review_wave3_2026_09_10/article_consensus.csv) · [Adjudication](results/benchmark_review_wave2_2026_09_10/geography_adjudications.csv).
 
-The completed reviews strengthen the case for **reviewing the narrower set first**. All eight sampled removals are now available: six are design negatives and two are broad design positives; all eight were judged incompatible with the parser. All 27 design-positive, parser-compatible articles are retained. These are observed sample results; unequal sampling, incomplete access, AI annotation and post-hoc query development prevent interpreting the raw fractions as population precision.
+The completed reviews strengthen the case for **reviewing the narrower set first**. All eight sampled removals are now available: six are design negatives and two are broad design positives; all eight were judged incompatible with the parser. All design-positive, parser-compatible articles in the reviewed sample are retained. These are observed sample results; unequal sampling, incomplete access, AI annotation and post-hoc query development prevent interpreting the raw fractions as population precision.
 
 | Benchmark group | Sampled | Reviewed | Design yes | Design no | Unresolved | Design yes + parser yes |
 | --- | --- | --- | --- | --- | --- | --- |
-| Complete query | 60 | 45 | 35 | 9 | 1 | 27 |
-| Retained by narrower query | 52 | 37 | 33 | 3 | 1 | 27 |
+| Complete query | 60 | 53 | 43 | 9 | 1 | 33 |
+| Retained by narrower query | 52 | 45 | 41 | 3 | 1 | 33 |
 | Removed by narrower query | 8 | 8 | 2 | 6 | 0 | 0 |
 
 **Interpretation and recruitment.** Count changes include differences in retrieval, byline completeness and the historical local phrase check. The [harmonized retrieval comparison](results/query_rankings_2026_09_10/author_rank_comparison.csv) separates the current raw-query baseline from the published ranking. The two new queries are nested and use identical metadata and annotations, making their comparison more direct. Twenty-eight older candidates that neither new query retrieves remain archived separately for screening.

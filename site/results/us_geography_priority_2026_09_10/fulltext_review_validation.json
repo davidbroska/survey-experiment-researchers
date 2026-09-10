@@ -1,0 +1,17 @@
+{
+  "reviewed_articles": 7,
+  "pdf_hashes_verified": 7,
+  "cache_hashes_verified": 7,
+  "exact_page_spans_verified": 7,
+  "article_identity_verified": 7,
+  "physical_page_numbers": true,
+  "reviews_sha256": "7f54cffbfb27cc0e4a71b33cc6b08ad860b4df48a1edc26ad6fc94ab437e6b46",
+  "packet_sha256": "a23a85008a3462a2347d08e667cdf3edf8022366ce650471aed4aa7911d01519",
+  "old_sources_modified": false,
+  "classification_harmonization": {
+    "scopus_id": "85125280963",
+    "previous_label": "us_explicit",
+    "final_label": "us_inferred",
+    "reason": "Named US institutional recruitment context, without explicit US residence statement; combined US count unchanged."
+  }
+}

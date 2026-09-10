@@ -1,4 +1,5 @@
 """Render the proximity-query audit and a public full-text benchmark inventory."""
+from pathlib import Path
 from collections import Counter
 import html
 import json
@@ -10,7 +11,7 @@ from render import render
 
 HISTORICAL_NOTICE = ("**Archived query-development stage (18 full-text reviews).** "
                      "See the [latest ranking comparison, discovery query and recommendation](RANKING_COMPARISON_REPORT.html) "
-                     "and [updated 45-article full-text inventory](FULLTEXT_BENCHMARK.html) for the subsequent evidence.\n\n")
+                     "and [updated full-text inventory](FULLTEXT_BENCHMARK.html) for the subsequent evidence.\n\n")
 
 
 def table(rows, columns):
@@ -147,13 +148,13 @@ def benchmark_page(availability,consensus, results_folder="results/precision_ben
         rows.append({**r,"review_coverage":c["review_coverage"],"design":c["design"]})
     rows.sort(key=lambda r:r["benchmark_id"])
     ready = sum(r["fulltext_readiness"] == "ready_for_fulltext_review" for r in rows)
-    current_wave = "benchmark_review_wave2" in results_folder
+    current_wave = "benchmark_review_wave" in results_folder
     destination = "SurveyExperimentRecruitment/" if current_wave else "SurveyExperimentRecruitment/private/precision_benchmark_2026_09_10/inbox/"
-    command = "python3 pipeline/benchmark_review_wave2.py" if current_wave else "python3 pipeline/precision_benchmark.py prepare --sample results/proximity_audit_2026_09_10/fulltext_sample.csv"
+    command = "python3 pipeline/" + Path(results_folder).name.rsplit("_2026", 1)[0] + ".py" if current_wave else "python3 pipeline/precision_benchmark.py prepare --sample results/proximity_audit_2026_09_10/fulltext_sample.csv"
     judgments = Counter(r["design"] for r in rows if r["review_coverage"] == "double_pass")
     reviewed = sum(judgments.values())
     md = (f"The fixed sample contains 60 retrieved articles, selected before full-text lookup. {ready} have readable identity-verified main texts or author manuscripts; {60-ready} need a usable copy. "
-        "No inaccessible paper is replaced with a more convenient article. AI-assisted annotations require human validation.\n\n"
+        "No inaccessible paper is replaced with a more convenient article. AI-assisted annotations require human validation. The user reports no Taylor & Francis access; those papers remain pending an accessible manuscript rather than a repeat publisher download request.\n\n"
         f"{reviewed} articles have two reviews: {judgments['yes']} agreed eligible survey-experiment designs, {judgments['no']} agreed negatives, and {reviewed-judgments['yes']-judgments['no']} unresolved or disputed designs. Parser compatibility and sample geography are recorded separately.\n\n"
         f"Save requested PDFs as the listed Scopus ID plus .pdf in {destination} "
         "Select Needs a copy to see the remaining download queue. Each article has a publisher link and a filename to copy.\n\n"
@@ -169,7 +170,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 function draw(){const filter=document.getElementById('filter').value,q=document.getElementById('search').value.toLowerCase();
 const selected=DATA.filter(r=>{const ready=r.fulltext_readiness==='ready_for_fulltext_review';return(filter==='all'||(filter==='ready'?ready:!ready))&&[r.title,r.doi,r.benchmark_id,r.scopus_id].join(' ').toLowerCase().includes(q)});
 document.getElementById('count').textContent=selected.length+' articles shown';
-document.getElementById('articles').innerHTML=selected.map(r=>`<article class="card"><h2>${esc(r.title)}</h2><p>${esc(r.year)} · ${esc(r.journal)} · ${esc(r.benchmark_id)}</p><p><strong>${r.fulltext_readiness==='ready_for_fulltext_review'?'Full text available':'Needs a usable copy'}</strong> · ${esc(r.review_coverage.replaceAll('_',' '))}${r.review_coverage==='double_pass'?' · Design: '+esc(r.design):''}</p><p><a href="${esc(r.article_url)}" target="_blank" rel="noopener">Publisher / DOI ↗</a>${r.source_url?' · <a href="'+esc(r.source_url)+'" target="_blank" rel="noopener">Source copy ↗</a>':''}</p><p>Filename: <code>${esc(r.suggested_filename)}</code> <button data-copy="${esc(r.suggested_filename)}">Copy filename</button></p></article>`).join('');}
+document.getElementById('articles').innerHTML=selected.map(r=>`<article class="card"><h2>${esc(r.title)}</h2><p>${esc(r.year)} · ${esc(r.journal)} · ${esc(r.benchmark_id)}</p><p><strong>${r.fulltext_readiness==='ready_for_fulltext_review'?'Full text available':'Needs a usable copy'}</strong> · ${esc(r.review_coverage.replaceAll('_',' '))}${r.publisher_access_issue?' · '+esc(r.publisher_access_issue):''}${r.review_coverage==='double_pass'?' · Design: '+esc(r.design):''}</p><p><a href="${esc(r.article_url)}" target="_blank" rel="noopener">Publisher / DOI ↗</a>${r.source_url?' · <a href="'+esc(r.source_url)+'" target="_blank" rel="noopener">Source copy ↗</a>':''}</p><p>Filename: <code>${esc(r.suggested_filename)}</code> <button data-copy="${esc(r.suggested_filename)}">Copy filename</button></p></article>`).join('');}
 document.getElementById('filter').addEventListener('change',draw);document.getElementById('search').addEventListener('input',draw);
 document.getElementById('articles').addEventListener('click',async e=>{const b=e.target.closest('[data-copy]');if(!b)return;try{await navigator.clipboard.writeText(b.dataset.copy);b.textContent='Copied';}catch{b.textContent='Select filename to copy';}});draw();
 </script>'''.replace("__DATA__",data)

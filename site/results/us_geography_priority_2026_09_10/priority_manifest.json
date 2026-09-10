@@ -1,0 +1,68 @@
+{
+  "version": "us_geography_priority_2026_09_10",
+  "reference_variant": "original_query",
+  "author_pool": 120,
+  "total_leaders_including_cutoff_ties": 114,
+  "distinct_pool_articles": 1042,
+  "article_denominator_scope": "Cross-variant union for the same 120 authors; author-count impacts use original_query membership only",
+  "distinct_pool_original_query_articles": 1036,
+  "pool_original_query_us_articles": 468,
+  "unresolved_pool_articles": 177,
+  "unresolved_articles_of_total_top50": 85,
+  "unresolved_articles_of_us_top50": 65,
+  "unresolved_articles_of_total_leader114": 172,
+  "unresolved_authors": 73,
+  "available_verified_historical_inbox_pdfs": 2,
+  "user_unavailable_not_requested_again": 1,
+  "manual_download_queue_articles": 107,
+  "automatic_acquisition_not_previously_checked": 67,
+  "distinct_top50_tied_pairs_covered": 347,
+  "annotation_assignment": "Queue generation assigns no geography label. Every unresolved article in the fixed pool is included; names and country-likelihood do not set priority.",
+  "tie_interpretation": "Within the same 120-author pool, a pair matters for top50 if either researcher currently has total or US competition rank <=50. Shared-paper coauthors move together. One US resolution may break old ties and create new ones; separate scenarios are not additive.",
+  "sources": [
+    {
+      "path": "private/query_rankings_2026_09_10/articles.csv",
+      "sha256": "706bdc83bda55c2813a7cae41f6b14569f9c1c6477061db64400864c82c48d94"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/article_geography.csv",
+      "sha256": "2438140f258f034c4d31c0a80d836f0d125da93d69849d89aee6a826306b4cc8"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/uniform_pool_original_query_us_ranking.csv",
+      "sha256": "2dc6c710d9e5eeefbb40e6399467b6413b670933aeaec8b2e7e51efed1250df7"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/original_query_ranking.csv",
+      "sha256": "b8647d4cafc1cac46571891b3affec32bf432e5527d7d69fc35c9201eafab284"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/original_query_top100_with_cutoff_ties.csv",
+      "sha256": "1e544964fb3f44c8c2a20d94b5fab4f150303ec96ebfcfe5352f824fd0610aa9"
+    },
+    {
+      "path": "inputs/manual_download_status.csv",
+      "sha256": "c28e67232db67f72d20fb0e33674b676360f938c61eb1acb4a5a12dd41520a73"
+    },
+    {
+      "path": "inputs/fulltext_followups.csv",
+      "sha256": "bdce1c428718ce3d72ba345b80a347972eadb5f93dd15bce9cb5ef3c70fab286"
+    },
+    {
+      "path": "results/open_access_acquisition.csv",
+      "sha256": "6437c96aedda41f88bd2609259eca649c4dcadaf4fd93922e57686cf0cac2e5f"
+    },
+    {
+      "path": "results/us_geography_priority_2026_09_10/round10_status.csv",
+      "sha256": "0511f5b481ece192e35c454c962b256b37f3bc894e9a6023db3b9cfacb635eb9"
+    }
+  ],
+  "outputs": {
+    "results/us_geography_priority_2026_09_10/article_priority_queue.csv": "3676a20633f5fa648419820cd7f54f4d4a35bc08f0f5fab00b214209a93890c9",
+    "results/us_geography_priority_2026_09_10/manual_download_queue.csv": "cf22d27177d38628bdc99905b0cbd6398cab0632f9d7aab02d3adc389a61e56b",
+    "results/us_geography_priority_2026_09_10/automatic_acquisition_queue.csv": "27e84890df60f052aef0c53e19a20d9cd7c48b431d70cb7e5e7a169f7f500665",
+    "results/us_geography_priority_2026_09_10/author_uncertainty.csv": "5dcdcaae6c8b3696051e745956426fd0e11bb2fc636e1dc9a485163a901f51f5",
+    "private/us_geography_priority_2026_09_10/prioritized_metadata_packet.json": "fd737dcb76d4e6700a43b9ff930285330df36697545dc02eed3d85fda826411d",
+    "private/us_geography_priority_2026_09_10/available_historical_fulltext.json": "05644d188a9d761adb235fc80dfe83541f855fb80ccb0077a4431285e2967748"
+  }
+}

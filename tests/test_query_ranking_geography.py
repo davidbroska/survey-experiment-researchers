@@ -1,9 +1,12 @@
 import sys
+import json
+import tempfile
 from pathlib import Path
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "pipeline"))
-from query_ranking_geography import resolve, harmonize, rank_authors, select_review_pool
+from query_ranking_geography import resolve, harmonize, rank_authors, select_review_pool, validate_priority_fulltext
+from common import digest
 
 
 def ev(value, priority=1, sid="1", doi=""):
@@ -18,6 +21,25 @@ def article(sid, first="10", last="20", **extra):
 
 
 class GeographyTests(unittest.TestCase):
+    def test_sampling_review_rejects_stale_bytes_wrong_page_and_escaping_path(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "private").mkdir()
+            pdf = root / "private/a.pdf"
+            pdf.write_bytes(b"mock PDF for hash validation")
+            cache = root / "private/a.json"
+            cache.write_text(json.dumps({"source_sha256": digest(pdf.read_bytes()),
+                                         "pages": ["Participants were recruited in the United States.", "Other methods."]}))
+            row = dict(sample_us_label="us_explicit", pdf_path="private/a.pdf", text_cache_path="private/a.json",
+                       source_sha256=digest(pdf.read_bytes()), text_cache_sha256=digest(cache.read_bytes()),
+                       page="1", evidence_quote="recruited in the United States", rationale="US recruitment stated.",
+                       reviewer="test", reviewer_type="AI_assisted", human_validated="false", review_date="2026-09-10")
+            self.assertEqual(validate_priority_fulltext(row, root), row)
+            for edit in ({"page": "2"}, {"source_sha256": "stale"}, {"text_cache_sha256": "stale"},
+                         {"pdf_path": "../outside.pdf"}, {"evidence_quote": ""}):
+                with self.subTest(edit=edit), self.assertRaises(ValueError):
+                    validate_priority_fulltext({**row, **edit}, root)
+
     def test_unknown_and_fulltext_precedence_do_not_silence_conflict(self):
         self.assertEqual(resolve([])["sample_us_label"], "unreviewed")
         result = resolve([ev("non_us"), ev("us_explicit", 2)])
