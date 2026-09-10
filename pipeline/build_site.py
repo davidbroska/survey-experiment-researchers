@@ -8,7 +8,7 @@ import zipfile
 from common import ROOT, digest, write_json
 
 REPORTS = ('EXECUTIVE_SUMMARY', 'SUPPORTING_INFORMATION', 'QUERY_REPORT',
-           'GEOGRAPHY_REPORT', 'FULLTEXT_REVIEW', 'YEAR_WINDOW_COMPARISON', 'MANUAL_DOWNLOADS', 'PRIORITY_DOWNLOADS')
+           'GEOGRAPHY_REPORT', 'FULLTEXT_REVIEW', 'YEAR_WINDOW_COMPARISON', 'MANUAL_DOWNLOADS', 'PRIORITY_DOWNLOADS', 'QUERY_REVISION')
 CSV_FILES = ('top100_enriched', 'top100_provisional', 'top100_article_annotations',
              'top100_author_article_links', 'top100_cutoff_ties', 'fulltext_download_queue',
              'year_window_author_comparison', 'year_window_tie_comparison',
@@ -46,6 +46,9 @@ def build():
     files = ['TOP100.html', 'TOP40.html', 'queries/recommended.txt']
     files += [f'{r}.{ext}' for r in REPORTS for ext in ('md', 'html')]
     files += [f'results/{r}.csv' for r in CSV_FILES]
+    files += [f'queries/revision_2026_09_10/{name}.txt' for name in ('previous', 'revised', 'additional_embedded_variants')]
+    files += [f'results/query_revision_2026_09_10/{name}.csv' for name in
+              ('retrieval_comparison', 'sequential_changes', 'changed_article_metadata', 'local_verification_by_change', 'field_checks')]
     for name in files:
         dest = site / name
         dest.parent.mkdir(parents=True, exist_ok=True)

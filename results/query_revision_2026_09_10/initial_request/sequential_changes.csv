@@ -1,0 +1,7 @@
+change,scope,previous_records,revised_records,shared_records,added_records,removed_records,net_records,previous_unique_articles,revised_unique_articles,added_unique_articles,removed_unique_articles,net_unique_articles
+participants,global,9113,9442,9113,329,0,329,9110,9438,328,0,328
+participants,journal_frame,7307,7561,7307,254,0,254,7304,7558,254,0,254
+participants_messages,global,9442,9446,9442,4,0,4,9438,9442,4,0,4
+participants_messages,journal_frame,7561,7565,7561,4,0,4,7558,7562,4,0,4
+revised,global,9446,9427,9427,0,19,-19,9442,9423,0,19,-19
+revised,journal_frame,7565,7547,7547,0,18,-18,7562,7544,0,18,-18

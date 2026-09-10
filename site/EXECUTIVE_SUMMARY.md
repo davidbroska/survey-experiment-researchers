@@ -2,7 +2,7 @@ Our goal is to identify data donors who have often conducted survey experiments.
 
 1. We first need to define a set of journals where experimental social scientists would publish their research. We take all 3,401 journals that investigators in Time-sharing Experiments for the Social Sciences (TESS) have published in. Within these journals, we search titles, abstracts, and keywords for survey-experiment articles published in 2010–2026. Candidate donors need not have participated in TESS.
 
-2. We then search for journal articles with search terms related to survey experiments. The search combines exact survey- and vignette-experiment phrases with specific descriptions of embedded experiments, randomized vignettes, reading assignments, information treatments, and question-wording experiments. Exact phrases preserve punctuation, reducing accidental matches between adjacent but unrelated words. The query is shown below:
+2. We then search for journal articles with search terms related to survey experiments. The search combines exact survey- and vignette-experiment phrases with specific descriptions of embedded experiments, randomized vignettes, reading assignments, information treatments, and question-wording experiments. A local text check preserves punctuation and reduces accidental matches between adjacent but unrelated words. The query is shown below:
 
 ```text
 (

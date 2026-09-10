@@ -1,0 +1,16 @@
+scopus_id,phrase,field,count,query,retrieved_at
+84924585051,experimental survey,TITLE,0,EID(2-s2.0-84924585051) AND TITLE({experimental survey}),2026-09-10T11:26:29.376741+00:00
+84924585051,experimental survey,ABS,1,EID(2-s2.0-84924585051) AND ABS({experimental survey}),2026-09-10T11:26:29.481983+00:00
+84924585051,experimental survey,KEY,0,EID(2-s2.0-84924585051) AND KEY({experimental survey}),2026-09-10T11:26:29.350186+00:00
+84979503153,information experiment,TITLE,0,EID(2-s2.0-84979503153) AND TITLE({information experiment}),2026-09-10T11:26:30.383625+00:00
+84979503153,information experiment,ABS,1,EID(2-s2.0-84979503153) AND ABS({information experiment}),2026-09-10T11:26:30.396343+00:00
+84979503153,information experiment,KEY,0,EID(2-s2.0-84979503153) AND KEY({information experiment}),2026-09-10T11:26:30.433108+00:00
+84961190121,information experiment,TITLE,0,EID(2-s2.0-84961190121) AND TITLE({information experiment}),2026-09-10T11:26:31.326291+00:00
+84961190121,information experiment,ABS,0,EID(2-s2.0-84961190121) AND ABS({information experiment}),2026-09-10T11:26:31.434984+00:00
+84961190121,information experiment,KEY,0,EID(2-s2.0-84961190121) AND KEY({information experiment}),2026-09-10T11:26:31.437962+00:00
+84961190121,information treatment,TITLE,0,EID(2-s2.0-84961190121) AND TITLE({information treatment}),2026-09-10T11:27:12.851589+00:00
+84961190121,information treatment,ABS,1,EID(2-s2.0-84961190121) AND ABS({information treatment}),2026-09-10T11:27:13.303614+00:00
+84961190121,information treatment,KEY,0,EID(2-s2.0-84961190121) AND KEY({information treatment}),2026-09-10T11:27:12.772630+00:00
+85062297171,information treatment,TITLE,0,EID(2-s2.0-85062297171) AND TITLE({information treatment}),2026-09-10T11:27:13.777583+00:00
+85062297171,information treatment,ABS,1,EID(2-s2.0-85062297171) AND ABS({information treatment}),2026-09-10T11:27:13.851531+00:00
+85062297171,information treatment,KEY,0,EID(2-s2.0-85062297171) AND KEY({information treatment}),2026-09-10T11:27:14.357544+00:00

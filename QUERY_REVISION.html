@@ -1,0 +1,164 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Revised query and retrieval comparison</title><style>body{font:16px/1.6 system-ui,sans-serif;max-width:1080px;margin:3rem auto;padding:0 1rem;color:#192b36}h1{line-height:1.2}a{color:#136294}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f0f5f8;padding:1.2rem;font-size:13px}code{font-family:ui-monospace,monospace}table{border-collapse:collapse;width:100%}th,td{text-align:left;border-bottom:1px solid #dbe3e8;padding:.5rem}.scroll{overflow:auto}</style><h1>Revised query and retrieval comparison</h1><p>The revised query retrieves <strong>8,074 distinct articles</strong> within the same 3,401-journal frame and 2010–2026 publication window. Relative to a fresh run of the previous query, it adds 788 articles and loses 18, a net change of <strong>+770</strong> (10.5%). These are candidate articles for screening, not confirmed eligible datasets or donors.</p>
+<div class="scroll"><table>
+<tr><th>Retrieval measure</th><th>Previous query, rerun</th><th>Revised query</th><th>Net change</th></tr>
+<tr><td>Global Scopus records</td><td>9,113</td><td>10,507</td><td>+1,394</td></tr>
+<tr><td>Records in the journal frame</td><td>7,307</td><td>8,077</td><td>+770</td></tr>
+<tr><td>Distinct in-frame articles after DOI deduplication</td><td>7,304</td><td>8,074</td><td>+770</td></tr>
+</table></div>
+<p>The earlier archived search contained 7,302 distinct in-frame articles. Rerunning that unchanged query now produces 7,304; this +2 difference is database change, separate from the query revision. The dashboard&#x27;s existing reviewed cohort remains attached to its archived query; the new retrieval has not yet been incorporated into its geography annotations or rankings.</p>
+<p>The following changes are cumulative in the displayed order. Overlapping matches are credited once, so these contributions sum to the net change; they are not independent estimates of each phrase&#x27;s value.</p>
+<div class="scroll"><table>
+<tr><th>Query change</th><th>Change in distinct in-frame articles</th><th>Cumulative articles</th></tr>
+<tr><td>Add participant* to text assignment and question wording</td><td>+254</td><td>7,558</td></tr>
+<tr><td>Add the initial eight information/message assignment phrases</td><td>+4</td><td>7,562</td></tr>
+<tr><td>Remove the four national-survey embedded-experiment phrases</td><td>-18</td><td>7,544</td></tr>
+<tr><td>Add the 12 explicit survey-design phrases</td><td>+430</td><td>7,974</td></tr>
+<tr><td>Add the eight generic in/within-survey phrases</td><td>+13</td><td>7,987</td></tr>
+<tr><td>Add the remaining six information/message assignment phrases</td><td>+3</td><td>7,990</td></tr>
+<tr><td>Expand information experiments and add its participant* context</td><td>+84</td><td>8,074</td></tr>
+</table></div>
+<p>“Survey-based experiments” was already present, together with its singular and unhyphenated forms. The revision adds 40 exact phrases, removes the four requested national-survey phrases, and permits <code>participant*</code> in the text-assignment, question-wording, and information-treatment context requirements. It introduces no design, country, provider, or representativeness exclusions. An article describing a national sample can still match another retained term. Longer phrases such as “experimental survey study” overlap with “experimental survey”; their presence does not imply an independent retrieval gain.</p>
+<p>We also tested generic variants involving “embedded within,” plural “surveys,” and intervening verbs, such as “experiment was embedded in a survey.” That <a href="queries/revision_2026_09_10/additional_embedded_variants.txt">separate diagnostic</a> identifies 10 further in-frame records beyond the revised query (14 globally). These variants are recorded separately from the requested query below.</p>
+<p><strong>Retrieval and review.</strong> The previous, revised, and intermediate versions were executed as unions of positive Scopus phrase-family searches. Identical clauses share the same archived responses. Every result page was retrieved and checked against the reported total; Source IDs determine journal-frame membership. We compare Scopus IDs locally and then compare normalized DOI identities, falling back to Scopus ID when DOI is absent. Full metadata for all added and removed records is retained privately for screening. Retrieval ran from 2026-09-10T10:59:02.609024+00:00 to 2026-09-10T11:23:10.176191+00:00. <a href="results/query_revision_2026_09_10/retrieval_comparison.csv">Counts</a>, <a href="results/query_revision_2026_09_10/sequential_changes.csv">cumulative contributions</a>, and <a href="results/query_revision_2026_09_10/changed_article_metadata.csv">added/removed article metadata</a> accompany the complete manifests in the repository.</p>
+<p>Of the 788 added in-frame records, <strong>628 pass the strict local phrase/context check</strong> and 160 do not. The latter remain in a review queue: missing indexed keywords, context in another sentence, and punctuation-crossing database matches are possible reasons. Passing this check does not establish study eligibility. <a href="results/query_revision_2026_09_10/local_verification_by_change.csv">Local verification by change</a>.</p>
+<p>The final information-family expansion adds 84 in-frame records, but only <strong>7</strong> pass the local check for that stage. The returned records include clinical-treatment and visual-memory studies. “Experimental survey” also retrieves useful manipulated-scenario studies, survey-recruitment experiments, and a paper recommending an experimental survey as future research. These broad additions therefore require screening before researcher counts change; their additional hits should not be described as confirmed survey experiments.</p>
+<p>Field-specific Scopus API checks found <code>ABS({experimental survey})</code> matching “experimental, survey” and <code>ABS({information experiment})</code> matching “information. Experiment.” <code>ABS({information treatment})</code> also matched “information: Treatment” in clinical-trial registration text. For these examples, the same phrase returned zero title and keyword matches. Thus braces alone did not prevent the punctuation errors in the tested endpoint. The local matcher rejects these strings. <a href="results/query_revision_2026_09_10/field_checks.csv">Queries and observed field counts</a> document the tests; the underlying responses and full abstracts remain private.</p>
+<p>Retrieval gains do not establish precision or recall. Eligibility requires inspection of the treatment, response structure, original fielding, and access to respondent data and survey materials. These additions have not received geography annotation or independent eligibility validation.</p>
+<p><strong>Complete revised query.</strong> The query searches titles, abstracts, and keywords. Curly braces request exact phrases, with singular/plural and spelling variants enumerated explicitly. <a href="https://dev.elsevier.com/sc_search_tips.html">Elsevier&#x27;s documented syntax</a> describes punctuation-sensitive matching; the observed exceptions above make a separate local check necessary. The pipeline applies the journal frame using Source IDs. <a href="queries/revision_2026_09_10/revised.txt">Download revised query</a> · <a href="queries/revision_2026_09_10/previous.txt">Previous query</a>.</p>
+<pre><code>(
+  (TITLE-ABS-KEY({survey experiment}
+      OR {survey experiments}
+      OR {survey-based experiment}
+      OR {survey-based experiments}
+      OR {survey based experiment}
+      OR {survey based experiments}
+      OR {survey-embedded experiment}
+      OR {survey-embedded experiments}
+      OR {survey embedded experiment}
+      OR {survey embedded experiments}
+      OR {survey-experimental}
+      OR {survey experimental}
+      OR {experimental survey}
+      OR {experimental surveys}
+      OR {experimental survey study}
+      OR {experimental survey studies}
+      OR {survey-based randomized experiment}
+      OR {survey-based randomized experiments}
+      OR {survey based randomized experiment}
+      OR {survey based randomized experiments}
+      OR {survey-based randomised experiment}
+      OR {survey-based randomised experiments}
+      OR {survey based randomised experiment}
+      OR {survey based randomised experiments}))
+  OR (TITLE-ABS-KEY({vignette experiment}
+      OR {vignette experiments}
+      OR {experimental vignette}
+      OR {experimental vignettes}
+      OR {vignette-based experiment}
+      OR {vignette-based experiments}
+      OR {vignette based experiment}
+      OR {vignette based experiments}))
+  OR (TITLE-ABS-KEY({framing experiment}
+      OR {framing experiments}
+      OR {information provision experiment}
+      OR {information provision experiments}
+      OR {information-provision experiment}
+      OR {information-provision experiments}
+      OR {scenario-based experiment}
+      OR {scenario-based experiments}
+      OR {scenario based experiment}
+      OR {scenario based experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))
+  OR (TITLE-ABS-KEY({vignette-based survey}
+      OR {vignette-based surveys}
+      OR {vignette based survey}
+      OR {vignette based surveys}) AND TITLE-ABS-KEY(random* OR experiment*))
+  OR (TITLE-ABS-KEY({experiment embedded in a survey}
+      OR {experiments embedded in a survey}
+      OR {experiment embedded in an online survey}
+      OR {experiments embedded in an online survey}
+      OR {embedded survey experiment}
+      OR {embedded survey experiments}
+      OR {survey with an embedded experiment}
+      OR {survey with embedded experiments}
+      OR {surveys with embedded experiments}
+      OR {experiment in an online survey}
+      OR {experiments in an online survey}
+      OR {experiment within an online survey}
+      OR {experiments within an online survey}
+      OR {experiment in a survey}
+      OR {experiments in a survey}
+      OR {experiment within a survey}
+      OR {experiments within a survey}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*))
+  OR (TITLE-ABS-KEY({factorial survey}
+      OR {factorial surveys}
+      OR {factorial vignette experiment}
+      OR {factorial vignette experiments}
+      OR {randomized vignette experiment}
+      OR {randomized vignette experiments}
+      OR {randomised vignette experiment}
+      OR {randomised vignette experiments}
+      OR {randomized vignette}
+      OR {randomized vignettes}
+      OR {randomised vignette}
+      OR {randomised vignettes}))
+  OR (TITLE-ABS-KEY({randomly assigned to read}
+      OR {randomly allocated to read}
+      OR {randomly selected to read}
+      OR {randomized to read}
+      OR {randomised to read}
+      OR {randomly assigned to a vignette}
+      OR {randomly assigned a vignette}
+      OR {randomly assigned to one of two vignettes}
+      OR {randomly assigned to one of three vignettes}
+      OR {randomly assigned to receive information}
+      OR {randomly provided with information}
+      OR {randomly presented with a vignette}
+      OR {randomly presented with vignettes}
+      OR {randomly presented with a scenario}
+      OR {randomly shown a vignette}
+      OR {randomly presented with information}
+      OR {randomly exposed to information}
+      OR {randomly assigned to receive a message}
+      OR {randomly assigned to receive messages}
+      OR {randomly presented with a message}
+      OR {randomly presented with messages}
+      OR {randomly exposed to a message}
+      OR {randomly exposed to messages}
+      OR {randomly shown information}
+      OR {randomly assigned information}
+      OR {randomly assigned a message}
+      OR {randomly assigned messages}
+      OR {randomly shown a message}
+      OR {randomly shown messages}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent* OR participant*))
+  OR (TITLE-ABS-KEY({information treatment}
+      OR {information treatments}
+      OR {informational treatment}
+      OR {informational treatments}
+      OR {information experiment}
+      OR {information experiments}
+      OR {randomized information experiment}
+      OR {randomized information experiments}
+      OR {randomised information experiment}
+      OR {randomised information experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent* OR participant*) AND TITLE-ABS-KEY(random* OR experiment*))
+  OR (TITLE-ABS-KEY({question wording experiment}
+      OR {question wording experiments}
+      OR {question-wording experiment}
+      OR {question-wording experiments}
+      OR {wording experiment}
+      OR {wording experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent* OR participant*))
+)
+AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR &gt; 2009 AND PUBYEAR &lt; 2027</code></pre>
+<p>Reproduce the archived comparison with <code>python3 pipeline/query_revision.py report</code>; <code>retrieve</code> resumes the dated API snapshot, and <code>all</code> retrieves and reports. A subsequent live comparison requires a new dated namespace to preserve this snapshot.</p>
+<p><strong>Illustrative abstract checks.</strong> These selected examples describe eligibility concerns and useful additions; they are not a precision estimate.</p>
+<div class="scroll"><table>
+<tr><th>Article</th><th>Abstract-based assessment</th></tr>
+<tr><td><a href="https://doi.org/10.1016/j.gloenvcha.2018.09.013">Taking climate change here and now – mitigating ideological polarization with psychological distance</a></td><td>Reports a framing manipulation and policy/behavior outcomes in an American adult sample; a useful candidate for treatment-material review.</td></tr>
+<tr><td><a href="https://doi.org/10.1111/kykl.12349">Between fearmongers and Samaritans: Does information provision affect attitudes towards the right of asylum in Germany?</a></td><td>Reports a self-designed survey with randomized information about asylum seekers; a useful addition for the intended donor search.</td></tr>
+<tr><td><a href="https://doi.org/10.1007/s10902-014-9567-7">Reference-Dependency of Happiness Ratings</a></td><td>Mentions an experimental survey as future research. The abstract does not establish random assignment in the reported study, despite passing the local phrase check.</td></tr>
+<tr><td><a href="https://doi.org/10.1186/1471-2288-14-6">Effect of numbering of return envelopes on participation, explicit refusals, and bias: Experiment and meta-analysis</a></td><td>Manipulates mail-return envelope numbering and measures participation. This is a recruitment-method experiment, outside the target of treatments embedded in survey questions.</td></tr>
+<tr><td><a href="https://doi.org/10.1111/pere.12062">Self-expansion and flow: The roles of challenge, skill, affect, and activation</a></td><td>The Scopus abstract-field check matches experimental survey across a comma; the local phrase check correctly fails. The abstract combines several methods without establishing a survey-embedded manipulation.</td></tr>
+<tr><td><a href="https://doi.org/10.1016/j.actpsy.2016.05.013">Gist in time: Scene semantics and structure enhance recall of searched objects</a></td><td>Reports visual-search and object-memory tasks. The Scopus abstract-field check matches information experiment across a full stop; the local check fails.</td></tr>
+<tr><td><a href="https://doi.org/10.1016/j.jaac.2016.01.005">Dialectical Behavior Therapy Compared with Enhanced Usual Care for Adolescents with Repeated Suicidal and Self-Harming Behavior: Outcomes over a One-Year Follow-Up</a></td><td>Reports a clinical psychotherapy trial. The Scopus abstract-field check matches information treatment across a colon in registration text; the local check fails.</td></tr>
+<tr><td><a href="https://doi.org/10.1016/j.foodpol.2021.102192">Information effects on consumer preferences for alternative animal feedstuffs</a></td><td>Uses a discrete-choice experiment with multiple attributes. Information-treatment language alone does not establish compatibility with the parser.</td></tr>
+</table></div>
+<p><a href="TOP100.html#summary">Open the reviewed researcher dashboard</a>.</p></html>

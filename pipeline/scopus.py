@@ -62,14 +62,14 @@ def count(query):
             "retrieved_at": result["retrieved_at"]}
 
 
-def search(query, view="COMPLETE"):
+def search(query, view="COMPLETE", namespace="search"):
     cursor, seen_cursors, records, expected, dates = "*", set(), {}, None, []
     while True:
         if cursor in seen_cursors:
             raise RuntimeError("Pagination cursor repeated before retrieval completed")
         seen_cursors.add(cursor)
         result = request({"query": query, "count": 25 if view == "COMPLETE" else 200,
-                          "view": view, "cursor": cursor})
+                          "view": view, "cursor": cursor}, namespace)
         dates.append(result["retrieved_at"])
         sr = result["body"]["search-results"]
         total = int(sr["opensearch:totalResults"])
@@ -91,4 +91,3 @@ def search(query, view="COMPLETE"):
         if not entries or not nxt or nxt == cursor or len(records) > total:
             raise RuntimeError(f"Incomplete retrieval: {len(records)} of {total}")
         cursor = nxt
-

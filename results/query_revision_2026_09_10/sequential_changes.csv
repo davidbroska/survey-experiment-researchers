@@ -1,0 +1,15 @@
+change,scope,previous_records,revised_records,shared_records,added_records,removed_records,net_records,previous_unique_articles,revised_unique_articles,added_unique_articles,removed_unique_articles,net_unique_articles
+participants,global,9113,9442,9113,329,0,329,9110,9438,328,0,328
+participants,journal_frame,7307,7561,7307,254,0,254,7304,7558,254,0,254
+participants_messages,global,9442,9446,9442,4,0,4,9438,9442,4,0,4
+participants_messages,journal_frame,7561,7565,7561,4,0,4,7558,7562,4,0,4
+initial_request,global,9446,9427,9427,0,19,-19,9442,9423,0,19,-19
+initial_request,journal_frame,7565,7547,7547,0,18,-18,7562,7544,0,18,-18
+explicit_designs,global,9427,10356,9427,929,0,929,9423,10352,929,0,929
+explicit_designs,journal_frame,7547,7977,7547,430,0,430,7544,7974,430,0,430
+embedded_variants,global,10356,10374,10356,18,0,18,10352,10370,18,0,18
+embedded_variants,journal_frame,7977,7990,7977,13,0,13,7974,7987,13,0,13
+expanded_text_assignments,global,10374,10380,10374,6,0,6,10370,10376,6,0,6
+expanded_text_assignments,journal_frame,7990,7993,7990,3,0,3,7987,7990,3,0,3
+revised,global,10380,10507,10380,127,0,127,10376,10503,127,0,127
+revised,journal_frame,7993,8077,7993,84,0,84,7990,8074,84,0,84

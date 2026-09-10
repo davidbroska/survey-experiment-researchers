@@ -1,0 +1,293 @@
+[
+  {
+    "view": "STANDARD",
+    "query": "(TITLE-ABS-KEY({information treatment} OR {information treatments} OR {informational treatment} OR {informational treatments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*) AND TITLE-ABS-KEY(random* OR experiment*)) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027",
+    "expected": 179,
+    "retrieved": 179,
+    "complete": true,
+    "dates": [
+      "2026-09-10T10:59:07.987140+00:00"
+    ],
+    "private_snapshot": "private/query_revision_2026_09_10/searches/0e3945ca38ca7f9b2e14a77bb1bf15d5fedb32b00560ef05118ccb5cdc656d6c.json",
+    "sha256": "47347b4ecd09c4ffdf26c6883d44838baec9ecf5cf6bcf8bc42f531d1dbb6bc8"
+  },
+  {
+    "view": "STANDARD",
+    "query": "(TITLE-ABS-KEY({randomly assigned to read} OR {randomly allocated to read} OR {randomly selected to read} OR {randomized to read} OR {randomised to read} OR {randomly assigned to a vignette} OR {randomly assigned a vignette} OR {randomly assigned to one of two vignettes} OR {randomly assigned to one of three vignettes} OR {randomly assigned to receive information} OR {randomly provided with information} OR {randomly presented with a vignette} OR {randomly presented with vignettes} OR {randomly presented with a scenario} OR {randomly shown a vignette}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent* OR participant*)) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027",
+    "expected": 526,
+    "retrieved": 526,
+    "complete": true,
+    "dates": [
+      "2026-09-10T10:59:12.193024+00:00",
+      "2026-09-10T10:59:16.297312+00:00",
+      "2026-09-10T10:59:19.242400+00:00"
+    ],
+    "private_snapshot": "private/query_revision_2026_09_10/searches/0fb15245036ba4e3380ffd878bc5ad4162a31eb99678109d13385026969f3b5c.json",
+    "sha256": "7e0058d67389ed10f2a995d1fdb4ada071a49afed50b3b4f8044f3134cfa3ba6"
+  },
+  {
+    "view": "STANDARD",
+    "query": "(TITLE-ABS-KEY({randomly assigned to read} OR {randomly allocated to read} OR {randomly selected to read} OR {randomized to read} OR {randomised to read} OR {randomly assigned to a vignette} OR {randomly assigned a vignette} OR {randomly assigned to one of two vignettes} OR {randomly assigned to one of three vignettes} OR {randomly assigned to receive information} OR {randomly provided with information} OR {randomly presented with a vignette} OR {randomly presented with vignettes} OR {randomly presented with a scenario} OR {randomly shown a vignette}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*)) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027",
+    "expected": 186,
+    "retrieved": 186,
+    "complete": true,
+    "dates": [
+      "2026-09-10T10:59:15.417002+00:00"
+    ],
+    "private_snapshot": "private/query_revision_2026_09_10/searches/13444be8a72863396ee0d9578f9e528b8f278d2bb7c4efd6cdc1d3043d1b145c.json",
+    "sha256": "c63f5fa4cfd29a5687ecde8059b85cb6055ce72a9a077f4f3cc712bc69a9df24"
+  },
+  {
+    "view": "STANDARD",
+    "query": "(TITLE-ABS-KEY({vignette experiment} OR {vignette experiments} OR {experimental vignette} OR {experimental vignettes} OR {vignette-based experiment} OR {vignette-based experiments} OR {vignette based experiment} OR {vignette based experiments})) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027",
+    "expected": 1498,
+    "retrieved": 1498,
+    "complete": true,
+    "dates": [
+      "2026-09-10T10:59:22.877108+00:00",
+      "2026-09-10T10:59:27.734630+00:00",
+      "2026-09-10T10:59:32.215606+00:00",
+      "2026-09-10T10:59:37.249463+00:00",
+      "2026-09-10T10:59:41.539976+00:00",
+      "2026-09-10T10:59:45.829241+00:00",
+      "2026-09-10T10:59:50.086683+00:00",
+      "2026-09-10T10:59:52.646513+00:00"
+    ],
+    "private_snapshot": "private/query_revision_2026_09_10/searches/18bc8be86dbf06a003ce4bc9ec22869cbdbd5b30c6f87b2276af2ddbb9f4bd15.json",
+    "sha256": "6d4999212bff19aa38882cf74c24f002c2233e294d2041a85f52f04c096aa122"
+  },
+  {
+    "view": "STANDARD",
+    "query": "(TITLE-ABS-KEY({factorial survey} OR {factorial surveys} OR {factorial vignette experiment} OR {factorial vignette experiments} OR {randomized vignette experiment} OR {randomized vignette experiments} OR {randomised vignette experiment} OR {randomised vignette experiments} OR {randomized vignette} OR {randomized vignettes} OR {randomised vignette} OR {randomised vignettes})) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027",
+    "expected": 735,
+    "retrieved": 735,
+    "complete": true,
+    "dates": [
+      "2026-09-10T10:59:06.231321+00:00",
+      "2026-09-10T10:59:10.437046+00:00",
+      "2026-09-10T10:59:14.887566+00:00",
+      "2026-09-10T10:59:18.185939+00:00"
+    ],
+    "private_snapshot": "private/query_revision_2026_09_10/searches/1c5410a940aeac5d332bb466002e02eafa06e447d865f3bb51f0a3218c020843.json",
+    "sha256": "48e16303ccc67c7dbf3933893e300d2759e6b82de8576816d0d23a78f3f84f25"
+  },
+  {
+    "view": "STANDARD",
+    "query": "(TITLE-ABS-KEY({framing experiment} OR {framing experiments} OR {information provision experiment} OR {information provision experiments} OR {information-provision experiment} OR {information-provision experiments} OR {scenario-based experiment} OR {scenario-based experiments} OR {scenario based experiment} OR {scenario based experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*)) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027",
+    "expected": 367,
+    "retrieved": 367,
+    "complete": true,
+    "dates": [
+      "2026-09-10T10:59:07.349146+00:00",
+      "2026-09-10T10:59:11.322650+00:00"
+    ],
+    "private_snapshot": "private/query_revision_2026_09_10/searches/214a3189aea2e813cfb4723f32ea5522bee70d7c3f442da5cf6b3ce09b861421.json",
+    "sha256": "083f149ec84be1e155e57b5893b50e5787d3bc545f7d8fb6a381c05362deab20"
+  },
+  {
+    "view": "STANDARD",
+    "query": "(TITLE-ABS-KEY({survey experiment} OR {survey experiments} OR {survey-based experiment} OR {survey-based experiments} OR {survey based experiment} OR {survey based experiments} OR {survey-embedded experiment} OR {survey-embedded experiments} OR {survey embedded experiment} OR {survey embedded experiments} OR {survey-experimental} OR {survey experimental})) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027",
+    "expected": 6667,
+    "retrieved": 6667,
+    "complete": true,
+    "dates": [
+      "2026-09-10T10:59:19.888025+00:00",
+      "2026-09-10T10:59:24.051560+00:00",
+      "2026-09-10T10:59:28.363445+00:00",
+      "2026-09-10T10:59:32.572878+00:00",
+      "2026-09-10T10:59:37.189847+00:00",
+      "2026-09-10T10:59:41.903919+00:00",
+      "2026-09-10T10:59:46.176566+00:00",
+      "2026-09-10T10:59:50.792621+00:00",
+      "2026-09-10T10:59:55.039075+00:00",
+      "2026-09-10T10:59:59.192257+00:00",
+      "2026-09-10T11:00:21.060686+00:00",
+      "2026-09-10T11:00:25.213013+00:00",
+      "2026-09-10T11:00:29.129417+00:00",
+      "2026-09-10T11:00:33.342992+00:00",
+      "2026-09-10T11:00:38.014530+00:00",
+      "2026-09-10T11:00:42.175993+00:00",
+      "2026-09-10T11:00:46.243648+00:00",
+      "2026-09-10T11:00:50.281509+00:00",
+      "2026-09-10T11:00:54.229901+00:00",
+      "2026-09-10T11:00:58.442881+00:00",
+      "2026-09-10T11:01:02.805637+00:00",
+      "2026-09-10T11:01:06.848173+00:00",
+      "2026-09-10T11:01:11.007131+00:00",
+      "2026-09-10T11:01:15.389792+00:00",
+      "2026-09-10T11:01:19.404740+00:00",
+      "2026-09-10T11:01:23.831444+00:00",
+      "2026-09-10T11:01:27.686801+00:00",
+      "2026-09-10T11:01:31.533950+00:00",
+      "2026-09-10T11:01:35.546775+00:00",
+      "2026-09-10T11:01:39.736342+00:00",
+      "2026-09-10T11:01:43.751355+00:00",
+      "2026-09-10T11:01:47.702296+00:00",
+      "2026-09-10T11:01:51.902240+00:00",
+      "2026-09-10T11:01:54.005971+00:00"
+    ],
+    "private_snapshot": "private/query_revision_2026_09_10/searches/2ce431c0666fa5c8cab18e5876fdac45c92a66e45e23173e6f2ad1cd69dacb4c.json",
+    "sha256": "3a0be116a828767254d91c261a0f1803ac00b10380a501f0445ff80826fba334"
+  },
+  {
+    "view": "COMPLETE",
+    "query": "(TITLE-ABS-KEY({question wording experiment} OR {question wording experiments} OR {question-wording experiment} OR {question-wording experiments} OR {wording experiment} OR {wording experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent* OR participant*)) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027",
+    "expected": 26,
+    "retrieved": 26,
+    "complete": true,
+    "dates": [
+      "2026-09-10T11:01:55.803918+00:00",
+      "2026-09-10T11:01:57.007245+00:00"
+    ],
+    "private_snapshot": "private/query_revision_2026_09_10/searches/30ff4a93e147371aafce36d31054cbfbe25c7108a6e1c2f9758642de44a9b9ea.json",
+    "sha256": "df99da0e22ce9164eea3a59d116e5e17faee78cb2a2906837c78ddcff39ede98"
+  },
+  {
+    "view": "STANDARD",
+    "query": "(TITLE-ABS-KEY({randomly assigned to read} OR {randomly allocated to read} OR {randomly selected to read} OR {randomized to read} OR {randomised to read} OR {randomly assigned to a vignette} OR {randomly assigned a vignette} OR {randomly assigned to one of two vignettes} OR {randomly assigned to one of three vignettes} OR {randomly assigned to receive information} OR {randomly provided with information} OR {randomly presented with a vignette} OR {randomly presented with vignettes} OR {randomly presented with a scenario} OR {randomly shown a vignette} OR {randomly presented with information} OR {randomly exposed to information} OR {randomly assigned to receive a message} OR {randomly assigned to receive messages} OR {randomly presented with a message} OR {randomly presented with messages} OR {randomly exposed to a message} OR {randomly exposed to messages}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent* OR participant*)) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027",
+    "expected": 533,
+    "retrieved": 533,
+    "complete": true,
+    "dates": [
+      "2026-09-10T10:59:12.020389+00:00",
+      "2026-09-10T10:59:16.204918+00:00",
+      "2026-09-10T10:59:19.227327+00:00"
+    ],
+    "private_snapshot": "private/query_revision_2026_09_10/searches/61afe2de23cd9a7bc7e575e0549ff63fb741e37dac27674de29c5dc0c891e6f7.json",
+    "sha256": "bc5aaf4440f10d453c41b380eff390c11126dff5b11fd16fc6edeeef72660565"
+  },
+  {
+    "view": "COMPLETE",
+    "query": "(TITLE-ABS-KEY({experiment embedded within a survey} OR {experiments embedded within a survey} OR {experiment embedded within an online survey} OR {experiments embedded within an online survey} OR {experiments embedded in surveys} OR {experiments embedded in online surveys} OR {experiment was embedded in a survey} OR {experiments were embedded in a survey} OR {experiments were embedded in surveys} OR {experiment was embedded in an online survey} OR {experiments were embedded in an online survey} OR {experiments were embedded in online surveys}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*)) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027",
+    "expected": 20,
+    "retrieved": 20,
+    "complete": true,
+    "dates": [
+      "2026-09-10T11:01:55.809765+00:00"
+    ],
+    "private_snapshot": "private/query_revision_2026_09_10/searches/639b0556629a965467574bc12e5acde7a181000f4a3c017d8468199545ca0ecf.json",
+    "sha256": "02ac592c6b78f0e2818035078ae8430351d51d909e6d8959c5a1827cfa5f81a9"
+  },
+  {
+    "view": "STANDARD",
+    "query": "(TITLE-ABS-KEY({question wording experiment} OR {question wording experiments} OR {question-wording experiment} OR {question-wording experiments} OR {wording experiment} OR {wording experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*)) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027",
+    "expected": 25,
+    "retrieved": 25,
+    "complete": true,
+    "dates": [
+      "2026-09-10T10:59:07.287475+00:00"
+    ],
+    "private_snapshot": "private/query_revision_2026_09_10/searches/6d3d6f3f02e61e30aebbea58ecb0905d7e6b31e9d6f38941cca984c4cca3f67c.json",
+    "sha256": "65cf98fde84accf81e4ff9f61fe76dd7b5090cfbab0c6dd7bdfd7d2b3245498e"
+  },
+  {
+    "view": "STANDARD",
+    "query": "(TITLE-ABS-KEY({vignette-based survey} OR {vignette-based surveys} OR {vignette based survey} OR {vignette based surveys}) AND TITLE-ABS-KEY(random* OR experiment*)) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027",
+    "expected": 63,
+    "retrieved": 63,
+    "complete": true,
+    "dates": [
+      "2026-09-10T10:59:21.438204+00:00"
+    ],
+    "private_snapshot": "private/query_revision_2026_09_10/searches/750f34400748f57f00bb2fbe620bde1e5fe884523869e609c504794abc4dab5f.json",
+    "sha256": "9a0c911f47f4e35a235acbf55a7aa1218e7297a8e319592d43fb8ba618faf037"
+  },
+  {
+    "view": "STANDARD",
+    "query": "(TITLE-ABS-KEY({question wording experiment} OR {question wording experiments} OR {question-wording experiment} OR {question-wording experiments} OR {wording experiment} OR {wording experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent* OR participant*)) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027",
+    "expected": 26,
+    "retrieved": 26,
+    "complete": true,
+    "dates": [
+      "2026-09-10T10:59:05.701863+00:00"
+    ],
+    "private_snapshot": "private/query_revision_2026_09_10/searches/87c8ea325f3a52a29d72da4118c9284b17fa2cbc821c935ca478891af3e06ba0.json",
+    "sha256": "aabfde2a6b1a9eb18ddc7e93e41af8eefc542959948191a3f107606973263ab6"
+  },
+  {
+    "view": "STANDARD",
+    "query": "(TITLE-ABS-KEY({experiment embedded in a survey} OR {experiments embedded in a survey} OR {experiment embedded in an online survey} OR {experiments embedded in an online survey} OR {experiment embedded in a national survey} OR {experiments embedded in national surveys} OR {experiment embedded in a nationally representative survey} OR {experiments embedded in nationally representative surveys} OR {embedded survey experiment} OR {embedded survey experiments} OR {survey with an embedded experiment} OR {survey with embedded experiments} OR {surveys with embedded experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*)) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027",
+    "expected": 128,
+    "retrieved": 128,
+    "complete": true,
+    "dates": [
+      "2026-09-10T10:59:04.019549+00:00"
+    ],
+    "private_snapshot": "private/query_revision_2026_09_10/searches/9bc9c3243768e16de888ac2371e74d5582905114211549798036770752217879.json",
+    "sha256": "42827839a411c60eebbf218e337405cb4157155122f9ec4d40755787bf1e8e5f"
+  },
+  {
+    "view": "STANDARD",
+    "query": "(TITLE-ABS-KEY({experiment embedded within a survey} OR {experiments embedded within a survey} OR {experiment embedded within an online survey} OR {experiments embedded within an online survey} OR {experiments embedded in surveys} OR {experiments embedded in online surveys} OR {experiment was embedded in a survey} OR {experiments were embedded in a survey} OR {experiments were embedded in surveys} OR {experiment was embedded in an online survey} OR {experiments were embedded in an online survey} OR {experiments were embedded in online surveys}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*)) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027",
+    "expected": 20,
+    "retrieved": 20,
+    "complete": true,
+    "dates": [
+      "2026-09-10T10:59:02.609024+00:00"
+    ],
+    "private_snapshot": "private/query_revision_2026_09_10/searches/aaea3c616cb47beeb676f38e798fc6c9f73f549a6c8a298e04995ebdc379b1d4.json",
+    "sha256": "1577e4fee6f241a3813e148d82549337758303b0dfb83fc98e2bee998732d4f1"
+  },
+  {
+    "view": "STANDARD",
+    "query": "(TITLE-ABS-KEY({experiment embedded in a survey} OR {experiments embedded in a survey} OR {experiment embedded in an online survey} OR {experiments embedded in an online survey} OR {embedded survey experiment} OR {embedded survey experiments} OR {survey with an embedded experiment} OR {survey with embedded experiments} OR {surveys with embedded experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*)) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027",
+    "expected": 99,
+    "retrieved": 99,
+    "complete": true,
+    "dates": [
+      "2026-09-10T10:59:03.725137+00:00"
+    ],
+    "private_snapshot": "private/query_revision_2026_09_10/searches/bea377bd48499e111e8f4b438869e7cc48b9742782d02972ec2bb6d6f66403b5.json",
+    "sha256": "559bc21679888fe6e1eec5b3eac83b29132d3d040296bfae04572b42bb79349f"
+  },
+  {
+    "view": "COMPLETE",
+    "query": "(TITLE-ABS-KEY({randomly assigned to read} OR {randomly allocated to read} OR {randomly selected to read} OR {randomized to read} OR {randomised to read} OR {randomly assigned to a vignette} OR {randomly assigned a vignette} OR {randomly assigned to one of two vignettes} OR {randomly assigned to one of three vignettes} OR {randomly assigned to receive information} OR {randomly provided with information} OR {randomly presented with a vignette} OR {randomly presented with vignettes} OR {randomly presented with a scenario} OR {randomly shown a vignette} OR {randomly presented with information} OR {randomly exposed to information} OR {randomly assigned to receive a message} OR {randomly assigned to receive messages} OR {randomly presented with a message} OR {randomly presented with messages} OR {randomly exposed to a message} OR {randomly exposed to messages}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent* OR participant*)) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027",
+    "expected": 533,
+    "retrieved": 533,
+    "complete": true,
+    "dates": [
+      "2026-09-10T11:01:55.852883+00:00",
+      "2026-09-10T11:01:57.671016+00:00",
+      "2026-09-10T11:01:59.558706+00:00",
+      "2026-09-10T11:02:02.670628+00:00",
+      "2026-09-10T11:02:04.374346+00:00",
+      "2026-09-10T11:02:06.112829+00:00",
+      "2026-09-10T11:02:07.831147+00:00",
+      "2026-09-10T11:02:09.475429+00:00",
+      "2026-09-10T11:02:11.176631+00:00",
+      "2026-09-10T11:02:13.051853+00:00",
+      "2026-09-10T11:02:14.674949+00:00",
+      "2026-09-10T11:02:16.266221+00:00",
+      "2026-09-10T11:02:18.106312+00:00",
+      "2026-09-10T11:02:19.733403+00:00",
+      "2026-09-10T11:02:21.518075+00:00",
+      "2026-09-10T11:02:23.221869+00:00",
+      "2026-09-10T11:02:25.130077+00:00",
+      "2026-09-10T11:02:26.841984+00:00",
+      "2026-09-10T11:02:28.649188+00:00",
+      "2026-09-10T11:02:30.604064+00:00",
+      "2026-09-10T11:02:32.511750+00:00",
+      "2026-09-10T11:02:34.120150+00:00"
+    ],
+    "private_snapshot": "private/query_revision_2026_09_10/searches/d594a776dd6427977cde5fce73f301ae749d0a56e0ba84ce781cd2035dfa1c85.json",
+    "sha256": "2b64f8061996840a58b20686f064129a1ccbb97d4db313f91adf2a04fa070814"
+  },
+  {
+    "view": "COMPLETE",
+    "query": "(TITLE-ABS-KEY({experiment embedded in a survey} OR {experiments embedded in a survey} OR {experiment embedded in an online survey} OR {experiments embedded in an online survey} OR {experiment embedded in a national survey} OR {experiments embedded in national surveys} OR {experiment embedded in a nationally representative survey} OR {experiments embedded in nationally representative surveys} OR {embedded survey experiment} OR {embedded survey experiments} OR {survey with an embedded experiment} OR {survey with embedded experiments} OR {surveys with embedded experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*)) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027",
+    "expected": 128,
+    "retrieved": 128,
+    "complete": true,
+    "dates": [
+      "2026-09-10T11:01:55.992421+00:00",
+      "2026-09-10T11:01:57.855431+00:00",
+      "2026-09-10T11:01:59.520091+00:00",
+      "2026-09-10T11:02:02.685785+00:00",
+      "2026-09-10T11:02:04.297255+00:00",
+      "2026-09-10T11:02:05.536898+00:00"
+    ],
+    "private_snapshot": "private/query_revision_2026_09_10/searches/f231e0a89aa3769c9ef39b04238965a755ef33ea9f34cf072c219b585d84ace7.json",
+    "sha256": "469790bd3ef69ccb86f026a314d54842ae487f9cc436ac2de183ed241ee5ca19"
+  }
+]

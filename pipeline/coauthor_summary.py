@@ -14,8 +14,8 @@ def content(summary, flow, frame):
         f"articles published in {query.START_YEAR}–{query.END_YEAR}. Candidate donors need not have participated in TESS.",
         "We then search for journal articles with search terms related to survey experiments. The search combines exact "
         "survey- and vignette-experiment phrases with specific descriptions of embedded experiments, randomized vignettes, "
-        "reading assignments, information treatments, and question-wording experiments. Exact phrases preserve punctuation, "
-        "reducing accidental matches between adjacent but unrelated words. The query is shown below:",
+        "reading assignments, information treatments, and question-wording experiments. A local text check preserves punctuation "
+        "and reduces accidental matches between adjacent but unrelated words. The query is shown below:",
         f"The search returns {flow['in_frame']:,} article records, or {flow['unique_articles']:,} after duplicate removal. "
         f"The provisional {s['n_authors']}-researcher pool counts each candidate article once for each first or last author.",
         f"The sortable {s['n_authors']}-researcher dashboard joins current institutions, departments, countries, and roles. "

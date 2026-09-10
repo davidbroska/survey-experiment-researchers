@@ -83,8 +83,19 @@ await fs.writeFile(path.join(out,'mobile.png'),Buffer.from((await call('Page.cap
 await evaluate('document.getElementById("summary-tab").click();window.scrollTo(0,0)');
 assert.equal(await evaluate('document.documentElement.scrollWidth<=window.innerWidth'),true,'No summary overflow on mobile');
 await fs.writeFile(path.join(out,'mobile-summary.png'),Buffer.from((await call('Page.captureScreenshot',{format:'png'})).data,'base64'));
+assert.equal(await evaluate('document.querySelector("#summary-view a[href=\\"QUERY_REVISION.html\\"]").textContent.includes("revised query")'),true);
+const dashboardUrl=process.env.DASHBOARD_URL || pathToFileURL(path.join(root,'TOP100.html')).href;
+await call('Page.navigate',{url:new URL('QUERY_REVISION.html',dashboardUrl).href});
+for(let i=0;i<40;i++){if(await evaluate('location.pathname.endsWith("QUERY_REVISION.html") && !!document.querySelector("pre code")'))break;await new Promise(r=>setTimeout(r,100));}
+const normalizeQuery=text=>text.replace(/\s+/g,' ').trim();
+assert.equal(normalizeQuery(await evaluate('document.querySelector("pre code").textContent')),normalizeQuery(await fs.readFile(path.join(root,'queries/revision_2026_09_10/revised.txt'),'utf8')));
+assert.ok(await evaluate('document.body.textContent.includes("8,074")'));
+assert.equal(await evaluate('document.documentElement.scrollWidth<=window.innerWidth'),true,'No revision-report overflow on mobile');
+await fs.writeFile(path.join(out,'revision-mobile.png'),Buffer.from((await call('Page.captureScreenshot',{format:'png'})).data,'base64'));
+await call('Emulation.setDeviceMetricsOverride',{width:1600,height:1040,deviceScaleFactor:1,mobile:false});
+await fs.writeFile(path.join(out,'revision-desktop.png'),Buffer.from((await call('Page.captureScreenshot',{format:'png'})).data,'base64'));
 assert.deepEqual(errors,[],'No uncaught browser exceptions');
 const result={browser:'Google Chrome via local CDP',html_sha256:createHash('sha256').update(await fs.readFile(path.join(root,'TOP100.html'))).digest('hex'),researcher_rows:100,columns_checked_both_directions:columns.length,
-  checks:['Ranking label','Methodology tab','four selection steps','literal query fidelity','copy query','three-tab keyboard navigation','downloaded PDFs omitted from manual queue','all column sorts','US maximum first','author evidence drilldown','US-only article filter','country search','empty search','ten-paper batches','last batch','download checkbox storage','CSV batch contents','mobile overflow'],uncaught_exceptions:0};
+  checks:['Ranking label','Methodology tab','four selection steps','literal query fidelity','copy query','three-tab keyboard navigation','downloaded PDFs omitted from manual queue','all column sorts','US maximum first','author evidence drilldown','US-only article filter','country search','empty search','ten-paper batches','last batch','download checkbox storage','CSV batch contents','mobile overflow','revision report link','revised query fidelity','revision report counts','revision report mobile overflow'],uncaught_exceptions:0};
 await fs.writeFile(path.join(root,'results/dashboard_browser_check.json'),JSON.stringify(result,null,2)+'\n');
 console.log(JSON.stringify(result,null,2));ws.close();

@@ -61,7 +61,7 @@ The current shortlist ranks query candidates. Final invitations depend on eligib
 
 {fenced}
 
-Exact phrases such as `{{survey experiment}} OR {{survey experiments}}` preserve punctuation. Double quotes implement loose phrase matching, and wildcards inside braces are literal; singular and plural forms are therefore listed explicitly. [Elsevier search syntax](https://dev.elsevier.com/sc_search_tips.html). The local matcher also prevents phrases from crossing title/abstract or keyword-entry boundaries. These checks address lexical matching; they do not establish study eligibility.
+Curly braces such as `{{survey experiment}} OR {{survey experiments}}` request exact phrases. Double quotes implement loose phrase matching, and wildcards inside braces are literal; singular and plural forms are therefore listed explicitly. [Elsevier search syntax](https://dev.elsevier.com/sc_search_tips.html). Although the documentation describes punctuation-sensitive matching, subsequent API checks returned some phrases across commas, full stops, and colons; see the [revision report](QUERY_REVISION.html). The local matcher preserves punctuation and prevents phrases from crossing title/abstract or keyword-entry boundaries. These checks address lexical matching; they do not establish study eligibility.
 
 The following narrowly specified phrases supplement the exact design names. Their worldwide yields beyond the exact core are measured using the same publication window. Counts overlap and must not be added together.
 

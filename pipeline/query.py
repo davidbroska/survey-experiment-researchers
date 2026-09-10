@@ -65,7 +65,8 @@ FAMILIES = [
 def clause(family):
     parts = ["TITLE-ABS-KEY(" + " OR ".join("{" + p + "}" for p in family["phrases"]) + ")"]
     if family.get("context"):
-        parts.append("TITLE-ABS-KEY(" + CONTEXT + ")")
+        context = CONTEXT + (" OR participant*" if family.get("participant_context") else "")
+        parts.append("TITLE-ABS-KEY(" + context + ")")
     if family.get("random"):
         parts.append("TITLE-ABS-KEY(" + RANDOM + ")")
     return "(" + " AND ".join(parts) + ")"
@@ -105,6 +106,7 @@ def phrase_rx(phrase):
 
 PATTERNS = {f["id"]: [(p, phrase_rx(p)) for p in f["phrases"]] for f in FAMILIES}
 CONTEXT_RX = re.compile(r"\b(?:surveys?|surveyed|questionnaires?|respondents?)\b")
+PARTICIPANT_CONTEXT_RX = re.compile(r"\b(?:surveys?|surveyed|questionnaires?|respondents?|participants?)\b")
 RANDOM_RX = re.compile(r"\b(?:random\w*|experiment\w*)\b")
 TEXT_RX = re.compile(r"\b(?:vignettes?|read|reading|text(?:ual)?|written|wording|information(?:al)? treatments?|messages?)\b")
 DESIGN_REVIEW_RX = re.compile(r"\bconjoint\b|\bsplit[\W_]+ballots?\b")
@@ -137,15 +139,19 @@ def units(row):
                 yield field, normalize(unit), unit.strip()
 
 
-def match(row):
+def match(row, families=None):
+    selected = FAMILIES if families is None else families
+    patterns = PATTERNS if families is None else {
+        f["id"]: [(p, phrase_rx(p)) for p in f["phrases"]] for f in selected}
     hits = []
     for field, unit, original in units(row):
-        for family in FAMILIES:
-            if family.get("context") and not CONTEXT_RX.search(unit):
+        for family in selected:
+            context_rx = PARTICIPANT_CONTEXT_RX if family.get("participant_context") else CONTEXT_RX
+            if family.get("context") and not context_rx.search(unit):
                 continue
             if family.get("random") and not RANDOM_RX.search(unit):
                 continue
-            for phrase, rx in PATTERNS[family["id"]]:
+            for phrase, rx in patterns[family["id"]]:
                 if rx.search(unit):
                     hits.append({"family": family["id"], "field": field,
                                  "phrase": phrase, "evidence": original})

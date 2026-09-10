@@ -1,6 +1,6 @@
 {
   "browser": "Google Chrome via local CDP",
-  "html_sha256": "ad2849a93705e6e3b4470e52933b0ea6900596016464177a928eb5bc4dafa53b",
+  "html_sha256": "b9181b8ada970a30421a7988b38fc2d5e2ca10b86ea24967642da1aec9b4bb2a",
   "researcher_rows": 100,
   "columns_checked_both_directions": 12,
   "checks": [
@@ -21,7 +21,11 @@
     "last batch",
     "download checkbox storage",
     "CSV batch contents",
-    "mobile overflow"
+    "mobile overflow",
+    "revision report link",
+    "revised query fidelity",
+    "revision report counts",
+    "revision report mobile overflow"
   ],
   "uncaught_exceptions": 0
 }

@@ -1,25 +1,16 @@
-# Assessing `participant*` as a search expansion
+# Participant-term assessment: corrected and superseded
 
-Assessment date: 10 September 2026. This is a supplementary query assessment; the published ranking and Methodology tab continue to describe the archived production retrieval.
+The initial assessment found relevant survey experiments described using “participants,” including [Bearing the burden of peace](https://doi.org/10.1111/pops.13008). The requested expansion has now been executed with the additional survey, embedded-experiment, text-assignment, and information-experiment phrases. See the [complete revision and retrieval comparison](QUERY_REVISION.md).
 
-`participant*` covers both “participant” and “participants” and can recover relevant experiments whose abstracts omit “survey,” “questionnaire,” and “respondent.” It does not, by itself, identify a survey setting. The proposed [candidate query](queries/participant_assessment/candidate_text_and_wording.txt) adds it to the context requirement for **text assignments and question-wording experiments**. The broader framing/scenario and information-treatment branches retain their existing context requirement. Exact survey- and vignette-experiment branches already operate without that requirement. No design exclusions are added.
+The initial diagnostic queries placed `AND NOT` before the publication filters. Under the [documented Scopus precedence rules](https://dev.elsevier.com/sc_search_tips.html), this can put those filters inside the negated expression. Those initial totals must therefore not be interpreted as properly restricted 2010–2026 journal-article yields. The correction groups all positive criteria and publication filters before applying `AND NOT` to the original context terms.
 
-Four Scopus diagnostic searches combined each existing phrase family with `TITLE-ABS-KEY(participant*)`, the 2010–2026 journal-article limits, and absence of the three existing context terms. That absence condition isolates the term's contribution for this diagnostic; it is absent from the candidate production query. Each search retrieved only its first 25 records, or all records when fewer were available. Returned records were matched to the frozen journal frame and archived corpus by source and article IDs.
+| Diagnostic family | Initial count with ambiguous filter placement | Correctly filtered count |
+|---|---:|---:|
+| contextual_design | 193 | 154 |
+| survey_information | 50 | 47 |
+| survey_wording | 1 | 1 |
+| text_assignment | 395 | 340 |
 
-| Phrase family | Global diagnostic hits | Records retrieved | Retrieved in frame and absent from archive |
-|---|---:|---:|---:|
-| Framing/scenario designs | 193 | 25 | 10 |
-| Text assignments | 395 | 25 | 20 |
-| Information treatments | 50 | 25 | 16 |
-| Question wording | 1 | 1 | 1 |
+These corrected totals describe global family-specific searches for participant terminology without the original three context terms. They overlap with other retained query branches and are not the incremental yield of the complete revised search. The initial first-page examples remain exploratory observations, not a precision sample. [Corrected queries, counts, and dates](results/participant_term_probe_corrected_counts.csv) and the [initial request provenance](results/participant_term_probe.csv) are retained for audit.
 
-The four pages contain 75 distinct records; 47 are in the journal frame and absent from the archived corpus. These are convenience samples, not estimates of precision or recall. The global totals overlap and include journals outside the frame. Absence from an earlier archive can also reflect indexing changes. The full incremental yield has not been retrieved or screened.
-
-Illustrative records explain the proposed restriction:
-
-- **Relevant wording experiment:** [Bearing the burden of peace](https://doi.org/10.1111/pops.13008) reports wording experiments with more than 1,650 Azerbaijani participants. Its [publisher full text](https://onlinelibrary.wiley.com/doi/10.1111/pops.13008) confirms random assignment within an online survey. This is a concrete omission that the added term can recover.
-- **Relevant text assignment:** [Syllabus Tone but not Faculty Gender Influences Student Perceptions](https://doi.org/10.1177/00986283251397625) describes random assignment to hypothetical syllabi followed by perception measures in its Scopus abstract.
-- **Broader branch needing additional screening:** [Evaluating user performance with RAG-based generative AI](https://doi.org/10.1016/j.chb.2026.108952) describes participants performing interactive search tasks, rather than establishing a survey experiment in the abstract.
-- **Broader branch needing design review:** [Selective exposure reduces voluntary contributions](https://doi.org/10.1016/j.jebo.2025.107081) describes an incentivized public-good experiment with information-source choices. Online recruitment alone does not establish compatibility with the survey parser.
-
-The candidate remains a proposed retrieval revision. Applying it requires a separate archived search, deduplication, eligibility review, and reranking; the dashboard's existing counts must not be attributed to it. Saved [diagnostic counts and provenance](results/participant_term_probe.csv) identify the exact executed query files, retrieval times, and private response hashes. The original request parameters were `count=25`, `view=COMPLETE`, and `start=0`, using `pipeline/scopus.py` with cache namespace `participant_probe_2026_09_10`.
+The full revision instead retrieves positive query families, completes pagination, and computes overlap and differences from article IDs locally. This avoids negative-query precedence ambiguities. It also demonstrates that broad information-treatment language plus `participant*` can retrieve clinical studies, including matches spanning punctuation. The local verification and eligibility review in the revision report are necessary before these results enter researcher rankings.

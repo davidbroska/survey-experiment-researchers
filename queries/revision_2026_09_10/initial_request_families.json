@@ -1,0 +1,153 @@
+[
+  {
+    "id": "survey_design",
+    "phrases": [
+      "survey experiment",
+      "survey experiments",
+      "survey-based experiment",
+      "survey-based experiments",
+      "survey based experiment",
+      "survey based experiments",
+      "survey-embedded experiment",
+      "survey-embedded experiments",
+      "survey embedded experiment",
+      "survey embedded experiments",
+      "survey-experimental",
+      "survey experimental"
+    ],
+    "role": "core"
+  },
+  {
+    "id": "vignette_design",
+    "phrases": [
+      "vignette experiment",
+      "vignette experiments",
+      "experimental vignette",
+      "experimental vignettes",
+      "vignette-based experiment",
+      "vignette-based experiments",
+      "vignette based experiment",
+      "vignette based experiments"
+    ],
+    "role": "core"
+  },
+  {
+    "id": "contextual_design",
+    "phrases": [
+      "framing experiment",
+      "framing experiments",
+      "information provision experiment",
+      "information provision experiments",
+      "information-provision experiment",
+      "information-provision experiments",
+      "scenario-based experiment",
+      "scenario-based experiments",
+      "scenario based experiment",
+      "scenario based experiments"
+    ],
+    "context": true,
+    "role": "guarded_original"
+  },
+  {
+    "id": "vignette_survey",
+    "phrases": [
+      "vignette-based survey",
+      "vignette-based surveys",
+      "vignette based survey",
+      "vignette based surveys"
+    ],
+    "random": true,
+    "role": "guarded_original"
+  },
+  {
+    "id": "embedded_design",
+    "phrases": [
+      "experiment embedded in a survey",
+      "experiments embedded in a survey",
+      "experiment embedded in an online survey",
+      "experiments embedded in an online survey",
+      "embedded survey experiment",
+      "embedded survey experiments",
+      "survey with an embedded experiment",
+      "survey with embedded experiments",
+      "surveys with embedded experiments"
+    ],
+    "context": true,
+    "role": "expansion"
+  },
+  {
+    "id": "factorial_randomized_vignette",
+    "phrases": [
+      "factorial survey",
+      "factorial surveys",
+      "factorial vignette experiment",
+      "factorial vignette experiments",
+      "randomized vignette experiment",
+      "randomized vignette experiments",
+      "randomised vignette experiment",
+      "randomised vignette experiments",
+      "randomized vignette",
+      "randomized vignettes",
+      "randomised vignette",
+      "randomised vignettes"
+    ],
+    "role": "expansion"
+  },
+  {
+    "id": "text_assignment",
+    "phrases": [
+      "randomly assigned to read",
+      "randomly allocated to read",
+      "randomly selected to read",
+      "randomized to read",
+      "randomised to read",
+      "randomly assigned to a vignette",
+      "randomly assigned a vignette",
+      "randomly assigned to one of two vignettes",
+      "randomly assigned to one of three vignettes",
+      "randomly assigned to receive information",
+      "randomly provided with information",
+      "randomly presented with a vignette",
+      "randomly presented with vignettes",
+      "randomly presented with a scenario",
+      "randomly shown a vignette",
+      "randomly presented with information",
+      "randomly exposed to information",
+      "randomly assigned to receive a message",
+      "randomly assigned to receive messages",
+      "randomly presented with a message",
+      "randomly presented with messages",
+      "randomly exposed to a message",
+      "randomly exposed to messages"
+    ],
+    "context": true,
+    "role": "expansion",
+    "participant_context": true
+  },
+  {
+    "id": "survey_information",
+    "phrases": [
+      "information treatment",
+      "information treatments",
+      "informational treatment",
+      "informational treatments"
+    ],
+    "context": true,
+    "random": true,
+    "role": "expansion"
+  },
+  {
+    "id": "survey_wording",
+    "phrases": [
+      "question wording experiment",
+      "question wording experiments",
+      "question-wording experiment",
+      "question-wording experiments",
+      "wording experiment",
+      "wording experiments"
+    ],
+    "context": true,
+    "role": "expansion",
+    "participant_context": true
+  }
+]
