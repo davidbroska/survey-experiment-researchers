@@ -98,5 +98,5 @@ The pipeline restricts the retrieved records to the journal frame using Scopus S
 
 3. The search returns 7,305 article records, or 7,302 after duplicate removal. The provisional 100-researcher pool counts each candidate article once for each first or last author.
 
-4. The sortable 100-researcher dashboard joins current institutions, departments, countries, and roles. Review of 870 distinct articles identifies 393 with US-sample evidence (248 explicit; 145 inferred, incorporating 65 full-text reviews); 127 remain unclear pending full-text review. US sorting compares this pool, not all researchers. Counts describe articles, not independent datasets, and the AI-assisted annotations await validation. A deduplicated download queue supports the next review round.
+4. The sortable 100-researcher dashboard joins current institutions, departments, countries, and roles. Review of 870 distinct articles identifies 402 with US-sample evidence (256 explicit; 146 inferred, incorporating 75 full-text reviews); 117 remain unclear pending full-text review. US sorting compares this pool, not all researchers. Counts describe articles, not independent datasets, and the AI-assisted annotations await validation. A deduplicated download queue supports the next review round.
 

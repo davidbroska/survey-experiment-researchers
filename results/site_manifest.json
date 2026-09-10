@@ -7,43 +7,43 @@
     },
     {
       "path": "EXECUTIVE_SUMMARY.html",
-      "sha256": "2cf2b58b133a97c0a5fef3fe9a994eeed571bc827de51d80ab79a156b5154fc9"
+      "sha256": "e41245f4a29d80fd0df325ce4711edd35fa9e16225984b30e49bc8672f8a2e16"
     },
     {
       "path": "EXECUTIVE_SUMMARY.md",
-      "sha256": "2dc02a841e7a8d8d1b18ca03fc5d1123642f8ce529643e8ead01a438054535fa"
+      "sha256": "ff2b332eae2aad7121f92b414c63f34a0bd11285c5d6127c28c701386a24f6c1"
     },
     {
       "path": "FULLTEXT_REVIEW.html",
-      "sha256": "95addfb4be21285e3927866fbb445a2ef2cbc31668e0122f76a9a8e8d90fa253"
+      "sha256": "c377543aa0a3ac9c27a0fc3406afbfafe5512e5c8aae2e0a094f9476aae62117"
     },
     {
       "path": "FULLTEXT_REVIEW.md",
-      "sha256": "e2abc3b669b5062b6a2107ad58189ad177e521fdd1161bc142333fc455c82881"
+      "sha256": "bd2d59297e5b54bf055d0d6e46e0b1e77b2a31dfae3f0ddfd5e646695c41fcfa"
     },
     {
       "path": "GEOGRAPHY_REPORT.html",
-      "sha256": "20352b2af76783fd3361801f8b54ea433a667c085998d74f8bad9f15abd50f2a"
+      "sha256": "27f89eca2972c4b0f5125989a77d452f910aa756651794437342f31ff93922bf"
     },
     {
       "path": "GEOGRAPHY_REPORT.md",
-      "sha256": "de310733d2f298b6d3d680d0002cea4d1f9d29828c346a8f83ca631fcadbcd40"
+      "sha256": "06bf874fde334136f6449792457d63c09b560638106391f231dd24382532a276"
     },
     {
       "path": "MANUAL_DOWNLOADS.html",
-      "sha256": "6bbb6551293040350fe513a80cd28bc9541f33b8bea369f2c7c09419ef4250aa"
+      "sha256": "44187f1adb856abf1df01d1bf8d86c2b6c28bd840d90bafb7f14217fa536f9fc"
     },
     {
       "path": "MANUAL_DOWNLOADS.md",
-      "sha256": "1aec76e4088db37134dbdecffd90578625c43d3564edaa5a20991db2c5c6c25b"
+      "sha256": "b0bcad07bbf33ad5b2791f5f6321c7c09a9e75cebd8bd01abcabb946c82f0e37"
     },
     {
       "path": "PRIORITY_DOWNLOADS.html",
-      "sha256": "e544068bacef303b15ce37821b42da0d03bc5cdb28ee3edf7866a8c8d1deceb2"
+      "sha256": "e44caeefd00e0ac5fd9b7040b1388e87396f0c658cfe48bff0213a8bc11ebf45"
     },
     {
       "path": "PRIORITY_DOWNLOADS.md",
-      "sha256": "25542549ce18224b3dbc30df2af8515e1a6da79fcd02e44a129ee8f3814ba289"
+      "sha256": "d0746717c098947284dd23b597235db8cf1f0003d26923f3fbb7cd555a853855"
     },
     {
       "path": "QUERY_REPORT.html",
@@ -59,31 +59,31 @@
     },
     {
       "path": "SUPPORTING_INFORMATION.html",
-      "sha256": "e901dd12317a39dceb74b9c862c74148246f1857a2f28d6b4d86cbd7f1a93607"
+      "sha256": "6b0748932bd44526aa4b7022477ea3c5ab8e2db45ca1510b0a9d9b839482e128"
     },
     {
       "path": "SUPPORTING_INFORMATION.md",
-      "sha256": "cf9521d64618f8e8e15f6c7c4c901aecce883f6f4ffe16f9d91bdd22bceb86da"
+      "sha256": "ccf61047e93ab15b1a6d2582693df69624490b3fbc0bc9d80241a351af11c2c6"
     },
     {
       "path": "TOP100.html",
-      "sha256": "d4b3cec307ab04731a64ba0e86ef1ded98aad9da9c3ec15d60b7b91c634168a5"
+      "sha256": "ad2849a93705e6e3b4470e52933b0ea6900596016464177a928eb5bc4dafa53b"
     },
     {
       "path": "TOP40.html",
-      "sha256": "d4b3cec307ab04731a64ba0e86ef1ded98aad9da9c3ec15d60b7b91c634168a5"
+      "sha256": "ad2849a93705e6e3b4470e52933b0ea6900596016464177a928eb5bc4dafa53b"
     },
     {
       "path": "YEAR_WINDOW_COMPARISON.html",
-      "sha256": "e8fd0d83c360daf0331866326c0a87e5d8b0ebe8365bd838b05b03c635789eb7"
+      "sha256": "51379ac93eaf145c26b46af1deb34ff30bb57c4b207f6c087b34a05095edc74d"
     },
     {
       "path": "YEAR_WINDOW_COMPARISON.md",
-      "sha256": "9f6e20110d82030cc05d2b8d032ad3c829530dbf15218e5eda8cf60215213b68"
+      "sha256": "8cf5b8ac70094b36d319dc2fff0c5fbce436b2c11308f6c5fc4bfd8bce1e3be2"
     },
     {
       "path": "index.html",
-      "sha256": "d4b3cec307ab04731a64ba0e86ef1ded98aad9da9c3ec15d60b7b91c634168a5"
+      "sha256": "ad2849a93705e6e3b4470e52933b0ea6900596016464177a928eb5bc4dafa53b"
     },
     {
       "path": "queries/recommended.txt",
@@ -91,23 +91,23 @@
     },
     {
       "path": "results/downloaded_awaiting_review.csv",
-      "sha256": "03667b2c9466fd68c979a6ec9b36caadd56e11bcc9525e51c0b42724f2c28d88"
+      "sha256": "8448c4a374a0eb3735e80ee31188f2fe7b552d49a7de536194c92d17c27389a3"
     },
     {
       "path": "results/fulltext_download_queue.csv",
-      "sha256": "0ac83ef36c33a11f5de0f3ba07ed965e7ad6e295125b9f3b0a3f9a91abefa308"
+      "sha256": "1ef984e79419f36300d750ffa6e6977cae7b5bb7c6e208aeb84e6923b9a8a5b8"
     },
     {
       "path": "results/manual_download_queue.csv",
-      "sha256": "dd1854196578f12de01c91a84e03c088c32a53729cfdcbf653abe9f4d041afb8"
+      "sha256": "aac8fbbbf766858f4d10f70c43c1eb29fdbe22a6089e1da9b9b9c5e5b77d89b7"
     },
     {
       "path": "results/top100_article_annotations.csv",
-      "sha256": "0f13bebbee244a56257bb50c98fc8b06558d4ed039145256759d4a6d1b0bcafb"
+      "sha256": "81a351ad8554fea53942c57ff57214b49171bb33ec2c55c66be092878173c2ac"
     },
     {
       "path": "results/top100_author_article_links.csv",
-      "sha256": "7b09eb79040d990181a46e99a44ad692e21310af3478a4559a82094fd36d989e"
+      "sha256": "af78fd727bdae284b6f02b1ed5e50eea64c7a13faf1139db10ff99d732fd89a9"
     },
     {
       "path": "results/top100_cutoff_ties.csv",
@@ -115,7 +115,7 @@
     },
     {
       "path": "results/top100_enriched.csv",
-      "sha256": "f726d4de22dd0d06f204967986d2633a820e40da5287a814587605e809ea53fe"
+      "sha256": "c4614db42c42f97fd55309caa894f2276b2c872196d164b9fa77b8c65b3b09af"
     },
     {
       "path": "results/top100_provisional.csv",
@@ -123,15 +123,15 @@
     },
     {
       "path": "results/top50_priority_downloads.csv",
-      "sha256": "09f79df34558b596e4fdc820a5cd65508fafd292947c25bae0a4a2cec70e9a33"
+      "sha256": "a596808790bf82a715e6a6926c4d912f6e66c9e2a8df5ec99a4f4ebe09e0a3b6"
     },
     {
       "path": "results/year_window_author_comparison.csv",
-      "sha256": "af622c0135198683648538b619a426fb73688e9a5cfc2e121f3b10fb9b895959"
+      "sha256": "de77525b28139e75e1fa6ac64720df02dfd082faeeab9af56f4db266d0f5b792"
     },
     {
       "path": "results/year_window_tie_comparison.csv",
-      "sha256": "b21a3c643a5607532d1803235e4669405b8be8d7677fc383a09f90295db36d9c"
+      "sha256": "aa44f2bce243664dfd80aa9f55eeefeaf93cc9c65642b74627fd06b186474ae5"
     }
   ],
   "local_links_checked": 61,

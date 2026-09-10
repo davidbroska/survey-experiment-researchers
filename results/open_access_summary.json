@@ -2,13 +2,14 @@
   "n_checked": 182,
   "n_downloaded": 48,
   "n_already_in_inbox": 0,
-  "n_manual_download_needed": 125,
+  "n_manual_download_needed": 115,
   "n_with_indexed_open_locations": 95,
   "n_with_open_locations_after_web_search": 99,
   "geography_labels_changed": false,
   "source_queue_sha256": "7ec37cf795347a71da88606f260b5898c9e5d964111f9fae458fb37cedfeb4f4",
   "method": "DOI-matched OpenAlex open locations, supplemented by targeted searches of primary author and institutional websites; public PDF retrieval and bibliographic verification within the first three pages. No indexed open copy is not proof of paywall-only availability.",
   "n_partial_abstracts": 1,
-  "n_user_supplied_this_round": 9,
-  "acquisition_note": "Retrieval itself does not assign geography. Subsequent page-cited decisions are in fulltext_reviews.csv; current acquisition records incorporate targeted top-50 public-copy checks."
+  "n_user_supplied_this_round": 10,
+  "acquisition_note": "Retrieval itself does not assign geography. Subsequent page-cited decisions are in fulltext_reviews.csv; current acquisition records incorporate targeted top-50 public-copy checks.",
+  "current_review_date": "2026-09-10"
 }

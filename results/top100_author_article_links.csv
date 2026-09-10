@@ -110,7 +110,7 @@ authid,full_name,scopus_id,authorship_position,sample_us_label
 35309171200,Martin Bækgaard,85118144335,first,non_us
 35309171200,Martin Bækgaard,85175738454,first,non_us
 35309171200,Martin Bækgaard,105010591172,last,non_us
-7003787305,Gregg G. Van Ryzin,84878955277,sole,unclear
+7003787305,Gregg G. Van Ryzin,84878955277,sole,us_explicit
 7003787305,Gregg G. Van Ryzin,84884806119,first,us_inferred
 7003787305,Gregg G. Van Ryzin,84908554750,last,us_inferred
 7003787305,Gregg G. Van Ryzin,84918780367,last,unclear
@@ -149,7 +149,7 @@ authid,full_name,scopus_id,authorship_position,sample_us_label
 24168107200,Yusaku Horiuchi,85145409036,last,non_us
 24168107200,Yusaku Horiuchi,105030588739,last,us_explicit
 24168107200,Yusaku Horiuchi,105042398599,first,non_us
-36775562800,Blaine G. Robbins,84944232504,sole,unclear
+36775562800,Blaine G. Robbins,84944232504,sole,us_explicit
 36775562800,Blaine G. Robbins,84983314158,sole,unclear
 36775562800,Blaine G. Robbins,85033780100,sole,unclear
 36775562800,Blaine G. Robbins,85033788510,sole,unclear
@@ -211,7 +211,7 @@ authid,full_name,scopus_id,authorship_position,sample_us_label
 23010864600,Samuel Whitt,105003442248,first,us_explicit
 23010864600,Samuel Whitt,105024217606,first,non_us
 23010864600,Samuel Whitt,105041965396,last,non_us
-54881904100,Nichole M. Bauer,84957805398,sole,unclear
+54881904100,Nichole M. Bauer,84957805398,sole,us_inferred
 54881904100,Nichole M. Bauer,85014540568,sole,us_inferred
 54881904100,Nichole M. Bauer,85043332442,first,unclear
 54881904100,Nichole M. Bauer,85048742659,sole,us_inferred
@@ -290,7 +290,7 @@ authid,full_name,scopus_id,authorship_position,sample_us_label
 14034772300,Jason Reifler,85170631568,last,us_explicit
 14034772300,Jason Reifler,85174056404,last,us_inferred
 14034772300,Jason Reifler,85213442851,last,not_applicable
-14034772300,Jason Reifler,105008461820,last,unclear
+14034772300,Jason Reifler,105008461820,last,non_us
 14034772300,Jason Reifler,105027197362,last,non_us
 14832646600,Robin E. Gearing,84871858111,first,non_us
 14832646600,Robin E. Gearing,84876049317,last,non_us
@@ -325,7 +325,7 @@ authid,full_name,scopus_id,authorship_position,sample_us_label
 35725744600,Sarah E. Kreps,85165518545,first,us_explicit
 35725744600,Sarah E. Kreps,85179678265,first,non_us
 35725744600,Sarah E. Kreps,105029190749,last,us_inferred
-35745930100,David Doherty,80054939891,first,unclear
+35745930100,David Doherty,80054939891,first,us_explicit
 35745930100,David Doherty,84929578243,sole,us_inferred
 35745930100,David Doherty,84930584663,sole,us_inferred
 35745930100,David Doherty,84945247501,first,unclear
@@ -361,7 +361,7 @@ authid,full_name,scopus_id,authorship_position,sample_us_label
 57203528227,Jonathan A. Chu,85052060424,sole,us_explicit
 57203528227,Jonathan A. Chu,85103382393,first,us_explicit
 57203528227,Jonathan A. Chu,85107869445,last,us_explicit
-57203528227,Jonathan A. Chu,85122139505,first,unclear
+57203528227,Jonathan A. Chu,85122139505,first,us_explicit
 57203528227,Jonathan A. Chu,85124121558,last,unclear
 57203528227,Jonathan A. Chu,85124170048,sole,unclear
 57203528227,Jonathan A. Chu,85127696366,first,non_us
@@ -374,7 +374,7 @@ authid,full_name,scopus_id,authorship_position,sample_us_label
 35759060800,Brendan Nyhan,84921984369,first,us_inferred
 35759060800,Brendan Nyhan,85047903545,first,non_us
 35759060800,Brendan Nyhan,85049075124,first,non_us
-35759060800,Brendan Nyhan,85106950513,last,unclear
+35759060800,Brendan Nyhan,85106950513,last,us_explicit
 35759060800,Brendan Nyhan,85114350257,last,us_explicit
 35759060800,Brendan Nyhan,85182629341,last,us_inferred
 35759060800,Brendan Nyhan,105005845952,last,us_explicit
@@ -400,7 +400,7 @@ authid,full_name,scopus_id,authorship_position,sample_us_label
 37063497400,Kevin J. Mullinix,85127190236,first,us_explicit
 37063497400,Kevin J. Mullinix,105038900974,first,us_explicit
 38061940400,Justin T. Pickett,85017479115,first,us_explicit
-38061940400,Justin T. Pickett,85030544249,first,unclear
+38061940400,Justin T. Pickett,85030544249,first,us_explicit
 38061940400,Justin T. Pickett,85060884767,first,unclear
 38061940400,Justin T. Pickett,85091202562,last,unclear
 38061940400,Justin T. Pickett,85092499524,first,us_inferred
@@ -437,7 +437,7 @@ authid,full_name,scopus_id,authorship_position,sample_us_label
 23982874600,Ulf Liebe,85092904088,first,non_us
 23982874600,Ulf Liebe,85162979593,last,non_us
 23982874600,Ulf Liebe,105039696438,last,non_us
-24474160700,Brian R. Calfano,84887527789,last,unclear
+24474160700,Brian R. Calfano,84887527789,last,us_explicit
 24474160700,Brian R. Calfano,84959343624,first,us_explicit
 24474160700,Brian R. Calfano,84959905263,first,us_inferred
 24474160700,Brian R. Calfano,85037647979,last,us_inferred
@@ -724,7 +724,7 @@ authid,full_name,scopus_id,authorship_position,sample_us_label
 22836955000,Jeroen van der Waal,85176392346,last,non_us
 22836955000,Jeroen van der Waal,85192535937,last,non_us
 22836955000,Jeroen van der Waal,105037057133,last,non_us
-23479932300,Erik Lin-Greenberg,85066842117,sole,unclear
+23479932300,Erik Lin-Greenberg,85066842117,sole,us_explicit
 23479932300,Erik Lin-Greenberg,85100751141,first,unclear
 23479932300,Erik Lin-Greenberg,85106419798,sole,us_explicit
 23479932300,Erik Lin-Greenberg,85131596715,sole,us_explicit

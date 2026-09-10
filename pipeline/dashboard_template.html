@@ -18,7 +18,7 @@
   <p class="scope" id="scope"></p>
   <div class="tabs" role="tablist" aria-label="Review views">
     <button role="tab" id="people-tab" aria-controls="people-view" aria-selected="true" tabindex="0">Ranking</button>
-    <button role="tab" id="summary-tab" aria-controls="summary-view" aria-selected="false" tabindex="-1">Coauthor summary</button>
+    <button role="tab" id="summary-tab" aria-controls="summary-view" aria-selected="false" tabindex="-1">Methodology</button>
     <button role="tab" id="queue-tab" aria-controls="queue-view" aria-selected="false" tabindex="-1">Full-text downloads</button>
   </div>
   <section id="people-view" role="tabpanel" aria-labelledby="people-tab">
@@ -35,7 +35,7 @@
     <p class="footnote">First and last both include sole-authored articles. The highlighted primary count is <strong>first + last − sole</strong>. US counts combine explicit and inferred evidence. Zero means no US sample identified in the reviewed evidence.</p>
   </section>
   <section id="summary-view" role="tabpanel" aria-labelledby="summary-tab" hidden>
-    <div class="coauthor-summary"><h2>Coauthor summary</h2><div class="summary-actions"><button id="copy-query">Copy Scopus query</button> <a href="queries/recommended.txt" download>Download query</a> · <a href="EXECUTIVE_SUMMARY.html">Open summary separately ↗</a></div><p id="query-copy-status" class="status" aria-live="polite"></p>SUMMARY_CONTENT</div>
+    <div class="coauthor-summary"><h2>Methodology</h2><div class="summary-actions"><button id="copy-query">Copy Scopus query</button> <a href="queries/recommended.txt" download>Download query</a> · <a href="EXECUTIVE_SUMMARY.html">Open methodology separately ↗</a></div><p id="query-copy-status" class="status" aria-live="polite"></p>SUMMARY_CONTENT</div>
   </section>
   <section id="queue-view" role="tabpanel" aria-labelledby="queue-tab" hidden>
     <div class="queue-intro"><h2>Download each paper once</h2><p id="availability-status"></p><p>Use the open-copy or publisher links below. Save PDFs in <code>SurveyExperimentRecruitment/private/fulltext/inbox/</code> using the suggested filename. A paper shared by several researchers updates all their counts after review.</p><p>Start with batch 1. Priority favors papers that could distinguish tied researchers in the top 50 of either ranking, spreading each ten-paper batch across different ties. A US finding can change US counts; total article counts remain unchanged.</p><details><summary>Already downloaded; awaiting geography review</summary><div id="available-papers"></div></details></div>

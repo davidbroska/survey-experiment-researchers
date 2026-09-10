@@ -9,11 +9,11 @@ The search covers **2010–2026**, adding 2010–2015 to the frozen 2016–2026 
 | Survey-experiment article count: largest tie group | 22 | 29 |
 | Survey-experiment article count: maximum count | 31 | 33 |
 | US-sample article count: distinct count values | 12 | 14 |
-| US-sample article count: tied researcher pairs | 513 | 459 |
+| US-sample article count: tied researcher pairs | 513 | 458 |
 | US-sample article count: largest tie group | 17 | 17 |
 | US-sample article count: maximum count | 14 | 19 |
 
-A tied pair is any two researchers with the same count; there are 4,950 pairs among 100 researchers. Fewer tied pairs means the count distinguishes more researcher pairs. The comparison above also reflects the eight changes in pool membership and 65 full-text reviews. Review effects are separate from extending the publication years.
+A tied pair is any two researchers with the same count; there are 4,950 pairs among 100 researchers. Fewer tied pairs means the count distinguishes more researcher pairs. The comparison above also reflects the eight changes in pool membership and 75 full-text reviews. Review effects are separate from extending the publication years.
 
 **Isolating the year-window effect.** Holding the updated 100 researchers and the current geography decisions fixed, and changing only which publication years count:
 
@@ -21,10 +21,10 @@ A tied pair is any two researchers with the same count; there are 4,950 pairs am
 |---|---:|---:|
 | Survey-experiment count: tied pairs | 687 | 773 |
 | Survey-experiment count: distinct values | 15 | 12 |
-| US-sample count: tied pairs | 480 | 459 |
+| US-sample count: tied pairs | 474 | 458 |
 | US-sample count: distinct values | 14 | 14 |
 
-Across the current pool, adding the earlier years contributes 76 first/last-author article credits, including 34 with US-sample evidence. The six-article cutoff is shared by 70 researchers (previously 67); 65 are outside the displayed pool (previously 48). Numeric Scopus ID selects within this tie; it does not indicate seniority or quality.
+Across the current pool, adding the earlier years contributes 76 first/last-author article credits, including 38 with US-sample evidence. The six-article cutoff is shared by 70 researchers (previously 67); 65 are outside the displayed pool (previously 48). Numeric Scopus ID selects within this tie; it does not indicate seniority or quality.
 
 US counts combine explicit and inferred sample evidence and remain provisional pending independent validation. The pool is selected by total first/last-author article count before geography is assessed. Counts represent distinct candidate articles, not independent experiments or datasets.
 

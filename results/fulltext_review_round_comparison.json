@@ -14,15 +14,15 @@
     },
     "n_us_articles": {
       "n_researchers": 100,
-      "distinct_counts": 13,
-      "tied_researchers": 98,
-      "tied_pairs": 499,
+      "distinct_counts": 14,
+      "tied_researchers": 96,
+      "tied_pairs": 459,
       "all_pairs": 4950,
-      "tied_pair_percent": 10.081,
+      "tied_pair_percent": 9.273,
       "largest_tie_group": 17,
       "minimum": 0,
       "maximum": 19,
-      "mean": 3.9
+      "mean": 4.28
     }
   },
   "after": {
@@ -41,14 +41,14 @@
     "n_us_articles": {
       "n_researchers": 100,
       "distinct_counts": 14,
-      "tied_researchers": 96,
-      "tied_pairs": 459,
+      "tied_researchers": 97,
+      "tied_pairs": 458,
       "all_pairs": 4950,
-      "tied_pair_percent": 9.273,
+      "tied_pair_percent": 9.253,
       "largest_tie_group": 17,
       "minimum": 0,
       "maximum": 19,
-      "mean": 4.28
+      "mean": 4.37
     }
   }
 }

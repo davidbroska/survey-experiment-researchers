@@ -1,0 +1,1 @@
+(TITLE-ABS-KEY({information treatment} OR {information treatments} OR {informational treatment} OR {informational treatments}) AND TITLE-ABS-KEY(participant*) AND TITLE-ABS-KEY(random* OR experiment*)) AND NOT TITLE-ABS-KEY(survey* OR questionnaire* OR respondent*) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027

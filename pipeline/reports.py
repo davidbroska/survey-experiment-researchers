@@ -92,7 +92,7 @@ The archived search retrieves {number(flow['global_retrieved'])} records globall
     for name, text in [("EXECUTIVE_SUMMARY.md", executive), ("SUPPORTING_INFORMATION.md", method), ("QUERY_REPORT.md", assessment)]:
         (ROOT / name).write_text(text, encoding="utf-8")
         from render import render
-        title = {'EXECUTIVE_SUMMARY.md': 'Researcher selection: coauthor summary',
+        title = {'EXECUTIVE_SUMMARY.md': 'Researcher selection: methodology',
                  'SUPPORTING_INFORMATION.md': 'Researcher selection: supporting information',
                  'QUERY_REPORT.md': 'Survey-experiment search query'}[name]
         (ROOT / name.replace('.md', '.html')).write_text(render(text, title), encoding='utf-8')

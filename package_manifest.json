@@ -20,27 +20,27 @@
     },
     {
       "path": "EXECUTIVE_SUMMARY.html",
-      "sha256": "2cf2b58b133a97c0a5fef3fe9a994eeed571bc827de51d80ab79a156b5154fc9"
+      "sha256": "e41245f4a29d80fd0df325ce4711edd35fa9e16225984b30e49bc8672f8a2e16"
     },
     {
       "path": "EXECUTIVE_SUMMARY.md",
-      "sha256": "2dc02a841e7a8d8d1b18ca03fc5d1123642f8ce529643e8ead01a438054535fa"
+      "sha256": "ff2b332eae2aad7121f92b414c63f34a0bd11285c5d6127c28c701386a24f6c1"
     },
     {
       "path": "FULLTEXT_REVIEW.html",
-      "sha256": "95addfb4be21285e3927866fbb445a2ef2cbc31668e0122f76a9a8e8d90fa253"
+      "sha256": "c377543aa0a3ac9c27a0fc3406afbfafe5512e5c8aae2e0a094f9476aae62117"
     },
     {
       "path": "FULLTEXT_REVIEW.md",
-      "sha256": "e2abc3b669b5062b6a2107ad58189ad177e521fdd1161bc142333fc455c82881"
+      "sha256": "bd2d59297e5b54bf055d0d6e46e0b1e77b2a31dfae3f0ddfd5e646695c41fcfa"
     },
     {
       "path": "GEOGRAPHY_REPORT.html",
-      "sha256": "20352b2af76783fd3361801f8b54ea433a667c085998d74f8bad9f15abd50f2a"
+      "sha256": "27f89eca2972c4b0f5125989a77d452f910aa756651794437342f31ff93922bf"
     },
     {
       "path": "GEOGRAPHY_REPORT.md",
-      "sha256": "de310733d2f298b6d3d680d0002cea4d1f9d29828c346a8f83ca631fcadbcd40"
+      "sha256": "06bf874fde334136f6449792457d63c09b560638106391f231dd24382532a276"
     },
     {
       "path": "GITHUB_HOSTING.md",
@@ -48,19 +48,23 @@
     },
     {
       "path": "MANUAL_DOWNLOADS.html",
-      "sha256": "6bbb6551293040350fe513a80cd28bc9541f33b8bea369f2c7c09419ef4250aa"
+      "sha256": "44187f1adb856abf1df01d1bf8d86c2b6c28bd840d90bafb7f14217fa536f9fc"
     },
     {
       "path": "MANUAL_DOWNLOADS.md",
-      "sha256": "1aec76e4088db37134dbdecffd90578625c43d3564edaa5a20991db2c5c6c25b"
+      "sha256": "b0bcad07bbf33ad5b2791f5f6321c7c09a9e75cebd8bd01abcabb946c82f0e37"
+    },
+    {
+      "path": "PARTICIPANT_TERM_ASSESSMENT.md",
+      "sha256": "8a71f51e0c6dc11b792be9891ecde8579f30fc56bc844f48fe679506daf8f832"
     },
     {
       "path": "PRIORITY_DOWNLOADS.html",
-      "sha256": "e544068bacef303b15ce37821b42da0d03bc5cdb28ee3edf7866a8c8d1deceb2"
+      "sha256": "e44caeefd00e0ac5fd9b7040b1388e87396f0c658cfe48bff0213a8bc11ebf45"
     },
     {
       "path": "PRIORITY_DOWNLOADS.md",
-      "sha256": "25542549ce18224b3dbc30df2af8515e1a6da79fcd02e44a129ee8f3814ba289"
+      "sha256": "d0746717c098947284dd23b597235db8cf1f0003d26923f3fbb7cd555a853855"
     },
     {
       "path": "QUERY_REPORT.html",
@@ -72,35 +76,35 @@
     },
     {
       "path": "README.md",
-      "sha256": "11c68986b865043251ca643c667c2671025e2616ebd6a3c3a50f83238e7c15b3"
+      "sha256": "9c893904b84406febd65acfe86a89ee65190165a0b596fc679efb74784556404"
     },
     {
       "path": "SUPPORTING_INFORMATION.html",
-      "sha256": "e901dd12317a39dceb74b9c862c74148246f1857a2f28d6b4d86cbd7f1a93607"
+      "sha256": "6b0748932bd44526aa4b7022477ea3c5ab8e2db45ca1510b0a9d9b839482e128"
     },
     {
       "path": "SUPPORTING_INFORMATION.md",
-      "sha256": "cf9521d64618f8e8e15f6c7c4c901aecce883f6f4ffe16f9d91bdd22bceb86da"
+      "sha256": "ccf61047e93ab15b1a6d2582693df69624490b3fbc0bc9d80241a351af11c2c6"
     },
     {
       "path": "TOP100.html",
-      "sha256": "d4b3cec307ab04731a64ba0e86ef1ded98aad9da9c3ec15d60b7b91c634168a5"
+      "sha256": "ad2849a93705e6e3b4470e52933b0ea6900596016464177a928eb5bc4dafa53b"
     },
     {
       "path": "TOP40.html",
-      "sha256": "d4b3cec307ab04731a64ba0e86ef1ded98aad9da9c3ec15d60b7b91c634168a5"
+      "sha256": "ad2849a93705e6e3b4470e52933b0ea6900596016464177a928eb5bc4dafa53b"
     },
     {
       "path": "YEAR_WINDOW_COMPARISON.html",
-      "sha256": "e8fd0d83c360daf0331866326c0a87e5d8b0ebe8365bd838b05b03c635789eb7"
+      "sha256": "51379ac93eaf145c26b46af1deb34ff30bb57c4b207f6c087b34a05095edc74d"
     },
     {
       "path": "YEAR_WINDOW_COMPARISON.md",
-      "sha256": "9f6e20110d82030cc05d2b8d032ad3c829530dbf15218e5eda8cf60215213b68"
+      "sha256": "8cf5b8ac70094b36d319dc2fff0c5fbce436b2c11308f6c5fc4bfd8bce1e3be2"
     },
     {
       "path": "github-pages-site.zip",
-      "sha256": "e866d3f975b6dd5312ae5a56a36b129369fb5d3e794f3684bec55c21f5c4fb00"
+      "sha256": "2738a8570031fcddfb513e90e7dd35377d85fa1d64cebe3e3b6d669ef40cac79"
     },
     {
       "path": "inputs/article_decisions.csv",
@@ -124,7 +128,7 @@
     },
     {
       "path": "inputs/fulltext_reviews.csv",
-      "sha256": "7c4d0f1067911f7d3a8abcb650ef172323dc8b26c71b4bef4bddc56b2467e6d5"
+      "sha256": "94cc78b58c0f3160b9c9b2343d1f555e9690f8654960343ca8f6c8e527a6c940"
     },
     {
       "path": "inputs/investigator_journals.csv",
@@ -168,7 +172,7 @@
     },
     {
       "path": "pipeline/acquisition_report.py",
-      "sha256": "2c4beb2c48de2718f13f71fa0b53ecdfc606b2a5fedb113340cccb78399c88d4"
+      "sha256": "99da09378ed1c4d0e00d105dcd64caa74955a23f6fa74f41807e5443fb7d5e58"
     },
     {
       "path": "pipeline/analyse.py",
@@ -184,7 +188,7 @@
     },
     {
       "path": "pipeline/coauthor_summary.py",
-      "sha256": "415d54acae7ee09f11609ea5db5bf2ac7faa909aac8c35b3efdeac5c60781f11"
+      "sha256": "e8909b678e257ea164e52c85a78f441299fd27ae2b1a72e2b1eecd53c0fdefcc"
     },
     {
       "path": "pipeline/common.py",
@@ -212,7 +216,7 @@
     },
     {
       "path": "pipeline/dashboard_template.html",
-      "sha256": "ffc3d0b4fe260d3da200e15498b89f2c0664f73d8f85ecb5fbf1fffe2a1ded85"
+      "sha256": "2de6d22b5625756ee0c7e7ec1f020f7ada3821a99bf0203bc28a06d050b3adb0"
     },
     {
       "path": "pipeline/enrich.py",
@@ -244,7 +248,7 @@
     },
     {
       "path": "pipeline/reports.py",
-      "sha256": "9de6fba46bd91a3eac1d915998e2aa27e3101a8305cfbf871cd36baeaf6bf1f5"
+      "sha256": "870fa7fb6afc1f56c1932a51652acf30bd33dcd95362a2fd0284e6e25bf2b739"
     },
     {
       "path": "pipeline/review_priority.py",
@@ -291,6 +295,26 @@
       "sha256": "e731cb94f998c5180fc629ef41b05c5bc3459126bf5eaa288ac6f4263eae7aa0"
     },
     {
+      "path": "queries/participant_assessment/candidate_text_and_wording.txt",
+      "sha256": "06c048b89fff9e94762b8837f2d2532910e23cfd1c0b700007d9fb42b0f6f481"
+    },
+    {
+      "path": "queries/participant_assessment/contextual_design_diagnostic.txt",
+      "sha256": "defa89d126617b44a1abfeeebd629fafbf3d7f32fb797ae52562cf6d7d716726"
+    },
+    {
+      "path": "queries/participant_assessment/survey_information_diagnostic.txt",
+      "sha256": "2c26d7fba07621b6a6ba5eee195f10ef0b6614bfe089047c0c7813d407bb0e85"
+    },
+    {
+      "path": "queries/participant_assessment/survey_wording_diagnostic.txt",
+      "sha256": "468ba759743339d6779fffe3a80d1c9c3d7f92c86ea5abe1fa494595c854222a"
+    },
+    {
+      "path": "queries/participant_assessment/text_assignment_diagnostic.txt",
+      "sha256": "7d612578544bb54dbc8405b2a9aec2b61eb87969c17ac0aa4fa06bd3568283f7"
+    },
+    {
       "path": "queries/recommended.txt",
       "sha256": "d1b093aa5218404faefd906b710ccad5b6d2bb18637bfa88a87e0ca196da1145"
     },
@@ -312,11 +336,11 @@
     },
     {
       "path": "results/dashboard_browser_check.json",
-      "sha256": "3ac7becc0d7650996ca3788513a3b307dc7051b65ee069172c28f8a9d1f696fa"
+      "sha256": "5f5f8abfe37db928183b0ce19819d21aaca7bfd5aec9af32d8a044cee89c2c8e"
     },
     {
       "path": "results/dashboard_reproducibility_check.json",
-      "sha256": "d9262d68d785c6890c4404ba41076997ac59b18ea34a8c26f56639f38cc912a2"
+      "sha256": "366979a29b7cdd811055913df66af1d795b26ceb5342d29c004cfd81ca5e37ba"
     },
     {
       "path": "results/decision_errors.csv",
@@ -324,7 +348,7 @@
     },
     {
       "path": "results/downloaded_awaiting_review.csv",
-      "sha256": "03667b2c9466fd68c979a6ec9b36caadd56e11bcc9525e51c0b42724f2c28d88"
+      "sha256": "8448c4a374a0eb3735e80ee31188f2fe7b552d49a7de536194c92d17c27389a3"
     },
     {
       "path": "results/duplicate_log.csv",
@@ -352,23 +376,23 @@
     },
     {
       "path": "results/fulltext_availability_summary.json",
-      "sha256": "a907758c6dd6170540bcf321f7f94d35b62dc402d7da40dc3aeb08c292a519b8"
+      "sha256": "f87c9789c40347386d5a92e6c2b7ebc335e36772f3c24b07a785de73b3e1c980"
     },
     {
       "path": "results/fulltext_download_queue.csv",
-      "sha256": "0ac83ef36c33a11f5de0f3ba07ed965e7ad6e295125b9f3b0a3f9a91abefa308"
+      "sha256": "1ef984e79419f36300d750ffa6e6977cae7b5bb7c6e208aeb84e6923b9a8a5b8"
     },
     {
       "path": "results/fulltext_review_round_author_changes.csv",
-      "sha256": "0147efbd0bf9854573e837007dcdb1f4a2b7574b2c5057a57338a691f20ffcb9"
+      "sha256": "173645efa5dce637b855c183e7f2bce38d451ec7e763d666473e3d8905d38580"
     },
     {
       "path": "results/fulltext_review_round_comparison.json",
-      "sha256": "cdf9313eaab1a5844393932ae2bcfbb047e63ec718a1477968511c950668de82"
+      "sha256": "aad782033f94080d88738a81057c6ba71ab74504c274233ef9d0eb03e233b54d"
     },
     {
       "path": "results/geography_methods_paragraph.txt",
-      "sha256": "e04d0eef5050861847d7bc9afc8de50c343722e9eba50ad1dc7b6e401dc865ed"
+      "sha256": "1d43184d02bf1cf7caa642faaf180688e6052cfc24639f6bed9df65f2455a86a"
     },
     {
       "path": "results/historical_2016_2026/README.md",
@@ -400,7 +424,7 @@
     },
     {
       "path": "results/manual_download_queue.csv",
-      "sha256": "dd1854196578f12de01c91a84e03c088c32a53729cfdcbf653abe9f4d041afb8"
+      "sha256": "aac8fbbbf766858f4d10f70c43c1eb29fdbe22a6089e1da9b9b9c5e5b77d89b7"
     },
     {
       "path": "results/missing_source_ids.csv",
@@ -412,7 +436,11 @@
     },
     {
       "path": "results/open_access_summary.json",
-      "sha256": "f9161ad5c49e0831988ef67af70e4c76c0cf899a773524faa5c8345a41019faf"
+      "sha256": "e20bcc9b1ea90eca7d3721ac96884df51aa9501588a274a1e3f362793539f7e0"
+    },
+    {
+      "path": "results/participant_term_probe.csv",
+      "sha256": "6b788febfa772c8417f14d4917fa1b2458340e274bb5c6723817a291cbcafa9d"
     },
     {
       "path": "results/punctuation_audit.csv",
@@ -468,15 +496,15 @@
     },
     {
       "path": "results/site_manifest.json",
-      "sha256": "65503613499238707970845ab8f9df1f3c2cab09ed0728f08b193b17594e11a4"
+      "sha256": "cdcb949909592d44f5db26ae158fb1f2f9502cbea7fb137206056140ac3cbd5f"
     },
     {
       "path": "results/top100_article_annotations.csv",
-      "sha256": "0f13bebbee244a56257bb50c98fc8b06558d4ed039145256759d4a6d1b0bcafb"
+      "sha256": "81a351ad8554fea53942c57ff57214b49171bb33ec2c55c66be092878173c2ac"
     },
     {
       "path": "results/top100_author_article_links.csv",
-      "sha256": "7b09eb79040d990181a46e99a44ad692e21310af3478a4559a82094fd36d989e"
+      "sha256": "af78fd727bdae284b6f02b1ed5e50eea64c7a13faf1139db10ff99d732fd89a9"
     },
     {
       "path": "results/top100_cutoff_ties.csv",
@@ -484,11 +512,11 @@
     },
     {
       "path": "results/top100_enriched.csv",
-      "sha256": "f726d4de22dd0d06f204967986d2633a820e40da5287a814587605e809ea53fe"
+      "sha256": "c4614db42c42f97fd55309caa894f2276b2c872196d164b9fa77b8c65b3b09af"
     },
     {
       "path": "results/top100_enrichment_summary.json",
-      "sha256": "17a187beea160036043409632cb816d1396d0e5998e0bb63de287da3762e2dae"
+      "sha256": "51d804f3603f6bccfc8908a747fd74eff46f2fd2917eb55d4f8aa799f37701e6"
     },
     {
       "path": "results/top100_provisional.csv",
@@ -516,11 +544,11 @@
     },
     {
       "path": "results/top50_priority_downloads.csv",
-      "sha256": "09f79df34558b596e4fdc820a5cd65508fafd292947c25bae0a4a2cec70e9a33"
+      "sha256": "a596808790bf82a715e6a6926c4d912f6e66c9e2a8df5ec99a4f4ebe09e0a3b6"
     },
     {
       "path": "results/top50_review_priority_summary.json",
-      "sha256": "b8178a6f336a27c0d2466d071467ffefe6adeecbc85639c2bc8602ed2c7bd817"
+      "sha256": "45f5180cace8b91af3c94a60043ef60736af0ac1a3b26550e83945789d96272b"
     },
     {
       "path": "results/validation_sample_ids.csv",
@@ -532,15 +560,15 @@
     },
     {
       "path": "results/year_window_author_comparison.csv",
-      "sha256": "af622c0135198683648538b619a426fb73688e9a5cfc2e121f3b10fb9b895959"
+      "sha256": "de77525b28139e75e1fa6ac64720df02dfd082faeeab9af56f4db266d0f5b792"
     },
     {
       "path": "results/year_window_comparison.json",
-      "sha256": "82742b4965da28ab30f4600fecfd4b0cc5c78b00946fa61b448b85ee8c15c6d7"
+      "sha256": "93cdc06466cc8e95f8dcecb3091eeb16e34a3087044fa3bacbd07cb340ef4956"
     },
     {
       "path": "results/year_window_tie_comparison.csv",
-      "sha256": "b21a3c643a5607532d1803235e4669405b8be8d7677fc383a09f90295db36d9c"
+      "sha256": "aa44f2bce243664dfd80aa9f55eeefeaf93cc9c65642b74627fd06b186474ae5"
     },
     {
       "path": "site/.nojekyll",
@@ -548,43 +576,43 @@
     },
     {
       "path": "site/EXECUTIVE_SUMMARY.html",
-      "sha256": "2cf2b58b133a97c0a5fef3fe9a994eeed571bc827de51d80ab79a156b5154fc9"
+      "sha256": "e41245f4a29d80fd0df325ce4711edd35fa9e16225984b30e49bc8672f8a2e16"
     },
     {
       "path": "site/EXECUTIVE_SUMMARY.md",
-      "sha256": "2dc02a841e7a8d8d1b18ca03fc5d1123642f8ce529643e8ead01a438054535fa"
+      "sha256": "ff2b332eae2aad7121f92b414c63f34a0bd11285c5d6127c28c701386a24f6c1"
     },
     {
       "path": "site/FULLTEXT_REVIEW.html",
-      "sha256": "95addfb4be21285e3927866fbb445a2ef2cbc31668e0122f76a9a8e8d90fa253"
+      "sha256": "c377543aa0a3ac9c27a0fc3406afbfafe5512e5c8aae2e0a094f9476aae62117"
     },
     {
       "path": "site/FULLTEXT_REVIEW.md",
-      "sha256": "e2abc3b669b5062b6a2107ad58189ad177e521fdd1161bc142333fc455c82881"
+      "sha256": "bd2d59297e5b54bf055d0d6e46e0b1e77b2a31dfae3f0ddfd5e646695c41fcfa"
     },
     {
       "path": "site/GEOGRAPHY_REPORT.html",
-      "sha256": "20352b2af76783fd3361801f8b54ea433a667c085998d74f8bad9f15abd50f2a"
+      "sha256": "27f89eca2972c4b0f5125989a77d452f910aa756651794437342f31ff93922bf"
     },
     {
       "path": "site/GEOGRAPHY_REPORT.md",
-      "sha256": "de310733d2f298b6d3d680d0002cea4d1f9d29828c346a8f83ca631fcadbcd40"
+      "sha256": "06bf874fde334136f6449792457d63c09b560638106391f231dd24382532a276"
     },
     {
       "path": "site/MANUAL_DOWNLOADS.html",
-      "sha256": "6bbb6551293040350fe513a80cd28bc9541f33b8bea369f2c7c09419ef4250aa"
+      "sha256": "44187f1adb856abf1df01d1bf8d86c2b6c28bd840d90bafb7f14217fa536f9fc"
     },
     {
       "path": "site/MANUAL_DOWNLOADS.md",
-      "sha256": "1aec76e4088db37134dbdecffd90578625c43d3564edaa5a20991db2c5c6c25b"
+      "sha256": "b0bcad07bbf33ad5b2791f5f6321c7c09a9e75cebd8bd01abcabb946c82f0e37"
     },
     {
       "path": "site/PRIORITY_DOWNLOADS.html",
-      "sha256": "e544068bacef303b15ce37821b42da0d03bc5cdb28ee3edf7866a8c8d1deceb2"
+      "sha256": "e44caeefd00e0ac5fd9b7040b1388e87396f0c658cfe48bff0213a8bc11ebf45"
     },
     {
       "path": "site/PRIORITY_DOWNLOADS.md",
-      "sha256": "25542549ce18224b3dbc30df2af8515e1a6da79fcd02e44a129ee8f3814ba289"
+      "sha256": "d0746717c098947284dd23b597235db8cf1f0003d26923f3fbb7cd555a853855"
     },
     {
       "path": "site/QUERY_REPORT.html",
@@ -600,31 +628,31 @@
     },
     {
       "path": "site/SUPPORTING_INFORMATION.html",
-      "sha256": "e901dd12317a39dceb74b9c862c74148246f1857a2f28d6b4d86cbd7f1a93607"
+      "sha256": "6b0748932bd44526aa4b7022477ea3c5ab8e2db45ca1510b0a9d9b839482e128"
     },
     {
       "path": "site/SUPPORTING_INFORMATION.md",
-      "sha256": "cf9521d64618f8e8e15f6c7c4c901aecce883f6f4ffe16f9d91bdd22bceb86da"
+      "sha256": "ccf61047e93ab15b1a6d2582693df69624490b3fbc0bc9d80241a351af11c2c6"
     },
     {
       "path": "site/TOP100.html",
-      "sha256": "d4b3cec307ab04731a64ba0e86ef1ded98aad9da9c3ec15d60b7b91c634168a5"
+      "sha256": "ad2849a93705e6e3b4470e52933b0ea6900596016464177a928eb5bc4dafa53b"
     },
     {
       "path": "site/TOP40.html",
-      "sha256": "d4b3cec307ab04731a64ba0e86ef1ded98aad9da9c3ec15d60b7b91c634168a5"
+      "sha256": "ad2849a93705e6e3b4470e52933b0ea6900596016464177a928eb5bc4dafa53b"
     },
     {
       "path": "site/YEAR_WINDOW_COMPARISON.html",
-      "sha256": "e8fd0d83c360daf0331866326c0a87e5d8b0ebe8365bd838b05b03c635789eb7"
+      "sha256": "51379ac93eaf145c26b46af1deb34ff30bb57c4b207f6c087b34a05095edc74d"
     },
     {
       "path": "site/YEAR_WINDOW_COMPARISON.md",
-      "sha256": "9f6e20110d82030cc05d2b8d032ad3c829530dbf15218e5eda8cf60215213b68"
+      "sha256": "8cf5b8ac70094b36d319dc2fff0c5fbce436b2c11308f6c5fc4bfd8bce1e3be2"
     },
     {
       "path": "site/index.html",
-      "sha256": "d4b3cec307ab04731a64ba0e86ef1ded98aad9da9c3ec15d60b7b91c634168a5"
+      "sha256": "ad2849a93705e6e3b4470e52933b0ea6900596016464177a928eb5bc4dafa53b"
     },
     {
       "path": "site/queries/recommended.txt",
@@ -632,23 +660,23 @@
     },
     {
       "path": "site/results/downloaded_awaiting_review.csv",
-      "sha256": "03667b2c9466fd68c979a6ec9b36caadd56e11bcc9525e51c0b42724f2c28d88"
+      "sha256": "8448c4a374a0eb3735e80ee31188f2fe7b552d49a7de536194c92d17c27389a3"
     },
     {
       "path": "site/results/fulltext_download_queue.csv",
-      "sha256": "0ac83ef36c33a11f5de0f3ba07ed965e7ad6e295125b9f3b0a3f9a91abefa308"
+      "sha256": "1ef984e79419f36300d750ffa6e6977cae7b5bb7c6e208aeb84e6923b9a8a5b8"
     },
     {
       "path": "site/results/manual_download_queue.csv",
-      "sha256": "dd1854196578f12de01c91a84e03c088c32a53729cfdcbf653abe9f4d041afb8"
+      "sha256": "aac8fbbbf766858f4d10f70c43c1eb29fdbe22a6089e1da9b9b9c5e5b77d89b7"
     },
     {
       "path": "site/results/top100_article_annotations.csv",
-      "sha256": "0f13bebbee244a56257bb50c98fc8b06558d4ed039145256759d4a6d1b0bcafb"
+      "sha256": "81a351ad8554fea53942c57ff57214b49171bb33ec2c55c66be092878173c2ac"
     },
     {
       "path": "site/results/top100_author_article_links.csv",
-      "sha256": "7b09eb79040d990181a46e99a44ad692e21310af3478a4559a82094fd36d989e"
+      "sha256": "af78fd727bdae284b6f02b1ed5e50eea64c7a13faf1139db10ff99d732fd89a9"
     },
     {
       "path": "site/results/top100_cutoff_ties.csv",
@@ -656,7 +684,7 @@
     },
     {
       "path": "site/results/top100_enriched.csv",
-      "sha256": "f726d4de22dd0d06f204967986d2633a820e40da5287a814587605e809ea53fe"
+      "sha256": "c4614db42c42f97fd55309caa894f2276b2c872196d164b9fa77b8c65b3b09af"
     },
     {
       "path": "site/results/top100_provisional.csv",
@@ -664,19 +692,19 @@
     },
     {
       "path": "site/results/top50_priority_downloads.csv",
-      "sha256": "09f79df34558b596e4fdc820a5cd65508fafd292947c25bae0a4a2cec70e9a33"
+      "sha256": "a596808790bf82a715e6a6926c4d912f6e66c9e2a8df5ec99a4f4ebe09e0a3b6"
     },
     {
       "path": "site/results/year_window_author_comparison.csv",
-      "sha256": "af622c0135198683648538b619a426fb73688e9a5cfc2e121f3b10fb9b895959"
+      "sha256": "de77525b28139e75e1fa6ac64720df02dfd082faeeab9af56f4db266d0f5b792"
     },
     {
       "path": "site/results/year_window_tie_comparison.csv",
-      "sha256": "b21a3c643a5607532d1803235e4669405b8be8d7677fc383a09f90295db36d9c"
+      "sha256": "aa44f2bce243664dfd80aa9f55eeefeaf93cc9c65642b74627fd06b186474ae5"
     },
     {
       "path": "tests/browser_check.mjs",
-      "sha256": "a3c99ed011d9d1ca8d91b520f94c7130239f894648595e1efce79779ef41675a"
+      "sha256": "b5d7b7c952abd3a3f5cf4cd78771422f7dbefc52f24fae10cffd0a0e092847a5"
     },
     {
       "path": "tests/test_acquisition.py",
@@ -708,14 +736,14 @@
     }
   ],
   "enrichment_status": "100 sourced affiliation profiles joined to 870 distinct annotated articles; AI-assisted geography awaiting independent validation",
-  "last_updated": "2026-09-09",
+  "last_updated": "2026-09-10",
   "dashboard": "TOP100.html",
   "dashboard_legacy_entrypoint": "TOP40.html",
-  "geography_status": "870 articles annotated; 393 US-associated; 127 unclear; 65 page-cited full-text decisions; AI-assisted and awaiting independent validation",
+  "geography_status": "870 articles annotated; 402 US-associated; 117 unclear; 75 page-cited full-text decisions; AI-assisted and awaiting independent validation",
   "geography_scope": "100-person pool selected by distinct first/last-author candidate count; 65 additional cutoff-tied authors outside pool",
   "affiliation_status": "100 profiles with sources; dated and conflicting-role entries flagged",
-  "browser_validation": "Ranking and Coauthor summary tabs, literal query and copy control, keyboard navigation, all 12 columns in both directions, article filters, manual-only download queue, checklist storage, CSV and mobile layouts",
-  "reproducibility": "36 outputs reproduced byte-for-byte; initial geography metadata and earlier full-text decisions preserved",
+  "browser_validation": "Ranking and Methodology tabs, literal query and copy control, keyboard navigation, all 12 columns in both directions, article filters, manual-only download queue, checklist storage, CSV and mobile layouts",
+  "reproducibility": "34 regenerated outputs reproduced byte-for-byte; initial geography metadata and 65 earlier full-text decisions preserved; latest ten decisions appended",
   "retrieval_dates": [
     "2026-09-08",
     "2026-09-09"
@@ -724,11 +752,12 @@
     2010,
     2026
   ],
-  "updated_at": "2026-09-09",
+  "updated_at": "2026-09-10",
   "baseline_snapshot": "private/snapshots/2016_2026_before_extension",
   "website_staged": true,
-  "open_access_acquisition": "182 initial records checked; 48 public article PDFs acquired plus two supplements; one abstract-only file flagged; nine new user-supplied PDFs organized; 125 articles still lack usable full text",
-  "website_publication_status": "Prepared for initial GitHub Actions deployment",
+  "open_access_acquisition": "182 initial records checked; 48 public article PDFs acquired plus two supplements; one abstract-only file flagged; ten new user-supplied PDFs organized and reviewed on 10 September; 115 articles still lack usable full text",
+  "website_publication_status": "Published through GitHub Actions; deployment receipts retained under private/",
   "repository": "https://github.com/davidbroska/survey-experiment-researchers",
-  "dashboard_url": "https://davidbroska.github.io/survey-experiment-researchers/"
+  "dashboard_url": "https://davidbroska.github.io/survey-experiment-researchers/",
+  "participant_query_status": "Four supplementary diagnostic searches on 10 September; candidate expansion for text assignments and question wording saved separately, not applied to archived ranking"
 }

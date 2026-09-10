@@ -1,4 +1,4 @@
-"""The user's four-step coauthor summary, with counts and the executed query."""
+"""The user's four-step methodology, with counts and the executed query."""
 import html
 import re
 import query
@@ -42,7 +42,7 @@ def content(summary, flow, frame):
 
 def standalone(fragment):
     return ('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
-            '<title>Coauthor summary</title><style>body{font:16px/1.65 system-ui,sans-serif;max-width:1040px;margin:3rem auto;padding:0 1rem;color:#192b36}'
+            '<title>Methodology</title><style>body{font:16px/1.65 system-ui,sans-serif;max-width:1040px;margin:3rem auto;padding:0 1rem;color:#192b36}'
             'li{padding-left:.5rem;margin-bottom:1.4rem}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f0f5f8;padding:1rem;font-size:12px}'
-            'a{color:#136294}.review-note{font-size:13px;color:#536575}</style><h1>Coauthor summary</h1>' + fragment +
+            'a{color:#136294}.review-note{font-size:13px;color:#536575}</style><h1>Methodology</h1>' + fragment +
             '<p><a href="TOP100.html#summary">Open in dashboard</a> · <a href="queries/recommended.txt">Download Scopus query</a></p></html>\n')

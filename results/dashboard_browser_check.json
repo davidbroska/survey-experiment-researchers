@@ -1,11 +1,11 @@
 {
   "browser": "Google Chrome via local CDP",
-  "html_sha256": "d4b3cec307ab04731a64ba0e86ef1ded98aad9da9c3ec15d60b7b91c634168a5",
+  "html_sha256": "ad2849a93705e6e3b4470e52933b0ea6900596016464177a928eb5bc4dafa53b",
   "researcher_rows": 100,
   "columns_checked_both_directions": 12,
   "checks": [
     "Ranking label",
-    "coauthor summary tab",
+    "Methodology tab",
     "four selection steps",
     "literal query fidelity",
     "copy query",

@@ -21,6 +21,7 @@ await call('Page.navigate',{url:process.env.DASHBOARD_URL || pathToFileURL(path.
 for(let i=0;i<30;i++){if(await evaluate('document.querySelectorAll("#people-rows tr[data-author]").length===100'))break;await new Promise(r=>setTimeout(r,100));}
 assert.equal(await evaluate('document.querySelectorAll("#people-rows tr[data-author]").length'),100);
 assert.equal(await evaluate('document.getElementById("people-tab").textContent'),'Ranking');
+assert.equal(await evaluate('document.getElementById("summary-tab").textContent'),'Methodology');
 await evaluate('document.getElementById("summary-tab").click()');
 assert.equal(await evaluate('document.getElementById("summary-view").hidden'),false);
 assert.equal(await evaluate('document.querySelectorAll(".selection-steps > li").length'),4);
@@ -84,6 +85,6 @@ assert.equal(await evaluate('document.documentElement.scrollWidth<=window.innerW
 await fs.writeFile(path.join(out,'mobile-summary.png'),Buffer.from((await call('Page.captureScreenshot',{format:'png'})).data,'base64'));
 assert.deepEqual(errors,[],'No uncaught browser exceptions');
 const result={browser:'Google Chrome via local CDP',html_sha256:createHash('sha256').update(await fs.readFile(path.join(root,'TOP100.html'))).digest('hex'),researcher_rows:100,columns_checked_both_directions:columns.length,
-  checks:['Ranking label','coauthor summary tab','four selection steps','literal query fidelity','copy query','three-tab keyboard navigation','downloaded PDFs omitted from manual queue','all column sorts','US maximum first','author evidence drilldown','US-only article filter','country search','empty search','ten-paper batches','last batch','download checkbox storage','CSV batch contents','mobile overflow'],uncaught_exceptions:0};
+  checks:['Ranking label','Methodology tab','four selection steps','literal query fidelity','copy query','three-tab keyboard navigation','downloaded PDFs omitted from manual queue','all column sorts','US maximum first','author evidence drilldown','US-only article filter','country search','empty search','ten-paper batches','last batch','download checkbox storage','CSV batch contents','mobile overflow'],uncaught_exceptions:0};
 await fs.writeFile(path.join(root,'results/dashboard_browser_check.json'),JSON.stringify(result,null,2)+'\n');
 console.log(JSON.stringify(result,null,2));ws.close();

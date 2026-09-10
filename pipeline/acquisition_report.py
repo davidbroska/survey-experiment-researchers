@@ -54,10 +54,10 @@ def write_reports(queue, root=ROOT):
     for r in manual:
         if r['manual_batch'] != batch:
             batch = r['manual_batch']; lines.append(f'**Batch {batch}**\n\n')
-        lines.append(f"{r['manual_position']}. [{r['title']}]({r['manual_download_url']}) · "
+        lines.append((f"{r['manual_position']}. [{r['title']}]({r['manual_download_url']}) · "
                      f"[DOI / publisher]({r['article_url']}). Save as `{r['suggested_filename']}`. "
                      f"Affects: {r['credited_researchers']}. "
-                     f"{r.get('manual_retrieval_note', '')}\n\n")
+                      f"{r.get('manual_retrieval_note', '')}").rstrip() + '\n\n')
     text = ''.join(lines)
     (root / 'MANUAL_DOWNLOADS.md').write_text(text)
     (root / 'MANUAL_DOWNLOADS.html').write_text(render(text, 'Manual full-text downloads'))
