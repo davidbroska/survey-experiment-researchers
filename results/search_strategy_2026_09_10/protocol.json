@@ -1,0 +1,24 @@
+{
+  "frozen_at": "2026-09-10T12:36:23.692377+00:00",
+  "version": "search_strategy_2026_09_10",
+  "query_sha256": "c5abcd2e2cdc9b4be96a46fa848ceb288343c115f7aab5b664e09196b3662d45",
+  "part_sha256": {
+    "named_base": "9d16a37ea7185470e4f6c64162236401b2eef3c340c5bc71f323d6f8e6182b12",
+    "named_extra": "c20e9caccd1b24b02689b8a53322c3a7077130c2a1dcb32f903d9a38b28d660e",
+    "guarded_design": "0864a732ad39fc9e99a1872553dc9d0e2732d2e2d487813182780c1b74e70276",
+    "procedure": "aeff4c1006f4dfcd372f62a08ddd72afeaa158c60340bc93c2531266da25ee6c",
+    "reading_assignment": "addc8cb06f9e46b17c7bc6da77991b1cab3fc1991a09bd04e98320ccb1e52bb9"
+  },
+  "frame_sha256": "ad56e395484102a4b2da1189e75de9bdab77c5c750ab83e6e2bef06d02078074",
+  "comparator_query_sha256": "577f476936bec6ee5d0a237b3e8460e966d934844f1a0fc23e9808a9166020e2",
+  "development_exclusion_sha256": "def2f53efaec0b98507b2644125bfe882faa7916be355f8efa8251d157dd7b61",
+  "development_sample_sha256": "a2bb8d6a90a83ca1f3a72a3e13ad371a4d68a46b3a8199b0e1d17b03597ec14f",
+  "rationale": "Initial development exposed substantial irrelevant retrieval from broad information/perception/texture matches. The refined candidate preserves named designs and randomized reading assignments, restores guarded design expressions, restricts broad procedural evidence to title/abstract, adds a human-context gate, and removes perception/preference/text-prefix terms from that route. No claim of validated precision follows from this refinement.",
+  "validation_plan": "One fixed simple random hash sample of 100 DOI-deduplicated candidate articles, excluding all archived inherited/focal development material and the 160 fresh development records by Scopus aliases, DOI or normalized title hash. Two independent AI coders; human adjudication needed before manuscript precision claims.",
+  "sample_estimand": "Candidate-query articles outside archived development material, not all social-science experiments or all records in the candidate union.",
+  "positive_terms_only": true,
+  "author_or_topic_terms": false,
+  "punctuation_policy": "Database loose phrases retrieve candidates; punctuation-sensitive evidence checking and study-level screening remain separate. Database matches do not automatically establish eligibility.",
+  "indexed_keywords_policy": "Design/stimulus/outcome procedural evidence is sought in TITLE-ABS; named designs and human context also search keywords. Complete API metadata lacks indexed keywords, so missing local evidence is unresolved.",
+  "freeze_boundary": "Terms fixed after initial development and before this held-out sample is annotated."
+}

@@ -1,0 +1,14 @@
+{
+  "query_sha256": "c5abcd2e2cdc9b4be96a46fa848ceb288343c115f7aab5b664e09196b3662d45",
+  "primary_query_sha256": "a9e8690d1bf01c7f3993f84d553d398e0daf238eba1a899a07b5014625d138f4",
+  "primary_candidate_articles": 8615,
+  "primary_query_status": "Post-coding projection of unchanged frozen named-design/reading routes; not a newly validated query",
+  "validation_summary_sha256": "03e841733023b766075dd7be3ac6d359e6cd4bc2a6739d6896bd2427d6aad49a",
+  "current_dashboard_replaced": false,
+  "human_validated": false,
+  "reports": [
+    "SEARCH_SUMMARY",
+    "SEARCH_METHODS",
+    "SEARCH_STRATEGY"
+  ]
+}

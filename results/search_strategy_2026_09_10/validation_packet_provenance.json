@@ -1,0 +1,19 @@
+{
+  "n_records": 100,
+  "packet_sha256": "2a73627b04f09648f5e94cf1ef48cfebf572007dfb36b9ac30d3d6927a2ac5d6",
+  "public_sample_sha256": "4ad2695f5efe830fcc5a34c0bf877554816cafa24628bd095ca10410fbcb60a4",
+  "fields": [
+    "scopus_id",
+    "doi",
+    "year",
+    "journal",
+    "title",
+    "abstract",
+    "keywords"
+  ],
+  "authors_and_routes_omitted": true,
+  "n_candidate_articles": 18054,
+  "n_after_development_exclusions": 16147,
+  "n_excluded_from_sampling": 1907,
+  "annotation_status": "Awaiting independent coding; no gold-standard precision claim"
+}

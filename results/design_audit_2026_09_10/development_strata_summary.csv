@@ -1,0 +1,5 @@
+stratum,population_N,sample_n,design_yes,design_no,design_unclear,affirmative_share,affirmative_or_unclear_share,status
+concepts_beyond_exposure,56812,40,5,32,3,0.125,0.2,AI-coded indexed-metadata evidence; not validated precision
+exposure_beyond_labels,8404,40,13,22,5,0.325,0.45,AI-coded indexed-metadata evidence; not validated precision
+named_design,6455,40,36,4,0,0.9,0.9,AI-coded indexed-metadata evidence; not validated precision
+previous_only,234,40,35,5,0,0.875,0.875,AI-coded indexed-metadata evidence; not validated precision

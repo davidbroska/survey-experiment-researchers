@@ -1,0 +1,4 @@
+variant,weighted_yes_share,weighted_no_share,weighted_unclear_share,note
+concepts,0.21825145456321257,0.7076404682507568,0.07410807718603064,Stratum-weighted descriptive ratio estimate from development sample; excludes prior development records; no precision validation
+exposure,0.5747896897503196,0.3545124167171411,0.0706978935325392,Stratum-weighted descriptive ratio estimate from development sample; excludes prior development records; no precision validation
+exposure_human,0.6304242144103794,0.3026004351325719,0.0669753504570486,Stratum-weighted descriptive ratio estimate from development sample; excludes prior development records; no precision validation

@@ -1,0 +1,19 @@
+{
+  "stage": "development",
+  "selected_variant": "all_disjoint_routes",
+  "query_sha256": {
+    "concepts": "5f4b2684c9a2a2d689ca538b737099f92a34e87b43561b4b3a8c22c4fb7179f9",
+    "exposure": "34eead03654e0c776ffabbed76a926eb896c19bfdbdc08d56b390a5bb531f975",
+    "exposure_human": "6f50519143eb5fb512520b31eededa689567a865cedbbca2f4e07e87ee89b0a0"
+  },
+  "requested_n_per_stratum": 40,
+  "membership_sha256": "c7e8d8168e1a35459625db181baf2add52208e9596d9bda436d6ab5b1a7cf4c5",
+  "frame_sha256": "ad56e395484102a4b2da1189e75de9bdab77c5c750ab83e6e2bef06d02078074",
+  "exclusion_sha256": {
+    "development_ledger": "def2f53efaec0b98507b2644125bfe882faa7916be355f8efa8251d157dd7b61"
+  },
+  "selection_seed": "design_audit_2026_09_10:development",
+  "estimand": "Disjoint development strata outside previously exposed material",
+  "sample_sha256": "8c5536ad068a7d4c989aabfbb617e4efd7a09e76fee04dd5dcc828603b8f884b",
+  "n_selected": 160
+}

@@ -1,0 +1,16 @@
+{
+  "packet_sha256": "2a73627b04f09648f5e94cf1ef48cfebf572007dfb36b9ac30d3d6927a2ac5d6",
+  "sample_sha256": "4ad2695f5efe830fcc5a34c0bf877554816cafa24628bd095ca10410fbcb60a4",
+  "coder_files": [
+    {
+      "file": "validation_coder_A.csv",
+      "sha256": "75e8db91b39c39bdeca5e02ffa3ede6904a9be02df2deafbcf7a030195008eb2"
+    },
+    {
+      "file": "validation_coder_B.csv",
+      "sha256": "de0af13405cf39f961380d94731342d5349f03e0b10f8282b5dbf7c4f48e5980"
+    }
+  ],
+  "procedure": "Separate AI passes; exact evidence spans checked against identical blinded indexed-metadata packet; disagreements retained as unclear.",
+  "human_validated": false
+}

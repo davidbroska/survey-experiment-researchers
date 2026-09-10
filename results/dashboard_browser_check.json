@@ -1,6 +1,6 @@
 {
   "browser": "Google Chrome via local CDP",
-  "html_sha256": "b9181b8ada970a30421a7988b38fc2d5e2ca10b86ea24967642da1aec9b4bb2a",
+  "html_sha256": "498e32b435051d0100419cb4288d80337a5b06ac3f48c2adbba3e8a20970984c",
   "researcher_rows": 100,
   "columns_checked_both_directions": 12,
   "checks": [
@@ -25,7 +25,15 @@
     "revision report link",
     "revised query fidelity",
     "revision report counts",
-    "revision report mobile overflow"
+    "revision report mobile overflow",
+    "search audit link",
+    "provisional cohort notice",
+    "candidate query fidelity",
+    "candidate retrieval count",
+    "coauthor and SI links",
+    "search audit mobile overflow",
+    "SI candidate query fidelity",
+    "SI mobile overflow"
   ],
   "uncaught_exceptions": 0
 }

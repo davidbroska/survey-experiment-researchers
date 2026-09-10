@@ -1,0 +1,16 @@
+[
+  {
+    "scopus_id": "85048712655",
+    "term": "text*",
+    "count": 1,
+    "query": "EID(2-s2.0-85048712655) AND TITLE-ABS(text*)",
+    "retrieved_at": "2026-09-10T12:44:24.779094+00:00"
+  },
+  {
+    "scopus_id": "85048712655",
+    "term": "text",
+    "count": 0,
+    "query": "EID(2-s2.0-85048712655) AND TITLE-ABS(text)",
+    "retrieved_at": "2026-09-10T12:44:25.714855+00:00"
+  }
+]

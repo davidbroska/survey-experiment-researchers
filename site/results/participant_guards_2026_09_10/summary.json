@@ -1,0 +1,124 @@
+{
+  "status": "retrieval comparison complete; eligibility and geography review pending",
+  "comparison_baseline": "queries/revision_2026_09_10/revised.txt",
+  "previous_query_sha256": "5ff26f975903ee9f8c326e0340f3b3c3564dc307fb4f04b0fbe22484a7c7bdc7",
+  "revised_query_sha256": "577f476936bec6ee5d0a237b3e8460e966d934844f1a0fc23e9808a9166020e2",
+  "changed_families": [
+    "contextual_design",
+    "embedded_design"
+  ],
+  "comparison": [
+    {
+      "scope": "global",
+      "previous_records": 10507,
+      "revised_records": 10659,
+      "shared_records": 10507,
+      "added_records": 152,
+      "removed_records": 0,
+      "net_records": 152,
+      "previous_unique_articles": 10503,
+      "revised_unique_articles": 10655,
+      "added_unique_articles": 152,
+      "removed_unique_articles": 0,
+      "net_unique_articles": 152
+    },
+    {
+      "scope": "journal_frame",
+      "previous_records": 8077,
+      "revised_records": 8145,
+      "shared_records": 8077,
+      "added_records": 68,
+      "removed_records": 0,
+      "net_records": 68,
+      "previous_unique_articles": 8074,
+      "revised_unique_articles": 8142,
+      "added_unique_articles": 68,
+      "removed_unique_articles": 0,
+      "net_unique_articles": 68
+    }
+  ],
+  "family_comparison": [
+    {
+      "family": "contextual_design",
+      "scope": "global",
+      "previous_records": 367,
+      "revised_records": 521,
+      "shared_records": 367,
+      "added_records": 154,
+      "removed_records": 0,
+      "net_records": 154,
+      "previous_unique_articles": 367,
+      "revised_unique_articles": 521,
+      "added_unique_articles": 154,
+      "removed_unique_articles": 0,
+      "net_unique_articles": 154
+    },
+    {
+      "family": "contextual_design",
+      "scope": "journal_frame",
+      "previous_records": 199,
+      "revised_records": 268,
+      "shared_records": 199,
+      "added_records": 69,
+      "removed_records": 0,
+      "net_records": 69,
+      "previous_unique_articles": 199,
+      "revised_unique_articles": 268,
+      "added_unique_articles": 69,
+      "removed_unique_articles": 0,
+      "net_unique_articles": 69
+    },
+    {
+      "family": "embedded_design",
+      "scope": "global",
+      "previous_records": 121,
+      "revised_records": 121,
+      "shared_records": 121,
+      "added_records": 0,
+      "removed_records": 0,
+      "net_records": 0,
+      "previous_unique_articles": 121,
+      "revised_unique_articles": 121,
+      "added_unique_articles": 0,
+      "removed_unique_articles": 0,
+      "net_unique_articles": 0
+    },
+    {
+      "family": "embedded_design",
+      "scope": "journal_frame",
+      "previous_records": 92,
+      "revised_records": 92,
+      "shared_records": 92,
+      "added_records": 0,
+      "removed_records": 0,
+      "net_records": 0,
+      "previous_unique_articles": 92,
+      "revised_unique_articles": 92,
+      "added_unique_articles": 0,
+      "removed_unique_articles": 0,
+      "net_unique_articles": 0
+    }
+  ],
+  "local_verification": [
+    {
+      "scope": "global",
+      "added_records": 152,
+      "same_sentence_verified": 78,
+      "article_context_verified": 151
+    },
+    {
+      "scope": "journal_frame",
+      "added_records": 68,
+      "same_sentence_verified": 31,
+      "article_context_verified": 68
+    }
+  ],
+  "retrieval_start": "2026-09-10T11:57:50.267505+00:00",
+  "retrieval_end": "2026-09-10T11:58:04.486620+00:00",
+  "unchanged_memberships_reused_from": "query_revision_2026_09_10",
+  "previous_membership_records_missing_after_expansion": 0,
+  "journal_frame_n": 3401,
+  "frame_sha256": "ad56e395484102a4b2da1189e75de9bdab77c5c750ab83e6e2bef06d02078074",
+  "dashboard_updated": false,
+  "interpretation": "Positive clause set differences measure retrieval change, not precision or recall. Literal phrase verification and population guards are reported separately from study eligibility. Article-level context allows population/randomization words in other metadata sentences; same-sentence verification reproduces the existing strict local rule. Indexed keywords may be absent from downloaded metadata."
+}

@@ -1,0 +1,28 @@
+{
+  "created_at": "2026-09-10T12:17:30.107522+00:00",
+  "n_rows": 5961,
+  "ledger_sha256": "def2f53efaec0b98507b2644125bfe882faa7916be355f8efa8251d157dd7b61",
+  "sources": [
+    {
+      "reason": "inherited_investigator_development",
+      "source": "Opencall/QueryV2/positives/mining_input.csv",
+      "sha256": "9c61eadce036579490bc2e0575f7d504338f5d1589135a8a60eda38bbbcd0dab"
+    },
+    {
+      "reason": "inherited_term_development",
+      "source": "Opencall/QueryV2/termeval/term_samples.csv",
+      "sha256": "450ec00377fdbfb55d7718302d131a62eaaecb1ab0a23b522b1e2ee25d4510fb"
+    },
+    {
+      "reason": "focal_author_bibliographies",
+      "source": "SurveyExperimentRecruitment/private/design_audit_2026_09_10/author_articles.csv",
+      "sha256": "7d6bf8043cbb75b57f2e0f7d6c279e24e5438e59e07565014ed47add4eff8e7d"
+    },
+    {
+      "reason": "user_nominated_challenge_cases",
+      "source": "SurveyExperimentRecruitment/results/design_audit_2026_09_10/counterexample_source_audit.csv",
+      "sha256": "73d8086d670bb7b97db18fa865fb0d3164bb9ced60a408c981e79bb7c4571efe"
+    }
+  ],
+  "identity_policy": "Exclude matches on any Scopus ID, normalized DOI, or normalized title hash; title fallback is deliberately conservative."
+}

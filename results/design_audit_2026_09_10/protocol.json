@@ -1,0 +1,17 @@
+{
+  "version": "design_audit_2026_09_10",
+  "frozen_at": "2026-09-10T12:00:03.044671+00:00",
+  "query_sha256": {
+    "concepts": "5f4b2684c9a2a2d689ca538b737099f92a34e87b43561b4b3a8c22c4fb7179f9",
+    "exposure": "34eead03654e0c776ffabbed76a926eb896c19bfdbdc08d56b390a5bb531f975",
+    "exposure_human": "6f50519143eb5fb512520b31eededa689567a865cedbbca2f4e07e87ee89b0a0"
+  },
+  "frame_sha256": "ad56e395484102a4b2da1189e75de9bdab77c5c750ab83e6e2bef06d02078074",
+  "comparison": "Named designs OR experimental manipulation + communicated stimulus + judgment/attitude outcome; exposure variants additionally require an exposure verb within five words of the stimulus, with or without a human-population gate.",
+  "development": "User-nominated authors and papers, inherited machine-labelled corpora, deterministic stratified development sample. None is a recall benchmark.",
+  "validation": "Select an unchanged variant after development; then draw a disjoint deterministic probability sample from its in-frame union. AI labels remain provisional; independent human adjudication needed before publication precision claims.",
+  "scope": "At least one original empirical experiment varying communicated survey content and measuring individual responses. Mixed-study articles may qualify. Separate design relevance, self-administered format, text treatment, parser compatibility, new data, geography, and possession of data. Abstract silence is unclear, not no.",
+  "no_author_or_topic_terms": true,
+  "no_explicit_design_exclusions": true,
+  "guard_policy": "Literal label punctuation checked within fields; context guards belong to the article. Eligibility must be screened separately. Local proximity is diagnostic, not a Scopus emulator."
+}

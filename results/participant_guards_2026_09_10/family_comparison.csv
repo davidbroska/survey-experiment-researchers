@@ -1,0 +1,5 @@
+family,scope,previous_records,revised_records,shared_records,added_records,removed_records,net_records,previous_unique_articles,revised_unique_articles,added_unique_articles,removed_unique_articles,net_unique_articles
+contextual_design,global,367,521,367,154,0,154,367,521,154,0,154
+contextual_design,journal_frame,199,268,199,69,0,69,199,268,69,0,69
+embedded_design,global,121,121,121,0,0,0,121,121,0,0,0
+embedded_design,journal_frame,92,92,92,0,0,0,92,92,0,0,0

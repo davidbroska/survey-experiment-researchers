@@ -1,0 +1,23 @@
+corpus,variant,n_records,n_legacy_yes,n_legacy_no,n_legacy_unclear,n_matched,matched_legacy_yes,matched_legacy_no,matched_legacy_unclear,unmatched_legacy_yes,status
+investigator_development,previous_local_strict,1939,393,1423,123,100,97,0,3,296,Development only; inherited AI broad-design labels; not validated precision or recall
+investigator_development,revised_local_strict,1939,393,1423,123,103,100,0,3,293,Development only; inherited AI broad-design labels; not validated precision or recall
+investigator_development,three_concepts_only,1939,393,1423,123,140,105,26,9,288,Development only; inherited AI broad-design labels; not validated precision or recall
+investigator_development,exposure_five_intervening_tokens_same_field_only,1939,393,1423,123,38,34,4,0,359,Development only; inherited AI broad-design labels; not validated precision or recall
+investigator_development,exposure_five_intervening_tokens_same_sentence_only,1939,393,1423,123,37,33,4,0,360,Development only; inherited AI broad-design labels; not validated precision or recall
+investigator_development,revised_or_three_concepts,1939,393,1423,123,212,175,26,11,218,Development only; inherited AI broad-design labels; not validated precision or recall
+investigator_development,revised_or_exposure_same_field,1939,393,1423,123,132,125,4,3,268,Development only; inherited AI broad-design labels; not validated precision or recall
+investigator_development,revised_or_exposure_same_sentence,1939,393,1423,123,132,125,4,3,268,Development only; inherited AI broad-design labels; not validated precision or recall
+investigator_development,three_concepts_added_to_revised,1939,393,1423,123,109,75,26,8,318,Development only; inherited AI broad-design labels; not validated precision or recall
+investigator_development,exposure_same_field_added_to_revised,1939,393,1423,123,29,25,4,0,368,Development only; inherited AI broad-design labels; not validated precision or recall
+investigator_development,exposure_same_sentence_added_to_revised,1939,393,1423,123,29,25,4,0,368,Development only; inherited AI broad-design labels; not validated precision or recall
+term_stratified_development,previous_local_strict,3891,2358,1449,84,1056,1011,35,10,1347,Development only; inherited AI broad-design labels; not validated precision or recall
+term_stratified_development,revised_local_strict,3891,2358,1449,84,1196,1142,44,10,1216,Development only; inherited AI broad-design labels; not validated precision or recall
+term_stratified_development,three_concepts_only,3891,2358,1449,84,1155,1023,117,15,1335,Development only; inherited AI broad-design labels; not validated precision or recall
+term_stratified_development,exposure_five_intervening_tokens_same_field_only,3891,2358,1449,84,444,401,37,6,1957,Development only; inherited AI broad-design labels; not validated precision or recall
+term_stratified_development,exposure_five_intervening_tokens_same_sentence_only,3891,2358,1449,84,431,392,35,4,1966,Development only; inherited AI broad-design labels; not validated precision or recall
+term_stratified_development,revised_or_three_concepts,3891,2358,1449,84,1786,1612,152,22,746,Development only; inherited AI broad-design labels; not validated precision or recall
+term_stratified_development,revised_or_exposure_same_field,3891,2358,1449,84,1481,1387,78,16,971,Development only; inherited AI broad-design labels; not validated precision or recall
+term_stratified_development,revised_or_exposure_same_sentence,3891,2358,1449,84,1471,1380,77,14,978,Development only; inherited AI broad-design labels; not validated precision or recall
+term_stratified_development,three_concepts_added_to_revised,3891,2358,1449,84,590,470,108,12,1888,Development only; inherited AI broad-design labels; not validated precision or recall
+term_stratified_development,exposure_same_field_added_to_revised,3891,2358,1449,84,285,245,34,6,2113,Development only; inherited AI broad-design labels; not validated precision or recall
+term_stratified_development,exposure_same_sentence_added_to_revised,3891,2358,1449,84,275,238,33,4,2120,Development only; inherited AI broad-design labels; not validated precision or recall

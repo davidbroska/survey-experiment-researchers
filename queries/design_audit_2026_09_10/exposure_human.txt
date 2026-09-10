@@ -1,0 +1,5 @@
+(
+  TITLE-ABS-KEY("survey experiment*" OR "survey based experiment*" OR "survey embedded experiment*" OR "experimental survey*" OR "vignette experiment*" OR "experimental vignette*" OR "vignette based experiment*" OR "vignette based survey*" OR "factorial survey*" OR "randomized vignette*" OR "randomised vignette*" OR "question wording experiment*" OR "experiment* embedded in a survey" OR "experiment* embedded in an online survey" OR "experiment* within a survey" OR "experiment* within an online survey" OR "experiment* in a survey" OR "experiment* in an online survey")
+  OR (TITLE-ABS-KEY(experiment* OR random* OR manipulat*) AND TITLE-ABS-KEY((read* OR view* OR expos* OR present* OR receiv* OR shown) W/5 (information OR message* OR text* OR vignette* OR scenario* OR headline* OR prompt*)) AND TITLE-ABS-KEY(attitud* OR belief* OR opinion* OR perception* OR judgment* OR judgement* OR intention* OR preference*) AND TITLE-ABS-KEY(participant* OR respondent* OR survey* OR questionnaire*))
+)
+AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027

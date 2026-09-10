@@ -1,0 +1,11 @@
+researcher,variant,articles_any_position,first_last_candidate_articles,status
+pennycook,latest_revised,6,2,"Exposed development examples; retrieval only, not eligible counts or recall"
+pennycook,initial_concepts,27,11,"Exposed development examples; retrieval only, not eligible counts or recall"
+pennycook,initial_exposure,8,2,"Exposed development examples; retrieval only, not eligible counts or recall"
+pennycook,initial_exposure_human,8,2,"Exposed development examples; retrieval only, not eligible counts or recall"
+pennycook,candidate,20,7,"Exposed development examples; retrieval only, not eligible counts or recall"
+richeson,latest_revised,0,0,"Exposed development examples; retrieval only, not eligible counts or recall"
+richeson,initial_concepts,10,8,"Exposed development examples; retrieval only, not eligible counts or recall"
+richeson,initial_exposure,5,5,"Exposed development examples; retrieval only, not eligible counts or recall"
+richeson,initial_exposure_human,2,2,"Exposed development examples; retrieval only, not eligible counts or recall"
+richeson,candidate,2,1,"Exposed development examples; retrieval only, not eligible counts or recall"

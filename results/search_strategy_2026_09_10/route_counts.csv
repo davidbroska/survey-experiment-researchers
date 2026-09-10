@@ -1,0 +1,6 @@
+part,global_records,in_frame_records,in_frame_unique_articles,added_in_route_order,unique_to_route_within_candidate,beyond_latest_revised,status
+named_base,10086,7688,7685,7685,6320,332,Routes overlap; marginal yield depends on route order
+named_extra,4,4,4,4,3,1,Routes overlap; marginal yield depends on route order
+guarded_design,1308,782,781,577,474,170,Routes overlap; marginal yield depends on route order
+procedure,18565,10852,10849,9568,9439,9491,Routes overlap; marginal yield depends on route order
+reading_assignment,488,378,378,220,220,3,Routes overlap; marginal yield depends on route order

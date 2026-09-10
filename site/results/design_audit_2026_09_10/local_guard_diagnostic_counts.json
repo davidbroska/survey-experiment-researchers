@@ -1,0 +1,10 @@
+{
+  "frozen_global": 9111,
+  "frozen_journal_unique": 7302,
+  "strict_matches": 7035,
+  "strict_nonmatches": 267,
+  "rescued_article_scope": 196,
+  "same_field": 171,
+  "only_cross_field": 25,
+  "remaining_nonmatches": 71
+}

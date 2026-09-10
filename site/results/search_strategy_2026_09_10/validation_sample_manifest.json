@@ -1,0 +1,14 @@
+{
+  "stage": "validation",
+  "selected_variant": "search_strategy_2026_09_10",
+  "query_sha256": "c5abcd2e2cdc9b4be96a46fa848ceb288343c115f7aab5b664e09196b3662d45",
+  "membership_sha256": "ac5aed9a0b9093701d7d26ac2aaee4da6745c7e26c5c9a9db7a1987475510aa9",
+  "frame_sha256": "ad56e395484102a4b2da1189e75de9bdab77c5c750ab83e6e2bef06d02078074",
+  "development_exclusion_sha256": "def2f53efaec0b98507b2644125bfe882faa7916be355f8efa8251d157dd7b61",
+  "development_sample_sha256": "a2bb8d6a90a83ca1f3a72a3e13ad371a4d68a46b3a8199b0e1d17b03597ec14f",
+  "requested_n": 100,
+  "selection_seed": "search_strategy_2026_09_10:validation",
+  "estimand": "Candidate-query articles outside archived development material, not all social-science experiments or all records in the candidate union.",
+  "sample_sha256": "6fcbfab05513d8be8436209ec2f5f894f007bb93a6fa497878894d03c351867e",
+  "n_selected": 100
+}

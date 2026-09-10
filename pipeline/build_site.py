@@ -8,7 +8,8 @@ import zipfile
 from common import ROOT, digest, write_json
 
 REPORTS = ('EXECUTIVE_SUMMARY', 'SUPPORTING_INFORMATION', 'QUERY_REPORT',
-           'GEOGRAPHY_REPORT', 'FULLTEXT_REVIEW', 'YEAR_WINDOW_COMPARISON', 'MANUAL_DOWNLOADS', 'PRIORITY_DOWNLOADS', 'QUERY_REVISION')
+           'GEOGRAPHY_REPORT', 'FULLTEXT_REVIEW', 'YEAR_WINDOW_COMPARISON', 'MANUAL_DOWNLOADS', 'PRIORITY_DOWNLOADS',
+           'QUERY_REVISION', 'SEARCH_STRATEGY', 'SEARCH_SUMMARY', 'SEARCH_METHODS')
 CSV_FILES = ('top100_enriched', 'top100_provisional', 'top100_article_annotations',
              'top100_author_article_links', 'top100_cutoff_ties', 'fulltext_download_queue',
              'year_window_author_comparison', 'year_window_tie_comparison',
@@ -49,6 +50,33 @@ def build():
     files += [f'queries/revision_2026_09_10/{name}.txt' for name in ('previous', 'revised', 'additional_embedded_variants')]
     files += [f'results/query_revision_2026_09_10/{name}.csv' for name in
               ('retrieval_comparison', 'sequential_changes', 'changed_article_metadata', 'local_verification_by_change', 'field_checks')]
+    files += ['results/venue_frame.csv',
+              'queries/participant_guards_2026_09_10/revised.txt',
+              'results/participant_guards_2026_09_10/retrieval_comparison.csv',
+              'results/participant_guards_2026_09_10/local_verification.csv',
+              'results/participant_guards_2026_09_10/summary.json',
+              'results/design_audit_2026_09_10/annotation_codebook.md',
+              'results/design_audit_2026_09_10/counterexample_source_audit.csv',
+              'results/design_audit_2026_09_10/local_guard_diagnostic_counts.json',
+              'results/design_audit_2026_09_10/development_sample.csv',
+              'results/design_audit_2026_09_10/development_annotations.csv',
+              'results/design_audit_2026_09_10/development_strata_summary.csv',
+              'results/design_audit_2026_09_10/development_sample_manifest.json',
+              'results/design_audit_2026_09_10/development_annotation_provenance.json']
+    files += [f'queries/search_strategy_2026_09_10/{name}.txt' for name in
+              ('candidate', 'primary', 'named_base', 'named_extra', 'guarded_design', 'procedure', 'reading_assignment')]
+    files += ['queries/search_strategy_2026_09_10/executed_parts.csv']
+    # These are public metadata and coding rationales, without licensed abstracts
+    # or the private verbatim evidence spans used to validate coding.
+    files += [f'results/search_strategy_2026_09_10/{name}.csv' for name in
+              ('counterexample_retrieval', 'retrieval_comparison', 'route_counts',
+               'validation_sample', 'validation_coder_A', 'validation_coder_B',
+               'validation_consensus', 'validation_disagreements', 'validation_unclear_queue',
+               'validation_strata_summary', 'lost_record_review')]
+    files += [f'results/search_strategy_2026_09_10/{name}.json' for name in
+              ('protocol', 'retrieval_manifests', 'validation_sample_manifest',
+               'validation_packet_provenance', 'validation_annotation_provenance',
+               'validation_summary', 'report_provenance')]
     for name in files:
         dest = site / name
         dest.parent.mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,1 @@
+(TITLE-ABS-KEY("random* assign* to read" OR "random* allocat* to read" OR "random* select* to read" OR "random* to read") AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent* OR participant*)) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027

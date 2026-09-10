@@ -1,0 +1,161 @@
+scopus_id,design,new_data,text_treatment,parser_compatible,geography,rationale,reviewer,reviewer_type,human_validated
+105025104754,no,unclear,unclear,no,unclear,"The article offers an autoethnographic discussion of AI research practices, without a reported human content experiment or clear data-collection method.",participant_guards,AI_assisted,false
+84981287718,no,yes,no,no,unclear,Suppressed spider and flower images are used to study visual awareness and fMRI activity.,strategy_review,AI_assisted,false
+85053392045,no,yes,unclear,no,unclear,The study gathers qualitative focus-group accounts of service barriers without an experimental manipulation.,participant_guards,AI_assisted,false
+105045298597,no,yes,no,no,non_US,Indian focus groups and interviews inform future interventions without experimentally assigned content.,counterexample_audit,AI_assisted,false
+85108963478,yes,yes,unclear,unclear,unclear,"Experiments vary eyewitness statements and contextual information to assess evaluators’ confidence judgments, but delivery modality is unspecified.",strategy_review,AI_assisted,false
+105030252190,yes,yes,yes,unclear,unclear,Students are randomized to narrative presentation formats and answer open-ended inference questions after reading.,strategy_review,AI_assisted,false
+105022922243,no,no,no,no,unclear,Experiments benchmark a communications-network algorithm rather than manipulate content for human respondents.,strategy_review,AI_assisted,false
+85096207237,no,yes,no,no,non_US,The study observes daily activities and needs among older adults in Chinese villages.,counterexample_audit,AI_assisted,false
+79952072848,no,yes,no,no,unclear,The study measures speeded motor-task errors and brain connectivity rather than responses to varied survey content.,strategy_review,AI_assisted,false
+85060790517,no,yes,no,no,unclear,Olfactory food-preference experiments use mice rather than human respondents.,participant_guards,AI_assisted,false
+84897936942,no,unclear,no,no,unclear,The study analyzes brain functional connectivity; the abstract neither identifies survey manipulation nor clarifies whether imaging data are newly collected.,strategy_review,AI_assisted,false
+84933676125,no,yes,no,no,unclear,Acoustic tonal manipulations are evaluated using brain potentials rather than human survey judgments.,participant_guards,AI_assisted,false
+85195103726,no,yes,no,no,unclear,The randomized interventions are clinical dietary counseling strategies with blood-pressure outcomes.,counterexample_audit,AI_assisted,false
+79957993277,no,no,unclear,no,unclear,The article systematically reviews clinical discharge-communication interventions and does not report a new eligible experiment.,strategy_review,AI_assisted,false
+85186449360,unclear,yes,no,unclear,non_US,"Images are randomized among Swiss officials, but policy-learning measurement is insufficiently described to establish survey-response eligibility.",counterexample_audit,AI_assisted,false
+85104027715,no,yes,unclear,no,unclear,The experiments measure incentivized task selection and cheating rather than survey judgments of communicated scenarios.,strategy_review,AI_assisted,false
+85173365019,no,yes,no,no,non_US,This cross-country African survey describes stakeholder perceptions without a randomized intervention.,counterexample_audit,AI_assisted,false
+77954490278,no,no,no,unclear,unclear,"This is a conceptual discussion of animal-feeding research and future experiments, without a new human experiment.",strategy_review,AI_assisted,false
+85120861640,no,unclear,no,no,unclear,"The article analyzes monkey neuronal firing and gaze-task errors, and the abstract does not specify whether these recordings were newly collected.",participant_guards,AI_assisted,false
+84893924819,no,yes,no,no,unclear,"The study uses visual adaptation and neural responses to examine emotional-face perception, not an eligible survey content design.",participant_guards,AI_assisted,false
+84926612481,no,yes,no,no,unclear,Webcam angles alter perceptual height judgments and strategic coordination in a video-chat/game paradigm.,strategy_review,AI_assisted,false
+84903882261,yes,yes,unclear,unclear,unclear,"Original stated-choice experiments examine consumer information and preferences, but the profile structure and treatment modality are not sufficiently detailed.",strategy_review,AI_assisted,false
+105043307181,no,no,no,no,unclear,"The experiments benchmark dialogue-model training and compression on datasets, without an identifiable human survey intervention.",strategy_review,AI_assisted,false
+85112043889,yes,yes,unclear,unclear,unclear,A conducted scenario experiment varies information and measures waste-sorting willingness and payment intentions.,strategy_review,AI_assisted,false
+85117151460,no,yes,no,no,unclear,Auditory attention is investigated through a cued perceptual task and MEG recordings.,strategy_review,AI_assisted,false
+85114368486,no,yes,no,no,unclear,The study surveys researchers’ methodological attitudes without experimental assignment.,counterexample_audit,AI_assisted,false
+85073552576,no,unclear,unclear,no,unclear,"The reported experiments compare text-mining algorithms on student feedback, with no randomized human treatment or clear original feedback collection.",participant_guards,AI_assisted,false
+77953524787,no,yes,unclear,unclear,non_US,A cross-sectional telephone questionnaire measures antibiotic knowledge without any treatment assignment.,participant_guards,AI_assisted,false
+79951966054,no,yes,no,no,unclear,Listening to scrambled spoken narratives is evaluated with fMRI rather than a survey response outcome.,participant_guards,AI_assisted,false
+85040455831,no,yes,no,no,unclear,Transcranial current stimulation changes working-memory performance rather than communicated survey content.,counterexample_audit,AI_assisted,false
+84926419355,no,yes,no,no,unclear,Subliminal facial expressions manipulate rapid visual emotion recognition rather than survey judgments of communicated content.,strategy_review,AI_assisted,false
+85099630772,no,no,no,no,unclear,A methodological paper illustrates ranked-data analyses using a previously published survey dataset.,counterexample_audit,AI_assisted,false
+84859243908,no,yes,no,no,non_US,"Random sampling is used for an observational Australian survey, with no assigned communication treatment.",counterexample_audit,AI_assisted,false
+84987988917,unclear,unclear,unclear,unclear,unclear,"The abstract discusses choice-experiment valuations but omits assignment, recruitment and whether information was experimentally varied.",counterexample_audit,AI_assisted,false
+80053556543,no,yes,no,no,unclear,The manipulations concern sensory evidence and neural accumulation in a perceptual task.,strategy_review,AI_assisted,false
+105036004924,no,yes,no,no,unclear,"Eye-movement experiments manipulate visual objects and spoken-word cues to test lexical processing, not survey responses.",participant_guards,AI_assisted,false
+105036799913,no,no,no,no,unclear,Historical flood data are analyzed with machine-learning models; there is no human survey experiment.,strategy_review,AI_assisted,false
+85163864553,yes,yes,yes,unclear,non_US,An experiment presents alternative product energy labels to French consumers and measures attitudes and purchase intentions.,participant_guards,AI_assisted,false
+85087692753,unclear,yes,unclear,unclear,unclear,"Experiments are reported, but the abstract does not establish a communicated-content manipulation or survey versus actual reporting outcome.",counterexample_audit,AI_assisted,false
+105024776920,no,no,no,no,unclear,The article analyzes existing social-media sentiment with a prediction model rather than assigning human respondents treatments.,strategy_review,AI_assisted,false
+85061936808,no,yes,no,no,unclear,Lexical sensory-rating norms compare word properties without a demonstrated randomized survey-content manipulation.,counterexample_audit,AI_assisted,false
+85125954072,no,yes,yes,no,unclear,Reading and retrieval-practice manipulations evaluate learning and later recall rather than an eligible survey content experiment.,participant_guards,AI_assisted,false
+84926099268,unclear,yes,unclear,unclear,unclear,"Ad-message manipulations and physiological recording are explicit, but an eligible survey-response component and stimulus modality remain insufficiently described.",strategy_review,AI_assisted,false
+84868341501,no,yes,yes,no,unclear,"Scripted-vignette reappraisal training after distressing films tests intrusive-memory symptoms over a week, a training intervention outside the target design.",participant_guards,AI_assisted,false
+85064555264,unclear,yes,unclear,unclear,non_US,"The Irish citizens’ assembly study includes an information-only comparison group, but its delivery and measurement account does not establish an eligible self-administered content experiment.",participant_guards,AI_assisted,false
+85189333306,unclear,yes,unclear,unclear,unclear,"Randomization and attitudinal outcomes are explicit, but the self-affirmation treatment procedure is not described and the leaflet is shared across conditions.",strategy_review,AI_assisted,false
+85124573903,no,yes,unclear,unclear,US_inferred,An observational text-message questionnaire gathers open-ended youth views without manipulation; free-or-reduced lunch and demographic context support US inference.,participant_guards,AI_assisted,false
+85077326583,yes,yes,yes,unclear,unclear,Manipulated assault scenarios are followed by survey judgments of appropriate sentencing.,strategy_review,AI_assisted,false
+79960911516,no,yes,no,no,unclear,Primate neuronal responses to face stimuli are not human survey outcomes.,counterexample_audit,AI_assisted,false
+105009797218,no,yes,unclear,no,unclear,"Road-sign framing is tested through simulated driving behavior, without an identifiable survey-content experiment.",strategy_review,AI_assisted,false
+84947775097,no,yes,no,no,non_US,"A Dominican Republic circumcision trial measures postoperative outcomes, without randomized communicated survey content.",strategy_review,AI_assisted,false
+84921520419,yes,yes,yes,unclear,US_explicit,Illinois social workers read experimentally varied foster-care vignettes and recommend placements.,strategy_review,AI_assisted,false
+85068531491,yes,yes,yes,no,non_US,"Randomized health warnings and profile choices elicit survey preferences, but multiple discrete-choice attributes make the design incompatible.",counterexample_audit,AI_assisted,false
+85018508912,yes,yes,unclear,unclear,unclear,"Randomly varied information about mutability precedes self-efficacy judgments, although delivery modality is unstated.",counterexample_audit,AI_assisted,false
+84902660546,no,yes,no,no,unclear,Visual motion manipulations in a launching task examine perceptual causal agency rather than survey-style content judgments.,participant_guards,AI_assisted,false
+85064806998,yes,yes,yes,unclear,US_explicit,A fielded US online-panel experiment assigns written health messages and measures stigma and responsibility attributions.,participant_guards,AI_assisted,false
+85048712655,no,yes,no,no,unclear,Participants ingest pharmaceutical pellets and report their acceptability; the intervention is physical rather than communicated survey content.,strategy_review,AI_assisted,false
+84927592671,no,yes,no,no,unclear,The intervention changes visual attention and measures fMRI object coding rather than survey judgments.,counterexample_audit,AI_assisted,false
+85087077315,yes,yes,yes,unclear,unclear,Vignette content varies prosocial costs and benefits and respondents rate the protagonists.,strategy_review,AI_assisted,false
+85013498052,yes,yes,yes,unclear,unclear,An experiment varies comment civility and anonymity and elicits favorability and trust judgments.,counterexample_audit,AI_assisted,false
+77956802275,yes,yes,yes,unclear,unclear,The described experiment changes online news presentation and evaluates perceived article and organizational credibility.,strategy_review,AI_assisted,false
+85124871052,no,yes,unclear,no,unclear,Planning prompts precede a go/no-go reaction-time task rather than an eligible survey-response outcome.,counterexample_audit,AI_assisted,false
+85193593283,no,no,no,no,unclear,This is a prospective process-evaluation protocol for clinical parent training rather than a completed survey experiment.,counterexample_audit,AI_assisted,false
+85049307208,no,yes,no,no,unclear,The study develops and factor-validates a privacy scale without an experimental content manipulation.,counterexample_audit,AI_assisted,false
+85077842525,yes,yes,yes,no,unclear,"Human preferences are elicited with best-worst hypothetical attribute combinations, an explicitly incompatible discrete-choice structure.",participant_guards,AI_assisted,false
+105037666144,no,yes,no,no,non_US,New Zealand cross-sectional surveys inform a later trial but report no experiment in the present data.,counterexample_audit,AI_assisted,false
+85068985185,no,yes,no,no,US_inferred,The FDA communication study uses a cross-sectional patient survey without assigned communication conditions.,counterexample_audit,AI_assisted,false
+85047589020,yes,yes,yes,unclear,unclear,"At least one study varies scenario syntax and measures fairness judgments, alongside additional video studies.",counterexample_audit,AI_assisted,false
+84907701762,no,yes,yes,no,unclear,Manipulated word and object spacing is assessed through eye-tracked reading times rather than survey responses.,strategy_review,AI_assisted,false
+85107182992,unclear,unclear,unclear,unclear,non_US,"A Belgian vignette survey compares reported preferences, but experimental assignment or manipulated factors are not established.",counterexample_audit,AI_assisted,false
+85197752446,no,yes,no,no,non_US,This is an observational survey of knowledge and information sources among Australian respondents.,counterexample_audit,AI_assisted,false
+105036738653,no,yes,unclear,no,unclear,A multifaceted educational intervention followed by repeated pain-recognition tasks is training research rather than an embedded survey content manipulation.,participant_guards,AI_assisted,false
+85046456565,yes,yes,yes,unclear,US_inferred,Experiments vary graphical versus textual corrective information and measure beliefs; the American-misperception context supports inferred US geography.,participant_guards,AI_assisted,false
+85104047093,yes,yes,yes,unclear,non_US,UK participants receive randomized vignette frames and report hypothetical service-use intentions.,counterexample_audit,AI_assisted,false
+105027340475,no,no,no,no,unclear,Algorithm comparison benchmarks do not involve human survey-response experiments.,counterexample_audit,AI_assisted,false
+84899712328,no,yes,no,no,unclear,"Visual orientation discrimination and brain stimulation test memory metacognition, not an eligible survey response design.",participant_guards,AI_assisted,false
+85096702623,yes,yes,unclear,unclear,non_US,German respondents are randomized to hazard-specific warning messages and provide before-and-after risk perceptions.,strategy_review,AI_assisted,false
+85200055351,no,yes,no,no,non_US,The Chinese multicenter survey analyzes nursing readiness correlates without a treatment manipulation.,counterexample_audit,AI_assisted,false
+85057977277,no,yes,yes,no,unclear,Electronic advice is delivered during real clinical consultations and evaluated by actual patient transfers.,strategy_review,AI_assisted,false
+84997693692,unclear,unclear,unclear,unclear,unclear,Associations with exposure and health-information selection are reported without explaining sampling or experimental assignment.,strategy_review,AI_assisted,false
+85144775920,yes,yes,yes,unclear,US_inferred,An online survey experiment varies whether trade-war questions mention Trump; the domestic political-cue framing supports inferred US sampling.,strategy_review,AI_assisted,false
+84976308264,yes,yes,yes,unclear,non_US,Belgian journalists judge fictional press releases with four experimentally varied characteristics; factorial manipulation alone does not establish conjoint incompatibility.,participant_guards,AI_assisted,false
+85033213465,yes,yes,unclear,unclear,unclear,An original factorial survey manipulates information-technology design features and measures adult responses.,strategy_review,AI_assisted,false
+85048552466,yes,yes,unclear,unclear,unclear,"Two conducted survey experiments vary whether immigration is framed through trafficking and measure immigration attitudes, with format and sample location unstated.",participant_guards,AI_assisted,false
+85179704579,yes,yes,unclear,unclear,non_US,An original Russian survey experiment varies fraud information and assesses regime beliefs.,counterexample_audit,AI_assisted,false
+85104970527,yes,unclear,unclear,unclear,non_US,"Reported survey experiments measure Kenyan voters’ and politicians’ responses to electoral violence, but treatment modality and original collection responsibility are unstated.",participant_guards,AI_assisted,false
+85103895516,yes,unclear,unclear,unclear,non_US,"The article reports a survey experiment about monitoring and sanctions in an Argentine survey context, but fielding responsibility and treatment modality are unstated.",participant_guards,AI_assisted,false
+85108850334,yes,yes,unclear,unclear,US_explicit,Two survey experiments vary consensus appeals and measure Americans’ beliefs and policy support; message modality is unstated.,counterexample_audit,AI_assisted,false
+85119330117,no,no,unclear,no,US_explicit,The study reuses ANES and another paper’s replication data to model voting rather than fielding an eligible experiment.,counterexample_audit,AI_assisted,false
+84978064542,yes,yes,yes,unclear,non_US,A conducted vignette experiment measures marriage judgments and disgust in the described Karo population of Indonesia.,strategy_review,AI_assisted,false
+85134405023,yes,yes,unclear,unclear,US_inferred,A conducted survey experiment varies military-intervention dimensions and measures support; the American-public framing supports US inference without a direct recruitment statement.,participant_guards,AI_assisted,false
+85103989954,yes,yes,unclear,unclear,non_US,A Brazilian survey experiment varies vaccine origin and measures acceptance; treatment modality is unstated.,counterexample_audit,AI_assisted,false
+85189950436,yes,yes,unclear,unclear,non_US,"The experimental survey measures trust in scientific sources and changes after revealing tobacco funding, although presentation modality is unspecified.",participant_guards,AI_assisted,false
+84938924252,yes,yes,unclear,unclear,US_inferred,"The authors conduct survey experiments contrasting policy delivery mechanisms, with an American-governance context supporting inferred US sampling.",strategy_review,AI_assisted,false
+85123969658,yes,yes,yes,unclear,unclear,A newly fielded online survey experiment varies a product-risk claim and measures tobacco-risk perceptions.,strategy_review,AI_assisted,false
+84870656540,no,yes,no,no,unclear,The survey experiment terminology refers to mass-spectrometric peptide measurement rather than human survey research.,participant_guards,AI_assisted,false
+105012748003,yes,yes,unclear,unclear,mixed_includes_US,"A newly conducted elite-cue survey experiment measures opinions in the US and UK, but delivery modality is unspecified.",counterexample_audit,AI_assisted,false
+105021472886,yes,unclear,unclear,unclear,unclear,"The article analyzes a reported online survey experiment about social status, while original fielding and treatment format remain unspecified.",participant_guards,AI_assisted,false
+105020868821,yes,yes,unclear,unclear,non_US,Two conducted survey experiments compare policy endorsements and citizen compliance in China.,counterexample_audit,AI_assisted,false
+85148413392,yes,yes,unclear,unclear,US_explicit,"An original US survey experiment measures candidate preferences, though the actual manipulated content is not described.",counterexample_audit,AI_assisted,false
+85175473443,yes,yes,yes,unclear,unclear,Conducted survey experiments vary statement length and measure perceived party positions.,participant_guards,AI_assisted,false
+85164736052,yes,yes,yes,unclear,unclear,Six survey-experiment conditions display headlines with different approval ratings before support questions.,counterexample_audit,AI_assisted,false
+85108226281,yes,yes,yes,unclear,non_US,A vignette experiment measures lockdown preferences among respondents in seven European countries.,counterexample_audit,AI_assisted,false
+85138243255,no,no,no,no,unclear,The work benchmarks machine-learning classifiers on an existing breast-cancer dataset rather than collecting experimental survey responses.,strategy_review,AI_assisted,false
+105044856142,yes,yes,unclear,unclear,non_US,A survey experiment with Chilean school principals varies performance-system features and measures information-use intentions.,strategy_review,AI_assisted,false
+85057578602,no,no,unclear,no,unclear,The paper reanalyzes original–replication pairs to study generalizability rather than reporting newly fielded experiments.,counterexample_audit,AI_assisted,false
+85213811817,yes,yes,unclear,unclear,unclear,An original factorial survey experiment examines data-breach responses alongside separate secondary-data studies.,strategy_review,AI_assisted,false
+85161342521,yes,yes,unclear,unclear,unclear,"An original survey experiment tests nudge descriptions through perceived autonomy and effectiveness, alongside a separate field intervention.",strategy_review,AI_assisted,false
+105013601811,yes,yes,yes,unclear,non_US,Six original Chinese survey experiments vary propaganda-news exposure and measure political attitudes and issue ratings.,participant_guards,AI_assisted,false
+85041625323,yes,yes,unclear,unclear,US_inferred,Embedded opinion-survey experiments vary criticism and measure support; the US Congress setting supports inferred US sampling.,strategy_review,AI_assisted,false
+105042563757,yes,yes,yes,unclear,non_US,A Belgian survey experiment uses a cycling-safety scenario to elicit managers’ information-search preferences.,counterexample_audit,AI_assisted,false
+85087008586,yes,yes,no,unclear,US_inferred,A national survey experiment manipulates couple photographs and measures stereotypes; its United States framing supports inferred US sampling.,strategy_review,AI_assisted,false
+85105715534,yes,unclear,unclear,unclear,US_inferred,"The article reports a survey experiment manipulating candidate connections, but does not establish whether its data were newly collected.",strategy_review,AI_assisted,false
+85199791558,yes,unclear,yes,unclear,non_US,"A housing-vignette factorial survey measures residents’ preferences in Germany, but the abstract does not establish who originally collected the analyzed dataset.",participant_guards,AI_assisted,false
+105001566449,yes,yes,yes,unclear,US_explicit,Offense descriptions are manipulated within a survey of Americans to measure detention preferences.,counterexample_audit,AI_assisted,false
+85175847141,yes,yes,yes,no,unclear,"The conducted human survey randomizes job attributes to elicit occupational preferences, but its explicit conjoint structure is incompatible.",participant_guards,AI_assisted,false
+85118850674,yes,yes,unclear,unclear,unclear,"An original nationwide survey experiment varies information about refugees and measures support intentions, but presentation modality and country are unstated.",participant_guards,AI_assisted,false
+85186916282,yes,yes,unclear,unclear,non_US,A fielded Israeli survey experiment varies criticism sources and measures human-rights opinions against a no-criticism condition.,strategy_review,AI_assisted,false
+85106745004,yes,yes,unclear,unclear,non_US,A survey experiment in Japan varies issue framing and measures support for elderly assistance.,strategy_review,AI_assisted,false
+84973124416,yes,unclear,unclear,unclear,mixed_includes_US,"The article includes a reported survey experiment on giving among American and Dutch study samples, but treatment content and data origin remain unspecified.",participant_guards,AI_assisted,false
+85173992920,yes,yes,yes,unclear,unclear,"Study 2 reports a scenario experiment manipulating failure experience and measuring AI complacency, distinct from the other performance studies.",participant_guards,AI_assisted,false
+105004829427,yes,yes,unclear,unclear,US_explicit,"US respondents completed an online survey with a reported embedded experiment, but the treatment presentation is not described.",participant_guards,AI_assisted,false
+105024704854,yes,yes,yes,unclear,unclear,The article fields a scenario experiment about employee humor; recruitment through a Chinese platform does not itself establish the respondents’ country.,participant_guards,AI_assisted,false
+105009333190,yes,yes,unclear,unclear,unclear,"The authors conduct a scenario experiment and a separate survey, but Western and Chinese samples do not resolve whether any sample is US-based.",strategy_review,AI_assisted,false
+85030680668,yes,yes,yes,unclear,unclear,Respondents read randomly assigned exoneration stories and report culpability judgments and support for reintegration.,strategy_review,AI_assisted,false
+85044964865,yes,yes,yes,unclear,non_US,Australian respondents read randomized distress messages and recommend forms of help.,participant_guards,AI_assisted,false
+85062297171,no,no,no,no,unclear,Secondary trajectory analysis of a clinical depression trial does not report a new survey-content experiment.,counterexample_audit,AI_assisted,false
+85126256655,yes,yes,unclear,unclear,US_explicit,An online randomized experiment elicits hypothetical vaccine acceptance and monetary valuations in a US sample.,counterexample_audit,AI_assisted,false
+85033559380,yes,yes,unclear,unclear,unclear,The article reports a scenario experiment among working adults alongside a separate field survey.,strategy_review,AI_assisted,false
+85060336598,no,yes,unclear,no,unclear,A three-month mobile supportive-care program evaluates patient-family wellbeing rather than an embedded content or question manipulation.,participant_guards,AI_assisted,false
+84956844791,yes,yes,yes,unclear,unclear,Randomized mock medical-news articles precede hypothetical testing decisions and attitude questions.,counterexample_audit,AI_assisted,false
+85098636700,no,yes,no,no,unclear,Dynamic text-speed and articulatory-suppression tasks study perceptual processing rather than a content or question manipulation.,counterexample_audit,AI_assisted,false
+85211077880,yes,yes,yes,unclear,unclear,Three scenario experiments supplement a longitudinal survey and assess responses to self-promotion.,counterexample_audit,AI_assisted,false
+85106252599,yes,yes,yes,unclear,unclear,Scenario experiments manipulate written online-review responses and measure brand evaluations; the panel company location does not establish sample country.,strategy_review,AI_assisted,false
+85062364613,yes,yes,yes,unclear,unclear,"Participants read one of two randomized article formats and complete a credibility questionnaire, with country unspecified.",participant_guards,AI_assisted,false
+85183168596,yes,yes,yes,unclear,unclear,A reported scenario experiment varies review characteristics and measures attribution judgments.,counterexample_audit,AI_assisted,false
+85172153416,yes,yes,unclear,unclear,non_US,The article reports two scenario experiments and two surveys using data collected in China and the United Kingdom.,strategy_review,AI_assisted,false
+84859227431,yes,yes,yes,unclear,unclear,Participants are randomly assigned different regret scenarios and provide regret responses.,counterexample_audit,AI_assisted,false
+85019412225,yes,yes,yes,unclear,unclear,Randomized written responses to a social-media post are evaluated through agreement and commenting intentions.,strategy_review,AI_assisted,false
+84887325184,yes,yes,yes,unclear,unclear,Random assignment to narrative versions is followed by explicit prejudice judgments among other outcomes.,counterexample_audit,AI_assisted,false
+85054560559,yes,yes,yes,unclear,non_US,Collected Chinese scenario-experiment data assess trust following contract-design variations.,counterexample_audit,AI_assisted,false
+84984907254,yes,yes,yes,unclear,unclear,Randomized grooming-stage vignettes precede judgments about predatory behavior.,counterexample_audit,AI_assisted,false
+85133970957,no,yes,yes,no,non_US,Mailed brochures are a field intervention with subsequent survey/register outcomes rather than an embedded survey treatment.,counterexample_audit,AI_assisted,false
+105040087268,yes,yes,yes,unclear,US_explicit,Los Angeles County residents are randomized to survey questions using different climate terms.,strategy_review,AI_assisted,false
+85059932376,yes,yes,yes,unclear,unclear,Study 1 uses scenarios to test workplace-family judgments; the stated Chinese sample belongs to Study 2 and does not locate the experiment.,participant_guards,AI_assisted,false
+85211934873,yes,yes,unclear,unclear,unclear,The article reports a scenario experiment alongside longitudinal surveys of workplace ethics.,strategy_review,AI_assisted,false
+84994219824,yes,yes,no,unclear,mixed_includes_US,An embedded experiment varies photographic climate imagery and records public evaluations across three named countries including the US.,participant_guards,AI_assisted,false
+84953713862,yes,yes,yes,unclear,US_inferred,Participants read randomized fictitious company news and rate legitimacy and support; the US labeling-policy context supports only inferred sample geography.,participant_guards,AI_assisted,false
+84931053023,yes,yes,yes,unclear,unclear,Randomized fictitious research narratives precede self-reported empathy and emotional-intelligence responses.,counterexample_audit,AI_assisted,false
+84939448548,no,yes,yes,no,unclear,The manipulations test word memory and retrieval monitoring rather than survey judgments about communicated content.,participant_guards,AI_assisted,false
+85190156129,yes,yes,yes,unclear,unclear,Participants read randomized message subsets and source labels before evaluating the messages.,counterexample_audit,AI_assisted,false
+85143317308,yes,yes,yes,unclear,unclear,"The article reports an online scenario experiment alongside an observational employee survey, with organizational identification as an outcome.",participant_guards,AI_assisted,false
+85037982397,yes,yes,yes,unclear,unclear,"Participants read randomized story versions varying affirmation timing and report message, self-appraisal and risk judgments.",participant_guards,AI_assisted,false
+105002148933,yes,yes,yes,unclear,unclear,A conducted between-subjects scenario experiment manipulates relational context and affect to explain disclosure decisions.,participant_guards,AI_assisted,false
+85187566150,yes,yes,yes,unclear,unclear,The article includes newly conducted scenario experiments varying numerical goal states and perceived chances of success alongside field and laboratory studies.,participant_guards,AI_assisted,false
+85169165401,yes,yes,yes,unclear,unclear,"A scenario experiment accompanies survey evidence on social comparison, anxiety and political responses.",counterexample_audit,AI_assisted,false
+105011308817,yes,yes,yes,unclear,non_US,A scenario experiment with gas-company employees examines manipulated corporate responsibility and pressure in the Chinese-sector context.,participant_guards,AI_assisted,false
+85090305943,yes,yes,yes,unclear,unclear,Participants are randomized to written diagnostic vignettes and answer stigma measures; Mechanical Turk alone does not establish sample country.,participant_guards,AI_assisted,false
+85179063319,yes,yes,yes,unclear,unclear,A reported scenario experiment tests judgments concerning leaders’ political behavior alongside a field survey.,participant_guards,AI_assisted,false
+105031969092,yes,yes,yes,unclear,non_US,The first study recruits Chinese hotel employees for a scenario experiment manipulating leadership and measuring workplace happiness.,participant_guards,AI_assisted,false

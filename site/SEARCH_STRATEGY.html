@@ -1,0 +1,92 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Survey-experiment search audit and revised strategy</title><style>body{font:16px/1.6 system-ui,sans-serif;max-width:1080px;margin:3rem auto;padding:0 1rem;color:#192b36}h1{line-height:1.2}a{color:#136294}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f0f5f8;padding:1.2rem;font-size:13px}code{font-family:ui-monospace,monospace}table{border-collapse:collapse;width:100%}th,td{text-align:left;border-bottom:1px solid #dbe3e8;padding:.5rem}.scroll{overflow:auto}</style><h1>Survey-experiment search audit and revised strategy</h1><p><strong>The counterexamples expose systematic omissions. A keyword match should identify a candidate article; eligibility review should determine whether it earns ranking credit.</strong> Broadening the query alone creates substantial false positives. Use named designs and reading assignments as the main discovery route; treat the broader procedure block below as a separately screened supplement. The tested union is not sufficiently precise for automatic ranking.</p>
+<p>Pennycook is in the complete current ranking with two first/last-author articles (shared score rank 984; deterministic display position 1,400), below the six-article top-100 cutoff. Six of his articles were retrieved; four place him in the middle of the byline. Richeson has no matches, although all 69 of her Scopus journal articles dated 2010–2026 are in the journal frame. These are not missing-journal or name-spelling problems. Among the 20 supplied examples, five Pennycook papers give first-author credit and nine Richeson papers give last-author credit. Primary-source review supports four clear first-author Pennycook examples and eight clear last-author Richeson examples; one of the latter falls outside the Article filter, leaving seven in scope. These AI-assisted judgments still require validation. The examples are development challenges, not an unbiased recall benchmark.</p>
+<div class="scroll"><table>
+<tr><th>Researcher</th><th>Current credited articles</th><th>Refined query: first/last candidates</th><th>Refined query: any author position</th></tr>
+<tr><td>Gordon Pennycook</td><td>2</td><td>7</td><td>20</td></tr>
+<tr><td>Jennifer A. Richeson</td><td>0</td><td>1</td><td>2</td></tr>
+</table></div>
+<p>The refinement improves Pennycook’s retrieval but still finds only one first/last candidate for Richeson. This is evidence against using even the refined query as a complete productivity measure. Richeson warrants inclusion in candidate review on the documented evidence; a final rank requires the same bibliography and eligibility checks for everyone.</p>
+<p>The refined query retrieves 8/20 challenge papers under the document-type and year restrictions; this is coverage of a supplied list, not estimated recall. Some clear examples omit even experimental terminology from their indexed abstract. One supplied Richeson example involves an in-person video/interviewer intervention, and other examples combine several study types. They should not all be treated as uncomplicated parser-ready positives. <a href="results/search_strategy_2026_09_10/counterexample_retrieval.csv">Paper-by-paper retrieval audit</a> · <a href="results/design_audit_2026_09_10/counterexample_source_audit.csv">Primary-source design audit</a>.</p>
+<p>The full methods of Majority No More? report original randomized experiments, but its Scopus record is classified as Review and fails DOCTYPE(ar). The <a href="https://spcl.yale.edu/media/138/download?inline=">author manuscript</a> and the archived DOI lookup document this exception. Conversely, some records classified as Article are reviews or secondary analyses. Document type is a retrieval filter, not an eligibility decision.</p>
+<p>The existing local matcher also rejects 196 records with intact design phrases and the required context elsewhere: 171 elsewhere within a field and 25 across fields. This differs from a false phrase such as survey followed by a comma or full stop and experimental. Literal phrase integrity and the relationship between a study&#x27;s design and sample need separate checks. <a href="results/design_audit_2026_09_10/local_guard_diagnostic_counts.json">Local-filter diagnostic</a>.</p>
+<p>We compared three short discovery alternatives, reviewed 160 fresh records in four disjoint strata, and then froze a refinement. The new sample excluded the inherited development data, nominated authors and challenge papers. Each stratum below contains 40 articles; pooling these equally sized strata would misrepresent their different population sizes.</p>
+<div class="scroll"><table>
+<tr><th>Development stratum</th><th>Affirmative design evidence</th><th>Not eligible</th><th>Unclear</th></tr>
+<tr><td>concepts_beyond_exposure</td><td>5</td><td>32</td><td>3</td></tr>
+<tr><td>exposure_beyond_labels</td><td>13</td><td>22</td><td>5</td></tr>
+<tr><td>named_design</td><td>36</td><td>4</td><td>0</td></tr>
+<tr><td>previous_only</td><td>35</td><td>5</td><td>0</td></tr>
+</table></div>
+<p>The broad concept and exposure variants were too noisy. The refinement retains productive named designs and randomized reading assignments, requires title/abstract evidence for its broader procedure route, uses a human-context gate, and avoids the ambiguous perception/preference and text-prefix terms in that branch. The term text* can reach words such as texture; the revised branch uses text, textual and written. These changes concern research methods rather than the topics or names of the nominated researchers.</p>
+<p>The requested addition of participant* to the framing/scenario and embedded-survey clauses separately increases the expanded query from 8,074 to 8,142 distinct in-frame articles (+68, no losses). The embedded-survey change adds none because every phrase already contains survey. <a href="queries/participant_guards_2026_09_10/revised.txt">Complete participant-expanded query</a> · <a href="results/participant_guards_2026_09_10/retrieval_comparison.csv">Comparison</a>.</p>
+<p>The compact candidate contains 2,019 characters versus 4,706 in that expanded query. It retrieves 18,054 distinct articles in the 3,401-journal frame: 9,926 additions and 14 losses relative to the 8,142-article query. These are retrieval changes, not gains in verified experiments. <a href="results/search_strategy_2026_09_10/retrieval_comparison.csv">Full comparison</a> · <a href="results/search_strategy_2026_09_10/route_counts.csv">Overlapping route counts</a>.</p>
+<pre><code>(
+  TITLE-ABS-KEY(
+      &quot;survey experiment*&quot;
+      OR &quot;survey based experiment*&quot;
+      OR &quot;survey embedded experiment*&quot;
+      OR &quot;experimental survey*&quot;
+      OR &quot;vignette experiment*&quot;
+      OR &quot;experimental vignette*&quot;
+      OR &quot;vignette based experiment*&quot;
+      OR &quot;vignette based survey*&quot;
+      OR &quot;factorial survey*&quot;
+      OR &quot;randomized vignette*&quot;
+      OR &quot;randomised vignette*&quot;
+      OR &quot;question wording experiment*&quot;
+      OR &quot;experiment* embedded in a survey&quot;
+      OR &quot;experiment* embedded in an online survey&quot;
+      OR &quot;experiment* within a survey&quot;
+      OR &quot;experiment* within an online survey&quot;
+      OR &quot;experiment* in a survey&quot;
+      OR &quot;experiment* in an online survey&quot;
+      OR &quot;survey based random* experiment*&quot;
+  )
+  OR (
+    TITLE-ABS-KEY(
+        &quot;framing experiment*&quot;
+        OR &quot;information provision experiment*&quot;
+        OR &quot;scenario based experiment*&quot;
+        OR &quot;information treatment*&quot;
+        OR &quot;informational treatment*&quot;
+        OR &quot;information experiment*&quot;
+        OR &quot;wording experiment*&quot;
+        OR &quot;embedded experiment*&quot;
+    )
+    AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent* OR participant*)
+    AND TITLE-ABS-KEY(random* OR experiment*)
+  )
+  OR (
+    TITLE-ABS(experiment* OR random* OR manipulat* OR &quot;control condition*&quot; OR &quot;control group*&quot;)
+    AND TITLE-ABS(attitud* OR belief* OR opinion* OR intention* OR judgment* OR judgement*)
+    AND TITLE-ABS-KEY(participant* OR respondent* OR survey* OR questionnaire* OR human*)
+    AND (
+      TITLE-ABS(message* OR text OR textual OR written OR vignette* OR scenario* OR headline* OR prompt*)
+      OR TITLE-ABS((read* OR view* OR expos* OR present* OR receiv* OR shown) W/5 information)
+    )
+  )
+  OR (
+    TITLE-ABS-KEY(
+        &quot;random* assign* to read&quot;
+        OR &quot;random* allocat* to read&quot;
+        OR &quot;random* select* to read&quot;
+        OR &quot;random* to read&quot;
+    )
+    AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent* OR participant*)
+  )
+)
+AND SRCTYPE(j)
+AND DOCTYPE(ar)
+AND PUBYEAR &gt; 2009
+AND PUBYEAR &lt; 2027</code></pre>
+<p>The first, second and fourth blocks recognize named designs or reading assignments and together retrieve 8,615 distinct candidates. The third supplies another 9,439 candidates and is a supplementary discovery route. Every route requires eligibility screening before counting. For separate use, download the <a href="queries/search_strategy_2026_09_10/primary.txt">named-design and reading query</a> and the <a href="queries/search_strategy_2026_09_10/procedure.txt">procedure supplement</a>. These are projections of the frozen query, not terms fitted after validation. The quoted phrases are loose Scopus phrases; wildcards abbreviate word endings. <a href="https://www.elsevier.support/scopus/answer/how-can-i-best-use-the-advanced-search">Elsevier documents this syntax</a>. Our <a href="results/query_revision_2026_09_10/field_checks.csv">cached punctuation probes</a> also show that braces cannot be relied on to eliminate every punctuation-boundary match. No researcher names, topic terms, vendor restrictions or explicit design exclusions appear in this candidate.</p>
+<p>Two separate AI coding passes reviewed a fixed, disjoint sample of 100 candidate articles. They agreed on affirmative design evidence for 65, agreed that 29 were not eligible survey designs, and left 6 uncertain or disputed. After flagging designs that either coder identified as incompatible and records described as secondary-only, 60 remained affirmative candidates. This is not confirmation of parser support or data ownership. All labels remain AI-assisted and require independent human validation.</p>
+<div class="scroll"><table>
+<tr><th>Held-out subgroup</th><th>Reviewed</th><th>Both affirmative</th><th>Both negative</th><th>Unresolved</th><th>After known incompatibility flags</th></tr>
+<tr><td>named_design_or_reading</td><td>41</td><td>36</td><td>3</td><td>2</td><td>34</td></tr>
+<tr><td>procedure_only</td><td>59</td><td>29</td><td>26</td><td>4</td><td>26</td></tr>
+</table></div>
+<p>The two AI passes agreed on the three-way design classification in 96% of cases. This agreement is not an estimate of truth, and shared errors remain possible. The held-out sample concerns candidate articles outside development material, not all retrieved articles or all survey experiments. <a href="results/search_strategy_2026_09_10/validation_consensus.csv">Both coding passes and consensus</a> · <a href="results/search_strategy_2026_09_10/validation_unclear_queue.csv">Unresolved survey-design cases</a>. This queue concerns design uncertainty; parser support or original data collection can remain uncertain even for affirmative designs.</p>
+<p>Preserve the 14 candidates absent from the new query for screening; the union with the previous search contains 18,068 distinct articles. A separate post-validation <a href="results/search_strategy_2026_09_10/lost_record_review.csv">review of all 14 losses</a> judged 13 eligible and one outside the target. Several describe outcomes as ratings, perceptions, acceptability or willingness to pay, illustrating the cost of narrowing outcome vocabulary. These additional AI-assisted judgments informed retention, not changes to the frozen query. Query revision should not silently erase prior evidence.</p>
+<p>Before rebuilding the ranking, confirm study eligibility across this corpus and apply the same first/last rule to everyone. Define a candidate pool from eligible first/last authors and the existing TESS investigator roster, then check their complete 2010–2026 journal bibliographies before truncating to 100 researchers. Retain the same journal frame; log document-type exceptions for review rather than silently changing filters. Bibliography completion can recover studies whose abstracts omit search vocabulary, but cannot prove coverage of researchers absent from both discovery and the roster. Audit a random sample of unmatched articles within the frame to assess remaining omissions. Report screening coverage and uncertainty rather than treating unreviewed papers as zero. A missing search match is not evidence that a researcher lacks data. The current dashboard remains the documented, provisional earlier cohort. <a href="SEARCH_SUMMARY.html">Concise coauthor note</a> · <a href="SEARCH_METHODS.html">Supporting-information draft</a> · <a href="TOP100.html#summary">Dashboard methodology</a>.</p>
+<p>Reproduce cached search comparisons with python3 pipeline/design_audit.py summarize and python3 pipeline/search_strategy.py summarize; reproduce coding checks with python3 pipeline/design_audit_report.py development and python3 pipeline/search_strategy_review.py; then run python3 pipeline/search_strategy_report.py. Licensed metadata are required for evidence-span validation and remain private. The public files contain query text, hashes, memberships, bibliographic metadata, original annotation rationales and summary counts.</p></html>

@@ -1,0 +1,21 @@
+{
+  "packet_sha256": "85bdef88bc499041986995e8fe56cf7e7f8a5755b7184aeda6a2bd4333709f6f",
+  "sample_sha256": "a2bb8d6a90a83ca1f3a72a3e13ad371a4d68a46b3a8199b0e1d17b03597ec14f",
+  "coding_files": [
+    {
+      "file": "development_coder_0.csv",
+      "sha256": "8b882b0eb7b49d87f329600c9001507f53299299ceae9df6028f0e70c5d2e6c7"
+    },
+    {
+      "file": "development_coder_1.csv",
+      "sha256": "fd5e42dba00647bf9b65970b4e35d70716c9aa8b11e9be2415126a16681a9b33"
+    },
+    {
+      "file": "development_coder_2.csv",
+      "sha256": "6994756a94e83ba957cc9e0210bbf8002fa1140954e302796a4297fe76757f7a"
+    }
+  ],
+  "human_validated": false,
+  "n": 160,
+  "abstract_only": true
+}

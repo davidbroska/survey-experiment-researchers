@@ -1,0 +1,17 @@
+{
+  "method": "Independent recomputation from cached COMPLETE author bibliographies and canonical candidate membership; first/last union once per DOI identity",
+  "checks": [
+    {
+      "researcher": "pennycook",
+      "candidate_any_position": 20,
+      "candidate_first_last_by_complete_byline": 7,
+      "incomplete_bylines": []
+    },
+    {
+      "researcher": "richeson",
+      "candidate_any_position": 2,
+      "candidate_first_last_by_complete_byline": 1,
+      "incomplete_bylines": []
+    }
+  ]
+}

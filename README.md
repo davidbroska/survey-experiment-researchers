@@ -4,7 +4,9 @@ The current pool has 870 distinct articles published in 2010–2026. Of these, 4
 
 Pool membership is determined by total first/last-author volume before geography review. Seventy authors share the six-article cutoff; 65 are outside the fixed 100-person display. The [cutoff table](results/top100_cutoff_ties.csv) identifies them. US sorting is conditional on this pool, not a global top 100 by US experiments. Geographic evidence does not establish original fielding, independent datasets, parser compatibility, or data ownership. The shortlist is provisional.
 
-The [latest executed query revision](QUERY_REVISION.html) retrieves 8,074 distinct in-frame articles, compared with 7,304 for a fresh run of the previous query: 788 added and 18 removed. It incorporates the requested survey-design, embedded-experiment, text/message-assignment, and information-experiment phrases. Of the added records, 628 pass the strict local phrase/context check and 160 require further match review; these are not eligibility decisions. The reviewed dashboard cohort still uses its archived query. The [initial participant diagnostic](PARTICIPANT_TERM_ASSESSMENT.md) has been corrected and superseded.
+The [evidence-based search audit](SEARCH_STRATEGY.html), [short coauthor note](SEARCH_SUMMARY.html), and [new SI methods draft](SEARCH_METHODS.html) investigate the Pennycook and Richeson counterexamples. The audit covers their complete Scopus article bibliographies, 20 nominated papers, 160 fresh development articles and 100 held-out articles independently coded twice. Adding `participant*` to the remaining population gates increases the expanded search from 8,074 to 8,142 distinct in-frame articles. A shorter candidate query retrieves 18,054, but remains too noisy and incomplete for automatic ranking: both AI reviewers find affirmative design evidence in 36/41 named-design or reading candidates versus 29/59 procedure-only candidates. All annotations await human validation. The proposed workflow preserves earlier candidates, screens every route, and completes candidate bibliographies before selecting the top 100. The existing dashboard retains its earlier provisional cohort.
+
+The [preceding query revision](QUERY_REVISION.html) retrieves 8,074 distinct in-frame articles, compared with 7,304 for a fresh run of the previous query: 788 added and 18 removed. It incorporates the requested survey-design, embedded-experiment, text/message-assignment, and information-experiment phrases. Of the added records, 628 pass the strict local phrase/context check and 160 require further match review; these are not eligibility decisions. The [initial participant diagnostic](PARTICIPANT_TERM_ASSESSMENT.md) has been corrected and superseded.
 
 This folder is independent of the earlier attempts. Python 3.10 or newer and the standard library are sufficient. Run these commands from this folder:
 
@@ -74,3 +76,17 @@ The acquisition stage needs public internet access and a PDF text extractor. It 
 `pipeline/review_priority.py` simulates a US-positive resolution for missing papers and prioritizes differentiation among tied researchers at competition rank 50 or better on either measure. All boundary ties are included. The module accounts for shared first/last authorship, records potential new ties, and spreads each batch across different affected pairs. Total article counts stay fixed. `inputs/manual_download_status.csv` keeps user-reported retrieval problems out of these priorities; `inputs/fulltext_followups.csv` records incomplete or inconclusive available texts. [Changes after the latest full-text round](results/fulltext_review_round_author_changes.csv) show each researcher’s updated count and rank.
 
 Reproduce the revised-query comparison with `python3 pipeline/query_revision.py all --workers 4`, or regenerate its report offline with `python3 pipeline/query_revision.py report`. Query definitions are under `queries/revision_2026_09_10/`; result sets, cumulative contributions, local verification, and manifests are under `results/query_revision_2026_09_10/`. Licensed payloads remain in the corresponding `private/` snapshot. The existing `run.py` stages reproduce the reviewed dashboard retrieval; the dated revision stage preserves that query/count pairing while its additions await screening.
+
+The subsequent audit is versioned separately under `participant_guards_2026_09_10`, `design_audit_2026_09_10`, and `search_strategy_2026_09_10` in `queries/`, `results/`, and `private/`. Rebuild cached comparisons and reports with:
+
+```bash
+python3 pipeline/participant_guards.py report
+python3 pipeline/design_audit.py summarize
+python3 pipeline/design_audit_report.py development
+python3 pipeline/search_strategy.py summarize
+python3 pipeline/search_strategy.py author_comparison
+python3 pipeline/search_strategy_review.py
+python3 pipeline/search_strategy_report.py
+```
+
+Query hashes, journal-frame hashes, complete route memberships, development exclusions, fixed sample manifests, annotation provenance and original rationales are public. Licensed abstracts and evidence quotations remain private and are needed to validate evidence spans. The [audit codebook](results/design_audit_2026_09_10/annotation_codebook.md) separates survey design, original data, text treatment, parser compatibility and geography. The final query was frozen before the 100-article validation packet was coded; its terms were not adjusted to those labels. Separate AI coding passes are not a substitute for independent human validation. Retrieval comparisons and author counts are reproducible from cached data; no audit stage replaces the frozen ranking with unreviewed query hits.

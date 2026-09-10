@@ -1,0 +1,37 @@
+{
+  "n": 100,
+  "agreed_yes": 65,
+  "agreed_no": 29,
+  "unclear_or_disagreement": 6,
+  "design_disagreements": 4,
+  "raw_design_agreement": 0.96,
+  "cohens_kappa_descriptive": 0.9140893470790378,
+  "agreed_yes_share": 0.65,
+  "agreed_yes_share_wilson_95": [
+    0.5525444329688796,
+    0.7363575175690247
+  ],
+  "agreed_yes_or_unresolved_share": 0.71,
+  "candidate_after_known_incompatibility_flags": 60,
+  "coder_A": {
+    "no": 29,
+    "yes": 68,
+    "unclear": 3
+  },
+  "coder_B": {
+    "no": 29,
+    "yes": 66,
+    "unclear": 5
+  },
+  "geography_agreement_counts": {
+    "US_explicit": 11,
+    "unclear": 51,
+    "non_US": 30,
+    "mixed_includes_US": 3,
+    "US_inferred": 5
+  },
+  "human_validated": false,
+  "estimand": "Query-selected articles outside archived development material and the 160-record development sample",
+  "interpretation": "Two AI coding passes; disagreements remain unresolved. Agreement and intervals are descriptive; shared AI errors and parser/data-ownership uncertainty remain. No validated precision or recall claim.",
+  "sampling_uncertainty_note": "Wilson interval describes agreed affirmative evidence, not truth-label precision; it does not account for annotation error."
+}

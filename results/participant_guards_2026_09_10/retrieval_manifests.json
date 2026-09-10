@@ -1,0 +1,112 @@
+[
+  {
+    "view": "COMPLETE",
+    "query": "(EID(2-s2.0-105010285430) OR EID(2-s2.0-105010933058) OR EID(2-s2.0-105011347085) OR EID(2-s2.0-105014958043) OR EID(2-s2.0-105015179447) OR EID(2-s2.0-105017513451) OR EID(2-s2.0-105020816027) OR EID(2-s2.0-105022251623) OR EID(2-s2.0-105022893319) OR EID(2-s2.0-105023995250) OR EID(2-s2.0-105024471563) OR EID(2-s2.0-105024493576) OR EID(2-s2.0-105025426806) OR EID(2-s2.0-105025449927) OR EID(2-s2.0-105026067862) OR EID(2-s2.0-105026240204) OR EID(2-s2.0-105026711445) OR EID(2-s2.0-105027973032) OR EID(2-s2.0-105028534231) OR EID(2-s2.0-105028596785) OR EID(2-s2.0-105029236766) OR EID(2-s2.0-105029628865) OR EID(2-s2.0-105029671836) OR EID(2-s2.0-105029705269) OR EID(2-s2.0-105030548786))",
+    "expected": 25,
+    "retrieved": 25,
+    "complete": true,
+    "dates": [
+      "2026-09-10T11:58:03.412076+00:00"
+    ],
+    "private_snapshot": "private/participant_guards_2026_09_10/searches/4c7085a296e520f1effed5d2270b1f0b6341cb2910d511393873e1fbef0ee553.json",
+    "sha256": "74cca6d89e50ffb60a9c313a1719e50232d470bb0ba4d43f734019ff0a796f1e"
+  },
+  {
+    "view": "COMPLETE",
+    "query": "(EID(2-s2.0-85203998853) OR EID(2-s2.0-85204783150) OR EID(2-s2.0-85208805546) OR EID(2-s2.0-85210032259) OR EID(2-s2.0-85210225902) OR EID(2-s2.0-85210451525) OR EID(2-s2.0-85210631189) OR EID(2-s2.0-85211024346) OR EID(2-s2.0-85212238714) OR EID(2-s2.0-85214081356) OR EID(2-s2.0-85215991849) OR EID(2-s2.0-85217030243) OR EID(2-s2.0-85217042951) OR EID(2-s2.0-85217930552) OR EID(2-s2.0-85218185895) OR EID(2-s2.0-105002140512) OR EID(2-s2.0-105002148933) OR EID(2-s2.0-105002671820) OR EID(2-s2.0-105003583469) OR EID(2-s2.0-105004674980) OR EID(2-s2.0-105005147981) OR EID(2-s2.0-105005545864) OR EID(2-s2.0-105009462482) OR EID(2-s2.0-105009473077) OR EID(2-s2.0-105009700524))",
+    "expected": 25,
+    "retrieved": 25,
+    "complete": true,
+    "dates": [
+      "2026-09-10T11:58:03.397485+00:00"
+    ],
+    "private_snapshot": "private/participant_guards_2026_09_10/searches/67f0d0dd5b118d7e1bb458e37bd89ad34ba1bb8f6af554cee1f1628812187653.json",
+    "sha256": "97d2d146ea08517cd748bc5eac91f1df4bb9ba71c3a21bbdd7c317d81af630ab"
+  },
+  {
+    "view": "COMPLETE",
+    "query": "(EID(2-s2.0-85124357445) OR EID(2-s2.0-85129150978) OR EID(2-s2.0-85132577788) OR EID(2-s2.0-85133461081) OR EID(2-s2.0-85134732855) OR EID(2-s2.0-85135320477) OR EID(2-s2.0-85140124490) OR EID(2-s2.0-85141942519) OR EID(2-s2.0-85161422844) OR EID(2-s2.0-85173057763) OR EID(2-s2.0-85173650228) OR EID(2-s2.0-85177584969) OR EID(2-s2.0-85177645427) OR EID(2-s2.0-85183168596) OR EID(2-s2.0-85187566150) OR EID(2-s2.0-85188829196) OR EID(2-s2.0-85189031530) OR EID(2-s2.0-85189507582) OR EID(2-s2.0-85192140889) OR EID(2-s2.0-85192848814) OR EID(2-s2.0-85198643341) OR EID(2-s2.0-85199965144) OR EID(2-s2.0-85201437170) OR EID(2-s2.0-85202544011) OR EID(2-s2.0-85203256934))",
+    "expected": 25,
+    "retrieved": 25,
+    "complete": true,
+    "dates": [
+      "2026-09-10T11:58:01.749340+00:00"
+    ],
+    "private_snapshot": "private/participant_guards_2026_09_10/searches/72ab0b1108b9d02e751efa01cd4ec44c228a757e8fe27d5c7037cf94b1b2effa.json",
+    "sha256": "89aaf80541a24fefa471cb4d1a088c72bcf298cbc83fb87e7caa46efa019a376"
+  },
+  {
+    "view": "COMPLETE",
+    "query": "(EID(2-s2.0-85069850862) OR EID(2-s2.0-85070359164) OR EID(2-s2.0-85078665546) OR EID(2-s2.0-85079007088) OR EID(2-s2.0-85083046227) OR EID(2-s2.0-85085085634) OR EID(2-s2.0-85085109813) OR EID(2-s2.0-85086906996) OR EID(2-s2.0-85087706270) OR EID(2-s2.0-85088706506) OR EID(2-s2.0-85089589619) OR EID(2-s2.0-85090237733) OR EID(2-s2.0-85092802418) OR EID(2-s2.0-85096678442) OR EID(2-s2.0-85102275400) OR EID(2-s2.0-85104452218) OR EID(2-s2.0-85106252599) OR EID(2-s2.0-85112397472) OR EID(2-s2.0-85112538324) OR EID(2-s2.0-85112649803) OR EID(2-s2.0-85115724903) OR EID(2-s2.0-85116474088) OR EID(2-s2.0-85120571861) OR EID(2-s2.0-85122849619) OR EID(2-s2.0-85124228884))",
+    "expected": 25,
+    "retrieved": 25,
+    "complete": true,
+    "dates": [
+      "2026-09-10T11:58:01.745761+00:00"
+    ],
+    "private_snapshot": "private/participant_guards_2026_09_10/searches/87924517424839acfabfab963a00f5627f07f8ec7899fbf54e335b2dac9902bd.json",
+    "sha256": "189f66b8d79c5faa49028d569a86efe12300b42c8636828fb93b9b51453efdc2"
+  },
+  {
+    "view": "STANDARD",
+    "query": "(TITLE-ABS-KEY({framing experiment} OR {framing experiments} OR {information provision experiment} OR {information provision experiments} OR {information-provision experiment} OR {information-provision experiments} OR {scenario-based experiment} OR {scenario-based experiments} OR {scenario based experiment} OR {scenario based experiments}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent* OR participant*)) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027",
+    "expected": 521,
+    "retrieved": 521,
+    "complete": true,
+    "dates": [
+      "2026-09-10T11:57:51.598507+00:00",
+      "2026-09-10T11:57:56.509704+00:00",
+      "2026-09-10T11:57:59.568346+00:00"
+    ],
+    "private_snapshot": "private/participant_guards_2026_09_10/searches/a04df94a39e453ce1658a4bfa427a08c6a08f70fd17c8d2e6a5293d30c9f6711.json",
+    "sha256": "e06bc84dbef6c0c65ef8e298ecff4c2881b1c2d88a62e296a51847700c8a448b"
+  },
+  {
+    "view": "STANDARD",
+    "query": "(TITLE-ABS-KEY({experiment embedded in a survey} OR {experiments embedded in a survey} OR {experiment embedded in an online survey} OR {experiments embedded in an online survey} OR {embedded survey experiment} OR {embedded survey experiments} OR {survey with an embedded experiment} OR {survey with embedded experiments} OR {surveys with embedded experiments} OR {experiment in an online survey} OR {experiments in an online survey} OR {experiment within an online survey} OR {experiments within an online survey} OR {experiment in a survey} OR {experiments in a survey} OR {experiment within a survey} OR {experiments within a survey}) AND TITLE-ABS-KEY(survey* OR questionnaire* OR respondent* OR participant*)) AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027",
+    "expected": 121,
+    "retrieved": 121,
+    "complete": true,
+    "dates": [
+      "2026-09-10T11:57:50.267505+00:00"
+    ],
+    "private_snapshot": "private/participant_guards_2026_09_10/searches/a0aa43a101ba5349c62520981cc24f4ce96ba6193b6ef530b30024cd657ac88c.json",
+    "sha256": "75ec305e88eab08afdbea1536423a35cda7553928019485425db9aa9cc00879f"
+  },
+  {
+    "view": "COMPLETE",
+    "query": "(EID(2-s2.0-105047874284) OR EID(2-s2.0-105048960652))",
+    "expected": 2,
+    "retrieved": 2,
+    "complete": true,
+    "dates": [
+      "2026-09-10T11:58:04.486620+00:00"
+    ],
+    "private_snapshot": "private/participant_guards_2026_09_10/searches/bc693f4678756d35b6f09b133727064550ba72b19bfb79983450eb75bcb4cdcb.json",
+    "sha256": "1373e034b6edfe85f1fbd7e0af6d90a284355aaa90a90657f2e53ae9dad366fd"
+  },
+  {
+    "view": "COMPLETE",
+    "query": "(EID(2-s2.0-84874531907) OR EID(2-s2.0-84884299663) OR EID(2-s2.0-84911898033) OR EID(2-s2.0-84929747725) OR EID(2-s2.0-84945483077) OR EID(2-s2.0-84953371796) OR EID(2-s2.0-84979084044) OR EID(2-s2.0-84979619798) OR EID(2-s2.0-84981537877) OR EID(2-s2.0-84983493558) OR EID(2-s2.0-84996799405) OR EID(2-s2.0-85007417757) OR EID(2-s2.0-85014719943) OR EID(2-s2.0-85015636342) OR EID(2-s2.0-85031412182) OR EID(2-s2.0-85031682371) OR EID(2-s2.0-85041576760) OR EID(2-s2.0-85046154541) OR EID(2-s2.0-85048868725) OR EID(2-s2.0-85053665850) OR EID(2-s2.0-85053668115) OR EID(2-s2.0-85059101974) OR EID(2-s2.0-85063438220) OR EID(2-s2.0-85066882490) OR EID(2-s2.0-85068603406))",
+    "expected": 25,
+    "retrieved": 25,
+    "complete": true,
+    "dates": [
+      "2026-09-10T11:58:01.644676+00:00"
+    ],
+    "private_snapshot": "private/participant_guards_2026_09_10/searches/c090727d30ada723a9f7f11e0d30f5544d4d970f6098aca46a34c19116f0dd09.json",
+    "sha256": "bf1c7eaddbe174033e068be3d224b70784dd56f4b6dc59c972a2ab7a8c6cb00a"
+  },
+  {
+    "view": "COMPLETE",
+    "query": "(EID(2-s2.0-105030590156) OR EID(2-s2.0-105030672682) OR EID(2-s2.0-105030715461) OR EID(2-s2.0-105032454815) OR EID(2-s2.0-105034376626) OR EID(2-s2.0-105036409874) OR EID(2-s2.0-105036419257) OR EID(2-s2.0-105036648887) OR EID(2-s2.0-105038920261) OR EID(2-s2.0-105039098942) OR EID(2-s2.0-105040016698) OR EID(2-s2.0-105040027831) OR EID(2-s2.0-105040087871) OR EID(2-s2.0-105040241846) OR EID(2-s2.0-105041125676) OR EID(2-s2.0-105041455414) OR EID(2-s2.0-105041893422) OR EID(2-s2.0-105043459819) OR EID(2-s2.0-105044062653) OR EID(2-s2.0-105045057565) OR EID(2-s2.0-105045330304) OR EID(2-s2.0-105045481141) OR EID(2-s2.0-105045795742) OR EID(2-s2.0-105046458469) OR EID(2-s2.0-105047439252))",
+    "expected": 25,
+    "retrieved": 25,
+    "complete": true,
+    "dates": [
+      "2026-09-10T11:58:03.536218+00:00"
+    ],
+    "private_snapshot": "private/participant_guards_2026_09_10/searches/ff139f61ee1d4e5f4f4c27c70c4849c39e19d7dc8fcc91512623446b8167f010.json",
+    "sha256": "f558d28d01adaff2dab6a615782456c8c2324a6bf383a9cc0f0364321fd79237"
+  }
+]
