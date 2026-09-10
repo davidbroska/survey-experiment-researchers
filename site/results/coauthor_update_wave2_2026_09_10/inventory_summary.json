@@ -1,0 +1,10 @@
+{
+  "download_files": 17,
+  "matched_articles": 17,
+  "ready_fulltexts": 17,
+  "unmatched_downloads": 0,
+  "newly_available_fixed_benchmark_articles": 0,
+  "originals_archived_before_root_removal": true,
+  "prior_review_files_modified": false,
+  "fulltext_packet_sha256": "13eb908fbe38c6244c0e32d7f7c1cfba14cdcecc874815f856a767e1872df9b6"
+}

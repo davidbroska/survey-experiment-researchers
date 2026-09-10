@@ -1,9 +1,9 @@
 {
   "passed": true,
   "output_sha256": {
-    "DASHBOARD_ORIGINAL.html": "618c1c8f31d2b5bbddf516964b44d88a18b27210f4f8ce1ed32931285f77d60f",
-    "DASHBOARD_COMPLETE.html": "d996ab232aec2af8fd064da84c3a02181f68d09ec8bea0f8bcc174e3923f4bc3",
-    "DASHBOARD_NARROWER.html": "e57264d67e55f822392471c0dbb633a6a6668ab1cfeb9299f541176c3e00fc7c"
+    "DASHBOARD_ORIGINAL.html": "a08e9baf42bf4a37b7d51baf9a38035a654f1c4809656a955981435636419fb3",
+    "DASHBOARD_COMPLETE.html": "5bc8ef3581e05efef88dd06e9b7ea2b94442a7bf6cdea3fc404f9abffc8008f8",
+    "DASHBOARD_NARROWER.html": "83dfeb993efad087bc954061343392efbc05a1de4e1013f34b1d416eecbe650b"
   },
   "checks": [
     "three standalone query presentations with no comparison links",
@@ -21,6 +21,33 @@
     "batch copy and CSV contents",
     "article evidence filter",
     "desktop and mobile layouts",
-    "no uncaught exceptions"
-  ]
+    "no uncaught exceptions",
+    "wave2 totals and saved-but-unclear85068603406 omitted from routine downloads"
+  ],
+  "wave2_data_check": {
+    "original": {
+      "us_articles": 457,
+      "unclear_articles": 122,
+      "default_sort": "US",
+      "cohort_size": 120,
+      "saved_unclear_article_present": false,
+      "saved_unclear_article_omitted_from_routine_queue": true
+    },
+    "complete": {
+      "us_articles": 483,
+      "unclear_articles": 154,
+      "default_sort": "US",
+      "cohort_size": 120,
+      "saved_unclear_article_present": true,
+      "saved_unclear_article_omitted_from_routine_queue": true
+    },
+    "narrower": {
+      "us_articles": 483,
+      "unclear_articles": 153,
+      "default_sort": "US",
+      "cohort_size": 120,
+      "saved_unclear_article_present": true,
+      "saved_unclear_article_omitted_from_routine_queue": true
+    }
+  }
 }

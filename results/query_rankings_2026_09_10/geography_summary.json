@@ -1,15 +1,15 @@
 {
   "canonical_articles": 9703,
-  "valid_source_reviews": 2028,
+  "valid_source_reviews": 2045,
   "distinct_previously_reviewed_scopus_ids": 1377,
   "invalid_source_reviews": 0,
   "unmatched_prior_reviews": 194,
   "article_labels": {
     "unreviewed": 8465,
-    "unclear": 237,
-    "non_us": 447,
-    "us_inferred": 189,
-    "us_explicit": 351,
+    "unclear": 221,
+    "non_us": 453,
+    "us_inferred": 194,
+    "us_explicit": 356,
     "not_applicable": 14
   },
   "articles_with_conflicting_evidence": 1,
@@ -20,16 +20,16 @@
       "total_count_cutoff": 7,
       "known_us_count_cutoff": 2,
       "total_top100_including_ties": 114,
-      "possible_us_top100_including_ties": 2585
+      "possible_us_top100_including_ties": 2582
     },
     "narrower_query": {
       "total_count_cutoff": 7,
       "known_us_count_cutoff": 2,
       "total_top100_including_ties": 114,
-      "possible_us_top100_including_ties": 2534
+      "possible_us_top100_including_ties": 2531
     }
   },
-  "review_pool_authors": 2603,
+  "review_pool_authors": 2601,
   "review_pool_articles": 5781,
   "new_articles_requiring_review": 4656,
   "common_pool_authors": 100,
@@ -38,10 +38,10 @@
   "union_leader_pool_articles": 1042,
   "union_leader_pool_articles_unreviewed": 0,
   "union_leader_pool_article_labels": {
-    "unclear": 170,
-    "non_us": 382,
-    "us_explicit": 303,
-    "us_inferred": 174,
+    "unclear": 154,
+    "non_us": 388,
+    "us_explicit": 308,
+    "us_inferred": 179,
     "not_applicable": 13
   },
   "wave1_fixed_packet_articles": 160,
@@ -50,10 +50,10 @@
       "articles": 9675,
       "labels": {
         "unreviewed": 8444,
-        "unclear": 237,
-        "non_us": 444,
-        "us_inferred": 187,
-        "us_explicit": 349,
+        "unclear": 221,
+        "non_us": 450,
+        "us_inferred": 192,
+        "us_explicit": 354,
         "not_applicable": 14
       },
       "reviewed": 1231
@@ -62,10 +62,10 @@
       "articles": 9365,
       "labels": {
         "unreviewed": 8143,
-        "unclear": 233,
-        "non_us": 442,
-        "us_inferred": 187,
-        "us_explicit": 346,
+        "unclear": 217,
+        "non_us": 448,
+        "us_inferred": 192,
+        "us_explicit": 351,
         "not_applicable": 14
       },
       "reviewed": 1222
@@ -74,10 +74,10 @@
       "articles": 7302,
       "labels": {
         "unreviewed": 6198,
-        "unclear": 179,
-        "non_us": 420,
-        "us_inferred": 176,
-        "us_explicit": 315,
+        "unclear": 165,
+        "non_us": 424,
+        "us_inferred": 181,
+        "us_explicit": 320,
         "not_applicable": 14
       },
       "reviewed": 1104
@@ -86,10 +86,10 @@
       "articles": 7031,
       "labels": {
         "unreviewed": 5952,
-        "unclear": 165,
-        "non_us": 413,
-        "us_inferred": 174,
-        "us_explicit": 313,
+        "unclear": 152,
+        "non_us": 417,
+        "us_inferred": 179,
+        "us_explicit": 317,
         "not_applicable": 14
       },
       "reviewed": 1079

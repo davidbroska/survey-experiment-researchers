@@ -1,0 +1,35 @@
+{
+  "reviewed_articles": 17,
+  "labels": {
+    "us_explicit": 5,
+    "us_inferred": 5,
+    "non_us": 6,
+    "unclear": 1,
+    "not_applicable": 0
+  },
+  "source_pdf_cache_and_exact_page_spans_validated": true,
+  "reviews_sha256": "c0561ee3e8390a9784a6b834c7b568c42c73b675ddd2411e916bd846d505349c",
+  "packet_sha256": "13eb908fbe38c6244c0e32d7f7c1cfba14cdcecc874815f856a767e1872df9b6",
+  "human_validated": false,
+  "no_source_text_or_quotes_published": true,
+  "article_counts_modified_by_design_parser_notes": false,
+  "reviewer_shards": [
+    {
+      "reviewer_shard": "root",
+      "validated_articles": 6,
+      "source_hashes_and_exact_page_spans_validated": true
+    },
+    {
+      "reviewer_shard": "strategy",
+      "validated_articles": 6,
+      "source_hashes_and_exact_page_spans_validated": true
+    },
+    {
+      "reviewer_shard": "participant",
+      "validated_articles": 5,
+      "source_hashes_and_exact_page_spans_validated": true
+    }
+  ],
+  "previous_coauthor_wave_unchanged": true,
+  "unresolved_geographies_with_pdf_already_supplied": 1
+}

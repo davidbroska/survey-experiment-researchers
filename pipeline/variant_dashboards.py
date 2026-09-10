@@ -16,6 +16,14 @@ from common import ROOT, read_csv, write_json
 RANKINGS = ROOT / "results/query_rankings_2026_09_10"
 OUTPUT = ROOT / "results/variant_dashboards_2026_09_10"
 SNAPSHOT_DATE = "2026-09-10"
+PDF_REGISTERS = (
+    dict(directory="us_geography_priority_2026_09_10", public_name="fulltext_geography_reviews.csv",
+         validation_name="fulltext_review_validation.json", validation_kind="counts"),
+    dict(directory="coauthor_update_2026_09_10", public_name="geography_reviews.csv",
+         validation_name="review_validation.json", validation_kind="source_files"),
+    dict(directory="coauthor_update_wave2_2026_09_10", public_name="geography_reviews.csv",
+         validation_name="review_validation.json", validation_kind="source_files"),
+)
 VARIANTS = {
     "original": dict(name="Original query", ranking="current_published",
                      membership="current_local_phrase_verified", retrieved=7302,
@@ -108,10 +116,10 @@ def article_access(aliases, doi, source):
                 access_note=reason if not available else "")
 
 
-def load_validated_pdf_register(directory, public_name, validation_name, private_directory, paths, availability):
+def load_validated_pdf_register(directory, public_name, validation_name, validation_kind, paths, availability):
     public_path = ROOT / "results" / directory / public_name
     validation_path = ROOT / "results" / directory / validation_name
-    private_path = ROOT / "private" / private_directory / "fulltext_reviews.csv"
+    private_path = ROOT / "private" / directory / "fulltext_reviews.csv"
     if not public_path.exists():
         assert not private_path.exists(), "Publish the validated availability snapshot before rendering."
         return
@@ -121,12 +129,14 @@ def load_validated_pdf_register(directory, public_name, validation_name, private
     public_rows = {r["scopus_id"]: r for r in rows}
     assert len(public_rows) == len(rows), "A PDF snapshot must contain unique article IDs."
     assert validation["reviewed_articles"] == len(rows)
-    if directory == "coauthor_update_2026_09_10":
+    if validation_kind == "source_files":
         assert validation["source_pdf_cache_and_exact_page_spans_validated"] is True
         assert all(r["fulltext_readiness"] == "ready_for_fulltext_review" and
                    r["identity_status"] in ("verified_doi_and_title_in_opening_pages", "verified_title_in_opening_pages") for r in rows)
-    else:
+    elif validation_kind == "counts":
         assert all(validation[k] == len(rows) for k in ("pdf_hashes_verified", "article_identity_verified"))
+    else:
+        raise ValueError("Unknown PDF register validation kind.")
     for row in rows:
         assert re.fullmatch(r"[0-9a-f]{64}", row["source_sha256"]) and row["source_kind"], "PDF source provenance is incomplete."
         availability[row["scopus_id"]] = True
@@ -176,15 +186,13 @@ def load_inputs():
     if path.exists():
         paths.append(path)
         access_issues.update({r["scopus_id"]: "user_unavailable" for r in read_csv(path) if r["status"] == "user_unavailable"})
-    load_validated_pdf_register("us_geography_priority_2026_09_10", "fulltext_geography_reviews.csv",
-                                "fulltext_review_validation.json", "us_geography_priority_2026_09_10", paths, availability)
-    load_validated_pdf_register("coauthor_update_2026_09_10", "geography_reviews.csv",
-                                "review_validation.json", "coauthor_update_2026_09_10", paths, availability)
     design_notes = {}
-    path = ROOT / "results/coauthor_update_2026_09_10/design_parser_flags.csv"
-    if path.exists():
-        paths.append(path)
-        design_notes = {r["scopus_id"]: r["rationale"] for r in read_csv(path)}
+    for register in PDF_REGISTERS:
+        load_validated_pdf_register(**register, paths=paths, availability=availability)
+        path = ROOT / "results" / register["directory"] / "design_parser_flags.csv"
+        if path.exists():
+            paths.append(path)
+            design_notes.update({r["scopus_id"]: r["rationale"] for r in read_csv(path)})
     credits = defaultdict(lambda: defaultdict(set))
     for r in read_csv(RANKINGS / "author_article_links.csv"):
         credits[r["variant"]][r["identity"]].add(r["authid"])

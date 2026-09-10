@@ -11,7 +11,7 @@ from unittest.mock import patch
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "pipeline"))
 from common import read_csv
-from variant_dashboards import VARIANTS, load_inputs, make_payload, query_tokens, readable_query, verified_priority_pdf
+from variant_dashboards import PDF_REGISTERS, VARIANTS, load_inputs, make_payload, query_tokens, readable_query, verified_priority_pdf
 
 
 class Document(HTMLParser):
@@ -123,25 +123,31 @@ class VariantDashboardTests(unittest.TestCase):
         latest = read_csv(ROOT / 'results/benchmark_review_wave3_2026_09_10/availability_manifest.csv')
         ready = {r['scopus_id'] for r in latest if r['fulltext_readiness'] == 'ready_for_fulltext_review'}
         pending = {r['scopus_id'] for r in latest if r['publisher_access_issue']}
-        priority = ROOT / 'results/us_geography_priority_2026_09_10/fulltext_geography_reviews.csv'
-        ready.update(r['scopus_id'] for r in read_csv(priority))
-        ready.update(r['scopus_id'] for r in read_csv(ROOT / 'results/coauthor_update_2026_09_10/geography_reviews.csv'))
+        design_notes = {}
+        for register in PDF_REGISTERS:
+            path = ROOT / 'results' / register['directory'] / register['public_name']
+            if path.exists():
+                ready.update(r['scopus_id'] for r in read_csv(path))
+            path = ROOT / 'results' / register['directory'] / 'design_parser_flags.csv'
+            if path.exists():
+                design_notes.update({r['scopus_id']: r['rationale'] for r in read_csv(path)})
         for data in self.payloads.values():
             articles = {a['sid']: a for a in data['articles']}
             for sid in ready & articles.keys():
                 self.assertTrue(articles[sid]['pdf_available'], sid)
                 self.assertFalse(articles[sid]['alternative_copy_pending'], sid)
-            for sid in pending & articles.keys():
+            for sid in design_notes.keys() & articles.keys():
+                self.assertEqual(articles[sid]['design_review'], design_notes[sid])
+            for sid in (pending - ready) & articles.keys():
                 self.assertFalse(articles[sid]['pdf_available'], sid)
                 self.assertTrue(articles[sid]['alternative_copy_pending'], sid)
-            if '85110788543' in articles:
+            if '85110788543' in articles and '85110788543' not in ready:
                 a = articles['85110788543']
                 self.assertTrue(a['alternative_copy_pending'])
                 self.assertIn('User could not download', a['access_note'])
 
     def test_public_only_availability_and_provenance_match_private_verified_build(self):
-        private = [ROOT / 'private' / folder / 'fulltext_reviews.csv' for folder in
-                   ('us_geography_priority_2026_09_10', 'coauthor_update_2026_09_10')]
+        private = [ROOT / 'private' / register['directory'] / 'fulltext_reviews.csv' for register in PDF_REGISTERS]
         private_count = sum(len(read_csv(p)) for p in private if p.exists())
         with patch('variant_dashboards.verified_priority_pdf', wraps=verified_priority_pdf) as verify:
             baseline = load_inputs()
