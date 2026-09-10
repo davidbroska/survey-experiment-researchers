@@ -1,0 +1,11 @@
+variant,comparator,scope,candidate_pool_n,comparator_pool_n,shared,entrants,exits
+original_query,current_published,exact_top100,100,100,84,16,16
+original_query,current_published,top100_with_cutoff_ties,114,165,104,10,61
+original_query,current_raw,exact_top100,100,100,87,13,13
+original_query,current_raw,top100_with_cutoff_ties,114,167,105,9,62
+narrower_query,current_published,exact_top100,100,100,84,16,16
+narrower_query,current_published,top100_with_cutoff_ties,114,165,104,10,61
+narrower_query,current_raw,exact_top100,100,100,87,13,13
+narrower_query,current_raw,top100_with_cutoff_ties,114,167,105,9,62
+narrower_query,original_query,exact_top100,100,100,100,0,0
+narrower_query,original_query,top100_with_cutoff_ties,114,114,114,0,0

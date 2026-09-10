@@ -1,0 +1,101 @@
+{
+  "canonical_articles": 9703,
+  "valid_source_reviews": 2004,
+  "distinct_previously_reviewed_scopus_ids": 1371,
+  "invalid_source_reviews": 0,
+  "unmatched_prior_reviews": 194,
+  "article_labels": {
+    "unreviewed": 8471,
+    "unclear": 253,
+    "non_us": 444,
+    "us_inferred": 178,
+    "us_explicit": 343,
+    "not_applicable": 14
+  },
+  "articles_with_conflicting_evidence": 1,
+  "articles_with_unresolved_geography_conflicts": 0,
+  "geography_adjudicated_articles": 1,
+  "review_selection": {
+    "original_query": {
+      "total_count_cutoff": 7,
+      "known_us_count_cutoff": 2,
+      "total_top100_including_ties": 114,
+      "possible_us_top100_including_ties": 2586
+    },
+    "narrower_query": {
+      "total_count_cutoff": 7,
+      "known_us_count_cutoff": 2,
+      "total_top100_including_ties": 114,
+      "possible_us_top100_including_ties": 2535
+    }
+  },
+  "review_pool_authors": 2603,
+  "review_pool_articles": 5781,
+  "new_articles_requiring_review": 4660,
+  "common_pool_authors": 100,
+  "human_validated": false,
+  "union_current_and_new_total_leaders_authors": 120,
+  "union_leader_pool_articles": 1042,
+  "union_leader_pool_articles_unreviewed": 0,
+  "union_leader_pool_article_labels": {
+    "unclear": 186,
+    "non_us": 380,
+    "us_explicit": 298,
+    "us_inferred": 165,
+    "not_applicable": 13
+  },
+  "wave1_fixed_packet_articles": 160,
+  "variant_coverage": {
+    "original_query": {
+      "articles": 9675,
+      "labels": {
+        "unreviewed": 8450,
+        "unclear": 253,
+        "non_us": 441,
+        "us_inferred": 176,
+        "us_explicit": 341,
+        "not_applicable": 14
+      },
+      "reviewed": 1225
+    },
+    "narrower_query": {
+      "articles": 9365,
+      "labels": {
+        "unreviewed": 8149,
+        "unclear": 249,
+        "non_us": 439,
+        "us_inferred": 176,
+        "us_explicit": 338,
+        "not_applicable": 14
+      },
+      "reviewed": 1216
+    },
+    "current_raw": {
+      "articles": 7302,
+      "labels": {
+        "unreviewed": 6198,
+        "unclear": 192,
+        "non_us": 419,
+        "us_inferred": 168,
+        "us_explicit": 311,
+        "not_applicable": 14
+      },
+      "reviewed": 1104
+    },
+    "current_published_credited": {
+      "articles": 7031,
+      "labels": {
+        "unreviewed": 5952,
+        "unclear": 178,
+        "non_us": 412,
+        "us_inferred": 166,
+        "us_explicit": 309,
+        "not_applicable": 14
+      },
+      "reviewed": 1079
+    }
+  },
+  "packet_order": "deterministic hash of canonical article identity, independent of author name and rank",
+  "precedence": "Separately validated geography adjudications take precedence over raw reviews, and full-text reviews over metadata. Same-tier US/non-US contradictions remain unclear; original disagreements remain flagged after adjudication.",
+  "interpretation": "Geography evidence does not certify survey-experiment design. Known US counts are observed lower counts, and unclear/unreviewed counts define a resolution scenario only."
+}

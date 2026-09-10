@@ -1,0 +1,16 @@
+{
+  "offline_reproduction_passed": true,
+  "outputs_checked": 9,
+  "source_hashes_and_exact_review_spans_validated": true,
+  "sha256": {
+    "results/benchmark_review_wave2_2026_09_10/adjudication_provenance.json": "47601e080fde82ff118c0a1756620e561dec3690b7290205abb39454e3a9401b",
+    "results/benchmark_review_wave2_2026_09_10/article_consensus.csv": "39b015f812f2158b0e23d2d1d269bed6687eee0440db341962b499bf32e86a09",
+    "results/benchmark_review_wave2_2026_09_10/axis_annotations.csv": "c1027c3b246955695bd150cb83086a844ebe715a9738cea24a143b086d2b90ca",
+    "results/benchmark_review_wave2_2026_09_10/geography_adjudications.csv": "2be4cea0f206871d87b2767f189faaab2adddb6b532ae0b6a702c53f3132507c",
+    "results/benchmark_review_wave2_2026_09_10/missing_label_bounds.csv": "a1839cdf58cdbfeafe997d57ab31353a59f725200b6d25abcda99cb4c0498566",
+    "results/benchmark_review_wave2_2026_09_10/review_disagreements.csv": "e7dcf5967fee02efc98683844d5758f8b6b57e52f79fa6a7f07acab7ae74b403",
+    "results/benchmark_review_wave2_2026_09_10/review_provenance.json": "aeb8b3f89b20dc2837158b4e6aa443fe1ca9d6d3de0d9b2828a6db5d2abcb2b2",
+    "results/benchmark_review_wave2_2026_09_10/review_summary.json": "d37600f8c2bdfa1c65a1e8a21999d7b700cef8f3512659a2ef75fd55f7a391b6",
+    "results/benchmark_review_wave2_2026_09_10/stratum_summary.csv": "7dd20978b0cea090e6d9f7b62cdde8035d54539d0ccd8713dc3c742e30738077"
+  }
+}

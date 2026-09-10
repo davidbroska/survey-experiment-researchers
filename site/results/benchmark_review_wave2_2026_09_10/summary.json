@@ -1,0 +1,16 @@
+{
+  "fixed_sample_n": 60,
+  "download_files": 32,
+  "unique_download_hashes": 32,
+  "unique_verified_download_articles": 27,
+  "unmatched_downloads": 0,
+  "new_articles_ready_for_review": 27,
+  "previously_ready_articles": 18,
+  "articles_available_after_wave2": 45,
+  "articles_still_missing": 15,
+  "prior_stage_archive": "private/benchmark_review_wave2_2026_09_10/prior_stage_18_869a63d2606c62f1",
+  "prior_consensus_sha256": "869a63d2606c62f1f6b99e4c436bac2bcb6c349f4d1fd27bfc5535015914b278",
+  "packet_sha256": "be618f61c58db8ebbe4f5190e9f6b415d407c13e8b8f8a6318480b2738edefda",
+  "prior_labels_modified": false,
+  "inaccessible_records_replaced": false
+}

@@ -1,0 +1,13 @@
+variant,top_n,ranked_authors,cutoff_count,distinct_scores_in_display_top_n,authors_in_tied_scores_in_display_top_n,tied_pairs_in_display_top_n,adjacent_score_ties_in_display_top_n,global_authors_at_cutoff,authors_above_cutoff,top_n_including_cutoff_ties,cutoff_tie_display_slots
+current_raw,40,8742,9,9,37,116,31,14,33,47,7
+current_raw,50,8742,8,10,47,189,40,22,47,69,3
+current_raw,100,8742,6,12,96,852,88,68,99,167,1
+original_query,40,12481,9,9,38,109,31,15,37,52,3
+original_query,50,12481,9,9,48,184,41,15,37,52,13
+original_query,100,12481,7,11,98,799,89,32,82,114,18
+narrower_query,40,11934,9,9,38,111,31,15,37,52,3
+narrower_query,50,11934,9,9,48,186,41,15,37,52,13
+narrower_query,100,11934,7,11,98,801,89,32,82,114,18
+current_published,40,8312,9,9,37,110,31,13,33,46,7
+current_published,50,8312,8,10,47,173,40,20,46,66,4
+current_published,100,8312,6,12,97,773,88,70,95,165,5

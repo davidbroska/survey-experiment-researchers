@@ -1,0 +1,10 @@
+metric,candidate,comparator,candidate_n,comparator_n,shared,enter,leave
+all,full,current,100,100,84,16,16
+all,narrow,current,100,100,84,16,16
+all,narrow,full,100,100,100,0,0
+pool,full,current,100,100,98,2,2
+pool,narrow,current,100,100,98,2,2
+pool,narrow,full,100,100,100,0,0
+us,full,current,100,100,72,28,28
+us,narrow,current,100,100,72,28,28
+us,narrow,full,100,100,100,0,0

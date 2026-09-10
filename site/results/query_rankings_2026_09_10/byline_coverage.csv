@@ -1,0 +1,4 @@
+variant,candidate_articles,complete_bylines,unresolved_bylines,with_abstract,with_author_keywords,indexed_keywords_available
+current_raw,7302,7298,4,7291,5720,False
+original_query,9675,9669,6,9662,7679,False
+narrower_query,9365,9359,6,9352,7430,False

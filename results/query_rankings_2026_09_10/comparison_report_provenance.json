@@ -1,0 +1,10 @@
+{
+  "input_sha256": {
+    "results/query_rankings_2026_09_10/author_rank_comparison.csv": "f90a436b0a898ca21432ea7f2def6ce41f52420c3eb4e0e62467d2230714e00e",
+    "results/query_rankings_2026_09_10/geography_summary.json": "4eb032d9e8997b023655e89f550ac9fca9e59dcfe4e50232793a4221b1dde43c",
+    "results/query_rankings_2026_09_10/original_query_us_ranking.csv": "591a34b30393c4243911a67b22988cee611c127316bae4a4ef633c2ee53d929c",
+    "results/query_rankings_2026_09_10/narrower_query_us_ranking.csv": "a0d1b498b87dae39050efecdc3361a0837996c520a59d96a2676aa8aaf2f7177"
+  },
+  "dashboard_replaced": false,
+  "human_validated": false
+}

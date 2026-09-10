@@ -1,0 +1,28 @@
+{
+  "offline_reproduction_passed": true,
+  "outputs_checked": 21,
+  "source_hashes_and_exact_review_spans_validated": true,
+  "sha256": {
+    "results/query_rankings_2026_09_10/article_geography.csv": "6da0a47d8f61ecd498d26c95eca401202fd48e40a60c7875983b0dd51e2789b6",
+    "results/query_rankings_2026_09_10/common_pool_current_published_us_ranking.csv": "92d7d25cd46e8239f65745717705e9e738618af38d924d5bd0b3c3da643f806b",
+    "results/query_rankings_2026_09_10/common_pool_current_raw_us_ranking.csv": "1ec970a24e2e97d31a5134ea5c8adf352a1490d79ba2b6cb23c872d68af22d8b",
+    "results/query_rankings_2026_09_10/common_pool_narrower_query_us_ranking.csv": "bcbfec0f127cad098286c937975c02957758f0509653d9af2ccf24fef2c526ff",
+    "results/query_rankings_2026_09_10/common_pool_original_query_us_ranking.csv": "bcbfec0f127cad098286c937975c02957758f0509653d9af2ccf24fef2c526ff",
+    "results/query_rankings_2026_09_10/current_published_us_ranking.csv": "b74375602be4517aedab9cb15dbc3e07e7134c48dcdf157d9c418e7c2dcc0267",
+    "results/query_rankings_2026_09_10/current_raw_us_ranking.csv": "1b1b802e281ee043fbe2de9618313e8479c65c2d3a3129e5e1cf3a52ab9f3a84",
+    "results/query_rankings_2026_09_10/geography_annotation_provenance.json": "d7f498a9e7b934f4726719e4294a0cb0b9688892c844c0840b5ce2f97ea1546e",
+    "results/query_rankings_2026_09_10/geography_review_codebook.md": "2d8f9f95506e57cfeffb8bf9060c320e5f11584f8d69ef7f0da4889f5a24d47e",
+    "results/query_rankings_2026_09_10/geography_review_queue.csv": "a72cb5630f71b9f720113435f1d7d7ad5314c585b04e2dfd7883baad9657d18f",
+    "results/query_rankings_2026_09_10/geography_summary.json": "4eb032d9e8997b023655e89f550ac9fca9e59dcfe4e50232793a4221b1dde43c",
+    "results/query_rankings_2026_09_10/leader_pool_current_published_us_ranking.csv": "d84728218c2eadac428b81a64ca871c47b576eceaa057caab88788f874a29cc4",
+    "results/query_rankings_2026_09_10/leader_pool_current_raw_us_ranking.csv": "7ae6a02e422776284c5c5e97914855f18e651c48f1c7a35d8bed14109c363b67",
+    "results/query_rankings_2026_09_10/leader_pool_narrower_query_us_ranking.csv": "b28bf5558f97595e564c4ead232f92e0d3cd19b2a8c19bae9390f4398f2ea916",
+    "results/query_rankings_2026_09_10/leader_pool_original_query_us_ranking.csv": "b366f6c46f1c8bd5aebb3c150cd223aae57e4c20f84da0d7a48e50dcdf6391f7",
+    "results/query_rankings_2026_09_10/narrower_query_us_ranking.csv": "a0d1b498b87dae39050efecdc3361a0837996c520a59d96a2676aa8aaf2f7177",
+    "results/query_rankings_2026_09_10/original_query_us_ranking.csv": "591a34b30393c4243911a67b22988cee611c127316bae4a4ef633c2ee53d929c",
+    "results/query_rankings_2026_09_10/uniform_pool_current_published_us_ranking.csv": "d84728218c2eadac428b81a64ca871c47b576eceaa057caab88788f874a29cc4",
+    "results/query_rankings_2026_09_10/uniform_pool_current_raw_us_ranking.csv": "7ae6a02e422776284c5c5e97914855f18e651c48f1c7a35d8bed14109c363b67",
+    "results/query_rankings_2026_09_10/uniform_pool_narrower_query_us_ranking.csv": "b28bf5558f97595e564c4ead232f92e0d3cd19b2a8c19bae9390f4398f2ea916",
+    "results/query_rankings_2026_09_10/uniform_pool_original_query_us_ranking.csv": "b366f6c46f1c8bd5aebb3c150cd223aae57e4c20f84da0d7a48e50dcdf6391f7"
+  }
+}

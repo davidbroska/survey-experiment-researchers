@@ -1,7 +1,7 @@
 {
-  "snapshot_date": "2026-09-09",
+  "snapshot_date": "2026-09-10",
   "python_verified": "3.13.7",
-  "tests_passed": 87,
+  "tests_passed": 95,
   "retrieval_status": "complete for the archived positive-term query and frozen roster",
   "eligibility_status": "provisional; requires experimental eligibility, parser compatibility, data access and identity review",
   "private_data": "Scopus cache, abstracts, evidence and prior run snapshots retained under private/",
@@ -28,11 +28,11 @@
     },
     {
       "path": "FULLTEXT_BENCHMARK.html",
-      "sha256": "fe07e919dd598e93a179c992840faefa3a351816b73510ae4fbf34e3b23acfaa"
+      "sha256": "9a2425c77420ef1a4b33b6f7f62ed7b9c1aef5033e3ab5cddc3496b860579bbe"
     },
     {
       "path": "FULLTEXT_BENCHMARK.md",
-      "sha256": "75aef4644f01b0ae5d8eb8bdb39a4433abe69ddff5622bff2b003939d9235879"
+      "sha256": "cd8663b9a61929a8c8f3df9789ff946928da7fe3ea1d3579b8a34d979517b554"
     },
     {
       "path": "FULLTEXT_REVIEW.html",
@@ -76,27 +76,27 @@
     },
     {
       "path": "PROXIMITY_AUDIT.html",
-      "sha256": "b9eb339ac35cf3039c99dcf949c68a0d11f5b7d7ed6f8ee085bf1679f48e00f5"
+      "sha256": "f38bc22b81fa228919962aea87c45f375fc3e5728f9f2e22863c9d822161fc21"
     },
     {
       "path": "PROXIMITY_AUDIT.md",
-      "sha256": "d114e3c40064523f5ddca47fa48e9a0089fc464c9acce4d361c72850a7d8c552"
+      "sha256": "62bd5f24effcb24b002d4062c4d9ea6f8f9d5b775b10b65172391e87c0435087"
     },
     {
       "path": "PROXIMITY_METHODS.html",
-      "sha256": "3383825322d62a9e1b6938d08f33c0691bb6b4b479e3731519bbb6c3d2bf4c85"
+      "sha256": "626b2e3cfbb152d193edddb0275449f0e548ce29276458b720e8d03ef83f9b76"
     },
     {
       "path": "PROXIMITY_METHODS.md",
-      "sha256": "f15ee96aa72653791802c4f5ae6ef27779bfd222dd97566c01f138f2abecf1b3"
+      "sha256": "3526d99fab98339ad8ba7d59881db253c350b688631959d388ce32b51157ce72"
     },
     {
       "path": "PROXIMITY_SUMMARY.html",
-      "sha256": "5487a98681222e3cbfc49f87119d3829a69da7105ce19db93dc3d8d2ea10f0de"
+      "sha256": "5645f8c3b8b62920832cc89d1ab0d22cb0901e3fcb86be68c9a3f584b937cd49"
     },
     {
       "path": "PROXIMITY_SUMMARY.md",
-      "sha256": "696dd3ef733fb344837d803afa1710e115e81167405205c7732ac7e21dabe13a"
+      "sha256": "189aca370bf764b4b7120985bfb5f390afeaaac979469d3295c5179f7a297a36"
     },
     {
       "path": "QUERY_REPORT.html",
@@ -115,8 +115,20 @@
       "sha256": "ae6491af4b2ffce2087aff9713dc58d801acc9bc493870a0e8fede70be6c6cee"
     },
     {
+      "path": "RANKING_COMPARISON.html",
+      "sha256": "7d5c485385403d329e7fec36c7c51d405c8b438bb6e261208e12477b59b5fb4a"
+    },
+    {
+      "path": "RANKING_COMPARISON_REPORT.html",
+      "sha256": "d15928e3151d7aeb4e8854ac7d71633147810a8342ef3b2169a0e4eea4aa7383"
+    },
+    {
+      "path": "RANKING_COMPARISON_REPORT.md",
+      "sha256": "1877d120067b1e9b9ec28306cf0bfbb210ecacfb63b8ef3f17e8b25be54df8a9"
+    },
+    {
       "path": "README.md",
-      "sha256": "cfc7e41a04f7697b689738371f4738dd5fa0a95828847f79847b375eb6999955"
+      "sha256": "9f271471b5a685a742b9855c0824a3a0b7eb4c9bee13a885f9d2be0b888ba5ed"
     },
     {
       "path": "SEARCH_METHODS.html",
@@ -152,11 +164,11 @@
     },
     {
       "path": "TOP100.html",
-      "sha256": "21daff6848730beeafad5944045a19a892a1a8968cae4e9862fd58727182f055"
+      "sha256": "888dbecca0b30e932a7509b5150170aa37b2778bd867f613dec427f0356b92f3"
     },
     {
       "path": "TOP40.html",
-      "sha256": "21daff6848730beeafad5944045a19a892a1a8968cae4e9862fd58727182f055"
+      "sha256": "888dbecca0b30e932a7509b5150170aa37b2778bd867f613dec427f0356b92f3"
     },
     {
       "path": "YEAR_WINDOW_COMPARISON.html",
@@ -165,10 +177,6 @@
     {
       "path": "YEAR_WINDOW_COMPARISON.md",
       "sha256": "8cf5b8ac70094b36d319dc2fff0c5fbce436b2c11308f6c5fc4bfd8bce1e3be2"
-    },
-    {
-      "path": "github-pages-site.zip",
-      "sha256": "18b16fe6e464d0a94bd35bbad43d1d4e08724a1211a79c4837cd98644c401bc1"
     },
     {
       "path": "inputs/article_decisions.csv",
@@ -219,6 +227,10 @@
       "sha256": "a2196104cd49a0743e9a9e5c7194817b8d20b017d979227ee7500e07ebffaa6e"
     },
     {
+      "path": "inputs/query_ranking_name_reviews.csv",
+      "sha256": "7f92fc5440e9276e44110b0cb4505cc4f0a25a213274feb8e510266e43de45be"
+    },
+    {
       "path": "inputs/query_revision_screening_examples.csv",
       "sha256": "bfda50539fa02aec2cae125422f4bde82c5f7e0cbc570cf3640059874e55352b"
     },
@@ -255,8 +267,12 @@
       "sha256": "674c32b84160f418457409d84514eefee5e0d8d0f78cc545459838e3ee4b1ab8"
     },
     {
+      "path": "pipeline/benchmark_review_wave2.py",
+      "sha256": "3baada6a38837adfd5144e7f90b4a4ed5700af672e701d6bd17cc18e8c002e16"
+    },
+    {
       "path": "pipeline/build_site.py",
-      "sha256": "c10d11e745bf8ee7e65eb909ffcc3e4cf2718f7bb0b6a5d8b179b92ef5b6e15f"
+      "sha256": "aa0b9153d0247eb11a703fc9eb2592e5ac1c135e6e04e34028213f433b9f51c3"
     },
     {
       "path": "pipeline/coauthor_summary.py",
@@ -288,7 +304,7 @@
     },
     {
       "path": "pipeline/dashboard_template.html",
-      "sha256": "600704f415c7934b65e642c43274dc7f379321a882e6ee5d00e53cc44a4e78e0"
+      "sha256": "aea85a984ed7280f8dbc9d8cf86d2ec1e30d2082e517ba428b11237bc3a716c7"
     },
     {
       "path": "pipeline/design_audit.py",
@@ -336,7 +352,7 @@
     },
     {
       "path": "pipeline/proximity_report.py",
-      "sha256": "234114d4f7d293397b267fd368a88a3e085677fe2adbe70d397ae0a6ec51071f"
+      "sha256": "62542842abbd68e5587df916baa3d471c46f199014aac4b3fc5e8ae9d29e2633"
     },
     {
       "path": "pipeline/proximity_specific.py",
@@ -345,6 +361,22 @@
     {
       "path": "pipeline/query.py",
       "sha256": "5bbd9d40597b0af8923bb6b44b4aca7cf18f285af037db32a1423f9bc1545821"
+    },
+    {
+      "path": "pipeline/query_ranking_geography.py",
+      "sha256": "f87de66ccb0521b171b875d5c1467a7582ee5001811d7a3de7d35c03547737a5"
+    },
+    {
+      "path": "pipeline/query_ranking_report.py",
+      "sha256": "3dfef42c65963754df577a445d9b320b8172a33efd25595e3877f5f8f5343d2e"
+    },
+    {
+      "path": "pipeline/query_ranking_template.html",
+      "sha256": "fa1d3cde57f14996041464527164573bbac6de9a996a6ab756db5f0762959a69"
+    },
+    {
+      "path": "pipeline/query_rankings.py",
+      "sha256": "103edb035ac7c94b001da2fcf08f418fa8eb2c5ed93bcd7972626c3cb3612092"
     },
     {
       "path": "pipeline/query_revision.py",
@@ -571,12 +603,68 @@
       "sha256": "65dd72fb5c1982039fe33bd89e152f44ca14cc96638af42ff6edd5f035daeede"
     },
     {
+      "path": "results/benchmark_review_wave2_2026_09_10/adjudication_provenance.json",
+      "sha256": "47601e080fde82ff118c0a1756620e561dec3690b7290205abb39454e3a9401b"
+    },
+    {
+      "path": "results/benchmark_review_wave2_2026_09_10/article_consensus.csv",
+      "sha256": "39b015f812f2158b0e23d2d1d269bed6687eee0440db341962b499bf32e86a09"
+    },
+    {
+      "path": "results/benchmark_review_wave2_2026_09_10/availability_manifest.csv",
+      "sha256": "cff17de233f682b8537cf35ae2fd8e39a2064cc4391b43f602fd183862073952"
+    },
+    {
+      "path": "results/benchmark_review_wave2_2026_09_10/axis_annotations.csv",
+      "sha256": "c1027c3b246955695bd150cb83086a844ebe715a9738cea24a143b086d2b90ca"
+    },
+    {
+      "path": "results/benchmark_review_wave2_2026_09_10/geography_adjudications.csv",
+      "sha256": "2be4cea0f206871d87b2767f189faaab2adddb6b532ae0b6a702c53f3132507c"
+    },
+    {
+      "path": "results/benchmark_review_wave2_2026_09_10/manual_download_queue.csv",
+      "sha256": "21cf62a00154adc9997122965d4253cf395e040e37dfcfe154eaf8f7994e9e1f"
+    },
+    {
+      "path": "results/benchmark_review_wave2_2026_09_10/missing_label_bounds.csv",
+      "sha256": "a1839cdf58cdbfeafe997d57ab31353a59f725200b6d25abcda99cb4c0498566"
+    },
+    {
+      "path": "results/benchmark_review_wave2_2026_09_10/review_disagreements.csv",
+      "sha256": "e7dcf5967fee02efc98683844d5758f8b6b57e52f79fa6a7f07acab7ae74b403"
+    },
+    {
+      "path": "results/benchmark_review_wave2_2026_09_10/review_provenance.json",
+      "sha256": "aeb8b3f89b20dc2837158b4e6aa443fe1ca9d6d3de0d9b2828a6db5d2abcb2b2"
+    },
+    {
+      "path": "results/benchmark_review_wave2_2026_09_10/review_reproducibility.json",
+      "sha256": "64ba6d5036fa4c9ca7775a2ac15721df624f8411f29657df3aea9413c0356760"
+    },
+    {
+      "path": "results/benchmark_review_wave2_2026_09_10/review_schema.json",
+      "sha256": "583a3d2ee5b84aa5990cb9bfd4fd3b4b5818cb2ae2e86f2e73574042a247e49f"
+    },
+    {
+      "path": "results/benchmark_review_wave2_2026_09_10/review_summary.json",
+      "sha256": "d37600f8c2bdfa1c65a1e8a21999d7b700cef8f3512659a2ef75fd55f7a391b6"
+    },
+    {
+      "path": "results/benchmark_review_wave2_2026_09_10/stratum_summary.csv",
+      "sha256": "7dd20978b0cea090e6d9f7b62cdde8035d54539d0ccd8713dc3c742e30738077"
+    },
+    {
+      "path": "results/benchmark_review_wave2_2026_09_10/summary.json",
+      "sha256": "9453084a64ccdf0207ecfa8cffbf1fd2ce46f7367e53b07f263bf4daaac595a9"
+    },
+    {
       "path": "results/cutoff_ties.csv",
       "sha256": "9651cb2dfca0faf68cda041f103f273db1d58523ad88eb988b74d1b76ef3059c"
     },
     {
       "path": "results/dashboard_browser_check.json",
-      "sha256": "82791173b5631d6f34841392bf0f104ff56cb3af666467e71cf1a22b4410ccec"
+      "sha256": "f7b1cab84549ec00cfcef550ea9a586dee77e65f9ed301808331892215b2eae1"
     },
     {
       "path": "results/dashboard_reproducibility_check.json",
@@ -1067,6 +1155,266 @@
       "sha256": "250a8cc413a00fd8be1806c5e895c3e8df5f28e9d983cf33432d668da8e4d95f"
     },
     {
+      "path": "results/query_rankings_2026_09_10/article_geography.csv",
+      "sha256": "6da0a47d8f61ecd498d26c95eca401202fd48e40a60c7875983b0dd51e2789b6"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/article_membership.csv",
+      "sha256": "be14074939ec5bed92826d112ef7d8506444e6b041ac20a7f65be6feb65a1682"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/articles.csv",
+      "sha256": "ed555b31fae29b5ffe86f4a83f6b20e0243c7e1836b659a7d82f803186c1da38"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/author_article_links.csv",
+      "sha256": "e27e03ba4683051f22c678f85e779d9f8367c8dc93302ef4c090cbc2ef1f5795"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/author_names.csv",
+      "sha256": "aa310c94716abceb44be10d2e9e2d95df1743ea96f1bccf50a8186d8d64664f6"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/author_rank_comparison.csv",
+      "sha256": "f90a436b0a898ca21432ea7f2def6ce41f52420c3eb4e0e62467d2230714e00e"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/benchmark_retention_after_downloads.csv",
+      "sha256": "af9d6abc4f6d75f4ed00c8c1bca49179ea128a1324f1a2a0b3a0f5e7580e9821"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/browser_check.json",
+      "sha256": "7f3e693bba8a17417da078ded0991dcfdd611352b1f616713f7c3fb6d5ad5c88"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/byline_completion_audit.csv",
+      "sha256": "3b353efc9a1765e8b6bdd084c1db3314326883a21e2fabd93043b6e700b302dd"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/byline_coverage.csv",
+      "sha256": "037ff80da0fe8398f711b6e9dd4059f7ce6e7cad6fe8a80f4533c2f6f4c90562"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/byline_issues.csv",
+      "sha256": "4d229044f62543e3f724e4043108324d31375b404ecee64263d7a69a698a38f8"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/common_pool_current_published_us_ranking.csv",
+      "sha256": "92d7d25cd46e8239f65745717705e9e738618af38d924d5bd0b3c3da643f806b"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/common_pool_current_raw_us_ranking.csv",
+      "sha256": "1ec970a24e2e97d31a5134ea5c8adf352a1490d79ba2b6cb23c872d68af22d8b"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/common_pool_narrower_query_us_ranking.csv",
+      "sha256": "bcbfec0f127cad098286c937975c02957758f0509653d9af2ccf24fef2c526ff"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/common_pool_original_query_us_ranking.csv",
+      "sha256": "bcbfec0f127cad098286c937975c02957758f0509653d9af2ccf24fef2c526ff"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/comparison_authors.csv",
+      "sha256": "e3b64896b9df91518073b5e42a0b357eafbb347826d24f72e49d8ceccd346c67"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/comparison_dashboard_data.json",
+      "sha256": "944c97eb9eef090ca5f94ab25df3e93a92bc362765847ed8024f13dc517f8bf3"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/comparison_report_provenance.json",
+      "sha256": "5ea0082cdec379932b05b49ca2c0e96a433019e305c0b8762c8db1ca6295375e"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/current_filter_decomposition.csv",
+      "sha256": "ef18ec4eabf7aceeeda75739b4a980eac4a4e745d3e71304cd3626503f9230b5"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/current_published_cutoff_ties.csv",
+      "sha256": "a99f756b52e610c089c739bc761b91692e5b37fdd292cbaf3c28e7a09abdf8de"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/current_published_ranking.csv",
+      "sha256": "689118b4b7d85d47ad1ed4715b5452abaf0dac7b3073cf76bc0b468c10d9e0c8"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/current_published_top100.csv",
+      "sha256": "0d1efb18ef5db0f09800d47daeac65e2139d30ff003991896076ca58f9f42df4"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/current_published_top100_with_cutoff_ties.csv",
+      "sha256": "01e58dd3f298bde69002c718c440a0db1f8628b5e21e9026b0356a8787a2dc40"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/current_published_us_ranking.csv",
+      "sha256": "b74375602be4517aedab9cb15dbc3e07e7134c48dcdf157d9c418e7c2dcc0267"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/current_raw_cutoff_ties.csv",
+      "sha256": "627de10eecfd57b8c46964a4b1b79d198a823488d1388d4f8bc6c00a6e76de98"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/current_raw_ranking.csv",
+      "sha256": "6efd802c9e9674281df620674ec3d86e321c78e4924f1c6a2052e7361dc56281"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/current_raw_top100.csv",
+      "sha256": "b9b13ceb167d68fe9b663e464eb36fe78af5454b730b8cda553fd30227d164d3"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/current_raw_top100_with_cutoff_ties.csv",
+      "sha256": "b583a6b098fff02712d297738e52dd34a6f18fc1e22cc0f05bcc55ceaf276aba"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/current_raw_us_ranking.csv",
+      "sha256": "1b1b802e281ee043fbe2de9618313e8479c65c2d3a3129e5e1cf3a52ab9f3a84"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/display_membership_changes.csv",
+      "sha256": "224fa6b900b64e03c517712ce2c687cd0b5625e647f8e9f8edf5b5f096c069b1"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/display_membership_summary.csv",
+      "sha256": "6ec48b587a1ad7ab691d8a61b6327f0666ff9c5b4b89a2a8fa127e0ec004d3f1"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/enrichment_manifest.json",
+      "sha256": "044dea995821de14ed20b279ab595e464e2eafbb88139792f9882387b92df46e"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/existing_affiliations.csv",
+      "sha256": "fd016e7b706cb7686cd341b1de200b0a2b83687ccab811035f604ec1c98989b7"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/focal_author_comparison.csv",
+      "sha256": "b004a55b18a3afa8465377d722317053f016a5302babd3166916067c8769a100"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/geography_annotation_provenance.json",
+      "sha256": "d7f498a9e7b934f4726719e4294a0cb0b9688892c844c0840b5ce2f97ea1546e"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/geography_reproducibility.json",
+      "sha256": "d735aea2ce90facbe5da91ccdff746476c1253c808e902c5f983e08e28d40264"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/geography_review_codebook.md",
+      "sha256": "2d8f9f95506e57cfeffb8bf9060c320e5f11584f8d69ef7f0da4889f5a24d47e"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/geography_review_queue.csv",
+      "sha256": "a72cb5630f71b9f720113435f1d7d7ad5314c585b04e2dfd7883baad9657d18f"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/geography_summary.json",
+      "sha256": "4eb032d9e8997b023655e89f550ac9fca9e59dcfe4e50232793a4221b1dde43c"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/leader_pool_current_published_us_ranking.csv",
+      "sha256": "d84728218c2eadac428b81a64ca871c47b576eceaa057caab88788f874a29cc4"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/leader_pool_current_raw_us_ranking.csv",
+      "sha256": "7ae6a02e422776284c5c5e97914855f18e651c48f1c7a35d8bed14109c363b67"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/leader_pool_narrower_query_us_ranking.csv",
+      "sha256": "b28bf5558f97595e564c4ead232f92e0d3cd19b2a8c19bae9390f4398f2ea916"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/leader_pool_original_query_us_ranking.csv",
+      "sha256": "b366f6c46f1c8bd5aebb3c150cd223aae57e4c20f84da0d7a48e50dcdf6391f7"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/methodological_assessment.md",
+      "sha256": "a449d22dcab7c9cef5e700076ede93d8e90177fa5a5b668fb3016216e4fc80bb"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/narrower_query_cutoff_ties.csv",
+      "sha256": "9d2b56f4580815d17edf73d24777bc19190e178be35496a0c7ddcfb222861ee3"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/narrower_query_ranking.csv",
+      "sha256": "71bd1664c9fef4b9dc7d31cec7345323632841b6a32ebc2418c529224dad0a8a"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/narrower_query_top100.csv",
+      "sha256": "26c748888623a5a323e5f9fe3b9fc23be24a9adbf7de7186735a09e4343ead03"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/narrower_query_top100_with_cutoff_ties.csv",
+      "sha256": "22c4edc9d99c501ae4f4cf4cf033addfc722a4d625e8f708959cf88f9ea178fc"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/narrower_query_us_ranking.csv",
+      "sha256": "a0d1b498b87dae39050efecdc3361a0837996c520a59d96a2676aa8aaf2f7177"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/original_query_cutoff_ties.csv",
+      "sha256": "ad0a0947bc3147915864824565eb7cf0dc1c458473e5fb526a2442daf2a3a217"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/original_query_ranking.csv",
+      "sha256": "b8647d4cafc1cac46571891b3affec32bf432e5527d7d69fc35c9201eafab284"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/original_query_top100.csv",
+      "sha256": "0bcdfe1996680f6fe8f6c7233166fd5b45cadf6c9343ec73b0aa7fdb9aa781d8"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/original_query_top100_with_cutoff_ties.csv",
+      "sha256": "1e544964fb3f44c8c2a20d94b5fab4f150303ec96ebfcfe5352f824fd0610aa9"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/original_query_us_ranking.csv",
+      "sha256": "591a34b30393c4243911a67b22988cee611c127316bae4a4ef633c2ee53d929c"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/protocol.json",
+      "sha256": "f2209efae7b926d9759b370229494bb870c9a0f8cb9c4784ea46a48848df56d2"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/ranking_summary.json",
+      "sha256": "d8fb2ec62f1e19e88658681e1ee328aa349885d0764a5a95df2980fa0b4feed7"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/report_reproducibility.json",
+      "sha256": "e51343a3c0647668494ad60979596fc29a5a7531f9e85af0a2e1d21d44621bed"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/tie_metrics.csv",
+      "sha256": "14f743136a8a24bb4b8659f183a893cfc7530e07364eadc274f6718b667a3a3e"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/top100_entrants_exits.csv",
+      "sha256": "2497f240563ae160a37e69150b129485d93d998728951df9e53007b6d550b467"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/top100_membership_comparison.csv",
+      "sha256": "f23a6a434e2add56c51ef63cc0c9a5dee1f9edfb1cc3c5eba4fbdc9fd6793d47"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/uniform_pool_current_published_us_ranking.csv",
+      "sha256": "d84728218c2eadac428b81a64ca871c47b576eceaa057caab88788f874a29cc4"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/uniform_pool_current_raw_us_ranking.csv",
+      "sha256": "7ae6a02e422776284c5c5e97914855f18e651c48f1c7a35d8bed14109c363b67"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/uniform_pool_narrower_query_us_ranking.csv",
+      "sha256": "b28bf5558f97595e564c4ead232f92e0d3cd19b2a8c19bae9390f4398f2ea916"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/uniform_pool_original_query_us_ranking.csv",
+      "sha256": "b366f6c46f1c8bd5aebb3c150cd223aae57e4c20f84da0d7a48e50dcdf6391f7"
+    },
+    {
+      "path": "results/query_rankings_2026_09_10/verification.json",
+      "sha256": "a1f7439a9c5e46d4a95220b3de8786093c722405648dae373f8b762d3e74fb4f"
+    },
+    {
       "path": "results/query_revision_2026_09_10/archived_to_fresh_previous.csv",
       "sha256": "5ebaef538a564525836578ab41958f43a5c5f7a7dbd5d9a56d8ad8aa0008d9f5"
     },
@@ -1276,7 +1624,7 @@
     },
     {
       "path": "results/site_manifest.json",
-      "sha256": "f6707c0e343131c9bf8fc00312ce0aa5e281aff6cee7b3f5e51a58975570d4b3"
+      "sha256": "e66675909db2aea27d3143cb10ffa3fd1958b8f2faf620631cd5ed20be03c856"
     },
     {
       "path": "results/top100_article_annotations.csv",
@@ -1364,11 +1712,11 @@
     },
     {
       "path": "site/FULLTEXT_BENCHMARK.html",
-      "sha256": "fe07e919dd598e93a179c992840faefa3a351816b73510ae4fbf34e3b23acfaa"
+      "sha256": "9a2425c77420ef1a4b33b6f7f62ed7b9c1aef5033e3ab5cddc3496b860579bbe"
     },
     {
       "path": "site/FULLTEXT_BENCHMARK.md",
-      "sha256": "75aef4644f01b0ae5d8eb8bdb39a4433abe69ddff5622bff2b003939d9235879"
+      "sha256": "cd8663b9a61929a8c8f3df9789ff946928da7fe3ea1d3579b8a34d979517b554"
     },
     {
       "path": "site/FULLTEXT_REVIEW.html",
@@ -1404,27 +1752,27 @@
     },
     {
       "path": "site/PROXIMITY_AUDIT.html",
-      "sha256": "b9eb339ac35cf3039c99dcf949c68a0d11f5b7d7ed6f8ee085bf1679f48e00f5"
+      "sha256": "f38bc22b81fa228919962aea87c45f375fc3e5728f9f2e22863c9d822161fc21"
     },
     {
       "path": "site/PROXIMITY_AUDIT.md",
-      "sha256": "d114e3c40064523f5ddca47fa48e9a0089fc464c9acce4d361c72850a7d8c552"
+      "sha256": "62bd5f24effcb24b002d4062c4d9ea6f8f9d5b775b10b65172391e87c0435087"
     },
     {
       "path": "site/PROXIMITY_METHODS.html",
-      "sha256": "3383825322d62a9e1b6938d08f33c0691bb6b4b479e3731519bbb6c3d2bf4c85"
+      "sha256": "626b2e3cfbb152d193edddb0275449f0e548ce29276458b720e8d03ef83f9b76"
     },
     {
       "path": "site/PROXIMITY_METHODS.md",
-      "sha256": "f15ee96aa72653791802c4f5ae6ef27779bfd222dd97566c01f138f2abecf1b3"
+      "sha256": "3526d99fab98339ad8ba7d59881db253c350b688631959d388ce32b51157ce72"
     },
     {
       "path": "site/PROXIMITY_SUMMARY.html",
-      "sha256": "5487a98681222e3cbfc49f87119d3829a69da7105ce19db93dc3d8d2ea10f0de"
+      "sha256": "5645f8c3b8b62920832cc89d1ab0d22cb0901e3fcb86be68c9a3f584b937cd49"
     },
     {
       "path": "site/PROXIMITY_SUMMARY.md",
-      "sha256": "696dd3ef733fb344837d803afa1710e115e81167405205c7732ac7e21dabe13a"
+      "sha256": "189aca370bf764b4b7120985bfb5f390afeaaac979469d3295c5179f7a297a36"
     },
     {
       "path": "site/QUERY_REPORT.html",
@@ -1441,6 +1789,18 @@
     {
       "path": "site/QUERY_REVISION.md",
       "sha256": "ae6491af4b2ffce2087aff9713dc58d801acc9bc493870a0e8fede70be6c6cee"
+    },
+    {
+      "path": "site/RANKING_COMPARISON.html",
+      "sha256": "7d5c485385403d329e7fec36c7c51d405c8b438bb6e261208e12477b59b5fb4a"
+    },
+    {
+      "path": "site/RANKING_COMPARISON_REPORT.html",
+      "sha256": "d15928e3151d7aeb4e8854ac7d71633147810a8342ef3b2169a0e4eea4aa7383"
+    },
+    {
+      "path": "site/RANKING_COMPARISON_REPORT.md",
+      "sha256": "1877d120067b1e9b9ec28306cf0bfbb210ecacfb63b8ef3f17e8b25be54df8a9"
     },
     {
       "path": "site/README.md",
@@ -1480,11 +1840,11 @@
     },
     {
       "path": "site/TOP100.html",
-      "sha256": "21daff6848730beeafad5944045a19a892a1a8968cae4e9862fd58727182f055"
+      "sha256": "888dbecca0b30e932a7509b5150170aa37b2778bd867f613dec427f0356b92f3"
     },
     {
       "path": "site/TOP40.html",
-      "sha256": "21daff6848730beeafad5944045a19a892a1a8968cae4e9862fd58727182f055"
+      "sha256": "888dbecca0b30e932a7509b5150170aa37b2778bd867f613dec427f0356b92f3"
     },
     {
       "path": "site/YEAR_WINDOW_COMPARISON.html",
@@ -1496,7 +1856,11 @@
     },
     {
       "path": "site/index.html",
-      "sha256": "21daff6848730beeafad5944045a19a892a1a8968cae4e9862fd58727182f055"
+      "sha256": "888dbecca0b30e932a7509b5150170aa37b2778bd867f613dec427f0356b92f3"
+    },
+    {
+      "path": "site/inputs/query_ranking_name_reviews.csv",
+      "sha256": "7f92fc5440e9276e44110b0cb4505cc4f0a25a213274feb8e510266e43de45be"
     },
     {
       "path": "site/queries/participant_guards_2026_09_10/revised.txt",
@@ -1573,6 +1937,54 @@
     {
       "path": "site/queries/search_strategy_2026_09_10/reading_assignment.txt",
       "sha256": "cb20e4038fc179345e473c2225b1542e4a7394072fddf96ae57c3807b8c61be9"
+    },
+    {
+      "path": "site/results/benchmark_review_wave2_2026_09_10/adjudication_provenance.json",
+      "sha256": "47601e080fde82ff118c0a1756620e561dec3690b7290205abb39454e3a9401b"
+    },
+    {
+      "path": "site/results/benchmark_review_wave2_2026_09_10/article_consensus.csv",
+      "sha256": "39b015f812f2158b0e23d2d1d269bed6687eee0440db341962b499bf32e86a09"
+    },
+    {
+      "path": "site/results/benchmark_review_wave2_2026_09_10/availability_manifest.csv",
+      "sha256": "cff17de233f682b8537cf35ae2fd8e39a2064cc4391b43f602fd183862073952"
+    },
+    {
+      "path": "site/results/benchmark_review_wave2_2026_09_10/axis_annotations.csv",
+      "sha256": "c1027c3b246955695bd150cb83086a844ebe715a9738cea24a143b086d2b90ca"
+    },
+    {
+      "path": "site/results/benchmark_review_wave2_2026_09_10/geography_adjudications.csv",
+      "sha256": "2be4cea0f206871d87b2767f189faaab2adddb6b532ae0b6a702c53f3132507c"
+    },
+    {
+      "path": "site/results/benchmark_review_wave2_2026_09_10/manual_download_queue.csv",
+      "sha256": "21cf62a00154adc9997122965d4253cf395e040e37dfcfe154eaf8f7994e9e1f"
+    },
+    {
+      "path": "site/results/benchmark_review_wave2_2026_09_10/missing_label_bounds.csv",
+      "sha256": "a1839cdf58cdbfeafe997d57ab31353a59f725200b6d25abcda99cb4c0498566"
+    },
+    {
+      "path": "site/results/benchmark_review_wave2_2026_09_10/review_disagreements.csv",
+      "sha256": "e7dcf5967fee02efc98683844d5758f8b6b57e52f79fa6a7f07acab7ae74b403"
+    },
+    {
+      "path": "site/results/benchmark_review_wave2_2026_09_10/review_provenance.json",
+      "sha256": "aeb8b3f89b20dc2837158b4e6aa443fe1ca9d6d3de0d9b2828a6db5d2abcb2b2"
+    },
+    {
+      "path": "site/results/benchmark_review_wave2_2026_09_10/review_summary.json",
+      "sha256": "d37600f8c2bdfa1c65a1e8a21999d7b700cef8f3512659a2ef75fd55f7a391b6"
+    },
+    {
+      "path": "site/results/benchmark_review_wave2_2026_09_10/stratum_summary.csv",
+      "sha256": "7dd20978b0cea090e6d9f7b62cdde8035d54539d0ccd8713dc3c742e30738077"
+    },
+    {
+      "path": "site/results/benchmark_review_wave2_2026_09_10/summary.json",
+      "sha256": "9453084a64ccdf0207ecfa8cffbf1fd2ce46f7367e53b07f263bf4daaac595a9"
     },
     {
       "path": "site/results/design_audit_2026_09_10/annotation_codebook.md",
@@ -1759,6 +2171,10 @@
       "sha256": "4c512d85d4b495946cd5f632b7898f6d6a014db4281e6e8bab17f11c5cc2137b"
     },
     {
+      "path": "site/results/proximity_specific_2026_09_10/membership.csv",
+      "sha256": "65bf0f48d2db5d0b176a94ccc2655cd9585fc3b0ab672dced15d8a985cc55dd3"
+    },
+    {
       "path": "site/results/proximity_specific_2026_09_10/offline_reproducibility.json",
       "sha256": "697c795028ce0a2dd13d1d2b4f39b612dbd175440f2515fc62649d2eb0106974"
     },
@@ -1773,6 +2189,178 @@
     {
       "path": "site/results/proximity_specific_2026_09_10/retrieval_counts.csv",
       "sha256": "b5805c580503a84e9ecda9e8ea833d3eea01a325490b5964b2cd7aecc2e5fd73"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/article_geography.csv",
+      "sha256": "6da0a47d8f61ecd498d26c95eca401202fd48e40a60c7875983b0dd51e2789b6"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/author_rank_comparison.csv",
+      "sha256": "f90a436b0a898ca21432ea7f2def6ce41f52420c3eb4e0e62467d2230714e00e"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/benchmark_retention_after_downloads.csv",
+      "sha256": "af9d6abc4f6d75f4ed00c8c1bca49179ea128a1324f1a2a0b3a0f5e7580e9821"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/byline_completion_audit.csv",
+      "sha256": "3b353efc9a1765e8b6bdd084c1db3314326883a21e2fabd93043b6e700b302dd"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/byline_coverage.csv",
+      "sha256": "037ff80da0fe8398f711b6e9dd4059f7ce6e7cad6fe8a80f4533c2f6f4c90562"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/comparison_authors.csv",
+      "sha256": "e3b64896b9df91518073b5e42a0b357eafbb347826d24f72e49d8ceccd346c67"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/comparison_report_provenance.json",
+      "sha256": "5ea0082cdec379932b05b49ca2c0e96a433019e305c0b8762c8db1ca6295375e"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/current_filter_decomposition.csv",
+      "sha256": "ef18ec4eabf7aceeeda75739b4a980eac4a4e745d3e71304cd3626503f9230b5"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/current_published_cutoff_ties.csv",
+      "sha256": "a99f756b52e610c089c739bc761b91692e5b37fdd292cbaf3c28e7a09abdf8de"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/current_published_ranking.csv",
+      "sha256": "689118b4b7d85d47ad1ed4715b5452abaf0dac7b3073cf76bc0b468c10d9e0c8"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/current_published_top100.csv",
+      "sha256": "0d1efb18ef5db0f09800d47daeac65e2139d30ff003991896076ca58f9f42df4"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/current_published_top100_with_cutoff_ties.csv",
+      "sha256": "01e58dd3f298bde69002c718c440a0db1f8628b5e21e9026b0356a8787a2dc40"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/current_published_us_ranking.csv",
+      "sha256": "b74375602be4517aedab9cb15dbc3e07e7134c48dcdf157d9c418e7c2dcc0267"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/current_raw_cutoff_ties.csv",
+      "sha256": "627de10eecfd57b8c46964a4b1b79d198a823488d1388d4f8bc6c00a6e76de98"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/current_raw_ranking.csv",
+      "sha256": "6efd802c9e9674281df620674ec3d86e321c78e4924f1c6a2052e7361dc56281"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/current_raw_top100.csv",
+      "sha256": "b9b13ceb167d68fe9b663e464eb36fe78af5454b730b8cda553fd30227d164d3"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/current_raw_top100_with_cutoff_ties.csv",
+      "sha256": "b583a6b098fff02712d297738e52dd34a6f18fc1e22cc0f05bcc55ceaf276aba"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/current_raw_us_ranking.csv",
+      "sha256": "1b1b802e281ee043fbe2de9618313e8479c65c2d3a3129e5e1cf3a52ab9f3a84"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/display_membership_changes.csv",
+      "sha256": "224fa6b900b64e03c517712ce2c687cd0b5625e647f8e9f8edf5b5f096c069b1"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/display_membership_summary.csv",
+      "sha256": "6ec48b587a1ad7ab691d8a61b6327f0666ff9c5b4b89a2a8fa127e0ec004d3f1"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/focal_author_comparison.csv",
+      "sha256": "b004a55b18a3afa8465377d722317053f016a5302babd3166916067c8769a100"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/geography_review_codebook.md",
+      "sha256": "2d8f9f95506e57cfeffb8bf9060c320e5f11584f8d69ef7f0da4889f5a24d47e"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/geography_review_queue.csv",
+      "sha256": "a72cb5630f71b9f720113435f1d7d7ad5314c585b04e2dfd7883baad9657d18f"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/geography_summary.json",
+      "sha256": "4eb032d9e8997b023655e89f550ac9fca9e59dcfe4e50232793a4221b1dde43c"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/methodological_assessment.md",
+      "sha256": "a449d22dcab7c9cef5e700076ede93d8e90177fa5a5b668fb3016216e4fc80bb"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/narrower_query_cutoff_ties.csv",
+      "sha256": "9d2b56f4580815d17edf73d24777bc19190e178be35496a0c7ddcfb222861ee3"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/narrower_query_ranking.csv",
+      "sha256": "71bd1664c9fef4b9dc7d31cec7345323632841b6a32ebc2418c529224dad0a8a"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/narrower_query_top100.csv",
+      "sha256": "26c748888623a5a323e5f9fe3b9fc23be24a9adbf7de7186735a09e4343ead03"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/narrower_query_top100_with_cutoff_ties.csv",
+      "sha256": "22c4edc9d99c501ae4f4cf4cf033addfc722a4d625e8f708959cf88f9ea178fc"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/narrower_query_us_ranking.csv",
+      "sha256": "a0d1b498b87dae39050efecdc3361a0837996c520a59d96a2676aa8aaf2f7177"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/original_query_cutoff_ties.csv",
+      "sha256": "ad0a0947bc3147915864824565eb7cf0dc1c458473e5fb526a2442daf2a3a217"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/original_query_ranking.csv",
+      "sha256": "b8647d4cafc1cac46571891b3affec32bf432e5527d7d69fc35c9201eafab284"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/original_query_top100.csv",
+      "sha256": "0bcdfe1996680f6fe8f6c7233166fd5b45cadf6c9343ec73b0aa7fdb9aa781d8"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/original_query_top100_with_cutoff_ties.csv",
+      "sha256": "1e544964fb3f44c8c2a20d94b5fab4f150303ec96ebfcfe5352f824fd0610aa9"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/original_query_us_ranking.csv",
+      "sha256": "591a34b30393c4243911a67b22988cee611c127316bae4a4ef633c2ee53d929c"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/tie_metrics.csv",
+      "sha256": "14f743136a8a24bb4b8659f183a893cfc7530e07364eadc274f6718b667a3a3e"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/top100_entrants_exits.csv",
+      "sha256": "2497f240563ae160a37e69150b129485d93d998728951df9e53007b6d550b467"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/top100_membership_comparison.csv",
+      "sha256": "f23a6a434e2add56c51ef63cc0c9a5dee1f9edfb1cc3c5eba4fbdc9fd6793d47"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/uniform_pool_current_published_us_ranking.csv",
+      "sha256": "d84728218c2eadac428b81a64ca871c47b576eceaa057caab88788f874a29cc4"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/uniform_pool_current_raw_us_ranking.csv",
+      "sha256": "7ae6a02e422776284c5c5e97914855f18e651c48f1c7a35d8bed14109c363b67"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/uniform_pool_narrower_query_us_ranking.csv",
+      "sha256": "b28bf5558f97595e564c4ead232f92e0d3cd19b2a8c19bae9390f4398f2ea916"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/uniform_pool_original_query_us_ranking.csv",
+      "sha256": "b366f6c46f1c8bd5aebb3c150cd223aae57e4c20f84da0d7a48e50dcdf6391f7"
+    },
+    {
+      "path": "site/results/query_rankings_2026_09_10/verification.json",
+      "sha256": "a1f7439a9c5e46d4a95220b3de8786093c722405648dae373f8b762d3e74fb4f"
     },
     {
       "path": "site/results/query_revision_2026_09_10/changed_article_metadata.csv",
@@ -1907,8 +2495,16 @@
       "sha256": "51bbb10f42e03dd4eba4b92eab2b6641b9f451f1f1e736ec2ec2782e14f33dd4"
     },
     {
+      "path": "tests/ranking_comparison_browser.mjs",
+      "sha256": "b35b4eeb53a1e4bd79e10c20f0da98f4208fdd8f6cc43f249b8049561e2dd7d2"
+    },
+    {
       "path": "tests/test_acquisition.py",
       "sha256": "9a88a3f7dcee9a89de4eb75a9d1c9a9352d73fad967f85f6fae0ba64935aa5b8"
+    },
+    {
+      "path": "tests/test_benchmark_review_wave2.py",
+      "sha256": "46d58ff6098bff067cdf61aa54981d90912814e168e5322b9881f48178a4d915"
     },
     {
       "path": "tests/test_dashboard.py",
@@ -1951,6 +2547,10 @@
       "sha256": "e48318d7aa1e35a3e33d555c7cdcf42c7ba6fd5a0ed9c9145067bb7b45be90f7"
     },
     {
+      "path": "tests/test_query_ranking_geography.py",
+      "sha256": "bb67de6b829b85581783cac1037f7288540e9b6d9c2ed6b3f7c45c77df42170d"
+    },
+    {
       "path": "tests/test_query_revision.py",
       "sha256": "23bf15d7dd4784dd76808c5be5b60c4b8d01f3e77a7c10f82e8de8b51acc3655"
     },
@@ -1978,11 +2578,12 @@
   "geography_status": "870 articles annotated; 402 US-associated; 117 unclear; 75 page-cited full-text decisions; AI-assisted and awaiting independent validation",
   "geography_scope": "100-person pool selected by distinct first/last-author candidate count; 65 additional cutoff-tied authors outside pool",
   "affiliation_status": "100 profiles with sources; dated and conflicting-role entries flagged",
-  "browser_validation": "100 researcher rows;12 sorts both directions; tabs, queries, download workflow; original and revised query fidelity;60-article evaluation inventory, filters, filename copy; desktop/mobile; no uncaught exceptions",
-  "reproducibility": "35 proximity/report artifacts,14 post-benchmark ablation artifacts,10 acquisition outputs and6 review outputs reproduce byte-identically offline; earlier snapshots preserved",
+  "browser_validation": "Historical dashboard and updated45/60 benchmark; comparison3 metrics and3 query versions, all columns both directions, cutoff ties, missing values, search, CSV, mobile; no uncaught exceptions",
+  "reproducibility": "New stages:21 geography outputs,9 combined-review/adjudication outputs and11 ranking-report outputs reproduce byte-identically offline. Frozen earlier reviews retained.",
   "retrieval_dates": [
     "2026-09-08",
-    "2026-09-09"
+    "2026-09-09",
+    "2026-09-10"
   ],
   "publication_years": [
     2010,
@@ -2007,11 +2608,18 @@
   ],
   "proximity_audit_status": "Original clause: 1297 in-frame; expanded union9208 (+1066); core union9675 (+1060). Complete literal/grouped result sets equal.",
   "proximity_development_status": "Narrower post-benchmark candidate9365, preserving core8615 and adding750; not independently validated; all archived candidates retained.",
-  "precision_benchmark_status": "60 fixed before access lookup;18 full texts obtained and double-coded;13 eligible designs and5 ineligible;42 remain unavailable; all AI-assisted and pending human validation.",
+  "precision_benchmark_status": "60 fixed before access lookup;45 full texts double-coded:35 design yes,9 no,1 unresolved;15 unavailable.32 new files matched27 additional articles. All AI-assisted; not human-validated precision.",
   "proximity_reports": [
     "PROXIMITY_AUDIT.html",
     "PROXIMITY_METHODS.html",
     "PROXIMITY_SUMMARY.html",
     "FULLTEXT_BENCHMARK.html"
-  ]
+  ],
+  "ranking_comparison": "RANKING_COMPARISON.html",
+  "ranking_report": "RANKING_COMPARISON_REPORT.html",
+  "ranking_comparison_status": "9675 complete-clause /9365 narrower candidates; identical displayed top100 and114 including cutoff ties; first/last union credit;6 unresolved bylines uncredited in each query;2 capped bylines repaired",
+  "ranking_recommendation": "Complete query for discovery; narrower query for screening priority and sensitivity; rank eligible articles after design and parser review",
+  "geography_comparison_status": "Same120 authors;1042 distinct articles reviewed:463 US evidence,380 non-US,186 unclear,13 not applicable; global known-US totals517/514 are incomplete evidence counts",
+  "benchmark_retention_status": "Narrowing removes8 sampled articles, all reviewed and parser-incompatible:6 design no,2 yes. It retains all27 reviewed design-yes/parser-yes articles.",
+  "geography_adjudication_status": "One separate source-validated geography adjudication; original A/B reviews and18-paper development stage unchanged"
 }

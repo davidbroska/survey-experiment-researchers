@@ -1,0 +1,5 @@
+authid,name,current_raw_n_articles,current_raw_competition_rank,current_raw_display_position,current_raw_top100,current_raw_top100_including_ties,original_query_n_articles,original_query_competition_rank,original_query_display_position,original_query_top100,original_query_top100_including_ties,narrower_query_n_articles,narrower_query_competition_rank,narrower_query_display_position,narrower_query_top100,narrower_query_top100_including_ties,current_published_n_articles,current_published_competition_rank,current_published_display_position,current_published_top100,current_published_top100_including_ties,original_minus_current_raw_count,narrower_minus_original_count,current_raw_minus_published_count
+7003917566,Jennifer A. Richeson,0,,,false,false,0,,,false,false,0,,,false,false,0,,,false,false,0,0,0
+15520639300,Kurt Gray,0,,,false,false,1,2703,4369,false,false,1,2652,4169,false,false,0,,,false,false,1,0,0
+22986966200,Jay J. Van Bavel,0,,,false,false,1,2703,4604,false,false,1,2652,4387,false,false,0,,,false,false,1,0,0
+50061672800,Gordon Pennycook,2,997,1434,false,false,2,1170,1747,false,false,2,1164,1711,false,false,2,984,1400,false,false,0,0,0

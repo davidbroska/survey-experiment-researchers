@@ -1,3 +1,5 @@
+**Archived query-development stage (18 full-text reviews).** See the [latest ranking comparison, discovery query and recommendation](RANKING_COMPARISON_REPORT.html) and [updated 45-article full-text inventory](FULLTEXT_BENCHMARK.html) for the subsequent evidence.
+
 **The proposed clause recovers relevant social-psychology experiments, but it does not resolve all missing work.** Scopus returns 1,791 journal articles globally and 1,297 within the existing 3,401-journal frame for 2010–2026. Adding it to the 8,142-article expanded search yields 9,208 distinct articles (+1,066, no losses); adding it to the broader 18,054-article candidate search yields 18,834 (+780, no losses). These are retrieval gains, not measured recall.
 
 The clause adds one source-verified eligible last-author article for each nominated researcher: Kurt Gray’s [Equating silence with violence](https://doi.org/10.1016/j.jesp.2022.104348) and Jay Van Bavel’s [Identity concerns drive belief](https://doi.org/10.1177/13684302211030004). The former varies anti-racist message wording and measures threat and resistance; the latter varies partisan messages and measures belief and sharing intentions.

@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-09-10T14:11:30.204722+00:00",
+  "private_articles_sha256": "706bdc83bda55c2813a7cae41f6b14569f9c1c6477061db64400864c82c48d94",
+  "public_articles_sha256": "ed555b31fae29b5ffe86f4a83f6b20e0243c7e1836b659a7d82f803186c1da38",
+  "n_canonical_articles": 9703,
+  "coverage": [
+    {
+      "variant": "current_raw",
+      "candidate_articles": 7302,
+      "complete_bylines": 7298,
+      "unresolved_bylines": 4,
+      "with_abstract": 7291,
+      "with_author_keywords": 5720,
+      "indexed_keywords_available": false
+    },
+    {
+      "variant": "original_query",
+      "candidate_articles": 9675,
+      "complete_bylines": 9669,
+      "unresolved_bylines": 6,
+      "with_abstract": 9662,
+      "with_author_keywords": 7679,
+      "indexed_keywords_available": false
+    },
+    {
+      "variant": "narrower_query",
+      "candidate_articles": 9365,
+      "complete_bylines": 9359,
+      "unresolved_bylines": 6,
+      "with_abstract": 9352,
+      "with_author_keywords": 7430,
+      "indexed_keywords_available": false
+    }
+  ],
+  "n_refreshed_ids": 1551,
+  "known_editor_corrections_applied": false,
+  "byline_validation": "COMPLETE Search below its author cap or complete Abstract Retrieval FULL; declared count, sequence, distinct positive author IDs, DOI identity; source snapshot archived"
+}

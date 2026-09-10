@@ -10,7 +10,7 @@ from common import ROOT, digest, write_json
 REPORTS = ('EXECUTIVE_SUMMARY', 'SUPPORTING_INFORMATION', 'QUERY_REPORT',
            'GEOGRAPHY_REPORT', 'FULLTEXT_REVIEW', 'YEAR_WINDOW_COMPARISON', 'MANUAL_DOWNLOADS', 'PRIORITY_DOWNLOADS',
            'QUERY_REVISION', 'SEARCH_STRATEGY', 'SEARCH_SUMMARY', 'SEARCH_METHODS',
-           'PROXIMITY_AUDIT', 'PROXIMITY_METHODS', 'PROXIMITY_SUMMARY', 'FULLTEXT_BENCHMARK')
+           'PROXIMITY_AUDIT', 'PROXIMITY_METHODS', 'PROXIMITY_SUMMARY', 'FULLTEXT_BENCHMARK', 'RANKING_COMPARISON_REPORT')
 CSV_FILES = ('top100_enriched', 'top100_provisional', 'top100_article_annotations',
              'top100_author_article_links', 'top100_cutoff_ties', 'fulltext_download_queue',
              'year_window_author_comparison', 'year_window_tie_comparison',
@@ -45,7 +45,7 @@ def check_links(site):
 def build():
     site = ROOT / 'site'
     site.mkdir(exist_ok=True)
-    files = ['TOP100.html', 'TOP40.html', 'queries/recommended.txt']
+    files = ['TOP100.html', 'TOP40.html', 'RANKING_COMPARISON.html', 'queries/recommended.txt']
     files += [f'{r}.{ext}' for r in REPORTS for ext in ('md', 'html')]
     files += [f'results/{r}.csv' for r in CSV_FILES]
     files += [f'queries/revision_2026_09_10/{name}.txt' for name in ('previous', 'revised', 'additional_embedded_variants')]
@@ -100,6 +100,26 @@ def build():
                'axis_annotations', 'stratum_summary', 'missing_label_bounds')]
     files += [f'results/precision_benchmark_2026_09_10/{name}.json' for name in
               ('sample_manifest', 'review_schema', 'summary', 'review_summary', 'review_provenance')]
+    files += [f'results/query_rankings_2026_09_10/{name}.csv' for name in
+              ('comparison_authors', 'author_rank_comparison', 'top100_entrants_exits',
+               'top100_membership_comparison', 'tie_metrics', 'focal_author_comparison',
+               'byline_coverage', 'byline_completion_audit', 'current_filter_decomposition',
+               'article_geography', 'geography_review_queue', 'display_membership_changes',
+               'display_membership_summary', 'benchmark_retention_after_downloads')]
+    files += [f'results/query_rankings_2026_09_10/{name}.json' for name in
+              ('geography_summary', 'verification', 'comparison_report_provenance')]
+    files += [f'results/query_rankings_2026_09_10/{name}.md' for name in
+              ('methodological_assessment', 'geography_review_codebook')]
+    files += ['results/proximity_specific_2026_09_10/membership.csv', 'inputs/query_ranking_name_reviews.csv']
+    for variant in ('original_query', 'narrower_query', 'current_raw', 'current_published'):
+        files += [f'results/query_rankings_2026_09_10/{variant}_{suffix}.csv' for suffix in
+                  ('ranking', 'top100', 'top100_with_cutoff_ties', 'cutoff_ties', 'us_ranking')]
+        files += [f'results/query_rankings_2026_09_10/uniform_pool_{variant}_us_ranking.csv']
+    files += [f'results/benchmark_review_wave2_2026_09_10/{name}.csv' for name in
+              ('availability_manifest', 'manual_download_queue', 'article_consensus',
+               'axis_annotations', 'stratum_summary', 'missing_label_bounds', 'review_disagreements', 'geography_adjudications')]
+    files += [f'results/benchmark_review_wave2_2026_09_10/{name}.json' for name in
+              ('summary', 'review_summary', 'review_provenance', 'adjudication_provenance')]
     for name in files:
         dest = site / name
         dest.parent.mkdir(parents=True, exist_ok=True)

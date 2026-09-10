@@ -1,0 +1,4 @@
+group,sampled,double_reviewed,design_yes,design_no,design_unresolved,design_yes_parser_yes,parser_no
+Complete query,60,45,35,9,1,27,12
+Retained by narrower query,52,37,33,3,1,27,4
+Removed by narrower query,8,8,2,6,0,0,8

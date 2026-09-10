@@ -1,0 +1,23 @@
+{
+  "frozen_at": "2026-09-10T14:04:47.823611+00:00",
+  "version": "query_rankings_2026_09_10",
+  "inputs": {
+    "results/proximity_specific_2026_09_10/membership.csv": "65bf0f48d2db5d0b176a94ccc2655cd9585fc3b0ab672dced15d8a985cc55dd3",
+    "private/articles.csv": "c0b0a80c1bb00513e8d2209559fc7cdd7b331c50d7ba01363b82a944355af700",
+    "results/flow_counts.json": "5068708f1fc7329039661378ef5a9dc090c4eaf785383899eaad05e296c3e33c",
+    "results/article_metadata.csv": "90a699a76f524e08b47467ee9b2afa9f24d0a5ffc7fa08ba5e62b5020cf484a2",
+    "results/ranking_provisional.csv": "d16d090db1c1f42b6b7b4aa6a7717d04804421cd18590860fa33dde43d390c78",
+    "results/top100_provisional.csv": "bda7bb3a3fd80998b8609e835d13c55b7abd243ec07b584decad6735e3d4d046",
+    "results/top100_enriched.csv": "c4614db42c42f97fd55309caa894f2276b2c872196d164b9fa77b8c65b3b09af",
+    "results/venue_frame.csv": "ad56e395484102a4b2da1189e75de9bdab77c5c750ab83e6e2bef06d02078074",
+    "queries/proximity_audit_2026_09_10/targeted.txt": "49d3106bdcdc612f7db95d6d146c6a71d5fc9105130de087cd6036025061a8fe",
+    "queries/proximity_specific_2026_09_10/primary_plus_specific.txt": "85728f957fd5d4e2c3bcd49acdafd6354c084b9b90aaf23b599bfd3e2b1bf8cb"
+  },
+  "counting": "One canonical article per distinct first/last Scopus author ID; sole author once. Complete ordered bylines with declared author-count agreement are required.",
+  "identity": "Frozen normalized DOI identity, with Scopus-ID fallback; reconcile old-retrieval aliases by DOI or exact Scopus ID. Never merge author IDs by names.",
+  "sorting": "Descending article count, then ascending numeric Scopus author ID for display only; tied scores share competition rank. Show exact top100 and all authors tied at its cutoff.",
+  "status": "Raw query-candidate rankings, not validated survey-experiment output, seniority or data ownership.",
+  "current_comparator": "Both actual published ranking and reconstructed 7302-article raw retrieval; published ranking additionally required local phrase verification and complete bylines.",
+  "ranking_replaced": false,
+  "manual_byline_corrections_applied": false
+}

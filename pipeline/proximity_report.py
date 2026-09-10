@@ -8,6 +8,10 @@ import proximity_audit as audit
 import precision_benchmark as benchmark
 from render import render
 
+HISTORICAL_NOTICE = ("**Archived query-development stage (18 full-text reviews).** "
+                     "See the [latest ranking comparison, discovery query and recommendation](RANKING_COMPARISON_REPORT.html) "
+                     "and [updated 45-article full-text inventory](FULLTEXT_BENCHMARK.html) for the subsequent evidence.\n\n")
+
 
 def table(rows, columns):
     out = "| " + " | ".join(v for _,v in columns) + " |\n"
@@ -93,6 +97,7 @@ def report():
         "The dashboard continues to show its earlier provisional cohort. No researcher names, substantive topic requirements, vendor restrictions, or explicit conjoint/split-ballot exclusions were added to the query. "
         "The reproducible stages are python3 pipeline/proximity_audit.py summarize, python3 pipeline/proximity_audit.py author_comparison, python3 pipeline/precision_benchmark_review.py, and python3 pipeline/proximity_report.py. "
         "Licensed metadata, PDFs and verbatim evidence stay under private/. [Coauthor summary](PROXIMITY_SUMMARY.html) · [SI draft](PROXIMITY_METHODS.html) · [Earlier search audit](SEARCH_STRATEGY.html) · [Dashboard](TOP100.html#summary).\n")
+    summary = HISTORICAL_NOTICE + summary
     (ROOT / "PROXIMITY_AUDIT.md").write_text(summary)
     (ROOT / "PROXIMITY_AUDIT.html").write_text(render(summary,"Reading and manipulation: query audit and full-text evaluation"))
     methods = ("We compared an additional procedural search with frozen Scopus searches for journal articles published in 2010–2026 within a 3,401-journal frame derived from TESS investigators’ publication histories. "
@@ -113,6 +118,7 @@ def report():
         "Counts describe publications, not independent datasets or confirmed data ownership. The existing dashboard has not been replaced by these unreviewed retrieval results.\n\n"
         "The next candidate for validation is shown below; the [original evaluated query](queries/proximity_audit_2026_09_10/targeted.txt) is archived separately.\n\n```text\n" + specific + "\n```\n\n"
         "The [journal Source IDs](results/venue_frame.csv) are applied as a separate frame intersection. [Complete audit](PROXIMITY_AUDIT.html) · [Evaluation set](FULLTEXT_BENCHMARK.html).\n")
+    methods = HISTORICAL_NOTICE + methods
     (ROOT / "PROXIMITY_METHODS.md").write_text(methods)
     (ROOT / "PROXIMITY_METHODS.html").write_text(render(methods,"Proximity search and full-text evaluation: SI draft"))
     coauthor = ("We seek researchers who have repeatedly collected survey-experiment data. The search uses four recognizable signals: named survey/vignette designs; related experimental designs with survey-participant language; randomized reading assignments; and specific reading or manipulation procedures described in abstracts. Researcher names and substantive topics are not search criteria.\n\n"
@@ -120,6 +126,7 @@ def report():
         "We fixed a 60-article evaluation sample before checking access and obtained 18 full texts. Two AI review passes agreed on 13 eligible and five ineligible designs. The false positives motivated removal of two broad procedural phrase pairs; the revised query retains 12 positives and one negative in this exposed subset. The omitted positive requires an incompatible interactive design. This is development evidence, not an independent precision estimate.\n\n"
         "Forty-two sampled articles still need usable copies, and all labels require human validation. Eligibility, parser compatibility, geography and original data possession are assessed separately. Ranking will count each eligible article once for each first or last author, with sole authors counted once; the existing provisional ranking is unchanged.\n\n"
         "[Full query and SI methods](PROXIMITY_METHODS.html) · [Evidence and comparisons](PROXIMITY_AUDIT.html) · [Full-text inventory and download links](FULLTEXT_BENCHMARK.html).\n")
+    coauthor = HISTORICAL_NOTICE + coauthor
     (ROOT / "PROXIMITY_SUMMARY.md").write_text(coauthor)
     (ROOT / "PROXIMITY_SUMMARY.html").write_text(render(coauthor,"Survey-experiment search: coauthor summary"))
     benchmark_page(availability,consensus)
@@ -132,7 +139,7 @@ def report():
     print(f"Reports rendered; {ready}/60 full texts ready, {len(double)} double-coded; ranking unchanged")
 
 
-def benchmark_page(availability,consensus):
+def benchmark_page(availability,consensus, results_folder="results/precision_benchmark_2026_09_10"):
     labels = {r["scopus_id"]:r for r in consensus}
     rows = []
     for r in availability:
@@ -140,14 +147,21 @@ def benchmark_page(availability,consensus):
         rows.append({**r,"review_coverage":c["review_coverage"],"design":c["design"]})
     rows.sort(key=lambda r:r["benchmark_id"])
     ready = sum(r["fulltext_readiness"] == "ready_for_fulltext_review" for r in rows)
+    current_wave = "benchmark_review_wave2" in results_folder
+    destination = "SurveyExperimentRecruitment/" if current_wave else "SurveyExperimentRecruitment/private/precision_benchmark_2026_09_10/inbox/"
+    command = "python3 pipeline/benchmark_review_wave2.py" if current_wave else "python3 pipeline/precision_benchmark.py prepare --sample results/proximity_audit_2026_09_10/fulltext_sample.csv"
+    judgments = Counter(r["design"] for r in rows if r["review_coverage"] == "double_pass")
+    reviewed = sum(judgments.values())
     md = (f"The fixed sample contains 60 retrieved articles, selected before full-text lookup. {ready} have readable identity-verified main texts or author manuscripts; {60-ready} need a usable copy. "
         "No inaccessible paper is replaced with a more convenient article. AI-assisted annotations require human validation.\n\n"
-        "Save requested PDFs as the listed Scopus ID plus .pdf in SurveyExperimentRecruitment/private/precision_benchmark_2026_09_10/inbox/. "
+        f"{reviewed} articles have two reviews: {judgments['yes']} agreed eligible survey-experiment designs, {judgments['no']} agreed negatives, and {reviewed-judgments['yes']-judgments['no']} unresolved or disputed designs. Parser compatibility and sample geography are recorded separately.\n\n"
+        f"Save requested PDFs as the listed Scopus ID plus .pdf in {destination} "
         "Select Needs a copy to see the remaining download queue. Each article has a publisher link and a filename to copy.\n\n"
-        "[Query and evaluation method](PROXIMITY_AUDIT.html) · [Inventory CSV](results/precision_benchmark_2026_09_10/availability_manifest.csv) · [Manual download CSV](results/precision_benchmark_2026_09_10/manual_download_queue.csv) · [Working labels](results/precision_benchmark_2026_09_10/article_consensus.csv).\n")
+        "[Current ranking comparison](RANKING_COMPARISON_REPORT.html) · [Original sampling method](PROXIMITY_AUDIT.html) · "
+        f"[Inventory CSV]({results_folder}/availability_manifest.csv) · [Manual download CSV]({results_folder}/manual_download_queue.csv) · [Working labels]({results_folder}/article_consensus.csv).\n")
     (ROOT / "FULLTEXT_BENCHMARK.md").write_text(md + "\n" + table(rows,[("benchmark_id","ID"),("title","Article"),("fulltext_readiness","Availability"),("review_coverage","Review status"),("suggested_filename","Filename")]))
     page = render(md,"Full-text evaluation set: 60 fixed articles")
-    controls = f'''<div class="controls"><label>Show <select id="filter"><option value="all">All 60 articles</option><option value="ready">Full texts available ({ready})</option><option value="missing">Needs a copy ({60-ready})</option></select></label><label>Search <input id="search" type="search" placeholder="Title, DOI or identifier"></label><p id="count" aria-live="polite"></p></div><div id="articles"></div><details><summary>Refresh the inventory after adding PDFs</summary><p>From SurveyExperimentRecruitment, run <code>python3 pipeline/precision_benchmark.py prepare --sample results/proximity_audit_2026_09_10/fulltext_sample.csv</code> to check identity and refresh the private reviewer packet. Acquisition does not assign study labels.</p></details>'''
+    controls = f'''<div class="controls"><label>Show <select id="filter"><option value="all">All 60 articles</option><option value="ready">Full texts available ({ready})</option><option value="missing">Needs a copy ({60-ready})</option></select></label><label>Search <input id="search" type="search" placeholder="Title, DOI or identifier"></label><p id="count" aria-live="polite"></p></div><div id="articles"></div><details><summary>Refresh the inventory after adding PDFs</summary><p>From SurveyExperimentRecruitment, run <code>{command}</code> to check identity and refresh the private reviewer packet. Acquisition does not assign study labels. All originals and alternate copies are preserved privately.</p></details>'''
     data = json.dumps(rows,ensure_ascii=False).replace("<","\\u003c").replace("&","\\u0026")
     script = '''<script>
 const DATA=__DATA__;

@@ -1,0 +1,2 @@
+benchmark_id,scopus_id,axis,decision,document_sha256,pdf_page,rationale,reviewer,reviewer_type,review_date,human_validated
+PB-4610dc5b9e,105016166477,geography,US_explicit,bea2e30dba4a9c913c5316aa3ab76c9c547dcef641e07f352959ed0c13b83914,14,The methods note explicitly restricted participation to US respondents; this establishes sample geography directly.,root,AI_assisted,2026-09-10,false

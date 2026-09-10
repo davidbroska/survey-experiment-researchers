@@ -1,0 +1,31 @@
+{
+  "verified_at": "2026-09-10T14:13:19.962436+00:00",
+  "passed": true,
+  "network_used": false,
+  "checks": [
+    {
+      "variant": "current_raw",
+      "total_first_last_credits": 13302,
+      "ranked_authors": 8742,
+      "top100_including_ties": 167
+    },
+    {
+      "variant": "original_query",
+      "total_first_last_credits": 17879,
+      "ranked_authors": 12481,
+      "top100_including_ties": 114
+    },
+    {
+      "variant": "narrower_query",
+      "total_first_last_credits": 17269,
+      "ranked_authors": 11934,
+      "top100_including_ties": 114
+    }
+  ],
+  "frozen_dashboard_credit_pairs_unchanged": true,
+  "all_four_focal_authors_present": true,
+  "narrower_scores_never_exceed_original": true,
+  "canonical_uniqueness_competition_ranks_cutoff_ties_sole_credit_and_decomposition_checked": true,
+  "search_author_caps_rejected_and_full_bylines_validated": true,
+  "implementation_sha256": "103edb035ac7c94b001da2fcf08f418fa8eb2c5ed93bcd7972626c3cb3612092"
+}

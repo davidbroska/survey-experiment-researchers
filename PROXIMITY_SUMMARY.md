@@ -1,3 +1,5 @@
+**Archived query-development stage (18 full-text reviews).** See the [latest ranking comparison, discovery query and recommendation](RANKING_COMPARISON_REPORT.html) and [updated 45-article full-text inventory](FULLTEXT_BENCHMARK.html) for the subsequent evidence.
+
 We seek researchers who have repeatedly collected survey-experiment data. The search uses four recognizable signals: named survey/vignette designs; related experimental designs with survey-participant language; randomized reading assignments; and specific reading or manipulation procedures described in abstracts. Researcher names and substantive topics are not search criteria.
 
 Testing the proposed procedural clause adds relevant last-authored papers by both Kurt Gray and Jay Van Bavel, who were absent from the expanded search. A shorter revision retains the existing 8,615-article core and adds 750 candidates, yielding 9,365 articles in 3,401 journals during 2010–2026. This is additional retrieval, not measured recall. Earlier candidates remain archived for screening.

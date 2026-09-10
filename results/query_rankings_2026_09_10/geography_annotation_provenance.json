@@ -1,0 +1,82 @@
+[
+  {
+    "source_file": "inputs/article_geography.csv",
+    "sha256": "596a1bad300ff330458927f53de5e1490c3d1364fb957d214d279c95260717a5",
+    "validated_reviews": 910
+  },
+  {
+    "source_file": "inputs/fulltext_reviews.csv",
+    "sha256": "94cc78b58c0f3160b9c9b2343d1f555e9690f8654960343ca8f6c8e527a6c940",
+    "validated_reviews": 75
+  },
+  {
+    "source_file": "inputs/top40_us_annotations.csv",
+    "sha256": "b4d327523d7c742958140dacbcb628ab180a401120018e99ca1b891cd13b4050",
+    "validated_reviews": 427
+  },
+  {
+    "source_file": "private/benchmark_review_wave2_2026_09_10/adjudications.json",
+    "sha256": "3bc74192f45e8184ddf2d60db082b1f46650791bcaabdb57c5bff2163d82ac40",
+    "validated_reviews": 1
+  },
+  {
+    "source_file": "private/design_audit_2026_09_10/development_coder_0.csv",
+    "sha256": "8b882b0eb7b49d87f329600c9001507f53299299ceae9df6028f0e70c5d2e6c7",
+    "validated_reviews": 54
+  },
+  {
+    "source_file": "private/design_audit_2026_09_10/development_coder_1.csv",
+    "sha256": "fd5e42dba00647bf9b65970b4e35d70716c9aa8b11e9be2415126a16681a9b33",
+    "validated_reviews": 53
+  },
+  {
+    "source_file": "private/design_audit_2026_09_10/development_coder_2.csv",
+    "sha256": "6994756a94e83ba957cc9e0210bbf8002fa1140954e302796a4297fe76757f7a",
+    "validated_reviews": 53
+  },
+  {
+    "source_file": "private/precision_benchmark_2026_09_10/reviews_coder_A.json",
+    "sha256": "12dd957bc55d5fd01d09399590c85e325064211eeeea81934643fea4dbf91b7d",
+    "validated_reviews": 18
+  },
+  {
+    "source_file": "private/precision_benchmark_2026_09_10/reviews_coder_B.json",
+    "sha256": "b2a4285fe1f919ac1d81e1d1538b4ff0b94166c87242086c256bc2f1045dd313",
+    "validated_reviews": 18
+  },
+  {
+    "source_file": "private/proximity_audit_2026_09_10/author_fulltext_examples.csv",
+    "sha256": "0f1da1d7f6f93205a7100182efe1ed486a2876c8311572b199a323a04d0882f8",
+    "validated_reviews": 8
+  },
+  {
+    "source_file": "private/query_rankings_2026_09_10/geography_reviews_counterexample.csv",
+    "sha256": "3708be1d1f5debab99f20e19585db46cd82b8bbef4cc68d06d2d0ed523880858",
+    "validated_reviews": 53
+  },
+  {
+    "source_file": "private/query_rankings_2026_09_10/geography_reviews_root.csv",
+    "sha256": "54e85dbcdbdf6f3faa1f98b30f01b7bde2ad826b550ab89710679730acdf3ebf",
+    "validated_reviews": 54
+  },
+  {
+    "source_file": "private/query_rankings_2026_09_10/geography_reviews_strategy.csv",
+    "sha256": "1598405adda45d3510e27d91879bffee51bc7186ccca27995726c4a29a6750ee",
+    "validated_reviews": 53
+  },
+  {
+    "source_file": "private/search_strategy_2026_09_10/validation_coder_A.csv",
+    "sha256": "75e8db91b39c39bdeca5e02ffa3ede6904a9be02df2deafbcf7a030195008eb2",
+    "validated_reviews": 100
+  },
+  {
+    "source_file": "private/search_strategy_2026_09_10/validation_coder_B.csv",
+    "sha256": "de0af13405cf39f961380d94731342d5349f03e0b10f8282b5dbf7c4f48e5980",
+    "validated_reviews": 100
+  },
+  {
+    "source_file": "results/benchmark_review_wave2_2026_09_10/article_consensus.csv",
+    "sha256": "39b015f812f2158b0e23d2d1d269bed6687eee0440db341962b499bf32e86a09",
+    "validated_reviews": 27
+  }
+]

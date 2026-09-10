@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Compare survey-experiment researcher rankings</title>
+<style>
+:root{font:16px/1.5 system-ui,sans-serif;color:#192b36;background:#f7f9fb}*{box-sizing:border-box}body{max-width:1500px;margin:0 auto;padding:2rem 1rem}h1{font-size:2rem;line-height:1.2}h2{font-size:1.2rem}a{color:#136294}p{max-width:1050px}.notice,.controls,.panel{background:white;border:1px solid #d8e2e9;border-radius:8px;padding:1rem;margin:1rem 0}.notice{border-left:4px solid #136294}.controls{display:flex;gap:1rem;flex-wrap:wrap;align-items:end}label{display:block;font-weight:600}select,input,button{font:inherit;padding:.45rem;border:1px solid #aebfc9;border-radius:4px;background:white}select,input{max-width:100%}label span{display:block;font-size:.86rem;font-weight:400}button{cursor:pointer}.scroll{overflow:auto;border:1px solid #d8e2e9;background:white;border-radius:8px}table{border-collapse:collapse;width:100%;font-size:.91rem}th,td{padding:.6rem .7rem;border-bottom:1px solid #e3e9ee;text-align:right;vertical-align:top}th:first-child,td:first-child{text-align:left;min-width:210px}th{background:#eaf1f6;position:sticky;top:0}th button{border:0;background:transparent;padding:0;font-weight:700;text-align:inherit;color:inherit}td.primary{font-weight:750;background:#eef6fc}small,.muted{color:#536874}small{display:block}.status{font-weight:650}.pills{display:flex;gap:.7rem;flex-wrap:wrap}.pill{background:#eaf1f6;padding:.35rem .7rem;border-radius:1rem}summary{cursor:pointer;font-weight:650}pre{white-space:pre-wrap;overflow-wrap:anywhere}.empty{text-align:center;padding:2rem}@media(max-width:600px){body{padding:1rem .7rem}h1{font-size:1.6rem}.controls>*{width:100%}select,input{width:100%}}
+</style></head><body>
+<h1>Compare researcher rankings</h1>
+<p>Each count is the number of distinct candidate articles on which a researcher is first or last author. Sole-authored articles count once. The two new searches cover the same 3,401 journals and publication years 2010–2026.</p>
+<p><a href="RANKING_COMPARISON_REPORT.html">Findings, query and recommendation</a> · <a href="TOP100.html">Historical dashboard</a> · <a href="FULLTEXT_BENCHMARK.html">Full-text evaluation</a> · <a href="results/query_rankings_2026_09_10/comparison_authors.csv">Comparison CSV</a></p>
+<div class="notice"><strong>Candidate rankings; study eligibility remains provisional.</strong><p id="caveat"></p><p>The current published list applies a local phrase check. The new tables count retrieved candidates with complete bylines. The report separates this filtering difference from query expansion.</p></div>
+<div class="pills" id="headline"></div>
+<div class="controls">
+<div><label for="metric">Rank by</label><select id="metric"><option value="all">All candidate articles</option><option value="pool">US evidence: same 120 researchers</option><option value="us">US evidence: all authors (partial review)</option></select></div>
+<div><label for="variant">Display ranking</label><select id="variant"><option value="full">Core + complete clause (9,675)</option><option value="narrow">Core + narrower clause (9,365)</option><option value="current">Current published list</option></select></div>
+<div><label for="membership">Researchers</label><select id="membership"><option value="top">First 100 displayed</option><option value="ties">Top 100 including cutoff ties</option><option value="in">Entering the displayed top 100</option><option value="out">Leaving the displayed top 100</option><option value="changed">Different between the two new top 100s</option><option value="all">All researchers</option></select></div>
+<div><label for="search">Search names</label><input id="search" type="search" placeholder="Researcher name"></div>
+<button id="download" type="button">Download displayed rows</button>
+</div>
+<p id="count" class="status" aria-live="polite"></p>
+<p id="scope" class="muted"></p>
+<div class="scroll"><table><thead id="head"></thead><tbody id="rows"></tbody></table></div>
+<p><small>Ranks use competition ranking: equal counts receive equal ranks. The first 100 display uses a fixed numeric author-ID order within ties; entry or exit at a tied boundary is a display choice. A dash means the historical metric was unavailable. US upper counts are resolution scenarios, not confidence intervals, and do not cover errors in existing labels.</small></p>
+<details class="panel"><summary>How to interpret the US columns</summary><p>US counts combine explicit and contextual sample evidence. Unclear and unreviewed articles remain separate; neither is treated as evidence of a non-US sample. The upper count adds both groups to the identified US count. Geography is about study participants, not the author's institution. An article with US and non-US samples contributes once.</p><p>The historical US ranking covered only the existing 100-person list. The new US tables expose all retrieved first/last authors, with annotation coverage shown. Sorting partially reviewed counts can favor better-reviewed authors; the report describes the coverage achieved and remaining limitations.</p></details>
+<script>
+const DATA=__DATA__;
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const $=id=>document.getElementById(id);
+let sortKey=null,sortDir=-1,shown=[];
+const num=v=>v===null||v===undefined||v===''?null:Number(v);
+function position(r,v,m){return num(r[v+'_'+m+'_position']);}
+function member(r,v,m){const p=position(r,v,m);return p!==null&&p<=100;}
+function columns(m,v){const baseline=m==='pool'?'Previous query, same pool':m==='us'?'Historical within-pool':'Current';const c=[['name','Researcher','text'],['current_'+m+'_rank',baseline+': rank','number'],['current_'+m+'_count',baseline+': count','number'],['full_'+m+'_rank','Complete clause: rank','number'],['full_'+m+'_count','Complete clause: count','number'],['narrow_'+m+'_rank','Narrower clause: rank','number'],['narrow_'+m+'_count','Narrower clause: count','number']];if(m!=='all'&&v!=='current')c.push([v+'_unclear','Unclear geography','number'],[v+'_unreviewed','Not reviewed','number'],[v+'_us_upper','US count if all unresolved','number']);return c;}
+function draw(){const m=$('metric').value,v=$('variant').value,mode=$('membership').value,q=$('search').value.trim().toLowerCase();const cols=columns(m,v);document.querySelector('#variant option[value="current"]').textContent=m==='pool'?'Previous query: same 120 researchers':m==='us'?'Historical US list (100-person pool)':'Current published ranking';
+if(!cols.some(c=>c[0]===sortKey)){sortKey=v+'_'+m+'_count';sortDir=-1;}
+const selected=DATA.authors.filter(r=>{if(q&&!r.name.toLowerCase().includes(q)&&!r.authid.includes(q))return false;const p=position(r,v,m),here=member(r,v,m),was=member(r,'current',m);if(mode==='top')return here;if(mode==='ties'){const cutoff=DATA.cutoffs[v+'_'+m];return p!==null&&num(r[v+'_'+m+'_count'])>=cutoff;}if(mode==='in')return here&&!was;if(mode==='out')return was&&!here;if(mode==='changed')return member(r,'full',m)!==member(r,'narrow',m);return p!==null||q!=='';});
+const textSort=new Intl.Collator('en',{sensitivity:'base',numeric:true});selected.sort((a,b)=>{const x=a[sortKey],y=b[sortKey],nx=x===null||x===undefined||x==='',ny=y===null||y===undefined||y==='';if(nx!==ny)return nx?1:-1;const cmp=sortKey==='name'?textSort.compare(x,y):Number(x)-Number(y);return cmp*sortDir||Number(a.authid)-Number(b.authid);});shown=selected;
+$('head').innerHTML='<tr>'+cols.map(([k,label])=>'<th aria-sort="'+(sortKey===k?(sortDir===1?'ascending':'descending'):'none')+'"><button data-sort="'+k+'">'+esc(label)+'</button></th>').join('')+'</tr>';
+$('rows').innerHTML=selected.slice(0,1000).map(r=>'<tr data-author="'+esc(r.authid)+'">'+cols.map(([k,label],i)=>i===0?'<td><a href="https://www.scopus.com/authid/detail.uri?authorId='+esc(r.authid)+'" target="_blank" rel="noopener">'+esc(r.name)+'</a></td>':'<td'+(k===v+'_'+m+'_count'?' class="primary"':'')+'>'+(r[k]===null||r[k]===undefined||r[k]===''?'—':esc(r[k]))+'</td>').join('')+'</tr>').join('')||'<tr><td colspan="'+cols.length+'" class="empty">No matching researchers</td></tr>';
+$('count').textContent=selected.length+' researchers'+(selected.length>1000?' (first 1,000 shown; download includes all)':'');
+$('scope').textContent=m==='pool'?DATA.pool_scope:m==='us'?DATA.us_scope:DATA.all_scope;
+$('caveat').textContent=m!=='all'?DATA.us_caveat:DATA.all_caveat;
+$('headline').innerHTML=DATA.headlines.map(s=>'<span class="pill">'+esc(s)+'</span>').join('');
+}
+for(const id of ['metric','variant','membership'])$(id).addEventListener('change',()=>{sortKey=null;draw();});$('search').addEventListener('input',draw);
+$('head').addEventListener('click',e=>{const b=e.target.closest('[data-sort]');if(!b)return;sortDir=sortKey===b.dataset.sort?-sortDir:(b.dataset.sort==='name'?1:-1);sortKey=b.dataset.sort;draw();});
+function csv(rows){const keys=Object.keys(DATA.authors[0]),quote=s=>'"'+String(s??'').replaceAll('"','""')+'"';return [keys.join(','),...rows.map(r=>keys.map(k=>quote(r[k])).join(','))].join('\r\n');}
+$('download').addEventListener('click',()=>{const url=URL.createObjectURL(new Blob([csv(shown)],{type:'text/csv;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='ranking-comparison-'+$('variant').value+'-'+$('metric').value+'.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});draw();
+</script></body></html>

@@ -1,0 +1,17 @@
+{
+  "outputs": 11,
+  "sha256": {
+    "RANKING_COMPARISON.html": "7d5c485385403d329e7fec36c7c51d405c8b438bb6e261208e12477b59b5fb4a",
+    "RANKING_COMPARISON_REPORT.md": "1877d120067b1e9b9ec28306cf0bfbb210ecacfb63b8ef3f17e8b25be54df8a9",
+    "RANKING_COMPARISON_REPORT.html": "d15928e3151d7aeb4e8854ac7d71633147810a8342ef3b2169a0e4eea4aa7383",
+    "FULLTEXT_BENCHMARK.html": "9a2425c77420ef1a4b33b6f7f62ed7b9c1aef5033e3ab5cddc3496b860579bbe",
+    "FULLTEXT_BENCHMARK.md": "cd8663b9a61929a8c8f3df9789ff946928da7fe3ea1d3579b8a34d979517b554",
+    "results/query_rankings_2026_09_10/comparison_authors.csv": "e3b64896b9df91518073b5e42a0b357eafbb347826d24f72e49d8ceccd346c67",
+    "results/query_rankings_2026_09_10/comparison_report_provenance.json": "5ea0082cdec379932b05b49ca2c0e96a433019e305c0b8762c8db1ca6295375e",
+    "results/query_rankings_2026_09_10/comparison_dashboard_data.json": "944c97eb9eef090ca5f94ab25df3e93a92bc362765847ed8024f13dc517f8bf3",
+    "results/query_rankings_2026_09_10/display_membership_summary.csv": "6ec48b587a1ad7ab691d8a61b6327f0666ff9c5b4b89a2a8fa127e0ec004d3f1",
+    "results/query_rankings_2026_09_10/display_membership_changes.csv": "224fa6b900b64e03c517712ce2c687cd0b5625e647f8e9f8edf5b5f096c069b1",
+    "results/query_rankings_2026_09_10/benchmark_retention_after_downloads.csv": "af9d6abc4f6d75f4ed00c8c1bca49179ea128a1324f1a2a0b3a0f5e7580e9821"
+  },
+  "offline_byte_identical": true
+}

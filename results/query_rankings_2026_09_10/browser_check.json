@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "html_sha256": "7d5c485385403d329e7fec36c7c51d405c8b438bb6e261208e12477b59b5fb4a",
+  "checks": [
+    "3 metrics and3 variants",
+    "all columns both directions",
+    "historical zeros versus missing US labels",
+    "114 cutoff-inclusive leaders",
+    "16 entrants and16 exits",
+    "no new-query membership differences",
+    "searchable zero-count diagnostic case",
+    "empty search",
+    "120-author uniform US coverage",
+    "identical known-US counts within pool",
+    "CSV content",
+    "desktop and mobile layout",
+    "no uncaught exceptions"
+  ]
+}
