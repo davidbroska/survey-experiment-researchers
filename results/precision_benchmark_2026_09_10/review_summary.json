@@ -1,0 +1,49 @@
+{
+  "sample_n": 60,
+  "ready_for_fulltext_review": 18,
+  "not_reviewed": 42,
+  "single_pass": 0,
+  "double_pass": 18,
+  "double_coded_yes": 13,
+  "double_coded_no": 5,
+  "double_coded_unclear_or_disputed": 0,
+  "unknown_for_bounds": 42,
+  "affirmative_design_after_known_incompatibility_flags": 11,
+  "missing_label_bounds": [
+    {
+      "scope": "targeted_union",
+      "population_after_development_exclusions": 7808,
+      "fixed_sample_n": 60,
+      "double_coded_yes": 13,
+      "double_coded_no": 5,
+      "unknown_sample_labels": 42,
+      "weighted_affirmative_article_total": 1901.2,
+      "weighted_affirmative_plus_unknown_total": 7292.0,
+      "lower_bound": 0.2434938524590164,
+      "upper_bound": 0.9339139344262295,
+      "bound_type": "descriptive stratum-weighted sample bounds over unresolved labels",
+      "interpretation": "Not confidence intervals or human-validated precision; bounds cover missing and disputed sample labels, not sampling error or annotation error.",
+      "human_validated": "false"
+    },
+    {
+      "scope": "proximity_clause",
+      "population_after_development_exclusions": 1016,
+      "fixed_sample_n": 40,
+      "double_coded_yes": 8,
+      "double_coded_no": 4,
+      "unknown_sample_labels": 28,
+      "weighted_affirmative_article_total": 203.2,
+      "weighted_affirmative_plus_unknown_total": 839.6,
+      "lower_bound": 0.2,
+      "upper_bound": 0.8263779527559055,
+      "bound_type": "descriptive stratum-weighted sample bounds over unresolved labels",
+      "interpretation": "Not confidence intervals or human-validated precision; bounds cover missing and disputed sample labels, not sampling error or annotation error.",
+      "human_validated": "false"
+    }
+  ],
+  "inaccessible_articles_replaced": false,
+  "fulltext_review_unit": "Article; at least one eligible study supplies affirmative design evidence.",
+  "all_axes_separate": true,
+  "human_validated": false,
+  "interpretation": "Unreviewed, singly reviewed, unclear and disputed designs remain unknown. Accessible articles are not a replacement sample or an unbiased precision denominator. Weighted bounds apply only to the post-development-exclusion sampling frame and quantify neither sampling uncertainty nor AI annotation error."
+}

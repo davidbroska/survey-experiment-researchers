@@ -1,0 +1,32 @@
+{
+  "frozen_at": "2026-09-10T13:35:15.006901+00:00",
+  "version": "proximity_specific_2026_09_10",
+  "stage": "post_benchmark_development_only",
+  "purpose": "Positive-clause ablation removing only read W/3 passage* and manipulat* W/3 information after inspection of the 18 available full texts.",
+  "removed_pairs": [
+    [
+      "read",
+      "passage*"
+    ],
+    [
+      "manipulat*",
+      "information"
+    ]
+  ],
+  "preserved": "All nine remaining action-object pairs, literal read, experiment* gate, ABS population gate, year and document limits; no explicit exclusions or author/topic terms.",
+  "evaluation": "Complete Scopus identifier sets; then frozen 3401-journal intersection and canonical DOI deduplication. Retention of the 18 exposed full-text judgments is descriptive development evidence, NOT independent precision or recall. No new holdout was drawn.",
+  "ranking_updated": false,
+  "query_sha256": {
+    "specific_clause": "93ef33212423d99242abb58e5e71e9ee0f8bbe6a8398e2968d7de81765709732",
+    "primary_plus_specific": "1c56f35135529c8e301ed4cdd49fedfc6dcc15dfaa4604410e0c84eb196f97f7"
+  },
+  "input_sha256": {
+    "results/proximity_audit_2026_09_10/membership.csv": "f71549b99f4eb067e8737ca55a9d24c0a3f7e6d732ea7a75d7d54df0e568a2a1",
+    "results/precision_benchmark_2026_09_10/article_consensus.csv": "869a63d2606c62f1f6b99e4c436bac2bcb6c349f4d1fd27bfc5535015914b278",
+    "private/proximity_audit_2026_09_10/author_bibliographies/author_articles.csv": "28184265c17e43a15183fb72a5156ae802d08b5181c20e696a5903b89b4d8d55",
+    "results/venue_frame.csv": "ad56e395484102a4b2da1189e75de9bdab77c5c750ab83e6e2bef06d02078074",
+    "queries/proximity_audit_2026_09_10/grouped_clause.txt": "531ac072cd4de7769986cf74a4dae902f2e59a049566a2c5bc1f8a723e9d6bae",
+    "queries/proximity_audit_2026_09_10/targeted.txt": "49d3106bdcdc612f7db95d6d146c6a71d5fc9105130de087cd6036025061a8fe"
+  },
+  "cache_namespace": "proximity_specific_2026_09_10"
+}

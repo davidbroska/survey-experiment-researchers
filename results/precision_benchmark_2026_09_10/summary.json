@@ -1,0 +1,17 @@
+{
+  "sample_n": 60,
+  "ready_for_fulltext_review": 18,
+  "manual_action_needed": 42,
+  "evaluations_completed": 0,
+  "evaluation_status": "unassigned",
+  "inaccessible_records_replaced": false,
+  "sample_sha256": "9406ed7c7f8f0a10bf5ff609adbdbd3d9ade42051cc816c7c27c5d278651f9e1",
+  "review_packet_sha256": "ddf68387cc9a7a8c3313275865cb20510708a78ad04efee5c8b78cd260f95a4f",
+  "public_copies_attempted": 60,
+  "max_urls_per_article": 8,
+  "url_budget_scope": "At most eight candidate URLs per article per acquisition pass; all distinct past attempts remain archived.",
+  "workers_limit": 4,
+  "http_timeout_seconds": 20,
+  "blinding": "Packets omit query routes, sampling strata, author metadata and prior annotations. Authors remain visible within original PDFs/text; author blinding is not claimed.",
+  "precision_evaluation": "Pending full-text annotation; availability is not a design label. Unavailable selected records remain in the fixed denominator."
+}

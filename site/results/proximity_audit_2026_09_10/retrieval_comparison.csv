@@ -1,0 +1,13 @@
+candidate,comparator,candidate_n,comparator_n,shared,added,lost
+targeted,previous_expanded,9675,8142,8114,1561,28
+targeted,previous_primary,9675,8615,8615,1060,0
+targeted,previous_candidate,9675,18054,8895,780,9159
+minimal,previous_expanded,8839,8142,7444,1395,698
+minimal,previous_primary,8839,8615,7779,1060,836
+minimal,previous_candidate,8839,18054,8059,780,9995
+expanded_plus_clause,previous_expanded,9208,8142,8142,1066,0
+expanded_plus_clause,previous_primary,9208,8615,8120,1088,495
+expanded_plus_clause,previous_candidate,9208,18054,8415,793,9639
+candidate_plus_clause,previous_expanded,18834,8142,8129,10705,13
+candidate_plus_clause,previous_primary,18834,8615,8615,10219,0
+candidate_plus_clause,previous_candidate,18834,18054,18054,780,0

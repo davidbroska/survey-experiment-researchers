@@ -1,0 +1,26 @@
+{
+  "stage": "post_benchmark_development_only",
+  "complete": true,
+  "manifest": {
+    "query": "(\n  (TITLE-ABS-KEY(experiment*)\nAND ABS((read W/3 (vignette* OR scenario* OR message* OR article* OR news)) OR (manipulat* W/3 (vignette* OR scenario* OR message* OR wording)))\nAND ABS(survey* OR questionnaire* OR respondent* OR participant*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027",
+    "expected": 1288,
+    "retrieved": 1288,
+    "complete": true,
+    "dates": [
+      "2026-09-10T13:35:33.392008+00:00",
+      "2026-09-10T13:35:38.660933+00:00",
+      "2026-09-10T13:35:42.805230+00:00",
+      "2026-09-10T13:35:47.365189+00:00",
+      "2026-09-10T13:35:52.060994+00:00",
+      "2026-09-10T13:35:56.659890+00:00",
+      "2026-09-10T13:35:59.277411+00:00"
+    ]
+  },
+  "global_subset_verified": true,
+  "global_records": 1288,
+  "in_frame_records": 967,
+  "in_frame_unique": 967,
+  "member_sha256": "65bf0f48d2db5d0b176a94ccc2655cd9585fc3b0ab672dced15d8a985cc55dd3",
+  "specific_subset_of_original_in_frame": true,
+  "implementation_sha256": "58b946029892861206e29095297505a5265c11cb7075c3ff548c55412e3488f4"
+}

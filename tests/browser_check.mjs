@@ -8,7 +8,7 @@ import {fileURLToPath,pathToFileURL} from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const out = path.join(root,'private/browser_checks');
 await fs.mkdir(out,{recursive:true});
-const pages = await (await fetch('http://127.0.0.1:9224/json/list')).json();
+const pages = await (await fetch((process.env.CDP_URL || 'http://127.0.0.1:9224')+'/json/list')).json();
 const ws = new WebSocket(pages.find(p => p.type === 'page').webSocketDebuggerUrl);
 await new Promise((resolve,reject) => {ws.onopen=resolve;ws.onerror=reject;});
 let seq=0;const pending=new Map(),errors=[];
@@ -112,8 +112,37 @@ await call('Page.navigate',{url:new URL('SEARCH_METHODS.html',dashboardUrl).href
 for(let i=0;i<40;i++){if(await evaluate('location.pathname.endsWith("SEARCH_METHODS.html") && !!document.querySelector("pre code")'))break;await new Promise(r=>setTimeout(r,100));}
 assert.equal(normalizeQuery(await evaluate('document.querySelector("pre code").textContent')),candidateQuery,'SI draft shows the same executed query');
 assert.equal(await evaluate('document.documentElement.scrollWidth<=window.innerWidth'),true,'No search-methods overflow on mobile');
+await call('Page.navigate',{url:new URL('PROXIMITY_AUDIT.html',dashboardUrl).href});
+for(let i=0;i<40;i++){if(await evaluate('location.pathname.endsWith("PROXIMITY_AUDIT.html") && document.querySelectorAll("pre code").length===2'))break;await new Promise(r=>setTimeout(r,100));}
+const proximityQuery=normalizeQuery(await fs.readFile(path.join(root,'queries/proximity_audit_2026_09_10/targeted.txt'),'utf8'));
+assert.equal(normalizeQuery(await evaluate('document.querySelectorAll("pre code")[1].textContent')),proximityQuery,'Proximity report query fidelity');
+assert.ok(await evaluate('document.body.textContent.includes("9,675")'),'Proximity report retrieval count');
+assert.equal(await evaluate('document.documentElement.scrollWidth<=window.innerWidth'),true,'No proximity-report mobile overflow');
+await call('Page.navigate',{url:new URL('PROXIMITY_METHODS.html',dashboardUrl).href});
+for(let i=0;i<40;i++){if(await evaluate('location.pathname.endsWith("PROXIMITY_METHODS.html") && !!document.querySelector("pre code")'))break;await new Promise(r=>setTimeout(r,100));}
+const specificQuery=normalizeQuery(await fs.readFile(path.join(root,'queries/proximity_specific_2026_09_10/primary_plus_specific.txt'),'utf8'));
+assert.equal(normalizeQuery(await evaluate('document.querySelector("pre code").textContent')),specificQuery,'Proximity SI development query fidelity');
+assert.ok(await evaluate('document.body.textContent.includes("9,365")'),'Post-benchmark development retrieval count');
+await call('Page.navigate',{url:new URL('FULLTEXT_BENCHMARK.html',dashboardUrl).href});
+for(let i=0;i<40;i++){if(await evaluate('location.pathname.endsWith("FULLTEXT_BENCHMARK.html") && document.querySelectorAll(".card").length===60'))break;await new Promise(r=>setTimeout(r,100));}
+assert.equal(await evaluate('DATA.length'),60,'Fixed benchmark retains all sampled articles');
+assert.equal(await evaluate('document.querySelectorAll(".card").length'),60);
+await evaluate('document.getElementById("filter").value="ready";document.getElementById("filter").dispatchEvent(new Event("change"))');
+assert.equal(await evaluate('document.querySelectorAll(".card").length'),await evaluate('DATA.filter(r=>r.fulltext_readiness==="ready_for_fulltext_review").length'));
+await evaluate('document.getElementById("filter").value="missing";document.getElementById("filter").dispatchEvent(new Event("change"))');
+assert.equal(await evaluate('document.querySelectorAll(".card").length'),await evaluate('DATA.filter(r=>r.fulltext_readiness!=="ready_for_fulltext_review").length'));
+await evaluate('Object.defineProperty(navigator,"clipboard",{configurable:true,value:{writeText:async text=>{window.testFilename=text;}}});document.querySelector("[data-copy]").click()');
+assert.equal(await evaluate('window.testFilename'),await evaluate('document.querySelector("[data-copy]").dataset.copy'));
+await evaluate('document.getElementById("search").value="NO_MATCH_9876";document.getElementById("search").dispatchEvent(new Event("input"))');
+assert.equal(await evaluate('document.querySelectorAll(".card").length'),0);
+await evaluate('document.getElementById("search").value="";document.getElementById("search").dispatchEvent(new Event("input"))');
+assert.equal(await evaluate('document.documentElement.scrollWidth<=window.innerWidth'),true,'No fulltext-benchmark mobile overflow');
+await fs.writeFile(path.join(out,'fulltext-benchmark-mobile.png'),Buffer.from((await call('Page.captureScreenshot',{format:'png'})).data,'base64'));
+await call('Emulation.setDeviceMetricsOverride',{width:1600,height:1040,deviceScaleFactor:1,mobile:false});
+await fs.writeFile(path.join(out,'fulltext-benchmark-desktop.png'),Buffer.from((await call('Page.captureScreenshot',{format:'png'})).data,'base64'));
 assert.deepEqual(errors,[],'No uncaught browser exceptions');
 const result={browser:'Google Chrome via local CDP',html_sha256:createHash('sha256').update(await fs.readFile(path.join(root,'TOP100.html'))).digest('hex'),researcher_rows:100,columns_checked_both_directions:columns.length,
   checks:['Ranking label','Methodology tab','four selection steps','literal query fidelity','copy query','three-tab keyboard navigation','downloaded PDFs omitted from manual queue','all column sorts','US maximum first','author evidence drilldown','US-only article filter','country search','empty search','ten-paper batches','last batch','download checkbox storage','CSV batch contents','mobile overflow','revision report link','revised query fidelity','revision report counts','revision report mobile overflow','search audit link','provisional cohort notice','candidate query fidelity','candidate retrieval count','coauthor and SI links','search audit mobile overflow','SI candidate query fidelity','SI mobile overflow'],uncaught_exceptions:0};
+result.checks.push('proximity query and SI fidelity','proximity retrieval count','proximity mobile layout','all60 benchmark records','benchmark availability filters','benchmark filename copy','benchmark search','benchmark mobile layout');
 await fs.writeFile(path.join(root,'results/dashboard_browser_check.json'),JSON.stringify(result,null,2)+'\n');
 console.log(JSON.stringify(result,null,2));ws.close();

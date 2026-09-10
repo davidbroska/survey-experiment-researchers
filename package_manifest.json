@@ -1,7 +1,7 @@
 {
   "snapshot_date": "2026-09-09",
   "python_verified": "3.13.7",
-  "tests_passed": 75,
+  "tests_passed": 87,
   "retrieval_status": "complete for the archived positive-term query and frozen roster",
   "eligibility_status": "provisional; requires experimental eligibility, parser compatibility, data access and identity review",
   "private_data": "Scopus cache, abstracts, evidence and prior run snapshots retained under private/",
@@ -25,6 +25,14 @@
     {
       "path": "EXECUTIVE_SUMMARY.md",
       "sha256": "feb77e1e22beb4fa6e77eca0e6e7674d5dd87fb4e3588e2d96648ee355a69e08"
+    },
+    {
+      "path": "FULLTEXT_BENCHMARK.html",
+      "sha256": "fe07e919dd598e93a179c992840faefa3a351816b73510ae4fbf34e3b23acfaa"
+    },
+    {
+      "path": "FULLTEXT_BENCHMARK.md",
+      "sha256": "75aef4644f01b0ae5d8eb8bdb39a4433abe69ddff5622bff2b003939d9235879"
     },
     {
       "path": "FULLTEXT_REVIEW.html",
@@ -67,6 +75,30 @@
       "sha256": "d0746717c098947284dd23b597235db8cf1f0003d26923f3fbb7cd555a853855"
     },
     {
+      "path": "PROXIMITY_AUDIT.html",
+      "sha256": "b9eb339ac35cf3039c99dcf949c68a0d11f5b7d7ed6f8ee085bf1679f48e00f5"
+    },
+    {
+      "path": "PROXIMITY_AUDIT.md",
+      "sha256": "d114e3c40064523f5ddca47fa48e9a0089fc464c9acce4d361c72850a7d8c552"
+    },
+    {
+      "path": "PROXIMITY_METHODS.html",
+      "sha256": "3383825322d62a9e1b6938d08f33c0691bb6b4b479e3731519bbb6c3d2bf4c85"
+    },
+    {
+      "path": "PROXIMITY_METHODS.md",
+      "sha256": "f15ee96aa72653791802c4f5ae6ef27779bfd222dd97566c01f138f2abecf1b3"
+    },
+    {
+      "path": "PROXIMITY_SUMMARY.html",
+      "sha256": "5487a98681222e3cbfc49f87119d3829a69da7105ce19db93dc3d8d2ea10f0de"
+    },
+    {
+      "path": "PROXIMITY_SUMMARY.md",
+      "sha256": "696dd3ef733fb344837d803afa1710e115e81167405205c7732ac7e21dabe13a"
+    },
+    {
       "path": "QUERY_REPORT.html",
       "sha256": "c32c58db6151d4278b1757fdf604e19d48376b06f1b824e8ab867c8cfe7ac25a"
     },
@@ -84,7 +116,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "4bb3628f1a1f7729c335931ace5131d28df65294ad880b48b58153fd8897c9e9"
+      "sha256": "cfc7e41a04f7697b689738371f4738dd5fa0a95828847f79847b375eb6999955"
     },
     {
       "path": "SEARCH_METHODS.html",
@@ -120,11 +152,11 @@
     },
     {
       "path": "TOP100.html",
-      "sha256": "498e32b435051d0100419cb4288d80337a5b06ac3f48c2adbba3e8a20970984c"
+      "sha256": "21daff6848730beeafad5944045a19a892a1a8968cae4e9862fd58727182f055"
     },
     {
       "path": "TOP40.html",
-      "sha256": "498e32b435051d0100419cb4288d80337a5b06ac3f48c2adbba3e8a20970984c"
+      "sha256": "21daff6848730beeafad5944045a19a892a1a8968cae4e9862fd58727182f055"
     },
     {
       "path": "YEAR_WINDOW_COMPARISON.html",
@@ -136,7 +168,7 @@
     },
     {
       "path": "github-pages-site.zip",
-      "sha256": "049cf0fbbc820d475d4d8ffbfb05284a48bfaa9157e21035f6befcf83e872675"
+      "sha256": "18b16fe6e464d0a94bd35bbad43d1d4e08724a1211a79c4837cd98644c401bc1"
     },
     {
       "path": "inputs/article_decisions.csv",
@@ -177,6 +209,10 @@
     {
       "path": "inputs/open_access_sources.csv",
       "sha256": "47839e1c9ceac314dfbb17f0b22b68a12a94fe20e4f00595b1bbfea0a1003087"
+    },
+    {
+      "path": "inputs/precision_benchmark_sources.csv",
+      "sha256": "b65fdbbbda42b9e5937a960d85f95047535df6dbb9658051f78f4e88166fc053"
     },
     {
       "path": "inputs/provenance.json",
@@ -220,7 +256,7 @@
     },
     {
       "path": "pipeline/build_site.py",
-      "sha256": "69abb21237e5306f99f772a84d7dd9de0181f4fe2e82e5df4363318cb59c78ed"
+      "sha256": "c10d11e745bf8ee7e65eb909ffcc3e4cf2718f7bb0b6a5d8b179b92ef5b6e15f"
     },
     {
       "path": "pipeline/coauthor_summary.py",
@@ -252,7 +288,7 @@
     },
     {
       "path": "pipeline/dashboard_template.html",
-      "sha256": "970498bafcdedc49c99ffc5110fc6868efccd32be9f42fcbd5bb991482f6844c"
+      "sha256": "600704f415c7934b65e642c43274dc7f379321a882e6ee5d00e53cc44a4e78e0"
     },
     {
       "path": "pipeline/design_audit.py",
@@ -285,6 +321,26 @@
     {
       "path": "pipeline/pilot.py",
       "sha256": "143dfd74e8685925348f869a15279f89d8a25a59c94a1abc3940bebc6f6bcf94"
+    },
+    {
+      "path": "pipeline/precision_benchmark.py",
+      "sha256": "e4708f8118d3f077dc81cec494a5f022a85eac8aa1507d1d45a1226c362c4131"
+    },
+    {
+      "path": "pipeline/precision_benchmark_review.py",
+      "sha256": "6d7328ba4bb201a4168bc97fd2e6dded76c12a7826ed48561d486d8157693027"
+    },
+    {
+      "path": "pipeline/proximity_audit.py",
+      "sha256": "e4ede0ff2a8f404e64bdd61b34e8a619e518c1268875cf2226609f9880156772"
+    },
+    {
+      "path": "pipeline/proximity_report.py",
+      "sha256": "234114d4f7d293397b267fd368a88a3e085677fe2adbe70d397ae0a6ec51071f"
+    },
+    {
+      "path": "pipeline/proximity_specific.py",
+      "sha256": "58b946029892861206e29095297505a5265c11cb7075c3ff548c55412e3488f4"
     },
     {
       "path": "pipeline/query.py",
@@ -411,6 +467,30 @@
       "sha256": "17c3c638ae1f91db5c17e1825f6a652bd31c416419ecdf7ac491593fec09c4bb"
     },
     {
+      "path": "queries/proximity_audit_2026_09_10/grouped_clause.txt",
+      "sha256": "531ac072cd4de7769986cf74a4dae902f2e59a049566a2c5bc1f8a723e9d6bae"
+    },
+    {
+      "path": "queries/proximity_audit_2026_09_10/minimal.txt",
+      "sha256": "76e688b37ecc1eaf0f9b107b81e2f0e19aaf657f081318935ae690a2e3f5afe7"
+    },
+    {
+      "path": "queries/proximity_audit_2026_09_10/targeted.txt",
+      "sha256": "49d3106bdcdc612f7db95d6d146c6a71d5fc9105130de087cd6036025061a8fe"
+    },
+    {
+      "path": "queries/proximity_audit_2026_09_10/user_clause.txt",
+      "sha256": "c8157cc7c64d29d187539d375470337cbfa6acf0d64fbc5de7bce0f6b6dd79e3"
+    },
+    {
+      "path": "queries/proximity_specific_2026_09_10/primary_plus_specific.txt",
+      "sha256": "85728f957fd5d4e2c3bcd49acdafd6354c084b9b90aaf23b599bfd3e2b1bf8cb"
+    },
+    {
+      "path": "queries/proximity_specific_2026_09_10/specific_clause.txt",
+      "sha256": "f4e7a33c19aad269c795b56f0a359a8458e5c8ce6b751d85ba0945ed288da75c"
+    },
+    {
       "path": "queries/recommended.txt",
       "sha256": "d1b093aa5218404faefd906b710ccad5b6d2bb18637bfa88a87e0ca196da1145"
     },
@@ -496,7 +576,7 @@
     },
     {
       "path": "results/dashboard_browser_check.json",
-      "sha256": "772781d646be11bdc0b72e9beaca25040228b5812e7fde0fe64aac2de6e96a50"
+      "sha256": "82791173b5631d6f34841392bf0f104ff56cb3af666467e71cf1a22b4410ccec"
     },
     {
       "path": "results/dashboard_reproducibility_check.json",
@@ -755,6 +835,234 @@
       "sha256": "088caf4ccc72dc022ad9413e4f50e3d4a7dd85330d5582dc829590bdb8814710"
     },
     {
+      "path": "results/precision_benchmark_2026_09_10/acquisition_reproducibility.json",
+      "sha256": "c00be8e8e01c4953341ccc261b84f2878497c98b581240d38a28e1d1636b9df0"
+    },
+    {
+      "path": "results/precision_benchmark_2026_09_10/article_consensus.csv",
+      "sha256": "869a63d2606c62f1f6b99e4c436bac2bcb6c349f4d1fd27bfc5535015914b278"
+    },
+    {
+      "path": "results/precision_benchmark_2026_09_10/availability_manifest.csv",
+      "sha256": "5e3c617018b0f5cc67b23f68c00a842e503ed0cb3a042195879215adbd8e5e5a"
+    },
+    {
+      "path": "results/precision_benchmark_2026_09_10/axis_annotations.csv",
+      "sha256": "7b09e4a8d0d2184825cec0ba9c2a945b141634f72c672dcecf82b7b0a7846bab"
+    },
+    {
+      "path": "results/precision_benchmark_2026_09_10/local_inventory.csv",
+      "sha256": "dd7ee6907f5c664f2d5dd88def98586e1029abb4602283431ab7308829470dd9"
+    },
+    {
+      "path": "results/precision_benchmark_2026_09_10/local_inventory_summary.json",
+      "sha256": "28c809919b4caca87af2627a438fc6e161e5c0a5c1e1839c2c6963d630965390"
+    },
+    {
+      "path": "results/precision_benchmark_2026_09_10/manual_download_queue.csv",
+      "sha256": "795ba707533b18a862dcc39ea70ac346c33388fac311a62900d3106c208f69b3"
+    },
+    {
+      "path": "results/precision_benchmark_2026_09_10/missing_label_bounds.csv",
+      "sha256": "b31e4f62fe31230624a6bdede1de7c08bba2262c50433e9666cbfd70b935b476"
+    },
+    {
+      "path": "results/precision_benchmark_2026_09_10/review_provenance.json",
+      "sha256": "5cd8c976c62d042208a466aea50409f2574dcdbbc1a126152aaa0bc5cd9484dd"
+    },
+    {
+      "path": "results/precision_benchmark_2026_09_10/review_reproducibility.json",
+      "sha256": "e2b9786dcbf8c7a5814ee5c8cc1f5431eb889d9f2544db03712b523562924c3f"
+    },
+    {
+      "path": "results/precision_benchmark_2026_09_10/review_schema.json",
+      "sha256": "583a3d2ee5b84aa5990cb9bfd4fd3b4b5818cb2ae2e86f2e73574042a247e49f"
+    },
+    {
+      "path": "results/precision_benchmark_2026_09_10/review_summary.json",
+      "sha256": "b8f659c2b12deb40d1efb37694a36853bb100ba184e6dadaa5f7818f4ad49af8"
+    },
+    {
+      "path": "results/precision_benchmark_2026_09_10/sample_manifest.json",
+      "sha256": "c152db0f6e501c91c6a9fc08779d8ee0d9d519cd81a1908eb13a45689e330e5c"
+    },
+    {
+      "path": "results/precision_benchmark_2026_09_10/stratum_summary.csv",
+      "sha256": "19cc8c227718c4e4af84055238deda2a800e40992f5dc039840b6b60d7ff3361"
+    },
+    {
+      "path": "results/precision_benchmark_2026_09_10/summary.json",
+      "sha256": "636cf297396912c67c37a87b7135949dcc4abfeb99afeb0e2bed5b5246a74ee9"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/author_article_retrieval.csv",
+      "sha256": "219e4e699e3c99e2bcafeba036adc81cd66ea35c626cc1dc8fcf27c75b00d739"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/author_byline_discrepancies.csv",
+      "sha256": "a950e7b635413eba7a66bda50e3dc3b90b3fccec1ef340bd95b1c6658a794c11"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/author_case_audit.md",
+      "sha256": "51c022130e0ab1cce109e79e9e4db0894ff3a9cd8a11c6afd446c14bf8511ef3"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/author_comparison.csv",
+      "sha256": "a15a6cc1d86e7ef5140e05853baf86b973ed684f76cb0677211683b8971744b5"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/author_fulltext_examples.csv",
+      "sha256": "6fdce044f4ad1ab978114c4088b96c076e44ba8c47a1bd0bc558b42222c472b7"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/author_identity_audit.csv",
+      "sha256": "cf9f3bb4b811af3bcf75cf20d746450c08f94c8c18485f0f2042a2df2d4411c2"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/development_local_proxy.csv",
+      "sha256": "8aea108285c364cb16e00a54bc008047e67a3b514f738f071fbc22b6e63e6d4d"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/development_proxy.py",
+      "sha256": "19fbe5ec4efda4df9e9bd783377a86021ebdba6bf4ded3eea6ae0a530418cb3c"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/development_proxy_provenance.json",
+      "sha256": "fbe159d3c6edb65c403e3b4cadeecd949b14e2831eedf006b54f401c1c501ba3"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/doi_identity_conflicts.csv",
+      "sha256": "2e29e9579b88920e6428791e8591c6eabbb56474dde99d768102b0fb2e8b4a55"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/fulltext_development_exclusions.csv",
+      "sha256": "df408253b8fab4fe917cb71694b18082667117c8c6ef1dedaf3a104604481438"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/fulltext_sample.csv",
+      "sha256": "9406ed7c7f8f0a10bf5ff609adbdbd3d9ade42051cc816c7c27c5d278651f9e1"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/fulltext_sample_manifest.json",
+      "sha256": "276fe771ced9fb2ef575ae52e87b3e14117139177f921b1f0f7ab6d9bb8d38a3"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/fulltext_sampling_strata.csv",
+      "sha256": "6e45cf311bad467c89602d7dfe33a6c4c94522188854cd200c485a58f7c98208"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/grouping_equivalence.json",
+      "sha256": "05c6eaa2b2a9bf9628d85cff3ce7f6a763034d48c0ce66efeac5e1ba189811be"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/independent_semantics_review.md",
+      "sha256": "267f4f27c36e3ab32f5f939f2d3058c4c384f283006371f67bae24511bb2aafc"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/live_probes.csv",
+      "sha256": "05cdc12ce25a7c6649c5f1533340035c580a1cb4529ce2aa71f8dd111b42b327"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/membership.csv",
+      "sha256": "f71549b99f4eb067e8737ca55a9d24c0a3f7e6d732ea7a75d7d54df0e568a2a1"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/offline_reproducibility.json",
+      "sha256": "65b35953a74bb5629c848845bc9628dc7805fd8b5727a8af8ce90b78fe6574ef"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/protocol.json",
+      "sha256": "afaf0edc4e4c8213467797a0d22af687ce3de979a5a9736e661d06d8d969d245"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/report_provenance.json",
+      "sha256": "29424de85a2737497f61973b1c3f49ef11c8ec59ee12e4098afa6e7b40a83528"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/retrieval_comparison.csv",
+      "sha256": "3568dc8595b986e60acd49bcd87e371021a4db62e40f701c1b8fb91807b25ba7"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/retrieval_counts.csv",
+      "sha256": "28681fa799cce095376659938df09d1e37ae0b74ede8d3248220d71dda89a8ae"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/retrieval_manifests.json",
+      "sha256": "ffd9273b39449e9ac23763cbedc0dba53ffd60baa417b8644080ff266aaec59d"
+    },
+    {
+      "path": "results/proximity_clause_semantics_2026_09_10/development_local_proxy.csv",
+      "sha256": "8aea108285c364cb16e00a54bc008047e67a3b514f738f071fbc22b6e63e6d4d"
+    },
+    {
+      "path": "results/proximity_clause_semantics_2026_09_10/development_proxy.py",
+      "sha256": "ce8109ba8c3db5fb7e491565a4a1da0952002e7d93ea9ef4cfe0791886cbd673"
+    },
+    {
+      "path": "results/proximity_clause_semantics_2026_09_10/development_proxy_provenance.json",
+      "sha256": "e67f3c6e9a8a25a4a61f7cce13c3c295bc06ef72b64d79647856885bb2a6e358"
+    },
+    {
+      "path": "results/proximity_clause_semantics_2026_09_10/live_probes.csv",
+      "sha256": "05cdc12ce25a7c6649c5f1533340035c580a1cb4529ce2aa71f8dd111b42b327"
+    },
+    {
+      "path": "results/proximity_specific_2026_09_10/article_set_differences.csv",
+      "sha256": "4f9f7502fef3fdd558725a86b9932ea26b611af8ec6166108e9d2d8e3e482d90"
+    },
+    {
+      "path": "results/proximity_specific_2026_09_10/author_article_retrieval.csv",
+      "sha256": "6a1c5bfce0e73ed091114d90cdc5f5e2b12326173ee2353da010dcd5dd36b124"
+    },
+    {
+      "path": "results/proximity_specific_2026_09_10/author_comparison.csv",
+      "sha256": "2e8ff76b2b2f4e78107864c862b61071d3e97b2cdc5c9a9bbda6fc05e007ac16"
+    },
+    {
+      "path": "results/proximity_specific_2026_09_10/development_summary.md",
+      "sha256": "df8615336445a7a3839e229362446cdf61569346ec78bfd90b1211b3088f1a64"
+    },
+    {
+      "path": "results/proximity_specific_2026_09_10/doi_identity_conflicts.csv",
+      "sha256": "2e29e9579b88920e6428791e8591c6eabbb56474dde99d768102b0fb2e8b4a55"
+    },
+    {
+      "path": "results/proximity_specific_2026_09_10/exposed_benchmark_retention.csv",
+      "sha256": "5b33c9f24e7f6b9d747ae72573053a56c7a31c2e7db667e5af6e65c9acd04c63"
+    },
+    {
+      "path": "results/proximity_specific_2026_09_10/exposed_benchmark_summary.csv",
+      "sha256": "ceb0afd51e9c1e846d18bd13b9ca5c195c0160673fc4012aee9b8d65ab734c84"
+    },
+    {
+      "path": "results/proximity_specific_2026_09_10/global_set_comparison.json",
+      "sha256": "4c512d85d4b495946cd5f632b7898f6d6a014db4281e6e8bab17f11c5cc2137b"
+    },
+    {
+      "path": "results/proximity_specific_2026_09_10/membership.csv",
+      "sha256": "65bf0f48d2db5d0b176a94ccc2655cd9585fc3b0ab672dced15d8a985cc55dd3"
+    },
+    {
+      "path": "results/proximity_specific_2026_09_10/offline_reproducibility.json",
+      "sha256": "697c795028ce0a2dd13d1d2b4f39b612dbd175440f2515fc62649d2eb0106974"
+    },
+    {
+      "path": "results/proximity_specific_2026_09_10/protocol.json",
+      "sha256": "c90d0689f0fca73701b6fba0dcf6b2a14888d7351512f6f0b0db2eb253786905"
+    },
+    {
+      "path": "results/proximity_specific_2026_09_10/retrieval_comparison.csv",
+      "sha256": "d95e574bd5a6dca074cd89f1fece00d26741186aba93c78ed8f7d27302cad359"
+    },
+    {
+      "path": "results/proximity_specific_2026_09_10/retrieval_counts.csv",
+      "sha256": "b5805c580503a84e9ecda9e8ea833d3eea01a325490b5964b2cd7aecc2e5fd73"
+    },
+    {
+      "path": "results/proximity_specific_2026_09_10/retrieval_manifest.json",
+      "sha256": "eeb78caa99066cb3ee67923fc3ca494a26220b9fadd018b40a0b970551fb0a74"
+    },
+    {
       "path": "results/punctuation_audit.csv",
       "sha256": "250a8cc413a00fd8be1806c5e895c3e8df5f28e9d983cf33432d668da8e4d95f"
     },
@@ -968,7 +1276,7 @@
     },
     {
       "path": "results/site_manifest.json",
-      "sha256": "21f3679b593526245455840e89f2c274276f88b3b7294cbae683c18fe3234f19"
+      "sha256": "f6707c0e343131c9bf8fc00312ce0aa5e281aff6cee7b3f5e51a58975570d4b3"
     },
     {
       "path": "results/top100_article_annotations.csv",
@@ -1055,6 +1363,14 @@
       "sha256": "feb77e1e22beb4fa6e77eca0e6e7674d5dd87fb4e3588e2d96648ee355a69e08"
     },
     {
+      "path": "site/FULLTEXT_BENCHMARK.html",
+      "sha256": "fe07e919dd598e93a179c992840faefa3a351816b73510ae4fbf34e3b23acfaa"
+    },
+    {
+      "path": "site/FULLTEXT_BENCHMARK.md",
+      "sha256": "75aef4644f01b0ae5d8eb8bdb39a4433abe69ddff5622bff2b003939d9235879"
+    },
+    {
       "path": "site/FULLTEXT_REVIEW.html",
       "sha256": "c377543aa0a3ac9c27a0fc3406afbfafe5512e5c8aae2e0a094f9476aae62117"
     },
@@ -1085,6 +1401,30 @@
     {
       "path": "site/PRIORITY_DOWNLOADS.md",
       "sha256": "d0746717c098947284dd23b597235db8cf1f0003d26923f3fbb7cd555a853855"
+    },
+    {
+      "path": "site/PROXIMITY_AUDIT.html",
+      "sha256": "b9eb339ac35cf3039c99dcf949c68a0d11f5b7d7ed6f8ee085bf1679f48e00f5"
+    },
+    {
+      "path": "site/PROXIMITY_AUDIT.md",
+      "sha256": "d114e3c40064523f5ddca47fa48e9a0089fc464c9acce4d361c72850a7d8c552"
+    },
+    {
+      "path": "site/PROXIMITY_METHODS.html",
+      "sha256": "3383825322d62a9e1b6938d08f33c0691bb6b4b479e3731519bbb6c3d2bf4c85"
+    },
+    {
+      "path": "site/PROXIMITY_METHODS.md",
+      "sha256": "f15ee96aa72653791802c4f5ae6ef27779bfd222dd97566c01f138f2abecf1b3"
+    },
+    {
+      "path": "site/PROXIMITY_SUMMARY.html",
+      "sha256": "5487a98681222e3cbfc49f87119d3829a69da7105ce19db93dc3d8d2ea10f0de"
+    },
+    {
+      "path": "site/PROXIMITY_SUMMARY.md",
+      "sha256": "696dd3ef733fb344837d803afa1710e115e81167405205c7732ac7e21dabe13a"
     },
     {
       "path": "site/QUERY_REPORT.html",
@@ -1140,11 +1480,11 @@
     },
     {
       "path": "site/TOP100.html",
-      "sha256": "498e32b435051d0100419cb4288d80337a5b06ac3f48c2adbba3e8a20970984c"
+      "sha256": "21daff6848730beeafad5944045a19a892a1a8968cae4e9862fd58727182f055"
     },
     {
       "path": "site/TOP40.html",
-      "sha256": "498e32b435051d0100419cb4288d80337a5b06ac3f48c2adbba3e8a20970984c"
+      "sha256": "21daff6848730beeafad5944045a19a892a1a8968cae4e9862fd58727182f055"
     },
     {
       "path": "site/YEAR_WINDOW_COMPARISON.html",
@@ -1156,11 +1496,35 @@
     },
     {
       "path": "site/index.html",
-      "sha256": "498e32b435051d0100419cb4288d80337a5b06ac3f48c2adbba3e8a20970984c"
+      "sha256": "21daff6848730beeafad5944045a19a892a1a8968cae4e9862fd58727182f055"
     },
     {
       "path": "site/queries/participant_guards_2026_09_10/revised.txt",
       "sha256": "17c3c638ae1f91db5c17e1825f6a652bd31c416419ecdf7ac491593fec09c4bb"
+    },
+    {
+      "path": "site/queries/proximity_audit_2026_09_10/grouped_clause.txt",
+      "sha256": "531ac072cd4de7769986cf74a4dae902f2e59a049566a2c5bc1f8a723e9d6bae"
+    },
+    {
+      "path": "site/queries/proximity_audit_2026_09_10/minimal.txt",
+      "sha256": "76e688b37ecc1eaf0f9b107b81e2f0e19aaf657f081318935ae690a2e3f5afe7"
+    },
+    {
+      "path": "site/queries/proximity_audit_2026_09_10/targeted.txt",
+      "sha256": "49d3106bdcdc612f7db95d6d146c6a71d5fc9105130de087cd6036025061a8fe"
+    },
+    {
+      "path": "site/queries/proximity_audit_2026_09_10/user_clause.txt",
+      "sha256": "c8157cc7c64d29d187539d375470337cbfa6acf0d64fbc5de7bce0f6b6dd79e3"
+    },
+    {
+      "path": "site/queries/proximity_specific_2026_09_10/primary_plus_specific.txt",
+      "sha256": "85728f957fd5d4e2c3bcd49acdafd6354c084b9b90aaf23b599bfd3e2b1bf8cb"
+    },
+    {
+      "path": "site/queries/proximity_specific_2026_09_10/specific_clause.txt",
+      "sha256": "f4e7a33c19aad269c795b56f0a359a8458e5c8ce6b751d85ba0945ed288da75c"
     },
     {
       "path": "site/queries/recommended.txt",
@@ -1265,6 +1629,150 @@
     {
       "path": "site/results/participant_guards_2026_09_10/summary.json",
       "sha256": "a775bded325154c41a794fa62a1e196a87c1ea3564cc26e39f21fa8b732628d8"
+    },
+    {
+      "path": "site/results/precision_benchmark_2026_09_10/article_consensus.csv",
+      "sha256": "869a63d2606c62f1f6b99e4c436bac2bcb6c349f4d1fd27bfc5535015914b278"
+    },
+    {
+      "path": "site/results/precision_benchmark_2026_09_10/availability_manifest.csv",
+      "sha256": "5e3c617018b0f5cc67b23f68c00a842e503ed0cb3a042195879215adbd8e5e5a"
+    },
+    {
+      "path": "site/results/precision_benchmark_2026_09_10/axis_annotations.csv",
+      "sha256": "7b09e4a8d0d2184825cec0ba9c2a945b141634f72c672dcecf82b7b0a7846bab"
+    },
+    {
+      "path": "site/results/precision_benchmark_2026_09_10/manual_download_queue.csv",
+      "sha256": "795ba707533b18a862dcc39ea70ac346c33388fac311a62900d3106c208f69b3"
+    },
+    {
+      "path": "site/results/precision_benchmark_2026_09_10/missing_label_bounds.csv",
+      "sha256": "b31e4f62fe31230624a6bdede1de7c08bba2262c50433e9666cbfd70b935b476"
+    },
+    {
+      "path": "site/results/precision_benchmark_2026_09_10/review_provenance.json",
+      "sha256": "5cd8c976c62d042208a466aea50409f2574dcdbbc1a126152aaa0bc5cd9484dd"
+    },
+    {
+      "path": "site/results/precision_benchmark_2026_09_10/review_schema.json",
+      "sha256": "583a3d2ee5b84aa5990cb9bfd4fd3b4b5818cb2ae2e86f2e73574042a247e49f"
+    },
+    {
+      "path": "site/results/precision_benchmark_2026_09_10/review_summary.json",
+      "sha256": "b8f659c2b12deb40d1efb37694a36853bb100ba184e6dadaa5f7818f4ad49af8"
+    },
+    {
+      "path": "site/results/precision_benchmark_2026_09_10/sample_manifest.json",
+      "sha256": "c152db0f6e501c91c6a9fc08779d8ee0d9d519cd81a1908eb13a45689e330e5c"
+    },
+    {
+      "path": "site/results/precision_benchmark_2026_09_10/stratum_summary.csv",
+      "sha256": "19cc8c227718c4e4af84055238deda2a800e40992f5dc039840b6b60d7ff3361"
+    },
+    {
+      "path": "site/results/precision_benchmark_2026_09_10/summary.json",
+      "sha256": "636cf297396912c67c37a87b7135949dcc4abfeb99afeb0e2bed5b5246a74ee9"
+    },
+    {
+      "path": "site/results/proximity_audit_2026_09_10/author_article_retrieval.csv",
+      "sha256": "219e4e699e3c99e2bcafeba036adc81cd66ea35c626cc1dc8fcf27c75b00d739"
+    },
+    {
+      "path": "site/results/proximity_audit_2026_09_10/author_byline_discrepancies.csv",
+      "sha256": "a950e7b635413eba7a66bda50e3dc3b90b3fccec1ef340bd95b1c6658a794c11"
+    },
+    {
+      "path": "site/results/proximity_audit_2026_09_10/author_comparison.csv",
+      "sha256": "a15a6cc1d86e7ef5140e05853baf86b973ed684f76cb0677211683b8971744b5"
+    },
+    {
+      "path": "site/results/proximity_audit_2026_09_10/author_fulltext_examples.csv",
+      "sha256": "6fdce044f4ad1ab978114c4088b96c076e44ba8c47a1bd0bc558b42222c472b7"
+    },
+    {
+      "path": "site/results/proximity_audit_2026_09_10/author_identity_audit.csv",
+      "sha256": "cf9f3bb4b811af3bcf75cf20d746450c08f94c8c18485f0f2042a2df2d4411c2"
+    },
+    {
+      "path": "site/results/proximity_audit_2026_09_10/fulltext_sample.csv",
+      "sha256": "9406ed7c7f8f0a10bf5ff609adbdbd3d9ade42051cc816c7c27c5d278651f9e1"
+    },
+    {
+      "path": "site/results/proximity_audit_2026_09_10/fulltext_sample_manifest.json",
+      "sha256": "276fe771ced9fb2ef575ae52e87b3e14117139177f921b1f0f7ab6d9bb8d38a3"
+    },
+    {
+      "path": "site/results/proximity_audit_2026_09_10/fulltext_sampling_strata.csv",
+      "sha256": "6e45cf311bad467c89602d7dfe33a6c4c94522188854cd200c485a58f7c98208"
+    },
+    {
+      "path": "site/results/proximity_audit_2026_09_10/grouping_equivalence.json",
+      "sha256": "05c6eaa2b2a9bf9628d85cff3ce7f6a763034d48c0ce66efeac5e1ba189811be"
+    },
+    {
+      "path": "site/results/proximity_audit_2026_09_10/protocol.json",
+      "sha256": "afaf0edc4e4c8213467797a0d22af687ce3de979a5a9736e661d06d8d969d245"
+    },
+    {
+      "path": "site/results/proximity_audit_2026_09_10/report_provenance.json",
+      "sha256": "29424de85a2737497f61973b1c3f49ef11c8ec59ee12e4098afa6e7b40a83528"
+    },
+    {
+      "path": "site/results/proximity_audit_2026_09_10/retrieval_comparison.csv",
+      "sha256": "3568dc8595b986e60acd49bcd87e371021a4db62e40f701c1b8fb91807b25ba7"
+    },
+    {
+      "path": "site/results/proximity_audit_2026_09_10/retrieval_counts.csv",
+      "sha256": "28681fa799cce095376659938df09d1e37ae0b74ede8d3248220d71dda89a8ae"
+    },
+    {
+      "path": "site/results/proximity_audit_2026_09_10/retrieval_manifests.json",
+      "sha256": "ffd9273b39449e9ac23763cbedc0dba53ffd60baa417b8644080ff266aaec59d"
+    },
+    {
+      "path": "site/results/proximity_clause_semantics_2026_09_10/live_probes.csv",
+      "sha256": "05cdc12ce25a7c6649c5f1533340035c580a1cb4529ce2aa71f8dd111b42b327"
+    },
+    {
+      "path": "site/results/proximity_specific_2026_09_10/author_article_retrieval.csv",
+      "sha256": "6a1c5bfce0e73ed091114d90cdc5f5e2b12326173ee2353da010dcd5dd36b124"
+    },
+    {
+      "path": "site/results/proximity_specific_2026_09_10/author_comparison.csv",
+      "sha256": "2e8ff76b2b2f4e78107864c862b61071d3e97b2cdc5c9a9bbda6fc05e007ac16"
+    },
+    {
+      "path": "site/results/proximity_specific_2026_09_10/development_summary.md",
+      "sha256": "df8615336445a7a3839e229362446cdf61569346ec78bfd90b1211b3088f1a64"
+    },
+    {
+      "path": "site/results/proximity_specific_2026_09_10/exposed_benchmark_retention.csv",
+      "sha256": "5b33c9f24e7f6b9d747ae72573053a56c7a31c2e7db667e5af6e65c9acd04c63"
+    },
+    {
+      "path": "site/results/proximity_specific_2026_09_10/exposed_benchmark_summary.csv",
+      "sha256": "ceb0afd51e9c1e846d18bd13b9ca5c195c0160673fc4012aee9b8d65ab734c84"
+    },
+    {
+      "path": "site/results/proximity_specific_2026_09_10/global_set_comparison.json",
+      "sha256": "4c512d85d4b495946cd5f632b7898f6d6a014db4281e6e8bab17f11c5cc2137b"
+    },
+    {
+      "path": "site/results/proximity_specific_2026_09_10/offline_reproducibility.json",
+      "sha256": "697c795028ce0a2dd13d1d2b4f39b612dbd175440f2515fc62649d2eb0106974"
+    },
+    {
+      "path": "site/results/proximity_specific_2026_09_10/protocol.json",
+      "sha256": "c90d0689f0fca73701b6fba0dcf6b2a14888d7351512f6f0b0db2eb253786905"
+    },
+    {
+      "path": "site/results/proximity_specific_2026_09_10/retrieval_comparison.csv",
+      "sha256": "d95e574bd5a6dca074cd89f1fece00d26741186aba93c78ed8f7d27302cad359"
+    },
+    {
+      "path": "site/results/proximity_specific_2026_09_10/retrieval_counts.csv",
+      "sha256": "b5805c580503a84e9ecda9e8ea833d3eea01a325490b5964b2cd7aecc2e5fd73"
     },
     {
       "path": "site/results/query_revision_2026_09_10/changed_article_metadata.csv",
@@ -1396,7 +1904,7 @@
     },
     {
       "path": "tests/browser_check.mjs",
-      "sha256": "c5ef576d8ec91b01aaa608b86d5ea003528888d0c62ad6e71e40d13fd43bab24"
+      "sha256": "51bbb10f42e03dd4eba4b92eab2b6641b9f451f1f1e736ec2ec2782e14f33dd4"
     },
     {
       "path": "tests/test_acquisition.py",
@@ -1423,8 +1931,24 @@
       "sha256": "7a2f1006256796f3df7a81907bf3fc5ef0c4adce0449217f419cc65cf34f96a0"
     },
     {
+      "path": "tests/test_precision_benchmark.py",
+      "sha256": "f1d8642b611ca4143b27c346f9f76d3f2bb09acdaf751a6b8fefea9be84f27b6"
+    },
+    {
+      "path": "tests/test_precision_benchmark_review.py",
+      "sha256": "01da8464e7e02360f3ba45e811e7814b89adb929f917207427820a53ba5d3736"
+    },
+    {
       "path": "tests/test_priority.py",
       "sha256": "8f911cce286f36163a32427a69d7f5ff5137ab8db0c11f1f0f99a1dfd205f9f7"
+    },
+    {
+      "path": "tests/test_proximity_audit.py",
+      "sha256": "b9e169bc1daa6278fa7f94b3e32a3ef9480373adb4d82fa9f1a164a9933492ae"
+    },
+    {
+      "path": "tests/test_proximity_specific.py",
+      "sha256": "e48318d7aa1e35a3e33d555c7cdcf42c7ba6fd5a0ed9c9145067bb7b45be90f7"
     },
     {
       "path": "tests/test_query_revision.py",
@@ -1454,8 +1978,8 @@
   "geography_status": "870 articles annotated; 402 US-associated; 117 unclear; 75 page-cited full-text decisions; AI-assisted and awaiting independent validation",
   "geography_scope": "100-person pool selected by distinct first/last-author candidate count; 65 additional cutoff-tied authors outside pool",
   "affiliation_status": "100 profiles with sources; dated and conflicting-role entries flagged",
-  "browser_validation": "100 researcher rows; 12 sorts in both directions; tabs, query controls, download workflow; candidate query and SI fidelity; desktop/mobile layout; no uncaught exceptions",
-  "reproducibility": "Archived dashboard inputs preserved; 19 new query/retrieval/sample artifacts and 20 review/report artifacts reproduced byte-identically offline",
+  "browser_validation": "100 researcher rows;12 sorts both directions; tabs, queries, download workflow; original and revised query fidelity;60-article evaluation inventory, filters, filename copy; desktop/mobile; no uncaught exceptions",
+  "reproducibility": "35 proximity/report artifacts,14 post-benchmark ablation artifacts,10 acquisition outputs and6 review outputs reproduce byte-identically offline; earlier snapshots preserved",
   "retrieval_dates": [
     "2026-09-08",
     "2026-09-09"
@@ -1480,5 +2004,14 @@
     "SEARCH_STRATEGY.html",
     "SEARCH_SUMMARY.html",
     "SEARCH_METHODS.html"
+  ],
+  "proximity_audit_status": "Original clause: 1297 in-frame; expanded union9208 (+1066); core union9675 (+1060). Complete literal/grouped result sets equal.",
+  "proximity_development_status": "Narrower post-benchmark candidate9365, preserving core8615 and adding750; not independently validated; all archived candidates retained.",
+  "precision_benchmark_status": "60 fixed before access lookup;18 full texts obtained and double-coded;13 eligible designs and5 ineligible;42 remain unavailable; all AI-assisted and pending human validation.",
+  "proximity_reports": [
+    "PROXIMITY_AUDIT.html",
+    "PROXIMITY_METHODS.html",
+    "PROXIMITY_SUMMARY.html",
+    "FULLTEXT_BENCHMARK.html"
   ]
 }

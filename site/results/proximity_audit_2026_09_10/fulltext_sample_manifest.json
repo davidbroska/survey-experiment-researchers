@@ -1,0 +1,14 @@
+{
+  "stage": "fulltext_evaluation",
+  "selected_variant": "targeted",
+  "query_sha256": "0deb5548ccf2aaa6ba6bacd6b003c4f7aa45716036bbb6f18d05f6a658c97ecd",
+  "membership_sha256": "f71549b99f4eb067e8737ca55a9d24c0a3f7e6d732ea7a75d7d54df0e568a2a1",
+  "frame_sha256": "ad56e395484102a4b2da1189e75de9bdab77c5c750ab83e6e2bef06d02078074",
+  "exclusions_sha256": "df408253b8fab4fe917cb71694b18082667117c8c6ef1dedaf3a104604481438",
+  "requested_n": 60,
+  "selection_seed": "proximity_audit_2026_09_10:fulltext:20260910",
+  "estimand": "Named/guarded/reading routes OR user proximity clause within the journal frame, outside prior development; stratum-weighted estimates only",
+  "availability_policy": "Selection precedes access lookup; all60remain in the denominator; unavailable articles are not replaced",
+  "sample_sha256": "8eb44aaf8a7566c0afb3a52032a0da73d7e3d96eb4c3db9459d90154b86a1432",
+  "n_selected": 60
+}

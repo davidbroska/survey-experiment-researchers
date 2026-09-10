@@ -1,0 +1,19 @@
+{
+  "frozen_at": "2026-09-10T13:10:22.561504+00:00",
+  "version": "proximity_audit_2026_09_10",
+  "query_sha256": {
+    "user_clause": "ffda6e4b93d388ab797de23b6f28fa164e805e86b8dfe89ae87c270f11b084ee",
+    "grouped_clause": "818706b72b46aa0d7e928aefdfb5d41805ec6f0ad7c64ae6820f0c1856c6225a",
+    "targeted": "0deb5548ccf2aaa6ba6bacd6b003c4f7aa45716036bbb6f18d05f6a658c97ecd",
+    "minimal": "13ae958a656513971b6c71294dc5aa9fa4f9654b3520e0b98f542300e29849d3"
+  },
+  "frame_sha256": "ad56e395484102a4b2da1189e75de9bdab77c5c750ab83e6e2bef06d02078074",
+  "prior_query_sha256": "12145990075aeaaf8a52aaf6d5c1404155e54ce14d2703761ceff8bf5880e84c",
+  "purpose": "Test the user-proposed clause, verify OR-group equivalence by complete Scopus ID sets, and compare prior primary routes plus the clause with a shorter named-designs-plus-clause alternative.",
+  "development": "All earlier metadata/code labels, the user proposal and nominated author bibliographies are development evidence. Focal-author examples do not estimate recall.",
+  "fulltext_plan": "Freeze a 60-article stratified probability sample (20 each: primary_only, proximity_only, overlap) before any open-access lookup. Exclude previously reviewed/development articles and all four nominated author bibliographies by ID/DOI/title. Do not replace unavailable articles. Record access and review completeness; use stratum weights and missing-label bounds, never convenience-subset precision.",
+  "blinding": "Coding packets omit query route and previous labels. Full texts inherently contain author names, so author anonymity is not claimed.",
+  "ranking_updated": false,
+  "author_or_topic_search_terms": false,
+  "limits": "SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027"
+}

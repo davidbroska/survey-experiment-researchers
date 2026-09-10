@@ -1,0 +1,38 @@
+[
+  {
+    "route": "user_clause",
+    "query": "(\n  (TITLE-ABS-KEY(experiment*)\nAND ABS((read W/3 vignette*) OR (read W/3 scenario*) OR (read W/3 passage*) OR (read W/3 message*) OR (read W/3 article*) OR (read W/3 news) OR (manipulat* W/3 vignette*) OR (manipulat* W/3 scenario*) OR (manipulat* W/3 message*) OR (manipulat* W/3 information) OR (manipulat* W/3 wording))\nAND ABS(survey* OR questionnaire* OR respondent* OR participant*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027",
+    "expected": 1791,
+    "retrieved": 1791,
+    "complete": true,
+    "dates": [
+      "2026-09-10T13:10:56.514895+00:00",
+      "2026-09-10T13:11:01.202214+00:00",
+      "2026-09-10T13:11:06.517027+00:00",
+      "2026-09-10T13:11:10.871492+00:00",
+      "2026-09-10T13:11:15.666056+00:00",
+      "2026-09-10T13:11:20.032386+00:00",
+      "2026-09-10T13:11:24.660188+00:00",
+      "2026-09-10T13:11:28.620759+00:00",
+      "2026-09-10T13:11:32.367423+00:00"
+    ]
+  },
+  {
+    "route": "grouped_clause",
+    "query": "(\n  (TITLE-ABS-KEY(experiment*)\nAND ABS((read W/3 (vignette* OR scenario* OR passage* OR message* OR article* OR news)) OR (manipulat* W/3 (vignette* OR scenario* OR message* OR information OR wording)))\nAND ABS(survey* OR questionnaire* OR respondent* OR participant*))\n)\nAND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027",
+    "expected": 1791,
+    "retrieved": 1791,
+    "complete": true,
+    "dates": [
+      "2026-09-10T13:10:56.496297+00:00",
+      "2026-09-10T13:11:00.923741+00:00",
+      "2026-09-10T13:11:06.192488+00:00",
+      "2026-09-10T13:11:10.847932+00:00",
+      "2026-09-10T13:11:15.832834+00:00",
+      "2026-09-10T13:11:20.120360+00:00",
+      "2026-09-10T13:11:24.421520+00:00",
+      "2026-09-10T13:11:28.558414+00:00",
+      "2026-09-10T13:11:32.436673+00:00"
+    ]
+  }
+]

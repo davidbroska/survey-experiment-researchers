@@ -1,0 +1,8 @@
+variant,unique_articles,stage
+specific_clause,967,post_benchmark_development_only
+grouped_clause,1297,post_benchmark_development_only
+previous_primary,8615,post_benchmark_development_only
+previous_candidate,18054,post_benchmark_development_only
+targeted,9675,post_benchmark_development_only
+primary_plus_specific,9365,post_benchmark_development_only
+broad_plus_specific,18545,post_benchmark_development_only

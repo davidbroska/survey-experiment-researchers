@@ -1,0 +1,8 @@
+{
+  "n_documents": 98,
+  "n_main_documents": 95,
+  "n_identity_verified": 98,
+  "n_ready_for_fulltext_review": 95,
+  "previous_design_or_geography_labels_imported": false,
+  "definition": "Readiness means identity-matched, readable and apparently substantial; it does not certify completeness, eligibility or parser compatibility."
+}

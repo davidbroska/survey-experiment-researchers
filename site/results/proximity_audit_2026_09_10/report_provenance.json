@@ -1,0 +1,15 @@
+{
+  "candidate_query_sha256": "0deb5548ccf2aaa6ba6bacd6b003c4f7aa45716036bbb6f18d05f6a658c97ecd",
+  "next_validation_query_sha256": "1c56f35135529c8e301ed4cdd49fedfc6dcc15dfaa4604410e0c84eb196f97f7",
+  "revision_status": "post_benchmark_development",
+  "fulltext_sample_sha256": "9406ed7c7f8f0a10bf5ff609adbdbd3d9ade42051cc816c7c27c5d278651f9e1",
+  "consensus_sha256": "869a63d2606c62f1f6b99e4c436bac2bcb6c349f4d1fd27bfc5535015914b278",
+  "human_validated": false,
+  "ranking_replaced": false,
+  "reports": [
+    "PROXIMITY_AUDIT",
+    "PROXIMITY_METHODS",
+    "PROXIMITY_SUMMARY",
+    "FULLTEXT_BENCHMARK"
+  ]
+}

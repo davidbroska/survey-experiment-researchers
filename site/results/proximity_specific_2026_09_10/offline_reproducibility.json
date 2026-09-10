@@ -1,0 +1,22 @@
+{
+  "byte_identical": true,
+  "network_disabled": true,
+  "artifacts_checked": 14,
+  "sha256": {
+    "queries/proximity_specific_2026_09_10/primary_plus_specific.txt": "85728f957fd5d4e2c3bcd49acdafd6354c084b9b90aaf23b599bfd3e2b1bf8cb",
+    "queries/proximity_specific_2026_09_10/specific_clause.txt": "f4e7a33c19aad269c795b56f0a359a8458e5c8ce6b751d85ba0945ed288da75c",
+    "results/proximity_specific_2026_09_10/article_set_differences.csv": "4f9f7502fef3fdd558725a86b9932ea26b611af8ec6166108e9d2d8e3e482d90",
+    "results/proximity_specific_2026_09_10/author_article_retrieval.csv": "6a1c5bfce0e73ed091114d90cdc5f5e2b12326173ee2353da010dcd5dd36b124",
+    "results/proximity_specific_2026_09_10/author_comparison.csv": "2e8ff76b2b2f4e78107864c862b61071d3e97b2cdc5c9a9bbda6fc05e007ac16",
+    "results/proximity_specific_2026_09_10/doi_identity_conflicts.csv": "2e29e9579b88920e6428791e8591c6eabbb56474dde99d768102b0fb2e8b4a55",
+    "results/proximity_specific_2026_09_10/exposed_benchmark_retention.csv": "5b33c9f24e7f6b9d747ae72573053a56c7a31c2e7db667e5af6e65c9acd04c63",
+    "results/proximity_specific_2026_09_10/exposed_benchmark_summary.csv": "ceb0afd51e9c1e846d18bd13b9ca5c195c0160673fc4012aee9b8d65ab734c84",
+    "results/proximity_specific_2026_09_10/global_set_comparison.json": "4c512d85d4b495946cd5f632b7898f6d6a014db4281e6e8bab17f11c5cc2137b",
+    "results/proximity_specific_2026_09_10/membership.csv": "65bf0f48d2db5d0b176a94ccc2655cd9585fc3b0ab672dced15d8a985cc55dd3",
+    "results/proximity_specific_2026_09_10/protocol.json": "c90d0689f0fca73701b6fba0dcf6b2a14888d7351512f6f0b0db2eb253786905",
+    "results/proximity_specific_2026_09_10/retrieval_comparison.csv": "d95e574bd5a6dca074cd89f1fece00d26741186aba93c78ed8f7d27302cad359",
+    "results/proximity_specific_2026_09_10/retrieval_counts.csv": "b5805c580503a84e9ecda9e8ea833d3eea01a325490b5964b2cd7aecc2e5fd73",
+    "results/proximity_specific_2026_09_10/retrieval_manifest.json": "eeb78caa99066cb3ee67923fc3ca494a26220b9fadd018b40a0b970551fb0a74"
+  },
+  "scope": "Post-benchmark development ablation only; original queries, sample and annotations unchanged."
+}

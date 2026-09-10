@@ -14,6 +14,14 @@
       "sha256": "feb77e1e22beb4fa6e77eca0e6e7674d5dd87fb4e3588e2d96648ee355a69e08"
     },
     {
+      "path": "FULLTEXT_BENCHMARK.html",
+      "sha256": "fe07e919dd598e93a179c992840faefa3a351816b73510ae4fbf34e3b23acfaa"
+    },
+    {
+      "path": "FULLTEXT_BENCHMARK.md",
+      "sha256": "75aef4644f01b0ae5d8eb8bdb39a4433abe69ddff5622bff2b003939d9235879"
+    },
+    {
       "path": "FULLTEXT_REVIEW.html",
       "sha256": "c377543aa0a3ac9c27a0fc3406afbfafe5512e5c8aae2e0a094f9476aae62117"
     },
@@ -44,6 +52,30 @@
     {
       "path": "PRIORITY_DOWNLOADS.md",
       "sha256": "d0746717c098947284dd23b597235db8cf1f0003d26923f3fbb7cd555a853855"
+    },
+    {
+      "path": "PROXIMITY_AUDIT.html",
+      "sha256": "b9eb339ac35cf3039c99dcf949c68a0d11f5b7d7ed6f8ee085bf1679f48e00f5"
+    },
+    {
+      "path": "PROXIMITY_AUDIT.md",
+      "sha256": "d114e3c40064523f5ddca47fa48e9a0089fc464c9acce4d361c72850a7d8c552"
+    },
+    {
+      "path": "PROXIMITY_METHODS.html",
+      "sha256": "3383825322d62a9e1b6938d08f33c0691bb6b4b479e3731519bbb6c3d2bf4c85"
+    },
+    {
+      "path": "PROXIMITY_METHODS.md",
+      "sha256": "f15ee96aa72653791802c4f5ae6ef27779bfd222dd97566c01f138f2abecf1b3"
+    },
+    {
+      "path": "PROXIMITY_SUMMARY.html",
+      "sha256": "5487a98681222e3cbfc49f87119d3829a69da7105ce19db93dc3d8d2ea10f0de"
+    },
+    {
+      "path": "PROXIMITY_SUMMARY.md",
+      "sha256": "696dd3ef733fb344837d803afa1710e115e81167405205c7732ac7e21dabe13a"
     },
     {
       "path": "QUERY_REPORT.html",
@@ -99,11 +131,11 @@
     },
     {
       "path": "TOP100.html",
-      "sha256": "498e32b435051d0100419cb4288d80337a5b06ac3f48c2adbba3e8a20970984c"
+      "sha256": "21daff6848730beeafad5944045a19a892a1a8968cae4e9862fd58727182f055"
     },
     {
       "path": "TOP40.html",
-      "sha256": "498e32b435051d0100419cb4288d80337a5b06ac3f48c2adbba3e8a20970984c"
+      "sha256": "21daff6848730beeafad5944045a19a892a1a8968cae4e9862fd58727182f055"
     },
     {
       "path": "YEAR_WINDOW_COMPARISON.html",
@@ -115,11 +147,35 @@
     },
     {
       "path": "index.html",
-      "sha256": "498e32b435051d0100419cb4288d80337a5b06ac3f48c2adbba3e8a20970984c"
+      "sha256": "21daff6848730beeafad5944045a19a892a1a8968cae4e9862fd58727182f055"
     },
     {
       "path": "queries/participant_guards_2026_09_10/revised.txt",
       "sha256": "17c3c638ae1f91db5c17e1825f6a652bd31c416419ecdf7ac491593fec09c4bb"
+    },
+    {
+      "path": "queries/proximity_audit_2026_09_10/grouped_clause.txt",
+      "sha256": "531ac072cd4de7769986cf74a4dae902f2e59a049566a2c5bc1f8a723e9d6bae"
+    },
+    {
+      "path": "queries/proximity_audit_2026_09_10/minimal.txt",
+      "sha256": "76e688b37ecc1eaf0f9b107b81e2f0e19aaf657f081318935ae690a2e3f5afe7"
+    },
+    {
+      "path": "queries/proximity_audit_2026_09_10/targeted.txt",
+      "sha256": "49d3106bdcdc612f7db95d6d146c6a71d5fc9105130de087cd6036025061a8fe"
+    },
+    {
+      "path": "queries/proximity_audit_2026_09_10/user_clause.txt",
+      "sha256": "c8157cc7c64d29d187539d375470337cbfa6acf0d64fbc5de7bce0f6b6dd79e3"
+    },
+    {
+      "path": "queries/proximity_specific_2026_09_10/primary_plus_specific.txt",
+      "sha256": "85728f957fd5d4e2c3bcd49acdafd6354c084b9b90aaf23b599bfd3e2b1bf8cb"
+    },
+    {
+      "path": "queries/proximity_specific_2026_09_10/specific_clause.txt",
+      "sha256": "f4e7a33c19aad269c795b56f0a359a8458e5c8ce6b751d85ba0945ed288da75c"
     },
     {
       "path": "queries/recommended.txt",
@@ -224,6 +280,150 @@
     {
       "path": "results/participant_guards_2026_09_10/summary.json",
       "sha256": "a775bded325154c41a794fa62a1e196a87c1ea3564cc26e39f21fa8b732628d8"
+    },
+    {
+      "path": "results/precision_benchmark_2026_09_10/article_consensus.csv",
+      "sha256": "869a63d2606c62f1f6b99e4c436bac2bcb6c349f4d1fd27bfc5535015914b278"
+    },
+    {
+      "path": "results/precision_benchmark_2026_09_10/availability_manifest.csv",
+      "sha256": "5e3c617018b0f5cc67b23f68c00a842e503ed0cb3a042195879215adbd8e5e5a"
+    },
+    {
+      "path": "results/precision_benchmark_2026_09_10/axis_annotations.csv",
+      "sha256": "7b09e4a8d0d2184825cec0ba9c2a945b141634f72c672dcecf82b7b0a7846bab"
+    },
+    {
+      "path": "results/precision_benchmark_2026_09_10/manual_download_queue.csv",
+      "sha256": "795ba707533b18a862dcc39ea70ac346c33388fac311a62900d3106c208f69b3"
+    },
+    {
+      "path": "results/precision_benchmark_2026_09_10/missing_label_bounds.csv",
+      "sha256": "b31e4f62fe31230624a6bdede1de7c08bba2262c50433e9666cbfd70b935b476"
+    },
+    {
+      "path": "results/precision_benchmark_2026_09_10/review_provenance.json",
+      "sha256": "5cd8c976c62d042208a466aea50409f2574dcdbbc1a126152aaa0bc5cd9484dd"
+    },
+    {
+      "path": "results/precision_benchmark_2026_09_10/review_schema.json",
+      "sha256": "583a3d2ee5b84aa5990cb9bfd4fd3b4b5818cb2ae2e86f2e73574042a247e49f"
+    },
+    {
+      "path": "results/precision_benchmark_2026_09_10/review_summary.json",
+      "sha256": "b8f659c2b12deb40d1efb37694a36853bb100ba184e6dadaa5f7818f4ad49af8"
+    },
+    {
+      "path": "results/precision_benchmark_2026_09_10/sample_manifest.json",
+      "sha256": "c152db0f6e501c91c6a9fc08779d8ee0d9d519cd81a1908eb13a45689e330e5c"
+    },
+    {
+      "path": "results/precision_benchmark_2026_09_10/stratum_summary.csv",
+      "sha256": "19cc8c227718c4e4af84055238deda2a800e40992f5dc039840b6b60d7ff3361"
+    },
+    {
+      "path": "results/precision_benchmark_2026_09_10/summary.json",
+      "sha256": "636cf297396912c67c37a87b7135949dcc4abfeb99afeb0e2bed5b5246a74ee9"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/author_article_retrieval.csv",
+      "sha256": "219e4e699e3c99e2bcafeba036adc81cd66ea35c626cc1dc8fcf27c75b00d739"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/author_byline_discrepancies.csv",
+      "sha256": "a950e7b635413eba7a66bda50e3dc3b90b3fccec1ef340bd95b1c6658a794c11"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/author_comparison.csv",
+      "sha256": "a15a6cc1d86e7ef5140e05853baf86b973ed684f76cb0677211683b8971744b5"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/author_fulltext_examples.csv",
+      "sha256": "6fdce044f4ad1ab978114c4088b96c076e44ba8c47a1bd0bc558b42222c472b7"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/author_identity_audit.csv",
+      "sha256": "cf9f3bb4b811af3bcf75cf20d746450c08f94c8c18485f0f2042a2df2d4411c2"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/fulltext_sample.csv",
+      "sha256": "9406ed7c7f8f0a10bf5ff609adbdbd3d9ade42051cc816c7c27c5d278651f9e1"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/fulltext_sample_manifest.json",
+      "sha256": "276fe771ced9fb2ef575ae52e87b3e14117139177f921b1f0f7ab6d9bb8d38a3"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/fulltext_sampling_strata.csv",
+      "sha256": "6e45cf311bad467c89602d7dfe33a6c4c94522188854cd200c485a58f7c98208"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/grouping_equivalence.json",
+      "sha256": "05c6eaa2b2a9bf9628d85cff3ce7f6a763034d48c0ce66efeac5e1ba189811be"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/protocol.json",
+      "sha256": "afaf0edc4e4c8213467797a0d22af687ce3de979a5a9736e661d06d8d969d245"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/report_provenance.json",
+      "sha256": "29424de85a2737497f61973b1c3f49ef11c8ec59ee12e4098afa6e7b40a83528"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/retrieval_comparison.csv",
+      "sha256": "3568dc8595b986e60acd49bcd87e371021a4db62e40f701c1b8fb91807b25ba7"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/retrieval_counts.csv",
+      "sha256": "28681fa799cce095376659938df09d1e37ae0b74ede8d3248220d71dda89a8ae"
+    },
+    {
+      "path": "results/proximity_audit_2026_09_10/retrieval_manifests.json",
+      "sha256": "ffd9273b39449e9ac23763cbedc0dba53ffd60baa417b8644080ff266aaec59d"
+    },
+    {
+      "path": "results/proximity_clause_semantics_2026_09_10/live_probes.csv",
+      "sha256": "05cdc12ce25a7c6649c5f1533340035c580a1cb4529ce2aa71f8dd111b42b327"
+    },
+    {
+      "path": "results/proximity_specific_2026_09_10/author_article_retrieval.csv",
+      "sha256": "6a1c5bfce0e73ed091114d90cdc5f5e2b12326173ee2353da010dcd5dd36b124"
+    },
+    {
+      "path": "results/proximity_specific_2026_09_10/author_comparison.csv",
+      "sha256": "2e8ff76b2b2f4e78107864c862b61071d3e97b2cdc5c9a9bbda6fc05e007ac16"
+    },
+    {
+      "path": "results/proximity_specific_2026_09_10/development_summary.md",
+      "sha256": "df8615336445a7a3839e229362446cdf61569346ec78bfd90b1211b3088f1a64"
+    },
+    {
+      "path": "results/proximity_specific_2026_09_10/exposed_benchmark_retention.csv",
+      "sha256": "5b33c9f24e7f6b9d747ae72573053a56c7a31c2e7db667e5af6e65c9acd04c63"
+    },
+    {
+      "path": "results/proximity_specific_2026_09_10/exposed_benchmark_summary.csv",
+      "sha256": "ceb0afd51e9c1e846d18bd13b9ca5c195c0160673fc4012aee9b8d65ab734c84"
+    },
+    {
+      "path": "results/proximity_specific_2026_09_10/global_set_comparison.json",
+      "sha256": "4c512d85d4b495946cd5f632b7898f6d6a014db4281e6e8bab17f11c5cc2137b"
+    },
+    {
+      "path": "results/proximity_specific_2026_09_10/offline_reproducibility.json",
+      "sha256": "697c795028ce0a2dd13d1d2b4f39b612dbd175440f2515fc62649d2eb0106974"
+    },
+    {
+      "path": "results/proximity_specific_2026_09_10/protocol.json",
+      "sha256": "c90d0689f0fca73701b6fba0dcf6b2a14888d7351512f6f0b0db2eb253786905"
+    },
+    {
+      "path": "results/proximity_specific_2026_09_10/retrieval_comparison.csv",
+      "sha256": "d95e574bd5a6dca074cd89f1fece00d26741186aba93c78ed8f7d27302cad359"
+    },
+    {
+      "path": "results/proximity_specific_2026_09_10/retrieval_counts.csv",
+      "sha256": "b5805c580503a84e9ecda9e8ea833d3eea01a325490b5964b2cd7aecc2e5fd73"
     },
     {
       "path": "results/query_revision_2026_09_10/changed_article_metadata.csv",
@@ -354,7 +554,7 @@
       "sha256": "aa44f2bce243664dfd80aa9f55eeefeaf93cc9c65642b74627fd06b186474ae5"
     }
   ],
-  "local_links_checked": 97,
+  "local_links_checked": 132,
   "private_files_included": false,
   "published": false
 }

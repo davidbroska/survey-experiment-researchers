@@ -9,7 +9,8 @@ from common import ROOT, digest, write_json
 
 REPORTS = ('EXECUTIVE_SUMMARY', 'SUPPORTING_INFORMATION', 'QUERY_REPORT',
            'GEOGRAPHY_REPORT', 'FULLTEXT_REVIEW', 'YEAR_WINDOW_COMPARISON', 'MANUAL_DOWNLOADS', 'PRIORITY_DOWNLOADS',
-           'QUERY_REVISION', 'SEARCH_STRATEGY', 'SEARCH_SUMMARY', 'SEARCH_METHODS')
+           'QUERY_REVISION', 'SEARCH_STRATEGY', 'SEARCH_SUMMARY', 'SEARCH_METHODS',
+           'PROXIMITY_AUDIT', 'PROXIMITY_METHODS', 'PROXIMITY_SUMMARY', 'FULLTEXT_BENCHMARK')
 CSV_FILES = ('top100_enriched', 'top100_provisional', 'top100_article_annotations',
              'top100_author_article_links', 'top100_cutoff_ties', 'fulltext_download_queue',
              'year_window_author_comparison', 'year_window_tie_comparison',
@@ -77,6 +78,28 @@ def build():
               ('protocol', 'retrieval_manifests', 'validation_sample_manifest',
                'validation_packet_provenance', 'validation_annotation_provenance',
                'validation_summary', 'report_provenance')]
+    files += [f'queries/proximity_audit_2026_09_10/{name}.txt' for name in
+              ('user_clause', 'grouped_clause', 'targeted', 'minimal')]
+    files += [f'results/proximity_audit_2026_09_10/{name}.csv' for name in
+              ('author_identity_audit', 'author_comparison', 'author_fulltext_examples',
+               'author_article_retrieval', 'author_byline_discrepancies', 'retrieval_counts',
+               'retrieval_comparison', 'fulltext_sample', 'fulltext_sampling_strata')]
+    files += [f'results/proximity_audit_2026_09_10/{name}.json' for name in
+              ('protocol', 'grouping_equivalence', 'retrieval_manifests', 'fulltext_sample_manifest', 'report_provenance')]
+    files += ['results/proximity_clause_semantics_2026_09_10/live_probes.csv']
+    files += [f'queries/proximity_specific_2026_09_10/{name}.txt' for name in
+              ('specific_clause', 'primary_plus_specific')]
+    files += [f'results/proximity_specific_2026_09_10/{name}.csv' for name in
+              ('retrieval_counts', 'retrieval_comparison', 'exposed_benchmark_retention',
+               'exposed_benchmark_summary', 'author_comparison', 'author_article_retrieval')]
+    files += [f'results/proximity_specific_2026_09_10/{name}.json' for name in
+              ('protocol', 'global_set_comparison', 'offline_reproducibility')]
+    files += ['results/proximity_specific_2026_09_10/development_summary.md']
+    files += [f'results/precision_benchmark_2026_09_10/{name}.csv' for name in
+              ('availability_manifest', 'manual_download_queue', 'article_consensus',
+               'axis_annotations', 'stratum_summary', 'missing_label_bounds')]
+    files += [f'results/precision_benchmark_2026_09_10/{name}.json' for name in
+              ('sample_manifest', 'review_schema', 'summary', 'review_summary', 'review_provenance')]
     for name in files:
         dest = site / name
         dest.parent.mkdir(parents=True, exist_ok=True)

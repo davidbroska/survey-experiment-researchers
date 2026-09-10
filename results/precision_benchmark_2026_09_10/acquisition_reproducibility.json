@@ -1,0 +1,17 @@
+{
+  "offline_reproduced": true,
+  "n_files": 10,
+  "hashes": {
+    "results/precision_benchmark_2026_09_10/availability_manifest.csv": "5e3c617018b0f5cc67b23f68c00a842e503ed0cb3a042195879215adbd8e5e5a",
+    "results/precision_benchmark_2026_09_10/manual_download_queue.csv": "795ba707533b18a862dcc39ea70ac346c33388fac311a62900d3106c208f69b3",
+    "results/precision_benchmark_2026_09_10/summary.json": "636cf297396912c67c37a87b7135949dcc4abfeb99afeb0e2bed5b5246a74ee9",
+    "results/precision_benchmark_2026_09_10/sample_manifest.json": "c152db0f6e501c91c6a9fc08779d8ee0d9d519cd81a1908eb13a45689e330e5c",
+    "results/precision_benchmark_2026_09_10/review_schema.json": "583a3d2ee5b84aa5990cb9bfd4fd3b4b5818cb2ae2e86f2e73574042a247e49f",
+    "results/precision_benchmark_2026_09_10/local_inventory.csv": "dd7ee6907f5c664f2d5dd88def98586e1029abb4602283431ab7308829470dd9",
+    "results/precision_benchmark_2026_09_10/local_inventory_summary.json": "28c809919b4caca87af2627a438fc6e161e5c0a5c1e1839c2c6963d630965390",
+    "private/precision_benchmark_2026_09_10/local_inventory.json": "9ae201e005f64c98f87d9ede78c9697d018d974a9277333b0412bb6d7e005382",
+    "private/precision_benchmark_2026_09_10/reviewer_packet.json": "ddf68387cc9a7a8c3313275865cb20510708a78ad04efee5c8b78cd260f95a4f",
+    "private/precision_benchmark_2026_09_10/review_template.json": "df5a697d5f3324f2e54ef918c8ae360e8ff2d16192ee0dfef5482be18b2cc15b"
+  },
+  "reviewer_packet_unchanged": true
+}

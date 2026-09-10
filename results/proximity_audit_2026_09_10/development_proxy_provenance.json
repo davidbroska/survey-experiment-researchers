@@ -1,0 +1,23 @@
+{
+  "sources": [
+    {
+      "file": "private/design_audit_2026_09_10/development_packet.json",
+      "sha256": "85bdef88bc499041986995e8fe56cf7e7f8a5755b7184aeda6a2bd4333709f6f"
+    },
+    {
+      "file": "results/design_audit_2026_09_10/development_annotations.csv",
+      "sha256": "5e4b8b5453dc73ab805f8d353147bf0d0da7ee2b624bf85c68b8a5f9492cc76f"
+    },
+    {
+      "file": "private/search_strategy_2026_09_10/validation_packet.json",
+      "sha256": "2a73627b04f09648f5e94cf1ef48cfebf572007dfb36b9ac30d3d6927a2ac5d6"
+    },
+    {
+      "file": "results/search_strategy_2026_09_10/validation_consensus.csv",
+      "sha256": "a7ffe3ce3225cb444087d82065b0bc33891005eb79da3922b1c0872c6978e670"
+    }
+  ],
+  "script_sha256": "19fbe5ec4efda4df9e9bd783377a86021ebdba6bf4ded3eea6ae0a530418cb3c",
+  "proximal_distance": "At most three intervening tokens; unordered; a local approximation, not Scopus emulation",
+  "limitations": "Only available title/abstract/author keywords; no indexed keywords, stopword handling or database stemming emulation. Both datasets are now exposed development material."
+}

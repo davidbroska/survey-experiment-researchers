@@ -1,0 +1,22 @@
+variant,design_label,exposed_articles,retrieved,not_retrieved,interpretation
+specific_clause,yes,13,7,6,Post-hoc exposed subset; not independent precision/recall
+specific_clause,no,5,0,5,Post-hoc exposed subset; not independent precision/recall
+specific_clause,unclear,0,0,0,Post-hoc exposed subset; not independent precision/recall
+grouped_clause,yes,13,8,5,Post-hoc exposed subset; not independent precision/recall
+grouped_clause,no,5,4,1,Post-hoc exposed subset; not independent precision/recall
+grouped_clause,unclear,0,0,0,Post-hoc exposed subset; not independent precision/recall
+previous_primary,yes,13,9,4,Post-hoc exposed subset; not independent precision/recall
+previous_primary,no,5,1,4,Post-hoc exposed subset; not independent precision/recall
+previous_primary,unclear,0,0,0,Post-hoc exposed subset; not independent precision/recall
+previous_candidate,yes,13,9,4,Post-hoc exposed subset; not independent precision/recall
+previous_candidate,no,5,1,4,Post-hoc exposed subset; not independent precision/recall
+previous_candidate,unclear,0,0,0,Post-hoc exposed subset; not independent precision/recall
+targeted,yes,13,13,0,Post-hoc exposed subset; not independent precision/recall
+targeted,no,5,5,0,Post-hoc exposed subset; not independent precision/recall
+targeted,unclear,0,0,0,Post-hoc exposed subset; not independent precision/recall
+primary_plus_specific,yes,13,12,1,Post-hoc exposed subset; not independent precision/recall
+primary_plus_specific,no,5,1,4,Post-hoc exposed subset; not independent precision/recall
+primary_plus_specific,unclear,0,0,0,Post-hoc exposed subset; not independent precision/recall
+broad_plus_specific,yes,13,12,1,Post-hoc exposed subset; not independent precision/recall
+broad_plus_specific,no,5,1,4,Post-hoc exposed subset; not independent precision/recall
+broad_plus_specific,unclear,0,0,0,Post-hoc exposed subset; not independent precision/recall

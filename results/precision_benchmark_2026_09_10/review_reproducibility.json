@@ -1,0 +1,13 @@
+{
+  "offline_reproduced": true,
+  "n_files": 6,
+  "hashes": {
+    "results/precision_benchmark_2026_09_10/article_consensus.csv": "869a63d2606c62f1f6b99e4c436bac2bcb6c349f4d1fd27bfc5535015914b278",
+    "results/precision_benchmark_2026_09_10/axis_annotations.csv": "7b09e4a8d0d2184825cec0ba9c2a945b141634f72c672dcecf82b7b0a7846bab",
+    "results/precision_benchmark_2026_09_10/stratum_summary.csv": "19cc8c227718c4e4af84055238deda2a800e40992f5dc039840b6b60d7ff3361",
+    "results/precision_benchmark_2026_09_10/missing_label_bounds.csv": "b31e4f62fe31230624a6bdede1de7c08bba2262c50433e9666cbfd70b935b476",
+    "results/precision_benchmark_2026_09_10/review_summary.json": "b8f659c2b12deb40d1efb37694a36853bb100ba184e6dadaa5f7818f4ad49af8",
+    "results/precision_benchmark_2026_09_10/review_provenance.json": "5cd8c976c62d042208a466aea50409f2574dcdbbc1a126152aaa0bc5cd9484dd"
+  },
+  "licensed_fulltext_not_published": true
+}

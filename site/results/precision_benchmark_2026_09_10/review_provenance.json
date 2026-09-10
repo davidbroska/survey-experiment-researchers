@@ -1,0 +1,79 @@
+{
+  "fixed_sample_sha256": "9406ed7c7f8f0a10bf5ff609adbdbd3d9ade42051cc816c7c27c5d278651f9e1",
+  "availability_manifest_sha256": "5e3c617018b0f5cc67b23f68c00a842e503ed0cb3a042195879215adbd8e5e5a",
+  "packet_sha256": "ddf68387cc9a7a8c3313275865cb20510708a78ad04efee5c8b78cd260f95a4f",
+  "coder_file_sha256": {
+    "A": "12dd957bc55d5fd01d09399590c85e325064211eeeea81934643fea4dbf91b7d",
+    "B": "b2a4285fe1f919ac1d81e1d1538b4ff0b94166c87242086c256bc2f1045dd313"
+  },
+  "validation": {
+    "A": {
+      "n_review_records": 18,
+      "n_completed": 18,
+      "n_ready_articles": 18,
+      "completed_benchmark_ids": [
+        "PB-08ea40a418",
+        "PB-19a90c6299",
+        "PB-1bee1aef9e",
+        "PB-2cc31f2ab9",
+        "PB-396787a099",
+        "PB-43bac74aa3",
+        "PB-5fbd9bef09",
+        "PB-743729223f",
+        "PB-8300fc0a59",
+        "PB-8d28263584",
+        "PB-8f958f6206",
+        "PB-9cddcb8385",
+        "PB-acc23bbbf5",
+        "PB-b408db3f9b",
+        "PB-b5f2d013bb",
+        "PB-d316230c47",
+        "PB-e2bb80618c",
+        "PB-ea209fb1fe"
+      ],
+      "design_counts": {
+        "no": 5,
+        "yes": 13
+      },
+      "source_hashes_and_page_spans_validated": true,
+      "reviews_sha256": "12dd957bc55d5fd01d09399590c85e325064211eeeea81934643fea4dbf91b7d",
+      "packet_sha256": "ddf68387cc9a7a8c3313275865cb20510708a78ad04efee5c8b78cd260f95a4f",
+      "design_independent_of_other_axes": true
+    },
+    "B": {
+      "n_review_records": 18,
+      "n_completed": 18,
+      "n_ready_articles": 18,
+      "completed_benchmark_ids": [
+        "PB-08ea40a418",
+        "PB-19a90c6299",
+        "PB-1bee1aef9e",
+        "PB-2cc31f2ab9",
+        "PB-396787a099",
+        "PB-43bac74aa3",
+        "PB-5fbd9bef09",
+        "PB-743729223f",
+        "PB-8300fc0a59",
+        "PB-8d28263584",
+        "PB-8f958f6206",
+        "PB-9cddcb8385",
+        "PB-acc23bbbf5",
+        "PB-b408db3f9b",
+        "PB-b5f2d013bb",
+        "PB-d316230c47",
+        "PB-e2bb80618c",
+        "PB-ea209fb1fe"
+      ],
+      "design_counts": {
+        "no": 5,
+        "yes": 13
+      },
+      "source_hashes_and_page_spans_validated": true,
+      "reviews_sha256": "b2a4285fe1f919ac1d81e1d1538b4ff0b94166c87242086c256bc2f1045dd313",
+      "packet_sha256": "ddf68387cc9a7a8c3313275865cb20510708a78ad04efee5c8b78cd260f95a4f",
+      "design_independent_of_other_axes": true
+    }
+  },
+  "no_private_evidence_quotes_published": true,
+  "human_validated": false
+}

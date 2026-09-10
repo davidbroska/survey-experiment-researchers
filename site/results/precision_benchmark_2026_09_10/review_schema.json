@@ -1,0 +1,64 @@
+{
+  "unit": "article; design=yes if at least one reported study qualifies",
+  "axes": {
+    "design": [
+      "yes",
+      "no",
+      "unclear"
+    ],
+    "new_data": [
+      "yes",
+      "no",
+      "unclear"
+    ],
+    "text_treatment": [
+      "yes",
+      "no",
+      "unclear"
+    ],
+    "parser_compatible": [
+      "yes",
+      "no",
+      "unclear"
+    ],
+    "geography": [
+      "US_explicit",
+      "US_inferred",
+      "non_US",
+      "mixed_includes_US",
+      "unclear"
+    ],
+    "data_possession": [
+      "yes",
+      "no",
+      "unclear"
+    ]
+  },
+  "evidence_fields_per_axis": [
+    "decision",
+    "document_sha256",
+    "pdf_page",
+    "evidence_quote",
+    "rationale"
+  ],
+  "pdf_page_convention": "1-based physical PDF page, not printed journal page",
+  "unassigned_value": "",
+  "optional_per_study_evidence": "studies array with study_id and the same evidence objects",
+  "interpretation": {
+    "design": "At least one human experiment varies communicated content or question presentation and measures respondents' judgments, attitudes, beliefs, intentions, preferences or comparable survey responses.",
+    "new_data": "Original collection or fielding, separate from secondary analysis; do not infer from design=yes.",
+    "text_treatment": "Written, reading, wording or vignette treatment; mixed modalities may include text.",
+    "parser_compatible": "Assess actual questionnaire structure separately; conjoint/discrete-choice profile combinations and adaptive conversations are incompatible.",
+    "geography": "Respondent location for eligible studies, distinguishing explicit US evidence, contextual inference, non-US and mixed samples.",
+    "data_possession": "Evidence that relevant raw respondent data and materials are available to the researchers; authorship alone does not establish possession."
+  },
+  "decision_rule": "Do not require every axis to be yes to classify design=yes. Unknown eligibility stays unclear. No original review labels are prefilled.",
+  "blinding": "Packets omit query routes, sampling strata, author metadata and prior annotations. Authors remain visible within original PDFs/text; author blinding is not claimed.",
+  "provenance_fields": [
+    "reviewer",
+    "reviewer_type",
+    "review_date",
+    "human_validated"
+  ],
+  "validation": "For each non-unclear decision cite the source PDF hash, an existing page and a short exact evidence span; unclear decisions require an explanatory rationale. AI-assisted judgments cannot be human_validated=true."
+}

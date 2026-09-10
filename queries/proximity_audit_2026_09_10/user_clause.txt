@@ -1,0 +1,6 @@
+(
+  (TITLE-ABS-KEY(experiment*)
+AND ABS((read W/3 vignette*) OR (read W/3 scenario*) OR (read W/3 passage*) OR (read W/3 message*) OR (read W/3 article*) OR (read W/3 news) OR (manipulat* W/3 vignette*) OR (manipulat* W/3 scenario*) OR (manipulat* W/3 message*) OR (manipulat* W/3 information) OR (manipulat* W/3 wording))
+AND ABS(survey* OR questionnaire* OR respondent* OR participant*))
+)
+AND SRCTYPE(j) AND DOCTYPE(ar) AND PUBYEAR > 2009 AND PUBYEAR < 2027

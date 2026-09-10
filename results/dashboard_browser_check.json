@@ -1,6 +1,6 @@
 {
   "browser": "Google Chrome via local CDP",
-  "html_sha256": "498e32b435051d0100419cb4288d80337a5b06ac3f48c2adbba3e8a20970984c",
+  "html_sha256": "21daff6848730beeafad5944045a19a892a1a8968cae4e9862fd58727182f055",
   "researcher_rows": 100,
   "columns_checked_both_directions": 12,
   "checks": [
@@ -33,7 +33,15 @@
     "coauthor and SI links",
     "search audit mobile overflow",
     "SI candidate query fidelity",
-    "SI mobile overflow"
+    "SI mobile overflow",
+    "proximity query and SI fidelity",
+    "proximity retrieval count",
+    "proximity mobile layout",
+    "all60 benchmark records",
+    "benchmark availability filters",
+    "benchmark filename copy",
+    "benchmark search",
+    "benchmark mobile layout"
   ],
   "uncaught_exceptions": 0
 }
