@@ -32,7 +32,8 @@ def main():
                          fulltext_fraction=verified / len(ids), reviewed=len(ids & set(reviews)),
                          metadata_yes=sum(predictions.get(k, {}).get('collection') == 'YES' for k in ids),
                          metadata_no=sum(predictions.get(k, {}).get('collection') == 'NO' for k in ids),
-                         metadata_unclear=sum(predictions.get(k, {}).get('collection') == 'UNCLEAR' for k in ids)))
+                         metadata_unclear=sum(predictions.get(k, {}).get('collection') == 'UNCLEAR' for k in ids),
+                         metadata_not_assessed=sum(k not in predictions for k in ids)))
     path = ROOT / 'coverage.csv'
     temporary = path.with_suffix('.csv.tmp')
     with temporary.open('w', newline='') as handle:

@@ -5,30 +5,44 @@ studies primarily designed as surveys have separate labels.
 
 [Findings](score/report.md) · [Review protocol](score/protocol.md) ·
 [Journal frame](score/journals.csv) · [Article list](score/articles.csv) ·
-[Current prompt](score/prompt_current.md) · [Verbatim original](score/prompt_original.md) ·
+[Revised prompt (untested)](score/prompt_proposed.md) · [Original + survey definition](score/prompt_current.md) ·
+[Verbatim original](score/prompt_original.md) ·
 [Tested candidate](score/prompt_revised.md) ·
 [Proposed edits](score/prompt_proposed_redline.md) · [Current access report](score/access_report.md) ·
-[Spreadsheet codebook](score/codebook.md)
+[Spreadsheet codebook](score/codebook.md) · [Replacement results](score/replacement_report.md) ·
+[Publisher access steps](score/systematic_access.md)
 
-The provisional screen is the original prompt plus the user's primary-survey
-definition, retaining collection YES and UNCLEAR. The tested candidate remains
-a research record and has not been adopted. Audit NO decisions before final
-exclusion. Session reviewers and contexts differed between versions; the
-comparison does not isolate wording effects or validate a future model.
+The latest revised prompt defines collection first and gives explicit instructions
+and JSON formats for each variable. It has passed internal review but has not
+been evaluated empirically. Existing decisions preserve their original criteria.
+The earlier tested candidate remains a historical result. Audit NO decisions before
+final exclusion. Session reviewers and contexts differed in the original comparison;
+that comparison does not isolate wording effects or validate a future model.
 
 The substantive AI source review is the primary, provisional assessment. RAs will verify a
 sample; no labels have yet been human verified. Metadata screening and source
 review are stored separately. Unavailable full text is unresolved, never a NO.
 This session uses agents and incurs no paid API annotation spending.
 
-The fixed 620 papers are the working validation collection. The local workbook
+The working validation collection has 620 journal/year cells. The user authorized
+replacing unavailable or corrupt articles with retrievable alternatives in the
+same cell, keeping the 380 articles already available. Candidates are tried in a
+fixed order within retrieval phases without topic or eligibility filters; later attempts
+prioritize open-access alternatives. Selection is conditional on access.
+Original sample files and comparisons are preserved separately. Replacement
+articles have no inherited decisions or historical evaluation assignments.
+The local workbook
 `private/score/SCORE_validation_620.xlsx` contains every article, grouped
 alphabetically by journal and ordered by year descending. Its `Column guide`
 sheet explains each column, its type, allowed values and missing-value meaning in order.
 The public codebook contains the same definitions and aggregate counts. Download availability, actual assessment
 basis, metadata decisions and completed source reviews remain distinct.
-New downloads retain metadata-based assessments until source review is completed.
+New downloads of original articles retain metadata-based assessments until source
+review is completed. Replacement articles without assessments have blank labels.
 The workbook includes private abstracts and evidence and is kept off GitHub.
+Available main texts may be PDFs, XML, or verified PMC article HTML. The workbook
+records source-version caveats; XML/HTML document segments are not physical pages,
+and linked figures or supplements may require separate retrieval.
 
 The folders are:
 
@@ -48,6 +62,7 @@ From this folder, rebuild derived outputs from the existing private reviews:
 ```bash
 python3 score/review.py
 python3 score/evaluate.py
+python3 score/replacement_report.py
 python3 score/coverage.py
 python3 score/workbook.py
 python3 score/dashboard.py
@@ -59,7 +74,10 @@ using only `python3 score/publish.py`. Full analysis requires the local private
 files. Screening judgments were made by session agents; the scripts do not call
 an LLM API or pretend to reproduce those judgments automatically.
 
-The sample is frozen. `score/sample.py export` reconstructs it from saved selections;
+The original draw is preserved in `score/articles_initial.csv`; its historical results
+continue to use that snapshot. `score/replace_sample.py` applies the privately staged
+replacement records after verifying the full texts and journal/year identities.
+The initial sampler refuses to overwrite an active replacement sample.
 `score/fetch_fulltext.py --help` describes retrieval retries. Existing entitled
 Scopus credentials are read from the environment or the parent project's `.env`.
 Do not publish credentials, full abstracts, PDFs, extracted text or the supplied

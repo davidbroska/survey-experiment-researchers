@@ -1,4 +1,4 @@
-"""Acquire the fixed SCORE sample without replacing inaccessible articles.
+"""Acquire main texts for the current SCORE articles; sample selection is separate.
 
 Run: python3 score/fetch_fulltext.py --workers 6
 Downloads and extracted text remain local; score/access.csv has status only.
@@ -38,6 +38,7 @@ NEXT_REQUEST = {}
 ACCESS = settings()
 UNPAYWALL_EMAIL = ACCESS.get('UNPAYWALL_EMAIL', '')
 SUPPORT = r'supplement|\.supp|appendi[xc]|osf\.io|aspredicted|10\.7910/|dataverse|zenodo|figshare|dryad|github\.com'
+PRIVATE_QUERY = r'^(code|state|expires|googleaccessid|view_only)$|key|token|signature|credential|authorization|email|x-amz-'
 
 
 def save_json(path, data):
@@ -66,6 +67,11 @@ def normalize(text):
     return ''.join(c for c in unicodedata.normalize('NFKD', text).casefold() if c.isalnum())
 
 
+def doi_key(text):
+    """DOI case is insignificant; punctuation inside the identifier is not."""
+    return text.strip().casefold().removeprefix('https://doi.org/').removeprefix('http://doi.org/').removeprefix('doi:').strip()
+
+
 def sha(data):
     return hashlib.sha256(data).hexdigest()
 
@@ -88,7 +94,7 @@ def safe_url(url):
     """Remove credentials and signed-download parameters from saved URLs."""
     parts = urlsplit(url)
     query = [(k, v) for k, v in parse_qsl(parts.query, keep_blank_values=True)
-             if not re.search(r'^(code|state|expires|googleaccessid)$|key|token|signature|credential|authorization|email|x-amz-', k, re.I)]
+             if not re.search(PRIVATE_QUERY, k, re.I)]
     return urlunsplit((parts.scheme, parts.netloc.rsplit('@', 1)[-1], parts.path, urlencode(query), ''))
 
 
@@ -154,7 +160,8 @@ def fetch(url, accept='application/pdf,text/html,application/xml;q=0.8', retry=F
         with gate:
             with LOCK:
                 # Pace actual request starts, including requests previously waiting for a slot.
-                interval = 10.1 if host == 'api.wiley.com' else 0.5 if host == 'api.unpaywall.org' else 0
+                interval = {'api.wiley.com': 10.1, 'api.unpaywall.org': 0.5,
+                            'api.ies.ed.gov': 1.0}.get(host, 0)
                 delay = max(0, NEXT_REQUEST.get(host, 0) - time.monotonic())
                 NEXT_REQUEST[host] = time.monotonic() + delay + interval
             if delay:
@@ -261,10 +268,78 @@ def xml_identity(tree, article):
             if e.tag.split('}')[-1] == 'doi' or
             (e.tag.split('}')[-1] == 'article-id' and e.get('pub-id-type') == 'doi') or
             (e.tag.split('}')[-1] == 'idno' and e.get('type', '').casefold() == 'doi')]
-    expected = normalize(article.get('doi', ''))
-    if dois and expected and not any(normalize(doi) == expected for doi in dois):
+    expected = doi_key(article.get('doi', ''))
+    if dois and expected and not any(doi_key(doi) == expected for doi in dois):
         return ''
     return identity([' '.join(title.itertext()) + ' ' + ' '.join(dois)], article)
+
+
+class PMCArticle(HTMLParser):
+    """Read only the main article, excluding navigation and executable elements."""
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.metadata, self.stack, self.parts, self.links = {}, [], [], []
+        self.roles, self.body_parts = [], []
+
+    def append_text(self, text):
+        if not self.stack or {'script','style','nav','button'}.intersection(self.stack): return
+        self.parts.append(text)
+        if (any('main-article-body' in role for role in self.roles) and
+                not any({'abstract','ref-list'}.intersection(role) for role in self.roles)):
+            self.body_parts.append(text)
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == 'meta' and attrs.get('name', '').startswith('citation_'):
+            self.metadata.setdefault(attrs['name'], attrs.get('content', ''))
+        if self.stack or tag == 'article':
+            if tag not in {'area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr'}:
+                self.stack.append(tag)
+                self.roles.append(set(attrs.get('class', '').split()))
+            if tag in {'p','div','section','li','tr','h1','h2','h3','h4','br'}:
+                self.append_text('\n')
+            if tag == 'a' and attrs.get('href'):
+                self.links.append(attrs['href'])
+
+    def handle_endtag(self, tag):
+        if tag in self.stack:
+            index = len(self.stack) - 1 - self.stack[::-1].index(tag)
+            self.stack = self.stack[:index]
+            self.roles = self.roles[:index]
+            self.append_text('\n')
+
+    def handle_data(self, data):
+        self.append_text(data)
+
+
+def pmc_document(data, article, url):
+    """An abstract or PDF challenge must never become an available main text."""
+    if urlsplit(url).hostname not in {'pmc.ncbi.nlm.nih.gov', 'www.ncbi.nlm.nih.gov'}:
+        return None, 'no_extractable_main_text'
+    if not re.fullmatch(r'/(?:pmc/)?articles/(?:PMC)?\d+/?', urlsplit(url).path, re.I):
+        return None, 'no_extractable_main_text'
+    page = PMCArticle()
+    page.feed(data.decode('utf-8', errors='replace'))
+    title, doi = page.metadata.get('citation_title', ''), page.metadata.get('citation_doi', '')
+    if doi and article.get('doi') and doi_key(doi) != doi_key(article['doi']):
+        return None, 'identity_unverified'
+    match = identity([title + ' ' + doi], article)
+    if not match: return None, 'identity_unverified'
+    text = re.sub(r'\n\s*\n+', '\n\n', ''.join(page.parts)).strip()
+    body = ''.join(page.body_parts)
+    if (re.search(r'online appendi(?:x|ces)|supplement(?:ary material| to)', text[:600], re.I) or
+            re.search(r'^\s*(?:online appendi(?:x|ces)|supplement(?:ary (?:material|information)| to))\b', body[:600], re.I)):
+        return None, 'supplement_not_main_article'
+    headings = {line.strip().casefold().rstrip(':') for line in text.splitlines()}
+    body_headings = {line.strip().casefold().rstrip(':') for line in body.splitlines()}
+    sections = body_headings & {'introduction','method','methods','results','discussion','conclusion','conclusions'}
+    if len(text) < 12000 or len(body) < 5000 or len(sections) < 2 or 'references' not in headings:
+        return None, 'identity_verified_completeness_needs_review'
+    version = 'PMC author manuscript; equivalence to the published version is unverified.' if re.search(
+        r'author manuscript|accepted manuscript', text[:1500], re.I) else 'PMC full article HTML; source version requires independent confirmation.'
+    version += ' Saved as one document segment, not physical pages. Images remain repository links; extracted text includes their captions.'
+    return {'pages': [text], 'format': 'html', 'identity_check': 'pmc_metadata_' + match,
+            'source_sha256': sha(data), 'version_note': version}, ''
 
 
 def document(data, article, url, existing_cache=''):
@@ -272,7 +347,9 @@ def document(data, article, url, existing_cache=''):
     barrier, evidence = page_barrier(data)
     if barrier:
         return None, barrier
-    pages, kind, xml_match = [], '', ''
+    if re.search(br'<html(?:\s|>)|<!doctype\s+html', data[:2000], re.I):
+        return pmc_document(data, article, url)
+    pages, kind, xml_match, xml_body = [], '', '', ''
     if data.lstrip().startswith(b'%PDF-'):
         kind = 'pdf'
         candidate = PRIVATE / 'candidates' / (article['article_id'] + '.pdf')
@@ -300,6 +377,7 @@ def document(data, article, url, existing_cache=''):
             bodies = sorted([e for e in tree.iter() if e.tag.split('}')[-1] == 'sections'],
                             key=lambda e: len(' '.join(e.itertext())), reverse=True)
         if bodies and len(' '.join(bodies[0].itertext())) > 2500:
+            xml_body = ' '.join(bodies[0].itertext())
             title = next((' '.join(e.itertext()) for e in tree.iter() if e.tag.split('}')[-1] == 'title'), '')
             # Keep acknowledgments, appendices and author contributions: they establish who collected data.
             articles = [e for e in tree.iter() if e.tag.split('}')[-1] in {'article', 'converted-article', 'simple-article', 'TEI'}
@@ -312,9 +390,15 @@ def document(data, article, url, existing_cache=''):
     match = xml_match if kind == 'xml' else identity(pages, article)
     if not match:
         return None, 'identity_unverified'
-    beginning = ' '.join(pages[:1])[:1000]
+    beginning = (xml_body if kind == 'xml' else ' '.join(pages[:1]))[:1000]
     if re.search(r'supplement|appendix', url, re.I) or re.search(r'online appendi(?:x|ces)|supplement(?:ary material| to)', beginning[:600], re.I):
         return None, 'supplement_not_main_article'
+    if kind == 'xml' and tree.tag.split('}')[-1] == 'TEI':
+        abstracts = [' '.join(e.itertext()) for e in tree.iter() if e.tag.split('}')[-1] == 'abstract']
+        if not any(len(text.strip()) >= 100 for text in abstracts):
+            # GROBID can attach the main paper's title to an appendix-only file.
+            # Such a source needs an independent completeness check before use.
+            return None, 'identity_verified_completeness_needs_review'
     text = '\n'.join(pages)
     sections = re.findall(r'\b(introduction|method|methods|results|discussion|conclusion|references)\b', text.casefold())
     if len(text) < 5000 or (kind == 'pdf' and len(text) < 12000 and len(set(sections)) < 2):
@@ -322,7 +406,7 @@ def document(data, article, url, existing_cache=''):
     return {'pages': pages, 'format': kind, 'identity_check': match, 'source_sha256': sha(data)}, ''
 
 
-def document_links(path):
+def document_links(path, source_url=''):
     """Read actual hyperlinks; PDF display text can wrap or truncate URLs."""
     path = Path(path)
     if path.suffix == '.pdf' and shutil.which('pdfinfo'):
@@ -335,6 +419,10 @@ def document_links(path):
     if path.suffix == '.xml':
         tree = ET.parse(path)
         return [v for e in tree.iter() for v in e.attrib.values() if v.startswith(('https://', 'http://'))]
+    if path.suffix == '.html':
+        page = PMCArticle(); page.feed(path.read_text(errors='replace'))
+        links = [urljoin(source_url, u) for u in page.links if not u.startswith('#')]
+        return [u for u in links if u.startswith(('https://', 'http://'))]
     return []
 
 
@@ -356,6 +444,21 @@ def discovery(articles, retry=False):
     return works
 
 
+def eric_sources(article):
+    """ERIC sometimes hosts author manuscripts absent from OA aggregators."""
+    url = 'https://api.ies.ed.gov/eric/?' + urlencode({
+        'search': 'title:"' + article['title'] + '"', 'format': 'json', 'rows': 20})
+    receipt, data = fetch(url, 'application/json')
+    receipt['route'] = 'eric_discovery'
+    try:
+        entries = json.loads(data)['response']['docs']
+    except (ValueError, KeyError, TypeError):
+        return receipt, []
+    ids = [r['id'] for r in entries if normalize(r.get('title', '')) == normalize(article['title'])
+           and re.fullmatch(r'E[DJ]\d+', r.get('id', ''))]
+    return receipt, ['https://files.eric.ed.gov/fulltext/' + article_id + '.pdf' for article_id in sorted(set(ids))]
+
+
 def retain_document(record, parsed, data, url):
     """Keep a verified source and extracted text in the private literature store."""
     article_id = record['article_id']
@@ -365,12 +468,14 @@ def retain_document(record, parsed, data, url):
     text_path = PRIVATE / 'texts' / (article_id + '.json')
     url = safe_url(url)
     save_json(text_path, {**parsed, 'article_id': article_id, 'source_url': url,
-        'note': 'XML text uses one document segment, not a physical page.' if parsed['format'] == 'xml' else ''})
+        'note': 'XML/HTML text uses one document segment, not a physical page.' if parsed['format'] in {'xml','html'} else ''})
     record.update(status='verified_fulltext', source_url=url, fulltext_path=str(destination),
                   text_cache=str(text_path), n_pages=len(parsed['pages']),
                   **{k: parsed[k] for k in ('format', 'identity_check', 'source_sha256')})
+    if parsed.get('version_note'):
+        record['version_note'] = parsed['version_note']
     links = re.findall(r'https?://[^\s<>"\)]+', '\n'.join(parsed['pages']))
-    links += document_links(destination)
+    links += document_links(destination, url)
     record['supporting_links'] = sorted(set(record.get('supporting_links', []) +
         [safe_url(u.rstrip('.,;')) for u in links if re.search(SUPPORT, u, re.I)]))
 
@@ -381,7 +486,7 @@ def retain_candidate(record, data, url, reason):
              'supplement_not_main_article': 'supplement_candidate'}
     if reason not in roles or not data:
         return
-    kind = 'pdf' if data.lstrip().startswith(b'%PDF-') else 'xml'
+    kind = 'pdf' if data.lstrip().startswith(b'%PDF-') else 'html' if re.search(br'<html(?:\s|>)|<!doctype\s+html', data[:2000], re.I) else 'xml'
     digest = sha(data)
     destination = LITERATURE / (record['article_id'] + '__' + roles[reason] + '_' + digest[:12] + '.' + kind)
     destination.parent.mkdir(parents=True, exist_ok=True)
@@ -393,7 +498,13 @@ def retain_candidate(record, data, url, reason):
         candidates.append(item)
 
 
-def acquire(article, works, retry=False):
+def route_key(url):
+    """Group equivalent publisher routes, while keeping different endpoints apart."""
+    parsed = urlsplit(url)
+    return (parsed.hostname or '') + '/'.join(parsed.path.split('/')[:3])
+
+
+def acquire(article, works, retry=False, blocked_routes=None):
     article = dict(article, article_id=article.get('scopus_id') or article['article_id'])
     article_id = article['article_id']
     path = PRIVATE / 'acquisition' / (article_id + '.json')
@@ -440,6 +551,7 @@ def acquire(article, works, retry=False):
             pmcid = re.search(r'PMC(\d+)|/pmc/articles/(\d+)', landing or '', re.I)
             if pmcid:
                 number = pmcid.group(1) or pmcid.group(2)
+                pending.append(('https://pmc.ncbi.nlm.nih.gov/articles/PMC' + number + '/', 'repository_main_html'))
                 pending.insert(0, ('https://www.ebi.ac.uk/europepmc/webservices/rest/PMC' + number + '/fullTextXML', 'repository_xml'))
     if article.get('pdf_url'):
         pending.insert(0, (article['pdf_url'], 'metadata_pdf'))
@@ -469,6 +581,13 @@ def acquire(article, works, retry=False):
         if url in seen:
             continue
         seen.add(url)
+        blocked = (blocked_routes or {}).get(route_key(url))
+        if blocked:
+            record['attempts'].append({'url': safe_url(url), 'route': route,
+                'document_check': 'not_retried_after_repeated_platform_barrier',
+                'previous_barrier': blocked['barrier'],
+                'reference_article_ids': blocked['article_ids']})
+            continue
         if 'onlinelibrary.wiley.com' in (urlsplit(url).hostname or ''):
             record['attempts'].append({'url': safe_url(url), 'route': route,
                 'document_check': 'use_wiley_tdm_api', 'failure_category': 'publisher_api_required'})
@@ -503,7 +622,7 @@ def access_problem(record):
     """Give an honest next step without treating every failure as a paywall."""
     candidates = record.get('candidate_documents', [])
     latest = {a.get('url'): a for a in record.get('attempts', [])
-              if a.get('route') not in {'unpaywall_discovery'} and
+              if not a.get('route', '').endswith('_discovery') and
               'api.crossref.org' not in a.get('url', '')}
     attempts = list(latest.values())
     category, action = 'no_usable_main_text', 'Locate a main article PDF through the DOI page or an institutional repository.'
@@ -565,7 +684,7 @@ def supporting(record, retry=False):
     if record.get('supporting_version') == 2 and not retry:
         return record
     if record.get('fulltext_path'):
-        record['supporting_links'] += [u for u in document_links(record['fulltext_path'])
+        record['supporting_links'] += [u for u in document_links(record['fulltext_path'], record.get('source_url', ''))
             if re.search(SUPPORT, u, re.I)]
     record['supporting_links'] = sorted(set(record['supporting_links']))
     documents = []

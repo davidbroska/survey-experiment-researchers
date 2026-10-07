@@ -1,85 +1,87 @@
-dimension,value,sampled,has_abstract,has_keywords,fulltext_verified,fulltext_not_verified,fulltext_fraction,reviewed,metadata_yes,metadata_no,metadata_unclear
-group,Business,120,119,107,61,59,0.5083333333333333,52,49,45,26
-group,Economics,110,108,44,70,40,0.6363636363636364,48,22,69,19
-group,Education,70,69,61,42,28,0.6,33,30,20,20
-group,Political Science,90,88,43,75,15,0.8333333333333334,58,37,38,15
-group,Psychology,150,148,135,94,56,0.6266666666666667,79,98,28,24
-group,Sociology,80,80,51,38,42,0.475,18,15,48,17
-journal,Academy of Management Journal,10,10,0,1,9,0.1,1,3,3,4
-journal,American Economic Journal: Applied Economics,10,10,2,3,7,0.3,1,5,5,0
-journal,American Economic Review,10,10,0,6,4,0.6,6,1,6,3
-journal,American Educational Research Journal,10,10,10,1,9,0.1,0,0,6,4
-journal,American Journal of Political Science,10,10,0,10,0,1.0,4,6,2,2
-journal,American Journal of Sociology,10,10,0,2,8,0.2,1,1,8,1
-journal,American Political Science Review,10,10,0,10,0,1.0,10,3,6,1
-journal,American Sociological Review,10,10,10,0,10,0.0,0,1,6,3
-journal,British Journal of Political Science,10,10,8,10,0,1.0,10,6,2,2
-journal,Child Development,10,10,0,10,0,1.0,2,5,2,3
-journal,Clinical Psychological Science,10,9,9,3,7,0.3,3,4,4,2
-journal,Cognition,10,10,10,10,0,1.0,10,10,0,0
-journal,Comparative Political Studies,10,10,10,4,6,0.4,3,1,7,2
-journal,Computers and Education,10,10,10,10,0,1.0,10,6,1,3
-journal,Contemporary Educational Psychology,10,10,10,10,0,1.0,10,6,0,4
-journal,Criminology,10,10,10,10,0,1.0,4,4,5,1
-journal,Demography,10,10,10,7,3,0.7,6,0,6,4
-journal,Econometrica,10,10,10,10,0,1.0,3,0,7,3
-journal,Educational Researcher,10,10,10,6,4,0.6,3,2,5,3
-journal,European Journal of Personality,10,10,10,8,2,0.8,4,6,2,2
-journal,European Sociological Review,10,10,0,4,6,0.4,3,1,6,3
-journal,Evolution and Human Behavior,10,9,9,10,0,1.0,10,5,3,2
-journal,Exceptional Children,10,10,2,5,5,0.5,0,3,4,3
-journal,Experimental Economics,10,10,10,10,0,1.0,10,10,0,0
-journal,Health Psychology,10,10,10,0,10,0.0,0,5,4,1
-journal,Journal of Applied Psychology,10,10,10,0,10,0.0,0,7,1,2
-journal,Journal of Business Research,10,10,10,10,0,1.0,10,2,1,7
-journal,Journal of Conflict Resolution,10,10,10,5,5,0.5,5,3,6,1
-journal,Journal of Consulting and Clinical Psychology,10,10,9,1,9,0.1,0,8,1,1
-journal,Journal of Consumer Research,10,10,10,0,10,0.0,0,6,3,1
-journal,Journal of Educational Psychology,10,10,10,0,10,0.0,0,6,3,1
-journal,Journal of Environmental Psychology,10,10,10,10,0,1.0,10,8,1,1
-journal,Journal of Experimental Political Science,10,8,9,10,0,1.0,10,8,0,2
-journal,Journal of Experimental Psychology: General,10,10,10,4,6,0.4,4,8,0,2
-journal,Journal of Experimental Social Psychology,10,10,10,10,0,1.0,10,9,1,0
-journal,Journal of Finance,10,9,0,10,0,1.0,1,1,9,0
-journal,Journal of Financial Economics,10,10,10,10,0,1.0,10,1,9,0
-journal,Journal of Labor Economics,10,9,0,1,9,0.1,1,0,5,5
-journal,Journal of Management,10,10,10,4,6,0.4,4,2,6,2
-journal,Journal of Marketing,10,10,10,2,8,0.2,2,5,5,0
-journal,Journal of Marketing Research,10,10,10,1,9,0.1,1,6,3,1
-journal,Journal of Marriage and Family,10,10,10,10,0,1.0,2,1,8,1
-journal,Journal of Organizational Behavior,10,10,10,10,0,1.0,1,7,2,1
-journal,Journal of Personality and Social Psychology,10,10,10,3,7,0.3,2,7,0,3
-journal,Journal of Political Economy,10,10,0,3,7,0.3,3,1,9,0
-journal,Journal of Public Administration Research and Theory,10,10,1,6,4,0.6,3,3,4,3
-journal,Journal of the Academy of Marketing Science,10,10,10,10,0,1.0,10,5,4,1
-journal,Law and Human Behavior,10,10,9,0,10,0.0,0,7,1,2
-journal,Leadership Quarterly,10,9,9,10,0,1.0,10,1,6,3
-journal,Learning and Instruction,10,9,9,10,0,1.0,10,7,1,2
-journal,Management Science,10,10,10,3,7,0.3,3,4,5,1
-journal,Organization Science,10,10,9,0,10,0.0,0,2,6,2
-journal,Organizational Behavior and Human Decision Processes,10,10,9,10,0,1.0,10,6,1,3
-journal,Psychological Medicine,10,10,10,10,0,1.0,10,7,1,2
-journal,Psychological Science,10,10,10,5,5,0.5,4,7,1,2
-journal,Public Administration Review,10,10,0,10,0,1.0,3,3,6,1
-journal,Quarterly Journal of Economics,10,10,0,4,6,0.4,3,1,6,3
-journal,Review of Financial Studies,10,10,2,3,7,0.3,0,0,10,0
-journal,Social Forces,10,10,2,5,5,0.5,2,0,8,2
-journal,Social Science and Medicine,10,10,8,10,0,1.0,10,2,7,1
-journal,World Development,10,10,10,10,0,1.0,10,2,3,5
-journal,World Politics,10,10,5,10,0,1.0,10,4,5,1
-metadata_collection,NO,248,245,152,137,111,0.5524193548387096,89,0,248,0
-metadata_collection,UNCLEAR,121,116,80,74,47,0.6115702479338843,55,0,0,121
-metadata_collection,YES,251,251,209,169,82,0.6733067729083665,144,251,0,0
-overall,All articles,620,612,441,380,240,0.6129032258064516,288,251,248,121
-split,development,496,491,352,308,188,0.6209677419354839,239,199,203,94
-split,holdout,124,121,89,72,52,0.5806451612903226,49,52,45,27
-year,2016,62,62,43,41,21,0.6612903225806451,29,26,28,8
-year,2017,62,61,42,35,27,0.5645161290322581,27,25,28,9
-year,2018,62,60,41,38,24,0.6129032258064516,30,22,24,16
-year,2019,62,62,45,36,26,0.5806451612903226,28,25,22,15
-year,2020,62,60,42,40,22,0.6451612903225806,30,25,24,13
-year,2021,62,59,44,39,23,0.6290322580645161,31,27,21,14
-year,2022,62,62,46,39,23,0.6290322580645161,31,26,22,14
-year,2023,62,62,45,37,25,0.5967741935483871,26,24,27,11
-year,2024,62,62,45,39,23,0.6290322580645161,28,25,29,8
-year,2025,62,62,48,36,26,0.5806451612903226,28,26,23,13
+dimension,value,sampled,has_abstract,has_keywords,fulltext_verified,fulltext_not_verified,fulltext_fraction,reviewed,metadata_yes,metadata_no,metadata_unclear,metadata_not_assessed
+group,Business,120,119,108,120,0,1.0,52,24,20,19,57
+group,Economics,110,109,43,110,0,1.0,48,17,41,14,38
+group,Education,70,69,61,70,0,1.0,33,29,9,15,17
+group,Political Science,90,88,43,90,0,1.0,58,35,29,11,15
+group,Psychology,150,149,135,150,0,1.0,79,78,22,15,35
+group,Sociology,80,79,52,80,0,1.0,18,11,28,9,32
+journal,Academy of Management Journal,10,10,0,10,0,1.0,1,0,0,1,9
+journal,American Economic Journal: Applied Economics,10,10,2,10,0,1.0,1,2,1,0,7
+journal,American Economic Review,10,10,0,10,0,1.0,6,0,3,3,4
+journal,American Educational Research Journal,10,10,10,10,0,1.0,0,0,1,1,8
+journal,American Journal of Political Science,10,10,0,10,0,1.0,4,6,2,2,0
+journal,American Journal of Sociology,10,10,0,10,0,1.0,1,1,1,1,7
+journal,American Political Science Review,10,10,0,10,0,1.0,10,3,6,1,0
+journal,American Sociological Review,10,10,10,10,0,1.0,0,1,2,0,7
+journal,British Journal of Political Science,10,10,8,10,0,1.0,10,6,2,2,0
+journal,Child Development,10,10,0,10,0,1.0,2,5,2,3,0
+journal,Clinical Psychological Science,10,10,10,10,0,1.0,3,3,1,1,5
+journal,Cognition,10,10,10,10,0,1.0,10,10,0,0,0
+journal,Comparative Political Studies,10,10,10,10,0,1.0,3,1,3,0,6
+journal,Computers and Education,10,10,10,10,0,1.0,10,6,1,3,0
+journal,Contemporary Educational Psychology,10,10,10,10,0,1.0,10,6,0,4,0
+journal,Criminology,10,10,10,10,0,1.0,4,4,5,1,0
+journal,Demography,10,10,10,10,0,1.0,6,0,6,3,1
+journal,Econometrica,10,10,10,10,0,1.0,3,0,7,3,0
+journal,Educational Researcher,10,10,10,10,0,1.0,3,2,2,2,4
+journal,European Journal of Personality,10,10,10,10,0,1.0,4,5,2,1,2
+journal,European Sociological Review,10,10,0,10,0,1.0,3,1,2,1,6
+journal,Evolution and Human Behavior,10,9,9,10,0,1.0,10,5,3,2,0
+journal,Exceptional Children,10,10,2,10,0,1.0,0,3,2,3,2
+journal,Experimental Economics,10,10,10,10,0,1.0,10,10,0,0,0
+journal,Health Psychology,10,10,10,10,0,1.0,0,2,2,0,6
+journal,Journal of Applied Psychology,10,10,10,10,0,1.0,0,3,1,1,5
+journal,Journal of Business Research,10,10,10,10,0,1.0,10,2,1,7,0
+journal,Journal of Conflict Resolution,10,10,10,10,0,1.0,5,2,3,0,5
+journal,Journal of Consulting and Clinical Psychology,10,10,9,10,0,1.0,0,6,1,0,3
+journal,Journal of Consumer Research,10,10,10,10,0,1.0,0,0,0,0,10
+journal,Journal of Educational Psychology,10,10,10,10,0,1.0,0,5,2,0,3
+journal,Journal of Environmental Psychology,10,10,10,10,0,1.0,10,8,1,1,0
+journal,Journal of Experimental Political Science,10,8,9,10,0,1.0,10,8,0,2,0
+journal,Journal of Experimental Psychology: General,10,10,9,10,0,1.0,4,5,0,1,4
+journal,Journal of Experimental Social Psychology,10,10,10,10,0,1.0,10,9,1,0,0
+journal,Journal of Finance,10,9,0,10,0,1.0,1,1,9,0,0
+journal,Journal of Financial Economics,10,10,10,10,0,1.0,10,1,9,0,0
+journal,Journal of Labor Economics,10,10,0,10,0,1.0,1,0,1,1,8
+journal,Journal of Management,10,10,10,10,0,1.0,4,1,2,2,5
+journal,Journal of Marketing,10,10,10,10,0,1.0,2,1,1,0,8
+journal,Journal of Marketing Research,10,10,10,10,0,1.0,1,0,1,0,9
+journal,Journal of Marriage and Family,10,10,10,10,0,1.0,2,1,8,1,0
+journal,Journal of Organizational Behavior,10,10,10,10,0,1.0,1,7,2,1,0
+journal,Journal of Personality and Social Psychology,10,10,10,10,0,1.0,2,3,0,1,6
+journal,Journal of Political Economy,10,10,0,10,0,1.0,3,0,3,0,7
+journal,Journal of Public Administration Research and Theory,10,10,1,10,0,1.0,3,2,2,2,4
+journal,Journal of the Academy of Marketing Science,10,10,10,10,0,1.0,10,5,4,1,0
+journal,Law and Human Behavior,10,10,10,10,0,1.0,0,3,0,0,7
+journal,Leadership Quarterly,10,9,9,10,0,1.0,10,1,6,3,0
+journal,Learning and Instruction,10,9,9,10,0,1.0,10,7,1,2,0
+journal,Management Science,10,10,10,10,0,1.0,3,1,1,1,7
+journal,Organization Science,10,10,10,10,0,1.0,0,0,1,0,9
+journal,Organizational Behavior and Human Decision Processes,10,10,9,10,0,1.0,10,6,1,3,0
+journal,Psychological Medicine,10,10,10,10,0,1.0,10,7,1,2,0
+journal,Psychological Science,10,10,10,10,0,1.0,4,5,0,1,4
+journal,Public Administration Review,10,10,0,10,0,1.0,3,3,6,1,0
+journal,Quarterly Journal of Economics,10,10,0,10,0,1.0,3,1,2,2,5
+journal,Review of Financial Studies,10,10,1,10,0,1.0,0,0,3,0,7
+journal,Social Forces,10,9,2,10,0,1.0,2,0,4,2,4
+journal,Social Science and Medicine,10,10,8,10,0,1.0,10,2,7,1,0
+journal,World Development,10,10,10,10,0,1.0,10,2,3,5,0
+journal,World Politics,10,10,5,10,0,1.0,10,4,5,1,0
+metadata_collection,NO,149,148,100,149,0,1.0,89,0,149,0,0
+metadata_collection,UNCLEAR,83,78,54,83,0,1.0,55,0,0,83,0
+metadata_collection,YES,194,194,162,194,0,1.0,144,194,0,0,0
+metadata_collection,not screened,194,193,126,194,0,1.0,0,0,0,0,194
+overall,All articles,620,613,442,620,0,1.0,288,194,149,83,194
+split,development,342,337,252,342,0,1.0,239,158,119,65,0
+split,holdout,84,83,64,84,0,1.0,49,36,30,18,0
+split,not_in_original_pilot,194,193,126,194,0,1.0,0,0,0,0,194
+year,2016,62,62,43,62,0,1.0,29,24,16,8,14
+year,2017,62,62,43,62,0,1.0,27,17,16,7,22
+year,2018,62,60,41,62,0,1.0,30,13,17,12,20
+year,2019,62,62,45,62,0,1.0,28,22,9,11,20
+year,2020,62,60,42,62,0,1.0,30,21,16,9,16
+year,2021,62,60,44,62,0,1.0,31,23,14,10,15
+year,2022,62,62,46,62,0,1.0,31,20,13,9,20
+year,2023,62,61,45,62,0,1.0,26,16,15,7,24
+year,2024,62,62,45,62,0,1.0,28,19,20,3,20
+year,2025,62,62,48,62,0,1.0,28,19,13,7,23

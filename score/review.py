@@ -4,11 +4,30 @@ Run this before evaluate.py and dashboard.py. Never infer labels from access sta
 """
 import csv
 from pathlib import Path
+import re
+from urllib.parse import parse_qsl, urlsplit
+from fetch_fulltext import PRIVATE_QUERY, safe_url
 
 ROOT = Path(__file__).resolve().parent.parent
 PRIVATE = ROOT / "private/score"
 BATCHES = ("initial", "business", "education", "remaining", "psychology",
            "root_extra", "holdout_business", "social", "holdout_social", "pmc_additions")
+
+
+def public_urls(value):
+    """Remove access queries without changing other links in a multi-URL field."""
+    def clean(match):
+        url = match.group()
+        parts = urlsplit(url)
+        private_query = any(re.search(PRIVATE_QUERY, key, re.I)
+            for key, _ in parse_qsl(parts.query, keep_blank_values=True))
+        private_fragment = any(re.search(PRIVATE_QUERY, key, re.I)
+            for key, _ in parse_qsl(parts.fragment, keep_blank_values=True))
+        if not (parts.username or parts.password or private_query or private_fragment):
+            return url
+        fragment = '#' + parts.fragment if parts.fragment and not private_fragment else ''
+        return safe_url(url) + fragment
+    return re.sub(r'https?://[^\s<>;]+', clean, value)
 
 
 def read_rows(path):
@@ -59,6 +78,8 @@ def main():
         public = {field: row.get(field, "") for field in public_fields}
         if not public["source_url"].startswith(("https://", "http://")):
             public["source_url"] = "https://doi.org/" + row["doi"]
+        for field in ("source_url", "supporting_resource_url"):
+            public[field] = public_urls(public[field])
         public_rows.append(public)
     write_rows(ROOT / "score/independent_review.csv", public_rows, public_fields)
     prediction_fields = ("article_id", "prompt_version", "collection", "experiment",

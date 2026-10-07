@@ -30,10 +30,13 @@ def main():
     references = {r["article_id"]: r for r in read_rows("independent_review.csv")}
     original = {r["article_id"]: r for r in read_rows("predictions_original.csv")}
     revised = {r["article_id"]: r for r in read_rows("predictions_revised.csv")}
+    replacements = read_rows("replacements.csv")
+    active_ids = {r['article_id'] for r in articles}
+    unassessed = len(active_ids - original.keys())
     available = sum(r.get("status") == "verified_fulltext" for r in access.values())
     evaluation_path = ROOT / "evaluation.json"
     evaluation = json.loads(evaluation_path.read_text()) if evaluation_path.exists() else {}
-    reviewed = evaluation.get("fulltext_reviews", 0)
+    reviewed = len(active_ids & references.keys())
     abstract_count = sum(str(r.get("has_abstract", "")).lower() in ("true", "1", "yes")
                          for r in articles)
     groups = Counter(r.get("group", "") for r in articles)
@@ -81,8 +84,10 @@ def main():
                       f"<p><a href='{text(reference['source_url'])}'>Source</a> · "
                       f"{text(reference.get('evidence_section'))}</p></details>")
         state = "Available" if state == "verified_fulltext" else "Access unresolved"
+        split = {'development': 'Original development', 'holdout': 'Original holdout',
+                 'not_in_original_pilot': 'Outside original pilot'}.get(row.get('split'), row.get('split'))
         article_rows.append(f"""<tr><td>{text(row.get('journal'))}</td>
-<td>{text(row.get('year'))}</td><td>{title}{detail}</td><td>{text(row.get('split'))}</td>
+<td>{text(row.get('year'))}</td><td>{title}{detail}</td><td>{text(split)}</td>
 <td>{text(state)}</td><td>{labels(original.get(article_id, {}))}</td>
 <td>{labels(revised.get(article_id, {}))}</td><td>{labels(reference)}</td></tr>""")
     html = f"""<!doctype html>
@@ -101,12 +106,16 @@ small{{color:#465c65}}nav{{display:flex;gap:20px;flex-wrap:wrap}}#papers td:firs
 <p>62 journals · One article per journal and year, 2016–2025 · No geographic restriction</p>
 <nav><a href="articles.csv">Article list</a><a href="journals.csv">Journal frame</a>
 <a href="coverage.csv">Coverage data</a>
-<a href="prompt_current.md">Current prompt</a><a href="prompt_original.md">Verbatim original</a>
+<a href="prompt_proposed.md">Revised prompt (untested)</a>
+<a href="prompt_current.md">Original + survey definition</a><a href="prompt_original.md">Verbatim original</a>
 <a href="prompt_revised.md">Tested candidate</a>
 <a href="protocol.md">Review protocol</a><a href="report.md">Findings</a>
 <a href="prompt_proposed_redline.md">Proposed prompt edits (untested)</a>
 <a href="access_report.md">Access report</a>
+<a href="replacement_report.md">Replacement results</a><a href="systematic_access.md">Publisher access steps</a>
 <a href="codebook.md">Spreadsheet codebook</a>
+{'<a href="replacements.csv">Sample replacements</a>' if replacements else ''}
+{'<a href="articles_initial.csv">Original article list</a>' if (ROOT / 'articles_initial.csv').exists() else ''}
 <a href="independent_review.csv">AI source reviews</a><a href="access.csv">Retrieval status</a>
 <a href="manual_downloads.csv">Download queue</a><a href="evaluation.json">Evaluation data</a>
 <a href="../archive/tess/DASHBOARD_NARROWER.html">TESS archive</a></nav>
@@ -120,17 +129,21 @@ small{{color:#465c65}}nav{{display:flex;gap:20px;flex-wrap:wrap}}#papers td:firs
 Experiments and surveys receive separate labels. Substantive AI source review supplies the primary, provisional reference assessment;
 missing access remains unresolved. Surveys include studies primarily designed as surveys and survey experiments;
 incidental questionnaires and clinical assessment scales are excluded. Human RAs will verify a sample of the AI reviews.</p>
-<p><strong>Provisional recommendation:</strong> Use the <a href="prompt_current.md">original prompt with the primary-survey definition</a>,
-retaining collection YES and UNCLEAR. The tested candidate is preserved as a research record and has not been adopted.
-Audit metadata NO decisions before using them as final exclusions. See the <a href="report.md">findings</a>.</p>
+<p><strong>Screening status:</strong> The <a href="prompt_proposed.md">latest revised prompt</a> defines each variable and its JSON format.
+It has received internal review but has not been evaluated on a new sample. Existing labels retain the original criteria;
+the earlier tested candidate remains a separate historical result. Audit metadata NO decisions before final exclusions.</p>
 <p>The broader study window is 2016–2026. The pilot uses ten completed publication years.
-Matching existing articles are retained; remaining journal–year slots are sampled from bibliographic records.
-Scopus supplies 618 records; Crossref supplies the two World Politics years absent from Scopus.
-The pilot is therefore not a fully random sample. TESS journals and United States restrictions do not define this frame.</p>
+The 380 articles available before the replacement pass are retained. In cells with unavailable, corrupt or misidentified main text,
+alternative articles are tried within the same journal and year, without topic or eligibility filters.
+A fixed candidate order is used within retrieval phases; later attempts prioritize open-access alternatives.
+{len(replacements)} replacements have been accepted. Selection is conditional on full-text access and is not a probability sample of all papers.
+Crossref supplies the two World Politics years absent from Scopus. TESS journals and United States restrictions do not define this frame.</p>
+<p>{unassessed} current articles have no metadata assessment yet. Replacement articles never inherit a displaced article's decisions or evaluation group.</p>
 <p>Main text is available for {available} of {len(articles)} articles, covering {available_journals} of 62 journals.
 Performance among reviewed papers cannot establish performance for the {len(articles) - reviewed} papers without source reviews.
 The <a href="coverage.csv">coverage table</a> separates availability by journal, year and metadata decision.</p>
-<h2>Prompt evaluation</h2>
+<h2>Historical prompt evaluation: original sample</h2>
+<p>These results concern the original 620 articles and their frozen predictions. They do not evaluate replacements or the latest proposed prompt.</p>
 <p>Retain both YES and UNCLEAR metadata decisions. Retention recall measures how many eligible reviewed articles survive that rule.
 Discard specificity measures how many ineligible reviewed articles receive NO. Unresolved full-text labels are excluded from binary denominators.
 Retained and UNCLEAR percentages use all predictions in that row, including articles without a reference review.
@@ -146,10 +159,10 @@ or validate a future model configuration. Both versions use the user's primary-s
 <p>{' · '.join(text(k)+': '+str(v) for k,v in sorted(groups.items()))}</p></details>
 <h2>Selected articles</h2><label for="filter">Filter by journal, year, title, split, or retrieval status</label><br>
 <p>Decision order: <strong>collection / experiment / survey</strong>. Reference labels come from provisional AI source review;
-a dash means unreviewed or not run. The tested candidate covers the 124 held-out articles. Open “Review reasoning” for the source assessment.</p>
+a dash means unreviewed or not run. The tested candidate covered 124 articles in the original sample. Open “Review reasoning” for the source assessment.</p>
 <input id="filter" type="search" placeholder="Search articles" autocomplete="off">
 <p id="count" aria-live="polite">{len(articles)} articles</p>
-<div class="scroll"><table id="papers"><thead><tr><th>Journal</th><th>Year</th><th>Article</th><th>Split</th><th>Full text</th><th>Original + survey definition</th><th>Tested candidate</th><th>AI reference</th></tr></thead>
+<div class="scroll"><table id="papers"><thead><tr><th>Journal</th><th>Year</th><th>Article</th><th>Original evaluation group</th><th>Full text</th><th>Original + survey definition</th><th>Tested candidate</th><th>AI reference</th></tr></thead>
 <tbody>{''.join(article_rows)}</tbody></table></div>
 <p><small>Full articles, complete abstracts, and private correspondence remain in the local research workspace.</small></p>
 </main><script>

@@ -297,6 +297,8 @@ def select(journal, year, local):
 
 
 def export():
+    if (PUBLIC / "replacements.csv").exists():
+        raise RuntimeError("The active sample has replacements; use replace_sample.py to rebuild it. The original draw is preserved in articles_initial.csv.")
     rows = [json.loads(p.read_text()) for p in sorted((PRIVATE / "selected").glob("*.json"))]
     for row in rows:
         row["article_id"] = row.get("scopus_id") or row["article_id"]
@@ -333,7 +335,9 @@ def main():
     if args.command == "audit":
         with ThreadPoolExecutor(max_workers=args.workers) as pool:
             rows = list(pool.map(audit, frame))
-        write_csv(PUBLIC / "journal_audit.csv", rows)
+        write_csv(PRIVATE / "journal_audit.csv", rows)
+        write_csv(PUBLIC / "journal_audit.csv", rows,
+            [field for field in rows[0] if field != "response_cache"])
         for row in rows:
             if not row["all_titles_match"]:
                 print("IDENTIFIER MISMATCH", row, flush=True)

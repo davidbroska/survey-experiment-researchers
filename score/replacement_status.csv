@@ -1,0 +1,241 @@
+journal_id,journal,year,old_article_id,status,new_article_id,candidates_attempted,alternatives,alternatives_untested,stop_reason
+J01,Academy of Management Journal,2025,105025554191,replacement_found,105025104950,6,37,31,verified_main_text_and_complete_metadata
+J01,Academy of Management Journal,2024,85203368238,replacement_found,85207438503,2,52,50,verified_main_text_and_complete_metadata
+J01,Academy of Management Journal,2023,85165736878,replacement_found,85151282946,4,61,57,verified_main_text_and_complete_metadata
+J01,Academy of Management Journal,2022,85129175877,replacement_found,85141272973,2,73,71,verified_main_text_and_complete_metadata
+J01,Academy of Management Journal,2021,85114886178,replacement_found,105012509854,3,70,67,verified_main_text_and_complete_metadata
+J01,Academy of Management Journal,2019,85064805006,replacement_found,85077240822,4,48,44,verified_main_text_and_complete_metadata
+J01,Academy of Management Journal,2018,85049836037,replacement_found,85042383989,2,81,79,verified_main_text_and_complete_metadata
+J01,Academy of Management Journal,2017,85029699854,replacement_found,85030466282,2,82,80,verified_main_text_and_complete_metadata
+J01,Academy of Management Journal,2016,84974822838,replacement_found,85007379649,4,72,68,verified_main_text_and_complete_metadata
+J35,American Economic Journal: Applied Economics,2025,105001197482,replacement_found,105001183449,4,39,35,verified_main_text_and_complete_metadata
+J35,American Economic Journal: Applied Economics,2022,85125070683,replacement_found,85125061320,3,58,55,verified_main_text_and_complete_metadata
+J35,American Economic Journal: Applied Economics,2021,85125068681,replacement_found,85118621818,3,37,34,verified_main_text_and_complete_metadata
+J35,American Economic Journal: Applied Economics,2020,85088842121,replacement_found,85078878427,4,42,38,verified_main_text_and_complete_metadata
+J35,American Economic Journal: Applied Economics,2019,85068110708,replacement_found,85068985445,1,45,44,verified_main_text_and_complete_metadata
+J35,American Economic Journal: Applied Economics,2018,85049192153,replacement_found,85041090691,4,45,41,verified_main_text_and_complete_metadata
+J35,American Economic Journal: Applied Economics,2016,84963726768,replacement_found,84953719515,1,36,35,verified_main_text_and_complete_metadata
+J36,American Economic Review,2025,86000523785,replacement_found,86000362103,4,119,115,verified_main_text_and_complete_metadata
+J36,American Economic Review,2024,86000758604,replacement_found,85185474899,6,106,100,verified_main_text_and_complete_metadata
+J36,American Economic Review,2023,85164317394,replacement_found,85163039779,4,82,78,verified_main_text_and_complete_metadata
+J36,American Economic Review,2019,85076024460,replacement_found,85063751582,1,81,80,verified_main_text_and_complete_metadata
+J13,American Educational Research Journal,2025,105002570150,replacement_found,105021882288,2,33,31,verified_main_text_and_complete_metadata
+J13,American Educational Research Journal,2024,85185928194,replacement_found,85195386741,4,34,30,verified_main_text_and_complete_metadata
+J13,American Educational Research Journal,2023,85153598685,replacement_found,85159115314,3,34,31,verified_main_text_and_complete_metadata
+J13,American Educational Research Journal,2022,85125665553,replacement_found,85115082977,6,34,28,verified_source
+J13,American Educational Research Journal,2021,85092593857,replacement_found,85087692195,2,35,33,verified_main_text_and_complete_metadata
+J13,American Educational Research Journal,2020,85081615356,replacement_found,85084860081,5,66,61,verified_main_text_and_complete_metadata
+J13,American Educational Research Journal,2019,85059682760,replacement_found,85059455540,9,72,63,verified_main_text_and_complete_metadata
+J13,American Educational Research Journal,2018,85041632859,replacement_found,85045036347,4,37,33,verified_main_text_and_complete_metadata
+J13,American Educational Research Journal,2017,85036528159,original_recovered,,7,51,44,original_main_text_recovered_without_replacement
+J55,American Journal of Sociology,2024,85188245857,replacement_found,85194894176,4,28,24,verified_main_text_and_complete_metadata
+J55,American Journal of Sociology,2023,85178888486,replacement_found,85178329628,1,35,34,verified_main_text_and_complete_metadata
+J55,American Journal of Sociology,2022,85126677663,replacement_found,85126681627,1,34,33,verified_main_text_and_complete_metadata
+J55,American Journal of Sociology,2021,85107636632,original_recovered,,4,33,29,original_main_text_recovered_without_replacement
+J55,American Journal of Sociology,2020,85097097573,replacement_found,85089734472,6,25,19,verified_main_text_and_complete_metadata
+J55,American Journal of Sociology,2019,85062722672,replacement_found,85062684616,3,29,26,verified_main_text_and_complete_metadata
+J55,American Journal of Sociology,2018,85047661576,replacement_found,85048260986,1,33,32,verified_main_text_and_complete_metadata
+J55,American Journal of Sociology,2017,85021713114,replacement_found,85028870859,3,35,32,verified_main_text_and_complete_metadata
+J56,American Sociological Review,2025,85214208692,original_recovered,,13,47,34,original_main_text_recovered_without_replacement
+J56,American Sociological Review,2024,85194934624,replacement_found,85189804718,2,36,34,verified_main_text_and_complete_metadata
+J56,American Sociological Review,2023,85176462448,replacement_found,85150867732,2,35,33,verified_main_text_and_complete_metadata
+J56,American Sociological Review,2022,85134620869,replacement_found,85141403925,7,36,29,verified_main_text_and_complete_metadata
+J56,American Sociological Review,2021,85100852124,replacement_found,85112858951,4,39,35,verified_main_text_and_complete_metadata
+J56,American Sociological Review,2020,85078743824,replacement_found,85083468966,5,37,32,verified_main_text_and_complete_metadata
+J56,American Sociological Review,2019,85074210557,replacement_found,85075052322,5,39,34,verified_main_text_and_complete_metadata
+J56,American Sociological Review,2018,85047483387,replacement_found,85047452166,7,41,34,verified_main_text_and_complete_metadata
+J56,American Sociological Review,2017,85026323692,original_recovered,,2,47,45,original_main_text_recovered_without_replacement
+J56,American Sociological Review,2016,84979997671,original_recovered,,12,48,36,original_main_text_recovered_without_replacement
+J21,Clinical Psychological Science,2025,105012277877,replacement_found,105004455067,1,68,67,verified_main_text_and_complete_metadata
+J21,Clinical Psychological Science,2024,85170839026,replacement_found,85163027876,2,66,64,verified_main_text_and_complete_metadata
+J21,Clinical Psychological Science,2023,85150432318,replacement_found,85146083158,1,72,71,verified_main_text_and_complete_metadata
+J21,Clinical Psychological Science,2022,85107637507,original_recovered,,1,55,54,original_main_text_recovered_without_replacement
+J21,Clinical Psychological Science,2019,85075127984,original_recovered,,12,79,67,original_main_text_recovered_without_replacement
+J21,Clinical Psychological Science,2018,85053311287,replacement_found,85046879179,7,59,52,verified_main_text_and_complete_metadata
+J21,Clinical Psychological Science,2017,85024089653,replacement_found,85016277843,5,73,68,verified_main_text_and_complete_metadata
+J49,Comparative Political Studies,2025,105002979767,replacement_found,105002974001,6,94,88,verified_main_text_and_complete_metadata
+J49,Comparative Political Studies,2021,85091061709,replacement_found,85092558614,4,79,75,verified_main_text_and_complete_metadata
+J49,Comparative Political Studies,2020,85070334220,replacement_found,85078074613,3,68,65,verified_main_text_and_complete_metadata
+J49,Comparative Political Studies,2019,85059619341,replacement_found,85059661266,4,67,63,verified_main_text_and_complete_metadata
+J49,Comparative Political Studies,2017,85028984905,replacement_found,85002410843,4,63,59,verified_main_text_and_complete_metadata
+J49,Comparative Political Studies,2016,84977564547,replacement_found,84991670836,1,62,61,verified_main_text_and_complete_metadata
+J57,Demography,2025,105014545124,original_recovered,,1,97,96,original_main_text_recovered_without_replacement
+J57,Demography,2024,85190176123,replacement_found,85184299075,1,90,89,verified_main_text_and_complete_metadata
+J57,Demography,2021,85114055491,original_recovered,,1,96,95,original_main_text_recovered_without_replacement
+J16,Educational Researcher,2025,105003188868,replacement_found,105001081943,5,40,35,verified_main_text_and_complete_metadata
+J16,Educational Researcher,2024,85186452943,replacement_found,85192608397,2,39,37,verified_main_text_and_complete_metadata
+J16,Educational Researcher,2023,85143631240,replacement_found,85150874531,2,53,51,verified_main_text_and_complete_metadata
+J16,Educational Researcher,2017,85038582228,replacement_found,85028649359,10,38,28,verified_source
+J23,European Journal of Personality,2023,85145408758,replacement_found,85147724343,1,42,41,verified_main_text_and_complete_metadata
+J23,European Journal of Personality,2022,85116640293,replacement_found,85136938788,4,48,44,verified_main_text_and_complete_metadata
+J58,European Sociological Review,2024,85173974617,replacement_found,85177832794,1,67,66,verified_main_text_and_complete_metadata
+J58,European Sociological Review,2021,85112395366,replacement_found,85140285765,2,58,56,verified_main_text_and_complete_metadata
+J58,European Sociological Review,2020,85084699025,replacement_found,85089502197,1,56,55,verified_main_text_and_complete_metadata
+J58,European Sociological Review,2019,85083990444,replacement_found,85064151100,1,50,49,verified_main_text_and_complete_metadata
+J58,European Sociological Review,2017,85016218828,replacement_found,85030616903,3,54,51,verified_main_text_and_complete_metadata
+J58,European Sociological Review,2016,84992316517,replacement_found,84992416994,4,50,46,verified_main_text_and_complete_metadata
+J17,Exceptional Children,2025,105001087073,replacement_found,85212278265,1,16,15,verified_main_text_and_complete_metadata
+J17,Exceptional Children,2022,85126000043,replacement_found,85128207286,4,21,17,verified_main_text_and_complete_metadata
+J17,Exceptional Children,2021,85106617011,original_recovered,,5,19,14,original_main_text_recovered_without_replacement
+J17,Exceptional Children,2018,85047438205,original_recovered,,4,22,18,original_main_text_recovered_without_replacement
+J17,Exceptional Children,2017,85032205600,original_recovered,,5,22,17,original_main_text_recovered_without_replacement
+J32,Health Psychology,2025,105004446929,replacement_found,105002593954,12,92,80,verified_main_text_and_complete_metadata
+J32,Health Psychology,2024,85195607073,original_recovered,,13,87,74,original_main_text_recovered_without_replacement
+J32,Health Psychology,2023,85170582459,replacement_found,85151864291,6,82,76,verified_main_text_and_complete_metadata
+J32,Health Psychology,2022,85125885187,replacement_found,85149625307,13,112,99,verified_source
+J32,Health Psychology,2021,85114918297,replacement_found,85121869038,13,99,86,verified_source
+J32,Health Psychology,2020,85091611602,original_recovered,,13,108,95,original_main_text_recovered_without_replacement
+J32,Health Psychology,2019,85065151575,original_recovered,,4,115,111,original_main_text_recovered_without_replacement
+J32,Health Psychology,2018,85046144408,original_recovered,,2,124,122,original_main_text_recovered_without_replacement
+J32,Health Psychology,2017,85016791183,replacement_found,85014675408,4,126,122,verified_main_text_and_complete_metadata
+J32,Health Psychology,2016,84996636526,replacement_found,84946434332,2,158,156,verified_main_text_and_complete_metadata
+J25,Journal of Applied Psychology,2025,105000392144,replacement_found,105000391098,3,54,51,verified_main_text_and_complete_metadata
+J25,Journal of Applied Psychology,2024,85195595396,replacement_found,85211581062,8,90,82,verified_main_text_and_complete_metadata
+J25,Journal of Applied Psychology,2023,85183375884,replacement_found,85183185776,4,83,79,verified_main_text_and_complete_metadata
+J25,Journal of Applied Psychology,2022,85123879387,original_recovered,,6,122,116,original_main_text_recovered_without_replacement
+J25,Journal of Applied Psychology,2021,85090309545,original_recovered,,5,161,156,original_main_text_recovered_without_replacement
+J25,Journal of Applied Psychology,2020,85075710100,original_recovered,,4,84,80,original_main_text_recovered_without_replacement
+J25,Journal of Applied Psychology,2019,85055128434,original_recovered,,6,80,74,original_main_text_recovered_without_replacement
+J25,Journal of Applied Psychology,2018,85037726668,replacement_found,85049007770,2,75,73,verified_main_text_and_complete_metadata
+J25,Journal of Applied Psychology,2017,85017115981,replacement_found,85029581651,4,107,103,verified_main_text_and_complete_metadata
+J25,Journal of Applied Psychology,2016,84958877330,original_recovered,,4,105,101,original_main_text_recovered_without_replacement
+J50,Journal of Conflict Resolution,2025,85201261913,replacement_found,85211146683,1,66,65,verified_main_text_and_complete_metadata
+J50,Journal of Conflict Resolution,2023,85138250666,replacement_found,85134579438,2,72,70,verified_main_text_and_complete_metadata
+J50,Journal of Conflict Resolution,2020,85077360242,replacement_found,85068854306,4,70,66,verified_main_text_and_complete_metadata
+J50,Journal of Conflict Resolution,2019,85052552201,replacement_found,85042078392,5,88,83,verified_main_text_and_complete_metadata
+J50,Journal of Conflict Resolution,2016,84984796627,replacement_found,84954561257,3,53,50,verified_main_text_and_complete_metadata
+J26,Journal of Consulting and Clinical Psychology,2025,105010177233,replacement_found,105005821326,8,63,55,verified_main_text_and_complete_metadata
+J26,Journal of Consulting and Clinical Psychology,2023,85147044113,replacement_found,85160456581,12,75,63,verified_main_text_and_complete_metadata
+J26,Journal of Consulting and Clinical Psychology,2022,85124623159,replacement_found,85140727199,1,73,72,verified_main_text_and_complete_metadata
+J26,Journal of Consulting and Clinical Psychology,2021,85125553622,original_recovered,,4,94,90,original_main_text_recovered_without_replacement
+J26,Journal of Consulting and Clinical Psychology,2020,85077368937,original_recovered,,10,79,69,original_main_text_recovered_without_replacement
+J26,Journal of Consulting and Clinical Psychology,2019,85059252944,original_recovered,,4,93,89,original_main_text_recovered_without_replacement
+J26,Journal of Consulting and Clinical Psychology,2018,85052143005,original_recovered,,13,89,76,original_main_text_recovered_without_replacement
+J26,Journal of Consulting and Clinical Psychology,2017,85019419644,original_recovered,,7,97,90,original_main_text_recovered_without_replacement
+J26,Journal of Consulting and Clinical Psychology,2016,84962767042,original_recovered,,7,100,93,original_main_text_recovered_without_replacement
+J08,Journal of Consumer Research,2025,105005288793,replacement_found,105001205733,4,56,52,verified_main_text_and_complete_metadata
+J08,Journal of Consumer Research,2024,85193453266,replacement_found,85193447895,3,72,69,verified_main_text_and_complete_metadata
+J08,Journal of Consumer Research,2023,85159084986,replacement_found,105018947226,2,56,54,verified_main_text_and_complete_metadata
+J08,Journal of Consumer Research,2022,85136465085,replacement_found,85136498533,2,48,46,verified_main_text_and_complete_metadata
+J08,Journal of Consumer Research,2021,85104119841,replacement_found,85140252379,3,57,54,verified_main_text_and_complete_metadata
+J08,Journal of Consumer Research,2020,85082489698,replacement_found,85078033732,4,36,32,verified_main_text_and_complete_metadata
+J08,Journal of Consumer Research,2019,85081103062,replacement_found,85059696197,2,64,62,verified_main_text_and_complete_metadata
+J08,Journal of Consumer Research,2018,85054802325,replacement_found,85044869974,4,56,52,verified_main_text_and_complete_metadata
+J08,Journal of Consumer Research,2017,85039734350,replacement_found,85026456724,4,64,60,verified_main_text_and_complete_metadata
+J08,Journal of Consumer Research,2016,84971668198,replacement_found,84978969375,4,58,54,verified_main_text_and_complete_metadata
+J18,Journal of Educational Psychology,2025,105026014185,original_recovered,,6,56,50,original_main_text_recovered_without_replacement
+J18,Journal of Educational Psychology,2024,85189334970,replacement_found,85205389736,5,74,69,verified_main_text_and_complete_metadata
+J18,Journal of Educational Psychology,2023,85181213737,original_recovered,,4,56,52,original_main_text_recovered_without_replacement
+J18,Journal of Educational Psychology,2022,85140772410,replacement_found,85119276460,3,101,98,verified_main_text_and_complete_metadata
+J18,Journal of Educational Psychology,2021,85119300911,original_recovered,,4,113,109,original_main_text_recovered_without_replacement
+J18,Journal of Educational Psychology,2020,85065675882,original_recovered,,4,108,104,original_main_text_recovered_without_replacement
+J18,Journal of Educational Psychology,2019,85078215910,original_recovered,,4,88,84,original_main_text_recovered_without_replacement
+J18,Journal of Educational Psychology,2018,85021753413,original_recovered,,4,69,65,original_main_text_recovered_without_replacement
+J18,Journal of Educational Psychology,2017,85000961913,replacement_found,84981719130,1,70,69,verified_main_text_and_complete_metadata
+J18,Journal of Educational Psychology,2016,84957650321,original_recovered,,4,66,62,original_main_text_recovered_without_replacement
+J28,Journal of Experimental Psychology: General,2025,105006802067,replacement_found,105023452818,11,167,156,verified_main_text_and_complete_metadata
+J28,Journal of Experimental Psychology: General,2020,85082721697,replacement_found,85068891006,10,169,159,verified_main_text_and_complete_metadata
+J28,Journal of Experimental Psychology: General,2019,85053284849,original_recovered,,3,137,134,original_main_text_recovered_without_replacement
+J28,Journal of Experimental Psychology: General,2018,85057892556,replacement_found,85051957497,4,111,107,verified_main_text_and_complete_metadata
+J28,Journal of Experimental Psychology: General,2017,85011026067,replacement_found,85041566197,6,117,111,verified_main_text_and_complete_metadata
+J28,Journal of Experimental Psychology: General,2016,84964766219,original_recovered,,4,119,115,original_main_text_recovered_without_replacement
+J41,Journal of Labor Economics,2025,105012965708,replacement_found,105013550176,2,47,45,verified_main_text_and_complete_metadata
+J41,Journal of Labor Economics,2024,85191227262,replacement_found,85202863989,4,49,45,verified_main_text_and_complete_metadata
+J41,Journal of Labor Economics,2023,85175037294,replacement_found,85175027786,2,40,38,verified_main_text_and_complete_metadata
+J41,Journal of Labor Economics,2022,85124813092,original_recovered,,3,40,37,original_main_text_recovered_without_replacement
+J41,Journal of Labor Economics,2021,85104416050,replacement_found,85112248634,5,48,43,verified_main_text_and_complete_metadata
+J41,Journal of Labor Economics,2020,85075738910,replacement_found,85075448018,3,31,28,verified_main_text_and_complete_metadata
+J41,Journal of Labor Economics,2019,85055247869,replacement_found,85055466464,4,48,44,verified_main_text_and_complete_metadata
+J41,Journal of Labor Economics,2018,85044131744,replacement_found,85050586954,5,36,31,verified_main_text_and_complete_metadata
+J41,Journal of Labor Economics,2017,85021732724,replacement_found,85021737467,1,36,35,verified_main_text_and_complete_metadata
+J03,Journal of Management,2025,105021876075,replacement_found,85195149221,2,99,97,verified_main_text_and_complete_metadata
+J03,Journal of Management,2024,85174856012,replacement_found,85174960599,1,82,81,verified_main_text_and_complete_metadata
+J03,Journal of Management,2023,85133569461,replacement_found,85133597291,2,71,69,verified_main_text_and_complete_metadata
+J03,Journal of Management,2021,85069802031,replacement_found,85096721306,4,69,65,verified_main_text_and_complete_metadata
+J03,Journal of Management,2019,85059352963,replacement_found,85053446221,10,105,95,verified_main_text_and_complete_metadata
+J03,Journal of Management,2017,85009487455,original_recovered,,6,89,83,original_main_text_recovered_without_replacement
+J09,Journal of Marketing,2025,86000783802,replacement_found,85201058566,3,55,52,verified_main_text_and_complete_metadata
+J09,Journal of Marketing,2024,85184416585,replacement_found,85185269088,3,45,42,verified_main_text_and_complete_metadata
+J09,Journal of Marketing,2023,85129312905,replacement_found,85141395672,6,46,40,verified_main_text_and_complete_metadata
+J09,Journal of Marketing,2022,85116001425,replacement_found,85116363679,3,50,47,verified_main_text_and_complete_metadata
+J09,Journal of Marketing,2021,85088042986,replacement_found,85105736382,4,54,50,verified_main_text_and_complete_metadata
+J09,Journal of Marketing,2018,85059771427,replacement_found,85045923001,3,51,48,verified_main_text_and_complete_metadata
+J09,Journal of Marketing,2017,85033453487,replacement_found,85012920906,7,46,39,verified_main_text_and_complete_metadata
+J09,Journal of Marketing,2016,84994844627,replacement_found,84973917894,7,35,28,verified_main_text_and_complete_metadata
+J10,Journal of Marketing Research,2025,105019547020,replacement_found,85210583128,4,60,56,verified_main_text_and_complete_metadata
+J10,Journal of Marketing Research,2024,85196254925,replacement_found,85181478411,2,58,56,verified_main_text_and_complete_metadata
+J10,Journal of Marketing Research,2023,85161055864,replacement_found,85150929779,4,58,54,verified_main_text_and_complete_metadata
+J10,Journal of Marketing Research,2022,85128452984,replacement_found,85126628630,3,62,59,verified_main_text_and_complete_metadata
+J10,Journal of Marketing Research,2021,85105439697,replacement_found,85109420024,4,58,54,verified_main_text_and_complete_metadata
+J10,Journal of Marketing Research,2020,85083775477,replacement_found,85083800979,2,57,55,verified_main_text_and_complete_metadata
+J10,Journal of Marketing Research,2019,85079506558,replacement_found,85079560224,2,59,57,verified_main_text_and_complete_metadata
+J10,Journal of Marketing Research,2018,85071592256,replacement_found,85049551987,5,55,50,verified_main_text_and_complete_metadata
+J10,Journal of Marketing Research,2017,85016198431,replacement_found,85041279634,5,60,55,verified_main_text_and_complete_metadata
+J30,Journal of Personality and Social Psychology,2025,105000327046,replacement_found,105004382280,12,109,97,verified_main_text_and_complete_metadata
+J30,Journal of Personality and Social Psychology,2023,85183393084,replacement_found,85158872907,7,101,94,verified_main_text_and_complete_metadata
+J30,Journal of Personality and Social Psychology,2020,85079499421,original_recovered,,1,140,139,original_main_text_recovered_without_replacement
+J30,Journal of Personality and Social Psychology,2019,85049052968,replacement_found,85054801786,1,112,111,verified_main_text_and_complete_metadata
+J30,Journal of Personality and Social Psychology,2018,85050498510,replacement_found,85050494156,2,104,102,verified_main_text_and_complete_metadata
+J30,Journal of Personality and Social Psychology,2017,85008466055,replacement_found,85036536195,3,95,92,verified_main_text_and_complete_metadata
+J30,Journal of Personality and Social Psychology,2016,84978069387,replacement_found,84955243799,1,104,103,verified_main_text_and_complete_metadata
+J42,Journal of Political Economy,2025,105016122277,replacement_found,105011141122,3,89,86,verified_main_text_and_complete_metadata
+J42,Journal of Political Economy,2024,85197183097,replacement_found,85204208583,1,93,92,verified_main_text_and_complete_metadata
+J42,Journal of Political Economy,2022,85119289478,replacement_found,85123834851,4,70,66,verified_main_text_and_complete_metadata
+J42,Journal of Political Economy,2019,85063995711,replacement_found,85069930527,1,67,66,verified_main_text_and_complete_metadata
+J42,Journal of Political Economy,2018,85043788570,replacement_found,85056573749,5,66,61,verified_main_text_and_complete_metadata
+J42,Journal of Political Economy,2017,85010000255,replacement_found,85019912592,3,45,42,verified_main_text_and_complete_metadata
+J42,Journal of Political Economy,2016,84969835224,replacement_found,84969835266,3,38,35,verified_main_text_and_complete_metadata
+J53,Journal of Public Administration Research and Theory,2022,85132790153,replacement_found,85131426088,11,44,33,verified_main_text_and_complete_metadata
+J53,Journal of Public Administration Research and Theory,2021,85127203151,replacement_found,85115853028,4,43,39,verified_main_text_and_complete_metadata
+J53,Journal of Public Administration Research and Theory,2020,85092704586,replacement_found,85074760282,1,33,32,verified_main_text_and_complete_metadata
+J53,Journal of Public Administration Research and Theory,2018,85048552230,replacement_found,85044157457,1,27,26,verified_main_text_and_complete_metadata
+J62,Law and Human Behavior,2025,105013819893,replacement_found,105021029145,5,37,32,verified_main_text_and_complete_metadata
+J62,Law and Human Behavior,2024,85190488028,original_recovered,,13,38,25,original_main_text_recovered_without_replacement
+J62,Law and Human Behavior,2023,85150666286,replacement_found,85152410500,13,43,30,verified_source
+J62,Law and Human Behavior,2022,85135565816,replacement_found,85130590942,11,32,21,verified_main_text_and_complete_metadata
+J62,Law and Human Behavior,2021,85119175043,original_recovered,,12,37,25,original_main_text_recovered_without_replacement
+J62,Law and Human Behavior,2020,85094145365,replacement_found,85100080978,4,34,30,verified_main_text_and_complete_metadata
+J62,Law and Human Behavior,2019,85064560562,replacement_found,85053506571,3,40,37,verified_main_text_and_complete_metadata
+J62,Law and Human Behavior,2018,85042231531,replacement_found,85054259821,1,41,40,verified_main_text_and_complete_metadata
+J62,Law and Human Behavior,2017,85012202652,replacement_found,85007228158,9,46,37,verified_main_text_and_complete_metadata
+J62,Law and Human Behavior,2016,84956577499,original_recovered,,4,49,45,original_main_text_recovered_without_replacement
+J05,Management Science,2025,85217977510,replacement_found,86000140118,4,463,459,verified_main_text_and_complete_metadata
+J05,Management Science,2024,85203082702,replacement_found,85178880932,4,455,451,verified_main_text_and_complete_metadata
+J05,Management Science,2022,85132193036,replacement_found,85144492312,1,435,434,verified_main_text_and_complete_metadata
+J05,Management Science,2020,85094825536,replacement_found,85084925765,7,284,277,verified_main_text_and_complete_metadata
+J05,Management Science,2019,85061188012,replacement_found,85070472683,3,301,298,verified_main_text_and_complete_metadata
+J05,Management Science,2018,85047150197,replacement_found,85031826118,2,301,299,verified_main_text_and_complete_metadata
+J05,Management Science,2017,85032586323,replacement_found,85032566551,4,228,224,verified_main_text_and_complete_metadata
+J06,Organization Science,2025,105026188849,replacement_found,105020038390,2,107,105,verified_main_text_and_complete_metadata
+J06,Organization Science,2024,85207860885,replacement_found,85190994134,4,102,98,verified_main_text_and_complete_metadata
+J06,Organization Science,2023,85151983806,replacement_found,85181021553,4,102,98,verified_main_text_and_complete_metadata
+J06,Organization Science,2022,85129326244,replacement_found,85110741591,7,103,96,verified_main_text_and_complete_metadata
+J06,Organization Science,2021,85110499749,replacement_found,85101399235,2,66,64,verified_main_text_and_complete_metadata
+J06,Organization Science,2020,85092240586,original_recovered,,13,75,62,original_main_text_recovered_without_replacement
+J06,Organization Science,2019,85071333254,replacement_found,85084860862,4,78,74,verified_main_text_and_complete_metadata
+J06,Organization Science,2018,85043375860,replacement_found,85048108756,4,50,46,verified_main_text_and_complete_metadata
+J06,Organization Science,2017,85039752966,replacement_found,85020549357,6,60,54,verified_main_text_and_complete_metadata
+J06,Organization Science,2016,85009420709,replacement_found,84982833822,5,83,78,verified_main_text_and_complete_metadata
+J31,Psychological Science,2023,85141021460,replacement_found,85162664173,2,88,86,verified_main_text_and_complete_metadata
+J31,Psychological Science,2022,85133906582,replacement_found,85124714025,4,145,141,verified_main_text_and_complete_metadata
+J31,Psychological Science,2018,85049046868,replacement_found,85043700102,4,164,160,verified_main_text_and_complete_metadata
+J31,Psychological Science,2017,85019183029,replacement_found,85009458347,2,158,156,verified_main_text_and_complete_metadata
+J31,Psychological Science,2016,84966703846,original_recovered,,4,153,149,original_main_text_recovered_without_replacement
+J43,Quarterly Journal of Economics,2024,85182379752,original_recovered,,6,46,40,original_main_text_recovered_without_replacement
+J43,Quarterly Journal of Economics,2023,85164359693,replacement_found,85164304864,4,45,41,verified_main_text_and_complete_metadata
+J43,Quarterly Journal of Economics,2021,85100301573,replacement_found,85100299389,1,37,36,verified_main_text_and_complete_metadata
+J43,Quarterly Journal of Economics,2019,85063530686,replacement_found,85072233273,1,35,34,verified_main_text_and_complete_metadata
+J43,Quarterly Journal of Economics,2017,85017352278,replacement_found,85017357573,2,39,37,verified_main_text_and_complete_metadata
+J43,Quarterly Journal of Economics,2016,84960330813,replacement_found,84997585966,1,39,38,verified_main_text_and_complete_metadata
+J44,Review of Financial Studies,2024,85180569574,replacement_found,85204621262,2,82,80,verified_main_text_and_complete_metadata
+J44,Review of Financial Studies,2023,85163648473,replacement_found,85163399499,4,75,71,verified_main_text_and_complete_metadata
+J44,Review of Financial Studies,2022,85127333500,replacement_found,85144082387,1,91,90,verified_main_text_and_complete_metadata
+J44,Review of Financial Studies,2020,85089399390,replacement_found,85097828501,4,86,82,verified_main_text_and_complete_metadata
+J44,Review of Financial Studies,2019,85066954529,replacement_found,85076716034,2,108,106,verified_main_text_and_complete_metadata
+J44,Review of Financial Studies,2017,85027014860,replacement_found,85020639381,3,86,83,verified_main_text_and_complete_metadata
+J44,Review of Financial Studies,2016,84959908541,replacement_found,84966473178,1,31,30,verified_main_text_and_complete_metadata
+J60,Social Forces,2023,85166424093,replacement_found,85160261071,2,69,67,verified_main_text_and_complete_metadata
+J60,Social Forces,2021,85113743631,original_recovered,,2,55,53,original_main_text_recovered_without_replacement
+J60,Social Forces,2020,85090143580,replacement_found,85142678055,2,47,45,verified_main_text_and_complete_metadata
+J60,Social Forces,2018,85048125432,replacement_found,85048068104,1,61,60,verified_main_text_and_complete_metadata
+J60,Social Forces,2016,84975044355,replacement_found,84959901135,2,65,63,verified_main_text_and_complete_metadata

@@ -21,20 +21,20 @@ CRITERIA = 'Frozen 2026-10-07 pilot: original collection rules + primary-survey 
 COLUMNS = [
     ('article_id', 'Article ID', 'Stable Scopus ID, or a Crossref-derived ID for the two World Politics records.', 18),
     ('journal', 'Journal', 'SCORE journal name; rows are alphabetized by journal.', 33),
-    ('year', 'Year', 'Publication year; ordered 2025 down to 2016 within each journal.', 9),
+    ('year', 'Year', 'Scopus publication year, or Crossref issue year for the two World Politics fallback records; may precede the final issue year. Ordered 2025 down to 2016 within each journal.', 9),
     ('title', 'Article title', 'Complete bibliographic article title.', 62),
     ('doi', 'DOI', 'Article DOI; click to open its publisher landing page.', 30),
     ('authors', 'Authors', 'Complete author list supplied by the bibliographic source.', 45),
     ('available', 'Verified local full text', 'YES only if the acquisition record is verified and its local document exists with the recorded SHA-256.', 18),
-    ('format', 'Full-text format', 'PDF or XML for verified local main text; blank when unavailable.', 15),
+    ('format', 'Full-text format', 'PDF, XML, or HTML for verified local main text; blank when unavailable. XML and HTML extraction segments are not physical PDF pages.', 15),
     ('a_version_note', 'Available source version / caveat', 'Explicit manuscript/version notes recorded from the available source. Version not separately recorded means no version assessment was saved; availability does not establish equivalence to the final published article.', 60),
     ('local_file', 'Open local full text', 'Local main-document path and hyperlink; works on the research computer.', 45),
-    ('basis', 'Assessment basis', 'Full-text review; Metadata only; or Metadata only — full text awaiting review. Downloading a file never establishes review.', 38),
+    ('basis', 'Assessment basis', 'Full-text review; Metadata only; Metadata only — full text awaiting review; or Not assessed. Downloading a file never establishes review.', 38),
     ('collection', 'Collection — best available', 'Completed source-review label when available; otherwise frozen original metadata label. Missing full text never becomes NO.', 21),
     ('experiment', 'Experiment — best available', 'Eligible researcher-imposed variation, using the same assessment source as collection.', 22),
     ('survey', 'Survey — best available', 'Eligible primary questionnaire survey, including survey experiments and diary surveys; incidental scales do not qualify.', 21),
     ('human_verified', 'Best assessment human verified', 'TRUE only when the selected source review explicitly records human verification; AI assessments are FALSE.', 21),
-    ('criteria', 'Assessment criteria', 'Frozen pilot rules. Later policy proposals and untested revisions have not been applied retrospectively.', 45),
+    ('criteria', 'Assessment criteria', 'Frozen pilot rules for existing labels; Not assessed for articles without a decision. Later policy proposals have not been applied retrospectively.', 45),
     ('m_collection', 'Metadata collection', 'Frozen original assessment using the fields recorded in Metadata input fields; retained even when source review differs.', 20),
     ('m_experiment', 'Metadata experiment', 'Frozen original eligible-experiment assessment.', 20),
     ('m_survey', 'Metadata survey', 'Frozen original primary-survey assessment under the user’s survey definition.', 20),
@@ -75,7 +75,7 @@ COLUMNS = [
     ('a_source_url', 'Acquired source URL', 'Online location of the latest verified main text or recorded acquisition result.', 45),
     ('a_source_sha256', 'Acquired document SHA-256', 'Fingerprint checked against the current local main document.', 40),
     ('a_text_cache', 'Current extracted text', 'Local cache for searching the current main text; a cache does not mean it was reviewed.', 45),
-    ('split', 'Frozen evaluation split', 'Historical development/holdout assignment from the first pilot; not an untouched test for the later proposed prompt. New downloads do not change the assignment.', 24),
+    ('split', 'Frozen evaluation split', 'Historical development/holdout assignment from the first pilot. Replacement articles are not_in_original_pilot and never inherit a displaced article’s split. The historical holdout is not an untouched test for later proposed prompts.', 24),
     ('metadata_source', 'Bibliographic source', 'Scopus or Crossref. Bibliographic provenance is independent of full-text retrieval.', 23),
     ('source_date', 'Bibliographic retrieval date', 'Date recorded for the bibliographic response.', 27),
     ('source_url', 'Bibliographic source URL', 'DOI landing page or source URL from the metadata record.', 45),
@@ -89,17 +89,20 @@ LEVELS = {
     **{key: 'YES / NO / UNCLEAR' for key in ['collection', 'experiment', 'survey',
         'm_collection', 'm_experiment', 'm_survey', 'm_team_data_reuse',
         'r_collection', 'r_experiment', 'r_survey']},
-    'available': 'YES / NO', 'format': 'PDF / XML', 'human_verified': 'TRUE / FALSE',
-    'basis': 'Full-text review / Metadata only / Metadata only — full text awaiting review',
-    'criteria': CRITERIA, 'm_prompt_version': 'original_with_primary_survey_definition',
+    'available': 'YES / NO', 'format': 'PDF / XML / HTML', 'human_verified': 'TRUE / FALSE',
+    'basis': 'Full-text review / Metadata only / Metadata only — full text awaiting review / Not assessed',
+    'criteria': CRITERIA + ' / Not assessed', 'm_prompt_version': 'original_with_primary_survey_definition',
     'm_authors_supplied': 'true / false / Not recorded', 'r_human_verified': 'true / false',
     'r_confidence': 'high / moderate / medium / low; stored spellings are preserved',
     'r_review_status': 'primary_ai_fulltext_review / provisional_ai_review',
     'a_status': 'verified_fulltext / unavailable_after_checks',
-    'a_identity_check': 'title_match / doi_and_title_match / title_authors_journal_year_visually_verified / title_authors_and_repository_doi_independently_verified',
-    'split': 'development / holdout', 'metadata_source': 'Scopus / Crossref',
+    'a_identity_check': 'title_match / doi_and_title_match / title_authors_journal_year_visually_verified / title_authors_and_repository_doi_independently_verified / pmc_metadata_title_match / pmc_metadata_doi_and_title_match',
+    'split': 'development / holdout / not_in_original_pilot', 'metadata_source': 'Scopus / Crossref',
 }
 MISSING = {
+    'collection': 'Blank = not assessed; UNCLEAR is an actual assessment with unresolved evidence.',
+    'experiment': 'Blank = not assessed; UNCLEAR is an actual assessment with unresolved evidence.',
+    'survey': 'Blank = not assessed; UNCLEAR is an actual assessment with unresolved evidence.',
     'a_version_note': 'Blank = no verified local text; Version not separately recorded = no saved version assessment.',
     'm_evidence': 'Blank = no exact excerpt saved; not proof of ineligibility.',
     'm_other_methods': 'Blank = no other method recorded; not proof that none exists.',
@@ -122,7 +125,7 @@ def field_details(key):
     elif key == 'journal':
         kind, values = 'Categorical text', 'The 62 journal names listed below; 10 articles per journal.'
     elif key in ['year', 'n_authors']:
-        kind, values = 'Integer', '2016–2025 inclusive' if key == 'year' else 'Positive author count; current range 1–26.'
+        kind, values = 'Integer', '2016–2025 inclusive' if key == 'year' else 'Positive author count; actual range is shown in Observed.'
     elif key == 'article_id':
         kind, values = 'Identifier text', 'Scopus identifier, or cr_ followed by the Crossref fallback identifier.'
     elif key == 'doi':
@@ -144,7 +147,10 @@ def field_details(key):
         missing = 'Blank = no completed source review; never NO.'
     if key in ['format', 'local_file', 'a_identity_check', 'a_source_url', 'a_source_sha256', 'a_text_cache']:
         missing = 'Blank = no verified local main text.'
-    return kind, values, MISSING.get(key, missing)
+    missing = MISSING.get(key, missing)
+    if key.startswith('m_'):
+        missing = 'Blank = no metadata assessment for this article. ' + (missing if key in MISSING else '')
+    return kind, values, missing
 
 
 def observed_values(key, rows):
@@ -169,7 +175,7 @@ def write_codebook(rows, details, journals):
         'The private workbook has 620 article rows and 63 variables. Journals are alphabetical; years run from 2025 down to 2016 within each journal.', '',
         'Each row is one selected article. Only year and author count are stored as Excel numbers; identifiers, categories, dates and narrative fields are stored as text.', '',
         'Current assessment basis: ' + '; '.join(f'{key}: {value}' for key, value in basis.items()) + '.', '',
-        '`m_` fields preserve the original metadata assessments; `r_` fields preserve completed source reviews; `a_` fields describe current acquisition. Best-available labels use the source review when present and otherwise the original metadata assessment. Downloading a document never implies that it was reviewed.', '',
+        '`m_` fields preserve the original metadata assessments where available; `r_` fields preserve completed source reviews; `a_` fields describe current acquisition. Best-available labels use the source review when present and otherwise the original metadata assessment. Replacement articles without assessments have blank labels and basis Not assessed. Downloading a document never implies that it was reviewed.', '',
         'YES = qualifying evidence; NO = ineligible under that assessment; UNCLEAR = unresolved. Missing full text is not a NO. Survey means a primary questionnaire survey, including survey experiments and diary surveys, rather than incidental scales. No country restriction applies. Human-verified best assessments: ' + str(sum(row['human_verified'] == 'TRUE' for row in rows)) + '/620.', '',
         'Allowed levels describe the field; Observed reports the actual snapshot. Free-text fields have no finite level list. Blank cells and the literal values `UNCLEAR`, `not stated`, and `Not recorded` are distinct. The historical development/holdout split is not an untouched test for the later proposed prompt.', '',
         '| # | Machine field | Workbook column | Meaning | Type | Allowed levels / format | Missing means | Observed |',
@@ -192,7 +198,10 @@ def main():
     metadata = index_rows(read_rows(PRIVATE / 'predictions_original.csv'))
     reviews = index_rows(read_rows(PRIVATE / 'fulltext_reviews.csv'))
     access = index_rows(read_rows(PRIVATE / 'fulltext.csv'))
-    assert len(articles) == 620 and set(metadata) == set(articles) == set(access)
+    assert len(articles) == 620 and set(articles) == set(access)
+    original_path = PRIVATE / 'articles_initial.csv'
+    original = index_rows(read_rows(original_path)) if original_path.exists() else articles
+    assert set(metadata) == set(original)
     assert len({(r['journal'], r['year']) for r in articles.values()}) == 620
     validate_reviews(reviews, articles, access)
     ordered = sorted(articles.values(), key=lambda r: (r['journal'].casefold(), -int(r['year'])))
@@ -203,21 +212,22 @@ def main():
     rows = []
     for article in ordered:
         key = article['article_id']
-        acquired, prediction, review = access[key], metadata[key], reviews.get(key)
+        acquired, prediction, review = access[key], metadata.get(key, {}), reviews.get(key)
         verified = acquired['status'] == 'verified_fulltext'
         if verified:
             path = Path(acquired['fulltext_path'])
             assert path.is_file() and hashlib.sha256(path.read_bytes()).hexdigest() == acquired['source_sha256'], key
         chosen = review or prediction
         row = dict(article, available='YES' if verified else 'NO', format=acquired['format'].upper() if verified else '',
-                   local_file=acquired['fulltext_path'] if verified else '', criteria=CRITERIA,
-                   basis='Full-text review' if review else 'Metadata only — full text awaiting review' if verified else 'Metadata only',
+                   local_file=acquired['fulltext_path'] if verified else '', criteria=CRITERIA if chosen else 'Not assessed',
+                   basis='Full-text review' if review else 'Not assessed' if not prediction else 'Metadata only — full text awaiting review' if verified else 'Metadata only',
                    human_verified=review.get('human_verified', 'false').upper() if review else 'FALSE')
-        row.update({field: chosen[field] for field in ['collection', 'experiment', 'survey']})
+        row.update({field: chosen.get(field, '') for field in ['collection', 'experiment', 'survey']})
         for prefix, source in [('m_', prediction), ('r_', review or {}), ('a_', acquired)]:
             row.update({prefix + field: value for field, value in source.items()})
-        for field in ['m_prediction_time', 'm_input_fields', 'm_authors_supplied']:
-            row[field] = row.get(field) or 'Not recorded'
+        if prediction:
+            for field in ['m_prediction_time', 'm_input_fields', 'm_authors_supplied']:
+                row[field] = row.get(field) or 'Not recorded'
         row['a_version_note'] = row.get('a_version_note') or ('Version not separately recorded' if verified else '')
         row['year'], row['n_authors'] = int(row['year']), int(row['n_authors'])
         rows.append(row)
@@ -234,7 +244,7 @@ def main():
     guide.append(['', '', 'Private workbook', 'Contains abstracts, author lists, evidence, and local paths. Keep out of public GitHub and dashboards.'])
     guide.append(['', '', 'Label interpretation', 'YES = qualifying evidence; NO = ineligible according to that assessment; UNCLEAR = unresolved. There are no country or significance restrictions.'])
     guide.append(['', '', 'Frozen criteria', CRITERIA + '. New policy proposals are untested and have not replaced any saved label.'])
-    guide.append(['', '', 'Newly available documents', 'Verified downloads without completed reviews retain metadata-based best labels and show Metadata only — full text awaiting review.'])
+    guide.append(['', '', 'Newly available documents', 'Original articles retain metadata-based labels until source review. Replacement articles with no assessment have blank labels and basis Not assessed; no displaced labels are transferred.'])
     guide.append(['', 'journal', 'All journal levels', 'Each of these 62 categorical values has 10 article rows.'])
     for journal in journals:
         guide.append(['', 'journal', journal, '10 article rows'])
