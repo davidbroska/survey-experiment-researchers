@@ -1,4 +1,4 @@
-"""Small file helpers and read-only Scopus credentials; never save request headers."""
+"""Small file helpers and private provider settings; never save request headers."""
 import csv
 from datetime import datetime, timezone
 import json
@@ -37,14 +37,22 @@ def write_json(path, value):
     temporary.replace(path)
 
 
-def credentials():
+def settings():
+    """Read only the access settings used by this project; never print their values."""
+    names = {'SCOPUS_API_KEY', 'SCOPUS_INSTTOKEN', 'WILEY_API_KEY', 'WILEY_TDM_TOKEN',
+             'OPEN_ALEX', 'OPENALEX_API_KEY', 'UNPAYWALL_EMAIL'}
     values = dict(os.environ)
     env = ROOT.parent / ".env"
     if env.exists():
         for line in env.read_text().splitlines():
             key, separator, value = line.partition("=")
-            if separator and key.strip() in {"SCOPUS_API_KEY", "SCOPUS_INSTTOKEN"}:
+            if separator and key.strip() in names:
                 values.setdefault(key.strip(), value.strip().strip("\"'"))
+    return {key: values.get(key, '') for key in names}
+
+
+def credentials():
+    values = settings()
     if not values.get("SCOPUS_API_KEY"):
         raise RuntimeError("Set SCOPUS_API_KEY in the environment or project .env")
     headers = {"Accept": "application/json", "X-ELS-APIKey": values["SCOPUS_API_KEY"]}

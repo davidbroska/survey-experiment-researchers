@@ -1,5 +1,11 @@
 # SCORE screening pilot: findings, 7 October 2026
 
+This report records the completed 288-paper source-review snapshot. Later
+downloads expand the local validation collection; they do not change these
+reference labels or frozen predictions. See the [current access report](access_report.md)
+for acquisition progress and the [proposed prompt edits](prompt_proposed_redline.md)
+for the subsequent, untested clarification.
+
 Use the [original prompt with the primary-survey definition](prompt_current.md)
 as a provisional screen, retaining collection YES and UNCLEAR. The tested
 [revision](prompt_revised.md) did not improve collection retention in the reviewed

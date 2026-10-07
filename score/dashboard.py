@@ -104,6 +104,8 @@ small{{color:#465c65}}nav{{display:flex;gap:20px;flex-wrap:wrap}}#papers td:firs
 <a href="prompt_current.md">Current prompt</a><a href="prompt_original.md">Verbatim original</a>
 <a href="prompt_revised.md">Tested candidate</a>
 <a href="protocol.md">Review protocol</a><a href="report.md">Findings</a>
+<a href="prompt_proposed_redline.md">Proposed prompt edits (untested)</a>
+<a href="access_report.md">Access report</a>
 <a href="independent_review.csv">AI source reviews</a><a href="access.csv">Retrieval status</a>
 <a href="manual_downloads.csv">Download queue</a><a href="evaluation.json">Evaluation data</a>
 <a href="../archive/tess/DASHBOARD_NARROWER.html">TESS archive</a></nav>

@@ -17,13 +17,15 @@ small{color:#465c65}nav{display:flex;gap:20px;flex-wrap:wrap}#papers td:first-ch
 <a href="prompt_current.md">Current prompt</a><a href="prompt_original.md">Verbatim original</a>
 <a href="prompt_revised.md">Tested candidate</a>
 <a href="protocol.md">Review protocol</a><a href="report.md">Findings</a>
+<a href="prompt_proposed_redline.md">Proposed prompt edits (untested)</a>
+<a href="access_report.md">Access report</a>
 <a href="independent_review.csv">AI source reviews</a><a href="access.csv">Retrieval status</a>
 <a href="manual_downloads.csv">Download queue</a><a href="evaluation.json">Evaluation data</a>
 <a href="../archive/tess/DASHBOARD_NARROWER.html">TESS archive</a></nav>
 <div class="cards" style="margin-top:24px">
 <div class="card"><strong>620 / 620</strong>Articles selected</div>
 <div class="card"><strong>612</strong>Abstracts available</div>
-<div class="card"><strong>288</strong>Main articles available</div>
+<div class="card"><strong>370</strong>Main articles available</div>
 <div class="card"><strong>288</strong>Substantive full-text reviews</div>
 <div class="card"><strong>0</strong>Human verifications</div></div>
 <p class="note">This pilot evaluates whether metadata identifies research-team collection of quantitative human participant data.
@@ -37,7 +39,7 @@ Audit metadata NO decisions before using them as final exclusions. See the <a hr
 Matching existing articles are retained; remaining journal–year slots are sampled from bibliographic records.
 Scopus supplies 618 records; Crossref supplies the two World Politics years absent from Scopus.
 The pilot is therefore not a fully random sample. TESS journals and United States restrictions do not define this frame.</p>
-<p>Main text is available for 288 of 620 articles, covering 51 of 62 journals.
+<p>Main text is available for 370 of 620 articles, covering 55 of 62 journals.
 Performance among reviewed papers cannot establish performance for the 332 papers without source reviews.
 The <a href="coverage.csv">coverage table</a> separates availability by journal, year and metadata decision.</p>
 <h2>Prompt evaluation</h2>
@@ -115,7 +117,7 @@ or validate a future model configuration. Both versions use the user's primary-s
 <td>57.1% <small>(n=28)</small></td></tr></tbody></table></div>
 <p><small>Agreement with AI full-text review; not human-validated accuracy. Available paired cases may differ from inaccessible or unreviewed cases. The pilot retains matching existing articles, so it is not a probability sample.</small></p>
 <details><summary>Coverage by publication year and field</summary>
-<table><tr><th>Year</th><th>Journal slots</th><th>Main text available</th><th>Source reviewed</th></tr><tr><td>2016</td><td>62 / 62</td><td>29</td><td>29</td></tr><tr><td>2017</td><td>62 / 62</td><td>27</td><td>27</td></tr><tr><td>2018</td><td>62 / 62</td><td>30</td><td>30</td></tr><tr><td>2019</td><td>62 / 62</td><td>28</td><td>28</td></tr><tr><td>2020</td><td>62 / 62</td><td>30</td><td>30</td></tr><tr><td>2021</td><td>62 / 62</td><td>31</td><td>31</td></tr><tr><td>2022</td><td>62 / 62</td><td>31</td><td>31</td></tr><tr><td>2023</td><td>62 / 62</td><td>26</td><td>26</td></tr><tr><td>2024</td><td>62 / 62</td><td>28</td><td>28</td></tr><tr><td>2025</td><td>62 / 62</td><td>28</td><td>28</td></tr></table>
+<table><tr><th>Year</th><th>Journal slots</th><th>Main text available</th><th>Source reviewed</th></tr><tr><td>2016</td><td>62 / 62</td><td>40</td><td>29</td></tr><tr><td>2017</td><td>62 / 62</td><td>34</td><td>27</td></tr><tr><td>2018</td><td>62 / 62</td><td>37</td><td>30</td></tr><tr><td>2019</td><td>62 / 62</td><td>35</td><td>28</td></tr><tr><td>2020</td><td>62 / 62</td><td>38</td><td>30</td></tr><tr><td>2021</td><td>62 / 62</td><td>39</td><td>31</td></tr><tr><td>2022</td><td>62 / 62</td><td>39</td><td>31</td></tr><tr><td>2023</td><td>62 / 62</td><td>36</td><td>26</td></tr><tr><td>2024</td><td>62 / 62</td><td>38</td><td>28</td></tr><tr><td>2025</td><td>62 / 62</td><td>34</td><td>28</td></tr></table>
 <p>Business: 120 · Economics: 110 · Education: 70 · Political Science: 90 · Psychology: 150 · Sociology: 80</p></details>
 <h2>Selected articles</h2><label for="filter">Filter by journal, year, title, split, or retrieval status</label><br>
 <p>Decision order: <strong>collection / experiment / survey</strong>. Reference labels come from provisional AI source review;
@@ -425,34 +427,34 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Access unresolved</td><td>YES / YES / UNCLEAR</td>
 <td>YES / YES / UNCLEAR</td><td>— / — / —</td></tr><tr><td>Journal of Organizational Behavior</td>
 <td>2016</td><td><a href="https://doi.org/10.1002/job.2046">Development of a new scale to measure subjective career success: A mixed-methods study</a></td><td>development</td>
-<td>Access unresolved</td><td>YES / NO / YES</td>
+<td>Available</td><td>YES / NO / YES</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Journal of Organizational Behavior</td>
 <td>2017</td><td><a href="https://doi.org/10.1002/job.2128">The sound of cooperation: Musical influences on cooperative behavior</a><details><summary>Review reasoning</summary><p>Two new student laboratory experiments randomly assign music conditions during incentivized public-goods games (78 and 188 participants). A distinct 44-person song pretest rates perceived audio stimuli; it is a stimulus-norming task, while main-study demographics and mood scales are ancillary. Neither is a primary survey. This boundary was independently checked by the prompt-review agent.</p><p><a href='https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5347889/fullTextXML'>Source</a> · XML Study 1: Participants and procedures, Independent variable, Dependent variables; Study 2: Participants and procedures, Mood; Acknowledgements</p></details></td><td>development</td>
 <td>Available</td><td>YES / YES / UNCLEAR</td>
 <td>— / — / —</td><td>YES / YES / NO</td></tr><tr><td>Journal of Organizational Behavior</td>
 <td>2018</td><td><a href="https://doi.org/10.1002/job.2274">The effect of economic consequences on social judgment and choice: Reward interdependence and the preference for sociability versus competence</a></td><td>development</td>
-<td>Access unresolved</td><td>YES / YES / YES</td>
+<td>Available</td><td>YES / YES / YES</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Journal of Organizational Behavior</td>
 <td>2019</td><td><a href="https://doi.org/10.1002/job.2366">Predicting retail shrink from performance pressure, ethical leader behavior, and store-level incivility</a></td><td>holdout</td>
-<td>Access unresolved</td><td>UNCLEAR / UNCLEAR / UNCLEAR</td>
+<td>Available</td><td>UNCLEAR / UNCLEAR / UNCLEAR</td>
 <td>UNCLEAR / UNCLEAR / UNCLEAR</td><td>— / — / —</td></tr><tr><td>Journal of Organizational Behavior</td>
 <td>2020</td><td><a href="https://doi.org/10.1002/job.2437">Empirical analysis of shared leadership promotion and team creativity: An adaptive leadership perspective</a></td><td>development</td>
-<td>Access unresolved</td><td>YES / NO / YES</td>
+<td>Available</td><td>YES / NO / YES</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Journal of Organizational Behavior</td>
 <td>2021</td><td><a href="https://doi.org/10.1002/job.2518">Host country nationals&#x27; interaction adjustment as a social exchange: A theoretical model</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Journal of Organizational Behavior</td>
 <td>2022</td><td><a href="https://doi.org/10.1002/job.2605">Where does the heart lie? A multistage process model of entrepreneurial passion and role identity management</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Journal of Organizational Behavior</td>
 <td>2023</td><td><a href="https://doi.org/10.1002/job.2662">The power of reflection for would-be leaders: Investigating individual work reflection and its impact on leadership in teams</a></td><td>development</td>
-<td>Access unresolved</td><td>YES / NO / YES</td>
+<td>Available</td><td>YES / NO / YES</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Journal of Organizational Behavior</td>
 <td>2024</td><td><a href="https://doi.org/10.1002/job.2814">Adopting Underdogs&#x27; Ideas Triggers Fairness? When and How Underachievers&#x27; Voice Endorsement Promotes Team Voice</a></td><td>development</td>
-<td>Access unresolved</td><td>YES / NO / YES</td>
+<td>Available</td><td>YES / NO / YES</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Journal of Organizational Behavior</td>
 <td>2025</td><td><a href="https://doi.org/10.1002/job.2856">Navigating AI Convergence in Human–Artificial Intelligence Teams: A Signaling Theory Approach</a></td><td>holdout</td>
-<td>Access unresolved</td><td>YES / YES / UNCLEAR</td>
+<td>Available</td><td>YES / YES / UNCLEAR</td>
 <td>YES / YES / NO</td><td>— / — / —</td></tr><tr><td>Organizational Behavior and Human Decision Processes</td>
 <td>2016</td><td><a href="https://doi.org/10.1016/j.obhdp.2015.11.004">Bounded awareness: Implications for ethical decision making</a><details><summary>Review reasoning</summary><p>This conceptual review integrates published bounded-awareness and behavioral-ethics findings and proposes future interventions. Summaries of prior experiments illustrate the literature; there is no new participant collection or empirical reanalysis of an explicitly owned dataset.</p><p><a href='https://api.elsevier.com/content/article/doi/10.1016/j.obhdp.2015.11.004?view=FULL'>Source</a> · Bounded awareness; Behavioral ethics; bounded ethicality; Future directions</p></details></td><td>holdout</td>
 <td>Available</td><td>NO / NO / NO</td>
@@ -485,7 +487,7 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Available</td><td>YES / YES / UNCLEAR</td>
 <td>— / — / —</td><td>YES / YES / YES</td></tr><tr><td>American Educational Research Journal</td>
 <td>2016</td><td><a href="https://doi.org/10.3102/0002831216653206">Easy in, Easy out: Are Alternatively Certified Teachers Turning Over at Increased Rates?</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>American Educational Research Journal</td>
 <td>2017</td><td><a href="https://doi.org/10.3102/0002831217717949">Cognitive Validity: Can Multiple-Choice Items Tap Historical Thinking Processes?</a></td><td>development</td>
 <td>Access unresolved</td><td>UNCLEAR / UNCLEAR / UNCLEAR</td>
@@ -575,7 +577,7 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Available</td><td>UNCLEAR / UNCLEAR / UNCLEAR</td>
 <td>— / — / —</td><td>YES / NO / NO</td></tr><tr><td>Educational Researcher</td>
 <td>2016</td><td><a href="https://doi.org/10.3102/0013189x16683402">Fostering Political Interest Among Youth During the 2012 Presidential Election: Instructional Opportunities and Challenges in a Swing State</a></td><td>development</td>
-<td>Access unresolved</td><td>YES / NO / YES</td>
+<td>Available</td><td>YES / NO / YES</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Educational Researcher</td>
 <td>2017</td><td><a href="https://doi.org/10.3102/0013189x17738737">Queer and Trans Youth, Relational Subjectivity, and Uncertain Possibilities: Challenging Research in Complicated Contexts</a></td><td>development</td>
 <td>Access unresolved</td><td>NO / NO / NO</td>
@@ -629,7 +631,7 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Access unresolved</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Exceptional Children</td>
 <td>2024</td><td><a href="https://doi.org/10.1177/00144029231172175">A Meta-Analysis on Behavioral Support Training and General Education Teacher Implementation</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Exceptional Children</td>
 <td>2025</td><td><a href="https://doi.org/10.1177/00144029251317014">Expanding Literacy: Caregiver Experiences With Literacy Engagement for Their Children With Intellectual and Developmental Disabilities</a></td><td>development</td>
 <td>Access unresolved</td><td>NO / NO / NO</td>
@@ -695,31 +697,31 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>NO / NO / NO</td></tr><tr><td>Child Development</td>
 <td>2016</td><td><a href="https://doi.org/10.1111/cdev.12637">What You Want Versus What&#x27;s Good for You: Paternalistic Motivation in Children&#x27;s Helping Behavior</a></td><td>development</td>
-<td>Access unresolved</td><td>YES / YES / NO</td>
+<td>Available</td><td>YES / YES / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Child Development</td>
 <td>2017</td><td><a href="https://doi.org/10.1111/cdev.12708">Neural Oscillation Reveals Deficits in Visuospatial Working Memory in Children With Developmental Coordination Disorder</a></td><td>development</td>
-<td>Access unresolved</td><td>YES / UNCLEAR / NO</td>
+<td>Available</td><td>YES / UNCLEAR / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Child Development</td>
 <td>2018</td><td><a href="https://doi.org/10.1111/cdev.12756">Emotional Feeding and Emotional Eating: Reciprocal Processes and the Influence of Negative Affectivity</a></td><td>holdout</td>
-<td>Access unresolved</td><td>UNCLEAR / UNCLEAR / UNCLEAR</td>
+<td>Available</td><td>UNCLEAR / UNCLEAR / UNCLEAR</td>
 <td>UNCLEAR / UNCLEAR / UNCLEAR</td><td>— / — / —</td></tr><tr><td>Child Development</td>
 <td>2019</td><td><a href="https://doi.org/10.1111/cdev.13133">Subjective Well-Being Decreasing With Age: New Research on Children Over 8</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Child Development</td>
 <td>2020</td><td><a href="https://doi.org/10.1111/cdev.13380">Cognitive Stimulation at Home and in Child Care and Children’s Preacademic Skills in Two-Parent Families</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Child Development</td>
 <td>2021</td><td><a href="https://doi.org/10.1111/cdev.13573">Maternal Judgments of Child Numeracy and Reading Ability Predict Gains in Academic Achievement and Interest</a><details><summary>Review reasoning</summary><p>The authors analyze the external government-run LSAC cohort and linked NAPLAN administrative scores. The methods distinguish survey organizers from the analysts and report no team-added collection.</p><p><a href='https://unsworks.unsw.edu.au/bitstreams/6607e104-1132-405d-8d39-2d7f87d977c3/download'>Source</a> · Method: Participants; Measures; Analysis</p></details></td><td>development</td>
 <td>Available</td><td>UNCLEAR / UNCLEAR / UNCLEAR</td>
 <td>— / — / —</td><td>NO / NO / NO</td></tr><tr><td>Child Development</td>
 <td>2022</td><td><a href="https://doi.org/10.1111/cdev.13812">White adolescents&#x27; racial contexts: Associations with critical action</a></td><td>development</td>
-<td>Access unresolved</td><td>UNCLEAR / UNCLEAR / UNCLEAR</td>
+<td>Available</td><td>UNCLEAR / UNCLEAR / UNCLEAR</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Child Development</td>
 <td>2023</td><td><a href="https://doi.org/10.1111/cdev.13920">Latent profiles of children&#x27;s shyness: Behavioral, affective, and physiological components</a></td><td>development</td>
-<td>Access unresolved</td><td>YES / UNCLEAR / NO</td>
+<td>Available</td><td>YES / UNCLEAR / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Child Development</td>
 <td>2024</td><td><a href="https://doi.org/10.1111/cdev.13965">The role of accuracy in children&#x27;s judgments of experts&#x27; knowledge</a></td><td>holdout</td>
-<td>Access unresolved</td><td>YES / YES / NO</td>
+<td>Available</td><td>YES / YES / NO</td>
 <td>YES / YES / NO</td><td>— / — / —</td></tr><tr><td>Child Development</td>
 <td>2025</td><td><a href="https://doi.org/10.1111/cdev.14206">Positive well-being and dampened emotional reactivity to daily family conflict and family cohesion</a><details><summary>Review reasoning</summary><p>The article reanalyzes the team’s FLOW cohort: adolescents and parents completed baseline questionnaires and 21 daily surveys. The methods identify their responses as private to our team and acknowledge coauthor Fosco’s project funding, establishing the team role beyond author overlap. The 2015–2016 collection and previous analysis of the same sample are explicit; no intervention is imposed. Supporting measures and analyses confirm primary diary surveys rather than clinical/task scales.</p><p><a href='https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11868686/fullTextXML'>Source</a> · XML Present Study; Method: Participants, Procedure and Measures; Acknowledgments; supplementary measures PDF pp1–4 and supplemental-analysis summary p1; supplied analysis syntax</p></details></td><td>development</td>
 <td>Available</td><td>YES / NO / YES</td>
@@ -785,13 +787,13 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Available</td><td>YES / YES / NO</td>
 <td>— / — / —</td><td>YES / YES / NO</td></tr><tr><td>European Journal of Personality</td>
 <td>2016</td><td><a href="https://doi.org/10.1002/per.2047">The Evil Queen&#x27;s Dilemma: Linking Narcissistic Admiration and Rivalry to Benign and Malicious Envy</a></td><td>development</td>
-<td>Access unresolved</td><td>YES / UNCLEAR / YES</td>
+<td>Available</td><td>YES / UNCLEAR / YES</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>European Journal of Personality</td>
 <td>2017</td><td><a href="https://doi.org/10.1002/per.2092">Using Indirect Measurement Tasks to Assess the Self-concept of Personality: A Systematic Review and Meta-analyses</a><details><summary>Review reasoning</summary><p>All empirical analyses aggregate statistics extracted from prior publications; task administration and experimental manipulations describe reviewed studies. No original participant measurement procedure is reported.</p><p><a href='https://biblio.ugent.be/publication/8502041/file/8502042.pdf'>Source</a> · Method: Eligibility criteria; meta-analyses; narrative reviews</p></details></td><td>development</td>
 <td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>NO / NO / NO</td></tr><tr><td>European Journal of Personality</td>
 <td>2018</td><td><a href="https://doi.org/10.1002/per.2142">Personality, Religion, and Politics: An Investigation in 33 Countries</a></td><td>holdout</td>
-<td>Access unresolved</td><td>YES / NO / YES</td>
+<td>Available</td><td>YES / NO / YES</td>
 <td>UNCLEAR / UNCLEAR / UNCLEAR</td><td>— / — / —</td></tr><tr><td>European Journal of Personality</td>
 <td>2019</td><td><a href="https://doi.org/10.1002/per.2190">Individual Differences in Habitual Social Goals and Daily Well-Being: The Role of Age and Relationship Closeness</a><details><summary>Review reasoning</summary><p>Author-team questionnaire and seven daily diaries measure social goals and wellbeing without imposed treatment. The same cohort is linked to the authors&#x27; earlier report, so earlier team collection is retained.</p><p><a href='https://www.zora.uzh.ch/server/api/core/bitstreams/0b9ab309-95a5-4fec-80ae-a49f231764f4/content'>Source</a> · PDF pages 15–19, 21–22; sample, procedure, measures, analysis</p></details></td><td>development</td>
 <td>Available</td><td>YES / NO / YES</td>
@@ -812,7 +814,7 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Access unresolved</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>European Journal of Personality</td>
 <td>2025</td><td><a href="https://doi.org/10.1177/08902070241235969">If you were happy and you know it, clap your hands! Testing the peak-end rule for retrospective judgments of well-being in everyday life</a></td><td>development</td>
-<td>Access unresolved</td><td>UNCLEAR / UNCLEAR / UNCLEAR</td>
+<td>Available</td><td>UNCLEAR / UNCLEAR / UNCLEAR</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Evolution and Human Behavior</td>
 <td>2016</td><td><a href="https://doi.org/10.1016/j.evolhumbehav.2016.05.002">Young children discriminate genuine from fake smiles and expect people displaying genuine smiles to be more prosocial</a><details><summary>Review reasoning</summary><p>The team recruited children and presented genuine/fake smile stimuli in controlled recognition, preference and eye-tracking procedures. Responses are task outcomes, not a survey questionnaire; reused photographs are stimuli rather than reused participant data.</p><p><a href='https://api.elsevier.com/content/article/doi/10.1016/j.evolhumbehav.2016.05.002?view=FULL'>Source</a> · Studies 1–5: Method; Design and Materials; Procedure</p></details></td><td>development</td>
 <td>Available</td><td>YES / YES / NO</td>
@@ -899,7 +901,7 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Access unresolved</td><td>UNCLEAR / UNCLEAR / UNCLEAR</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Journal of Consulting and Clinical Psychology</td>
 <td>2024</td><td><a href="https://doi.org/10.1037/ccp0000871">Monitoring Emotional Intensity and Variability to Forecast Depression Recurrence in Real Time in Remitted Adults</a></td><td>holdout</td>
-<td>Access unresolved</td><td>YES / NO / YES</td>
+<td>Available</td><td>YES / NO / YES</td>
 <td>YES / NO / YES</td><td>— / — / —</td></tr><tr><td>Journal of Consulting and Clinical Psychology</td>
 <td>2025</td><td><a href="https://doi.org/10.1037/ccp0000963">Results of a Positive Affect Intervention for Male Couples: Change Over Time and Effects on Mental Health</a></td><td>holdout</td>
 <td>Access unresolved</td><td>YES / YES / NO</td>
@@ -1010,7 +1012,7 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Access unresolved</td><td>YES / YES / NO</td>
 <td>YES / YES / NO</td><td>— / — / —</td></tr><tr><td>Journal of Personality and Social Psychology</td>
 <td>2021</td><td><a href="https://doi.org/10.1037/pspi0000339">Reducing Implicit Racial Preferences: III. A Process-Level Examination of Changes in Implicit Preferences</a></td><td>development</td>
-<td>Access unresolved</td><td>UNCLEAR / UNCLEAR / UNCLEAR</td>
+<td>Available</td><td>UNCLEAR / UNCLEAR / UNCLEAR</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Journal of Personality and Social Psychology</td>
 <td>2022</td><td><a href="https://doi.org/10.1037/pspi0000373">Nonlinear Effect of Social Interaction Quantity on Psychological Well-Being: Diminishing Returns or Inverted U?</a><details><summary>Review reasoning</summary><p>The paper combines an original randomized career-forecast questionnaire experiment with newly recruited seven-day diary and experience-sampling surveys, as well as external ESS, school-network and LISS data analyses. Own-team collection in Studies 1, 4 and 5 is explicit; mixed external components do not exclude the article.</p><p><a href='https://repository.tilburguniversity.edu/bitstreams/70eafb43-7dd9-4eec-9ebd-b6fce224a6e1/download'>Source</a> · PDF pp. 10–12, 25–26, 30–31, 35–36; Studies 1, 4, 5, 6</p></details></td><td>development</td>
 <td>Available</td><td>YES / YES / YES</td>
@@ -1049,7 +1051,7 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Access unresolved</td><td>YES / YES / UNCLEAR</td>
 <td>YES / YES / NO</td><td>— / — / —</td></tr><tr><td>Psychological Science</td>
 <td>2024</td><td><a href="https://doi.org/10.1177/09567976231214185">Generating New Musical Preferences From Multilevel Mapping of Predictions to Reward</a></td><td>development</td>
-<td>Access unresolved</td><td>YES / YES / NO</td>
+<td>Available</td><td>YES / YES / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Psychological Science</td>
 <td>2025</td><td><a href="https://doi.org/10.1177/09567976251384975">Mapping the Ecology of Risk: 100 Risky Choices of Modern Life</a><details><summary>Review reasoning</summary><p>The team commissioned Swiss general-public online surveys through an unnamed survey company, collecting reported choices, frequencies and risk preferences. Studies 1–2 randomly vary personal/other and risk-taken/not-taken question prompts; Study 3 supplies quantitative follow-up frequency and preference responses.</p><p><a href='https://www.zora.uzh.ch/server/api/core/bitstreams/6496846b-4066-4b52-a494-6ed6cbe406dc/content'>Source</a> · PDF pp. 4–8; Methods Studies 1–3</p></details></td><td>development</td>
 <td>Available</td><td>YES / NO / YES</td>
@@ -1166,7 +1168,7 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Access unresolved</td><td>YES / YES / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>American Economic Journal: Applied Economics</td>
 <td>2023</td><td><a href="https://doi.org/10.1257/app.20210180">Discriminatory Lending: Evidence from Bankers in the Lab</a></td><td>development</td>
-<td>Access unresolved</td><td>YES / YES / NO</td>
+<td>Available</td><td>YES / YES / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>American Economic Journal: Applied Economics</td>
 <td>2024</td><td><a href="https://doi.org/10.1257/app.20210579">The Employment Effects of Ethnic Politics</a><details><summary>Review reasoning</summary><p>The authors assemble electoral archives, Afrobarometer and Demographic Health Survey records with geographic coding. The close-election design is observational; no participant collection. Source is 2019 workingpaper.</p><p><a href='https://www.econstor.eu/bitstream/10419/215214/1/dp12818.pdf'>Source</a> · Study design, participants and procedures</p></details></td><td>development</td>
 <td>Available</td><td>NO / NO / NO</td>
@@ -1205,31 +1207,31 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Access unresolved</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Econometrica</td>
 <td>2016</td><td><a href="https://doi.org/10.3982/ecta13127">Robust Contracts in Continuous Time</a></td><td>holdout</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>NO / NO / NO</td><td>— / — / —</td></tr><tr><td>Econometrica</td>
 <td>2017</td><td><a href="https://doi.org/10.3982/ecta13081">Randomization Tests Under an Approximate Symmetry Assumption</a></td><td>holdout</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>NO / NO / NO</td><td>— / — / —</td></tr><tr><td>Econometrica</td>
 <td>2018</td><td><a href="https://doi.org/10.3982/ecta12043">Trading and Information Diffusion in Over-the-Counter Markets</a><details><summary>Review reasoning</summary><p>The article develops a theoretical OTC-network model and calibrates an illustrative example to existing securitization-market findings. No human participant collection. Source is the accepted manuscript.</p><p><a href='https://researchonline.lse.ac.uk/id/eprint/88050/7/Kondor_Trading%20and%20Information_Accepted.pdf'>Source</a> · Study design, participants and procedures</p></details></td><td>development</td>
 <td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>NO / NO / NO</td></tr><tr><td>Econometrica</td>
 <td>2019</td><td><a href="https://doi.org/10.3982/ecta15146">Dynamic Quantile Models of Rational Behavior</a></td><td>development</td>
-<td>Access unresolved</td><td>UNCLEAR / NO / UNCLEAR</td>
+<td>Available</td><td>UNCLEAR / NO / UNCLEAR</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Econometrica</td>
 <td>2020</td><td><a href="https://doi.org/10.3982/ecta18028">A Comment on: “State Capacity, Reciprocity, and the Social Contract” by Timothy Besley</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Econometrica</td>
 <td>2021</td><td><a href="https://doi.org/10.3982/ecta17842">Economic Predictions With Big Data: The Illusion of Sparsity</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Econometrica</td>
 <td>2022</td><td><a href="https://doi.org/10.3982/ecta16598">Misallocation, Selection, and Productivity: A Quantitative Analysis With Panel Data From China</a><details><summary>Review reasoning</summary><p>Analysis and model calibration use an existing Chinese Ministry of Agriculture panel and FAO land-quality data. The source assigns collection to the external Research Center and gives no author collection role.</p><p><a href='https://www.econometricsociety.org/publications/econometrica/2022/05/01/misallocation-selection-and-productivity-quantitative-analysis/file/ecta200400.pdf'>Source</a> · Study design, participants and procedures</p></details></td><td>development</td>
 <td>Available</td><td>UNCLEAR / NO / UNCLEAR</td>
 <td>— / — / —</td><td>NO / NO / NO</td></tr><tr><td>Econometrica</td>
 <td>2023</td><td><a href="https://doi.org/10.3982/ecta19274">Factions in Nondemocracies: Theory and Evidence From the Chinese Communist Party</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Econometrica</td>
 <td>2024</td><td><a href="https://doi.org/10.3982/ecta22687">Ambiguous Contracts</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Econometrica</td>
 <td>2025</td><td><a href="https://doi.org/10.3982/ecta19153">Gaussian Transforms Modeling and the Estimation of Distributional Regression Functions</a><details><summary>Review reasoning</summary><p>A statistical estimation method illustrated using existing American Community Survey data; no author-team participant collection.</p><p><a href='https://www.econometricsociety.org/publications/econometrica/2025/09/01/Gaussian-Transforms-Modeling-and-the-Estimation-of-Distributional-Regression-Functions/file/ecta200809.pdf'>Source</a> · Study design, participants and procedures</p></details></td><td>development</td>
 <td>Available</td><td>UNCLEAR / NO / UNCLEAR</td>
@@ -1265,34 +1267,34 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Available</td><td>YES / YES / NO</td>
 <td>— / — / —</td><td>YES / YES / YES</td></tr><tr><td>Journal of Finance</td>
 <td>2016</td><td><a href="https://doi.org/10.1111/jofi.12288">Asymmetric Information about Collateral Values</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Journal of Finance</td>
 <td>2017</td><td><a href="https://doi.org/10.1111/jofi.12520">The Front Men of Wall Street: The Role of CDO Collateral Managers in the CDO Boom and Bust</a></td><td>holdout</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>UNCLEAR / UNCLEAR / UNCLEAR</td><td>— / — / —</td></tr><tr><td>Journal of Finance</td>
 <td>2018</td><td><a href="https://doi.org/10.1111/jofi.12688">Estimating Private Equity Returns from Limited Partner Cash Flows</a></td><td>holdout</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>UNCLEAR / UNCLEAR / UNCLEAR</td><td>— / — / —</td></tr><tr><td>Journal of Finance</td>
 <td>2019</td><td><a href="https://doi.org/10.1111/jofi.12817">The Best of Both Worlds: Accessing Emerging Economies via Developed Markets</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Journal of Finance</td>
 <td>2020</td><td><a href="https://doi.org/10.1111/jofi.12951">False (and Missed) Discoveries in Financial Economics</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Journal of Finance</td>
 <td>2021</td><td><a href="https://doi.org/10.1111/jofi.13015">Report of the Editor of The Journal of Finance for the Year 2020</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Journal of Finance</td>
 <td>2022</td><td><a href="https://doi.org/10.1111/jofi.13184">Loan Terms and Collateral: Evidence from the Bilateral Repo Market</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Journal of Finance</td>
 <td>2023</td><td><a href="https://doi.org/10.1111/jofi.13188">Optimal Financial Transaction Taxes</a><details><summary>Review reasoning</summary><p>The paper derives optimal transaction taxes theoretically and calibrates them to published estimates; no participant collection. Source is a working paper matching title and author.</p><p><a href='http://www.nber.org/papers/w27826.pdf'>Source</a> · Study design, participants and procedures</p></details></td><td>development</td>
 <td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>NO / NO / NO</td></tr><tr><td>Journal of Finance</td>
 <td>2024</td><td><a href="https://doi.org/10.1111/jofi.13311">Choosing to Disagree: Endogenous Dismissiveness and Overconfidence in Financial Markets</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Journal of Finance</td>
 <td>2025</td><td><a href="https://doi.org/10.1111/jofi.13476">The Impact of the Financial Education of Executives on the Financial Practices of Medium and Large Enterprises</a></td><td>development</td>
-<td>Access unresolved</td><td>YES / YES / NO</td>
+<td>Available</td><td>YES / YES / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Journal of Financial Economics</td>
 <td>2016</td><td><a href="https://doi.org/10.1016/j.jfineco.2015.09.009">The cross-sectional variation of volatility risk premia</a><details><summary>Review reasoning</summary><p>Stock and option records are from OptionMetrics, with external French factors and Federal Reserve series. No author-designed human research procedure.</p><p><a href='https://api.elsevier.com/content/article/doi/10.1016/j.jfineco.2015.09.009?view=FULL'>Source</a> · Study design, participants and procedures</p></details></td><td>development</td>
 <td>Available</td><td>NO / NO / NO</td>
@@ -1421,7 +1423,7 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Access unresolved</td><td>NO / NO / NO</td>
 <td>UNCLEAR / UNCLEAR / UNCLEAR</td><td>— / — / —</td></tr><tr><td>Review of Financial Studies</td>
 <td>2018</td><td><a href="https://doi.org/10.1093/rfs/hhy042">Long forward probabilities, recovery, and the term structure of bond risk premiums</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Review of Financial Studies</td>
 <td>2019</td><td><a href="https://doi.org/10.1093/rfs/hhy057">Revealing downturns</a></td><td>development</td>
 <td>Access unresolved</td><td>NO / NO / NO</td>
@@ -1430,7 +1432,7 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Access unresolved</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Review of Financial Studies</td>
 <td>2021</td><td><a href="https://doi.org/10.1093/rfs/hhaa066">Evaluating Firm-Level Expected-Return Proxies: Implications for Estimating Treatment Effects</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Review of Financial Studies</td>
 <td>2022</td><td><a href="https://doi.org/10.1093/rfs/hhab137">What Moves Stock Prices? The Roles of News, Noise, and Information</a></td><td>development</td>
 <td>Access unresolved</td><td>NO / NO / NO</td>
@@ -1442,7 +1444,7 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Access unresolved</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Review of Financial Studies</td>
 <td>2025</td><td><a href="https://doi.org/10.1093/rfs/hhaf033">Learning to Disclose: Disclosure Dynamics in the 1890s Streetcar Industry</a></td><td>holdout</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>UNCLEAR / UNCLEAR / UNCLEAR</td><td>— / — / —</td></tr><tr><td>World Development</td>
 <td>2016</td><td><a href="https://doi.org/10.1016/j.worlddev.2016.05.002">Wage Growth, Landholding, and Mechanization in Chinese Agriculture</a><details><summary>Review reasoning</summary><p>The team explicitly describes its two rounds of household surveys and return fieldwork in 2009; these earlier team-collected panel responses qualify. No experimental intervention.</p><p><a href='https://api.elsevier.com/content/article/doi/10.1016/j.worlddev.2016.05.002?view=FULL'>Source</a> · Study design, participants and procedures</p></details></td><td>development</td>
 <td>Available</td><td>UNCLEAR / NO / UNCLEAR</td>
@@ -1475,31 +1477,31 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Available</td><td>YES / YES / YES</td>
 <td>YES / YES / YES</td><td>YES / YES / YES</td></tr><tr><td>American Journal of Political Science</td>
 <td>2016</td><td><a href="https://doi.org/10.1111/ajps.12228">Preaching to the Choir: Americans Prefer Communicating to Copartisan Elected Officials</a></td><td>holdout</td>
-<td>Access unresolved</td><td>YES / YES / UNCLEAR</td>
+<td>Available</td><td>YES / YES / UNCLEAR</td>
 <td>YES / YES / UNCLEAR</td><td>— / — / —</td></tr><tr><td>American Journal of Political Science</td>
 <td>2017</td><td><a href="https://doi.org/10.1111/ajps.12314">A Bottom-Up Theory of Public Opinion about Foreign Policy</a><details><summary>Review reasoning</summary><p>Five team-designed survey experiments recruit SSI and MTurk samples and vary elite and peer cues; collection years alone do not establish reuse.</p><p><a href='https://doi.org/10.1111/ajps.12314'>Source</a> · Study design, participants and procedures</p></details></td><td>development</td>
 <td>Available</td><td>YES / YES / YES</td>
 <td>— / — / —</td><td>YES / YES / YES</td></tr><tr><td>American Journal of Political Science</td>
 <td>2018</td><td><a href="https://doi.org/10.1111/ajps.12361">Tree-Based Models for Political Science Data</a></td><td>development</td>
-<td>Access unresolved</td><td>UNCLEAR / NO / UNCLEAR</td>
+<td>Available</td><td>UNCLEAR / NO / UNCLEAR</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>American Journal of Political Science</td>
 <td>2019</td><td><a href="https://doi.org/10.1111/ajps.12430">On the Meaning of Survey Reports of Roll-Call “Votes”</a><details><summary>Review reasoning</summary><p>The authors fielded randomized information interventions in their CCES module and subsequent SSI and Lucid surveys; an original module in an existing survey qualifies.</p><p><a href='https://doi.org/10.1111/ajps.12430'>Source</a> · Study design, participants and procedures</p></details></td><td>development</td>
 <td>Available</td><td>YES / YES / YES</td>
 <td>— / — / —</td><td>YES / YES / YES</td></tr><tr><td>American Journal of Political Science</td>
 <td>2020</td><td><a href="https://doi.org/10.1111/ajps.12473">Measuring Trade Profile with Granular Product-Level Data</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>American Journal of Political Science</td>
 <td>2021</td><td><a href="https://doi.org/10.1111/ajps.12571">Ideology, Not Affect: What Americans Want from Political Representation</a></td><td>holdout</td>
-<td>Access unresolved</td><td>YES / YES / YES</td>
+<td>Available</td><td>YES / YES / YES</td>
 <td>YES / YES / YES</td><td>— / — / —</td></tr><tr><td>American Journal of Political Science</td>
 <td>2022</td><td><a href="https://doi.org/10.1111/ajps.12558">Executive Accountability Beyond Outcomes: Experimental Evidence on Public Evaluations of Powerful Prime Ministers</a><details><summary>Review reasoning</summary><p>The authors inserted randomized prime-minister vignettes into FNES and commissioned a new independent 2019 sample. Original modules in an existing panel qualify. Source is a 2019 revision manuscript with allfourstudies.</p><p><a href='https://publications.ut-capitole.fr/id/eprint/32347/1/iast_wp98.pdf'>Source</a> · Study design, participants and procedures</p></details></td><td>development</td>
 <td>Available</td><td>YES / YES / YES</td>
 <td>— / — / —</td><td>YES / YES / YES</td></tr><tr><td>American Journal of Political Science</td>
 <td>2023</td><td><a href="https://doi.org/10.1111/ajps.12679">A Priori Bounds on Legislative Bargaining Agreements</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>American Journal of Political Science</td>
 <td>2024</td><td><a href="https://doi.org/10.1111/ajps.12708">The Electoral Consequences of Household Indebtedness under Austerity</a></td><td>development</td>
-<td>Access unresolved</td><td>UNCLEAR / NO / UNCLEAR</td>
+<td>Available</td><td>UNCLEAR / NO / UNCLEAR</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>American Journal of Political Science</td>
 <td>2025</td><td><a href="https://doi.org/10.1111/ajps.12916">Authoritarian cue effect of state repression</a><details><summary>Review reasoning</summary><p>The team commissioned a Chinese online survey and randomized disclosure of repression outcomes; a local survey firm was unnamed.</p><p><a href='https://doi.org/10.1111/ajps.12916'>Source</a> · Study design, participants and procedures</p></details></td><td>development</td>
 <td>Available</td><td>YES / YES / YES</td>
@@ -1586,7 +1588,7 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>YES / NO / YES</td></tr><tr><td>Comparative Political Studies</td>
 <td>2023</td><td><a href="https://doi.org/10.1177/00104140231169018">Electoral Systems, Partisan Politics, and Income Redistribution: A Critical Quasi-Experiment</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Comparative Political Studies</td>
 <td>2024</td><td><a href="https://doi.org/10.1177/00104140231223745">Backlash or Progressive Mobilization? Voter Reactions to Perceived Trajectories of Women’s Representation</a><details><summary>Review reasoning</summary><p>The author commissioned a German online survey and block-randomized representation-trajectory charts and control before attitude questions.</p><p><a href='https://www.zora.uzh.ch/server/api/core/bitstreams/384cd841-b9d9-435d-b4b4-eb7523e85c42/content'>Source</a> · Study design, participants and procedures</p></details></td><td>development</td>
 <td>Available</td><td>YES / YES / YES</td>
@@ -1685,10 +1687,10 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Available</td><td>NO / NO / NO</td>
 <td>NO / NO / NO</td><td>NO / NO / NO</td></tr><tr><td>Journal of Public Administration Research and Theory</td>
 <td>2016</td><td><a href="https://doi.org/10.1093/jopart/muu032">The Administrative Organization of Sustainability Within Local Government</a></td><td>development</td>
-<td>Access unresolved</td><td>UNCLEAR / NO / UNCLEAR</td>
+<td>Available</td><td>UNCLEAR / NO / UNCLEAR</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Journal of Public Administration Research and Theory</td>
 <td>2017</td><td><a href="https://doi.org/10.1093/jopart/muw041">Linking network structure to collaborative governance</a></td><td>development</td>
-<td>Access unresolved</td><td>UNCLEAR / NO / UNCLEAR</td>
+<td>Available</td><td>UNCLEAR / NO / UNCLEAR</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Journal of Public Administration Research and Theory</td>
 <td>2018</td><td><a href="https://doi.org/10.1093/jopart/muy004">Public organization adaptation to extreme events: Mediating role of risk perception</a></td><td>development</td>
 <td>Access unresolved</td><td>UNCLEAR / NO / UNCLEAR</td>
@@ -1712,34 +1714,34 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>NO / NO / NO</td></tr><tr><td>Journal of Public Administration Research and Theory</td>
 <td>2025</td><td><a href="https://doi.org/10.1093/jopart/muaf012">Patterns of bureaucracy: Conceptualizing administrative traditions</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Public Administration Review</td>
 <td>2016</td><td><a href="https://doi.org/10.1111/puar.12406">Interpreting Performance Information: Motivated Reasoning or Unbiased Comprehension</a><details><summary>Review reasoning</summary><p>The authors administered a new internet-panel survey measuring Danish citizens’ interpretations of manipulated hospital performance information.</p><p><a href='https://doi.org/10.1111/puar.12406'>Source</a> · Design: Experiment 1</p></details></td><td>development</td>
 <td>Available</td><td>YES / YES / YES</td>
 <td>— / — / —</td><td>YES / YES / YES</td></tr><tr><td>Public Administration Review</td>
 <td>2017</td><td><a href="https://doi.org/10.1111/puar.12683">Developing Practice-Oriented Theory on Collaboration: A Paradox Lens</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Public Administration Review</td>
 <td>2018</td><td><a href="https://doi.org/10.1111/puar.12769">Why Do Nonprofit Performing Arts Organizations Offer Free Public Access?</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Public Administration Review</td>
 <td>2019</td><td><a href="https://doi.org/10.1111/puar.12898">Playground or Church? Implications for Public Administration from Trinity Lutheran v. Comer</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Public Administration Review</td>
 <td>2020</td><td><a href="https://doi.org/10.1111/puar.13248">Unprecedented Challenges, Familiar Paradoxes: COVID-19 and Governance in a New Normal State of Risks</a></td><td>holdout</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>NO / NO / NO</td><td>— / — / —</td></tr><tr><td>Public Administration Review</td>
 <td>2021</td><td><a href="https://doi.org/10.1111/puar.13263">Branding as a Public Governance Strategy: A Q Methodological Analysis of How Companies React to Place Branding Strategies</a><details><summary>Review reasoning</summary><p>The authors recruited 33 companyowners for structured opinion ranking of 24 statements plus follow-up interviews. Primary design is a ranking questionnaire/Q-sort survey; random statement order alone is not an experimental intervention.</p><p><a href='https://repub.eur.nl/pub/129993/Repub_129993_O-A.pdf'>Source</a> · Study design, participants and procedures</p></details></td><td>development</td>
 <td>Available</td><td>YES / NO / UNCLEAR</td>
 <td>— / — / —</td><td>YES / NO / YES</td></tr><tr><td>Public Administration Review</td>
 <td>2022</td><td><a href="https://doi.org/10.1111/puar.13433">Public Management for Populists: Trump&#x27;s Schedule F Executive Order and the Future of the Civil Service</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Public Administration Review</td>
 <td>2023</td><td><a href="https://doi.org/10.1111/puar.13629">Policy entrepreneurs and individuals: Influence and behavior in pandemic response</a></td><td>development</td>
-<td>Access unresolved</td><td>UNCLEAR / NO / UNCLEAR</td>
+<td>Available</td><td>UNCLEAR / NO / UNCLEAR</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Public Administration Review</td>
 <td>2024</td><td><a href="https://doi.org/10.1111/puar.13821">Governance by artifacts: Theory and evidence on materiality of administrative burdens</a></td><td>holdout</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>NO / NO / NO</td><td>— / — / —</td></tr><tr><td>Public Administration Review</td>
 <td>2025</td><td><a href="https://doi.org/10.1111/puar.13751">It&#x27;s not merely about the content: How rules are communicated matters to administrative burden</a><details><summary>Review reasoning</summary><p>The authors collected 2243 quantitative responses through YouGov Denmark, assigning participants to four rule-communication variants or a control and measuring administrative burden.</p><p><a href='https://doi.org/10.1111/puar.13751'>Source</a> · Research Design and Case Selection; Participants; Outcome Measures</p></details></td><td>development</td>
 <td>Available</td><td>YES / YES / YES</td>
@@ -1823,7 +1825,7 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Access unresolved</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Demography</td>
 <td>2022</td><td><a href="https://doi.org/10.1215/00703370-9644472">Multiple Perspectives on Recent Trends in Unwanted Fertility in Low- and Middle-Income Countries</a></td><td>holdout</td>
-<td>Access unresolved</td><td>UNCLEAR / NO / UNCLEAR</td>
+<td>Available</td><td>UNCLEAR / NO / UNCLEAR</td>
 <td>UNCLEAR / UNCLEAR / UNCLEAR</td><td>— / — / —</td></tr><tr><td>Demography</td>
 <td>2023</td><td><a href="https://doi.org/10.1215/00703370-11067917">The Dangers of Drawing Cohort Profiles From Period Data: A Research Note</a><details><summary>Review reasoning</summary><p>The methodological note compares period-derived versus actual cohort measures using existing Human Fertility and Human Mortality Database series, not participant procedures.</p><p><a href='https://hal.science/hal-04318716/document'>Source</a> · Study design, participants and procedures</p></details></td><td>holdout</td>
 <td>Available</td><td>NO / NO / NO</td>
@@ -1856,7 +1858,7 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>YES / NO / YES</td></tr><tr><td>European Sociological Review</td>
 <td>2023</td><td><a href="https://doi.org/10.1093/esr/jcac049">Social and cultural mobility: Rising to the middle class and cultural practices in contemporary Finland</a></td><td>development</td>
-<td>Access unresolved</td><td>UNCLEAR / NO / UNCLEAR</td>
+<td>Available</td><td>UNCLEAR / NO / UNCLEAR</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>European Sociological Review</td>
 <td>2024</td><td><a href="https://doi.org/10.1093/esr/jcad026">Material deprivation in childhood and unequal political socialization: the relationship between children’s economic hardship and future voting</a></td><td>development</td>
 <td>Access unresolved</td><td>NO / NO / NO</td>
@@ -1865,31 +1867,31 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>NO / NO / NO</td></tr><tr><td>Journal of Marriage and Family</td>
 <td>2016</td><td><a href="https://doi.org/10.1111/jomf.12364">How Early Life Religious Exposure Relates to the Timing of First Birth</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Journal of Marriage and Family</td>
 <td>2017</td><td><a href="https://doi.org/10.1111/jomf.12429">Parental Incarceration and the Transition to Adulthood</a></td><td>holdout</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>UNCLEAR / UNCLEAR / UNCLEAR</td><td>— / — / —</td></tr><tr><td>Journal of Marriage and Family</td>
 <td>2018</td><td><a href="https://doi.org/10.1111/jomf.12488">Gender Equality and Restless Sleep Among Partnered Europeans</a><details><summary>Review reasoning</summary><p>The accepted manuscript analyzes existing 2006 European Social Survey responses linked with UN macro indicators. No original author-team module or participant collection is described.</p><p><a href='https://minerva-access.unimelb.edu.au/bitstreams/f2d3812d-d296-5a6c-9a6e-937fa13ddc53/download'>Source</a> · Study design, participants and procedures</p></details></td><td>holdout</td>
 <td>Available</td><td>NO / NO / NO</td>
 <td>UNCLEAR / UNCLEAR / UNCLEAR</td><td>NO / NO / NO</td></tr><tr><td>Journal of Marriage and Family</td>
 <td>2019</td><td><a href="https://doi.org/10.1111/jomf.12519">Becoming “Us”: Marital Name, Gender, and Agentic Work in Transition to Marriage</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Journal of Marriage and Family</td>
 <td>2020</td><td><a href="https://doi.org/10.1111/jomf.12617">Cohabitation and Marriage: Complexity and Diversity in Union-Formation Patterns</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Journal of Marriage and Family</td>
 <td>2021</td><td><a href="https://doi.org/10.1111/jomf.12696">Work Schedule Unpredictability: Daily Occurrence and Effects on Working Parents&#x27; Well-Being</a></td><td>development</td>
-<td>Access unresolved</td><td>YES / NO / YES</td>
+<td>Available</td><td>YES / NO / YES</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Journal of Marriage and Family</td>
 <td>2022</td><td><a href="https://doi.org/10.1111/jomf.12821">Friend, foe, or forget ‘em?: The quality of LGBTQ adult sibling relationships</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Journal of Marriage and Family</td>
 <td>2023</td><td><a href="https://doi.org/10.1111/jomf.12872">“Normal” childhood in the lives of financially struggling white daughters and mothers</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Journal of Marriage and Family</td>
 <td>2024</td><td><a href="https://doi.org/10.1111/jomf.12933">Associations between parental precarious work schedules and child behavior problems among low-income families</a></td><td>development</td>
-<td>Access unresolved</td><td>UNCLEAR / NO / UNCLEAR</td>
+<td>Available</td><td>UNCLEAR / NO / UNCLEAR</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Journal of Marriage and Family</td>
 <td>2025</td><td><a href="https://doi.org/10.1111/jomf.13037">Gender inequality in intergenerational contact after parental separation in the digital era</a><details><summary>Review reasoning</summary><p>Analysis of external ISTAT Families Social Subjects 2014 survey; no team participant collection.</p><p><a href='https://www.research.unipd.it/bitstream/11577/3532722/1/J%20of%20Marriage%20and%20Family%20-%202024%20-%20Tosi%20-%20Gender%20inequality%20in%20intergenerational%20contact%20after%20parental%20separation%20in%20the.pdf'>Source</a> · Study design, participants and procedures</p></details></td><td>development</td>
 <td>Available</td><td>NO / NO / NO</td>
@@ -1904,7 +1906,7 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Access unresolved</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Social Forces</td>
 <td>2019</td><td><a href="https://doi.org/10.1093/sf/soz012">Education-Based Status in Comparative Perspective: The Legitimization of Education as a Basis for Social Stratification</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Social Forces</td>
 <td>2020</td><td><a href="https://doi.org/10.1093/sf/soaa018">Happiness in hard times: Does religion buffer the negative effect of unemployment on happiness?</a></td><td>development</td>
 <td>Access unresolved</td><td>NO / NO / NO</td>
@@ -1913,7 +1915,7 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Access unresolved</td><td>UNCLEAR / NO / UNCLEAR</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Social Forces</td>
 <td>2022</td><td><a href="https://doi.org/10.1093/sf/soab088">The Dilution of Parents&#x27; Nonmaterial Resources in Stepfamilies: The Role of Complex Sibling Configurations in Parental Involvement</a></td><td>holdout</td>
-<td>Access unresolved</td><td>UNCLEAR / NO / UNCLEAR</td>
+<td>Available</td><td>UNCLEAR / NO / UNCLEAR</td>
 <td>UNCLEAR / UNCLEAR / UNCLEAR</td><td>— / — / —</td></tr><tr><td>Social Forces</td>
 <td>2023</td><td><a href="https://doi.org/10.1093/sf/soad008">The Differential Impacts of Contingent Employment on Fertility: Evidence from Australia</a></td><td>development</td>
 <td>Access unresolved</td><td>NO / NO / NO</td>
@@ -1922,13 +1924,13 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>NO / NO / NO</td></tr><tr><td>Social Forces</td>
 <td>2025</td><td><a href="https://doi.org/10.1093/sf/soae173">&quot;you just feel re-violated&quot;: Coercive sexual control in juvenile detention</a></td><td>holdout</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>NO / NO / NO</td><td>— / — / —</td></tr><tr><td>Criminology</td>
 <td>2016</td><td><a href="https://doi.org/10.1111/1745-9125.12094">How the U.S. prison boom has changed the age distribution of the prison population</a></td><td>holdout</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>UNCLEAR / UNCLEAR / UNCLEAR</td><td>— / — / —</td></tr><tr><td>Criminology</td>
 <td>2017</td><td><a href="https://doi.org/10.1111/1745-9125.12135">Consequences of incarceration for gang membership: A longitudinal study of serious offenders in philadelphia and phoenix*</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Criminology</td>
 <td>2018</td><td><a href="https://doi.org/10.1111/1745-9125.12153">TOWARD A BIFURCATED THEORY OF EMOTIONAL DETERRENCE</a><details><summary>Review reasoning</summary><p>The authors recruited and paid MTurk adults for a 2016 questionnaire containing manipulated crime vignettes and quantitative fear, risk and intention ratings.</p><p><a href='https://doi.org/10.1111/1745-9125.12153'>Source</a> · Method; Generalized risk and fear</p></details></td><td>development</td>
 <td>Available</td><td>YES / YES / YES</td>
@@ -1937,16 +1939,16 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Available</td><td>YES / NO / NO</td>
 <td>— / — / —</td><td>YES / NO / NO</td></tr><tr><td>Criminology</td>
 <td>2020</td><td><a href="https://doi.org/10.1111/1745-9125.12243">Perceived arrest risk, psychic rewards, and offense specialization: A partial test of rational choice theory†</a></td><td>development</td>
-<td>Access unresolved</td><td>UNCLEAR / NO / UNCLEAR</td>
+<td>Available</td><td>UNCLEAR / NO / UNCLEAR</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Criminology</td>
 <td>2021</td><td><a href="https://doi.org/10.1111/1745-9125.12277">Social media, socialization, and pursuing legitimation of police violence*</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Criminology</td>
 <td>2022</td><td><a href="https://doi.org/10.1111/1745-9125.12307">Damned if you do, damned if you don&#x27;t: How formerly incarcerated men navigate the labor market with prison credentials*</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Criminology</td>
 <td>2023</td><td><a href="https://doi.org/10.1111/1745-9125.12336">Coerced work during parole: Prevalence, mechanisms, and characteristics</a></td><td>holdout</td>
-<td>Access unresolved</td><td>YES / NO / UNCLEAR</td>
+<td>Available</td><td>YES / NO / UNCLEAR</td>
 <td>YES / NO / YES</td><td>— / — / —</td></tr><tr><td>Criminology</td>
 <td>2024</td><td><a href="https://doi.org/10.1111/1745-9125.12381">Understanding the role of street network configurations in the placement of illegitimately operating facilities</a><details><summary>Review reasoning</summary><p>Existing commercial-sex website and Yelp reviews, OpenStreetMap and census data are assembled and geocoded; no participant study procedure.</p><p><a href='https://scholarlypublications.universiteitleiden.nl/access/item%3A4105377/view'>Source</a> · Study design, participants and procedures</p></details></td><td>development</td>
 <td>Available</td><td>NO / NO / NO</td>

@@ -6,7 +6,8 @@ studies primarily designed as surveys have separate labels.
 [Findings](score/report.md) · [Review protocol](score/protocol.md) ·
 [Journal frame](score/journals.csv) · [Article list](score/articles.csv) ·
 [Current prompt](score/prompt_current.md) · [Verbatim original](score/prompt_original.md) ·
-[Tested candidate](score/prompt_revised.md)
+[Tested candidate](score/prompt_revised.md) ·
+[Proposed edits](score/prompt_proposed_redline.md) · [Current access report](score/access_report.md)
 
 The provisional screen is the original prompt plus the user's primary-survey
 definition, retaining collection YES and UNCLEAR. The tested candidate remains
@@ -18,6 +19,14 @@ The substantive AI source review is the primary, provisional assessment. RAs wil
 sample; no labels have yet been human verified. Metadata screening and source
 review are stored separately. Unavailable full text is unresolved, never a NO.
 This session uses agents and incurs no paid API annotation spending.
+
+The fixed 620 papers are the working validation collection. The local workbook
+`private/score/SCORE_validation_620.xlsx` contains every article, grouped
+alphabetically by journal and ordered by year descending. Its `Column guide`
+sheet explains each column in order. Download availability, actual assessment
+basis, metadata decisions and completed source reviews remain distinct.
+New downloads retain metadata-based assessments until source review is completed.
+The workbook includes private abstracts and evidence and is kept off GitHub.
 
 The folders are:
 
@@ -38,6 +47,7 @@ From this folder, rebuild derived outputs from the existing private reviews:
 python3 score/review.py
 python3 score/evaluate.py
 python3 score/coverage.py
+python3 score/workbook.py
 python3 score/dashboard.py
 python3 score/publish.py
 ```
@@ -53,12 +63,22 @@ Scopus credentials are read from the environment or the parent project's `.env`.
 Do not publish credentials, full abstracts, PDFs, extracted text or the supplied
 conversation transcript.
 
-The [manual download queue](score/manual_downloads.csv) lists the 332 articles
-still missing usable main text after network retrieval attempts. Among these,
-268 encountered HTTP 403 responses, 64 reached APA login pages, and 26 encountered
-browser challenges; these categories overlap. The Stanford connection allowed
-Scopus metadata and many Elsevier full texts, but did not provide every publisher's
-browser login or download entitlement.
+The [manual download queue](score/manual_downloads.csv) lists articles still
+missing usable main text after current retrieval attempts. The
+[access report](score/access_report.md) records the latest counts, working API
+routes and remaining tasks. Provider logins, subscription coverage and browser
+challenges can differ even while the Stanford VPN is connected.
+
+The downloader reads `SCOPUS_API_KEY`, `WILEY_TDM_TOKEN` (or `WILEY_API_KEY`),
+`OPENALEX_API_KEY` (or `OPEN_ALEX`), and optional `UNPAYWALL_EMAIL` from the local
+environment or the parent project's `.env`. It never prints credential values.
+If the Unpaywall email is not saved there, supply `--unpaywall-email` on the
+command line. `--openalex-content` tries cached open copies only while a verified
+free daily allowance remains. It does not purchase credits.
+
+```bash
+python3 score/fetch_fulltext.py --retry-failures --openalex-content
+```
 
 For an article obtained through a library browser, save the actual PDF in a local
 folder as `<article_id>.pdf`, using its ID from the queue. From this folder run:
