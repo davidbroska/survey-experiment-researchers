@@ -1,0 +1,32 @@
+{
+  "articles": 620,
+  "journals": 62,
+  "years": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "split": {
+    "development": 496,
+    "holdout": 124
+  },
+  "sources": {
+    "Scopus": 618,
+    "Crossref": 2
+  },
+  "with_abstract": 612,
+  "with_keywords": 441,
+  "with_author_list": 620,
+  "local_fulltexts": 30,
+  "journal_audit_passed": 62,
+  "unique_dois": 620,
+  "author_counts_complete": true,
+  "checked_at": "2026-10-07T09:49:26.485814+00:00"
+}

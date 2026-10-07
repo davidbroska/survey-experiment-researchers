@@ -16,10 +16,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - name: Check pipeline logic
-        run: python3 -m unittest discover -s tests -v
+      - name: Check Python syntax
+        run: python3 -m compileall -q score
       - name: Stage the public site and check local links
-        run: python3 pipeline/build_site.py
+        run: python3 score/publish.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:

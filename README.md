@@ -1,34 +1,80 @@
-Open the [researcher ranking](DASHBOARD_NARROWER.html). It defaults to US-sample article counts and retains total survey-experiment candidate counts alongside them. Both columns are sortable. [Coauthor summary](COAUTHOR_SUMMARY.html) · [Methodology and Scopus query](METHODOLOGY.html).
+The active project is the [SCORE recruitment pilot](score/index.html): 620 articles,
+one from each of 62 journals in each year 2016–2025. Recruitment includes researchers
+who collect quantitative human participant data, in any country. Experiments and
+studies primarily designed as surveys have separate labels.
 
-The selected query retrieves **9,365 distinct journal articles** published in 2010–2026 within a recorded set of 3,401 journals used by TESS investigators. Each article contributes once to each distinct first or last author; a sole author receives one credit. Candidate donors need not have participated in TESS.
+[Findings](score/report.md) · [Review protocol](score/protocol.md) ·
+[Journal frame](score/journals.csv) · [Article list](score/articles.csv) ·
+[Current prompt](score/prompt_current.md) · [Verbatim original](score/prompt_original.md) ·
+[Tested candidate](score/prompt_revised.md)
 
-The US ranking compares **120 researchers**: the top 100 by article count, expanded to 114 because of ties, plus six additional candidates retained from the initial review list. Their **1,035 distinct credited articles** include **489 with US-sample evidence** (311 explicit; 178 inferred) and **147 with unclear geography**. US inference may use American study contexts; author affiliations or generic panel names do not establish sample country. Every article associated with these researchers has a geography judgment, but uncertain cases remain unresolved. The US ranking compares these 120 researchers, not every author in Scopus.
+The provisional screen is the original prompt plus the user's primary-survey
+definition, retaining collection YES and UNCLEAR. The tested candidate remains
+a research record and has not been adopted. Audit NO decisions before final
+exclusion. Session reviewers and contexts differed between versions; the
+comparison does not isolate wording effects or validate a future model.
 
-The latest six supplied PDFs are archived privately and have source-validated geography reviews. All six support US samples: five explicitly and one by inference. Separate design notes record experimental eligibility and parser concerns, including an interactive skill-task study; these flags do not silently change candidate counts. [Review records](results/coauthor_update_wave3_2026_09_10/geography_reviews.csv) · [Design review notes](results/coauthor_update_wave3_2026_09_10/design_parser_flags.csv).
+The substantive AI source review is the primary, provisional assessment. RAs will verify a
+sample; no labels have yet been human verified. Metadata screening and source
+review are stored separately. Unavailable full text is unresolved, never a NO.
+This session uses agents and incurs no paid API annotation spending.
 
-Counts describe articles, not independent datasets. AI-assisted annotations await human validation; experimental eligibility, parser suitability and access to respondent data and treatment materials need confirmation before invitations. Institutions, departments, countries and roles are joined from sourced profiles. The country column concerns researchers’ institutions; the US-sample count concerns participants.
+The folders are:
 
-Run from this folder. The public package can regenerate the dashboard and coauthor documents without private source files:
+- `score/`: current code, prompts, bibliography, derived labels and dashboard.
+- `inputs/`: the supplied journal frame and local background transcript.
+- `private/score/`: licensed metadata, retrieval receipts, frozen predictions,
+  detailed source reviews and the blinded RA packet.
+- `../Literature/SCORE/`: downloaded main articles and supporting documents.
+- `archive/tess/`: preserved earlier recruitment work, outside the active frame.
+
+Python uses NumPy and the standard library. Prefer short, readable functions;
+use tidyverse style for R. Michael Howes's [ppi_py](https://github.com/Michael-Howes/ppi_py)
+is the readability reference. PDF extraction requires `pdftotext` from Poppler.
+
+From this folder, rebuild derived outputs from the existing private reviews:
 
 ```bash
-python3 pipeline/variant_dashboards.py
-python3 pipeline/recruitment_methods.py
-python3 pipeline/build_site.py
-python3 -m unittest discover -s tests -v
+python3 score/review.py
+python3 score/evaluate.py
+python3 score/coverage.py
+python3 score/dashboard.py
+python3 score/publish.py
 ```
 
-With the restricted local retrieval and review snapshots available, apply source-validated geography updates first:
+The public repository can rebuild the website from committed derived outputs
+using only `python3 score/publish.py`. Full analysis requires the local private
+files. Screening judgments were made by session agents; the scripts do not call
+an LLM API or pretend to reproduce those judgments automatically.
+
+The sample is frozen. `score/sample.py export` reconstructs it from saved selections;
+`score/fetch_fulltext.py --help` describes retrieval retries. Existing entitled
+Scopus credentials are read from the environment or the parent project's `.env`.
+Do not publish credentials, full abstracts, PDFs, extracted text or the supplied
+conversation transcript.
+
+The [manual download queue](score/manual_downloads.csv) lists the 332 articles
+still missing usable main text after network retrieval attempts. Among these,
+268 encountered HTTP 403 responses, 64 reached APA login pages, and 26 encountered
+browser challenges; these categories overlap. The Stanford connection allowed
+Scopus metadata and many Elsevier full texts, but did not provide every publisher's
+browser login or download entitlement.
+
+For an article obtained through a library browser, save the actual PDF in a local
+folder as `<article_id>.pdf`, using its ID from the queue. From this folder run:
 
 ```bash
-python3 pipeline/coauthor_fulltext_update.py --validate
-python3 pipeline/coauthor_fulltext_wave2.py --aggregate
-python3 pipeline/coauthor_fulltext_wave3.py --aggregate
-python3 pipeline/query_ranking_geography.py
-python3 pipeline/variant_dashboards.py
-python3 pipeline/recruitment_methods.py
-python3 pipeline/build_site.py
+python3 score/fetch_fulltext.py --import-local /path/to/downloaded_pdfs
 ```
 
-Full retrieval reproduction requires an entitled Scopus connection and the recorded journal-source frame. The [literal selected query](queries/proximity_specific_2026_09_10/primary_plus_specific.txt), versioned inputs, article memberships, author credits and source hashes are retained for auditability. Original PDFs, full abstracts, extracted page text and supporting quotations remain under `private/` and are omitted from the website.
+This makes no network requests. It checks the PDF signature, readable main text
+and title/DOI identity, saves accepted files in `../Literature/SCORE/`, and updates
+the access and manual-download tables. It skips already verified sources and
+rejects mismatched articles, login pages and identifiable supplements. A new
+download still needs a source review before it contributes a reference label.
+Keep supplements separately; do not name an appendix as the main article.
 
-New requested PDFs may be saved in `SurveyExperimentRecruitment/` with the Scopus-ID filename provided by the dashboard. Each subsequent review round should preserve previously issued packets and judgments. Importing a file does not assign geography or design eligibility.
+The TESS work was already published at commit
+[`e73ddb2`](https://github.com/davidbroska/survey-experiment-researchers/commit/e73ddb294a0b9a38853d8e9f5ac2525044d1d2cf).
+Its [dashboard](archive/tess/DASHBOARD_NARROWER.html) and full public source snapshot
+are retained. The old U.S. and TESS restrictions do not apply to SCORE.

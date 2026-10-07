@@ -1,0 +1,125 @@
+article_id,prompt_version,collection,experiment,survey,other_methods,rationale,software,recruitment_providers,reviewer
+85049836037,revised,YES,YES,YES,not stated,The team conducted interventions with repeated daily surveys of employees.,[],[],metadata_agent
+85203368238,revised,YES,UNCLEAR,UNCLEAR,policy-capturing judgments,An administered executive study establishes collection but its manipulation and primary survey design are not specified.,[],[],metadata_agent
+85029153757,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The abstract reports consumer comparisons without establishing the source of measurements or all study procedures.,[],[],metadata_agent
+85119440388,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,Respondent counts and measured constructs do not establish who collected the data or whether additional designs qualify.,[],[],metadata_agent
+85009487455,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,Firm-level analysis does not establish participant collection and does not rule out supporting studies.,[],[],metadata_agent
+105021876075,revised,YES,YES,YES,not stated,The team conducted a primary field survey and two supplementary experiments.,[],[],metadata_agent
+85058613559,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,Map analysis suggests measured beliefs but leaves collection procedures and quantitative participant data provenance unspecified.,[],[],metadata_agent
+105009908654,revised,NO,NO,NO,not stated,The article explicitly synthesizes prior literature and proposes future research without reporting original participant collection.,[],[],metadata_agent
+85032586323,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The described model uses aggregate commercial data and computational tests but supporting participant studies are not affirmatively ruled out.,[],[],metadata_agent
+85047150197,revised,YES,YES,NO,observed purchasing behavior,Researcher-randomized retail prices and a live controlled test collect consumer choice behavior rather than a primary survey.,[],[],metadata_agent
+85071333254,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The described records and mapped boundaries do not qualify but the abstract does not establish that every component is archival.,[],[],metadata_agent
+105026188849,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The described interviews are qualitative and quantitative organizational data have unclear provenance and possible supporting procedures.,[],[],metadata_agent
+85064193755,revised,NO,NO,NO,not stated,The account describes grounded-theory conceptual synthesis without a quantitative participant study.,[],[],metadata_agent
+85086363634,revised,YES,YES,UNCLEAR,not stated,The authors trigger consumer arrogance in experiments but the pilot design is unspecified and may or may not be a primary survey.,[],[],metadata_agent
+85081103062,revised,YES,YES,NO,consumption behavior,Contrasting displayed calorie labels and measuring resulting intentions and consumption clearly implies team experiments with incidental ratings rather than a primary survey.,[],[],metadata_agent
+85159084986,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,Reported consumer-evaluation conclusions leave collection procedures and experimental or survey designs unspecified.,[],[],metadata_agent
+85067046561,revised,NO,NO,NO,not stated,The article presents a theory-based conceptual framework without reporting quantitative participant data collection.,[],[],metadata_agent
+85088042986,revised,YES,YES,UNCLEAR,not stated,Participant judgments under varied food appearance and reminders establish experiments while the pilot and supplemental designs leave primary surveys unspecified.,[],[],metadata_agent
+85196254925,revised,YES,YES,NO,redemption choices,The studies vary exchange-rate stability and measure redemption choices in incentive-compatible programs rather than primary questionnaire surveys.,[],[],metadata_agent
+105019547020,revised,YES,YES,UNCLEAR,not stated,The article includes author-team experiments beyond external purchase data but does not specify whether those experiments are questionnaire surveys.,[],[],metadata_agent
+85063693006,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,Store-level associations do not identify who collected participant responses or how all constructs were measured.,[],[],metadata_agent
+85215296410,revised,YES,YES,NO,decision tasks,The team varies advice and signals during participant decision tasks without describing a primary survey.,[],[],metadata_agent
+84989885945,revised,NO,NO,NO,not stated,This is explicitly a review connecting prior research and proposing future directions.,[],[],metadata_agent
+85137412610,revised,YES,UNCLEAR,UNCLEAR,not stated,The described multi-study measurements and goal-dependent responses imply team participant research but do not clearly specify assigned conditions or primary surveys.,[],[],metadata_agent
+85041632859,revised,NO,NO,NO,not stated,The extended case-study account describes qualitative perspectives and theoretical interpretation without a quantitative participant component.,[],[],metadata_agent
+85185928194,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The approach involves mothers but does not specify quantitative measurements or enough methods to exclude them.,[],[],metadata_agent
+85067959303,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The team analyzes prior instructional research but its role in the original collection and any additional study are unspecified.,[],[],metadata_agent
+85072174691,revised,YES,YES,NO,instructional performance,Students were assigned instructional and communication conditions with performance and ancillary assessment outcomes rather than a primary survey.,[],[],metadata_agent
+85041400976,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The survey is clear but its collection by this team and the coverage of all study components are not established.,[],[],metadata_agent
+85100633343,revised,YES,NO,YES,not stated,The authors conducted repeated diary surveys of motivational regulation without describing an imposed intervention.,[],[],metadata_agent
+85087077629,revised,NO,NO,NO,not stated,The systematic policy review analyzes evaluation documents without a quantitative participant study.,[],[],metadata_agent
+85186452943,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The abstract describes qualitative interviews but a survey-research keyword and incomplete methods leave a quantitative component unresolved.,[],[],metadata_agent
+85052582029,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The underlying intervention collected participant outcomes but the current team's role in those previous studies is not explicit.,[],[],metadata_agent
+85106617011,revised,YES,NO,YES,not stated,The study administered a survey to state administrators and obtained quantitative responses in addition to qualitative focus groups.,[],[],metadata_agent
+84957650321,revised,YES,NO,YES,not stated,Students completed the team's primary questionnaire measures of goals and educational outcomes without an imposed intervention.,[],[],metadata_agent
+85181213737,revised,NO,NO,NO,not stated,The article explicitly reviews and meta-analyzes prior studies rather than collecting new participant measurements.,[],[],metadata_agent
+85147804759,revised,YES,NO,YES,not stated,Participation in this study's repeated surveys establishes team collection without described manipulation.,[],[],metadata_agent
+85170274931,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,Longitudinal comparisons do not establish the team's collection role or whether the learning environments were researcher assigned.,[],[],metadata_agent
+85049958210,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The cohort follow-up is described but its collection provenance and the complete set of study procedures are not established.,[],[],metadata_agent
+85165075045,revised,YES,YES,NO,judgment and delegation tasks,Children judged experimentally presented expert inaccuracies and delegated questions in tasks rather than a primary survey.,[],[],metadata_agent
+85024089653,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The title identifies commentary but the absent abstract leaves any supporting empirical component unknown.,[],[],metadata_agent
+85107637507,revised,YES,UNCLEAR,NO,electrophysiology; cognitive task,The team recorded physiological and task responses but the abstract does not establish imposed variation and incidental clinical measures are not primary surveys.,[],[],metadata_agent
+85062810880,revised,YES,UNCLEAR,NO,visual performance tasks,The team measured visual-task performance with ancillary trait questionnaires but specific experimental manipulation is not established.,[],[],metadata_agent
+85086009494,revised,YES,YES,NO,tactile response tasks,The team manipulated face expressions and spatial stimuli during tactile response tasks without a primary survey.,[],[],metadata_agent
+85045638852,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,Online response collection is described but its source and the authors' collection role are not established.,[],[],metadata_agent
+85117231538,revised,YES,YES,YES,not stated,The authors conducted vignette experiments and distinct repeated daily-life surveys.,[],[],metadata_agent
+85006973897,revised,YES,YES,NO,investment games,The studies vary social cues and survival scenarios during investment games rather than primary questionnaire surveys.,[],[],metadata_agent
+85191794805,revised,YES,YES,NO,dictator games,The team varies density cues and measures cooperation in dictator-game tasks without a primary survey.,[],[],metadata_agent
+85075710100,revised,YES,YES,NO,negotiation behavior,The studies vary counterpart emotion in negotiation procedures and measure information seeking rather than primary surveys.,[],[],metadata_agent
+85123879387,revised,NO,NO,NO,not stated,The paper explicitly reanalyzes primary studies in a meta-analysis without original participant collection.,[],[],metadata_agent
+85188693304,revised,YES,NO,YES,not stated,Repeated ecological momentary emotion reporting is the primary study procedure without an imposed intervention.,[],[],metadata_agent
+105010177233,revised,YES,YES,NO,not stated,The described randomized intervention collects longitudinal clinical assessments that do not constitute a primary survey.,[],[],metadata_agent
+85053133495,revised,YES,YES,UNCLEAR,not stated,The team tests competition effects across multiple participant studies but the online study's primary survey status is unspecified.,[],[],metadata_agent
+85103129068,revised,YES,YES,NO,structured behavioral observation,The team changed public messages and systematically observed drivers' behavior without administering a primary survey.,[],[],metadata_agent
+85053284849,revised,YES,YES,NO,memory tasks; cortisol measurements,The team varies stress timing and measures memory-task responses with ancillary ratings rather than primary surveys.,[],[],metadata_agent
+85134782679,revised,YES,YES,UNCLEAR,not stated,Contrasting algorithmic and human discrimination in participant studies supports experiments but the primary questionnaire-survey status is unspecified.,[],[],metadata_agent
+85048490203,revised,YES,YES,NO,face perception and memory tasks,The studies assign target labels and collect facial perception and memory-task responses rather than primary questionnaire surveys.,[],[],metadata_agent
+85132775383,revised,YES,YES,YES,not stated,The team conducts a primary survey of interpretations and additional message experiments.,[],[],metadata_agent
+85079499421,revised,YES,YES,NO,fMRI; monetary choice task,The team varies disclosure intimacy within a monetary choice task and records brain responses rather than a primary survey.,[],[],metadata_agent
+105000327046,revised,YES,UNCLEAR,UNCLEAR,not stated,The multiple studies describing people's argument adjustments imply team participant research but assigned conditions and primary surveys are not explicit.,[],[],metadata_agent
+85019183029,revised,YES,YES,NO,photograph production; social perception,The team obtains photographs and varies targets' relative positions in perception studies rather than primary surveys.,[],[],metadata_agent
+85141021460,revised,YES,YES,NO,choice tasks,The team varies recommendation modality in consequential and hypothetical choice experiments rather than primary surveys.,[],"[""TurkPrime"", ""Prolific""]",metadata_agent
+85114918297,revised,YES,NO,YES,salivary cortisol,The team obtains repeated daily-life emotion surveys alongside cortisol assessments without described manipulation.,[],[],metadata_agent
+85125885187,revised,NO,NO,NO,not stated,The study synthesizes previously published qualitative findings through a meta-ethnographic review.,[],[],metadata_agent
+84977110627,revised,YES,YES,NO,not stated,The team randomized training and collected clinical outcomes and ancillary symptom scales rather than primary surveys.,[],[],metadata_agent
+85098106457,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The cohort has device and clinical measurements but this team's original collection role and any other study components are unspecified.,[],[],metadata_agent
+85032681209,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,Analyzing national cohort data does not establish team collection and does not affirmatively rule out every supporting component.,[],[],metadata_agent
+85136555473,revised,YES,NO,YES,not stated,The team measured reported experiences and sleep through primary questionnaire scales without a described intervention.,[],[],metadata_agent
+85088842121,revised,YES,YES,NO,employer callbacks; employment outcomes,The team conducts an audit experiment and an encouragement intervention measuring employment behavior rather than primary surveys.,[],[],metadata_agent
+105001197482,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The historical policy analysis does not establish team participant collection or affirmatively exclude supporting participant studies.,[],[],metadata_agent
+85134375559,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The paper models existing-looking survey responses without establishing collection provenance or the full set of procedures.,[],[],metadata_agent
+86000758604,revised,YES,YES,UNCLEAR,not stated,The team experimentally compares students' private and public attitudes but the primary questionnaire-survey format is unspecified.,[],[],metadata_agent
+84979017709,revised,NO,NO,NO,not stated,The abstract describes a theoretical contracting model and its derived implications without participant research.,[],[],metadata_agent
+85020282695,revised,NO,NO,NO,not stated,The article develops statistical theory rather than conducting randomized participant interventions.,[],[],metadata_agent
+84994692038,revised,YES,YES,NO,economic decision tasks,Human subjects make investment and sharing decisions under experimental economic conditions rather than primary surveys.,[],[],metadata_agent
+85109161234,revised,YES,YES,NO,group decision games,The team varies group decision mechanisms and measures revealed preferences in the laboratory rather than primary surveys.,[],[],metadata_agent
+85025097217,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,Reported security transactions and fund outcomes do not establish participant collection or exclude unmentioned supporting studies.,[],[],metadata_agent
+85050621304,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The archival cash-flow analysis does not establish participant collection and supporting empirical procedures remain unspecified.,[],[],metadata_agent
+85112454644,revised,NO,NO,NO,not stated,The paper develops and analyzes a theoretical financing model without human participant collection.,[],[],metadata_agent
+85186092035,revised,NO,NO,NO,not stated,The abstract presents a theoretical market-making model and its implications without participant studies.,[],[],metadata_agent
+85104416050,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The title suggests an introduction but missing abstract and keywords prevent confirming whether any empirical component qualifies.,[],[],metadata_agent
+85175037294,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The named external longitudinal survey does not qualify by itself and the abstract does not affirmatively exclude supporting participant collection.,[],[],metadata_agent
+85010000255,revised,YES,YES,NO,repeated choice tasks,The team varies repetition timing and measures choices in a decision task rather than a primary questionnaire survey.,[],[],metadata_agent
+85107955429,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,Model calibration and network prediction do not establish participant collection or rule out every supporting component.,[],[],metadata_agent
+85017352278,revised,NO,NO,NO,not stated,The article develops mathematical information-aggregation theory without reporting human participant research.,[],[],metadata_agent
+85063530686,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,Historical price records do not qualify as participant collection and the abstract does not exclude every additional study.,[],[],metadata_agent
+85027014860,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The stated financial inputs are ineligible existing records but all supporting procedures are not affirmatively specified.,[],[],metadata_agent
+105013657841,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,Historical company disclosure analysis does not establish participant collection or exclude a supporting participant study.,[],[],metadata_agent
+85131398770,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,Digital traces and observed protest records do not establish team participant collection and supporting procedures remain unspecified.,[],[],metadata_agent
+105017440329,revised,YES,YES,YES,not stated,The authors collected an online survey containing a conjoint experiment.,[],[],metadata_agent
+84949255473,revised,YES,YES,UNCLEAR,not stated,The team's field experiment establishes qualifying collection but a primary survey among the other components is not specified.,[],[],metadata_agent
+85096663309,revised,YES,YES,YES,not stated,The team elicits questionnaire-style choices among political-representation profiles in conjoint survey experiments.,[],[],metadata_agent
+85048739253,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,Reanalysis and simulated indicator replacement do not qualify but the abstract does not establish whether all supporting components are ineligible.,[],[],metadata_agent
+85077327637,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The policy-outcome comparisons do not establish original participant collection or fully specify ancillary studies.,[],[],metadata_agent
+84988651873,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,Using experimental data does not establish whether the author team collected those data or a qualifying survey.,[],[],metadata_agent
+85017439852,revised,YES,YES,YES,not stated,The team conducts a survey experiment varying media exposure and collecting political evaluations.,[],[],metadata_agent
+85041902677,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,External survey analysis does not establish author-team collection or rule out supporting participant studies.,[],[],metadata_agent
+85070334220,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The large multinational survey dataset has unspecified collection provenance and the complete study procedures are not stated.,[],[],metadata_agent
+84984796627,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,Confidential archival police records do not qualify as participant collection and additional supporting components are not ruled out.,[],[],metadata_agent
+85052552201,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The model's empirical historical conflict test does not establish quantitative participant collection or exclude supporting studies.,[],[],metadata_agent
+85032627193,revised,YES,YES,NO,voting tasks,The team experimentally varies electoral arrangements in laboratory voting tasks rather than primary surveys.,[],[],metadata_agent
+85055134355,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The title suggests survey methods but absent abstract and keywords leave collection provenance and design unresolved.,[],[],metadata_agent
+85102508505,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,Historical case comparisons do not establish quantitative participant collection and the abstract does not fully specify evidence-gathering methods.,[],[],metadata_agent
+cr_34f1fcfe0baa,revised,NO,NO,NO,not stated,The article explicitly reviews previous theoretical and empirical literature without original participant collection.,[],[],metadata_agent
+85092704586,revised,NO,NO,NO,not stated,The account describes meta-analysis of existing research rather than original quantitative participant studies.,[],[],metadata_agent
+85193223068,revised,YES,YES,UNCLEAR,not stated,The team varies algorithmic and human advice in participant studies but their primary questionnaire-survey format is unspecified.,[],[],metadata_agent
+85087021293,revised,NO,NO,NO,not stated,The viewpoint essay develops conceptual governance lessons without reporting quantitative participant collection.,[],[],metadata_agent
+85190439390,revised,NO,NO,NO,not stated,The paper describes qualitative ethnographic interpretation of bureaucratic spaces without a quantitative participant component.,[],[],metadata_agent
+85047661576,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,Historical network analysis does not establish quantitative participant collection and its complete source procedures are unspecified.,[],[],metadata_agent
+85107636632,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,Newly available interviews do not establish the team's collection role or whether a primary survey or other supporting study qualifies.,[],[],metadata_agent
+84979997671,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The described external cohort analysis does not establish collection by the author team or rule out supporting participant research.,[],[],metadata_agent
+85134620869,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The named survey is analyzed but its collection by this team and any additional procedures are unspecified.,[],[],metadata_agent
+85123969292,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The international survey comparisons leave collection provenance and possible supporting studies unresolved.,[],[],metadata_agent
+85180009061,revised,NO,NO,NO,not stated,The research note examines mathematical and data-manipulation biases in demographic calculations without participant research.,[],[],metadata_agent
+84992316517,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The external survey analysis is ineligible on its own and the abstract does not explicitly rule out supporting collection.,[],[],metadata_agent
+85083990444,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The twins' data source and this team's collection role are unspecified and signal effects alone do not establish researcher manipulation.,[],[],metadata_agent
+85021835234,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The named longitudinal dataset does not establish author-team collection and additional supporting procedures are not ruled out.,[],[],metadata_agent
+85049036585,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,Linked external survey and country data do not qualify by themselves but the abstract leaves other study components unresolved.,[],[],metadata_agent
+85130400952,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,Use of a named dataset does not reveal this team's role in collection or all supporting procedures.,[],[],metadata_agent
+105010586727,revised,NO,NO,NO,not stated,The article develops a qualitative account from life-history interviews without quantitative participant measurement.,[],[],metadata_agent
+84958629730,revised,UNCLEAR,UNCLEAR,UNCLEAR,not stated,The historical external survey analysis does not establish team collection or affirmatively exclude supporting studies.,[],[],metadata_agent
+85159830217,revised,YES,NO,YES,not stated,The author samples parolees in a mixed-method prevalence study implying primary quantitative survey responses without an imposed intervention.,[],[],metadata_agent
+84956577499,revised,YES,YES,NO,memory tasks; heart-rate measurement,The team assigns officers active or observer roles in a simulated encounter and measures recall and physiology rather than primary surveys.,[],[],metadata_agent
+85042231531,revised,YES,NO,YES,not stated,The authors explicitly collected an in-person primary questionnaire survey before training without an imposed intervention.,[],[],metadata_agent

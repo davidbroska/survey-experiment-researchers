@@ -2,3 +2,10 @@ private/
 __pycache__/
 *.pyc
 github-pages-site.zip
+
+inputs/full_chat_transcript_simulator_journal_frame.md
+
+score/__pycache__/
+.pytest_cache/
+.DS_Store
+/site/

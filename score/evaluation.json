@@ -1,0 +1,472 @@
+{
+  "planned_articles": 620,
+  "sampled_articles": 620,
+  "fulltext_reviews": 288,
+  "human_verified": 0,
+  "interpretation": "Agreement with AI full-text review; not human-validated accuracy. Available paired cases may differ from inaccessible or unreviewed cases. The pilot retains matching existing articles, so it is not a probability sample.",
+  "evaluations": [
+    {
+      "prediction_file": "predictions_original.csv",
+      "split": "development",
+      "predicted": 496,
+      "sample_articles_in_split": 496,
+      "reference": "AI full-text review",
+      "collection": {
+        "predicted": 496,
+        "paired": 239,
+        "without_reference": 257,
+        "retained_all_predictions": 293,
+        "retention_fraction_all_predictions": 0.5907258064516129,
+        "unclear_all_predictions": 94,
+        "abstention_rate_all_predictions": 0.18951612903225806,
+        "resolved_reference": 238,
+        "unresolved_reference": 1,
+        "confusion_matrix": [
+          [
+            122,
+            7,
+            28
+          ],
+          [
+            0,
+            66,
+            15
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "matrix_labels": [
+          "YES",
+          "NO",
+          "UNCLEAR"
+        ],
+        "matrix_rows": "fulltext",
+        "matrix_columns": "metadata",
+        "yes_precision_resolved": 1.0,
+        "yes_precision_denominator": 122,
+        "yes_recall": 0.7770700636942676,
+        "retention_recall": 0.9554140127388535,
+        "retention_recall_denominator": 157,
+        "retention_precision_resolved": 0.9090909090909091,
+        "discard_specificity": 0.8148148148148148,
+        "discard_specificity_denominator": 81,
+        "false_negatives": [
+          "85014967903",
+          "85052132965",
+          "85064119805",
+          "85101686392",
+          "85114990154",
+          "85136927900",
+          "85181260189"
+        ],
+        "metadata_unclear": 44,
+        "exact_agreement_resolved": 0.7899159663865546
+      },
+      "experiment": {
+        "predicted": 496,
+        "paired": 239,
+        "without_reference": 257,
+        "retained_all_predictions": 215,
+        "retention_fraction_all_predictions": 0.4334677419354839,
+        "unclear_all_predictions": 72,
+        "abstention_rate_all_predictions": 0.14516129032258066,
+        "resolved_reference": 237,
+        "unresolved_reference": 2,
+        "confusion_matrix": [
+          [
+            91,
+            3,
+            18
+          ],
+          [
+            0,
+            107,
+            18
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "matrix_labels": [
+          "YES",
+          "NO",
+          "UNCLEAR"
+        ],
+        "matrix_rows": "fulltext",
+        "matrix_columns": "metadata",
+        "yes_precision_resolved": 1.0,
+        "yes_precision_denominator": 91,
+        "yes_recall": 0.8125,
+        "retention_recall": 0.9732142857142857,
+        "retention_recall_denominator": 112,
+        "retention_precision_resolved": 0.8582677165354331,
+        "discard_specificity": 0.856,
+        "discard_specificity_denominator": 125,
+        "false_negatives": [
+          "105021858837",
+          "85014967903",
+          "85211828104"
+        ],
+        "metadata_unclear": 37,
+        "exact_agreement_resolved": 0.8354430379746836
+      },
+      "survey": {
+        "predicted": 496,
+        "paired": 239,
+        "without_reference": 257,
+        "retained_all_predictions": 194,
+        "retention_fraction_all_predictions": 0.3911290322580645,
+        "unclear_all_predictions": 114,
+        "abstention_rate_all_predictions": 0.22983870967741934,
+        "resolved_reference": 238,
+        "unresolved_reference": 1,
+        "confusion_matrix": [
+          [
+            57,
+            8,
+            30
+          ],
+          [
+            0,
+            119,
+            24
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "matrix_labels": [
+          "YES",
+          "NO",
+          "UNCLEAR"
+        ],
+        "matrix_rows": "fulltext",
+        "matrix_columns": "metadata",
+        "yes_precision_resolved": 1.0,
+        "yes_precision_denominator": 57,
+        "yes_recall": 0.6,
+        "retention_recall": 0.9157894736842105,
+        "retention_recall_denominator": 95,
+        "retention_precision_resolved": 0.7837837837837838,
+        "discard_specificity": 0.8321678321678322,
+        "discard_specificity_denominator": 143,
+        "false_negatives": [
+          "105023854373",
+          "85077630869",
+          "85105168543",
+          "85108162398",
+          "85114990154",
+          "85136927900",
+          "85146150720",
+          "85181260189"
+        ],
+        "metadata_unclear": 55,
+        "exact_agreement_resolved": 0.7394957983193278
+      }
+    },
+    {
+      "prediction_file": "predictions_original.csv",
+      "split": "holdout",
+      "predicted": 124,
+      "sample_articles_in_split": 124,
+      "reference": "AI full-text review",
+      "collection": {
+        "predicted": 124,
+        "paired": 49,
+        "without_reference": 75,
+        "retained_all_predictions": 79,
+        "retention_fraction_all_predictions": 0.6370967741935484,
+        "unclear_all_predictions": 27,
+        "abstention_rate_all_predictions": 0.21774193548387097,
+        "resolved_reference": 49,
+        "unresolved_reference": 0,
+        "confusion_matrix": [
+          [
+            22,
+            0,
+            10
+          ],
+          [
+            0,
+            16,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "matrix_labels": [
+          "YES",
+          "NO",
+          "UNCLEAR"
+        ],
+        "matrix_rows": "fulltext",
+        "matrix_columns": "metadata",
+        "yes_precision_resolved": 1.0,
+        "yes_precision_denominator": 22,
+        "yes_recall": 0.6875,
+        "retention_recall": 1.0,
+        "retention_recall_denominator": 32,
+        "retention_precision_resolved": 0.9696969696969697,
+        "discard_specificity": 0.9411764705882353,
+        "discard_specificity_denominator": 17,
+        "false_negatives": [],
+        "metadata_unclear": 11,
+        "exact_agreement_resolved": 0.7755102040816326
+      },
+      "experiment": {
+        "predicted": 124,
+        "paired": 49,
+        "without_reference": 75,
+        "retained_all_predictions": 60,
+        "retention_fraction_all_predictions": 0.4838709677419355,
+        "unclear_all_predictions": 21,
+        "abstention_rate_all_predictions": 0.1693548387096774,
+        "resolved_reference": 49,
+        "unresolved_reference": 0,
+        "confusion_matrix": [
+          [
+            18,
+            0,
+            5
+          ],
+          [
+            0,
+            21,
+            5
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "matrix_labels": [
+          "YES",
+          "NO",
+          "UNCLEAR"
+        ],
+        "matrix_rows": "fulltext",
+        "matrix_columns": "metadata",
+        "yes_precision_resolved": 1.0,
+        "yes_precision_denominator": 18,
+        "yes_recall": 0.782608695652174,
+        "retention_recall": 1.0,
+        "retention_recall_denominator": 23,
+        "retention_precision_resolved": 0.8214285714285714,
+        "discard_specificity": 0.8076923076923077,
+        "discard_specificity_denominator": 26,
+        "false_negatives": [],
+        "metadata_unclear": 10,
+        "exact_agreement_resolved": 0.7959183673469388
+      },
+      "survey": {
+        "predicted": 124,
+        "paired": 49,
+        "without_reference": 75,
+        "retained_all_predictions": 55,
+        "retention_fraction_all_predictions": 0.4435483870967742,
+        "unclear_all_predictions": 37,
+        "abstention_rate_all_predictions": 0.29838709677419356,
+        "resolved_reference": 49,
+        "unresolved_reference": 0,
+        "confusion_matrix": [
+          [
+            9,
+            2,
+            10
+          ],
+          [
+            0,
+            25,
+            3
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "matrix_labels": [
+          "YES",
+          "NO",
+          "UNCLEAR"
+        ],
+        "matrix_rows": "fulltext",
+        "matrix_columns": "metadata",
+        "yes_precision_resolved": 1.0,
+        "yes_precision_denominator": 9,
+        "yes_recall": 0.42857142857142855,
+        "retention_recall": 0.9047619047619048,
+        "retention_recall_denominator": 21,
+        "retention_precision_resolved": 0.8636363636363636,
+        "discard_specificity": 0.8928571428571429,
+        "discard_specificity_denominator": 28,
+        "false_negatives": [
+          "85006973897",
+          "85191794805"
+        ],
+        "metadata_unclear": 13,
+        "exact_agreement_resolved": 0.6938775510204082
+      }
+    },
+    {
+      "prediction_file": "predictions_revised.csv",
+      "split": "holdout",
+      "predicted": 124,
+      "sample_articles_in_split": 124,
+      "reference": "AI full-text review",
+      "collection": {
+        "predicted": 124,
+        "paired": 49,
+        "without_reference": 75,
+        "retained_all_predictions": 104,
+        "retention_fraction_all_predictions": 0.8387096774193549,
+        "unclear_all_predictions": 51,
+        "abstention_rate_all_predictions": 0.4112903225806452,
+        "resolved_reference": 49,
+        "unresolved_reference": 0,
+        "confusion_matrix": [
+          [
+            23,
+            0,
+            9
+          ],
+          [
+            0,
+            8,
+            9
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "matrix_labels": [
+          "YES",
+          "NO",
+          "UNCLEAR"
+        ],
+        "matrix_rows": "fulltext",
+        "matrix_columns": "metadata",
+        "yes_precision_resolved": 1.0,
+        "yes_precision_denominator": 23,
+        "yes_recall": 0.71875,
+        "retention_recall": 1.0,
+        "retention_recall_denominator": 32,
+        "retention_precision_resolved": 0.7804878048780488,
+        "discard_specificity": 0.47058823529411764,
+        "discard_specificity_denominator": 17,
+        "false_negatives": [],
+        "metadata_unclear": 18,
+        "exact_agreement_resolved": 0.6326530612244898
+      },
+      "experiment": {
+        "predicted": 124,
+        "paired": 49,
+        "without_reference": 75,
+        "retained_all_predictions": 95,
+        "retention_fraction_all_predictions": 0.7661290322580645,
+        "unclear_all_predictions": 56,
+        "abstention_rate_all_predictions": 0.45161290322580644,
+        "resolved_reference": 49,
+        "unresolved_reference": 0,
+        "confusion_matrix": [
+          [
+            18,
+            0,
+            5
+          ],
+          [
+            0,
+            11,
+            15
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "matrix_labels": [
+          "YES",
+          "NO",
+          "UNCLEAR"
+        ],
+        "matrix_rows": "fulltext",
+        "matrix_columns": "metadata",
+        "yes_precision_resolved": 1.0,
+        "yes_precision_denominator": 18,
+        "yes_recall": 0.782608695652174,
+        "retention_recall": 1.0,
+        "retention_recall_denominator": 23,
+        "retention_precision_resolved": 0.6052631578947368,
+        "discard_specificity": 0.4230769230769231,
+        "discard_specificity_denominator": 26,
+        "false_negatives": [],
+        "metadata_unclear": 20,
+        "exact_agreement_resolved": 0.5918367346938775
+      },
+      "survey": {
+        "predicted": 124,
+        "paired": 49,
+        "without_reference": 75,
+        "retained_all_predictions": 78,
+        "retention_fraction_all_predictions": 0.6290322580645161,
+        "unclear_all_predictions": 62,
+        "abstention_rate_all_predictions": 0.5,
+        "resolved_reference": 49,
+        "unresolved_reference": 0,
+        "confusion_matrix": [
+          [
+            7,
+            3,
+            11
+          ],
+          [
+            0,
+            16,
+            12
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "matrix_labels": [
+          "YES",
+          "NO",
+          "UNCLEAR"
+        ],
+        "matrix_rows": "fulltext",
+        "matrix_columns": "metadata",
+        "yes_precision_resolved": 1.0,
+        "yes_precision_denominator": 7,
+        "yes_recall": 0.3333333333333333,
+        "retention_recall": 0.8571428571428571,
+        "retention_recall_denominator": 21,
+        "retention_precision_resolved": 0.6,
+        "discard_specificity": 0.5714285714285714,
+        "discard_specificity_denominator": 28,
+        "false_negatives": [
+          "85006973897",
+          "85191794805",
+          "85048490203"
+        ],
+        "metadata_unclear": 23,
+        "exact_agreement_resolved": 0.46938775510204084
+      }
+    }
+  ]
+}
