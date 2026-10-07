@@ -37,8 +37,9 @@ were used: these are session-agent judgments.
 Retrieval was attempted for every selected paper. **288 main articles were
 obtained and substantively reviewed**: 157 PDFs and 131 publisher/repository XML
 documents, covering 51 of the 62 journals. These comprise 239 development and
-49 holdout papers. The 332 other papers remain unresolved for access; unavailable
-text is never coded as ineligible. All final retrieval receipts represent real
+49 holdout papers. At that review snapshot, the other 332 papers lacked accessible
+main text; subsequent downloads are recorded in the current access report.
+Unavailable text is never coded as ineligible. All retrieval receipts represent real
 network requests; publisher HTTP 403 responses were the dominant obstacle.
 Stanford access supported Scopus metadata and some Elsevier full text, but did
 not provide automated access to every publisher.

@@ -1,109 +1,134 @@
 # Full-text collection update — 7 October 2026
 
-The fixed sample still contains **620 articles**. This access pass added **82
-usable main-article texts**, bringing the local collection from 288 to **370**:
-238 PDFs and 132 XML documents. **250 articles still lack usable main text.**
-Repository manuscripts and earlier versions are included where identified, with
-explicit version caveats. Files are saved under `Literature/SCORE` in the local
-research workspace.
+The fixed sample contains **620 articles**, one per SCORE journal and year for
+2016–2025. **380 usable main texts are saved locally: 248 PDFs and
+132 XML documents. 240 articles still lack usable main text.**
+Files are in `Literature/SCORE` in the local research workspace. Some available
+copies are manuscripts or working papers; availability does not establish
+identity with the final published version. Version caveats are in the workbook.
 
-The substantive source-review count remains **288**. The 82 newly downloaded
-articles retain their existing metadata-only assessments until their methods and
-collection provenance are reviewed. Downloading text does not change a label.
-The original predictions, earlier prompt comparison, sample and historical
-development/holdout assignments remain unchanged.
+**288 articles have completed substantive AI source reviews.** The other
+92 downloaded articles still await source review and retain their metadata
+assessments. Downloading an article or checking its identity is not an eligibility
+review. No new classifications or human verifications were performed in this pass.
 
-The local workbook `private/score/SCORE_validation_620.xlsx` contains all 620
-articles, alphabetically by journal and then by year descending. It has separate
-download, assessment-basis and source-version columns, preserves both metadata
-and full-text assessments, and explains every column in its `Column guide` sheet.
-It includes private abstracts and evidence and is not published on the website.
+The private workbook `private/score/SCORE_validation_620.xlsx` contains
+**620 rows and 63 variables**, alphabetically by journal and then by year descending.
+The Column guide sheet and [public codebook](codebook.md) explain every variable,
+allowed values, missing meanings and current counts. Licensed text remains private.
 
-## What worked
+## What we fixed before requesting manual help
 
-| Route | Observed result in this pass |
+The earlier credential pass recovered 82 articles: 62 through Wiley's TDM API,
+19 through OpenAlex PDF content and one through OpenAlex Grobid XML. Unpaywall
+lookups worked but did not themselves deliver additional usable main articles.
+No paid API credits were used. No LLM API was called.
+
+This follow-up recovered **10 more articles** by searching exact titles and
+following repository and author links beyond DOI-based discovery. It replaced
+two corrupt cached PDFs with intact copies and found a main manuscript for an
+article previously represented only by its appendix. A bounded ERIC search
+checked 33 unresolved education articles and recovered four additional PDFs.
+The World Bank supplied a published QJE copy. All accepted documents had their
+article identities and readable main text checked; version inspection is separate.
+
+The downloader now records observable browser-challenge and login-page evidence
+when available. HTTP 200 is not treated as full text, and HTTP 403 alone is not
+called a subscription failure. Old failures without response-body evidence remain
+qualified as access denial with an unestablished cause.
+
+## What still blocks access
+
+**The VPN is connected.** Fresh routing checks sent APA, Sage and Oxford requests
+through VPN interface `utun6`. The problem is therefore not simply a disconnected
+VPN. It does not follow that every publisher recognizes the connection or grants
+our automated requests access.
+
+All 62 remaining APA articles have recorded redirects to APA's login page rather
+than PDFs. The official Stanford catalog's PsycArticles link was also tried; it
+returned a 403 in this session. That does not establish that Stanford lacks a
+subscription, or that an ordinary APA personal account would solve the problem.
+
+Fresh representative article requests to Sage, Oxford, Chicago, INFORMS, AEA, Academy
+of Management and Duke returned Cloudflare browser-security challenges. Sage
+and Oxford also remained at security verification in a clean Chrome browser with
+normal JavaScript enabled. These are platform probes, **not individual entitlement
+checks for every missing paper**. They show why a VPN or another metadata API key
+alone does not resolve the tested routes. Login sessions and institutional access
+may become a separate issue after a browser challenge is cleared.
+
+The remaining articles are distributed as follows:
+
+| Publisher/platform | Missing articles |
+|---|---:|
+| Sage | 76 |
+| APA | 62 |
+| Oxford University Press | 38 |
+| University of Chicago Press | 24 |
+| INFORMS | 17 |
+| American Economic Association | 11 |
+| Academy of Management | 9 |
+| Duke University Press | 3 |
+
+One cached PDF remains unreadable:
+[The Differential Effect of Local–Global Identity Among Males and Females](https://doi.org/10.1177/0022243719889028).
+Offline repair could not recover its pages. The other two originally corrupt
+copies have now been replaced. A fresh intact copy is required for this one.
+This article is included in the publisher counts above.
+
+## Practical next steps
+
+1. Open an unresolved DOI in your regular browser through Stanford's library
+   access route. Use the library's Lean Library extension or full-traffic VPN as
+   described in [Stanford's off-campus access instructions](https://library.stanford.edu/services/off-campus-access).
+2. For APA, start with [Stanford's PsycArticles catalog record](https://searchworks.stanford.edu/view/4685614).
+   If it still fails, ask library support to check the licensed platform and
+   Stanford IP recognition. Do not buy a personal subscription just to test this.
+3. For the challenged publishers, complete any normal interactive verification
+   yourself if offered, then try the PDF. A successful regular-browser download
+   would establish access for that article; it would not automatically authorize
+   or enable bulk API access. For batch retrieval, ask library staff whether an
+   approved publisher TDM route or library delivery route is available.
+4. Save downloaded main PDFs as `<article_id>.pdf`, using identifiers from the
+   [remaining download queue](manual_downloads.csv). Import them with
+   `python3 score/fetch_fulltext.py --import-local /path/to/downloaded_pdfs`.
+   The importer checks identity, readable main text and file hashes. If no
+   subscribed or repository copy is available, use the library's article-request
+   service. Keep supplements separate.
+
+**No article is waiting for OpenAlex free credits.** The provided Wiley and
+OpenAlex credentials worked. The remaining publisher-browser barriers are not
+fixed by requesting another Scopus key. All 24 sampled articles with historical
+Springer DOIs were already obtained. A missing Springer API key is therefore not
+blocking this sample; its licensed full-text API has separate activation rules
+([Springer documentation](https://dev.springernature.com/docs/api-endpoints/fulltext-api/)).
+
+## Copies added in this follow-up
+
+| Article | Version note |
 |---|---|
-| Wiley TDM API | The configured token delivered 62 additional main-article PDFs. Requests were paced to the provider's published limit. |
-| OpenAlex cached content | The configured key delivered 19 additional PDFs and one Grobid XML article text. File identity and usability were checked separately from HTTP status. |
-| Unpaywall | All 332 DOI lookups for previously unresolved articles succeeded. Returned open locations were tried; a successful lookup alone is not a downloaded article. |
-| Existing publisher/repository routes | Valid prior files were preserved. Newly retrieved files were checked against the fixed article identities. |
+| [CAN POLLUTION MARKETS WORK IN DEVELOPING COUNTRIES? EXPERIMENTAL EVIDENCE FROM INDIA](https://doi.org/10.1093/qje/qjaf009) | Publisher-formatted article: Quarterly Journal of Economics (2025),1003–1060; obtained from World Bank hosting. |
+| [What Makes a Decision Fair? Relative Earnings, Gender, and Justifications for Couples’ Decision-Making1](https://doi.org/10.1086/735618) | OSF-hosted author manuscript associated with the published DOI; equivalence to the final published version has not been established. |
+| [English learner and non-English learner students with disabilities: Content acquisition and comprehension](https://doi.org/10.1177/0014402915619419) | Publisher-formatted article: Exceptional Children 82(4),428–442 (2016), with an ERIC funding cover sheet. |
+| [The impact of maternal literacy and participation programs: Evidence from a randomized evaluation in India](https://doi.org/10.1257/app.20150390) | J-PAL-hosted working paper dated February 2017; title and all authors match the published article. Equivalence to the final published version has not been established. |
+| [Sex Differences in Doctoral Student Publication Rates](https://doi.org/10.3102/0013189x17738746) | Publisher-formatted article: Educational Researcher 47(1),76–81 (2018); obtained from ERIC. |
+| [Racing Against the Vocabulary Gap: Matthew Effects in Early Vocabulary Instruction and Intervention](https://doi.org/10.1177/0014402918789162) | Publisher-formatted article: Exceptional Children 85(2),163–179 (2019); obtained from ERIC. |
+| [Paths 2 the Future: Evidence for the Efficacy of a Career Development Intervention for Young Women With Disabilities](https://doi.org/10.1177/0014402920924851) | Publisher-formatted article: Exceptional Children 87(1),54–73 (2020); obtained from ERIC. |
+| [Policies That Define Instruction: A Systematic Review of States’ and Districts’ Recommendations for Evaluating Special Educators](https://doi.org/10.3102/0013189x20935039) | Boston University-hosted manuscript explicitly says it is not the copy of record and may differ from the final article; published DOI and authors match. |
+| [Quality Indicators of Secondary Data Analyses in Special Education Research: A Preregistration Guide](https://doi.org/10.1177/00144029221141029) | Publisher-formatted article: Exceptional Children 89(4),397–411 (2023); obtained from ERIC. |
+| [Who is healthier? A meta-analysis of the relations between the HEXACO personality domains and health outcomes](https://doi.org/10.1177/08902070231174574) | Publisher-formatted article: European Journal of Personality 38(2),342–364 (2024); obtained from the author website. |
 
-OpenAlex reported **$0.2618 used from its $1 free daily allowance**, with $0.7382
-remaining and no prepaid balance. No paid credits were used or purchased. No LLM
-classification API was called. The downloader checks the available free allowance
-before each cached-content request, including a fallback from PDF to XML.
+Earlier manuscript/version caveats remain in the workbook, including the RFS
+working papers, the Educational Researcher manuscript, the JPSP manuscript and
+the RFS advance article. Obtaining their final versions is a version-check task,
+not an additional missing-main-text count.
 
-Linked supporting checks for the new articles also saved 19 PDFs, 49 linked web
-pages and seven repository metadata files across 35 articles. These are marked
-unreviewed and are not counted as main articles. Eight additional matching
-supplement candidates were kept separately.
+## Review and reproducibility
 
-## What needs further work
-
-The [250-row download queue](manual_downloads.csv) records each article's DOI,
-failure category and recommended action. The categories are mutually exclusive
-summaries of the most useful next step; individual articles may have several
-failed routes.
-
-| Remaining issue | Articles | Next action |
-|---|---:|---|
-| Access denied on the routes tried | 186 | Try the DOI in a Stanford-authenticated library browser and save the main PDF; use library assistance if access still fails. |
-| No usable main text returned | 60 | Inspect the publisher/library record for an alternative full text. A metadata page or link alone did not establish a usable main article. |
-| Unreadable cached PDFs | 3 | Obtain a fresh intact copy. Offline repair failed; these cached bytes cannot support review. |
-| Only a supplement was obtained | 1 | Download the main article; retain the supplement separately. |
-
-No article is waiting for free OpenAlex credits. The three corrupted copies are
-[local–global identity and price sensitivity](https://doi.org/10.1177/0022243719889028),
-[Paths 2 the Future](https://doi.org/10.1177/0014402920924851), and the
-[HEXACO and health meta-analysis](https://doi.org/10.1177/08902070231174574).
-All 217 checked compressed streams were invalid; Ghostscript recovered no pages
-or text. Original bytes and repair logs were preserved privately.
-
-Five newly available copies also need a published-version check before being
-treated as equivalent to the selected final journal article. These are already
-among the 370 available texts, not additional missing articles:
-
-| Selected article | Available version and caveat |
-|---|---|
-| [Evaluating Firm-Level Expected-Return Proxies](https://doi.org/10.1093/rfs/hhaa066), 2021 | Repository working-paper manuscript, dated 2020; published-version equivalence is unverified. |
-| [Long forward probabilities, recovery, and the term structure of bond risk premiums](https://doi.org/10.1093/rfs/hhy042), 2018 | Grobid text from arXiv v1 dated January 2016; equivalence is unverified. |
-| [Fostering Political Interest Among Youth](https://doi.org/10.3102/0013189x16683402), 2016 | Repository manuscript linked to the published article; equivalence is unverified. |
-| [Reducing Implicit Racial Preferences: III](https://doi.org/10.1037/pspi0000339), 2021 | Repository manuscript with bundled supplements; manuscript stage and equivalence are unverified. |
-| [Learning to Disclose](https://doi.org/10.1093/rfs/hhaf033), 2025 | Typeset advance article with the correct DOI but provisional year/page information; final paginated-version equivalence is unverified. |
-
-To add a library download, name it `<article_id>.pdf` using the queue's identifier,
-then run `python3 score/fetch_fulltext.py --import-local /path/to/downloaded_pdfs`.
-The importer checks identity and readable main text and preserves existing
-verified files. Supplements should not be named as main articles.
-
-## Springer and the VPN
-
-Read-only checks confirmed Cisco VPN was connected and requests to the Springer
-API used a VPN interface. A sampled Springer PDF download returned a real PDF
-over that connection. All **24 sampled articles with historical Springer DOIs**
-were already available, including older Experimental Economics and Demography
-articles as well as Journal of the Academy of Marketing Science.
-
-The same connection received HTTP 401 from the full-text API when no API key was
-provided. No Springer API key is configured or was created in this task.
-Springer's developer portal requires an account and API key, and its licensed
-full-text endpoint requires separate activation under a special agreement.
-VPN access does not create those credentials. See the
-[official full-text API documentation](https://dev.springernature.com/docs/api-endpoints/fulltext-api/)
-and [account/key instructions](https://dev.springernature.com/docs/support/faqs/).
-There is no outstanding Springer-download task for these 24 sampled papers.
-For future API use, sign in to the portal and confirm full-text activation before
-supplying a key locally; a metadata API key alone does not establish that access.
-
-Stanford's current instructions specify a full-traffic VPN connection for
-restricted library resources. See [Stanford off-campus access](https://library.stanford.edu/services/off-campus-access).
-
-## Checks and records
-
-Independent agents checked the new article identities, source hashes, repository
-versions, workbook ordering and assessment provenance. Existing XML sources also
-passed a stricter title/DOI check against the article's own structural metadata.
-Credential routing, cached failures, free-budget enforcement and request pacing
-were tested offline. Detailed retrieval receipts, raw files and audit records
-remain private. The [proposed prompt edits](prompt_proposed_redline.md) are a
-separate, untested proposal; no new eligibility classification was run here.
+Independent agents checked recovered document identities, source versions,
+workbook structure and classification boundaries. Private receipts retain failed
+routes, challenge evidence, source hashes and exact-title discovery records.
+The [new proposed prompt](prompt_proposed.md) and [redline](prompt_proposed_redline.md)
+are untested. Frozen predictions, source labels, sample membership and historical
+split assignments were preserved. The historical holdout is not an untouched
+test of the latest wording.

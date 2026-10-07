@@ -7,7 +7,8 @@ studies primarily designed as surveys have separate labels.
 [Journal frame](score/journals.csv) · [Article list](score/articles.csv) ·
 [Current prompt](score/prompt_current.md) · [Verbatim original](score/prompt_original.md) ·
 [Tested candidate](score/prompt_revised.md) ·
-[Proposed edits](score/prompt_proposed_redline.md) · [Current access report](score/access_report.md)
+[Proposed edits](score/prompt_proposed_redline.md) · [Current access report](score/access_report.md) ·
+[Spreadsheet codebook](score/codebook.md)
 
 The provisional screen is the original prompt plus the user's primary-survey
 definition, retaining collection YES and UNCLEAR. The tested candidate remains
@@ -23,7 +24,8 @@ This session uses agents and incurs no paid API annotation spending.
 The fixed 620 papers are the working validation collection. The local workbook
 `private/score/SCORE_validation_620.xlsx` contains every article, grouped
 alphabetically by journal and ordered by year descending. Its `Column guide`
-sheet explains each column in order. Download availability, actual assessment
+sheet explains each column, its type, allowed values and missing-value meaning in order.
+The public codebook contains the same definitions and aggregate counts. Download availability, actual assessment
 basis, metadata decisions and completed source reviews remain distinct.
 New downloads retain metadata-based assessments until source review is completed.
 The workbook includes private abstracts and evidence and is kept off GitHub.

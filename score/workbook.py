@@ -4,6 +4,7 @@ Run: python3 score/workbook.py
 Requires openpyxl; writes private/score/SCORE_validation_620.xlsx.
 """
 import hashlib
+from collections import Counter
 from pathlib import Path
 
 from openpyxl import Workbook, load_workbook
@@ -84,6 +85,108 @@ COLUMNS = [
 ]
 
 
+LEVELS = {
+    **{key: 'YES / NO / UNCLEAR' for key in ['collection', 'experiment', 'survey',
+        'm_collection', 'm_experiment', 'm_survey', 'm_team_data_reuse',
+        'r_collection', 'r_experiment', 'r_survey']},
+    'available': 'YES / NO', 'format': 'PDF / XML', 'human_verified': 'TRUE / FALSE',
+    'basis': 'Full-text review / Metadata only / Metadata only — full text awaiting review',
+    'criteria': CRITERIA, 'm_prompt_version': 'original_with_primary_survey_definition',
+    'm_authors_supplied': 'true / false / Not recorded', 'r_human_verified': 'true / false',
+    'r_confidence': 'high / moderate / medium / low; stored spellings are preserved',
+    'r_review_status': 'primary_ai_fulltext_review / provisional_ai_review',
+    'a_status': 'verified_fulltext / unavailable_after_checks',
+    'a_identity_check': 'title_match / doi_and_title_match / title_authors_journal_year_visually_verified / title_authors_and_repository_doi_independently_verified',
+    'split': 'development / holdout', 'metadata_source': 'Scopus / Crossref',
+}
+MISSING = {
+    'a_version_note': 'Blank = no verified local text; Version not separately recorded = no saved version assessment.',
+    'm_evidence': 'Blank = no exact excerpt saved; not proof of ineligibility.',
+    'm_other_methods': 'Blank = no other method recorded; not proof that none exists.',
+    'm_software': 'not stated = no explicit software name in supplied metadata.',
+    'm_recruitment_providers': 'not stated = no explicit provider name in supplied metadata.',
+    'm_prediction_time': 'Not recorded = no saved timestamp; never inferred.',
+    'm_input_fields': 'Not recorded = input fields were not logged; never inferred from available bibliography.',
+    'm_authors_supplied': 'Not recorded = unknown; false means explicitly not supplied.',
+    'r_supporting_resource_url': 'Blank = no supporting URL recorded, or no completed review; not proof that no resource exists.',
+    'abstract': 'Blank = no abstract supplied by the bibliographic source.',
+    'keywords': 'Blank = no keywords supplied by the bibliographic source.',
+}
+
+
+def field_details(key):
+    """Describe storage and missingness without recoding the saved assessments."""
+    kind, values = 'Text', 'Free text; no fixed levels.'
+    if key in LEVELS:
+        kind, values = 'Categorical text', LEVELS[key]
+    elif key == 'journal':
+        kind, values = 'Categorical text', 'The 62 journal names listed below; 10 articles per journal.'
+    elif key in ['year', 'n_authors']:
+        kind, values = 'Integer', '2016–2025 inclusive' if key == 'year' else 'Positive author count; current range 1–26.'
+    elif key == 'article_id':
+        kind, values = 'Identifier text', 'Scopus identifier, or cr_ followed by the Crossref fallback identifier.'
+    elif key == 'doi':
+        kind, values = 'Identifier text', 'DOI string (10.…/…); hyperlink opens its DOI landing page.'
+    elif key.endswith('_sha256'):
+        kind, values = 'Hash text', '64 hexadecimal characters: SHA-256 of the source document.'
+    elif key.endswith('_url'):
+        kind, values = 'URL text', 'Recorded source URL; supporting sources may contain several URLs.'
+    elif key in ['local_file', 'r_source_path', 'a_text_cache']:
+        kind, values = 'Path text', 'Local file path; clickable when that file exists.'
+    elif key in ['m_prediction_time', 'a_checked_at', 'source_date', 'r_review_date']:
+        kind, values = 'Date/time text', 'YYYY-MM-DD' if key == 'r_review_date' else 'Recorded timestamp; metadata decision time may be Not recorded.'
+    elif key == 'm_input_fields':
+        kind, values = 'Categorical text', 'title;abstract;keywords;authors / title;abstract;keywords;indexed_keywords / Not recorded'
+    elif key in ['m_reviewer', 'r_reviewer']:
+        kind, values = 'Identifier text', 'Saved reviewer identifier; current identifiers are shown in Observed.'
+    missing = 'Blank not expected; none currently missing.'
+    if key.startswith('r_'):
+        missing = 'Blank = no completed source review; never NO.'
+    if key in ['format', 'local_file', 'a_identity_check', 'a_source_url', 'a_source_sha256', 'a_text_cache']:
+        missing = 'Blank = no verified local main text.'
+    return kind, values, MISSING.get(key, missing)
+
+
+def observed_values(key, rows):
+    counts = Counter(row.get(key, '') for row in rows)
+    blank = counts.pop('', 0)
+    if key in LEVELS or key in ['m_input_fields', 'm_reviewer', 'r_reviewer']:
+        result = '; '.join(f'{value}: {count}' for value, count in sorted(counts.items()))
+    elif key in ['year', 'n_authors']:
+        result = f'Range {min(counts)}–{max(counts)}; {len(counts)} distinct values'
+    else:
+        result = f'{sum(counts.values())} nonblank; {len(counts)} distinct values'
+        for value in ['Not recorded', 'not stated', 'Version not separately recorded']:
+            if value in counts:
+                result += f'; {value}: {counts[value]}'
+    return result + f'; blank: {blank}'
+
+
+def write_codebook(rows, details, journals):
+    """Publish the schema and aggregate counts, never article metadata or excerpts."""
+    basis = Counter(row['basis'] for row in rows)
+    lines = ['# SCORE validation workbook codebook', '',
+        'The private workbook has 620 article rows and 63 variables. Journals are alphabetical; years run from 2025 down to 2016 within each journal.', '',
+        'Each row is one selected article. Only year and author count are stored as Excel numbers; identifiers, categories, dates and narrative fields are stored as text.', '',
+        'Current assessment basis: ' + '; '.join(f'{key}: {value}' for key, value in basis.items()) + '.', '',
+        '`m_` fields preserve the original metadata assessments; `r_` fields preserve completed source reviews; `a_` fields describe current acquisition. Best-available labels use the source review when present and otherwise the original metadata assessment. Downloading a document never implies that it was reviewed.', '',
+        'YES = qualifying evidence; NO = ineligible under that assessment; UNCLEAR = unresolved. Missing full text is not a NO. Survey means a primary questionnaire survey, including survey experiments and diary surveys, rather than incidental scales. No country restriction applies. Human-verified best assessments: ' + str(sum(row['human_verified'] == 'TRUE' for row in rows)) + '/620.', '',
+        'Allowed levels describe the field; Observed reports the actual snapshot. Free-text fields have no finite level list. Blank cells and the literal values `UNCLEAR`, `not stated`, and `Not recorded` are distinct. The historical development/holdout split is not an untouched test for the later proposed prompt.', '',
+        '| # | Machine field | Workbook column | Meaning | Type | Allowed levels / format | Missing means | Observed |',
+        '| --- | --- | --- | --- | --- | --- | --- | --- |']
+    for detail in details:
+        lines.append('| ' + ' | '.join(str(value).replace('|', '\\|').replace('\n', ' ') for value in detail) + ' |')
+    lines += ['', '## Journal levels', '', 'These are all 62 allowed journal values; each has 10 rows.', '',
+              '| Journal | Rows |', '| --- | --- |']
+    lines += [f'| {journal} | 10 |' for journal in journals]
+    lines += ['', 'The workbook contains licensed abstracts, author lists, exact evidence, and local paths and remains private. This codebook contains definitions and aggregate counts only.', '',
+              'Regenerate the workbook and this codebook together with `python3 score/workbook.py`.', '']
+    target = ROOT / 'score/codebook.md'
+    temporary = target.with_suffix('.tmp')
+    temporary.write_text('\n'.join(lines))
+    temporary.replace(target)
+
+
 def main():
     articles = index_rows(read_rows(PRIVATE / 'articles.csv'))
     metadata = index_rows(read_rows(PRIVATE / 'predictions_original.csv'))
@@ -97,6 +200,7 @@ def main():
     sheet = workbook.active
     sheet.title = 'Articles'
     sheet.append([label for key, label, description, width in COLUMNS])
+    rows = []
     for article in ordered:
         key = article['article_id']
         acquired, prediction, review = access[key], metadata[key], reviews.get(key)
@@ -116,18 +220,26 @@ def main():
             row[field] = row.get(field) or 'Not recorded'
         row['a_version_note'] = row.get('a_version_note') or ('Version not separately recorded' if verified else '')
         row['year'], row['n_authors'] = int(row['year']), int(row['n_authors'])
+        rows.append(row)
         sheet.append([row.get(field, '') for field, label, description, width in COLUMNS])
     guide = workbook.create_sheet('Column guide')
-    guide.append(['Order', 'Column', 'Meaning'])
+    guide.append(['Order', 'Machine field', 'Workbook column', 'Meaning', 'Type', 'Allowed levels / format', 'Missing means', 'Observed'])
+    details = []
+    journals = sorted({row['journal'] for row in rows}, key=str.casefold)
     for position, (key, label, description, width) in enumerate(COLUMNS, 1):
-        guide.append([position, label, description])
+        detail = [position, key, label, description, *field_details(key), observed_values(key, rows)]
+        details.append(detail)
+        guide.append(detail)
         sheet.column_dimensions[get_column_letter(position)].width = width
-    guide.append(['', 'Private workbook', 'Contains abstracts, author lists, evidence, and local paths. Keep out of public GitHub and dashboards.'])
-    guide.append(['', 'Label interpretation', 'YES = qualifying evidence; NO = ineligible according to that assessment; UNCLEAR = unresolved. There are no country or significance restrictions.'])
-    guide.append(['', 'Frozen criteria', CRITERIA + '. New policy proposals are untested and have not replaced any saved label.'])
-    guide.append(['', 'Newly available documents', 'Verified downloads without completed reviews retain metadata-based best labels and show Metadata only — full text awaiting review.'])
+    guide.append(['', '', 'Private workbook', 'Contains abstracts, author lists, evidence, and local paths. Keep out of public GitHub and dashboards.'])
+    guide.append(['', '', 'Label interpretation', 'YES = qualifying evidence; NO = ineligible according to that assessment; UNCLEAR = unresolved. There are no country or significance restrictions.'])
+    guide.append(['', '', 'Frozen criteria', CRITERIA + '. New policy proposals are untested and have not replaced any saved label.'])
+    guide.append(['', '', 'Newly available documents', 'Verified downloads without completed reviews retain metadata-based best labels and show Metadata only — full text awaiting review.'])
+    guide.append(['', 'journal', 'All journal levels', 'Each of these 62 categorical values has 10 article rows.'])
+    for journal in journals:
+        guide.append(['', 'journal', journal, '10 article rows'])
     for worksheet in [sheet, guide]:
-        worksheet.freeze_panes = 'E2' if worksheet == sheet else 'C2'
+        worksheet.freeze_panes = 'E2' if worksheet == sheet else 'D2'
         for cell in worksheet[1]:
             cell.fill = PatternFill('solid', fgColor='173F4F')
             cell.font = Font(color='FFFFFF', bold=True)
@@ -140,7 +252,7 @@ def main():
                     assert len(cell.value) <= 32767, 'Excel cell text exceeds its limit'
                     cell.data_type = 's'  # Source text must never become an Excel formula.
                 cell.alignment = Alignment(vertical='top', wrap_text=True)
-            worksheet.row_dimensions[cells[0].row].height = 66 if worksheet == sheet else 45
+            worksheet.row_dimensions[cells[0].row].height = 66 if worksheet == sheet else 90
     table = Table(displayName='ScoreArticles', ref=f'A1:{get_column_letter(len(COLUMNS))}621')
     table.tableStyleInfo = TableStyleInfo(name='TableStyleMedium2', showRowStripes=True)
     sheet.add_table(table)
@@ -161,7 +273,9 @@ def main():
                 cell.hyperlink = value
             if cell.hyperlink:
                 cell.font = Font(color='0563C1', underline='single')
-    guide.column_dimensions['A'].width, guide.column_dimensions['B'].width, guide.column_dimensions['C'].width = 10, 38, 110
+    for column, width in zip('ABCDEFGH', [8, 28, 35, 75, 20, 60, 65, 65]):
+        guide.column_dimensions[column].width = width
+    guide.auto_filter.ref = 'A1:H64'
     target = PRIVATE / 'SCORE_validation_620.xlsx'
     temporary = target.with_name(target.stem + '.tmp.xlsx')
     workbook.save(temporary)
@@ -170,6 +284,7 @@ def main():
     assert [r[0] for r in check['Articles'].iter_rows(min_row=2, values_only=True)] == [r['article_id'] for r in ordered]
     check.close()
     temporary.replace(target)
+    write_codebook(rows, details, journals)
     print(f'Saved {target.name}: 620 articles, {len(COLUMNS)} columns, {len(reviews)} completed full-text reviews.')
 
 

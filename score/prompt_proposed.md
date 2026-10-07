@@ -1,37 +1,38 @@
 # Proposed screening prompt — not yet validated
 
-This is a new proposal, not yet evaluated or adopted. It keeps the user-confirmed rule that documented reuse of the team's own data qualifies; analysis of other teams' data does not. The primary-survey definition is unchanged. The [current operational prompt](prompt_current.md), [verbatim original](prompt_original.md), and [previous tested candidate](prompt_revised.md) remain unchanged.
+This proposal has not been evaluated or adopted. It preserves the confirmed rule that documented reuse of the team's own data qualifies. The 620 papers are now a working development and validation collection; their historical holdout results do not validate this new wording. No new classifications have been run. Frozen prompts and predictions remain unchanged.
 
-The 620 papers now form a working development and validation collection. Their earlier holdout results describe the earlier prompt comparison; they are not an untouched test of this proposal. No new classifications have been run.
+Using only the supplied title, abstract, keywords and author list, assess whether the authors or their research team collected or commissioned quantitative human participant data. Use the author list only to identify the team.
 
-Using only the supplied title, abstract, and keywords, assess whether the article provides evidence that its authors or their research team collected or commissioned quantitative human participant data for their research.
+**What qualifies**
 
-**What qualifies:** Measuring people’s responses or behavior through a research procedure designed, conducted, or commissioned by the author team. Include experiments, surveys, behavioral tasks, diary studies, repeated measurements, and structured observations, whether online or offline and in any country. Collection through a survey firm, panel provider, or research partner qualifies, including an original module added to an existing survey.
+The team measured people’s responses or behavior through a research procedure it conducted or commissioned. Include experiments, surveys, behavioral tasks, diary studies, repeated measurements and structured observations, in any country. Collection through a survey firm, panel provider or research partner qualifies, including an original module added to an existing survey.
 
-**Apply these rules:**
+**What does not qualify**
 
-1. Include a paper if at least one study qualifies, including a distinct pilot, pretest, validation study or original survey module, even when the main analysis or other studies use external data. Replications with new participant data qualify. Reanalysis of earlier data collected or commissioned by the same team also qualifies when that role is explicit; flag this reuse separately. Do not infer a collection role from an author name, affiliation or dataset citation alone.
-2. Exclude analysis or reanalysis of data collected by other teams when no qualifying team collection is described. This includes using existing General Social Survey (GSS), American National Election Studies (ANES), other external surveys, administrative records, documents or digital traces. A new analysis, a subset of existing records, new measures coded from those records, or a merged dataset does not establish participant collection. A GSS or ANES mention alone does not determine the decision: an original module, team-commissioned collection, documented reuse of the team’s own data or a separate qualifying study can establish eligibility. Exclude papers containing only reviews, theory, simulations, qualitative research, or plans for future collection.
-3. Distinguish collection from design. An experiment involves researcher-imposed variation in a condition or intervention. A behavioral task alone does not establish an experiment. A natural experiment or other causal analysis does not establish that the authors collected data.
-4. Interpret language in context. “We recruited,” “we administered a survey,” “we randomly assigned participants,” and descriptions of participants completing a study procedure can support inclusion, but none is required. “Participants,” a sample size, “survey data,” or “a novel dataset” alone is insufficient. Descriptions of another team’s study do not count.
-5. Do not require a particular platform, private data, or statistically significant findings. Public availability does not make team-collected data ineligible. Eligibility depends on the team’s collection or commissioning role; owning, hosting or sharing a dataset is neither required nor sufficient. Do not infer present access, ownership, or permission to share.
+Exclude papers that only analyze data collected by other researchers, organizations or agencies outside the author team, without a qualifying collection role for the team. Examples include secondary analyses of existing General Social Survey (GSS), American National Election Studies (ANES), European Social Survey (ESS), Panel Study of Income Dynamics (PSID), Health and Retirement Study (HRS), or National Longitudinal Study of Adolescent to Adult Health (Add Health) data.
 
-**Return the following:**
+Merely downloading, purchasing, obtaining access to, analyzing, combining, or coding other people’s existing data does not qualify. Neither do new analyses, subsets or derived measures made from those data. This includes existing government census or tax records, company financial records, newspaper archives and social-media posts collected or produced by others. Exclude papers containing only reviews, theory, computer simulations, qualitative research or future collection plans.
 
-**Collection:**
+**Apply these rules**
 
-- **YES:** Eligible team collection or commissioning is stated or clearly implied, including documented reuse of the team’s earlier data. One qualifying component is enough.
-- **NO:** The supplied description supports only analysis of others’ existing data, or other clearly ineligible research, with no stated or clearly implied qualifying collection component. An ordinary description of secondary analysis of other teams’ data can establish NO; it need not use the word “only” or inventory every supporting study. Do not invent an unmentioned participant study.
-- **UNCLEAR:** The supplied information does not resolve whether the team collected or commissioned participant data, including cases with unresolved provenance or conflicting descriptions. Missing provenance is not a NO. Conversely, the general possibility that an abstract omits a study does not by itself require UNCLEAR.
+1. Include a paper if any study qualifies, including a pilot, pretest or validation study, even when its main analysis uses external data. A dataset’s name does not automatically exclude the paper. Check for an original module, commissioned collection or another qualifying study. Replications with new participant data qualify.
+2. Reanalysis of the team’s own earlier data qualifies when its collection or commissioning role is explicit. Flag this reuse separately. Do not infer that role from author names, affiliations or dataset citations alone.
+3. Public availability does not disqualify team-collected data. The criterion is responsibility for collection or commissioning, not legal ownership, exclusivity or permission to share. No particular platform or statistically significant result is required.
+4. Recruitment, survey administration, random assignment and participants completing a research procedure can establish collection in context. A sample size, “participants,” “survey data” or “novel dataset” alone cannot. Descriptions of other teams’ studies do not count.
 
-**Eligible experiment and eligible survey:** YES, NO, or UNCLEAR for each. These labels concern eligible team collection: analyzing another team’s experiment or survey does not make either YES. If collection is NO, both are NO. If collection is UNCLEAR, neither subtype may be YES; use NO only when that design is ruled out and UNCLEAR otherwise. A survey experiment can be YES for both. Identify any other eligible collection method.
+**Designs**
 
-**Evidence:** Up to two short exact excerpts, plus one sentence explaining the decision and any missing information. Identify the evidence for who collected or commissioned the data.
+An experiment involves researcher-imposed variation in a condition or intervention. A behavioral task, natural experiment or causal analysis alone does not establish an eligible experiment.
 
-**Team-data reuse:** Report “stated” when the description explicitly identifies analysis of data previously collected or commissioned by the author team; otherwise report “not stated.” This flag does not exclude qualifying collection, and “not stated” does not establish that collection is new.
+Count a survey only when an eligible study is primarily designed as a survey. Include observational questionnaires, repeated diary surveys and survey experiments using vignettes or other questionnaire manipulations. Incidental demographics or self-report scales within a laboratory task, clinical trial or instructional intervention do not qualify as survey studies. Questionnaires used only to record behavioral or perceptual task responses do not make those tasks surveys. A distinct primary-survey pilot or pretest can qualify. A survey experiment can be both.
 
-**Software and recruitment providers:** Record only names explicitly associated with the authors’ study, keeping these two categories separate; otherwise report “not stated.”
+**Return**
 
-Retain YES and UNCLEAR cases for subsequent review.
+- **Collection:** YES when qualifying team collection is stated or clearly implied. NO when the description supports only analysis of others’ data or other ineligible research. UNCLEAR when collection responsibility or provenance cannot be determined. Missing provenance is not NO; a hypothetical omitted study does not by itself require UNCLEAR.
+- **Eligible experiment and eligible survey:** YES, NO or UNCLEAR separately. If collection is NO, both are NO. If collection is UNCLEAR, neither can be YES; use NO only when that design is ruled out and UNCLEAR otherwise. Identify other eligible methods.
+- **Evidence:** Up to two short exact excerpts and one sentence explaining the decision, collection responsibility and missing information.
+- **Team-data reuse:** “stated” for explicit reuse of the team’s earlier collection; otherwise “not stated.”
+- **Software and recruitment providers:** Record names explicitly associated with the authors’ study separately; otherwise “not stated.”
 
-**User's eligible-survey override, 2026-10-07:** Count survey YES only when at least one eligible study is primarily designed as a survey. This includes observational questionnaire studies, repeated diary surveys and experiments embedded in a questionnaire. Incidental demographic questions, self-report scales or questionnaires in a primary laboratory task, clinical trial or instructional intervention do not qualify as a survey study. A distinct pilot or pretest primarily designed as a survey can qualify even if the main study is not a survey. This definition overrides any broader interpretation of eligible survey above; collection eligibility does not change.
+Retain collection YES and UNCLEAR for subsequent review.

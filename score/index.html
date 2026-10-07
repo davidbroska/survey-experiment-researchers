@@ -19,13 +19,14 @@ small{color:#465c65}nav{display:flex;gap:20px;flex-wrap:wrap}#papers td:first-ch
 <a href="protocol.md">Review protocol</a><a href="report.md">Findings</a>
 <a href="prompt_proposed_redline.md">Proposed prompt edits (untested)</a>
 <a href="access_report.md">Access report</a>
+<a href="codebook.md">Spreadsheet codebook</a>
 <a href="independent_review.csv">AI source reviews</a><a href="access.csv">Retrieval status</a>
 <a href="manual_downloads.csv">Download queue</a><a href="evaluation.json">Evaluation data</a>
 <a href="../archive/tess/DASHBOARD_NARROWER.html">TESS archive</a></nav>
 <div class="cards" style="margin-top:24px">
 <div class="card"><strong>620 / 620</strong>Articles selected</div>
 <div class="card"><strong>612</strong>Abstracts available</div>
-<div class="card"><strong>370</strong>Main articles available</div>
+<div class="card"><strong>380</strong>Main articles available</div>
 <div class="card"><strong>288</strong>Substantive full-text reviews</div>
 <div class="card"><strong>0</strong>Human verifications</div></div>
 <p class="note">This pilot evaluates whether metadata identifies research-team collection of quantitative human participant data.
@@ -39,7 +40,7 @@ Audit metadata NO decisions before using them as final exclusions. See the <a hr
 Matching existing articles are retained; remaining journal–year slots are sampled from bibliographic records.
 Scopus supplies 618 records; Crossref supplies the two World Politics years absent from Scopus.
 The pilot is therefore not a fully random sample. TESS journals and United States restrictions do not define this frame.</p>
-<p>Main text is available for 370 of 620 articles, covering 55 of 62 journals.
+<p>Main text is available for 380 of 620 articles, covering 55 of 62 journals.
 Performance among reviewed papers cannot establish performance for the 332 papers without source reviews.
 The <a href="coverage.csv">coverage table</a> separates availability by journal, year and metadata decision.</p>
 <h2>Prompt evaluation</h2>
@@ -117,7 +118,7 @@ or validate a future model configuration. Both versions use the user's primary-s
 <td>57.1% <small>(n=28)</small></td></tr></tbody></table></div>
 <p><small>Agreement with AI full-text review; not human-validated accuracy. Available paired cases may differ from inaccessible or unreviewed cases. The pilot retains matching existing articles, so it is not a probability sample.</small></p>
 <details><summary>Coverage by publication year and field</summary>
-<table><tr><th>Year</th><th>Journal slots</th><th>Main text available</th><th>Source reviewed</th></tr><tr><td>2016</td><td>62 / 62</td><td>40</td><td>29</td></tr><tr><td>2017</td><td>62 / 62</td><td>34</td><td>27</td></tr><tr><td>2018</td><td>62 / 62</td><td>37</td><td>30</td></tr><tr><td>2019</td><td>62 / 62</td><td>35</td><td>28</td></tr><tr><td>2020</td><td>62 / 62</td><td>38</td><td>30</td></tr><tr><td>2021</td><td>62 / 62</td><td>39</td><td>31</td></tr><tr><td>2022</td><td>62 / 62</td><td>39</td><td>31</td></tr><tr><td>2023</td><td>62 / 62</td><td>36</td><td>26</td></tr><tr><td>2024</td><td>62 / 62</td><td>38</td><td>28</td></tr><tr><td>2025</td><td>62 / 62</td><td>34</td><td>28</td></tr></table>
+<table><tr><th>Year</th><th>Journal slots</th><th>Main text available</th><th>Source reviewed</th></tr><tr><td>2016</td><td>62 / 62</td><td>41</td><td>29</td></tr><tr><td>2017</td><td>62 / 62</td><td>35</td><td>27</td></tr><tr><td>2018</td><td>62 / 62</td><td>38</td><td>30</td></tr><tr><td>2019</td><td>62 / 62</td><td>36</td><td>28</td></tr><tr><td>2020</td><td>62 / 62</td><td>40</td><td>30</td></tr><tr><td>2021</td><td>62 / 62</td><td>39</td><td>31</td></tr><tr><td>2022</td><td>62 / 62</td><td>39</td><td>31</td></tr><tr><td>2023</td><td>62 / 62</td><td>37</td><td>26</td></tr><tr><td>2024</td><td>62 / 62</td><td>39</td><td>28</td></tr><tr><td>2025</td><td>62 / 62</td><td>36</td><td>28</td></tr></table>
 <p>Business: 120 · Economics: 110 · Education: 70 · Political Science: 90 · Psychology: 150 · Sociology: 80</p></details>
 <h2>Selected articles</h2><label for="filter">Filter by journal, year, title, split, or retrieval status</label><br>
 <p>Decision order: <strong>collection / experiment / survey</strong>. Reference labels come from provisional AI source review;
@@ -583,13 +584,13 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Access unresolved</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Educational Researcher</td>
 <td>2018</td><td><a href="https://doi.org/10.3102/0013189x17738746">Sex Differences in Doctoral Student Publication Rates</a></td><td>development</td>
-<td>Access unresolved</td><td>UNCLEAR / UNCLEAR / UNCLEAR</td>
+<td>Available</td><td>UNCLEAR / UNCLEAR / UNCLEAR</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Educational Researcher</td>
 <td>2019</td><td><a href="https://doi.org/10.3102/0013189x19867941">Racial and Ethnic Discrimination in the Labor Market for Child Care Teachers</a><details><summary>Review reasoning</summary><p>The authors submitted fictitious randomized resumes and recorded real employers’ callbacks, then commissioned a questionnaire to child-care providers. Scraped resumes informed stimuli but were not the sole source of data.</p><p><a href='https://docs.iza.org/dp11140.pdf'>Source</a> · II. Data Sources: Resume Audit Study; Child Care Provider Survey</p></details></td><td>development</td>
 <td>Available</td><td>YES / YES / YES</td>
 <td>— / — / —</td><td>YES / YES / YES</td></tr><tr><td>Educational Researcher</td>
 <td>2020</td><td><a href="https://doi.org/10.3102/0013189x20935039">Policies That Define Instruction: A Systematic Review of States’ and Districts’ Recommendations for Evaluating Special Educators</a></td><td>holdout</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>NO / NO / NO</td><td>— / — / —</td></tr><tr><td>Educational Researcher</td>
 <td>2021</td><td><a href="https://doi.org/10.3102/0013189x211048840">All States Close but Red Districts Reopen: The Politics of In-Person Schooling During the COVID-19 Pandemic</a><details><summary>Review reasoning</summary><p>The quantitative schooling-policy analysis codes existing documents. The additional 1000-person October2020 SOSS questionnaire was commissioned by MSU IPPSR through YouGov. An institutional report confirms that collection but identifies no study-specific collection, commissioning, or original-module role for the article authors. Grossmann&#x27;s institute directorship and general survey experience do not settle his role in this wave. Collection ownership remains UNCLEAR after official project-report and wave-catalog checks.</p><p><a href='https://edworkingpapers.com/sites/default/files/ai21-355.pdf'>Source</a> · PDF pp5–8, Data and Methods; Michigan Public Opinion Data; MSU IPPSR institutional survey report</p></details></td><td>development</td>
 <td>Available</td><td>UNCLEAR / UNCLEAR / UNCLEAR</td>
@@ -607,7 +608,7 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Access unresolved</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Exceptional Children</td>
 <td>2016</td><td><a href="https://doi.org/10.1177/0014402915619419">English learner and non-English learner students with disabilities: Content acquisition and comprehension</a></td><td>development</td>
-<td>Access unresolved</td><td>YES / YES / NO</td>
+<td>Available</td><td>YES / YES / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Exceptional Children</td>
 <td>2017</td><td><a href="https://doi.org/10.1177/0014402917690729">Too stressed to teach? Teaching quality, student engagement, and IEP outcomes</a></td><td>development</td>
 <td>Access unresolved</td><td>UNCLEAR / UNCLEAR / UNCLEAR</td>
@@ -616,10 +617,10 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Access unresolved</td><td>UNCLEAR / UNCLEAR / UNCLEAR</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Exceptional Children</td>
 <td>2019</td><td><a href="https://doi.org/10.1177/0014402918789162">Racing Against the Vocabulary Gap: Matthew Effects in Early Vocabulary Instruction and Intervention</a></td><td>holdout</td>
-<td>Access unresolved</td><td>UNCLEAR / UNCLEAR / UNCLEAR</td>
+<td>Available</td><td>UNCLEAR / UNCLEAR / UNCLEAR</td>
 <td>UNCLEAR / UNCLEAR / UNCLEAR</td><td>— / — / —</td></tr><tr><td>Exceptional Children</td>
 <td>2020</td><td><a href="https://doi.org/10.1177/0014402920924851">Paths 2 the Future: Evidence for the Efficacy of a Career Development Intervention for Young Women With Disabilities</a></td><td>development</td>
-<td>Access unresolved</td><td>YES / YES / UNCLEAR</td>
+<td>Available</td><td>YES / YES / UNCLEAR</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Exceptional Children</td>
 <td>2021</td><td><a href="https://doi.org/10.1177/00144029211017463">A Mixed-Methods Analysis of State-Level Population Data for Students With Visual Impairment and Blindness</a></td><td>holdout</td>
 <td>Access unresolved</td><td>YES / NO / YES</td>
@@ -628,7 +629,7 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Access unresolved</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Exceptional Children</td>
 <td>2023</td><td><a href="https://doi.org/10.1177/00144029221141029">Quality Indicators of Secondary Data Analyses in Special Education Research: A Preregistration Guide</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Exceptional Children</td>
 <td>2024</td><td><a href="https://doi.org/10.1177/00144029231172175">A Meta-Analysis on Behavioral Support Training and General Education Teacher Implementation</a></td><td>development</td>
 <td>Available</td><td>NO / NO / NO</td>
@@ -811,7 +812,7 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Access unresolved</td><td>YES / NO / YES</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>European Journal of Personality</td>
 <td>2024</td><td><a href="https://doi.org/10.1177/08902070231174574">Who is healthier? A meta-analysis of the relations between the HEXACO personality domains and health outcomes</a></td><td>development</td>
-<td>Access unresolved</td><td>NO / NO / NO</td>
+<td>Available</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>European Journal of Personality</td>
 <td>2025</td><td><a href="https://doi.org/10.1177/08902070241235969">If you were happy and you know it, clap your hands! Testing the peak-end rule for retrospective judgments of well-being in everyday life</a></td><td>development</td>
 <td>Available</td><td>UNCLEAR / UNCLEAR / UNCLEAR</td>
@@ -1150,7 +1151,7 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Access unresolved</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>American Economic Journal: Applied Economics</td>
 <td>2017</td><td><a href="https://doi.org/10.1257/app.20150390">The impact of maternal literacy and participation programs: Evidence from a randomized evaluation in India</a></td><td>development</td>
-<td>Access unresolved</td><td>YES / YES / NO</td>
+<td>Available</td><td>YES / YES / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>American Economic Journal: Applied Economics</td>
 <td>2018</td><td><a href="https://doi.org/10.1257/app.20150360">Do free trade agreements affect tariffs of nonmember countries? A theoretical and empirical investigation</a></td><td>development</td>
 <td>Access unresolved</td><td>NO / NO / NO</td>
@@ -1414,7 +1415,7 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Access unresolved</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Quarterly Journal of Economics</td>
 <td>2025</td><td><a href="https://doi.org/10.1093/qje/qjaf009">CAN POLLUTION MARKETS WORK IN DEVELOPING COUNTRIES? EXPERIMENTAL EVIDENCE FROM INDIA</a></td><td>development</td>
-<td>Access unresolved</td><td>UNCLEAR / UNCLEAR / NO</td>
+<td>Available</td><td>UNCLEAR / UNCLEAR / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>Review of Financial Studies</td>
 <td>2016</td><td><a href="https://doi.org/10.1093/rfs/hhv041">Wage Rigidity: A Quantitative Solution to Several Asset Pricing Puzzles</a></td><td>development</td>
 <td>Access unresolved</td><td>NO / NO / NO</td>
@@ -1774,7 +1775,7 @@ a dash means unreviewed or not run. The tested candidate covers the 124 held-out
 <td>Access unresolved</td><td>NO / NO / NO</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>American Journal of Sociology</td>
 <td>2025</td><td><a href="https://doi.org/10.1086/735618">What Makes a Decision Fair? Relative Earnings, Gender, and Justifications for Couples’ Decision-Making1</a></td><td>development</td>
-<td>Access unresolved</td><td>YES / YES / YES</td>
+<td>Available</td><td>YES / YES / YES</td>
 <td>— / — / —</td><td>— / — / —</td></tr><tr><td>American Sociological Review</td>
 <td>2016</td><td><a href="https://doi.org/10.1177/0003122416653112">Nonmarital First Births, Marriage, and Income Inequality</a></td><td>holdout</td>
 <td>Access unresolved</td><td>NO / NO / NO</td>

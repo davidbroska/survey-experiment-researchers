@@ -11,7 +11,7 @@ PUBLIC = (
     "independent_review.csv", "predictions_original.csv", "predictions_revised.csv",
     "evaluation.json", "prompt_original.md", "prompt_revised.md", "prompt_current.md",
     "prompt_freeze.json", "protocol.md", "report.md", "ra_verification.md",
-    "prompt_proposed.md", "prompt_proposed_redline.md", "access_report.md",
+    "prompt_proposed.md", "prompt_proposed_redline.md", "access_report.md", "codebook.md",
 )
 
 

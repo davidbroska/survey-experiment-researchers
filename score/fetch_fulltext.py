@@ -88,8 +88,24 @@ def safe_url(url):
     """Remove credentials and signed-download parameters from saved URLs."""
     parts = urlsplit(url)
     query = [(k, v) for k, v in parse_qsl(parts.query, keep_blank_values=True)
-             if not re.search(r'^(code|state)$|key|token|signature|credential|authorization|email|x-amz-', k, re.I)]
+             if not re.search(r'^(code|state|expires|googleaccessid)$|key|token|signature|credential|authorization|email|x-amz-', k, re.I)]
     return urlunsplit((parts.scheme, parts.netloc.rsplit('@', 1)[-1], parts.path, urlencode(query), ''))
+
+
+def page_barrier(data):
+    """Recognize explicit challenge/sign-in pages; a status alone is insufficient."""
+    if not re.search(br'<html(?:\s|>)|<!doctype\s+html', data[:2000], re.I):
+        return '', ''
+    text = data[:65536].decode('utf-8', errors='replace')
+    title = re.search(r'<title[^>]*>(.*?)</title>', text, re.I | re.S)
+    title = re.sub(r'<[^>]+>', '', title.group(1)).strip() if title else ''
+    if re.search(r'just a moment|checking your browser|security verification|access denied', title, re.I) and re.search(r'captcha|cf-chl|cloudflare|challenge', text, re.I):
+        return 'bot_challenge', 'Browser-verification title and challenge markers'
+    if re.search(r'^(?:login|log in|sign in)(?:\s|$)|(?:APA|PsycNet).*\b(?:login|log in|sign in)\b', title, re.I):
+        return 'sign_in_page', 'Sign-in page title'
+    if 'Article Full-Text Access' in text and 'Institutional Access' in text:
+        return 'institutional_access_options', 'Article Full-Text Access / Institutional Access options'
+    return '', ''
 
 
 def fetch(url, accept='application/pdf,text/html,application/xml;q=0.8', retry=False, refresh=False):
@@ -99,6 +115,8 @@ def fetch(url, accept='application/pdf,text/html,application/xml;q=0.8', retry=F
     url = quote(url, safe=":/?=&%#+@;,!$'()*[]~-_")
     if urlsplit(url).scheme not in {'http', 'https'}:
         return {'url': url, 'error': 'unsupported_url'}, b''
+    if urlsplit(url).hostname == 'api.osf.io' and accept == 'application/pdf,text/html,application/xml;q=0.8':
+        accept = 'application/json'  # Otherwise OSF can return its API documentation as HTML.
     key = sha((url + '\n' + accept).encode())
     path = PRIVATE / 'http' / (key + '.json')
     body_path = path.with_suffix('.bin')
@@ -150,9 +168,22 @@ def fetch(url, accept='application/pdf,text/html,application/xml;q=0.8', retry=F
                     data = gzip.decompress(data)
                 receipt.update(http_status=response.status, final_url=safe_url(response.url),
                                content_type=response.headers.get('Content-Type', ''))
+                barrier, evidence = page_barrier(data)
+                if barrier:
+                    receipt.update(access_barrier=barrier, barrier_evidence=evidence)
     except (HTTPError, URLError, HTTPException, TimeoutError, OSError, ValueError, EOFError) as error:
         data = b''
         receipt.update(error=type(error).__name__, http_status=getattr(error, 'code', None))
+        if isinstance(error, HTTPError):
+            try:
+                error_page = error.read(65536)
+                barrier, evidence = page_barrier(error_page)
+                if error.headers.get('cf-mitigated') == 'challenge':
+                    barrier, evidence = 'bot_challenge', 'cf-mitigated: challenge'
+                if barrier:
+                    receipt.update(access_barrier=barrier, barrier_evidence=evidence)
+            except (OSError, HTTPException):
+                pass
         if isinstance(error, URLError):
             receipt['network_error_type'] = type(error.reason).__name__
         code = receipt['http_status']
@@ -238,6 +269,9 @@ def xml_identity(tree, article):
 
 def document(data, article, url, existing_cache=''):
     """Return verified main text only; incomplete and mismatched copies remain pending."""
+    barrier, evidence = page_barrier(data)
+    if barrier:
+        return None, barrier
     pages, kind, xml_match = [], '', ''
     if data.lstrip().startswith(b'%PDF-'):
         kind = 'pdf'
@@ -485,6 +519,14 @@ def access_problem(record):
         category, action = 'incomplete_main_text_candidate', 'Inspect the locally saved candidate and obtain any missing main-text pages.'
     elif any(c.get('status') == 'supplement_candidate_unreviewed' for c in candidates):
         category, action = 'supplement_without_main_text', 'Obtain the main article; a matching supplement is saved separately.'
+    elif any(a.get('access_barrier') == 'sign_in_page' or
+             (urlsplit(a.get('final_url', '')).hostname == 'sso.apa.org' and
+              '/login' in urlsplit(a.get('final_url', '')).path) for a in attempts):
+        category, action = 'publisher_login_redirect', 'Open the DOI through Stanford library/PsycArticles in your regular browser. If access still fails, ask the library to check the licensed platform and IP recognition.'
+    elif any(a.get('access_barrier') == 'institutional_access_options' for a in attempts):
+        category, action = 'publisher_access_options', 'Open the article through your library; access options alone do not establish whether your institution subscribes.'
+    elif any(a.get('access_barrier') == 'bot_challenge' for a in attempts):
+        category, action = 'robot_challenge_on_available_routes', 'Try a normal institutional browser or a repository copy; the challenge does not establish subscription status.'
     elif any(a.get('http_status') in {401, 403} for a in attempts):
         category, action = 'access_denied_on_available_routes', 'Open the DOI page in an institutionally authenticated browser and save the main article PDF.'
     elif any(a.get('error') in {'URLError', 'TimeoutError', 'RemoteDisconnected'} for a in attempts):
