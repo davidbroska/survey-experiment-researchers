@@ -30,7 +30,7 @@ The prompt used for the reported evaluation remains frozen. The following are pr
 
 After the survey definition, add:
 
-> Qualifying questionnaires may be a secondary study component. Questionnaire answers collected as part of an intervention qualify even if those answers are not analyzed. Demographic questions used only to describe the sample do not qualify on their own.
+> Qualifying questionnaires may be a secondary study component. Questionnaire answers collected as part of an intervention qualify even if those answers are not analyzed. Demographic questions used only to describe the sample do not qualify on their own, even when collected through a named survey platform.
 
 After the own-team reuse sentence, add:
 
