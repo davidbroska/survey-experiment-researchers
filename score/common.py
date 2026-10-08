@@ -1,8 +1,20 @@
 """Private provider settings; never print credentials or save request headers."""
 import os
 from pathlib import Path
+import re
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 ROOT = Path(__file__).resolve().parent.parent
+PRIVATE_QUERY = r'^(code|state|expires|googleaccessid|view_only)$|key|token|signature|credential|authorization|email|x-amz-'
+
+
+def safe_url(url):
+    """Remove credentials and signed-download parameters from saved URLs."""
+    parts = urlsplit(url)
+    query = [(k, v) for k, v in parse_qsl(parts.query, keep_blank_values=True)
+             if not re.search(PRIVATE_QUERY, k, re.I)]
+    return urlunsplit((parts.scheme, parts.netloc.rsplit('@', 1)[-1], parts.path, urlencode(query), ''))
+
 
 
 def settings():

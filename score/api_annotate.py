@@ -428,7 +428,12 @@ def main():
     parser.add_argument("--limit", type=int, help="Maximum pending articles selected before processing")
     parser.add_argument("--workers", type=int, default=1, help="Concurrent independent requests; default 1")
     parser.add_argument("--retry-failed", action="store_true", help="Explicitly allow new paid attempts for failed/uncertain prior requests")
+    parser.add_argument("--allow-standard-paid", action="store_true", help="Override the Flex preference only with explicit user authorization for standard-tier spending")
     args = parser.parse_args()
+    if args.run and not args.allow_standard_paid:
+        parser.error("New paid work uses Flex. Use api_recheck.py; standard requests require --allow-standard-paid and explicit user authorization.")
+    if args.allow_standard_paid and not args.run:
+        parser.error("--allow-standard-paid requires --run")
     if args.limit is not None and args.limit < 1:
         parser.error("--limit must be positive")
     if args.workers < 1:

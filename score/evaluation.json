@@ -1,7 +1,7 @@
 {
   "paired": 620,
-  "reference_resolved": 607,
-  "reference_unclear": 13,
+  "reference_resolved": 608,
+  "reference_unclear": 12,
   "abstract_unclear": 111,
   "matrix_labels": [
     "YES",
@@ -11,7 +11,7 @@
   "matrix": [
     [
       201,
-      50,
+      51,
       64
     ],
     [
@@ -21,47 +21,47 @@
     ],
     [
       0,
-      9,
+      8,
       4
     ]
   ],
   "strict_yes": {
-    "n": 607,
+    "n": 608,
     "tp": 201,
     "tn": 292,
     "fp": 0,
-    "fn": 114,
-    "balanced_accuracy": 0.819047619047619,
+    "fn": 115,
+    "balanced_accuracy": 0.8180379746835442,
     "precision": 1.0,
-    "recall": 0.638095238095238,
+    "recall": 0.6360759493670886,
     "specificity": 1.0,
-    "f1": 0.7790697674418605
+    "f1": 0.7775628626692457
   },
   "retain_yes_or_unclear": {
-    "n": 607,
+    "n": 608,
     "tp": 265,
     "tn": 249,
     "fp": 43,
-    "fn": 50,
-    "balanced_accuracy": 0.8470047836486192,
+    "fn": 51,
+    "balanced_accuracy": 0.8456736604820531,
     "precision": 0.8603896103896104,
-    "recall": 0.8412698412698413,
+    "recall": 0.8386075949367089,
     "specificity": 0.8527397260273972,
-    "f1": 0.8507223113964687
+    "f1": 0.8493589743589743
   },
   "definite_only": {
-    "n": 500,
+    "n": 501,
     "tp": 201,
     "tn": 249,
     "fp": 0,
-    "fn": 50,
-    "balanced_accuracy": 0.900398406374502,
+    "fn": 51,
+    "balanced_accuracy": 0.8988095238095238,
     "precision": 1.0,
-    "recall": 0.8007968127490039,
+    "recall": 0.7976190476190477,
     "specificity": 1.0,
-    "f1": 0.8893805309734514
+    "f1": 0.8874172185430463
   },
-  "definite_coverage": 0.8237232289950577,
+  "definite_coverage": 0.8240131578947368,
   "n_articles": 620,
   "abstract_completed": 620,
   "fulltext_completed": 620,
@@ -73,8 +73,8 @@
     "Codex session agent (GPT-6 family)": 551,
     "gpt-6-astra": 69
   },
-  "reference_labels_changed": 6,
-  "reference_text_corrections": 2,
+  "reference_labels_changed": 7,
+  "reference_text_corrections": 4,
   "initial_reference_comparison": {
     "paired": 620,
     "reference_resolved": 611,
@@ -150,5 +150,13 @@
     "output_tokens": 20017,
     "calculated_usd": 23.168107500000005,
     "articles": 69
+  },
+  "api_recheck_usage": {
+    "articles": 3,
+    "calculated_usd": 1.7046700000000001,
+    "service_tier": "flex",
+    "model": "gpt-6-astra",
+    "input_tokens": 264205,
+    "output_tokens": 2136
   }
 }

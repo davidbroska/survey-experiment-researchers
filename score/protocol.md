@@ -29,3 +29,13 @@ Review discrepancies against the actual sources before calling an abstract judgm
 ## Local and public outputs
 
 The private workbook has separate abstract and full-text sheets, both sorted by journal then descending year. Each has one annotation column; the full-text sheet also has evidence and reasoning. Complete abstracts, licensed documents, credentials and correspondence remain local. Public exports contain bibliography, labels, brief source evidence and reasoning, methods and evaluation. The TESS archive is retained as historical work and does not define the SCORE frame.
+
+## Recheck of the 13 unresolved references
+
+The user asked whether the 13 UNCLEAR results were abstract predictions or full-text judgments. They were full-text judgments;111 metadata predictions were UNCLEAR. All 13 main texts were saved and readable. The follow-up checked relevant methods and collection responsibility, retried supporting sources and preserved every original judgment. Downloading a main text does not establish that every appendix is available.
+
+Three cases with recovered supporting material received new independent GPT-6 Astra API reviews with medium reasoning and `service_tier="flex"`. These requests contained the complete saved main text plus identified supporting documents or explicitly marked workbook excerpts, without prior labels or abstract predictions. Flex was explicitly requested and confirmed in all three responses, with no standard-tier fallback. Source and input hashes, returned text and usage remain private. Calculated additional cost was $1.70; cumulative usage was $24.87 of the authorized $100. No paid retries were made.
+
+A valid JSON response is not sufficient evidence of a correct classification. Independent agents and the primary reviewer checked the returned reasoning against the underlying methods and analysis files before any adjudication. One citation check failed because the PDF layout extraction interleaved columns; the exact quotations were verified on the stated pages in reading order. That formatting issue is separate from the substantive eligibility decision.
+
+The user subsequently clarified that demographic questions used only to describe a sample do not qualify on their own, while questionnaire answers collected as part of an intervention qualify even if those answers are not analyzed. Proposed prompt amendments record both decisions. The existing prompt and its metadata predictions remain frozen: the reported metrics do not test the new scope. A census of all 620 saved source judgments identifies cases to revisit consistently, including existing YES cases, before a revised-scope evaluation.

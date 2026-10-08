@@ -23,14 +23,14 @@ import threading
 import time
 import unicodedata
 from urllib.error import HTTPError, URLError
-from urllib.parse import parse_qsl, quote, urlencode, urljoin, urlsplit, urlunsplit
+from urllib.parse import quote, urlencode, urljoin, urlsplit
 from urllib.request import HTTPRedirectHandler, Request, build_opener
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 PRIVATE = ROOT / 'private/score'
 LITERATURE = ROOT.parent / 'Literature/SCORE'
-from common import credentials, settings
+from common import credentials, settings, PRIVATE_QUERY, safe_url
 csv.field_size_limit(sys.maxsize)
 
 UA = 'SocialTune-SCORE/1.0 (scholarly research; public and institutional access)'
@@ -40,7 +40,6 @@ NEXT_REQUEST = {}
 ACCESS = settings()
 UNPAYWALL_EMAIL = ACCESS.get('UNPAYWALL_EMAIL', '')
 SUPPORT = r'supplement|\.supp|appendi[xc]|osf\.io|aspredicted|10\.7910/|dataverse|zenodo|figshare|dryad|github\.com'
-PRIVATE_QUERY = r'^(code|state|expires|googleaccessid|view_only)$|key|token|signature|credential|authorization|email|x-amz-'
 
 
 def save_json(path, data):
@@ -90,14 +89,6 @@ class SafeRedirect(HTTPRedirectHandler):
                 if host not in hosts or urlsplit(newurl).scheme != 'https':
                     redirected.remove_header(name)
         return redirected
-
-
-def safe_url(url):
-    """Remove credentials and signed-download parameters from saved URLs."""
-    parts = urlsplit(url)
-    query = [(k, v) for k, v in parse_qsl(parts.query, keep_blank_values=True)
-             if not re.search(PRIVATE_QUERY, k, re.I)]
-    return urlunsplit((parts.scheme, parts.netloc.rsplit('@', 1)[-1], parts.path, urlencode(query), ''))
 
 
 def page_barrier(data):

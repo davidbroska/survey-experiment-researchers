@@ -48,6 +48,23 @@ def percent(value):
     return f'{100 * value:.1f}%' if value is not None else 'Not estimable'
 
 
+def completed_recheck_usage(path):
+    if not path.exists():
+        return None
+    audit = json.loads(path.read_text())
+    if audit.get('status') != 'complete':
+        return None
+    fields = ['articles', 'calculated_usd', 'service_tier', 'model', 'input_tokens', 'output_tokens']
+    usage = {key: audit['api_usage'][key] for key in fields}
+    if (usage['service_tier'] != 'flex' or usage['model'] != 'gpt-6-astra'
+            or any(type(usage[key]) is not int or usage[key] < 0
+                   for key in ['articles', 'input_tokens', 'output_tokens'])
+            or type(usage['calculated_usd']) not in [int, float]
+            or not np.isfinite(usage['calculated_usd']) or usage['calculated_usd'] < 0):
+        raise ValueError('Invalid completed Flex recheck usage summary')
+    return usage
+
+
 def main():
     articles = index_rows(read_rows(PRIVATE / 'articles.csv'))
     predictions = index_rows(read_rows(PRIVATE / 'predictions.csv'))
@@ -74,6 +91,9 @@ def main():
                   reference='Independent provisional AI full-text review; not human ground truth',
                   prompt='prompt.md', complete=len(predictions) == len(references) == len(articles))
     result['api_usage'] = run.get('api_phase', {}).get('usage', {})
+    recheck_usage = completed_recheck_usage(PRIVATE / 'unclear_recheck_run.json')
+    if recheck_usage is not None:
+        result['api_recheck_usage'] = recheck_usage
     (ROOT / 'score/evaluation.json').write_text(json.dumps(result, indent=2) + '\n')
     disagreements = []
     for key in sorted(set(predictions) & set(references)):
@@ -105,6 +125,9 @@ def main():
     usage = result['api_usage']
     if usage:
         lines += ['', f"The {usage['articles']} API source reviews used {usage['input_tokens']:,} input tokens and {usage['output_tokens']:,} output tokens, including reasoning. Calculated cost: ${usage['calculated_usd']:.2f}, within the approved $100 limit. This is usage-based accounting, not an invoice. Rates and cache-write charges follow [OpenAI pricing](https://developers.openai.com/api/docs/pricing); private receipts preserve the calculation."]
+    if recheck_usage is not None:
+        total_cost = usage.get('calculated_usd', 0) + recheck_usage['calculated_usd']
+        lines += ['', f"An additional {recheck_usage['articles']} Flex source rechecks cost ${recheck_usage['calculated_usd']:.2f}; combined historical and recheck API usage cost is ${total_cost:.2f}. See the [follow-up source checks](error_analysis.md)."]
     strict = result['strict_yes']
     retained = result['retain_yes_or_unclear']
     lines += ['', f"Definite-answer coverage among resolved references: {percent(result['definite_coverage'])}. The definite-only row can look better because it excludes difficult cases; read it alongside coverage.", '',

@@ -7,7 +7,7 @@ import re
 import subprocess
 from urllib.parse import parse_qsl, urlsplit
 from annotate import ROOT, PRIVATE, PROMPT, LABELS, abstract_prompt, fulltext_prompt
-from fetch_fulltext import PRIVATE_QUERY, safe_url
+from common import PRIVATE_QUERY, safe_url
 
 
 def read_rows(path):
