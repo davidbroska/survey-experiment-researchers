@@ -27,7 +27,7 @@ These are main-text copies with recorded limitations, not 620 complete publisher
 versions with every table, figure and supplement. The source review must seek
 missing material when it is needed to establish collection or study design.
 
-**288 articles have completed substantive AI source reviews.** The remaining
+**288 articles have substantive AI source reviews under the earlier broader criteria.** The questionnaire-focused scope chosen on 8 October has not been applied to the saved labels. The remaining
 332 available articles await source review. Replacements have
 blank assessment fields and basis **Not assessed**. Recovered originals retain
 their earlier metadata assessments. No new eligibility labels or human

@@ -6,6 +6,8 @@ Each row is one selected article. Only year and author count are stored as Excel
 
 Current assessment basis: Not assessed: 194; Full-text review: 288; Metadata only — full text awaiting review: 138.
 
+The questionnaire-focused recruitment scope chosen on 8 October 2026 has not been applied to these stored assessments. They use the earlier broader criteria. The new prompt separately records team collection, primary-survey design, digital completion and in-scope survey experiments; those new decisions require a separate review pass.
+
 `m_` fields preserve the original metadata assessments where available; `r_` fields preserve completed source reviews; `a_` fields describe current acquisition. Best-available labels use the source review when present and otherwise the original metadata assessment. Replacement articles without assessments have blank labels and basis Not assessed. Downloading a document never implies that it was reviewed.
 
 YES = qualifying evidence; NO = ineligible under that assessment; UNCLEAR = unresolved. Missing full text is not a NO. Survey means a primary questionnaire survey, including survey experiments and diary surveys, rather than incidental scales. No country restriction applies. Human-verified best assessments: 0/620.

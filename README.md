@@ -1,7 +1,9 @@
 The active project is the [SCORE recruitment pilot](score/index.html): 620 articles,
 one per journal and year across 62 journals, 2016–2025. All 620 main texts are
-available locally; 288 have substantive AI source reviews. RAs will verify a
-sample of those assessments.
+available locally; 288 have earlier AI source reviews under broader criteria.
+Recruitment now targets primary questionnaires completed by participants through
+a digital interface, including survey experiments. RAs will verify a sample of
+the source assessments after the new criteria are applied.
 
 [Article list](score/articles.csv) · [Screening prompt](score/prompt_proposed.md) ·
 [Spreadsheet codebook](score/codebook.md) · [Access and source limitations](score/access_report.md) ·
@@ -13,8 +15,9 @@ metadata judgments and substantive source reviews are separate. Downloading a
 document does not establish that it has been reviewed. Some sources are
 manuscripts with missing supporting assets, recorded in the workbook.
 
-The proposed prompt has received internal review but has not been evaluated on
-a new sample. Article IDs stay in code and data; the model receives bibliographic
+The proposed prompt separates team collection, primary-survey design, participant
+digital completion and in-scope survey experiments. Its questionnaire focus has
+not been evaluated or applied to stored labels. Article IDs stay in code and data; the model receives bibliographic
 content and returns assessment fields only. Code attaches the corresponding ID
 to the result. Existing labels preserve the criteria used when they were made.
 
@@ -59,9 +62,10 @@ PDF import. Provider credentials come from the environment or the parent `.env`;
 PDF extraction requires Poppler's `pdftotext`. Keep credentials, full abstracts,
 full texts, extracted text and private correspondence off GitHub.
 
-Use `score/verify.py` to create a fresh blinded RA packet after all available
-articles have substantive reviews. Earlier unassigned draft packets were removed.
-The [verification protocol](score/ra_verification.md) describes the future draw.
+Prepare a fresh blinded RA packet after the available articles have source
+assessments under the questionnaire-focused criteria. Earlier blank drafts and
+their obsolete generator were removed. The [verification protocol](score/ra_verification.md)
+describes the future draw.
 
 The previously published [TESS dashboard](archive/tess/DASHBOARD_NARROWER.html)
 and public source archive remain available. TESS journals and U.S. restrictions

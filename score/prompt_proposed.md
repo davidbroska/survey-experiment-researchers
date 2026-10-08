@@ -1,100 +1,100 @@
-# Proposed screening prompt — not yet validated
+# Screening prompt — primary digital questionnaires
 
-This proposal has not been evaluated or adopted. It preserves documented reuse of the team's own data and the user's primary-survey definition. The 620 papers are now a working development and validation collection; their historical holdout results do not validate this wording. Frozen prompts and predictions remain unchanged.
+This version reflects the questionnaire-focused recruitment scope chosen on 8 October 2026. It has not been evaluated empirically or applied to existing labels. Earlier predictions and source reviews used broader criteria and remain historical results.
 
-Input preparation for future use: the source CSV currently stores keywords and author lists as delimited text. Convert those fields to arrays of separate keywords and author names, preserving their wording and using the recorded separators. The JSON contract below is proposed for future calls; it does not describe or recode the inputs used for the frozen pilot.
+Input preparation: code keeps the article identifier and attaches it to the returned assessment. Convert stored author and keyword fields to arrays without changing their wording. The model receives four bibliographic fields and returns ten assessment fields.
 
-## Task and information you may use
+## Task and input
 
-Determine whether the article uses quantitative participant data collected or commissioned by its author team for a study reported in the article. Use only the supplied **title, abstract, keywords and author list**. Do not search elsewhere. Use author names only to identify the team; do not infer collection from someone's identity, affiliation or reputation.
+Identify articles reporting **primary questionnaire studies in which participants answered through a digital interface and the author team collected or commissioned those responses**. Include ordinary surveys and survey experiments. A computer-based task alone is outside this recruitment scope.
 
-**Input format:** Supply one JSON object with these four keys:
+Use only the supplied title, abstract, keywords and author list. Do not search elsewhere or infer methods from author identity, affiliation or reputation. Return an assessment of the article's own research, not studies it merely cites.
 
-- `title` and `abstract`: Strings containing the supplied text.
-- `keywords` and `authors`: Arrays of strings, with one keyword or one author name per entry, preserving the supplied wording.
+Input is one JSON object with exactly four keys:
 
-Use `""` for an unavailable title or abstract and `[]` for unavailable keywords or authors. Do not invent missing metadata.
+- `title` and `abstract`: strings; use `""` when unavailable.
+- `keywords` and `authors`: arrays of strings; use `[]` when unavailable.
 
-Decide **collection first**. Then describe experiments and surveys **among the studies that qualify for collection**. Assess every study reported as part of the article's own research, including small preparatory studies (pilots or pretests) and studies checking a measure or result (validation studies), not just the main study.
+Assess every reported study, including distinct survey pilots, pretests and questionnaire-validation studies. One qualifying study is enough. The **same study** must satisfy collection responsibility, primary-survey design and digital completion; do not combine evidence from different studies to manufacture eligibility.
 
 ## 1. `collection`: Did the author team collect or commission participant data used in a study reported in this article?
 
-**Quantitative participant data** are people's responses, actions or measurements recorded as numbers or structured categories for research: for example, survey answers, choices in a game, response times, test scores, physiological measurements such as brain scans, or systematically recorded observations of behavior.
+This field records **who collected the quantitative participant data**. A YES alone does not establish questionnaire-based recruitment eligibility; the next fields establish design and delivery mode.
 
-**The author team** means the authors and researchers working with them on the collection project. **Collected** means the team conducted the procedure that obtained these participant measurements. **Commissioned** means the team arranged for a survey firm, panel provider or research partner to collect them for its research. The authors need not personally recruit or interview participants.
+The author team means the authors and researchers working with them on the collection project. Collection means conducting a research procedure that obtains people's responses, actions or measurements as numbers or structured categories. Commissioning means arranging for a survey firm, panel provider or research partner to collect them for the team's research. The authors need not personally recruit or interview participants.
 
-Collection qualifies when at least one reported study meets this definition. This includes:
+Include an original survey, new participant responses in a replication, and new questions the team adds to an existing survey. Documented reuse of the team's earlier participant data also qualifies when the current article actually analyzes those data and its original collection or commissioning role is explicit. Public availability does not exclude the team's own collection.
 
-- New participant studies, including repetitions of earlier studies with new participants.
-- A set of new questions the team adds to an existing survey, even if another organization runs the survey.
-- Reanalysis of the team's earlier data, when its original collection or commissioning role is explicit. Record this reuse separately.
-- A qualifying pilot or supporting study alongside analyses of data collected by others.
+**Data collected by others** were obtained outside this team without its collection or commissioning role. Merely downloading, purchasing, accessing, combining, recoding or reanalyzing them does not qualify. Frequent examples are existing General Social Survey (GSS), American National Election Studies (ANES), European Social Survey (ESS), Panel Study of Income Dynamics (PSID), Health and Retirement Study (HRS), or National Longitudinal Study of Adolescent to Adult Health (Add Health) data collected by others. Also exclude analyses using only existing census/tax records, company records, newspaper archives or social-media posts produced or collected by others. A dataset name alone is not decisive: an original team-commissioned module or a separate qualifying participant study can still count.
 
-A study merely cited or summarized does not qualify, even if conducted by these authors. Earlier team collection qualifies only when the current article actually uses those participant data and the team's collection role is explicit. Citing results or combining published effect sizes in a review or meta-analysis is not itself reuse of participant data.
+Exclude papers containing only theory, reviews, simulations, qualitative research or plans for future collection. Citing the team's earlier findings or combining published effect sizes is not reuse of participant data. Author overlap alone does not establish responsibility. Legal ownership, exclusive access, permission to share, country and significant findings are not criteria.
 
-**Data collected by others** means data obtained by researchers, organizations or agencies outside this team, without a collection or commissioning role for the team. Merely downloading, purchasing, accessing, combining, recoding or reanalyzing those data does not qualify, even if the resulting analysis, dataset or measure is new.
+Assign **YES** when team collection is stated or clearly implied by the procedure; **NO** when the described research supports only ineligible sources or methods; **UNCLEAR** when collection or responsibility cannot be established. A sample size, “participants,” “survey data” or “new dataset” alone is insufficient. Missing evidence is not NO, but an unmentioned hypothetical study does not by itself require UNCLEAR.
 
-Examples include using existing General Social Survey (GSS), American National Election Studies (ANES), European Social Survey (ESS), Panel Study of Income Dynamics (PSID), Health and Retirement Study (HRS), or National Longitudinal Study of Adolescent to Adult Health (Add Health) data collected by others. Also exclude analyses using only existing government census or tax records, company financial records, newspaper archives or social-media posts collected or produced by others. A dataset name alone does not exclude a paper: the team might have commissioned that collection, added new questions, or conducted another qualifying study.
+## 2. `primary_survey`: Was an author-collected study primarily designed as a questionnaire survey?
 
-Exclude papers containing only theory, reviews, computer simulations, qualitative research or plans for future collection. Publicly available data can qualify if the team collected or commissioned them. Legal ownership, exclusive access, permission to share, country, platform and statistically significant findings are not eligibility criteria.
+In the remaining fields, **author-collected** includes commissioned collection and documented reuse meeting section 1.
 
-Assign:
+A primary survey uses asking people research questions as its main procedure: for example, questions about attitudes, preferences, experiences, intentions or reported behavior. Include questionnaire-based diary studies, repeated surveys and distinct survey pilots or pretests.
 
-- **YES:** Qualifying team collection is stated or clearly implied by the described procedure. For example, the authors report recruiting participants, administering a study or arranging new fieldwork. No particular phrase is required.
-- **NO:** The description supports only research that does not qualify, such as analysis of other people's existing data. Do not require UNCLEAR merely because an unmentioned study could hypothetically exist.
-- **UNCLEAR:** You cannot determine whether qualifying collection occurred or who was responsible. A sample size, “participants,” “survey data” or “new dataset” alone does not establish the team's collection role. Missing information is not NO.
+A survey experiment can qualify: participants answer a questionnaire containing experimentally varied messages, questions or hypothetical scenarios.
 
-## 2. `eligible_experiment`: Did a qualifying study use an experiment?
+Do not count demographic forms or self-report scales added to a laboratory task, clinical trial, physiological study or instructional intervention as a primary survey. A separate primary questionnaire study can still qualify within the same article. Standalone computerized games, reaction-time tasks and perceptual ratings of faces or sounds do not become surveys merely because responses are entered in a questionnaire or a survey platform is used.
 
-An **experiment** is a study in which the author team or a research partner working on that study deliberately sets or changes a condition, treatment or intervention to assess its effect on participants. Examples include assigning different messages, treatments or game conditions. Random assignment is not required.
+Assign **YES** if at least one author-collected study is clearly a primary survey; **NO** if the described author-collected research contains no primary survey; **UNCLEAR** if the information does not establish the main procedure. Surveys collected only by other teams do not count.
 
-A **behavioral task** asks participants to perform an activity, such as making choices or responding to pictures. Recording task responses qualifies as collection when the team obtains them, but does not by itself establish an experiment.
+## 3. `digital_questionnaire`: Did participants themselves complete that primary survey through a digital interface?
 
-A **natural experiment** examines a change that was not assigned as part of the research, such as a new government policy. Statistical methods that estimate whether something caused an outcome also do not establish researcher-assigned conditions or team collection. Such a paper can still qualify for collection if the team separately obtained participant measurements.
+Qualifying interfaces include a web questionnaire, an app, or a questionnaire on a computer, tablet or phone. The study can be remote or in a laboratory. No particular software brand is required. A mixed-mode survey qualifies if the team collected some participant-completed digital questionnaire responses.
 
-## 3. `primary_survey`: Was a qualifying study primarily designed as a survey?
+An explicit description such as participants completing an online questionnaire supports YES. A named platform such as Qualtrics can support digital completion when clearly connected to the participants' questionnaire procedure. Recruitment through a panel provider, digital data storage, analysis software or a platform name in isolation is insufficient.
 
-A **primary survey** uses asking people questions as its main research procedure, such as a questionnaire about attitudes, experiences or reported behavior. Include repeated diary questionnaires. A distinct survey pilot or pretest, including a study testing a questionnaire, counts even when other studies are different.
+Paper questionnaires later digitized, and answers entered into a device by a live interviewer, do not qualify. Neither do passive sensors, scans, physiological instruments or computerized tasks without a qualifying primary questionnaire. A paper survey plus a separate computerized game does not establish a digital questionnaire.
 
-A **survey experiment** varies a message or hypothetical situation within a questionnaire and compares responses. It can be YES for both experiment and primary survey.
+Assign **YES** when participant-operated digital completion of an author-collected primary survey is stated or clearly implied; **NO** when the described primary surveys use only nonqualifying modes; **UNCLEAR** when completion mode or who operated the interface is not established. Do not assume that a contemporary survey was online.
 
-Do not count incidental demographic questions or self-report scales attached to a laboratory task, clinical trial or instructional intervention as a primary survey. Likewise, using a questionnaire to record task responses, such as ratings of faces or sounds, does not turn a behavioral or perceptual task into a survey. Assess the study's main procedure, not whether it uses questions or a survey platform.
+## 4. `survey_experiment`: Did a qualifying digital questionnaire contain experimental variation?
 
-For both design variables:
+Count only experiments within a primary digital questionnaire satisfying the preceding three fields. The author team or its research partner must deliberately vary a message, question, scenario or other condition to assess its effect on respondents. Random assignment is not required.
 
-- **YES:** At least one qualifying study clearly uses that design.
-- **NO:** The described qualifying studies do not use that design, or collection is NO.
-- **UNCLEAR:** The information does not establish whether a qualifying study uses that design.
+An observational survey measuring naturally occurring differences is not an experiment. A policy change outside the research, a statistical causal analysis, or a separate laboratory or clinical experiment does not establish a survey experiment. An observational digital survey plus a separate paper survey experiment does not establish an in-scope digital survey experiment.
 
-If collection is UNCLEAR, neither design can be YES; use NO only when that design is ruled out and UNCLEAR otherwise. If collection is YES, either design can be YES, NO or UNCLEAR. Both designs can be YES in the same study or in different qualifying studies.
+Assign **YES** if at least one qualifying digital questionnaire has this researcher-imposed variation; **NO** if the described qualifying questionnaires do not; **UNCLEAR** if the information does not resolve this design. Experiments are optional for recruitment: ordinary digital surveys qualify too.
 
-## 4. Supporting fields and output format
+## 5. Consistency and screening rules
 
-Return one valid JSON object with exactly the keys below: no extra keys, null values or surrounding prose. Replace the illustrative text with the article-specific answer.
+Use exactly YES, NO or UNCLEAR for all four decision fields. Apply the fields in order: collection → primary_survey → digital_questionnaire → survey_experiment.
 
-- `other_methods`: List additional qualifying collection methods, such as “behavioral task” or “systematic observation of behavior.” Use an empty list if none is established or collection is not YES; do not list methods used only by other teams.
-- `own_team_reuse`: “STATED” if the paper explicitly reuses data from the team's earlier qualifying collection; otherwise “NOT_STATED.” STATED requires collection YES. NOT_STATED is not proof that reuse did not occur.
-- `evidence`: Up to two exact quotations from the supplied title, abstract or keywords, totaling no more than 25 words. Each object has exactly two string fields: `field` (“title”, “abstract” or “keywords”) and `quote`. Use an empty list when there is no relevant passage; never invent a quotation.
-- `rationale`: One or two sentences explaining collection responsibility and the design decisions. Distinguish what the text says from what remains uncertain.
-- `software`: Names of software explicitly used in the authors' study, including collection or analysis software.
-- `recruitment_providers`: Names of services or organizations explicitly used for the author team's participant recruitment or supply. An organization mentioned only as the source of an existing dataset does not count. A software vendor is not automatically a recruitment provider. Do not infer a role from acknowledgments or a company name alone.
-- `missing_information`: A list of unresolved details needed for these decisions. It must be nonempty if any decision is UNCLEAR; otherwise use an empty list when none is needed. Do not list absent details that cannot affect a decision, such as irrelevant keywords or unreported software.
+- A NO at any step makes every later field NO.
+- An UNCLEAR at any step prevents YES in later fields. Use NO later only when that criterion is ruled out; otherwise use UNCLEAR.
+- Every YES must concern a study satisfying all preceding criteria. Distinct studies can support a broader field, but the positive evidence for later fields must also meet the earlier criteria in that same study.
 
-For software and providers, use empty lists when not stated. All three decision variables must be exactly YES, NO or UNCLEAR. All non-list values are strings. All lists contain strings except `evidence`, which contains the objects defined above.
+Code determines recruitment eligibility from the first three fields: all YES means eligible; any NO means outside scope; otherwise the article needs review. Retain eligible and unresolved articles for subsequent review. `survey_experiment` describes the eligible design subset and is not required for inclusion. These are metadata judgments, not full-text findings.
+
+## 6. Supporting fields and output
+
+Return one valid JSON object with exactly the ten keys below, no null values and no surrounding prose.
+
+- `own_team_reuse`: STATED only when the article explicitly analyzes data from the team's earlier qualifying collection; otherwise NOT_STATED. STATED requires collection YES. NOT_STATED does not prove that reuse did not occur. Apply the same survey and interface rules to the earlier collection.
+- `evidence`: Up to two exact quotations from the supplied title, abstract or keywords, totaling no more than 25 words. Each entry has exactly `field` (title, abstract or keywords) and `quote`, both strings. Use an empty list when no relevant passage is available.
+- `rationale`: One or two sentences explaining collection responsibility, primary-survey design, digital completion and experimental variation where relevant. Distinguish evidence from uncertainty.
+- `software`: Names explicitly associated with the authors' study, including collection or analysis software; otherwise an empty list.
+- `recruitment_providers`: Services or organizations explicitly used to recruit or supply the team's participants; otherwise an empty list. Dataset sources and software vendors are not automatically recruitment providers.
+- `missing_information`: A list of details needed to resolve the decisions. It must be nonempty if any decision is UNCLEAR. Do not list irrelevant omissions such as an unreported software brand when mode is otherwise established.
+
+All scalar values are strings. All lists contain strings except `evidence`, which contains the objects defined above. Replace the illustrative text with the article-specific answer.
 
 ```json
 {
   "collection": "UNCLEAR",
-  "eligible_experiment": "UNCLEAR",
   "primary_survey": "UNCLEAR",
-  "other_methods": [],
+  "digital_questionnaire": "UNCLEAR",
+  "survey_experiment": "UNCLEAR",
   "own_team_reuse": "NOT_STATED",
   "evidence": [],
-  "rationale": "Explain the article-specific decision here.",
+  "rationale": "Explain the article-specific decisions here.",
   "software": [],
   "recruitment_providers": [],
-  "missing_information": ["Describe the information needed to resolve UNCLEAR decisions"]
+  "missing_information": ["Describe what is needed to resolve the decisions"]
 }
 ```
-
-Before returning, check that every YES concerns the author team's qualifying collection and that the design labels obey the collection decision. Retain collection YES and UNCLEAR for subsequent review; collection NO is a metadata screening decision, not a full-text finding.

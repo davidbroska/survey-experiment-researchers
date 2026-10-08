@@ -1,13 +1,15 @@
 # SCORE screening pilot: findings, 7 October 2026
 
+Historical results: the primary digital-questionnaire recruitment scope chosen on 8 October 2026 has not been evaluated here. These findings concern the earlier broader collection criteria.
+
 This report records the completed 288-paper source-review snapshot. Later
 downloads expand the local validation collection; they do not change these
 reference labels or frozen predictions. See the [current access report](access_report.md)
 for acquisition progress and the [proposed prompt edits](prompt_proposed_redline.md)
 for the subsequent, untested clarification.
 
-Use the [original prompt with the primary-survey definition](prompt_current.md)
-as a provisional screen, retaining collection YES and UNCLEAR. The tested
+At that checkpoint, the [original prompt with the primary-survey definition](prompt_current.md)
+was the provisional screen, retaining collection YES and UNCLEAR. The tested
 [revision](prompt_revised.md) did not improve collection retention in the reviewed
 holdout and substantially increased review workload. It should not replace the
 original on this evidence. Neither version is a validated final exclusion rule.
@@ -119,22 +121,21 @@ prevalence. Metadata reviewers and contexts also partly differ between versions;
 this comparison cannot isolate a causal effect of prompt wording or predict
 performance of a future API model configuration.
 
-Keep the frozen holdout and failed candidate as research records. Retain YES and
-UNCLEAR for recruitment screening; audit NO decisions before using them as
-final exclusions, particularly when supporting collection or earlier team
-collection may be omitted. Further prompt changes need new evaluation data.
+The frozen holdout and failed candidate remain research records. For the earlier
+broad screen, the recommendation was to retain collection YES and UNCLEAR and
+audit NO decisions before final exclusions, particularly when supporting studies
+or earlier team collection could be omitted. The new questionnaire scope needs a new evaluation.
 An author-level invitation ranking has not been inferred from this small pilot.
 
-The [RA protocol](ra_verification.md) accompanies a local blinded packet:
-**62 random cases across the 51 accessible journals**, plus **20 separate targeted
-cases**. The random packet contains 32 collection YES and 30 NO cases; the
-targeted packet includes the unresolved case. Labels are hidden from reviewers. Selection
-probabilities and the AI key are kept separately. Verification should assess
-the primary AI source work; no assignments have been sent.
+An earlier unassigned RA draft contained 62 random cases across the then-accessible
+51 journals and 20 targeted cases. These blank draft packets were removed during
+cleanup. The [RA protocol](ra_verification.md) now describes a future draw after
+source review under the questionnaire-focused criteria; no assignments have been sent.
 
-The [manual download queue](manual_downloads.csv) lists the 332 outstanding
-articles. Additional entitled PDFs can be imported locally, then reviewed and
-added without changing the frozen article sample or metadata predictions.
+At this review checkpoint, 332 articles still lacked main texts. Subsequent
+retrieval and authorized within-cell replacements filled all 620 slots; see the
+[current access report](access_report.md). The historical predictions and review
+labels were preserved separately from those changes.
 Main texts and supporting documents remain under `Literature/SCORE` outside
 the public repository. The earlier [TESS dashboard](../archive/tess/DASHBOARD_NARROWER.html)
 and source snapshot are preserved separately.
