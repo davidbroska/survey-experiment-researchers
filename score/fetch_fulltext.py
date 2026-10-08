@@ -18,6 +18,7 @@ from pathlib import Path
 import re
 import shutil
 import subprocess
+import sys
 import threading
 import time
 import unicodedata
@@ -30,6 +31,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PRIVATE = ROOT / 'private/score'
 LITERATURE = ROOT.parent / 'Literature/SCORE'
 from common import credentials, settings
+csv.field_size_limit(sys.maxsize)
 
 UA = 'SocialTune-SCORE/1.0 (scholarly research; public and institutional access)'
 LOCK = threading.Lock()

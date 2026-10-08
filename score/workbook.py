@@ -200,7 +200,9 @@ def main():
     access = index_rows(read_rows(PRIVATE / 'fulltext.csv'))
     assert len(articles) == 620 and set(articles) == set(access)
     original_path = PRIVATE / 'articles_initial.csv'
-    original = index_rows(read_rows(original_path)) if original_path.exists() else articles
+    if not original_path.is_file():
+        raise FileNotFoundError('Metadata checks require private/score/articles_initial.csv')
+    original = index_rows(read_rows(original_path))
     assert set(metadata) == set(original)
     assert len({(r['journal'], r['year']) for r in articles.values()}) == 620
     validate_reviews(reviews, articles, access)

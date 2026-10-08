@@ -115,7 +115,6 @@ small{{color:#465c65}}nav{{display:flex;gap:20px;flex-wrap:wrap}}#papers td:firs
 <a href="replacement_report.md">Replacement results</a><a href="systematic_access.md">Publisher access steps</a>
 <a href="codebook.md">Spreadsheet codebook</a>
 {'<a href="replacements.csv">Sample replacements</a>' if replacements else ''}
-{'<a href="articles_initial.csv">Original article list</a>' if (ROOT / 'articles_initial.csv').exists() else ''}
 <a href="independent_review.csv">AI source reviews</a><a href="access.csv">Retrieval status</a>
 <a href="manual_downloads.csv">Download queue</a><a href="evaluation.json">Evaluation data</a>
 <a href="../archive/tess/DASHBOARD_NARROWER.html">TESS archive</a></nav>

@@ -6,11 +6,10 @@ Input preparation for future use: the source CSV currently stores keywords and a
 
 ## Task and information you may use
 
-Screen one article to identify researchers who collect quantitative data from people. Use only the supplied **title, abstract, keywords and author list**. Do not search elsewhere. Use author names only to identify the team; do not infer collection from someone's identity, affiliation or reputation. The input also supplies `article_id`, an administrative identifier for matching records. Copy it exactly; it is not evidence of eligibility.
+Determine whether the article uses quantitative participant data collected or commissioned by its author team for a study reported in the article. Use only the supplied **title, abstract, keywords and author list**. Do not search elsewhere. Use author names only to identify the team; do not infer collection from someone's identity, affiliation or reputation.
 
-**Input format:** Supply one JSON object with these five keys:
+**Input format:** Supply one JSON object with these four keys:
 
-- `article_id`: A string containing the stable article identifier.
 - `title` and `abstract`: Strings containing the supplied text.
 - `keywords` and `authors`: Arrays of strings, with one keyword or one author name per entry, preserving the supplied wording.
 
@@ -18,7 +17,7 @@ Use `""` for an unavailable title or abstract and `[]` for unavailable keywords 
 
 Decide **collection first**. Then describe experiments and surveys **among the studies that qualify for collection**. Assess every study reported as part of the article's own research, including small preparatory studies (pilots or pretests) and studies checking a measure or result (validation studies), not just the main study.
 
-## 1. `collection`: Did the author team collect or commission qualifying data?
+## 1. `collection`: Did the author team collect or commission participant data used in a study reported in this article?
 
 **Quantitative participant data** are people's responses, actions or measurements recorded as numbers or structured categories for research: for example, survey answers, choices in a game, response times, test scores, physiological measurements such as brain scans, or systematically recorded observations of behavior.
 
@@ -73,7 +72,6 @@ If collection is UNCLEAR, neither design can be YES; use NO only when that desig
 
 Return one valid JSON object with exactly the keys below: no extra keys, null values or surrounding prose. Replace the illustrative text with the article-specific answer.
 
-- `article_id`: Copy the supplied identifier verbatim as a string.
 - `other_methods`: List additional qualifying collection methods, such as “behavioral task” or “systematic observation of behavior.” Use an empty list if none is established or collection is not YES; do not list methods used only by other teams.
 - `own_team_reuse`: “STATED” if the paper explicitly reuses data from the team's earlier qualifying collection; otherwise “NOT_STATED.” STATED requires collection YES. NOT_STATED is not proof that reuse did not occur.
 - `evidence`: Up to two exact quotations from the supplied title, abstract or keywords, totaling no more than 25 words. Each object has exactly two string fields: `field` (“title”, “abstract” or “keywords”) and `quote`. Use an empty list when there is no relevant passage; never invent a quotation.
@@ -86,7 +84,6 @@ For software and providers, use empty lists when not stated. All three decision 
 
 ```json
 {
-  "article_id": "Copy the supplied identifier exactly",
   "collection": "UNCLEAR",
   "eligible_experiment": "UNCLEAR",
   "primary_survey": "UNCLEAR",

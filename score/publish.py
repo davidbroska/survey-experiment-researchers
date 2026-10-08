@@ -12,7 +12,7 @@ PUBLIC = (
     "evaluation.json", "prompt_original.md", "prompt_revised.md", "prompt_current.md",
     "prompt_freeze.json", "protocol.md", "report.md", "ra_verification.md",
     "prompt_proposed.md", "prompt_proposed_redline.md", "access_report.md", "codebook.md",
-    "articles_initial.csv", "sample_validation_initial.json", "replacements.csv",
+    "replacements.csv",
     "replacement_report.md", "replacement_status.csv", "systematic_access.md",
 )
 

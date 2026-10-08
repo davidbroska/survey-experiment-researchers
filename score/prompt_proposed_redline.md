@@ -36,19 +36,18 @@ The structure and output format have been rewritten throughout. This block redli
 
 **Task and information you may use**
 
-**Screen one article to identify researchers who collect quantitative data from people. Use only the supplied title, abstract, keywords and author list. Do not search elsewhere. Use author names only to identify the team; do not infer collection from someone's identity, affiliation or reputation. The input also supplies article_id, an administrative identifier for matching records. Copy it exactly; it is not evidence of eligibility.**
+**Determine whether the article uses quantitative participant data collected or commissioned by its author team for a study reported in the article. Use only the supplied title, abstract, keywords and author list. Do not search elsewhere. Use author names only to identify the team; do not infer collection from someone's identity, affiliation or reputation.**
 
-**Input format: Supply one JSON object with these five keys:**
+**Input format: Supply one JSON object with these four keys:**
 
-**- article_id: A string containing the stable article identifier.
-- title and abstract: Strings containing the supplied text.
+**- title and abstract: Strings containing the supplied text.
 - keywords and authors: Arrays of strings, with one keyword or one author name per entry, preserving the supplied wording.**
 
 **Use "" for an unavailable title or abstract and [] for unavailable keywords or authors. Do not invent missing metadata.**
 
 **Decide collection first. Then describe experiments and surveys among the studies that qualify for collection. Assess every study reported as part of the article's own research, including small preparatory studies (pilots or pretests) and studies checking a measure or result (validation studies), not just the main study.**
 
-**1. collection: Did the author team collect or commission qualifying data?**
+**1. collection: Did the author team collect or commission participant data used in a study reported in this article?**
 
 **Quantitative participant data are people's responses, actions or measurements recorded as numbers or structured categories for research: for example, survey answers, choices in a game, response times, test scores, physiological measurements such as brain scans, or systematically recorded observations of behavior.**
 
@@ -103,8 +102,7 @@ The structure and output format have been rewritten throughout. This block redli
 
 **Return one valid JSON object with exactly the keys below: no extra keys, null values or surrounding prose. Replace the illustrative text with the article-specific answer.**
 
-**- article_id: Copy the supplied identifier verbatim as a string.
-- other_methods: List additional qualifying collection methods, such as “behavioral task” or “systematic observation of behavior.” Use an empty list if none is established or collection is not YES; do not list methods used only by other teams.
+**- other_methods: List additional qualifying collection methods, such as “behavioral task” or “systematic observation of behavior.” Use an empty list if none is established or collection is not YES; do not list methods used only by other teams.
 - own_team_reuse: “STATED” if the paper explicitly reuses data from the team's earlier qualifying collection; otherwise “NOT_STATED.” STATED requires collection YES. NOT_STATED is not proof that reuse did not occur.
 - evidence: Up to two exact quotations from the supplied title, abstract or keywords, totaling no more than 25 words. Each object has exactly two string fields: field (“title”, “abstract” or “keywords”) and quote. Use an empty list when there is no relevant passage; never invent a quotation.
 - rationale: One or two sentences explaining collection responsibility and the design decisions. Distinguish what the text says from what remains uncertain.
@@ -115,7 +113,6 @@ The structure and output format have been rewritten throughout. This block redli
 **For software and providers, use empty lists when not stated. All three decision variables must be exactly YES, NO or UNCLEAR. All non-list values are strings. All lists contain strings except evidence, which contains the objects defined above.**
 
 <pre><strong>{
-  &quot;article_id&quot;: &quot;Copy the supplied identifier exactly&quot;,
   &quot;collection&quot;: &quot;UNCLEAR&quot;,
   &quot;eligible_experiment&quot;: &quot;UNCLEAR&quot;,
   &quot;primary_survey&quot;: &quot;UNCLEAR&quot;,
@@ -130,26 +127,10 @@ The structure and output format have been rewritten throughout. This block redli
 
 **Before returning, check that every YES concerns the author team's qualifying collection and that the design labels obey the collection decision. Retain collection YES and UNCLEAR for subsequent review; collection NO is a metadata screening decision, not a full-text finding.**
 
-## Why these changes
+## Review notes
 
-1. **Collection responsibility comes first.** Separate definitions of participant measurements, the author team, commissioned collection and data collected by others address provenance problems seen in the ManKobE, TIMSS-Transition and SOSS reviews. Source review could use project records; this metadata screen must remain UNCLEAR when the supplied text does not establish the role.
-2. **Every reported study matters.** The reviewed TED/Twitter and advertising papers included original participant-response studies absent from their abstracts. Several papers also mixed task studies with distinct primary surveys. The prompt directs attention to every study reported as part of the article's own research, while acknowledging that wording cannot recover information absent from metadata.
-3. **Designs are defined separately from eligibility.** The definitions distinguish assigned interventions, changes researchers did not assign, behavioral tasks, primary questionnaires, survey experiments and incidental scales. The song-rating pretest and mixed vignette/game papers motivated the explicit task-versus-survey boundary.
-4. **The output has a fixed structure and clear uncertainty rules.** Label dependencies, list types, exact-quotation fields and the own-team-reuse flag are specified. Supported analyses of others' data may still be NO; the proposal does not repeat the tested candidate's blanket UNCLEAR rule for papers using existing records. No accuracy improvement is claimed.
+The definitions draw on the earlier 288 source reviews and independent logical review. They have not received a new empirical evaluation. Frozen prompts, predictions and historical results remain unchanged.
 
-These changes draw on the historical 288-paper source review; they are not a new evaluation. Dataset names and previous findings are documented in [the pilot report](report.md) and official documentation: [GSS](https://gss.norc.org/about-the-gss.html), [ANES](https://electionstudies.org/about-us/), [ESS](https://www.europeansocialsurvey.org/about/participating-countries), [PSID](https://psidonline.isr.umich.edu/Guide/FAQ.aspx), [HRS](https://hrs.isr.umich.edu/), [Add Health](https://addhealth.cpc.unc.edu/).
+The 8 October edit removes the model-facing article identifier: code retains it and attaches it to the returned assessment. Inputs now have four bibliographic fields; outputs have ten assessment fields. The opening and collection question explicitly concern data used in a study reported in the article. Documented reuse of the team's earlier participant data remains eligible.
 
-## Independent review and responses
-
-An independent session agent critically reviewed the draft and reread it after revisions. The parent agent also reviewed it. Their requested changes were incorporated:
-
-- Make the team or its research partner responsible for experimental assignment; an outside policy change does not become an experiment merely because the authors collect outcomes.
-- Specify exact JSON keys, string and list types, no nulls, exact evidence-object fields and a 25-word total quotation limit.
-- Include physiological measurements, a copied administrative article identifier and an explanation of missing information for every UNCLEAR decision.
-- Distinguish the team's recruitment providers from organizations mentioned merely as existing-dataset sources, and clarify separate questionnaire-validation studies.
-
-The independent final reread found these rules mutually consistent. This is a logical review informed by historical source cases, not a new classification run or empirical validation. Specific prior cases, reviewer feedback, accepted changes and version hashes are retained in the private review record.
-
-A final input-format clarification specifies five JSON keys, scalar strings, keyword/author arrays and empty values for missing metadata. The independent reviewer confirmed this is consistent provided preparation preserves names and keywords verbatim. It applies to future calls and does not recode historical CSV inputs.
-
-A final boundary review distinguishes the article's own research from studies it merely cites or summarizes. Earlier team data qualify only when the current article actually uses those participant data and the collection role is explicit; citing earlier results or synthesizing published effect sizes does not itself establish reuse. The independent review found this clarification consistent with the collection and reuse fields. It does not change any frozen labels or constitute a new empirical evaluation.
+A narrower boundary around participant-operated computer interfaces is being discussed with the researcher. It has not been applied to the prompt or existing labels.

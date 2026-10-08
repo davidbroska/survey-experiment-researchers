@@ -1,120 +1,68 @@
 The active project is the [SCORE recruitment pilot](score/index.html): 620 articles,
-one from each of 62 journals in each year 2016–2025. Recruitment includes researchers
-who collect quantitative human participant data, in any country. Experiments and
-studies primarily designed as surveys have separate labels.
+one per journal and year across 62 journals, 2016–2025. All 620 main texts are
+available locally; 288 have substantive AI source reviews. RAs will verify a
+sample of those assessments.
 
-[Findings](score/report.md) · [Review protocol](score/protocol.md) ·
-[Journal frame](score/journals.csv) · [Article list](score/articles.csv) ·
-[Revised prompt (untested)](score/prompt_proposed.md) · [Original + survey definition](score/prompt_current.md) ·
-[Verbatim original](score/prompt_original.md) ·
-[Tested candidate](score/prompt_revised.md) ·
-[Proposed edits](score/prompt_proposed_redline.md) · [Current access report](score/access_report.md) ·
-[Spreadsheet codebook](score/codebook.md) · [Replacement results](score/replacement_report.md) ·
-[Publisher access steps](score/systematic_access.md)
+[Article list](score/articles.csv) · [Screening prompt](score/prompt_proposed.md) ·
+[Spreadsheet codebook](score/codebook.md) · [Access and source limitations](score/access_report.md) ·
+[Review protocol](score/protocol.md) · [Historical findings](score/report.md)
 
-The latest revised prompt defines collection first and gives explicit instructions
-and JSON formats for each variable. It has passed internal review but has not
-been evaluated empirically. Existing decisions preserve their original criteria.
-The earlier tested candidate remains a historical result. Audit NO decisions before
-final exclusion. Session reviewers and contexts differed in the original comparison;
-that comparison does not isolate wording effects or validate a future model.
+The private workbook, `private/score/SCORE_validation_620.xlsx`, contains all
+articles and a column guide, sorted by journal and descending year. Availability,
+metadata judgments and substantive source reviews are separate. Downloading a
+document does not establish that it has been reviewed. Some sources are
+manuscripts with missing supporting assets, recorded in the workbook.
 
-The substantive AI source review is the primary, provisional assessment. RAs will verify a
-sample; no labels have yet been human verified. Metadata screening and source
-review are stored separately. Unavailable full text is unresolved, never a NO.
-This session uses agents and incurs no paid API annotation spending.
+The proposed prompt has received internal review but has not been evaluated on
+a new sample. Article IDs stay in code and data; the model receives bibliographic
+content and returns assessment fields only. Code attaches the corresponding ID
+to the result. Existing labels preserve the criteria used when they were made.
 
-The working validation collection has 620 journal/year cells. The user authorized
-replacing unavailable or corrupt articles with retrievable alternatives in the
-same cell, keeping the 380 articles already available. Candidates are tried in a
-fixed order within retrieval phases without topic or eligibility filters; later attempts
-prioritize open-access alternatives. Selection is conditional on access.
-Original sample files and comparisons are preserved separately. Replacement
-articles have no inherited decisions or historical evaluation assignments.
-The local workbook
-`private/score/SCORE_validation_620.xlsx` contains every article, grouped
-alphabetically by journal and ordered by year descending. Its `Column guide`
-sheet explains each column, its type, allowed values and missing-value meaning in order.
-The public codebook contains the same definitions and aggregate counts. Download availability, actual assessment
-basis, metadata decisions and completed source reviews remain distinct.
-New downloads of original articles retain metadata-based assessments until source
-review is completed. Replacement articles without assessments have blank labels.
-The workbook includes private abstracts and evidence and is kept off GitHub.
-Available main texts may be PDFs, XML, or verified PMC article HTML. The workbook
-records source-version caveats; XML/HTML document segments are not physical pages,
-and linked figures or supplements may require separate retrieval.
+The collection retains 380 previously available articles, recovers 46 original
+selections and replaces 194 within the same journal and year. Selection depends
+on full-text access. The [replacement log](score/replacements.csv) and
+[selection report](score/replacement_report.md) document this process.
+Private initial article/access snapshots remain inputs to the historical
+evaluation. Completed construction scripts and duplicate public snapshots have
+been removed; their public versions remain in Git history.
 
 The folders are:
 
-- `score/`: current code, prompts, bibliography, derived labels and dashboard.
-- `inputs/`: the supplied journal frame and local background transcript.
-- `private/score/`: licensed metadata, retrieval receipts, frozen predictions,
-  detailed source reviews and the blinded RA packet.
-- `../Literature/SCORE/`: downloaded main articles and supporting documents.
-- `archive/tess/`: preserved earlier recruitment work, outside the active frame.
+- `score/`: active code, prompts, bibliography, derived assessments and dashboard.
+- `inputs/`: journal frame and private background transcript.
+- `private/score/`: licensed metadata, source receipts, assessments and workbook.
+- `../Literature/SCORE/`: main articles and supporting documents.
+- `archive/tess/`: preserved earlier recruitment work.
 
-Python uses NumPy and the standard library. Prefer short, readable functions;
-use tidyverse style for R. Michael Howes's [ppi_py](https://github.com/Michael-Howes/ppi_py)
-is the readability reference. PDF extraction requires `pdftotext` from Poppler.
+Keep Python short and readable, using NumPy for numerical analysis and the
+standard library for routine files and retrieval. Use tidyverse style for R.
+Michael Howes's [ppi_py](https://github.com/Michael-Howes/ppi_py) is the readability
+reference. Prefer a few clear functions over classes or layers of helpers.
 
-From this folder, rebuild derived outputs from the existing private reviews:
+From this folder, rebuild the derived outputs:
 
 ```bash
 python3 score/review.py
 python3 score/evaluate.py
-python3 score/replacement_report.py
 python3 score/coverage.py
 python3 score/workbook.py
 python3 score/dashboard.py
 python3 score/publish.py
 ```
 
-The public repository can rebuild the website from committed derived outputs
-using only `python3 score/publish.py`. Full analysis requires the local private
-files. Screening judgments were made by session agents; the scripts do not call
-an LLM API or pretend to reproduce those judgments automatically.
+Full analysis requires the private files. The public repository rebuilds its
+website with `python3 score/publish.py`. Screening judgments are made by session
+agents; these scripts do not call an LLM API. No paid API annotation is authorized.
 
-The original draw is preserved in `score/articles_initial.csv`; its historical results
-continue to use that snapshot. `score/replace_sample.py` applies the privately staged
-replacement records after verifying the full texts and journal/year identities.
-The initial sampler refuses to overwrite an active replacement sample.
-`score/fetch_fulltext.py --help` describes retrieval retries. Existing entitled
-Scopus credentials are read from the environment or the parent project's `.env`.
-Do not publish credentials, full abstracts, PDFs, extracted text or the supplied
-conversation transcript.
+`python3 score/fetch_fulltext.py --help` describes supported retrieval and local
+PDF import. Provider credentials come from the environment or the parent `.env`;
+PDF extraction requires Poppler's `pdftotext`. Keep credentials, full abstracts,
+full texts, extracted text and private correspondence off GitHub.
 
-The [manual download queue](score/manual_downloads.csv) lists articles still
-missing usable main text after current retrieval attempts. The
-[access report](score/access_report.md) records the latest counts, working API
-routes and remaining tasks. Provider logins, subscription coverage and browser
-challenges can differ even while the Stanford VPN is connected.
+Use `score/verify.py` to create a fresh blinded RA packet after all available
+articles have substantive reviews. Earlier unassigned draft packets were removed.
+The [verification protocol](score/ra_verification.md) describes the future draw.
 
-The downloader reads `SCOPUS_API_KEY`, `WILEY_TDM_TOKEN` (or `WILEY_API_KEY`),
-`OPENALEX_API_KEY` (or `OPEN_ALEX`), and optional `UNPAYWALL_EMAIL` from the local
-environment or the parent project's `.env`. It never prints credential values.
-If the Unpaywall email is not saved there, supply `--unpaywall-email` on the
-command line. `--openalex-content` tries cached open copies only while a verified
-free daily allowance remains. It does not purchase credits.
-
-```bash
-python3 score/fetch_fulltext.py --retry-failures --openalex-content
-```
-
-For an article obtained through a library browser, save the actual PDF in a local
-folder as `<article_id>.pdf`, using its ID from the queue. From this folder run:
-
-```bash
-python3 score/fetch_fulltext.py --import-local /path/to/downloaded_pdfs
-```
-
-This makes no network requests. It checks the PDF signature, readable main text
-and title/DOI identity, saves accepted files in `../Literature/SCORE/`, and updates
-the access and manual-download tables. It skips already verified sources and
-rejects mismatched articles, login pages and identifiable supplements. A new
-download still needs a source review before it contributes a reference label.
-Keep supplements separately; do not name an appendix as the main article.
-
-The TESS work was already published at commit
-[`e73ddb2`](https://github.com/davidbroska/survey-experiment-researchers/commit/e73ddb294a0b9a38853d8e9f5ac2525044d1d2cf).
-Its [dashboard](archive/tess/DASHBOARD_NARROWER.html) and full public source snapshot
-are retained. The old U.S. and TESS restrictions do not apply to SCORE.
+The previously published [TESS dashboard](archive/tess/DASHBOARD_NARROWER.html)
+and public source archive remain available. TESS journals and U.S. restrictions
+do not define the SCORE frame.

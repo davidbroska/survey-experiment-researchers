@@ -93,7 +93,7 @@ def main():
                                  selection_probability=(1 + (62 - len(journals)) / len(extra_pool)) / len(groups[journal])
                                  if assignment == 'random' and journal in extra_pool else 1 if assignment == 'random' else '',
                                  selection_reason='random within journal' if assignment == 'random' else reasons[key],
-                                 original_collection=original[key]['collection'],
+                                 original_collection=original.get(key, {}).get('collection', ''),
                                  revised_collection=revised.get(key, {}).get('collection', ''),
                                  ai_collection=reviews[key]['collection'], ai_experiment=reviews[key]['experiment'],
                                  ai_survey=reviews[key]['survey']))

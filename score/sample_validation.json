@@ -32,6 +32,5 @@
   "retained_initial_articles": 426,
   "selection_conditional_on_fulltext_access": true,
   "replacement_labels_transferred": false,
-  "original_sample": "articles_initial.csv",
   "checked_at": "2026-10-07T20:22:58.894872+00:00"
 }

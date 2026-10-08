@@ -1,40 +1,8 @@
-"""Small file helpers and private provider settings; never save request headers."""
-import csv
-from datetime import datetime, timezone
-import json
+"""Private provider settings; never print credentials or save request headers."""
 import os
 from pathlib import Path
-import sys
 
 ROOT = Path(__file__).resolve().parent.parent
-BASE = "https://api.elsevier.com/content/search/scopus"
-csv.field_size_limit(sys.maxsize)
-
-
-def now():
-    return datetime.now(timezone.utc).isoformat()
-
-
-def read_csv(path):
-    with Path(path).open(newline="", encoding="utf-8-sig") as handle:
-        return list(csv.DictReader(handle))
-
-
-def write_csv(path, rows, fields=None):
-    rows = list(rows)
-    path = Path(path)
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields or list(rows[0]), extrasaction="ignore")
-        writer.writeheader()
-        writer.writerows(rows)
-
-
-def write_json(path, value):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    temporary = path.with_suffix(path.suffix + ".tmp")
-    temporary.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n")
-    temporary.replace(path)
 
 
 def settings():

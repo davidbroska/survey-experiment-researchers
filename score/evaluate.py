@@ -158,11 +158,15 @@ def compare(predictions, reviews, field):
 
 def main():
     # Replacement articles have no predictions in this historical comparison.
-    sample = ROOT / "score/articles_initial.csv"
-    articles = index_rows(read_rows(sample if sample.exists() else ROOT / "score/articles.csv"))
+    sample = PRIVATE / "articles_initial.csv"
+    if not sample.is_file():
+        raise FileNotFoundError("Historical evaluation requires private/score/articles_initial.csv")
+    articles = index_rows(read_rows(sample))
     reviews = index_rows(read_rows(PRIVATE / "fulltext_reviews.csv"))
     access = PRIVATE / "fulltext_initial.csv"
-    fulltexts = index_rows(read_rows(access if access.exists() else PRIVATE / "fulltext.csv"))
+    if not access.is_file():
+        raise FileNotFoundError("Historical evaluation requires private/score/fulltext_initial.csv")
+    fulltexts = index_rows(read_rows(access))
     validate_reviews(reviews, articles, fulltexts)
     reports = []
     for filename in PREDICTION_FILES:
