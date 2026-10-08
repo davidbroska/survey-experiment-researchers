@@ -1,8 +1,8 @@
 {
-  "paired": 0,
-  "reference_resolved": 0,
-  "reference_unclear": 0,
-  "abstract_unclear": 0,
+  "paired": 620,
+  "reference_resolved": 607,
+  "reference_unclear": 13,
+  "abstract_unclear": 111,
   "matrix_labels": [
     "YES",
     "NO",
@@ -10,63 +10,145 @@
   ],
   "matrix": [
     [
-      0,
-      0,
-      0
+      201,
+      50,
+      64
     ],
     [
       0,
-      0,
-      0
+      249,
+      43
     ],
     [
       0,
-      0,
-      0
+      9,
+      4
     ]
   ],
   "strict_yes": {
-    "n": 0,
-    "tp": 0,
-    "tn": 0,
+    "n": 607,
+    "tp": 201,
+    "tn": 292,
     "fp": 0,
-    "fn": 0,
-    "balanced_accuracy": null,
-    "precision": null,
-    "recall": null,
-    "specificity": null,
-    "f1": null
+    "fn": 114,
+    "balanced_accuracy": 0.819047619047619,
+    "precision": 1.0,
+    "recall": 0.638095238095238,
+    "specificity": 1.0,
+    "f1": 0.7790697674418605
   },
   "retain_yes_or_unclear": {
-    "n": 0,
-    "tp": 0,
-    "tn": 0,
-    "fp": 0,
-    "fn": 0,
-    "balanced_accuracy": null,
-    "precision": null,
-    "recall": null,
-    "specificity": null,
-    "f1": null
+    "n": 607,
+    "tp": 265,
+    "tn": 249,
+    "fp": 43,
+    "fn": 50,
+    "balanced_accuracy": 0.8470047836486192,
+    "precision": 0.8603896103896104,
+    "recall": 0.8412698412698413,
+    "specificity": 0.8527397260273972,
+    "f1": 0.8507223113964687
   },
   "definite_only": {
-    "n": 0,
-    "tp": 0,
-    "tn": 0,
+    "n": 500,
+    "tp": 201,
+    "tn": 249,
     "fp": 0,
-    "fn": 0,
-    "balanced_accuracy": null,
-    "precision": null,
-    "recall": null,
-    "specificity": null,
-    "f1": null
+    "fn": 50,
+    "balanced_accuracy": 0.900398406374502,
+    "precision": 1.0,
+    "recall": 0.8007968127490039,
+    "specificity": 1.0,
+    "f1": 0.8893805309734514
   },
-  "definite_coverage": null,
+  "definite_coverage": 0.8237232289950577,
   "n_articles": 620,
   "abstract_completed": 620,
-  "fulltext_completed": 0,
+  "fulltext_completed": 620,
   "human_verified": 0,
+  "abstract_models": {
+    "Codex session agent (GPT-6 family)": 620
+  },
+  "fulltext_models": {
+    "Codex session agent (GPT-6 family)": 551,
+    "gpt-6-astra": 69
+  },
+  "reference_labels_changed": 6,
+  "reference_text_corrections": 2,
+  "initial_reference_comparison": {
+    "paired": 620,
+    "reference_resolved": 611,
+    "reference_unclear": 9,
+    "abstract_unclear": 111,
+    "matrix_labels": [
+      "YES",
+      "NO",
+      "UNCLEAR"
+    ],
+    "matrix": [
+      [
+        201,
+        51,
+        66
+      ],
+      [
+        0,
+        250,
+        43
+      ],
+      [
+        0,
+        7,
+        2
+      ]
+    ],
+    "strict_yes": {
+      "n": 611,
+      "tp": 201,
+      "tn": 293,
+      "fp": 0,
+      "fn": 117,
+      "balanced_accuracy": 0.8160377358490566,
+      "precision": 1.0,
+      "recall": 0.6320754716981132,
+      "specificity": 1.0,
+      "f1": 0.7745664739884393
+    },
+    "retain_yes_or_unclear": {
+      "n": 611,
+      "tp": 267,
+      "tn": 250,
+      "fp": 43,
+      "fn": 51,
+      "balanced_accuracy": 0.8464324811642734,
+      "precision": 0.8612903225806452,
+      "recall": 0.839622641509434,
+      "specificity": 0.8532423208191127,
+      "f1": 0.8503184713375797
+    },
+    "definite_only": {
+      "n": 502,
+      "tp": 201,
+      "tn": 250,
+      "fp": 0,
+      "fn": 51,
+      "balanced_accuracy": 0.8988095238095238,
+      "precision": 1.0,
+      "recall": 0.7976190476190477,
+      "specificity": 1.0,
+      "f1": 0.8874172185430463
+    },
+    "definite_coverage": 0.8216039279869067
+  },
+  "missing_abstracts": 7,
+  "missing_keywords": 178,
   "reference": "Independent provisional AI full-text review; not human ground truth",
   "prompt": "prompt.md",
-  "complete": false
+  "complete": true,
+  "api_usage": {
+    "input_tokens": 1773422,
+    "output_tokens": 20017,
+    "calculated_usd": 23.168107500000005,
+    "articles": 69
+  }
 }

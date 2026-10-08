@@ -4,9 +4,13 @@ The fixed collection is 620 articles: one per journal and indexed year for the 6
 
 ## One prompt
 
-`prompt.md` contains the user's supplied screening wording. Markdown formatting is normalized; wording, including the duplicated “to to,” is preserved. `annotate.py` wraps it in Python, supplies one JSON object with journal title, article title, abstract and keywords, and validates one YES/NO/UNCLEAR response. Code records IDs and provenance outside model input and output. No paid API calls are used.
+`prompt.md` contains the user's supplied screening wording. Markdown formatting is normalized; wording, including the duplicated “to to,” is preserved. `annotate.py` wraps it in Python, supplies one JSON object with journal title, article title, abstract and keywords, and validates one YES/NO/UNCLEAR response. Code records IDs and provenance outside model input and output.
 
 Fresh Codex session agents annotate the metadata one article at a time. They do not receive author lists, previous predictions, source reviews or full texts. Each agent's context contains preceding articles in its own queue; these are sequential session judgments, not independent stateless API requests. The exact API model identifier is not exposed. Prompt/input hashes, reviewer and timestamps are saved privately. The user requested deletion of earlier SCORE prompts and predictions; those artifacts are no longer inputs to the pipeline.
+
+After all 620 metadata labels and 551 initial source reviews were saved, the user authorized the lab's API key for subsequent annotation. Completed session judgments are retained. The remaining 69 source reviews use independent GPT-6 Astra API requests under the verified lab organization, with medium reasoning and the same eligibility wording. Each request supplies one article's complete extracted text, with numbered pages/segments and normalized whitespace; it contains no abstract prediction or previous source judgment. Supporting material not supplied to a request is not treated as inspected. API records distinguish pages supplied from session reading receipts and retain exact input hashes, model, settings, raw outputs and token usage privately. The process change is reported; this is not a homogeneous benchmark of API predictions. The run stops at $100.
+
+All 69 API requests completed, with calculated usage costing $23.17 and no paid retries. Twenty-two initial citation validations failed because of PDF column order or line-break hyphenation. Same-page reading-order extraction resolved 19 without altering the returned text. For three, the reviewer inspected the rendered PDF page and shortened the excerpt without changing its meaning, label or reasoning. Raw responses, original citations and correction records are retained. Substantive source adjudications are recorded separately from these extraction corrections.
 
 ## Full-text reference review
 

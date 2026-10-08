@@ -1,6 +1,6 @@
 """Use one Markdown prompt for one article; keep identifiers in code.
 
-Session agents perform annotation; this module makes no paid API calls.
+This module defines the shared inputs and validation; it makes no API calls.
 """
 import csv
 import argparse
@@ -16,11 +16,11 @@ LABELS = ("YES", "NO", "UNCLEAR")
 
 
 def article_input(article):
-    keywords = article.get("keywords", "")
+    keywords = article.get("keywords") or []
     if isinstance(keywords, str):
         keywords = [word.strip() for word in keywords.split("|") if word.strip()]
-    return {"journal_title": article.get("journal_title", article.get("journal", "")),
-            "title": article.get("title", ""), "abstract": article.get("abstract", ""),
+    return {"journal_title": article.get("journal_title") or article.get("journal") or "",
+            "title": article.get("title") or "", "abstract": article.get("abstract") or "",
             "keywords": keywords}
 
 

@@ -13,11 +13,6 @@
     2024,
     2025
   ],
-  "split": {
-    "not_in_original_pilot": 194,
-    "development": 342,
-    "holdout": 84
-  },
   "sources": {
     "Scopus": 618,
     "Crossref": 2
@@ -32,5 +27,6 @@
   "retained_initial_articles": 426,
   "selection_conditional_on_fulltext_access": true,
   "replacement_labels_transferred": false,
-  "checked_at": "2026-10-07T20:22:58.894872+00:00"
+  "checked_at": "2026-10-07T20:22:58.894872+00:00",
+  "evaluation_role": "Access-conditioned development collection; obsolete development/holdout split is not used"
 }

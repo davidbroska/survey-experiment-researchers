@@ -6,8 +6,9 @@ import hashlib
 import json
 from pathlib import Path
 import re
+import subprocess
 from annotate import ROOT, PRIVATE, PROMPT, LABELS, fulltext_prompt
-from review import read_rows, index_rows
+from review import read_rows, index_rows, public_text, validate_evidence, validate_source_quotes
 
 
 def normalized(value):
@@ -29,9 +30,12 @@ def main():
     parser.add_argument('--batch', required=True)
     parser.add_argument('--instructions', action='store_true')
     parser.add_argument('--pages', help='Inclusive page/segment range, for example 3:8')
+    parser.add_argument('--reading-order', action='store_true', help='For PDF pages, use text reading order instead of preserved column layout')
     parser.add_argument('--find', help='Case-insensitive regular expression for source navigation')
     parser.add_argument('--offset', type=int, default=0)
     parser.add_argument('--save', help='Path to a JSON response containing annotation, evidence, reasoning')
+    parser.add_argument('--links', action='store_true', help='Show known supporting links; these are not inspection receipts')
+    parser.add_argument('--support-receipt', help='JSON with source URL, status, sections and optional local_file after inspecting a supporting source')
     args = parser.parse_args()
     folder = PRIVATE / 'annotation_batches'
     ids = json.loads((folder / (args.batch + '.json')).read_text())
@@ -50,28 +54,35 @@ def main():
         print(prompt)
         return
     log_path = folder / (args.batch + '_access.jsonl')
+    if args.links:
+        path = PRIVATE / 'acquisition' / (key + '.json')
+        record = json.loads(path.read_text()) if path.exists() else {}
+        print(public_text(json.dumps({'supporting_links_not_yet_inspected': record.get('supporting_links', [])})))
+        return
+    if args.support_receipt:
+        receipt = json.loads(Path(args.support_receipt).read_text())
+        if receipt.get('status') not in ['inspected', 'access_failed'] or not receipt.get('source', '').startswith(('http://', 'https://')) or not receipt.get('sections'):
+            raise ValueError('Receipt needs source URL, status (inspected/access_failed) and sections or failure details')
+        receipt['source'] = public_text(receipt['source'])
+        if receipt.get('local_file'):
+            receipt['source_sha256'] = hashlib.sha256(Path(receipt['local_file']).read_bytes()).hexdigest()
+        receipt.update(article_id=key, read_at=datetime.now(timezone.utc).isoformat())
+        with log_path.open('a') as handle:
+            handle.write(json.dumps(receipt) + '\n')
+        print('Supporting-source access receipt saved.')
+        return
     if args.save:
         response = json.loads(Path(args.save).read_text())
         if set(response) != {'annotation', 'evidence', 'reasoning'} or response['annotation'] not in LABELS:
             raise ValueError('Expected annotation, evidence and reasoning only')
         if not response['reasoning'] or not response['evidence']:
             raise ValueError('Evidence and reasoning are required')
-        if not isinstance(response['evidence'], list):
-            raise ValueError('Evidence must be a list of quote/location/source objects')
-        quoted = {}
-        fulltext = normalized(' '.join(pages))
-        for evidence in response['evidence']:
-            if not {'quote', 'location', 'source'}.issubset(evidence):
-                raise ValueError('Each evidence item needs quote, location and source')
-            quote, source = evidence['quote'], evidence['source']
-            if not quote or not evidence['location']:
-                raise ValueError('Empty quote or source location')
-            quoted[source] = quoted.get(source, 0) + len(quote.split())
-            if source == 'main' and normalized(quote) not in fulltext:
-                raise ValueError('Main-source quote is not an exact whitespace-normalized match')
-        if any(count > 25 for count in quoted.values()):
-            raise ValueError('More than 25 quoted words from one source')
+        validate_evidence(response['evidence'])
+        validate_source_quotes(response['evidence'], access)
         reads = [json.loads(line) for line in log_path.read_text().splitlines()] if log_path.exists() else []
+        inspected = {row.get('source') for row in reads if row['article_id'] == key and row.get('status') == 'inspected'}
+        if any(item['source'] != 'main' and item['source'] not in inspected for item in response['evidence']):
+            raise ValueError('Record supporting-source inspection before citing its evidence')
         viewed = sorted({number for row in reads if row['article_id'] == key for number in row.get('pages', [])})
         if not viewed:
             raise ValueError('Read actual source pages before saving')
@@ -97,11 +108,21 @@ def main():
         start, end = bounds[0], bounds[-1]
         if not 1 <= start <= end <= len(pages):
             raise ValueError(f'Range must lie within 1:{len(pages)}')
+        displayed = pages[start - 1:end]
+        if args.reading_order:
+            if access['format'].lower() != 'pdf':
+                raise ValueError('Reading-order option is for PDFs only')
+            text = subprocess.check_output(['pdftotext', '-f', str(start), '-l', str(end), access['fulltext_path'], '-'], text=True, stderr=subprocess.PIPE)
+            displayed = text.split('\f')[:end - start + 1]
+            if len(displayed) != end - start + 1:
+                raise ValueError('Unexpected PDF page count')
         with log_path.open('a') as handle:
             handle.write(json.dumps({'article_id': key, 'pages': list(range(start, end + 1)),
+                                     'reading_order': args.reading_order,
                                      'read_at': datetime.now(timezone.utc).isoformat()}) + '\n')
         print(json.dumps({'journal_title': article['journal'], 'title': article['title'], 'unit': unit,
-                          'pages': [{'number': number, 'text': pages[number - 1]} for number in range(start, end + 1)]}, ensure_ascii=False))
+                          'pages': [{'number': start + index, 'text': re.sub(r'[ \t]+', ' ', page).strip()}
+                                    for index, page in enumerate(displayed)]}, ensure_ascii=False))
         return
     if args.find:
         matches = []

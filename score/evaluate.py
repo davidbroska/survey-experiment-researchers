@@ -1,5 +1,6 @@
 """Compare one abstract label with the independently recorded source judgment."""
 import json
+from collections import Counter
 import numpy as np
 from annotate import ROOT, PRIVATE, LABELS
 from review import read_rows, index_rows, write_rows, public_text
@@ -51,11 +52,28 @@ def main():
     articles = index_rows(read_rows(PRIVATE / 'articles.csv'))
     predictions = index_rows(read_rows(PRIVATE / 'predictions.csv'))
     references = index_rows(read_rows(PRIVATE / 'fulltext_reviews.csv'))
+    adjudications = read_rows(PRIVATE / 'review_adjudications.csv')
+    run = json.loads((PRIVATE / 'annotation_run.json').read_text())
+    initial_references = {key: dict(row) for key, row in references.items()}
+    restored = set()
+    for change in adjudications:
+        key = change['article_id']
+        if key in initial_references and key not in restored:
+            initial_references[key]['annotation'] = change['previous_annotation']
+            restored.add(key)
     result = compare(predictions, references)
     result.update(n_articles=len(articles), abstract_completed=len(predictions),
                   fulltext_completed=len(references), human_verified=0,
+                  abstract_models=dict(Counter(row.get('model', 'unrecorded') for row in predictions.values())),
+                  fulltext_models=dict(Counter(row.get('model', 'unrecorded') for row in references.values())),
+                  reference_labels_changed=sum(row['annotation'] != row['previous_annotation'] for row in adjudications),
+                  reference_text_corrections=sum(row['annotation'] == row['previous_annotation'] for row in adjudications),
+                  initial_reference_comparison=compare(predictions, initial_references),
+                  missing_abstracts=sum(not row.get('abstract', '').strip() for row in articles.values()),
+                  missing_keywords=sum(not row.get('keywords', '').strip() for row in articles.values()),
                   reference='Independent provisional AI full-text review; not human ground truth',
                   prompt='prompt.md', complete=len(predictions) == len(references) == len(articles))
+    result['api_usage'] = run.get('api_phase', {}).get('usage', {})
     (ROOT / 'score/evaluation.json').write_text(json.dumps(result, indent=2) + '\n')
     disagreements = []
     for key in sorted(set(predictions) & set(references)):
@@ -70,7 +88,10 @@ def main():
     write_rows(ROOT / 'score/disagreements.csv', disagreements, fields)
     lines = ['# SCORE prompt evaluation', '',
              f"Abstracts annotated: {len(predictions)}/620. Full texts reviewed: {len(references)}/620. Human verification: 0.", '',
+             f"Metadata availability: {result['missing_abstracts']} articles have no supplied abstract and {result['missing_keywords']} have no keywords. These records were screened using the remaining supplied fields; missing text was not invented or replaced with full-text information.", '',
              'The reference assessments are provisional AI source reviews. These metrics describe agreement with those reviews, not human-validated accuracy. The 620 articles form an access-conditioned development collection; prior prompt development and targeted examples mean this is not an untouched holdout.', '',
+             'All abstract labels were produced by session agents. Source-review model counts: ' + '; '.join(f'{model}: {count}' for model, count in result['fulltext_models'].items()) + '. The user authorized API annotation after 551 session source reviews. Subsequent API requests use the same criteria, one article per request, without abstract predictions. This mixed reference process is documented in [the protocol](protocol.md); it does not measure the performance of a single API model on all abstracts.', '',
+             f"Substantive source adjudications have changed {result['reference_labels_changed']} reference labels and corrected evidence or reasoning without changing {result['reference_text_corrections']} labels. Separate PDF extraction corrections are documented in the protocol. Initial source reviews were blind to abstract predictions and are retained privately. The numerical comparison before adjudication is retained in evaluation.json; the tables below use the adjudicated judgments.", '',
              '## Metrics', '',
              f"The binary comparisons use {result['reference_resolved']} paired articles with a YES or NO full-text judgment. {result['reference_unclear']} unresolved full-text judgments are excluded from binary denominators and shown in the table below. Unreviewed articles are never assigned NO.", '',
              '| Decision being evaluated | Articles | Balanced accuracy | Precision | Recall | F1 |',
@@ -81,8 +102,14 @@ def main():
     for key, name in names:
         values = result[key]
         lines.append('| ' + ' | '.join([name, str(values['n'])] + [percent(values[k]) for k in ['balanced_accuracy', 'precision', 'recall', 'f1']]) + ' |')
+    usage = result['api_usage']
+    if usage:
+        lines += ['', f"The {usage['articles']} API source reviews used {usage['input_tokens']:,} input tokens and {usage['output_tokens']:,} output tokens, including reasoning. Calculated cost: ${usage['calculated_usd']:.2f}, within the approved $100 limit. This is usage-based accounting, not an invoice. Rates and cache-write charges follow [OpenAI pricing](https://developers.openai.com/api/docs/pricing); private receipts preserve the calculation."]
+    strict = result['strict_yes']
+    retained = result['retain_yes_or_unclear']
     lines += ['', f"Definite-answer coverage among resolved references: {percent(result['definite_coverage'])}. The definite-only row can look better because it excludes difficult cases; read it alongside coverage.", '',
               '## Interpretation', '',
+              f"Among resolved references, {strict['tp']} immediate YES decisions are supported and {strict['fp']} are contradicted. Retaining YES and UNCLEAR finds {retained['tp']} of {retained['tp'] + retained['fn']} eligible articles, but {retained['fn']} eligible articles still receive NO. This supports using the prompt to identify clear positives and build a review queue; it does not support treating every NO as a dependable exclusion. No observed false positives does not guarantee perfect precision on new articles.", '',
               '- Balanced accuracy is the average of recall for eligible articles and specificity for ineligible articles. It gives both reference classes equal weight.',
               '- Precision is the share of positive decisions supported by a full-text YES. For the retention policy, this measures how many retained cases are eligible.',
               '- Recall is the share of full-text YES articles found by the decision policy. For the retention policy, a missed positive received abstract NO.',

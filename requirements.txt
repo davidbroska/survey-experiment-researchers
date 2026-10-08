@@ -1,2 +1,4 @@
 numpy
 openpyxl
+openai>=1.99.9
+httpx

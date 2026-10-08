@@ -29,7 +29,14 @@ FULLTEXT = COMMON + [('annotation', 'Annotation', 'YES / NO / UNCLEAR based on s
 def format_sheet(sheet, rows, columns, table_name):
     sheet.append([name for _, name, _ in columns])
     for row in rows:
-        sheet.append([row.get(key, '') for key, _, _ in columns])
+        values = []
+        for key, _, _ in columns:
+            value = row.get(key, '')
+            if key == 'evidence' and value:
+                items = json.loads(value)
+                value = '\n'.join(f"{item['location']}: “{item['quote']}” ({item['source']})" for item in items)
+            values.append(value)
+        sheet.append(values)
     sheet.freeze_panes = 'C2'
     for cell in sheet[1]:
         cell.font = Font(bold=True, color='FFFFFF')

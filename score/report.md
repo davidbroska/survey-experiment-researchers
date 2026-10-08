@@ -1,24 +1,32 @@
 # SCORE prompt evaluation
 
-**Work in progress: these are partial counts, not the completed 620-article result.**
+Abstracts annotated: 620/620. Full texts reviewed: 620/620. Human verification: 0.
 
-Abstracts annotated: 620/620. Full texts reviewed: 0/620. Human verification: 0.
+Metadata availability: 7 articles have no supplied abstract and 178 have no keywords. These records were screened using the remaining supplied fields; missing text was not invented or replaced with full-text information.
 
 The reference assessments are provisional AI source reviews. These metrics describe agreement with those reviews, not human-validated accuracy. The 620 articles form an access-conditioned development collection; prior prompt development and targeted examples mean this is not an untouched holdout.
 
+All abstract labels were produced by session agents. Source-review model counts: Codex session agent (GPT-6 family): 551; gpt-6-astra: 69. The user authorized API annotation after 551 session source reviews. Subsequent API requests use the same criteria, one article per request, without abstract predictions. This mixed reference process is documented in [the protocol](protocol.md); it does not measure the performance of a single API model on all abstracts.
+
+Substantive source adjudications have changed 6 reference labels and corrected evidence or reasoning without changing 2 labels. Separate PDF extraction corrections are documented in the protocol. Initial source reviews were blind to abstract predictions and are retained privately. The numerical comparison before adjudication is retained in evaluation.json; the tables below use the adjudicated judgments.
+
 ## Metrics
 
-The binary comparisons use 0 paired articles with a YES or NO full-text judgment. 0 unresolved full-text judgments are excluded from binary denominators and shown in the table below. Unreviewed articles are never assigned NO.
+The binary comparisons use 607 paired articles with a YES or NO full-text judgment. 13 unresolved full-text judgments are excluded from binary denominators and shown in the table below. Unreviewed articles are never assigned NO.
 
 | Decision being evaluated | Articles | Balanced accuracy | Precision | Recall | F1 |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Immediate YES: UNCLEAR is not an immediate positive | 0 | Not estimable | Not estimable | Not estimable | Not estimable |
-| Retain for review: YES and UNCLEAR are positive | 0 | Not estimable | Not estimable | Not estimable | Not estimable |
-| Definite answers only: abstract UNCLEAR excluded | 0 | Not estimable | Not estimable | Not estimable | Not estimable |
+| Immediate YES: UNCLEAR is not an immediate positive | 607 | 81.9% | 100.0% | 63.8% | 77.9% |
+| Retain for review: YES and UNCLEAR are positive | 607 | 84.7% | 86.0% | 84.1% | 85.1% |
+| Definite answers only: abstract UNCLEAR excluded | 500 | 90.0% | 100.0% | 80.1% | 88.9% |
 
-Definite-answer coverage among resolved references: Not estimable. The definite-only row can look better because it excludes difficult cases; read it alongside coverage.
+The 69 API source reviews used 1,773,422 input tokens and 20,017 output tokens, including reasoning. Calculated cost: $23.17, within the approved $100 limit. This is usage-based accounting, not an invoice. Rates and cache-write charges follow [OpenAI pricing](https://developers.openai.com/api/docs/pricing); private receipts preserve the calculation.
+
+Definite-answer coverage among resolved references: 82.4%. The definite-only row can look better because it excludes difficult cases; read it alongside coverage.
 
 ## Interpretation
+
+Among resolved references, 201 immediate YES decisions are supported and 0 are contradicted. Retaining YES and UNCLEAR finds 265 of 315 eligible articles, but 50 eligible articles still receive NO. This supports using the prompt to identify clear positives and build a review queue; it does not support treating every NO as a dependable exclusion. No observed false positives does not guarantee perfect precision on new articles.
 
 - Balanced accuracy is the average of recall for eligible articles and specificity for ineligible articles. It gives both reference classes equal weight.
 - Precision is the share of positive decisions supported by a full-text YES. For the retention policy, this measures how many retained cases are eligible.
@@ -32,9 +40,9 @@ Rows are full-text judgments; columns are abstract judgments.
 
 | Full text / Abstract | YES | NO | UNCLEAR |
 | --- | ---: | ---: | ---: |
-| YES | 0 | 0 | 0 |
-| NO | 0 | 0 | 0 |
-| UNCLEAR | 0 | 0 | 0 |
+| YES | 201 | 50 | 64 |
+| NO | 0 | 249 | 43 |
+| UNCLEAR | 0 | 9 | 4 |
 
 See [individual disagreements](disagreements.csv). The wording review and critically vetted examples are recorded in [the error analysis](error_analysis.md).
 

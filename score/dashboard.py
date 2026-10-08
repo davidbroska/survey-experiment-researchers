@@ -32,6 +32,15 @@ a{color:#12666a}nav{display:flex;gap:16px;flex-wrap:wrap}.cards{display:flex;gap
     page += '<p class="note">The supplied prompt produces one label: YES, NO or UNCLEAR. Full-text review applies the same criteria and adds source evidence and reasoning. AI reference judgments remain provisional; human verification has not been completed. Pending means not yet assessed.</p>'
     page += '<p>Abstract counts: ' + ' · '.join(f'{label}: {counts[label]}' for label in ['YES','NO','UNCLEAR']) + '</p>'
     page += '<p>This collection includes access-based replacements and previously examined development examples. Reported agreement is not performance on an untouched holdout or a population prevalence estimate. Licensed abstracts and full texts remain local.</p>'
+    evaluation = json.loads((folder / 'evaluation.json').read_text())
+    if evaluation.get('complete'):
+        page += '<h2>Comparison with AI full-text review</h2><p>These results use ' + str(evaluation['reference_resolved']) + ' resolved source judgments; ' + str(evaluation['reference_unclear']) + ' unresolved judgments are excluded. Human verification is pending.</p>'
+        page += '<div class="scroll"><table><thead><tr><th>Decision</th><th>Balanced accuracy</th><th>Precision</th><th>Recall</th><th>F1</th></tr></thead><tbody>'
+        for key, name in [('strict_yes', 'Select YES'), ('retain_yes_or_unclear', 'Retain YES and UNCLEAR for review')]:
+            values = evaluation[key]
+            cells = [name] + [f'{100 * values[field]:.1f}%' if values[field] is not None else 'Not estimable' for field in ['balanced_accuracy', 'precision', 'recall', 'f1']]
+            page += '<tr>' + ''.join('<td>' + cell + '</td>' for cell in cells) + '</tr>'
+        page += '</tbody></table></div><p>Precision describes how many selected articles qualify; recall describes how many qualifying articles are found. See the evaluation report for definitions and all three labels.</p>'
     page += '<h2>Articles</h2><input id="search" aria-label="Search articles" placeholder="Search journal, title or year"><div class="scroll"><table><thead><tr><th>Journal</th><th>Year</th><th>Article</th><th>Local full text</th><th>Abstract annotation</th><th>Full-text annotation</th></tr></thead><tbody id="papers">' + ''.join(table) + '</tbody></table></div></main>'
     page += '''<script>document.getElementById('search').addEventListener('input',function(){const query=this.value.toLowerCase();for(const row of document.querySelectorAll('#papers tr'))row.hidden=!row.textContent.toLowerCase().includes(query);});</script></html>'''
     (folder / 'index.html').write_text(page)
