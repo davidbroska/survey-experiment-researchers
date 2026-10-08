@@ -7,13 +7,12 @@ from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parent.parent
 PUBLIC = (
     "index.html", "articles.csv", "journals.csv", "journal_audit.csv",
-    "sample_validation.json", "access.csv", "coverage.csv", "manual_downloads.csv",
-    "independent_review.csv", "predictions_original.csv", "predictions_revised.csv",
-    "evaluation.json", "prompt_original.md", "prompt_revised.md", "prompt_current.md",
-    "prompt_freeze.json", "protocol.md", "report.md", "ra_verification.md",
-    "prompt_proposed.md", "prompt_proposed_redline.md", "access_report.md", "codebook.md",
-    "replacements.csv",
-    "replacement_report.md", "replacement_status.csv", "systematic_access.md",
+    "sample_validation.json", "access.csv", "manual_downloads.csv",
+    "predictions.csv", "fulltext_reviews.csv", "evaluation.json", "prompt.md",
+    "protocol.md", "report.md", "error_analysis.md", "disagreements.csv",
+    "ra_verification.md", "access_report.md", "codebook.md",
+    "replacements.csv", "replacement_report.md", "replacement_status.csv",
+    "systematic_access.md",
 )
 
 

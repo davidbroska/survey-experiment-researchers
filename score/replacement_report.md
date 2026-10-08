@@ -4,7 +4,7 @@ The collection still contains **620 articles in 620 journal/year cells**: 62 jou
 
 Current formats: 25 HTML, 459 PDF, 136 XML.
 
-Completed substantive AI source reviews remain **288**. The 194 replacement articles have not been classified: their decisions are blank and their assessment basis is Not assessed. Document identity checking is separate from collection/design review. No human verification or paid LLM API annotation was performed.
+Document identity checking is separate from collection/design review. The earlier eligibility assessments were retired at the user’s request; current coverage is on the [dashboard](index.html). No human verification or paid LLM API annotation was performed during retrieval.
 
 | Publisher/platform of displaced or unresolved selections | Initially missing | Replaced | Original recovered | Still unresolved |
 | --- | ---: | ---: | ---: | ---: |
@@ -37,4 +37,4 @@ The [current DOI queue](manual_downloads.csv) contains 0 articles. For future ac
 
 Every accepted replacement must have readable main text, an article identity check, a saved file hash and a matching extraction-cache hash. Independent review checks source versions and flags manuscripts or missing appendices. A main-text file is not proof that all supporting material is present or that a manuscript is identical to the published article.
 
-The original selections are retained privately as inputs to the historical evaluation. Frozen predictions and 288 source reviews are preserved. Replacements do not inherit labels or development/holdout membership. The [latest prompt](prompt_proposed.md) has received independent internal review but has no new empirical performance result. The private workbook remains 620 rows × 63 variables, alphabetized by journal and then by year descending.
+Selection provenance is retained privately. Previous prompts and predictions have been removed; all current articles receive fresh judgments under the [supplied prompt](prompt.md). The private workbook has two 620-row assessment sheets, alphabetized by journal and then by year descending, with one annotation column per sheet. Full-text judgments also have evidence and reasoning.

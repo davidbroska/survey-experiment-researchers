@@ -27,16 +27,15 @@ These are main-text copies with recorded limitations, not 620 complete publisher
 versions with every table, figure and supplement. The source review must seek
 missing material when it is needed to establish collection or study design.
 
-**288 articles have substantive AI source reviews under the earlier broader criteria.** The questionnaire-focused scope chosen on 8 October has not been applied to the saved labels. The remaining
-332 available articles await source review. Replacements have
-blank assessment fields and basis **Not assessed**. Recovered originals retain
-their earlier metadata assessments. No new eligibility labels or human
-verifications were performed during this retrieval pass.
+**Earlier assessments have been retired at the user’s request.** Fresh abstract
+annotation and full-text review coverage are reported on the current dashboard.
+This retrieval checkpoint describes access, not eligibility or human verification.
 
-The private `SCORE_validation_620.xlsx` has **620 rows and 63 variables**, sorted
-alphabetically by journal and then by year descending. Its Column guide and the
-[public codebook](codebook.md) distinguish availability, actual assessment basis,
-metadata judgments, source reviews and missing values.
+The private `SCORE_validation_620.xlsx` has separate **620-row worksheets for
+abstract screening and full-text review**, each sorted alphabetically by journal
+and then by year descending. Each worksheet has one annotation column. The
+source-review sheet also records evidence and reasoning. Its Column guide and
+the [public codebook](codebook.md) define the fields and missing values.
 
 ## What worked
 
@@ -111,9 +110,8 @@ years can precede final issue years; those differences are documented. Confirmed
 wrong-journal records are excluded, and corrupted/supplement-only sources are kept
 apart from accepted main texts.
 
-Original selections and frozen predictions/reviews remain preserved. The
-[new prompt](prompt_proposed.md) and [redline](prompt_proposed_redline.md) received
-independent logical review against known cases, but have no new empirical
-performance result. The original holdout is no longer an untouched test.
+Selection and source provenance remain preserved. The user’s [supplied prompt](prompt.md)
+now governs fresh annotations; previous prompts and predictions were removed.
+The original collection is no longer an untouched test.
 Licensed full texts, abstracts, browser access links/tokens and private correspondence
 remain outside the public repository.

@@ -1,33 +1,12 @@
-"""Combine reviewed batches and export derived labels without licensed text.
-
-Run this before evaluate.py and dashboard.py. Never infer labels from access status.
-"""
+"""Validate and combine fresh session annotations; publish derived results only."""
 import csv
+import hashlib
+import json
 from pathlib import Path
 import re
 from urllib.parse import parse_qsl, urlsplit
+from annotate import ROOT, PRIVATE, PROMPT, LABELS, abstract_prompt, fulltext_prompt
 from fetch_fulltext import PRIVATE_QUERY, safe_url
-
-ROOT = Path(__file__).resolve().parent.parent
-PRIVATE = ROOT / "private/score"
-BATCHES = ("initial", "business", "education", "remaining", "psychology",
-           "root_extra", "holdout_business", "social", "holdout_social", "pmc_additions")
-
-
-def public_urls(value):
-    """Remove access queries without changing other links in a multi-URL field."""
-    def clean(match):
-        url = match.group()
-        parts = urlsplit(url)
-        private_query = any(re.search(PRIVATE_QUERY, key, re.I)
-            for key, _ in parse_qsl(parts.query, keep_blank_values=True))
-        private_fragment = any(re.search(PRIVATE_QUERY, key, re.I)
-            for key, _ in parse_qsl(parts.fragment, keep_blank_values=True))
-        if not (parts.username or parts.password or private_query or private_fragment):
-            return url
-        fragment = '#' + parts.fragment if parts.fragment and not private_fragment else ''
-        return safe_url(url) + fragment
-    return re.sub(r'https?://[^\s<>;]+', clean, value)
 
 
 def read_rows(path):
@@ -38,57 +17,86 @@ def read_rows(path):
 
 
 def write_rows(path, rows, fields):
+    path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_suffix(path.suffix + ".tmp")
-    with temporary.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields, extrasaction="ignore")
+    with temporary.open("w", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fields, extrasaction="ignore", lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
     temporary.replace(path)
 
 
+def index_rows(rows):
+    indexed = {row["article_id"]: row for row in rows}
+    if len(indexed) != len(rows):
+        raise ValueError("Duplicate article identifiers")
+    return indexed
+
+
+def public_text(value):
+    def clean(match):
+        url = match.group()
+        parts = urlsplit(url)
+        sensitive = any(re.search(PRIVATE_QUERY, key, re.I)
+                        for key, _ in parse_qsl(parts.query + "&" + parts.fragment))
+        return safe_url(url) if sensitive or parts.username else url
+    return re.sub(r'''https?://[^\s<>"']+''', clean, value)
+
+
 def main():
-    articles = {r["article_id"]: r for r in read_rows(PRIVATE / "articles.csv")}
-    reviews = {}
-    fields = []
-    for batch in BATCHES:
-        for row in read_rows(PRIVATE / f"fulltext_reviews_{batch}.csv"):
-            key = row["article_id"]
-            if key not in articles or key in reviews:
-                raise ValueError(f"Outside-sample or duplicate reference: {key}")
-            row["split"] = articles[key]["split"]
-            reviews[key] = row
-            fields += [field for field in row if field not in fields]
-    for change in read_rows(PRIVATE / "adjudications.csv"):
-        row = reviews[change["article_id"]]
-        field = change["field"]
-        if row[field] != change["previous_value"]:
-            raise ValueError(f"Adjudication no longer matches {row['article_id']}")
-        row[field] = change["new_value"]
-        row["rationale"] += " Adjudication: " + change["rationale"]
-        row["confidence"] = change.get("confidence", row["confidence"])
-    rows = sorted(reviews.values(), key=lambda r: (r["journal"], r["year"]))
-    write_rows(PRIVATE / "fulltext_reviews.csv", rows, fields)
-    public_fields = ("article_id", "doi", "journal", "year", "title", "collection",
-                     "experiment", "survey", "other_methods", "review_status", "confidence",
-                     "reviewer", "review_date", "human_verified", "split", "source_url",
-                     "pdf_pages_reviewed", "evidence_section", "rationale", "recruitment_providers",
-                     "software", "team_data_reuse", "supporting_resource_url", "supporting_resource_status")
-    public_rows = []
-    for row in rows:
-        public = {field: row.get(field, "") for field in public_fields}
-        if not public["source_url"].startswith(("https://", "http://")):
-            public["source_url"] = "https://doi.org/" + row["doi"]
-        for field in ("source_url", "supporting_resource_url"):
-            public[field] = public_urls(public[field])
-        public_rows.append(public)
-    write_rows(ROOT / "score/independent_review.csv", public_rows, public_fields)
-    prediction_fields = ("article_id", "prompt_version", "collection", "experiment",
-                         "survey", "other_methods", "rationale", "software",
-                         "recruitment_providers", "reviewer")
-    for version in ("original", "revised"):
-        predictions = read_rows(PRIVATE / f"predictions_{version}.csv")
-        write_rows(ROOT / f"score/predictions_{version}.csv", predictions, prediction_fields)
-    print(f"Combined {len(rows)} sourced reviews; exported derived labels and paraphrases.")
+    articles = index_rows(read_rows(PRIVATE / "articles.csv"))
+    access = index_rows(read_rows(PRIVATE / "fulltext.csv"))
+    prompt_hash = hashlib.sha256(PROMPT.read_bytes()).hexdigest()
+    folder = PRIVATE / "annotation_batches"
+    predictions = index_rows([row for path in sorted(folder.glob("abstract_*.csv"))
+                              for row in read_rows(path)])
+    references = index_rows([row for path in sorted(folder.glob("fulltext_*.csv"))
+                             for row in read_rows(path)])
+    for key, row in predictions.items():
+        if key not in articles or row["annotation"] not in LABELS:
+            raise ValueError("Invalid prediction")
+        _, payload = abstract_prompt(articles[key])
+        if row["prompt_sha256"] != prompt_hash or row["input_sha256"] != hashlib.sha256(payload.encode()).hexdigest():
+            raise ValueError("Prediction prompt or input changed")
+    for key, row in references.items():
+        if key not in articles or row["annotation"] not in LABELS or not row["reasoning"] or not row["evidence"]:
+            raise ValueError("Invalid source review")
+        if row["prompt_sha256"] != prompt_hash or row["source_sha256"] != access[key]["source_sha256"]:
+            raise ValueError("Source review prompt or document differs")
+        instructions, _ = fulltext_prompt(articles[key], [])
+        if row["instructions_sha256"] != hashlib.sha256(instructions.encode()).hexdigest():
+            raise ValueError("Full-text review instructions changed")
+        source = Path(access[key]["fulltext_path"])
+        if hashlib.sha256(source.read_bytes()).hexdigest() != row["source_sha256"]:
+            raise ValueError("Source document changed")
+    changes = read_rows(PRIVATE / "review_adjudications.csv")
+    for change in changes:
+        row = references[change["article_id"]]
+        if row["annotation"] != change["previous_annotation"]:
+            raise ValueError("Adjudication does not match initial review")
+        row["annotation"] = change["annotation"]
+        row["evidence"] = change["evidence"]
+        row["reasoning"] = change["reasoning"]
+        row["adjudicator"] = change["reviewer"]
+    ordering = lambda key: (articles[key]["journal"], -int(articles[key]["year"]), articles[key]["title"])
+    for name, data in [("predictions", predictions), ("fulltext_reviews", references)]:
+        rows = [data[key] for key in sorted(data, key=ordering)]
+        fields = list(dict.fromkeys(field for row in rows for field in row))
+        if rows:
+            write_rows(PRIVATE / (name + ".csv"), rows, fields)
+        public = []
+        for key in sorted(data, key=ordering):
+            row = {field: articles[key][field] for field in ["article_id", "doi", "journal", "year", "title"]}
+            row["annotation"] = data[key]["annotation"]
+            if name == "fulltext_reviews":
+                row["evidence"] = public_text(data[key]["evidence"])
+                row["reasoning"] = public_text(data[key]["reasoning"])
+            public.append(row)
+        public_fields = ["article_id", "doi", "journal", "year", "title", "annotation"]
+        if name == "fulltext_reviews":
+            public_fields += ["evidence", "reasoning"]
+        write_rows(ROOT / "score" / (name + ".csv"), public, public_fields)
+    print(f"Validated {len(predictions)}/620 abstract labels and {len(references)}/620 full-text reviews.")
 
 
 if __name__ == "__main__":

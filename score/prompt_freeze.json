@@ -1,8 +1,0 @@
-{
-  "frozen_at": "2026-10-07T10:11:44.414561+00:00",
-  "prompt_sha256": "73957ab52b1a9b7f2a302a36525c677fb217e171bb4e31a2c9854cccb0887aa9",
-  "prompt_file": "score/prompt_revised.md",
-  "development_references_available_to_prompt_reviewer": 92,
-  "holdout_reference_labels_inspected_before_freeze": 0,
-  "note": "Freeze was announced in agent messages before this receipt was written. Revised metadata review and holdout full-text review now proceed independently. No API spending."
-}
